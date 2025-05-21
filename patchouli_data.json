@@ -1,0 +1,35 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "naturesaura:book": {
+      "viewedEntries": [
+        "naturesaura:intro/aura",
+        "naturesaura:intro/intro",
+        "naturesaura:intro/botany",
+        "naturesaura:practices/gold_trees",
+        "naturesaura:using/crushing_catalyst",
+        "naturesaura:practices/aura_plants",
+        "naturesaura:practices/offering",
+        "naturesaura:using/furnace_heater",
+        "naturesaura:using/placer",
+        "naturesaura:items/aura_cache",
+        "naturesaura:creating/oak_generator",
+        "naturesaura:creating/flower_generator",
+        "naturesaura:creating/moss_generator",
+        "naturesaura:creating/projectile_generator",
+        "naturesaura:creating/slime_split_generator",
+        "naturesaura:creating/animal_generator",
+        "naturesaura:using/hopper_upgrade",
+        "naturesaura:effects/cache_recharge",
+        "naturesaura:effects/plant_boost",
+        "naturesaura:effects/ore_spawn",
+        "naturesaura:effects/animal",
+        "naturesaura:effects/nether_grass",
+        "naturesaura:effects/effect_powder"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}

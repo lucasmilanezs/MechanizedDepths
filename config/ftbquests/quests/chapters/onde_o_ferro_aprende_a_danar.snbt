@@ -1,0 +1,1026 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "onde_o_ferro_aprende_a_danar"
+	group: "0E3BAF4D0D92EEE1"
+	icon: "create:wrench"
+	id: "3FBA78EC5B9B5F80"
+	images: [{
+		height: 3.0d
+		image: "custom:textures/gui/kinectics.png"
+		rotation: 0.0d
+		width: 3.0d
+		x: 0.0d
+		y: -10.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"   Até aqui, você trilhou o caminho tradicional: fogo, pressão, aço e cabos. O Immersive ensinou que o mundo se molda com força. Mas — e se ele também pudesse ser movido?"
+				""
+				"   O capítulo que se abre agora não é um desvio. Não é um atalho mágico. É a outra face da mesma indústria que você já começou a construir. O Create não substitui nada. Ele expande tudo."
+				""
+				"   Enquanto você prensa eletrodos e bombeia fluido vegetal com dor na alma, o Create observa... e oferece uma alternativa: engrenagens, rotação, fluxo contínuo."
+				""
+				"   Aqui, você não verá receitas milagrosas nem acesso imediato a grandes máquinas. Mas verá braços que repetem gestos. Rodas que carregam minérios. Sequências que transformam um crafting doloroso em uma dança mecânica."
+				""
+				"   E se acha que pode ignorar isso porque já tem energia e ligas… lembre-se: este modpack não vai te respeitar se você continuar craftando tudo na mão."
+				""
+				"   A progressão futura vai pedir fábricas. Linhas. Fluxos. E um senso mínimo de infraestrutura. O Applied Energistics está longe. Muito longe. E o dia em que você vai finalmente poder clicar em “autocraft” será épico — mas não é agora."
+				""
+				"   Então aqui está sua sugestão disfarçada de liberdade:"
+				"Comece pequeno. Um funil aqui, uma prensa ali. Teste layouts. Pense na logística. Fique imerso nessa estética rústica e máquinas enormes antes de poder seguir para o digital. Não corra dos problemas e gargalos, faça da experiência resolver um problema por vez."
+				""
+				"   Porque o fardo de carregar a revolução nos ombros... pode muito bem ser colocado em uma esteira."
+				""
+				"&7&o— A verdadeira automação não começa com um clique. Começa quando você decide parar de repetir a mesma tarefa como um lunático.&r&r"
+			]
+			hide_dependent_lines: true
+			icon: "create:cogwheel"
+			id: "6FFDC0CD59E051D1"
+			shape: "netheritetier"
+			size: 2.0d
+			subtitle: "Uma sugestão obrigatória"
+			tasks: [{
+				id: "29A3F42A9CF66B5F"
+				type: "checkmark"
+			}]
+			title: "Engrenanges à Beira do Colapso"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6FFDC0CD59E051D1"
+				"41C7D076DE390330"
+			]
+			description: [
+				"   Você dominou rituais. Moldou madeira viva e pedra rúnica, deu forma ao invisível. Agora, porém, é hora de trocar o inexplicável pelo inevitável: engrenagens."
+				""
+				"   Essa é a primeira liga verdadeira. Não no sentido metálico, mas simbólico: ela une ideias que não deveriam conversar. Rituais arcanos e torque mecânico. Sussurros de aura e cliques de engrenagens."
+				""
+				"   Criar uma &8&landesite alloy&r&r é como fundir dois mundos — e se você acha que isso é exagero, espera até ver os trens."
+				""
+				" "
+				"&7&o— Nada gira sem ela. Nem ideias, nem máquinas, nem esse modpack.&r&r"
+			]
+			id: "2A261C789F73E3A9"
+			shape: "gear"
+			size: 1.1d
+			tasks: [{
+				count: 4L
+				id: "6B7465457FED091D"
+				item: { Count: 4, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			title: "Pedra para girar mundos"
+			x: 0.0d
+			y: -4.2d
+		}
+		{
+			id: "2301AE3626A0CD3B"
+			tasks: [{
+				id: "7AEE7A5E8D993CAE"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			description: [
+				"   Eixos conectam tudo — inclusive seus erros."
+				""
+				"   São discretos, diretos e inevitáveis. Toda construção começa girando um... e termina girando todos."
+				""
+				"&7&o— Olhe para um Shaft. Agora olhe para o caos que ele está espalhando. Você não o respeitou.&r&r"
+			]
+			id: "3265B3C72791C9EA"
+			tasks: [{
+				id: "376BE128717F2E67"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "Tá girando..."
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3265B3C72791C9EA"]
+			description: [
+				"   As pequenas engrenagens não apenas transmitem movimento. Elas traduzem força em lógica — e às vezes, em desespero."
+				""
+				"   Quando usadas entre peças do mesmo tamanho, o giro se propaga normalmente. Mas se você misturar tamanhos… bem, parabéns. Você agora tem uma calculadora rotacional viva."
+				""
+				"   Aumente a velocidade, perca torque. Aumente torque, perca velocidade. E se tudo der certo, nada explode. Se der errado, tudo trava."
+				""
+				"&7&o— Essa engrenagem não gira sozinha. Mas vai girar com você... até quebrar algo que você não viu.&r&r"
+			]
+			id: "3DE2667B06DFB607"
+			tasks: [{
+				id: "32B273238C55133D"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			title: "Dentes, Dúvidas e Descobertas"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3265B3C72791C9EA"]
+			description: [
+				"   A engrenagem grande é o começo da mentira técnica: \"Mais é melhor\"."
+				""
+				"   Ela gira mais devagar. Mas, com a engrenagem pequena certa ao lado, pode multiplicar a velocidade — ou multiplicar seu erro."
+				""
+				"   Colocar duas engrenagens diferentes uma acima da outra cria um sistema. Colocar três cria uma dúvida. Colocar quatro cria um post no Reddit pedindo ajuda."
+				""
+				"&7&o— Rotação não é energia. É paciência com matemática aplicada.&r&r"
+			]
+			id: "30E4ADB9A99F0519"
+			tasks: [{
+				id: "27787B2242E44A51"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			title: "Girar é fácil, Já girar certo,,,"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3DE2667B06DFB607"]
+			description: [
+				"   Finalmente: movimento sem sacrifício — só precisa de um rio, uma parede, e sua alma técnica."
+				""
+				"   A Water Wheel gera stress, a \"energia rotacional\" que mantém tudo funcionando. Quanto mais girar, mais stress. Mas não se empolgue: ela gira devagar, com torque alto — o contrário de velocidade."
+				""
+				"   Ideal para setups iniciais, e perfeita para aprender que nem tudo gira igual. Ou para descobrir que seu sistema inteiro está consumindo mais do que ela gera."
+			]
+			id: "50EE1E57C08D77C8"
+			tasks: [{
+				id: "34F872C700FA4058"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "O Primeiro Giro Sempre é o Mais Lento"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["30E4ADB9A99F0519"]
+			description: [
+				"   A Water Wheel comum era o sussurro do fluxo. A versão grande é o rugido de quem cansou de esperar."
+				""
+				"   A Large Water Wheel oferece mais stress — mais potência bruta para máquinas pesadas. Mas, como tudo que oferece mais, ela também exige mais: mais espaço, mais alinhamento, mais cuidado."
+				""
+				"   O design muda, mas a verdade permanece: se você quer que sua fábrica respire, você precisa dar a ela pulmões maiores."
+				""
+				"&7&o— Quando o torque sussurra, você ouve. Quando ele grita, a engrenagem cede.&r&r"
+			]
+			id: "157A36109CDC7C2B"
+			tasks: [{
+				id: "722DC8134AC9B777"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "O Rio Não Basta Mais"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"   Horizontal vira vertical."
+				"   Vertical vira horizontal."
+				""
+				"   A gearbox existe para converter movimento sem converter sua sanidade. Mas como tudo no Create, ela só ajuda até o momento em que você liga duas por engano e cria uma rotação invertida em toda a fábrica."
+				""
+				"&7&o— A rotação muda de plano. A lógica muda com ela. Sua paciência, nem sempre acompanha.&r&r"
+			]
+			id: "54E40EA8FC901031"
+			tasks: [{
+				id: "1D813DE0212C4444"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			title: "O Eixo que Vira Canto"
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			description: [
+				"   O gearshift inverte a direção da rotação quando recebe redstone."
+				"Isso pode ser útil. Ou devastador. Ou os dois, dependendo se seu sistema tem um freio ou uma criança em cima de um belt."
+				""
+				"&7&o— Às vezes, para seguir em frente, você precisa girar para trás. Isso é Create. Isso é terapia.&r&r"
+			]
+			id: "1C7464A392E4AA20"
+			tasks: [{
+				id: "04E7A1075E498BFB"
+				item: "create:gearshift"
+				type: "item"
+			}]
+			title: "O Botão da Contradição"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			description: [
+				"   Imagine ter o poder de cortar a energia de um sistema inteiro com um pulso de redstone."
+				""
+				"   Parar, isolar, interromper — o clutch é o disjuntor do Create. Mas cuidado: se esquecer de religar, você vai passar horas achando que quebrou tudo. Spoiler: quebrou sim — sua atenção."
+				""
+				"&7&o— O clutch não é para girar. É para pausar. Um lembrete de que às vezes, parar é estratégico.&r&r"
+			]
+			id: "48060F3F5D2E60F9"
+			tasks: [{
+				id: "1D4917B2ECA65EEE"
+				item: "create:clutch"
+				type: "item"
+			}]
+			title: "O Silêncio entre os Dentes"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"   Às vezes você só quer que duas máquinas girem igual, do mesmo lado e na mesma velocidade."
+				""
+				"   A chain drive faz isso — elegantemente. Mas alinhe errado e você descobre o conceito de “desincronização funcional rotacional” na prática."
+				""
+				"&7&o— É como um cabo de dados entre engrenagens. Ou uma corrente. Literalmente. Só que encasulada, porque estilo importa.&r&r"
+			]
+			id: "0ECC57331741E458"
+			tasks: [{
+				id: "726615C41654ED9D"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			title: "Síncrono ou Caótico?"
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			description: [
+				"   Se a Metal Press do Immersive é um braço hidráulico industrial, a Mechanical Press do Create é mais como… um martelo de ogro com precisão improvisada."
+				""
+				"   Ela não precisa de moldes. Não precisa de fios. Não tem polidez, tampouco elegância."
+				"Ela apenas desce, com fúria controlada, e transforma metal em placa, item em bloco, esperança em automação."
+				""
+				"   Menos eficiente? Talvez. Mais barulhenta? Com certeza. Mais satisfatória? Absolutamente."
+				""
+				"&7&o— O progresso raramente é sutil. E o Create nunca tenta fingir que é.&r&r"
+			]
+			id: "0173BAF7AFCB573B"
+			tasks: [{
+				id: "79A7FB7256315EF4"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "O Peso do Progresso"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			description: [
+				"   A Millstone não vai te dar ouro. Mas vai fazer sua flor render mais tinta, transformar sua pedra em cascalho, e seu cascalho em flint — com sorte."
+				""
+				"   Ela representa o primeiro contato com processamento mecânico primitivo. Nada de ligas ou máquinas complexas. Aqui é pedra contra pedra, girando até virar pó ou alguma coisa útil."
+				""
+				"&7&o— Às vezes o progresso começa moendo flor pra fazer corante. Outras vezes, começa exatamente igual.&r&r"
+			]
+			id: "03FD87CD166B54A2"
+			tasks: [{
+				id: "113DEC0CEF494CEC"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: " Moendo as Ideias"
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			description: [
+				"   Um bloco que sopra coisas e, de alguma forma, é extremamente útil."
+				""
+				"   Sopre para cozinhar (com lava), lavar (com água), ou fermentar (com soulsand)."
+				"Você só entende o valor de um ventilador industrial quando ele limpa um stack de minério e devolve esperança."
+				""
+				"&7&o— O ar move o mundo. E os itens também. Desde que estejam no lugar certo e não bugados no chão.&r&r"
+			]
+			id: "2B611465A25BABEC"
+			tasks: [{
+				id: "2AB317BB6E1E56A2"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "O Vento Traz a Forma"
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			description: [
+				"   Um mixer, um bowl, e caos semi-controlado."
+				""
+				"   Combinando fluidos e sólidos, essa dupla permite criar ligas, massas e \"substâncias que talvez sejam legais\". É daqui que sai o brass, mas você ainda não está pronto. Não mesmo."
+				""
+				"&7&o— Cozinhar no Create exige mais do que receita. Exige rotação. E um leve desvio de sanidade.&r&r"
+			]
+			id: "61A973C8B8739001"
+			tasks: [
+				{
+					id: "1BDD228BFC08740E"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "05A139758332E252"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "Cozinha da Locurua"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"   Eles giram sem nunca parar. Não perguntam \"pra onde\", nem \"por quê\" — apenas carregam, como uma língua infinita de engrenagens que esqueceram o gosto de descansar."
+				"Os belts são o primeiro passo para fazer as coisas fluírem sem que você precise pensar demais. Monte suas correias conectando shafts, e observe os itens percorrerem o mesmo caminho para sempre."
+				"   Ideal para linhas de produção simples ou organizar seu caos doméstico, um belt nunca julga o que você está transportando."
+				""
+				"— &o&7Pensei em colocar minha autoestima nesse belt, mas descobri que ela não é item válido.&r&r"
+			]
+			id: "713D876FFB963462"
+			tasks: [{
+				id: "17A9955E5850903A"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "Vamos passear por aí"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			description: [
+				"   Nem todo movimento é eterno. Às vezes, o progresso precisa esperar no lugar certo."
+				""
+				"   O Depot é a pausa estratégica — onde os itens repousam antes de serem esmagados, polidos, ou tocados por mãos mecânicas."
+				""
+				"   Ele se torna o ponto central de interação com Deployers, Presses e Mixers. Pense nele como a mesa do ritual, onde o item aguarda transformação."
+				"Simples, barato e absurdamente útil. Se você ainda não colocou um desses no meio da sua bagunça, você vai."
+				""
+				"— &o&7Eu fico parado, mas o mundo gira. Talvez eu seja um Depot também.&r&r"
+			]
+			id: "0B02A3BD59761C4A"
+			tasks: [{
+				id: "7AD7A4E625B40C2A"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			description: [
+				"   Nada entra, nada sai — a menos que você diga como."
+				""
+				"   Funnels são os guardiões dos inventários, os filtros do mundo material. Eles decidem quem entra e quem sai, como porteiros de uma balada interdimensional."
+				""
+				"   Com um toque de redstone ou um empurrão do caos, eles organizam o fluxo entre seus baús e as máquinas."
+				""
+				"   Comece com os de andesite, e quando for digno, o brass funnel permitirá até mesmo filtragem avançada. Mas calma, jovem inventor... uma coisa de cada vez."
+				""
+				"— &o&7É um funil. Mas com estilo. Tipo... um funil com terno.&r&r"
+			]
+			id: "732C63E9D2C1CB1B"
+			tasks: [{
+				id: "29ADCE8A94CDAD85"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["41C7D076DE390330"]
+			description: [
+				"   Ele reluz. Não como um diamante. Não como algo natural."
+				""
+				"   O Rose Quartz é... quase mágico. Mas não é."
+				"   "
+				"   Você o cria não com máquinas — mas com um gesto manual, quase íntimo: jogue quartz bruto no chão, misture com corante vermelho, e então… esfregue."
+				""
+				"   Use uma sand paper como se estivesse lustrando sua paciência. Segure com a mão, mire no item jogado no chão, e clique com o botão direito como se não estivesse se perguntando por que raios isso funciona."
+				""
+				"   Esse processo — humilhante e artesanal — é o primeiro passo em direção ao electron tube."
+				""
+				"   E, por consequência, ao Deployer, que um dia fará isso por você."
+				""
+				"— &o&7No começo, você lixa quartzo com papel. No fim, cria braços robóticos que lixam por você. Parabéns, evolução.&r&r"
+			]
+			id: "0EC1760A6B2B0CB6"
+			tasks: [{
+				id: "426FD4B7AA4C9F68"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			title: "Ele Brilha mas não é Raro"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11D7B1868C95CDE6"]
+			description: [
+				"   A automação começa com um clique. O seu clique. E termina com o dele."
+				""
+				"   O Deployer é o ápice do ócio criativo — ele clica, aperta, aplica casings, planta, alimenta, quebra blocos, dá tapa no próprio criador."
+				""
+				"   Você pode usá-lo para automatizar andesite casing, electron tubes, e até mesmo mais Deployers."
+				""
+				"   É irônico? Sim. É brilhante? Também."
+				""
+				"   Combine um brass hand, um electron tube e a carcaça de um sonho quebrado... e você terá criado sua primeira mão robótica."
+				"Quando ela apertar o botão por você, vai doer um pouco menos."
+				""
+				"— &o&7Quando percebi que podia automatizar o crafting dele com ele mesmo, entendi o que era orgulho técnico.&r&r"
+			]
+			id: "465013195CB95147"
+			tasks: [{
+				id: "12A37FE651072748"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Que tal uma mãozinha?"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2C5BDE78E209CF0C"
+				"6FFDC0CD59E051D1"
+			]
+			description: [
+				"   Chegamos no ponto onde engrenagens não bastam. Você precisa de calor. De chama viva."
+				"   "
+				"   Mas antes de fundir metais ou derreter lógica, precisa dar um passo prático (e suicida):"
+				""
+				"   Ir até o Nether e clicar com o botão direito em um blaze com seu recém-craftado Empty Blaze Burner."
+				""
+				"   Sim, é manual. Sim, ele ainda cospe fogo. Sim, você vai queimar."
+				""
+				"   Mas só com o fogo dele aceso que a verdadeira fundição começa."
+				""
+				"    Para construir esse burner, você vai precisar de Blazing Steel — uma liga que diz “já passei da fase do andesite”. Você pode forjá-lo no Arc Furnace, claro... Mas se ainda não chegou lá, a boa e velha Alloy Kiln do Immersive também serve. Basta aquecer o suficiente para fazer aço sentir vergonha."
+				""
+				"   Este é o seu limiar:"
+				"   Da rotação para o fogo."
+				"   Do Create inocente para a alquimia pesada."
+				""
+				"— &o&7O botão direito no blaze. Isso. O que pode dar errado? Além do óbvio.&r&r"
+			]
+			id: "3C8B4742E0008284"
+			shape: "gear"
+			size: 1.1d
+			tasks: [
+				{
+					id: "5D8286884D9A2E16"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "681CB2167DA9B4ED"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "&lAquecer é o Novo Girar"
+			x: 3.3000000000000003d
+			y: -1.1d
+		}
+		{
+			dependencies: ["3C8B4742E0008284"]
+			description: [
+				"   O Brass não é uma liga qualquer. Ele é sensível. Sentimental. Não aceita qualquer calor. Não se mistura em qualquer fornalha. Ele exige a temperatura de um Blaze vivo — não um substituto, não um forno a carvão. Um Blaze que você capturou, irritou, prendeu… e agora queima por você."
+				""
+				"   Para formar um Brass Ingot, você deve colocar Copper Ingot e Zinc Ingot num Mechanical Mixer com um Blaze Burner ativo logo abaixo."
+				"Misture com carinho. Ele gosta de atenção."
+				""
+				"   Esse processo é mais que metalurgia — é alquimia emocional."
+				"E quando finalmente formar seu primeiro lingote dourado, algo muda."
+				"Você cruzou a fronteira do Create. Não há mais volta."
+				""
+				"— &o&7Brass não é apenas cobre + zinco. É drama fundido com fogo cativo. Você vai entender quando ele começar a exigir casing.&r&r"
+			]
+			id: "11D7B1868C95CDE6"
+			tasks: [{
+				id: "7FD41CA6C0D29AA0"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "O coração da mente?"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0EC1760A6B2B0CB6"]
+			description: [
+				"   O Electron Tube é o primeiro componente que parece... elétrico. Não gira, não carrega. Ele pensa. E sem ele, o Create nunca sairia da infância analógica. Você vai usá-lo para fazer braços robóticos, sensores, craftadores mecânicos, detectores de conteúdo e... bem, o caos sob controle."
+				""
+				"   Para fabricá-lo, você vai precisar do seu velho conhecido Rose Quartz e algumas ligas que já conhece. Seus olhos vão brilhar. O tubo também."
+				""
+				"— &o&7Você sabe que a tecnologia avançou quando até os parafusos têm autoestima.&r&r"
+			]
+			id: "48D3A3797AE759A7"
+			tasks: [{
+				id: "306CDF2804708CD2"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "Um Tubo Com Ideias"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11D7B1868C95CDE6"]
+			description: [
+				"   O que era um funil, agora pensa."
+				""
+				"   Com o Smart Funnel e o Smart Chute, o transporte ganha cérebro. Você pode filtrar, condicionar, priorizar."
+				""
+				"   Controle o que entra e sai com tags, redstone, sinais de esperança. Comece a montar sistemas logísticos que não apenas funcionam, mas funcionam com propósito."
+				""
+				"— &o&7Esse chute recusa terra. Exijo o mesmo do meu cérebro.&r&r"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1A0FB10EFA0CC345"
+			tasks: [{
+				id: "2320843659131F68"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			title: "A Consciência da Funilagem"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11D7B1868C95CDE6"]
+			description: [
+				"   Antes, tudo girava na mesma velocidade — rápido demais, ou lento demais, ou quebrando as engrenagens por pura birra."
+				""
+				"   Agora, você controla a rotação como um maestro da física aplicada. Rotation Speed Controller define a exata RPM do seu sistema. Adjustable Gearshift permite trocar de marcha com redstone. Com esses dois, sua fábrica finalmente aprende a andar... e frear."
+				""
+				"— &o&7A diferença entre uma turbina e um liquidificador? Três blocos de brass e um pouco de bom senso.&r&r"
+			]
+			id: "4DC86BFC3EA99D1F"
+			tasks: [{
+				id: "3CB87C5836BDB48C"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			title: "Velocidade controlada é luxo"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11D7B1868C95CDE6"]
+			description: [
+				"   Você ligava máquinas com fios? Patético. Agora, você liga sistemas inteiros sem toque, sem conexão física, sem dó."
+				""
+				"   Redstone Link é como telepatia — dois blocos sincronizados por um item qualquer, enviando sinais à distância. Quer acionar uma fábrica escondida atrás da montanha? Um alçapão secreto do outro lado do mapa? Agora você pode."
+				""
+				"E tudo o que você precisa é... de dois blocos que se reconheçam pelo cheiro."
+				""
+				"— &o&7Eu uso Redstone Link pra chamar o elevador. Uma alavanca é tão século XIX.&r&r"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1504E4138B818433"
+			tasks: [{
+				id: "6B173BF081C9A2FA"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			title: "O Segredo Está no Ar"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"11D7B1868C95CDE6"
+				"48D3A3797AE759A7"
+			]
+			description: [
+				"   O mundo é feito de formas. O que muda é como você as enxerga... e como você as monta. O Mechanical Crafter é a mesa de trabalho que parou de esperar você clicar — agora ela mesma entende o formato do que está tentando criar. Você conecta blocos, define direções, e assiste as peças se encaixarem como se tivessem memória."
+				""
+				"   Esse sistema permite montar componentes que exigem posicionamento — engrenagens de precisão, circuitos, estruturas avançadas e tudo aquilo que um simples funil jamais entenderia."
+				"Mas mais do que função, ele carrega intenção: cada receita feita aqui é um lembrete de que forma importa. E que mesmo em um mundo cúbico, geometria ainda é arte."
+				""
+				"— &o&7Fiz um crafter automático e ele montou uma estrela de cinco pontas. Não sei se isso é eficiência... ou um sinal.&r&r"
+			]
+			id: "7C1F6A35AF3BA808"
+			tasks: [{
+				id: "482E266FE3B72391"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: " A Forma Tem Poder"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["465013195CB95147"]
+			description: [
+				"   Há momentos em que um mod muda sua base. Mas há momentos mais raros em que uma mecânica muda o mod inteiro. O Sequenced Assembly é exatamente isso. Ele não é só uma alternativa. É a fundação de uma nova forma de pensar. Ao usar correias, braços e uma linha de montagem lógica, você ensina as máquinas a repetirem ideias, não apenas ações."
+				""
+				"   Este sistema não pertence apenas ao Create. Ele transcende o mod. A partir daqui, itens de outros mods — ou até mesmo de origens que desafiam a lógica — vão exigir montagem modular. Você vai ver deployers criando componentes mágicos, crafters conectando partes químicas, engrenagens que só ganham forma após uma dança de etapas. Porque nesse mundo, automatizar não é mais repetir cliques. É coreografar propósito."
+				""
+				"   Toda vez que você montar uma sequência, estará dizendo ao mundo: \"isso tem um jeito certo de ser feito\". E mais importante: estará criando uma estrutura que pode — e vai — crescer com você. Quando a sequência se torna padrão, o modpack muda. A complexidade cresce. Mas a beleza... também."
+				""
+				"— &o&7A primeira vez que usei isso foi pra fazer um tubo. Agora estou construindo um deus. Um passo por vez.&r&r"
+			]
+			id: "4007E353BE3EF6F1"
+			tasks: [{
+				id: "1EF13643ED5ADA2B"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4007E353BE3EF6F1"]
+			description: [
+				"   Tudo gira. Desde o primeiro eixo até o mais complexo dos sistemas, a rotação foi o seu idioma. Você falou com o mundo através de engrenagens, esteiras, braços e ritmo. Mas há um ponto onde o giro desacelera — não por falha, mas porque o que precisava ser montado, enfim, foi."
+				""
+				"   O &d&lEntropic Drive&r&r é a condensação de tudo o que você aprendeu com o Create. Uma sequência precisa. Um núcleo de latão. Mecanismos que se repetem com intenção. Energia latente canalizada através de tubo, olho e vazio. Ele não gira. Ele pulsa. E quando ele pulsa... o mundo escuta."
+				""
+				"   Esse artefato é a chave. Ele não abre uma porta — ele permite que você construa a próxima. Com ele, você alcança o que as engrenagens não tocam: o pulso elétrico, a lógica dimensional, o IO além da matéria."
+				"Não se engane: você não está abandonando a máquina."
+				"Você está dando a ela uma nova forma."
+				""
+				"   E ainda assim... algo permanece. Um olho de latão, fixado no centro do motor que não se move. Ele não observa, ele encara."
+				"Dizem que quando você olha tempo demais para o abismo, ele olha de volta."
+				"Neste caso, é literal."
+				"O Entropic Drive vê você."
+				""
+				"— &o&7Quando tudo o que gira finalmente para, o que resta é aquilo que continua mesmo sem movimento. E é isso que conduz o Ender IO.&r&r"
+			]
+			id: "1AC4899640C73919"
+			size: 1.5d
+			tasks: [{
+				id: "32C5CB65F14BC375"
+				item: "kubejs:entropic_drive"
+				type: "item"
+			}]
+			title: "O Silêncio do Último giro"
+			x: 9.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"673611D238FF2FD1"
+				"4007E353BE3EF6F1"
+			]
+			description: [
+				"   Você percorreu o caminho das engrenagens. Moldou ligas, controlou rotação, ajustou pressões. Mas agora é hora de parar. Não porque falhou — mas porque tudo o que era fluido e adaptável precisa se fixar. A engenharia pede estrutura. E o que gira deve, cedo ou tarde, se firmar."
+				""
+				"   O &l&6Forged Assembly&r&r é a materialização dessa transição: um núcleo criado não para mudar, mas para suportar. Ele não canaliza energia oculta. Ele suporta calor real, pressão contínua e a lógica repetitiva das máquinas práticas. Ele é o que permite a fundação térmica de um novo tipo de avanço."
+				""
+				"   Com ele, você deixa de girar engrenagens."
+				"Você começa a controlar o calor que as alimenta."
+				""
+				"   Este é o começo do Thermal Expansion — um capítulo que não brilha, mas ferve."
+				""
+				"— &o&7Alguns mundos são movidos a propósito. Outros, a vapor. Este... é forjado em repetição.&r&r"
+			]
+			id: "21D37F976576C885"
+			size: 1.5d
+			tasks: [{
+				id: "314235E2A430BB07"
+				item: "kubejs:forged_assembly"
+				type: "item"
+			}]
+			title: "O Núcleo Que Aguenta o Calor"
+			x: 5.5d
+			y: -6.5d
+		}
+		{
+			description: [
+				"   Quando os antigos falavam em plantar e colher, não imaginavam que o solo em si poderia decidir se mover. Com um Mechanical Bearing, um pouco de Glue, e a dose certa de desrespeito às leis naturais, você pode fazer a própria terra girar."
+				""
+				"   Chassis colados em terra, rotação aplicada na base, e o campo ganha vida."
+				"Agora você não caminha entre as plantações."
+				"Elas passam por você."
+				""
+				"— &o&7Se a terra se mexe e a planta cresce, quem está realmente enraizado?&r&r"
+			]
+			id: "2904654A6CDCBAF8"
+			shape: "gear"
+			size: 1.1d
+			tasks: [{
+				id: "1A3669C6885EEAB2"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			title: "Terra que Anda"
+			x: -3.3000000000000003d
+			y: -1.1d
+		}
+		{
+			description: [
+				"   Nada de arar o solo com suor na testa. Hoje, é uma máquina com uma pá que decide o que cresce e quando. Posicione seus Deployers, equipe-os com enxadas e sementes, e observe: a agricultura entrou na era do aço."
+				""
+				"   O ritmo é mecânico. A lógica é fria. A plantação, precisa."
+				"Nada de intuição — só repetição."
+				""
+				"— &o&7Cultivar nunca foi tão... industrial.&r&r"
+			]
+			icon: "minecraft:wheat_seeds"
+			id: "43A0F10845723DF8"
+			tasks: [
+				{
+					id: "129A00239A933B43"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "60164F786FACB8DF"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"   Colher era um gesto de gratidão. Agora, é um braço metálico com uma lâmina. Configure Deployers com tesouras, foices ou até Harvesters para completar o ciclo."
+				"Do nascimento à colheita — o humano foi removido da equação."
+				""
+				"   Tudo isso para que o trigo entre em um baú e você nem precise olhar."
+				""
+				"— &o&7A colheita é automática. A fome, nem tanto.&r&r"
+			]
+			id: "3C805F01FCA2C984"
+			tasks: [{
+				id: "4BE1C944DDFED1F5"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			title: "O Ciclo do Gole"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			id: "720947A62F9D3D8A"
+			tasks: [
+				{
+					id: "6BDE62148E387006"
+					item: "create:chute"
+					type: "item"
+				}
+				{
+					id: "268D2BD9D6CABB2F"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			title: "Guardando pro inverno"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"   Nada nessa plantação é só alimento."
+				""
+				"   Folhas e sementes são matéria-prima energética."
+				"   "
+				"   E você, agricultor de precisão, agora está cultivando o que o futuro vai converter em combustível."
+				""
+				"   Mais adiante, no Mekanism, isso se chama Bio Fuel."
+				"Por enquanto, só saiba: essa fazenda vai queimar bem."
+				""
+				"— &o&7Tudo começa com uma folha. Até o ácido.&r&r"
+			]
+			id: "64818C8CE74F770C"
+			tasks: [{
+				id: "0CB4519F41FE18A7"
+				title: "A Semente do Ácido"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"48D3A3797AE759A7"
+				"11D7B1868C95CDE6"
+			]
+			description: [
+				"   Entre todas as engrenagens, plataformas giratórias e eixos barulhentos, existe um braço que age com delicadeza. O Mechanical Arm não gira o mundo, ele o organiza."
+				"   Ele observa, calcula e decide para onde cada item vai."
+				""
+				"   Com filtros inteligentes e caminhos definidos, ele é o que impede que trigo vire caos, carvão vire gargalo, e que sua base pareça uma fazenda feita por um polvo bêbado."
+				""
+				"   Posicione entradas e saídas, defina as regras, e o braço fará o resto."
+				"   Com precisão. Sem pressa."
+				"   Com uma arrogância quase educada."
+				""
+				"— &o&7Nem toda força está na rotação. Às vezes, está em saber para onde cada coisa deve ir.&r&r"
+			]
+			id: "4242DD5606BE354E"
+			tasks: [{
+				id: "29BCB5419AF3C9A7"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			title: "Lave um mamão"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C8B4742E0008284"]
+			description: [
+				"   Você já domou a chama. Agora, é hora de fazer com que ela produza algo útil. No Create, calor pode virar rotação — desde que você tenha o sistema certo."
+				""
+				"   Para montar um gerador a vapor funcional, você vai precisar de um Blaze Burner ativo (com um blaze aprisionado, como manda o manual da crueldade técnica), um Tank do Create posicionado logo acima dele, e uma entrada de água sendo injetada nesse tanque. A injeção de água deve ser feita por um Fluid Pipe, com uma fonte estável como tanque ou bomba. Nada de jogar balde manualmente — a automação agradece."
+				""
+				"   O ponto mais importante: assim que você conecta uma Steam Engine ou um Steam Whistle a esse tanque aquecido, ele é reconhecido automaticamente como uma boiler. Não há estrutura multi-bloco, nem ritual místico: o simples ato de conectar é suficiente para ativar o sistema."
+				""
+				"   A quantidade de rotação gerada depende da temperatura. Um Blaze Burner comum gera uma boa pressão, mas se você alimentá-lo com combustíveis avançados (como blaze cake), ele entra em estado superaquecido e a eficiência aumenta consideravelmente."
+				""
+				"   Mas aqui vai o alerta técnico: boilers no Create são bonitos, potentes... e um pesadelo para o TPS se usados sem critério. Eles recalculam stress, calor e rotação constantemente, o que pode engasgar servidores — especialmente se estiverem ligados o tempo todo."
+				""
+				"   Use esse sistema como um ritual de força: potente, breve, intencional. Não como uma fazenda de engrenagens perpétuas."
+				""
+				"— &o&7O silêncio entre o borbulhar e o colapso é mais curto do que parece. E o lag, mais próximo do que você imagina.&r&r"
+			]
+			id: "586E5CF965DD1845"
+			tasks: [
+				{
+					count: 4L
+					id: "2D0B07AEC5E313C8"
+					item: { Count: 4, id: "create:fluid_tank" }
+					type: "item"
+				}
+				{
+					id: "6FDBCE6D39DD3D04"
+					item: "create:steam_whistle"
+					type: "item"
+				}
+			]
+			title: "Quando a Água Ferve"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["586E5CF965DD1845"]
+			description: [
+				"   Ao contrário da caldeira, o Spout não explode."
+				"   Ele sussurra. Ele pinga."
+				"   A precisão com que ele aplica líquidos é digna de alquimia ou culinária extrema."
+				""
+				"   Configure um Spout para aplicar fluidos sobre itens ou blocos:"
+				"seja mel em bolo, lava em slime, ou simplesmente água sobre um sandpaper."
+				"   Não importa o fluido — importa que ele vá para o lugar certo, na dose certa."
+				""
+				"— &o&7Engrenagens forçam. O Spout negocia.&r&r"
+			]
+			id: "497E333A1E8722A5"
+			tasks: [{
+				id: "5E6C1C73A050B403"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["586E5CF965DD1845"]
+			id: "0F74FB5CD529299C"
+			tasks: [{
+				id: "0094DB0B914CE7F1"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			title: "Por Onde Escorre"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7C1F6A35AF3BA808"]
+			description: [
+				"   Duas rodas colossais, girando em sentidos opostos, esmagando tudo que ousa atravessar entre elas. Se a Engenharia Industrial do Immersive é sobre potência bruta, o Create traz poesia mecânica: velocidade, torque, rotação precisa. O Crushing Wheel é elegante no caos — moendo pedras, alimentos, almas (se você deixar algo orgânico cair lá)."
+				""
+				"   Além disso, ele é essencial para transformar matérias-primas em formas mais úteis. E quando conectado com funis, filtros ou belts inteligentes, torna-se uma peça vital na sua cadeia automatizada."
+				""
+				"— &o&7Se você ouvir um crack estranho, talvez fosse seu pé.&r"
+			]
+			id: "4F62549360D185F1"
+			tasks: [{
+				id: "75CF225E8BC3AB94"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Moagem Filosofal"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"61A973C8B8739001"
+				"497E333A1E8722A5"
+			]
+			description: [
+				"   O calor comum é insuficiente para moldar certos materiais. Alguns processos exigem mais — uma fúria ardente, uma combustão viva. O Blaze Burner pode até se contentar com alguns carvões, mas se você quiser ver algo realmente ferver, precisará alimentá-lo com aquilo que ele mesmo teme: um Blaze Cake."
+				""
+				"   Feito com açúcar, lava, combustíveis e um toque de imprudência, este é o alimento que transforma uma fornalha comum em um forno dos deuses. E é ele quem ativa a superheated forge capaz de derreter o impossível."
+				""
+				"— &o&7Dê bolo a uma criatura feita de fogo. O que poderia dar errado?&r"
+			]
+			id: "41B7C35997BE51CB"
+			tasks: [{
+				id: "704CD6A0EF3A4CE4"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			title: "Bolo do Inferno"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["41B7C35997BE51CB"]
+			description: [
+				"   A alquimia começa com o pó: um composto instável de lápis, diamante e calor elemental. O Empowered Blaze Powder carrega em si uma centelha primitiva — meio mágica, meio explosiva. Junte-o ao ferro e ao fogo, e surgirá o &b&lEmpowered Blazing Steel&r&r: uma liga vibrante, quente, pulsante."
+				""
+				"   Mas atenção. Essa energia não é eterna. Ela vive durante uma janela curta de tempo. Uma vez que misture ou aqueça demais, ela abandona a memória do Blaze... e derrete em um metal sem identidade: o &0&l&oMelted Blaze Metal.&r&r&r"
+				""
+				"   Essa linha de produção, apesar de caótica, será absolutamente crucial no futuro. Vários dos materiais mais avançados partem exatamente desse ciclo incandescente. Melhor ir se acostumando com ele — vocês vão passar bastante tempo juntos. Por enquanto o resultado da sua falta de atenção, por acaso, é justamente do que precisa. Mas não irá demorar para que uma liga de transição seja necessária, e, sua atenção, também."
+				""
+				"— &o&7Se você ainda não deu nome pro seu Mixer, talvez seja hora. Relacionamentos longos exigem intimidade.&r"
+			]
+			icon: "kubejs:empowered_blazing_steel"
+			id: "3A8272171D92E40F"
+			tasks: [
+				{
+					id: "692D4FFEB9B02398"
+					item: "kubejs:empowered_blaze_powder"
+					type: "item"
+				}
+				{
+					id: "455C0ECF7281E962"
+					item: "kubejs:empowered_blazing_steel"
+					type: "item"
+				}
+				{
+					id: "7E7260097A6F78D4"
+					item: "kubejs:melted_blaze_metal_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "As Chamas Aprisionadas"
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3A8272171D92E40F"
+				"662FA29C4130FE53"
+			]
+			description: [
+				"   Pegue o metal fundido. Pegue a estrutura firme. Una-os sob uma sequência precisa: calor, fluxo, compressão e, por fim, o choque da água. O resultado? O Blazebound Steel — um lingote pesado, firme, ainda pulsante no centro."
+				""
+				"   Essa liga representa o controle absoluto da instabilidade. O ápice de uma jornada que começou com pó de Blaze e terminou com um núcleo incandescente envolto em aço."
+				""
+				"   Ele é o metal que lembra. O aço que carrega a cicatriz do fogo, mas que não se deixou consumir por ele."
+				""
+				"— &o&7E quando o calor cessou, ele não era mais chama. Era vontade.&r"
+			]
+			id: "673611D238FF2FD1"
+			tasks: [{
+				id: "73572C194A0FDDAA"
+				item: "kubejs:blazebound_steel"
+				type: "item"
+			}]
+			title: "Aço de Sangue e Fogo"
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F62549360D185F1"]
+			id: "662FA29C4130FE53"
+			tasks: [{
+				id: "1C145FB5505C4224"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+	]
+	title: "3. Faz Girar, Faz Viver"
+}

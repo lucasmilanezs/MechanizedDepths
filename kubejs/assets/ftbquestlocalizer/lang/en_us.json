@@ -1,0 +1,17 @@
+{
+  "ftbquests.chapter.psiu_me_leia.quest1.description1": "Eu estava esperando por você! Na verdade, é mentira, não faço a menor ideia de quem seja ou como encontrou esse livro, mas se o fez, é um bom sinal! Sei que soa contraditório, mas se ainda está lendo isso provavelmente está perdido.",
+  "ftbquests.chapter.psiu_me_leia.quest1.description2": "Se esse livro caiu em suas mãos, significa que algo deu muito certo ou muito errado — difícil te dizer com certeza —, mas também significa que você está pronto para lembrar de coisas que não sabia que sabia.",
+  "ftbquests.chapter.psiu_me_leia.quest1.description3": "Se for esse o caso e tive a sorte imensa de pelo menos isso acertar sobre você, que tal começarmos do básico? **Sobreviver**",
+  "ftbquests.chapter.psiu_me_leia.quest1.task_6363087729449274880.title": "{quest.confuso.title}",
+  "ftbquests.chapter.psiu_me_leia.quest1.title": "Eu conheço você",
+  "ftbquests.chapter.psiu_me_leia.quest2.description1": "pinto murcho e saco de macho",
+  "ftbquests.chapter.psiu_me_leia.quest2.title": "so no portugues deve aparecer",
+  "ftbquests.chapter.psiu_me_leia.quest3.description1": "{quest.{questconfusotitle}.full}",
+  "ftbquests.chapter.psiu_me_leia.quest3.title": "{quest.engenharia_do_ego.title}",
+  "ftbquests.chapter.psiu_me_leia.quest4.description1": "{quest.{questconfusotitle}.full}",
+  "ftbquests.chapter.psiu_me_leia.quest4.title": "{quest.forma_e_proposito.title}",
+  "ftbquests.chapter.psiu_me_leia.quest5.description1": "{quest.{questconfusotitle}.full}",
+  "ftbquests.chapter.psiu_me_leia.quest5.title": "{quest.sussuros_nas_folhas.title}",
+  "ftbquests.chapter.psiu_me_leia.title": "Psiu. Me leia.",
+  "ftbquests.chapter_groups_1025606085631995617.title": "A Máquina Sonha em Madeira"
+}

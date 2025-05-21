@@ -1,0 +1,143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "psiu_me_leia"
+	group: "0E3BAF4D0D92EEE1"
+	hide_quest_details_until_startable: true
+	icon: "minecraft:writable_book"
+	id: "5D08892A7CBE45DB"
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.psiu_me_leia.quest1.description1}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest1.description2}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest1.description3}"
+			]
+			icon: "minecraft:recovery_compass"
+			id: "558AD48F5D4237AC"
+			shape: "netheritetier"
+			size: 1.0d
+			tasks: [{
+				id: "584E3A93AC788E00"
+				title: "{ftbquests.chapter.psiu_me_leia.quest1.task_6363087729449274880.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.psiu_me_leia.quest1.title}"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["558AD48F5D4237AC"]
+			description: ["{ftbquests.chapter.psiu_me_leia.quest2.description1}"]
+			id: "565979255D303596"
+			tasks: [
+				{
+					id: "60B7C2398423B628"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "724F9153947F879D"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.psiu_me_leia.quest2.title}"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["565979255D303596"]
+			description: ["{ftbquests.chapter.psiu_me_leia.quest3.description1}"]
+			hide_dependency_lines: false
+			id: "64F2B2761FBEB6BD"
+			tasks: [{
+				id: "5F16EA4B7F193C7D"
+				item: "silentgear:pickaxe_blueprint"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.psiu_me_leia.quest3.title}"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64F2B2761FBEB6BD"]
+			description: ["{ftbquests.chapter.psiu_me_leia.quest4.description1}"]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "708E4BE08506636D"
+			tasks: [
+				{
+					id: "55D238B98F9B4A31"
+					item: {
+						Count: 1
+						id: "silentgear:pickaxe_head"
+						tag: {
+							CraftedCount: 1
+							Damage: 0
+							Materials: [{
+								Count: 3b
+								ID: "silentgear:stone"
+								Item: {
+									Count: 1b
+									id: "minecraft:cobblestone"
+								}
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63B649C6271E04F3"
+					item: "minecraft:stick"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.psiu_me_leia.quest4.title}"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["708E4BE08506636D"]
+			description: ["{ftbquests.chapter.psiu_me_leia.quest5.description1}"]
+			id: "213824CA4D01C95B"
+			rewards: [
+				{
+					id: "22682D5185178440"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "5235D89641E5A210"
+					item: "minecraft:big_dripleaf"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "756856082466BF2C"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "naturesaura:book"
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.psiu_me_leia.quest5.title}"
+			x: -5.0d
+			y: -0.5d
+		}
+	]
+	title: "{ftbquests.chapter.psiu_me_leia.title}"
+}

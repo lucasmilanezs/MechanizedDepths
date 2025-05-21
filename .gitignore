@@ -1,0 +1,59 @@
+# =======================
+# Minecraft Modpack GitIgnore
+# =======================
+
+# Evita arquivos locais, caches e lixo
+*.log
+*.log.gz
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Pasta do Minecraft local (evita mundos, configs de jogador, crash logs)
+saves/
+logs/
+crash-reports/
+journeymap/
+config/voicechat/
+options.txt
+servers.dat
+usercache.json
+session.lock
+
+# Arquivos de mod loaders específicos
+.minecraft/
+mods-client/
+launcher_profiles.json
+natives/
+runtime/
+versions/
+libraries/
+resourcepacks/
+shaderpacks/
+
+# Arquivos de perfil gerados pelo CurseForge/Prism/ATLauncher
+instance.lock
+instance.cfg
+packwiz.lock.toml
+
+# Arquivos do CurseForge que não precisam ir pro Git
+modlist.html
+manifest.json
+overrides/
+
+# Evita conflitos com GitHub Actions (se usar)
+node_modules/
+dist/
+out/
+
+# Cache de IDEs
+.idea/
+.vscode/
+.gradle/
+build/
+
+# Backup temporário ou pasta de export
+export/

@@ -1,0 +1,143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "psiu_me_leia"
+	group: "0E3BAF4D0D92EEE1"
+	hide_quest_details_until_startable: true
+	icon: "minecraft:writable_book"
+	id: "5D08892A7CBE45DB"
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Eu estava esperando por você! Na verdade, é mentira, não faço a menor ideia de quem seja ou como encontrou esse livro, mas se o fez, é um bom sinal! Sei que soa contraditório, mas se ainda está lendo isso provavelmente está perdido."
+				""
+				"Se esse livro caiu em suas mãos, significa que algo deu muito certo ou muito errado — difícil te dizer com certeza —, mas também significa que você está pronto para lembrar de coisas que não sabia que sabia."
+				""
+				"Se for esse o caso e tive a sorte imensa de pelo menos isso acertar sobre você, que tal começarmos do básico? **Sobreviver**"
+			]
+			icon: "minecraft:recovery_compass"
+			id: "558AD48F5D4237AC"
+			shape: "netheritetier"
+			size: 1.0d
+			tasks: [{
+				id: "584E3A93AC788E00"
+				title: "{quest.confuso.title}"
+				type: "checkmark"
+			}]
+			title: "Eu conheço você"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["558AD48F5D4237AC"]
+			description: ["pinto murcho e saco de macho"]
+			id: "565979255D303596"
+			tasks: [
+				{
+					id: "60B7C2398423B628"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "724F9153947F879D"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "{quest.soco_na_arvore.title}"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["565979255D303596"]
+			description: ["{quest.{questconfusotitle}.full}"]
+			hide_dependency_lines: false
+			id: "64F2B2761FBEB6BD"
+			tasks: [{
+				id: "5F16EA4B7F193C7D"
+				item: "silentgear:pickaxe_blueprint"
+				type: "item"
+			}]
+			title: "{quest.engenharia_do_ego.title}"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64F2B2761FBEB6BD"]
+			description: ["{quest.{questconfusotitle}.full}"]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "708E4BE08506636D"
+			tasks: [
+				{
+					id: "55D238B98F9B4A31"
+					item: {
+						Count: 1
+						id: "silentgear:pickaxe_head"
+						tag: {
+							CraftedCount: 1
+							Damage: 0
+							Materials: [{
+								Count: 3b
+								ID: "silentgear:stone"
+								Item: {
+									Count: 1b
+									id: "minecraft:cobblestone"
+								}
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63B649C6271E04F3"
+					item: "minecraft:stick"
+					type: "item"
+				}
+			]
+			title: "{quest.forma_e_proposito.title}"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["708E4BE08506636D"]
+			description: ["{quest.{questconfusotitle}.full}"]
+			id: "213824CA4D01C95B"
+			rewards: [
+				{
+					id: "22682D5185178440"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "5235D89641E5A210"
+					item: "minecraft:big_dripleaf"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "756856082466BF2C"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "naturesaura:book"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quest.sussuros_nas_folhas.title}"
+			x: -5.0d
+			y: -0.5d
+		}
+	]
+	title: "Psiu. Me leia."
+}
