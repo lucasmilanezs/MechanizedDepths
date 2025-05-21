@@ -57,3 +57,35 @@ build/
 
 # Backup temporário ou pasta de export
 export/
+# Ignorar mods e bibliotecas locais
+mods/
+.profileImage/
+screenshots/
+
+# Arquivos e pastas gerados por clientes e launchers
+.curseclient
+.minecraft/
+.local/
+*.log
+*.lck
+
+# Configurações locais da instância do CurseForge/MultiMC/etc
+minecraftinstance.json
+usernamecache.json
+rhino.local.properties
+patchouli_data.json
+
+# Arquivos temporários e caches
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de IDEs (VSCode, IntelliJ etc)
+.vscode/
+.idea/
+*.iml
+
+# Ignorar dependências empacotadas por engano
+node_modules/
