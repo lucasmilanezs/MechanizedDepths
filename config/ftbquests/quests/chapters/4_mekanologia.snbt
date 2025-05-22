@@ -1,0 +1,783 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "4_mekanologia"
+	group: "48009A32F221D9FC"
+	hide_quest_details_until_startable: true
+	icon: "mekanism:basic_energy_cube"
+	id: "7ECEDBF9DFAD1B11"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"   Aço. Vidro. Tubos herméticos. Redstone. Nada disso importa."
+				"O que você está segurando nas mãos não é uma caixa — é a negação do caos."
+				""
+				"   A Steel Casing é o divisor de eras. Não há fumaça, não há alavancas rangendo."
+				"Apenas luz fria, interfaces impassíveis e a sensação desconfortável de que"
+				"alguém pensou demais em como isso deveria funcionar."
+				""
+				"   O Precision Matrix embutido em seu coração é um insulto direto à rusticidade do Immersive Engineering — cada linha de solda nele parece perguntar:"
+				"“Era isso mesmo que você achava que era tecnologia?”"
+				""
+				"   A partir daqui, não se trata mais de operar máquinas. Você vai orquestrar protocolos."
+				"Os gases virão. As câmaras serão pressurizadas. A temperatura será uma variável,"
+				"não uma consequência. "
+				""
+				"   Se estava esperando o futuro… bem, ele começou quando você apertou esse bloco no chão."
+				""
+				"   Mas mesmo que isso soe incrível, mekanism é uma tecnologia extensa e que deve ser dissecada em partes. Que tal começarmos do básico?"
+				""
+				"&7&o— Parabéns, você criou uma caixa. Mas uma caixa que olha de volta.&r&r"
+			]
+			id: "5349659FDCBDFA9F"
+			shape: "netheritetier"
+			size: 1.5d
+			tasks: [{
+				id: "14FDC028D46D2F24"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"   O Metallurgic Infuser marca o fim da metalurgia como você conhecia. Ele não aquece nem funde — ele convence. Redstone, carvão, diamante… cada substância oferece mais do que seu peso. Elas oferecem significado. O metal deixa de ser um recurso e passa a ser um veículo para ideias."
+				""
+				"   Essa máquina não fabrica ligas, ela cria componentes com memória, peças que carregam intenções codificadas. É o nascimento da eficiência programada, da matéria obediente. A partir daqui, seus circuitos não serão apenas técnicos — serão ideológicos."
+				""
+				"&7&o— Um infusor é uma espécie de filósofo industrial. Só que ele aceita carvão como argumento.&r&r"
+			]
+			id: "1D6A06602BA0DBBF"
+			tasks: [{
+				id: "01D1C69E41A976A5"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "Injetando Dependências"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"   Você criou seu primeiro circuito. Simples, obediente, quase inocente. Uma pequena placa que sabe ligar e desligar, mas não entende o motivo. E talvez isso seja o melhor. A ignorância funcional é o que mantém qualquer sistema fluindo sem perguntas incômodas."
+				""
+				"&7&o— Em termos computacionais, é um estagiário. Barato, incansável e substituível.&r&r"
+			]
+			id: "31CA32EACAEC3103"
+			tasks: [{
+				id: "3DD92A33498F9665"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "Núcleo de Comando"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"   Um pouco de Infused Alloy e a placa já começa a achar que tem personalidade. Ela reconhece padrões, antecipa comandos e até otimiza fluxos — dentro dos limites do que você programou, é claro. No fundo, ela só quer agradar. E funcionar."
+				""
+				"&7&o— Ainda obedece. Mas às vezes pergunta \"por quê?\" em silêncio.&r&r"
+			]
+			id: "64A74170F9CFB70A"
+			tasks: [{
+				id: "01C96F87C7C6FC02"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			title: "Lógica Intermediária"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"   Todo império começa com uma base sólida, mas o seu será construído com algo mais flexível: obediência metálica. A Infused Alloy é seu primeiro experimento bem-sucedido em submissão material. Um pedaço de ferro, convencido por redstone de que nasceu para algo maior. Não é mais uma liga — é um protocolo condensado."
+				""
+				"&7&o— Ligas que obedecem são muito mais úteis que soldados que pensam.&r&r"
+			]
+			id: "63B543C796CB2FDA"
+			tasks: [{
+				id: "5484ECC921A051EB"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			title: "Ligas de obediência"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"   Se a Infused era promessa, a Reinforced Alloy é execução. Através do diamante, você ensinou o metal a suportar pressões além do bom senso. Agora ele se lembra de sua estrutura mesmo quando desmontado, e obedece comandos que ainda não foram dados. Isso não é reforço — é disciplina."
+				""
+				"&7&o— Quanto mais precioso o insumo, mais caro o erro. Boa sorte.&r&r"
+			]
+			id: "3045D408E1816740"
+			tasks: [{
+				id: "60F5B1B28F1C56F9"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			title: "Ligas de eficiência"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"   Aqui você para de brincar. A Atomic Alloy é o momento em que o metal deixa de ser suporte e vira plano. Criada com uma vontade sobreposta — um vestígio de um diamante que não queria morrer — ela responde apenas a comandos absolutos. Se você precisava de uma peça definitiva, acabou de construir seu dogma."
+				""
+				"&7&o— Chamá-la de \"liga\" é ofensivo. Ela prefere “entidade técnica”.&r&r"
+			]
+			id: "7A2AE2FCE261223A"
+			tasks: [{
+				id: "50B39986548875E4"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			title: "Ligas de ambição"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"   Aqui as placas já acham que são centrais de comando. Têm um ego elétrico, fazem exigências absurdas de materiais e se recusam a operar fora de infraestrutura adequada. Mas produzem resultados. Uma Elite Circuit não quer só existir — quer mandar."
+				""
+				"&7&o— Custa caro, reclama muito, mas entrega. Basicamente um gerente técnico.&r&r"
+			]
+			id: "2DC3EA0884C7E043"
+			tasks: [{
+				id: "76E21E8D1CC76C8E"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			title: "Núcleo Estratégico"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"   Nada mais é suficiente. Nem ferro, nem redstone, nem suas desculpas. A Ultimate Circuit quer alloys de última geração, combinações imorais de eficiência e recursos que você jurou guardar para momentos especiais. Ela aceita tudo. Menos ser ignorada."
+				""
+				"&7&o— Parabéns, você criou um circuito mais exigente que seu PC.&r&r"
+			]
+			id: "027EC1E7EE94FEF4"
+			tasks: [{
+				id: "4A3F63C5FBA632AD"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			title: "Arquitetura Suprema"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"   Durante muito tempo, duplicar minérios foi um exercício de espaço, ruído e paciência. Plataformas tremendo, martelos batendo, engrenagens gritando em agonia industrial. Era bonito, de um jeito arcaico. E então, surgiu isso."
+				""
+				"   A Enrichment Chamber é tudo o que o velho Crusher do Immersive não é: compacta, silenciosa, escalável. Enquanto aquele mamute mecânico demandava pátios inteiros e manutenção constante, esta câmara faz o mesmo trabalho — melhor — ocupando o espaço de uma porta."
+				""
+				"   É uma ruptura elegante com o passado, mas difícil de ignorar. Porque, convenhamos, o velho Crusher tinha personalidade. E claro, não se esqueça que ela também faz seus minérios renderem mais na metalurgia. Situação ganha ganha."
+				""
+				"&7&o— Ele ainda está lá fora, parado... enorme... inútil... mas bonito, não é?&r&r"
+			]
+			id: "019813C5735449BB"
+			tasks: [{
+				id: "2005F0723CA33E5C"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			title: "Duplicação elegante"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"   Você já fundiu, aqueceu, quebrou e reconstituíu ligas até onde suas máquinas permitiam. Mas o Osmium Compressor faz algo diferente: ele aplica pressão com propósito."
+				"Aqui, o osmium não é só combustível — é catalisador. É assinatura."
+				""
+				"   Cada barra produzida carrega o peso de um recurso que não aceita ser reduzido a mera porcentagem. É uma máquina de custo alto, mas de promessas ainda mais caras. E ela cumpre."
+				""
+				"   E sim, se me perguntar, sempre vou dizer que toda máquina é diferente de todas as outras. É um jeito especial de fazê-las sentirem-se queridas. "
+				""
+				"&7&o— O segredo está na compressão. E na cara de pau de cobrar tanto por um único lingote.&r&r"
+			]
+			id: "60714ABDF9D43683"
+			tasks: [{
+				id: "031DB6ECC5E3C9C9"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "36B87B9AB9136B19"
+			tasks: [{
+				id: "31FDF2DB35D1D3D4"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "48483CCB1581FFD7"
+			tasks: [{
+				id: "3EFC9D2AC0E10742"
+				item: "mekanism:elite_energy_cube"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			id: "6C11A1FCDF2A16C7"
+			tasks: [{
+				id: "186A208B1691EC1C"
+				item: "mekanism:ultimate_energy_cube"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			id: "2CE00923CED67C01"
+			tasks: [{
+				id: "76BB6C2EF4006DFA"
+				item: "mekanism:advanced_energy_cube"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			id: "58F5A7FF52EDB971"
+			tasks: [{
+				id: "42B1EA2A0C6A8745"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			id: "68AA789CFB0AAFFF"
+			tasks: [{
+				id: "5646E492B0608CD8"
+				item: "mekanism:advanced_universal_cable"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			id: "44F726567106734B"
+			tasks: [{
+				id: "7DBD14A57E642298"
+				item: "mekanism:ultimate_universal_cable"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			id: "7F75B5A10F5ABF4A"
+			tasks: [{
+				id: "44B1D2C755EB3F96"
+				item: "mekanism:elite_universal_cable"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			id: "66F3746ED884653D"
+			tasks: [{
+				id: "44BB4A4BD06BBEF4"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			id: "7D008FFC53E0CD02"
+			tasks: [{
+				id: "7EF8AB9A4319B91E"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			id: "199A1B7D8009C537"
+			tasks: [{
+				id: "750DE352DE003F4A"
+				item: "mekanism:advanced_logistical_transporter"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			id: "1B9EB2EC3274017B"
+			tasks: [{
+				id: "6E13BBB49B5FBD03"
+				item: "mekanism:elite_logistical_transporter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			id: "3AF91CB9BF334FC3"
+			tasks: [{
+				id: "2D723E51A0BD171F"
+				item: "mekanism:ultimate_logistical_transporter"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			id: "2681AA90363DEDE1"
+			tasks: [{
+				id: "684FC71F43348907"
+				item: "mekanism:advanced_mechanical_pipe"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			id: "72126CEEE3C2FDF8"
+			tasks: [{
+				id: "29EEA8C5831C490D"
+				item: "mekanism:elite_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			id: "09F5B66903C853A7"
+			tasks: [{
+				id: "364B18B825BF6E96"
+				item: "mekanism:ultimate_mechanical_pipe"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"   Um metal que brilha. Até aí, nada novo. Mas este não brilha por combustão, nem por incandescência. Ele brilha porque foi convencido a fazê-lo — porque alguém o infundiu com propósito e osmium suficiente para se tornar útil."
+				""
+				"   O Refined Glowstone é sua porta de entrada para ligas que parecem mágicas, mas cobram como tecnologia militar. Ele flutua. Ele emite luz. Ele funciona. É difícil não respeitar algo assim, mesmo que sua primeira reação tenha sido \"isso é ouro com ego\"."
+				""
+				"&7&o— Glowstone refinada: para quem acha que o sol precisava de uma versão portátil e instável.&r&r"
+			]
+			id: "7ECA41DE215F4F9A"
+			tasks: [{
+				id: "23BC28722EF64ABF"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"   Você pensou em chamá-lo de Osgloglas. Admitimos: seria poético."
+				"Um aceno ao passado, àquela liga mítica do PlusTic, adorada por mineradores obsessivos e picaretas que cavavam mais rápido que a sanidade."
+				""
+				"   Mas este é outro material. Ele brilha diferente. Ele vibra."
+				"O Osgloglium é nossa versão — tóxica, radioativa, extremamente eficiente, e absurdamente difícil de justificar em projetos pequenos. Ele existe para quem já superou o medo de exagerar."
+				""
+				"   E cá entre nós, com esse nome... é claro que vai parar numa bigorna. Repetidamente."
+				""
+				"&7&o— Poderíamos ter chamado de Esgloglas, mas... não. Esse aqui tem personalidade própria. E radiação.&r&r"
+			]
+			id: "45A24742CEE97DB3"
+			tasks: [{
+				id: "5FA0412991AFF0B0"
+				item: "kubejs:osgloglium"
+				type: "item"
+			}]
+			title: "Osgloglium: o nome que quase foi"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "4AB100545F081744"
+			tasks: [{
+				id: "51ADC1E3DA6477C5"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			id: "70927E9BB7B641B1"
+			tasks: [{
+				id: "722861D5216550B4"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"   Não há pistões visíveis, nem engrenagens expostas. Nenhuma estrutura de três andares tremendo sob seu próprio peso."
+				"O Crusher do Mekanism faz tudo que seu antecessor fazia — só que sem parecer um experimento de engenharia pesada financiado por um império em decadência."
+				""
+				"   É limpo, eficiente, conectável. Em vez de honrar a tradição da brutalidade mecânica, ele simplesmente entrega resultados. Isso é o futuro. Mesmo que, no fundo, você ainda ouça o som dos martelos do velho Crusher batendo na sua memória."
+				""
+				"&7&o— Crescer é perceber que não precisa de 400 blocos de aço pra esmagar uma pedra. Mas não significa que não sinta falta deles.&r&r"
+			]
+			id: "30275E34EB213DB7"
+			tasks: [{
+				id: "1BE90DD7BA741571"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			title: "A máquina que venceu a força"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "11124FC23FF38E22"
+			tasks: [{
+				id: "1D1ADBE3AAEA6CC2"
+				item: "silentgear:paxel_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"   Você pegou três materiais com vontades próprias — quartzo bruto, obsidian refinada e a promissora Inductive Alloy — e os obrigou a colaborar. O resultado foi algo translúcido, resistente e condutivo. Um verdadeiro avanço… até onde avanços aguentam ser chamados assim."
+				""
+				"   O Refined Quartz surge como o sonho da integração perfeita: leveza, força e energia em equilíbrio. Mas logo você percebe que ele não brilha tanto quanto prometido. O Inductive Alloy, vendido como ápice da condução, aqui se mostra mais um ponto médio com bom marketing."
+				""
+				"   Ainda assim, o material tem valor. Ele serve. Ele responde. E, acima de tudo, ele sobrevive a sistemas que quebrariam qualquer outro composto. Isso já é mais do que a maioria pode dizer."
+				""
+				"&7&o— O problema de chamar algo de “ápice” é que sempre aparece alguém com um degrau a mais.&r&r"
+			]
+			id: "7E7E50A6C31FDC60"
+			tasks: [{
+				id: "4263941C666781CD"
+				item: "kubejs:refined_quartz"
+				type: "item"
+			}]
+			title: "Claridade Forçada"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"   Você já quebrou obsidian com picareta. Agora está prestes a usá-la como base para armamentos."
+				"   O Refined Obsidian não é apenas resistente — ele desafia o bom senso ao ser refinável."
+				"Nada com essa dureza deveria ser processado, e ainda assim, aqui está você, comprimindo rocha vulcânica como se fosse alumínio."
+				""
+				"   Esse material não quer ceder. E por isso mesmo, vale cada segundo de esforço."
+				""
+				"&7&o— A armadura definitiva começa onde termina a paciência do geólogo.&r&r"
+			]
+			id: "42DCD489D10C6084"
+			tasks: [{
+				id: "02527257741C3F3D"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			title: "Obsessão Sólida"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "3D58C19D32143C3C"
+			tasks: [{
+				id: "3A20F15CD820B50D"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			id: "5B874AD0DE922C66"
+			tasks: [{
+				id: "5BEBDCD0A12DE44C"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "31230A1FC61C2AC9"
+			tasks: [{
+				id: "1D2CD3235A06329F"
+				item: "ae2:meteorite_compass"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			id: "26CADFF16C276DE7"
+			tasks: [{
+				id: "7A6AC794702B2EB9"
+				item: "ae2:calculation_processor_press"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			id: "0C45664D1271FD1B"
+			tasks: [{
+				id: "04F5F1FFB8FF7132"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "2DAA198A9FE1C430"
+			tasks: [{
+				id: "2AE96976D01D0D5F"
+				item: "ae2:printed_calculation_processor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			id: "11D60685CEA53B84"
+			tasks: [{
+				id: "102C800232596A76"
+				item: "ae2:logic_processor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "08C12C63E831EF73"
+			tasks: [{
+				id: "58D255B79F7EA096"
+				item: "ae2:fluix_glass_cable"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			id: "1FA19FA935CE587A"
+			tasks: [{
+				id: "44B64B2B96D9783E"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "28AC0C318B3109A3"
+			tasks: [{
+				id: "79F5CCAD9EA33995"
+				item: "ae2:fluix_covered_dense_cable"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Este é o ponto de convergência. Cabos se alinham. Interfaces ganham direção. Fluxos de dados encontram seu ritmo. O ME Controller não é apenas uma peça central — ele é o primeiro componente da sua rede que entende que você não entende nada."
+				""
+				"Na prática, ele permite que múltiplos canais coexistam. Expande sua capacidade de conexão. Divide lógica e infraestrutura. Ele transforma um amontoado de cabos funcionais em um sistema escalável, com 32 canais por face, conexões paralelas e ramificações modulares."
+				"Se antes você estava apenas ligando coisas, agora você está gerenciando caminhos."
+				""
+				"Vale lembrar que ele adora amigos. Caso 6 faces e 182 canais pareçam pouco, sempre é possível adicionar mais. Mas não se esqueça, ele é do tipo que gosta de gente mas gosta que haja ordem na sua festa. Ele só irá aceitar mais blocos caso o formato seja válido, sempre se dispondo em formas cubóides e diretamente conectadas — ferraduras, retangulos, arestas, quadrados, cantos, cubos ou um insano teseract, fica a gosto do freguês. E não se preocupe, caso ele não gostar do formato que escolheu, ele vai deixar isso &4&lbem claro&r&r"
+				""
+				"Ao colocá-lo, tudo parece mais sério. Mais legítimo. Mais técnico. O que era uma gambiarra de terminais soltos vira agora um sistema de verdade. Ele não faz muita coisa sozinho, claro. Mas impõe respeito. E consumo de energia."
+				""
+				"Ele é a ilusão de controle — o nome não nega — num mar de conexões que você ainda vai bagunçar tentando ser organizado."
+				""
+				"Mas não se preocupe. É isso que a maioria dos sistemas fazem: simular ordem por tempo suficiente até ninguém mais questionar."
+				""
+				"&7&o— Criar um ME Controller é como declarar que você sabe o que está fazendo. É mentira, mas ajuda os cabos a se comportarem.&r&r"
+			]
+			id: "642557D5CB896C1E"
+			tasks: [{
+				id: "4C96FD5B537B3079"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "O núcleo do labirinto"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "4C89A0A823554E00"
+			tasks: [{
+				id: "4D478B46617DAD90"
+				item: "ae2:me_p2p_tunnel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "4666E915E5565296"
+			tasks: [{
+				id: "663889ECF445D9B1"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "29F2529BCD05C523"
+			tasks: [{
+				id: "309B53A8ADE40EDB"
+				item: "ae2:import_bus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			id: "3EB7545A62453FFC"
+			tasks: [{
+				id: "06A6D15C6D4A100F"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			id: "2585738C92D5B5FD"
+			tasks: [{
+				id: "11B90E62547246E3"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"   Agora que você tem seu ME Controller, o sistema finalmente se comporta como uma criatura viva — com órgãos, sinapses e um humor instável baseado em canais."
+				""
+				"   Cada face de um Controller pode emitir até 32 canais lógicos independentes, conectando-se a máquinas, terminais, interfaces e tudo mais que dependa de automação e controle. Mas atenção:   isso não é energia. É comunicação. Cada conexão inteligente consome um canal, e cabos simples entram em colapso nervoso antes mesmo de completar a instalação."
+				""
+				"   É aqui que a rede ganha profundidade: subredes e P2P."
+				""
+				"   O P2P Tunnel permite comprimir toda essa lógica em um fluxo encapsulado. Você pode usar uma única face do Controller para alimentar vários túneis P2P, cada um retransmitindo até 32 canais para outras áreas. Isso permite criar clusters de subredes independentes, alimentadas por um único ponto, que podem inclusive transmitir as faces de outros Controllers conectados mais à frente. O resultado? Um sistema fractal, modular, inteligente e incrivelmente fácil de quebrar se você desconectar o cabo errado."
+				""
+				"   Além da complexidade inerante, vale ressaltar que alguns cuidados são mandotórios. A regra continua a mesma, uma rede só pode suportar um único grupo de controllers que precisam estar conectados diretamente, sem cabos ou estruturas entre eles. Por isso, qualquer subcontroller &4&lNÃO&r&r pode conectar nenhuma de suas faces a qualquer cabo que interaja diretamente com o controller principal. Toda a interação do controller principal com qualquer subcontroller deve ser feita unicamente via p2p. Eu sei, soa complicado, mas quando você construir um sistema funcional desse porte pela primeira vez, nunca mais vai querer um sistema simples. Confia."
+				""
+				"   Ainda assim, estrutura sem inteligência é só desperdício com cabos coloridos. Por isso, chega a hora de pensar em passivação."
+				""
+				"   Passivar é criar estoques constantes de itens intermediários — como alloys, chips, pure crystals ou fluix dust — produzidos em segundo plano, 24/7, sem esperar que alguém peça. Um simples Drawer com Storage Bus já faz isso. Uma linha dedicada de produção para alimentar esse drawer torna a rede autônoma."
+				"A diferença entre uma fábrica viva e uma planilha caótica é isso: buffers bem pensados."
+				""
+				"   Você não está apenas otimizando. Está projetando um sistema que espera o mundo acontecer — e responde antes que ele peça."
+				""
+				"&7&o— Se você não entendeu metade disso, tudo bem. Nem o sistema entendeu quando foi ligado pela primeira vez. Bem-vindo ao AE2.&r&r"
+			]
+			id: "518B46107EA4E2C8"
+			tasks: [{
+				id: "63BDC456CFD4148E"
+				item: "appmek:chemical_p2p_tunnel"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			id: "3674CA2BE4A0DA7A"
+			tasks: [{
+				id: "78E0463E06D75350"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			id: "2BE6AA64D18D7C15"
+			tasks: [{
+				id: "3F929828F911590B"
+				item: "ae2:growth_accelerator"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			id: "44D7476D60126160"
+			tasks: [{
+				id: "59C02C8C93A05154"
+				item: "ae2:cell_workbench"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "198615D7D892BBC9"
+			tasks: [{
+				id: "37BD5320C2E9B8E1"
+				item: "ae2:io_port"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"   O espaço prometido"
+				""
+				"   Você passou horas conectando cabos, montando máquinas de nome pretensioso e organizando interfaces com uma precisão que beira o transtorno obsessivo-compulsivo. E tudo isso por quê? Porque viu uma imagem. Uma imagem de drives brilhantes, enfileirados como monumentos à era da informação."
+				""
+				"   Só que não."
+				""
+				"   Sim, esta é a última quest do capítulo. Sim, ela exibe exatamente aquilo que você esperava estar construindo. Mas não, você ainda não tem acesso às Storage Cells. Aquilo que faz tudo isso valer a pena não se esconde aqui."
+				""
+				"   Este capítulo foi sobre a base. O alicerce. A promessa. Uma vitrine bem iluminada sem estoque nos fundos."
+				""
+				"   Você montou uma central de controle para... olhar coisas. Como um telescópio apontado para um buraco negro que você mesmo criou. Mas ei, os cabos ficaram bonitos."
+				""
+				"   Agora, respire fundo, admire a estrutura e prepare-se para o real motivo de existir: armazenar alguma coisa, o que — veja só — será gentilmente liberado por um mod completamente diferente. Ender IO, talvez? Quem sabe..."
+				""
+				"  Se sentindo um pouco enganado? Ótimo. Esse é o primeiro passo para entender como o sistema realmente funciona."
+				""
+				"\"&7&o— Um terminal sem armazenamento é como um filósofo sem angústia: bonito, mas absolutamente inútil.&r&r\""
+			]
+			id: "3D546802A869AC66"
+			subtitle: "Cadê????"
+			tasks: [{
+				id: "2C5ABFE01493DE24"
+				item: "ae2:creative_item_cell"
+				type: "item"
+			}]
+			title: "O Espaço Prometido"
+			x: 7.0d
+			y: -1.0d
+		}
+	]
+	title: "4. Mekanologia"
+}

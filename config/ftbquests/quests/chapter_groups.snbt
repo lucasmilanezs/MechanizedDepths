@@ -1,3 +1,6 @@
 {
-	chapter_groups: [{ id: "0E3BAF4D0D92EEE1", title: "A Máquina Sonha em Despertar" }]
+	chapter_groups: [
+		{ id: "0E3BAF4D0D92EEE1", title: "A Máquina Sonha em Despertar" }
+		{ id: "48009A32F221D9FC", title: "Arquitetura da Consciência" }
+	]
 }

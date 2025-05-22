@@ -89,3 +89,4 @@ Thumbs.db
 
 # Ignorar dependências empacotadas por engano
 node_modules/
+lib

@@ -73,7 +73,7 @@ StartupEvents.registry('item', event => {
       Text.of('§7Um pedaço de silêncio que sangra.').italic()
     ])
     .glow(true)
-    .texture('kubejs:item/void_fragment')
+    .texture('custom:item/void_fragment')
 })
 StartupEvents.registry('item', event => {
   event.create('incomplete_entropic_drive')
@@ -123,4 +123,25 @@ StartupEvents.registry('fluid', event => {
     .flowingTexture('custom:item/melted_blaze_metal_still')
     .color(0xFF6600)
     .bucketColor(0xFF6600)
+})
+
+StartupEvents.registry('item', event => {
+  event.create('osgloglium')
+    .displayName('Osgloglium')
+    .texture('custom:item/osgloglium')
+});
+
+StartupEvents.registry('item', event => {
+  event.create('refined_quartz')
+    .displayName('Refined Quartz')
+    .texture('custom:item/refined_quartz')
+});
+
+StartupEvents.registry('item', event => {
+  event.create('incomplete_obsidian_core')
+    .displayName('Incomplete Obsidian Core')
+    .tooltip([
+      Text.of('§8Um núcleo em formação...').italic()
+    ])
+    .texture('custom:item/incomplete_obsidian_core')
 })

@@ -1,0 +1,99 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:diamond",
+  "availability": {
+    "tier": 4,
+    "categories": ["metal"],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "kubejs:osgloglium"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.osgloglium"
+  },
+  "stats": {
+    "main": {
+      "durability": 3300,
+      "harvest_level": 4,
+      "repair_efficiency": 1.15,
+      "enchantment_value": 22,
+      "toughness": 2.4,
+      "melee_damage": 4.0,
+      "attack_speed": 1.1,
+      "harvest_speed": 18.0
+    },
+    "rod": {
+      "durability": {
+        "add": 500
+      },
+      "toughness": 0.8,
+      "attack_speed": 0.05
+    },
+    "tip": {
+      "melee_damage": 2.0,
+      "harvest_speed": 2.5
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:magnetic",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#A2FF00"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#A2FF00"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_hc",
+        "color": "#A2FF00"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#A2FF00"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#A2FF00"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#A2FF00"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  },
+  "can_repair": true
+}

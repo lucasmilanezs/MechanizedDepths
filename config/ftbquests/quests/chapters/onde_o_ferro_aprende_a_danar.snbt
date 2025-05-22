@@ -80,6 +80,7 @@
 			y: -4.2d
 		}
 		{
+			dependencies: ["3265B3C72791C9EA"]
 			id: "2301AE3626A0CD3B"
 			tasks: [{
 				id: "7AEE7A5E8D993CAE"
@@ -90,6 +91,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["2A261C789F73E3A9"]
 			description: [
 				"   Eixos conectam tudo — inclusive seus erros."
 				""
@@ -190,6 +192,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["3265B3C72791C9EA"]
 			description: [
 				"   Horizontal vira vertical."
 				"   Vertical vira horizontal."
@@ -209,6 +212,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["3265B3C72791C9EA"]
 			description: [
 				"   O gearshift inverte a direção da rotação quando recebe redstone."
 				"Isso pode ser útil. Ou devastador. Ou os dois, dependendo se seu sistema tem um freio ou uma criança em cima de um belt."
@@ -226,6 +230,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["1C7464A392E4AA20"]
 			description: [
 				"   Imagine ter o poder de cortar a energia de um sistema inteiro com um pulso de redstone."
 				""
@@ -244,6 +249,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["3265B3C72791C9EA"]
 			description: [
 				"   Às vezes você só quer que duas máquinas girem igual, do mesmo lado e na mesma velocidade."
 				""
@@ -262,6 +268,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["3265B3C72791C9EA"]
 			description: [
 				"   Se a Metal Press do Immersive é um braço hidráulico industrial, a Mechanical Press do Create é mais como… um martelo de ogro com precisão improvisada."
 				""
@@ -283,6 +290,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["3265B3C72791C9EA"]
 			description: [
 				"   A Millstone não vai te dar ouro. Mas vai fazer sua flor render mais tinta, transformar sua pedra em cascalho, e seu cascalho em flint — com sorte."
 				""
@@ -301,6 +309,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["3265B3C72791C9EA"]
 			description: [
 				"   Um bloco que sopra coisas e, de alguma forma, é extremamente útil."
 				""
@@ -320,6 +329,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["3DE2667B06DFB607"]
 			description: [
 				"   Um mixer, um bowl, e caos semi-controlado."
 				""
@@ -345,6 +355,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["2301AE3626A0CD3B"]
 			description: [
 				"   Eles giram sem nunca parar. Não perguntam \"pra onde\", nem \"por quê\" — apenas carregam, como uma língua infinita de engrenagens que esqueceram o gosto de descansar."
 				"Os belts são o primeiro passo para fazer as coisas fluírem sem que você precise pensar demais. Monte suas correias conectando shafts, e observe os itens percorrerem o mesmo caminho para sempre."
@@ -363,6 +374,7 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["2301AE3626A0CD3B"]
 			description: [
 				"   Nem todo movimento é eterno. Às vezes, o progresso precisa esperar no lugar certo."
 				""
@@ -383,6 +395,7 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["2301AE3626A0CD3B"]
 			description: [
 				"   Nada entra, nada sai — a menos que você diga como."
 				""
@@ -496,8 +509,8 @@
 				}
 			]
 			title: "&lAquecer é o Novo Girar"
-			x: 3.3000000000000003d
-			y: -1.1d
+			x: 3.267857142857146d
+			y: -0.9464285714285694d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
@@ -677,7 +690,7 @@
 			}]
 			title: "O Silêncio do Último giro"
 			x: 9.0d
-			y: -6.5d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -704,8 +717,8 @@
 				type: "item"
 			}]
 			title: "O Núcleo Que Aguenta o Calor"
-			x: 5.5d
-			y: -6.5d
+			x: 5.517857142857139d
+			y: -6.696428571428569d
 		}
 		{
 			description: [
@@ -1019,6 +1032,16 @@
 				type: "item"
 			}]
 			x: 6.5d
+			y: -4.0d
+		}
+		{
+			id: "7DC8EAACC288097C"
+			tasks: [{
+				id: "58421048CE5571EE"
+				item: "kubejs:void_fragment"
+				type: "item"
+			}]
+			x: 9.0d
 			y: -4.0d
 		}
 	]

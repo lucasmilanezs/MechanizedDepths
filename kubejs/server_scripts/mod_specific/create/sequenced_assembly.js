@@ -1,16 +1,28 @@
-ServerEvents.recipes(event => {
-  // Remove todas as receitas padrão do andesite_alloy
-  event.remove({ output: 'create:andesite_alloy' })
+// CREATE - SEQUENCED ASSEMBLY
+// TEMPLATE:
+/*
+// CREATE - FULL SEQUENCED ASSEMBLY TEMPLATE
 
-  // Adiciona nova receita shaped com runic_stone
-  event.shaped('4x create:andesite_alloy', [
-    'AR',
-    'RA'
-  ], {
-    A: 'minecraft:andesite',
-    R: 'kubejs:runic_stone'  // Altere se o ID for diferente no seu projeto
-  })
-})
+ServerEvents.recipes(event => {
+  const transitional = 'kubejs:incomplete_core'
+
+  event.recipes.create.sequenced_assembly(
+    [Item.of('kubejs:precision_matrix_core')],
+    Item.of('minecraft:iron_ingot'),
+    [
+      event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'minecraft:redstone']),
+      event.recipes.create.cutting(Item.of(transitional), Item.of(transitional)).processingTime(100),
+      event.recipes.create.pressing(Item.of(transitional), Item.of(transitional)),
+      event.recipes.create.filling(Item.of(transitional), [Item.of(transitional), Fluid.lava(250)]),
+      event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'minecraft:redstone'])
+    ]
+  )
+  .transitionalItem(transitional)
+  .loops(1);
+});
+
+*/
+
 ServerEvents.recipes(event => {
   event.recipes.create.sequenced_assembly([
     Item.of('create:precision_mechanism').withChance(0.8),
@@ -43,40 +55,13 @@ ServerEvents.recipes(event => {
   event.recipes.create.sequenced_assembly([
     Item.of('kubejs:forged_assembly')
   ], Item.of('create:brass_casing'), [
-    event.recipes.createDeploying('kubejs:incomplete_forged_assembly', ['kubejs:incomplete_forged_assembly', 'create:andesite_alloy']),
     event.recipes.createDeploying('kubejs:incomplete_forged_assembly', ['kubejs:incomplete_forged_assembly', 'create:precision_mechanism']),
     event.recipes.createDeploying('kubejs:incomplete_forged_assembly', ['kubejs:incomplete_forged_assembly', 'minecraft:redstone']),
+    event.recipes.createDeploying('kubejs:incomplete_forged_assembly', ['kubejs:incomplete_forged_assembly', 'kubejs:blazebound_steel']),
     event.recipes.createPressing('kubejs:incomplete_forged_assembly', 'kubejs:incomplete_forged_assembly')
   ])
   .transitionalItem('kubejs:incomplete_forged_assembly')
   .loops(1)
-})
-
-ServerEvents.recipes(event => {
-  // Empowered Blaze Powder (Shapeless Mixing)
-  event.recipes.create.mixing(Item.of('kubejs:empowered_blaze_powder', 4), [
-    'minecraft:lapis_lazuli',
-    'thermal:diamond_dust'
-  ])
-})
-
-  // Empowered Blazing Steel (Heated Mixing)
-ServerEvents.recipes(event => {
-  event.recipes.create.mixing(
-    ['kubejs:empowered_blazing_steel'],
-    [
-      'kubejs:blazing_steel',
-      'kubejs:empowered_blaze_powder'
-    ]
-  ).superheated()
-})
-
-  // Derreter Empowered Blazing Steel em Melted Blaze Metal
-ServerEvents.recipes(event => {
-  event.recipes.create.mixing(
-    Fluid.of('kubejs:melted_blaze_metal', 500),
-    ['kubejs:empowered_blazing_steel']
-  ).superheated()
 })
 
 ServerEvents.recipes(event => {
@@ -87,15 +72,12 @@ ServerEvents.recipes(event => {
       'kubejs:blazebound_steel'
     ],
     'create:sturdy_sheet',
-    [
-      // Etapa 1: Injeção do metal derretido
+    [      
       event.recipes.create.filling(transitional, [
         transitional,
         Fluid.of('kubejs:melted_blaze_metal', 250)
       ]),
-      // Etapa 2: Compressão
       event.recipes.create.pressing(transitional, transitional),
-      // Etapa 3: Resfriamento com água
       event.recipes.create.filling(transitional, [
         transitional,
         Fluid.water(250)
@@ -106,6 +88,26 @@ ServerEvents.recipes(event => {
   .loops(1)
 })
 
+ServerEvents.recipes(event => {
+  const transitional = 'kubejs:incomplete_obsidian_core'
 
+  event.recipes.create.sequenced_assembly(
+    [
+      Item.of('kubejs:precision_matrix_core', 1)
+    ],
+    Item.of('minecraft:iron_ingot'),
+    [
+      event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'minecraft:redstone']),
+      event.recipes.create.cutting(Item.of(transitional), Item.of(transitional)).processingTime(100),
+      event.recipes.create.pressing(Item.of(transitional), Item.of(transitional)),
+      event.recipes.create.filling(Item.of(transitional), [
+        Item.of(transitional),
+        Fluid.lava(250)
+      ]),
+    ]
+  )
+  .transitionalItem(transitional) // <- Corrigido aqui
+  .loops(1)
+});
 
 
