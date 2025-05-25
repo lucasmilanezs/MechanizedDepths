@@ -21,6 +21,8 @@ Custom mechanics include:
 
 - All **custom sprites** (items, fluids, and animated icons) were designed in-house using pixel art software and are original creations.
 - Some **chapter banners and stylized titles** were generated with the help of AI tools to visualize concepts. These are placeholders intended to be **replaced by commissioned artwork** before the final release.
+- A full breakdown of asset origins, licenses, and visual derivations is available in [`changed_material.md`](./changed_material.md), located in the root of the project.
+
 
 ---
 

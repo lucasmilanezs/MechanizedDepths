@@ -21,10 +21,6 @@ All assets created for this modpack — including but not limited to items, bloc
 
 Below is a list of the primary material sources used as foundation, reference, or modular base for creating custom sprites:
 
-## 🎨 Sprite Base Resources
-
-Below is a list of the primary material sources used as foundation, reference, or modular base for creating custom sprites:
-
 | Name / Type                                | Source / Tool                                               | License Type                         | Notes                                                                 |
 |--------------------------------------------|--------------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------|
 | **Vanilla Minecraft assets**               | Minecraft default textures via `vanilla.jar`                | **Mojang / permissive modding use**  | Used as inspiration and proportional reference only                  |
