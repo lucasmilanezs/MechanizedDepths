@@ -1,0 +1,8 @@
+{
+  "type": "mekanism:gas",
+  "gas_type": "kubejs:normal",
+  "display": {
+    "translation_key": "gas.kubejs.titanium_tetrachloride",
+    "color": "#B4D6DE"
+  }
+}

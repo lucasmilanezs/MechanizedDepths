@@ -4,3 +4,6 @@
 
 console.info('Hello, World! (Loaded client scripts)')
 
+ClientEvents.blockRenderLayer(event => {
+  event.put('kubejs:vitrified_obsidian', 'translucent')
+})

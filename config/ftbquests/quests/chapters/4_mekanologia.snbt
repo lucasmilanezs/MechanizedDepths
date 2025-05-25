@@ -607,7 +607,7 @@
 				"Na prática, ele permite que múltiplos canais coexistam. Expande sua capacidade de conexão. Divide lógica e infraestrutura. Ele transforma um amontoado de cabos funcionais em um sistema escalável, com 32 canais por face, conexões paralelas e ramificações modulares."
 				"Se antes você estava apenas ligando coisas, agora você está gerenciando caminhos."
 				""
-				"Vale lembrar que ele adora amigos. Caso 6 faces e 182 canais pareçam pouco, sempre é possível adicionar mais. Mas não se esqueça, ele é do tipo que gosta de gente mas gosta que haja ordem na sua festa. Ele só irá aceitar mais blocos caso o formato seja válido, sempre se dispondo em formas cubóides e diretamente conectadas — ferraduras, retangulos, arestas, quadrados, cantos, cubos ou um insano teseract, fica a gosto do freguês. E não se preocupe, caso ele não gostar do formato que escolheu, ele vai deixar isso &4&lbem claro&r&r"
+				"Vale lembrar que ele adora amigos. Caso 6 faces e 182 canais pareçam pouco, sempre é possível adicionar mais. Mas não se esqueça, ele é do tipo que gosta de gente mas gosta que haja ordem na sua festa. Ele só irá aceitar mais blocos caso o formato seja válido, sempre se dispondo em formas cubóides e diretamente conectadas — ferraduras, retangulos, arestas, quadrados, cantos, cubos ou um insano teseract, fica a gosto do freguês. E não se preocupe, caso ele não goste do formato que escolheu, ele vai deixar isso &4&lbem claro&r&r"
 				""
 				"Ao colocá-lo, tudo parece mais sério. Mais legítimo. Mais técnico. O que era uma gambiarra de terminais soltos vira agora um sistema de verdade. Ele não faz muita coisa sozinho, claro. Mas impõe respeito. E consumo de energia."
 				""
@@ -777,6 +777,36 @@
 			title: "O Espaço Prometido"
 			x: 7.0d
 			y: -1.0d
+		}
+		{
+			id: "184D380634ACAE53"
+			tasks: [{
+				id: "319EB79599353C45"
+				item: "minecraft:spruce_log"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			id: "3633F465A65581FC"
+			tasks: [{
+				id: "743C6006870BCD75"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			id: "01709CEB8F2499A6"
+			tasks: [{
+				id: "6C9F7097C229BFF9"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
 		}
 	]
 	title: "4. Mekanologia"

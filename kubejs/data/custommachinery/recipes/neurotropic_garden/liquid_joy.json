@@ -1,0 +1,20 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:neurotropic_garden",
+	"time": 150,
+	"requirements": [
+        		{
+			"type": "custommachinery:durability",
+			"item": "kubejs:overthinker_cell",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "kubejs:liquid_joy",
+			"amount": 250,
+			"mode": "output"
+		}
+
+	]
+}

@@ -5,8 +5,308 @@
 	group: "48009A32F221D9FC"
 	icon: "thermal:dynamo_magmatic"
 	id: "2115161FB44BE811"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
-	title: "5. Termodinâmica Aplicada™"
+	quests: [
+		{
+			id: "7C388A6CE74ED7C8"
+			tasks: [{
+				id: "7E354A1BCE8F876F"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			id: "664F03BCD6779986"
+			tasks: [{
+				id: "67186B4357C78AC4"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			id: "578E232A3AA3AD15"
+			tasks: [{
+				id: "0E9898DD015E38BD"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "5697C0E23B256642"
+			tasks: [{
+				id: "01D4F38992F01604"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["064CB1A828061888"]
+			id: "504BB1A0C0A5D778"
+			tasks: [{
+				id: "289824DDC9A6D89D"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "004288D8EF9D1107"
+			tasks: [{
+				id: "0842B0CEE3C177E6"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6AA53F03B0A46CA3"]
+			id: "4807891B99079DE0"
+			tasks: [{
+				id: "2DD6119B308DE4A3"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6AA53F03B0A46CA3"]
+			id: "3321B64AAB3C71A1"
+			tasks: [{
+				id: "1F3B2DE83ABDAE57"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			id: "4B17B25AEC9A0007"
+			tasks: [{
+				id: "6F0872D38830D62B"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"   Antes de mais nada, vamos falar sobre os tais catalisadores."
+				""
+				"   Você pode até achar que o Pulverizer funciona sozinho — joga um minério lá, gira um tambor mágico com dentes de aço e pronto. Mas o que separa um triturador comum de uma máquina industrial otimizada é a ciência da intervenção."
+				""
+				"   Os catalisadores são componentes auxiliares que se inserem no processo para alterar seu comportamento: aceleram, desviam, amplificam. Eles não são obrigatórios — até que se tornem."
+				""
+				"   Na maioria dos casos, são o único jeito de extrair subprodutos raros como ilmenita, rutile, obsidianita ou coisas ainda menos pronunciáveis. Então, trate-os com carinho. Ou melhor: com planejamento."
+				""
+				"   Eles vão definir se sua cadeia industrial será eficiente... ou só barulhenta."
+				""
+				"   O quartzo moído atua como um abrasivo cristalino dentro da câmara do pulverizador. Suas bordas afiadas e alto índice de dureza interferem mecanicamente na fragmentação do minério, ajudando a desestabilizar microestruturas."
+				""
+				"   Embora não participe quimicamente, sua natureza silicatada melhora a ação de corte, acelerando a moagem. Contudo, como todo abrasivo leve, se desgasta com facilidade, sendo mais útil em sessões curtas e pouco exigentes. "
+				""
+				"&7&o— Corta bem, dura pouco. Como muitos discursos.&r&r"
+			]
+			id: "377D66DD47488FE4"
+			tasks: [{
+				id: "5601627FBBA59813"
+				item: "mekanism:dust_quartz"
+				type: "item"
+			}]
+			title: "Eficiência Abrasiva"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"   Quando introduzido no processo, o pó de coque funciona como um auxiliar térmico adsorvente. Seu alto teor de carbono residual interage com elementos instáveis durante a fragmentação, promovendo reações de redução leve ou sublimação de traços metálicos."
+				"   Esse efeito favorece o desprendimento de subprodutos com maior eficiência, como óxidos ou sais metálicos ligados ao minério original. Seu consumo é intermediário, pois não se decompõe por completo, mas reage com parte dos compostos voláteis."
+				""
+				"&7&o— A brasa que não apaga, apenas se torna útil de novo.&r&r"
+			]
+			id: "25FED667BD6B99AD"
+			tasks: [{
+				id: "6FD3BD75DC351BD3"
+				item: "immersiveengineering:dust_coke"
+				type: "item"
+			}]
+			title: "Combustão Reativa"
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["064CB1A828061888"]
+			id: "4853679644FEE30A"
+			tasks: [{
+				id: "22230FF8C423A9A4"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			id: "42B368C1DD78B214"
+			tasks: [{
+				id: "740B749F8EEC70EC"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "6AA53F03B0A46CA3"
+			tasks: [{
+				id: "40BB801A6266FDDC"
+				item: "kubejs:obsidianite"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			id: "064CB1A828061888"
+			tasks: [{
+				id: "2786BE2E1B85B577"
+				item: "kubejs:vitrified_obsidian"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			id: "13AC27CEA3409047"
+			tasks: [{
+				id: "2F12530956236BA2"
+				item: "kubejs:laminated_alloy_plate"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			id: "1471DC4294CC3E31"
+			tasks: [{
+				id: "1ADFAB6B1990D901"
+				item: "kubejs:blaze_glass_compound"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			description: [
+				"   Esta substância viscosa, derivada de processos biológicos complexos, atua como um meio de solvatação ativa dentro da câmara. Sua composição gelatinosa permite encapsular partículas durante a moagem, evitando perdas por suspensão e otimizando reações secundárias."
+				""
+				"   Além disso, certos compostos orgânicos instáveis nela presentes funcionam como precursores de reações catalíticas, especialmente com minerais sensíveis a pH ou ligação orgânica-metal. Sua durabilidade e rendimento o colocam como padrão ouro de catalisador. Excelente e balanceado, só poderia durar um pouquinho mais..."
+				""
+				"&7&o— Ele dissolve coisas que você nem sabia que estavam lá. Inclusive sua certeza.&r&r"
+			]
+			id: "0E15CFE7649C8E5E"
+			tasks: [{
+				id: "77215FC08FA0171E"
+				item: "kubejs:gelatinous_organic_solvent"
+				type: "item"
+			}]
+			title: "Catalisador Bioestrutural"
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"   O cinnabar, composto principalmente de sulfeto de mercúrio (HgS), possui uma estrutura cristalina que, ao ser pressionada, libera microcargas estáticas e sofre fratura lamelar."
+				""
+				"   Durante a pulverização, esses efeitos provocam uma dispersão eletrostática nos particulados, reduzindo aglomeração e aumentando a exposição de superfícies para o processamento. Seu desempenho equilibrado o torna um catalisador técnico de ampla aplicabilidade."
+				""
+				"&7&o— A beleza está no equilíbrio... mas também em um leve grau de toxidade funcional.&r&r"
+			]
+			id: "1F6EBFB9DB2A2B14"
+			tasks: [{
+				id: "6D2A60FB21D90FE1"
+				item: "thermal:cinnabar"
+				type: "item"
+			}]
+			title: "Reagente de Cristal Vermelho"
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"   Apesar de bem contra-intuitivo, a Ice Charge funciona como um agente térmico moderador. Durante a pulverização, sua liberação controlada de frio absorve parte da energia gerada por atrito, reduzindo o desgaste do sistema e permitindo ciclos curtos com menos interrupção."
+				""
+				"   Sua ação é puramente física e limitada, mas a agilidade que proporciona é valiosa em fluxos de processamento rápido. Frágil e volátil, raramente sobrevive por mais de uma rodada."
+				""
+				"&7&o— Não dura muito, mas esfria os ânimos e acelera o trabalho. Um alívio temporário, como um bom argumento improvável.&r&r"
+			]
+			id: "1DB47027209C4091"
+			tasks: [{
+				id: "418CDA44CA87730C"
+				item: "thermal:ice_charge"
+				type: "item"
+			}]
+			title: "Choque Térmico Direcionado"
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"   Formado por resíduos de alto-forno ricos em óxidos metálicos, o Rich Slag atua como um promotor de reatividade superficial. Seus componentes — principalmente óxidos de ferro, silício e alumínio — interagem com partículas em processo de fratura, aumentando sua instabilidade química."
+				"   Esse efeito induz a liberação de subprodutos ligados por forças fracas ou que requerem ativação catalítica mínima. Apesar de não afetar a velocidade, sua eficiência em extrações secundárias é excepcional."
+				""
+				"&7&o— O que restou da fundição... agora extrai o que nunca saía da pedra. Segunda chance para catalisadores e pecadores.&r&r"
+			]
+			id: "41F84F8BA400D58F"
+			tasks: [{
+				id: "4C1F251E95EB52D8"
+				item: "thermal:rich_slag"
+				type: "item"
+			}]
+			title: "Resíduo de Pureza Reprocessada"
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			description: [
+				"   Dado estímulo demais, até uma planta se entrega. No Phytogenic Insolator, sob luz constante, água pura e Phyto-Gro em excesso, ela tenta se proteger. Fecha os estômatos. Reforça suas fibras. Enrijece suas paredes celulares até se tornar... algo mais. Algo morto."
+				""
+				"   Em vez de florescer, ela cria uma carapaça de celulose densa e lignina modificada — uma reação de defesa que, ironicamente, a sufoca. Sem perceber, a planta literalmente se blinda até a morte, uma \"doença autoimune\". O resultado é o Organic Polymer Mesh: um polímero vegetal de alta performance, flexível, resistente ao calor e completamente inerte. Perfeito para máquinas. Horrível para fotossíntese."
+				""
+				"   Curioso como procuramos metais densos e raros, para que o material mais útil desse capítulo vir de plantas e água. Não subestime a &2&lengenharia verde!&r&r"
+				""
+				"&7&o— Fascinante. Dê a uma planta o paraíso, e ela se embalsama. Acha que está se adaptando... enquanto morre quietinha.&r&r"
+			]
+			id: "1E7A8B399C39BF92"
+			tasks: [{
+				id: "7B017C8ACAC68D96"
+				item: "kubejs:organic_polymer_mesh"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			id: "1D32FAFD4B673752"
+			tasks: [{
+				id: "2B06910B71358973"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+	]
+	title: "6. Termodinâmica Aplicada™"
 }

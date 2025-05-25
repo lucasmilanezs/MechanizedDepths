@@ -1,0 +1,20 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:neural_agonizer",
+	"time": 20,
+	"requirements": [
+        		{
+			"type": "custommachinery:durability",
+			"item": "minecraft:diamond_pickaxe",
+			"amount": 10,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "minecraft:water",
+			"amount": 10,
+			"mode": "output"
+		}
+
+	]
+}

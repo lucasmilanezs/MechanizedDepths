@@ -1,0 +1,102 @@
+{
+  "name": {
+    "text": "Neural Agonizer",
+    "color": "dark_purple",
+    "italic": true
+  },
+  "appearance": {
+    "running": {
+      "custommachinery:block": "kubejs:neural_agonizer_block"
+    },
+    "errored": {
+      "custommachinery:block": "kubejs:neural_agonizer_block"
+    },
+    "paused": {
+      "custommachinery:block": "kubejs:neural_agonizer_block"
+    },
+    "custommachinery:block": "ae2:chiseled_quartz_stairs",
+    "idle": {
+      "custommachinery:block": "kubejs:neural_agonizer_block"
+    }
+  },
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "id": "input",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "mode": "output",
+      "id": "output",
+      "capacity": 10000
+    }
+  ],
+  "gui": [
+    {
+      "type": "custommachinery:background",
+      "texture": "custom:textures/gui/neural_agonizer/neural.png",
+      "width": 176,
+      "height": 166
+    },
+    {
+      "type": "custommachinery:background",
+      "texture": "custom:textures/gui/neural_agonizer/neural.png",
+      "width": 176,
+      "height": 166
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "priority": 20,
+      "x": 8,
+      "y": 84
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input",
+      "priority": 20,
+      "texture": "kubejs:textures/block/neural_agonizer_slot.png",
+      "x": 30,
+      "y": 36,
+      "width": 24,
+      "height": 24,
+      "ghost": {
+        "items": [
+          "kubejs:dormant_memory_cell"
+        ],
+        "color": {
+          "alpha": 0.0
+        }
+      }
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 61,
+      "y": 44,
+      "width": 60,
+      "height": 9,
+      "texture_empty": "custom:textures/gui/neural_agonizer/progress_bar.png",
+      "texture_filled": "custom:textures/gui/neural_agonizer/progress_bar_full.png"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "id": "output",
+      "texture": "custom:textures/gui/neural_agonizer/liquid_bar.png",
+      "x": 136,
+      "y": 16,
+      "width": 24,
+      "height": 60
+    },
+    {
+      "type": "custommachinery:text",
+      "priority": 10,
+      "x": 8,
+      "y": 12,
+      "text": {
+        "text": "Neural Agonizer",
+        "color": "dark_gray"
+      },
+      "jei": true
+    }
+  ]
+}

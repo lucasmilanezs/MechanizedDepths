@@ -23,6 +23,9 @@ ServerEvents.recipes(event => {
 
 */
 
+//====================CUSTOM RECIPES==================
+
+// PRECISION MECHANISM
 ServerEvents.recipes(event => {
   event.recipes.create.sequenced_assembly([
     Item.of('create:precision_mechanism').withChance(0.8),
@@ -37,6 +40,7 @@ ServerEvents.recipes(event => {
   .loops(1)
 })
 
+// ENTROPIC DRIVE
 ServerEvents.recipes(event => {
   event.recipes.create.sequenced_assembly([
     Item.of('kubejs:entropic_drive')
@@ -51,6 +55,7 @@ ServerEvents.recipes(event => {
   .loops(1) 
 })
 
+// FORGED ASSEMBLY
 ServerEvents.recipes(event => {
   event.recipes.create.sequenced_assembly([
     Item.of('kubejs:forged_assembly')
@@ -63,7 +68,11 @@ ServerEvents.recipes(event => {
   .transitionalItem('kubejs:incomplete_forged_assembly')
   .loops(1)
 })
+//====================CHANGED RECIPES==================
 
+//====================COMPATIBILITY RECIPES==================
+
+//====================FUNCTIONAL EXAMPLE==================
 ServerEvents.recipes(event => {
   const transitional = 'kubejs:incomplete_blazebound_steel'
 
@@ -106,8 +115,7 @@ ServerEvents.recipes(event => {
       ]),
     ]
   )
-  .transitionalItem(transitional) // <- Corrigido aqui
+  .transitionalItem(transitional) 
   .loops(1)
 });
-
 

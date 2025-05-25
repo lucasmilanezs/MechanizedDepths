@@ -7,3 +7,14 @@ StartupEvents.registry('block', event => {
     .hardness(1.5)
     .resistance(6.0);
 });
+
+StartupEvents.registry('block', event => {
+  event.create('vitrified_obsidian')
+    .displayName('Vitrified Obsidian')
+    .textureAll('custom:block/vitrified_obsidian') 
+    .soundType('glass')
+    .mapColor('black')
+    .hardness(1.7)
+    .resistance(8.0)
+    .defaultCutout()
+});

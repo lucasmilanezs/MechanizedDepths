@@ -1,0 +1,8 @@
+{
+  "type": "mekanism:gas",
+  "gas_type": "kubejs:normal",
+  "display": {
+    "translation_key": "gas.kubejs.magnesium_chloride",
+    "color": "#D2E2C4"
+  }
+}

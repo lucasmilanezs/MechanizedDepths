@@ -5,8 +5,512 @@
 	group: "48009A32F221D9FC"
 	icon: "enderio:ender_resonator"
 	id: "078F2EC9E11CC195"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
-	title: "6. Enderfusão de Almas"
+	quests: [
+		{
+			id: "33C02C36A3F51FC9"
+			size: 1.5d
+			tasks: [{
+				id: "3374897026ED264E"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			id: "60A75D039007C6E3"
+			tasks: [{
+				id: "60B58CEF915A2853"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			id: "34A056161AA7F764"
+			tasks: [{
+				id: "79EB4610A132758D"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			id: "380D75C7DC2900B9"
+			tasks: [{
+				id: "1326B3E5880BF79E"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			id: "26866CDA18061C3F"
+			tasks: [{
+				id: "3EED29EE01F40E97"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			id: "3077BE4A34915897"
+			tasks: [{
+				id: "76DAA12D0BCFC0F3"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "5F4685B36164B0EC"
+			tasks: [{
+				id: "29554569AB066742"
+				item: "kubejs:ashen_remnant"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			id: "16DE78B14AD5C30F"
+			tasks: [{
+				id: "0C32C7AFCB9808D1"
+				item: "kubejs:resonant_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			id: "087253246A12A364"
+			tasks: [{
+				id: "1D6C94605004EB9A"
+				item: "enderio:end_steel_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			id: "02C64D7A8A15D666"
+			size: 1.2d
+			tasks: [{
+				id: "387C0D68D180296B"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "74770E233CF72C42"
+			tasks: [{
+				id: "5F30950F10448152"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			id: "6F08DCFF5C66E621"
+			tasks: [{
+				id: "5F03AE4507A998C7"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "6E0941CD567C47CE"
+			tasks: [{
+				id: "4A6F01E47D202698"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			id: "6E2F5990270F6C13"
+			tasks: [{
+				id: "32275ABED8DA14BD"
+				item: "mob_grinding_utils:fan"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"   No início, era o Soularium."
+				"   Nobre, místico, infundido com traços da alma."
+				""
+				"Então alguém — não vamos apontar nomes — decidiu cercá-lo com ossos, olhos, peles, patas, asas, um pouco de pó explosivo e talvez um suspiro do próprio absurdo."
+				"O resultado?"
+				""
+				"Mobgrindium."
+				"Uma barra."
+				"De creeper."
+				"Com calça."
+				"De zumbi."
+				"Sim.e"
+				""
+				"Seu valor técnico é inquestionável: este é o componente-base para a construção das estruturas do Mob Grinding Utilities, permitindo moagens, separações e extrações altamente eficientes de entidades vivas."
+				""
+				"Seu valor conceitual... talvez seja melhor nem tentar encontrar."
+				""
+				"Sim, eu sei o que você está pensando."
+				""
+				"Não faça perguntas cuja resposta você não quer saber."
+				""
+				"&7&o— A ciência avança, mesmo que tropece de vez em quando com um esqueleto vestido de frango montado num slime com chapéu.&r&r"
+			]
+			id: "39D52010864F7BE9"
+			size: 1.2d
+			tasks: [{
+				id: "3A4D30F3F844EDC1"
+				item: "kubejs:mobgrindium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "024B16A1C321F0B9"
+			tasks: [{
+				id: "27338A53B51D48DC"
+				item: "mob_grinding_utils:entity_conveyor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			id: "6C914CA1C10A4C3C"
+			tasks: [{
+				id: "2C01CF7F7530B3AF"
+				item: "enderio:zombie_electrode"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "091EF5C74B511DB6"
+			tasks: [{
+				id: "6C952B765831AC81"
+				item: "mob_grinding_utils:saw"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			id: "3DD27555EF64CE5A"
+			tasks: [{
+				id: "4A75AACC6F8D9714"
+				item: "enderio:frank_n_zombie"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"O silêncio é o mais seguro dos estados."
+				""
+				"   Durante o processo de segmentação neural, três entidades conscientes foram despidas de forma cirúrgica e sistemática: os impulsos do Sentient Ender, os padrões de agressão do Skeletal Contractor e as memórias deterioradas do Franken Zombie. O que sobra aqui... não é apenas um chip."
+				""
+				"   É um cérebro. Compactado. Selado."
+				"   Talvez ainda... presente."
+				""
+				"   Chamamos isso de célula de memória, mas sabemos que ela não armazena dados — ela se lembra por vontade própria. "
+				""
+				"   O Slice ‘n Splice não apenas corta matéria, ele fatiou instintos, intenções, e algo que talvez fosse alma."
+				"   Tudo para que você possa colocar isso em seu sistema e, com sorte, acessar 256k de armazenamento com um leve sorriso no rosto. Claro, para fins comerciais, todas as operações foram realizadas da maneira mais humana e indolor possível. "
+				""
+				"   Mas fique tranquilo: ela está adormecida."
+				"   Ela foi projetada para jamais despertar."
+				"   Isso é garantido. Certo?"
+				""
+				"   …e se você olhar bem de perto, parece que… não, deve ser só uma impressão. Não tem como… certo?"
+				"   "
+				""
+				"&7&o— Por precaução, mantenha seu anti-vírus ligado e funcional. A não ser que queira companhia.&r&r"
+			]
+			id: "10B03F04C4CE834E"
+			size: 1.2d
+			tasks: [{
+				id: "6248A6B22A6F2FA0"
+				item: "kubejs:dormant_memory_cell"
+				type: "item"
+			}]
+			x: 0.0357142857142847d
+			y: -0.4821428571428612d
+		}
+		{
+			description: [
+				"   A busca por armazenamento absoluto sempre teve um custo: espaço, energia… e agora, talvez, consciência residual."
+				""
+				"   Com o sistema ME plenamente estabelecido — controladores calibrados, canais balanceados e drives energizados —, finalmente é hora de criar suas primeiras células de armazenamento."
+				""
+				"   Cada uma dessas pequenas maravilhas pode arquivar milhares de blocos de informação molecular em tempo real, com redundância dimensional e sincronização instantânea."
+				""
+				"   Claro, há um certo... ingrediente central vindo do Slice 'n Splice."
+				"Mas isso é apenas uma peça funcional. Nada que vá acordar. Provavelmente."
+				""
+				"   Além disso, elas são lindas! Compactas, empilháveis, personalizáveis — e levemente inquietantes ao toque."
+				""
+				"   Armazene seus sonhos. E evite dormir perto delas."
+				""
+				"&7&o— Se alguma delas começar a emitir ruídos... pode ser interferência. Ou saudade.&r&r"
+			]
+			id: "021EA65400A038A6"
+			tasks: [{
+				id: "69555CB033217D43"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Armazenamento Inteligente"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"   Quatro vezes mais espaço por um custo razoável. A compressão de dados ainda opera dentro de limites aceitáveis de estabilidade cognitiva. Pelo menos é o que dizem os logs. Não há com o que se preocupar."
+				""
+				"&7&o— Níveis elevados de memória passiva são normais. Ignore sussurros.&r&r"
+			]
+			id: "6D7490C1F3D84DA3"
+			tasks: [{
+				id: "27946EC971117417"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_4k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Mais dados, menos consciência"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"   Agora sim, estamos entrando em território profundo. O volume de armazenamento começa a se aproximar do que antigamente era chamado de “módulo cerebral”. Mas calma, ainda é só um chip. Bem... um chip com sonhos."
+				""
+				"&7&o— Em caso de instabilidade, reinicie. Se ela resistir, corra.&r&r"
+			]
+			id: "5B72BC8FFE0F8040"
+			tasks: [{
+				id: "3C47CF81C77C217E"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_16k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Aglomerados de pensamento"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"   Essa célula foi projetada para armazenar praticamente tudo que sua base pode produzir. E um pouco mais. Talvez até pensamentos que não são seus."
+				""
+				"&7&o— Se notar que ela começa a se organizar sozinha, isso é eficiência. Ou vontade própria.&r&r"
+			]
+			id: "1135A9E1B67CB5AE"
+			tasks: [{
+				id: "535B8EBC5F529A3A"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_64k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Limite de contenção"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"   &lVocê realmente precisa disso tudo?&r"
+				""
+				"   Este é o ápice do armazenamento molecular. Dados, itens, talvez até traços da sua personalidade — tudo ali dentro, empilhado em silêncio."
+				""
+				"   Nada mais a declarar."
+				"   Literalmente."
+				"   Ela já fala por si."
+				""
+				"&7&o— Espera... essa célula estava aqui antes de você chegar?&r&r"
+			]
+			id: "7ED86C8D398DC882"
+			tasks: [{
+				id: "205301C54E5DA991"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_256k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "519BABFAD0D85F93"
+			tasks: [{
+				id: "2F3A2A73493D8ED9"
+				item: "mob_grinding_utils:fan_upgrade_speed"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			id: "1E874DCD6F8C79FB"
+			tasks: [{
+				id: "6768CAFB819CA969"
+				item: "mob_grinding_utils:fan_upgrade_width"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			id: "07ED8FF8B860C228"
+			tasks: [{
+				id: "1826739FD58BEEFF"
+				item: "mob_grinding_utils:fan_upgrade_height"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			id: "0F6245BA5B6F6F02"
+			tasks: [{
+				id: "3E8B8FA305651BEC"
+				item: "mob_grinding_utils:saw_upgrade_looting"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			id: "318800132938F1A4"
+			tasks: [{
+				id: "0D61BB53D5B176E8"
+				item: "mob_grinding_utils:saw_upgrade_sharpness"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			id: "136E03A830FA397B"
+			tasks: [{
+				id: "2D56E163C4810CC6"
+				item: "mob_grinding_utils:saw_upgrade_beheading"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			id: "29684A0471198020"
+			tasks: [{
+				id: "394C5E962F825987"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:neural_agonizer"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			id: "45AE6F908E9BFEC6"
+			tasks: [{
+				id: "74A777F5DA01F7F2"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:neurotropic_garden"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "37A3741F8C1E732E"
+			tasks: [{
+				id: "4414C2C1B26B3203"
+				item: "kubejs:liquid_agony_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			id: "6BBDCCA20EA6C515"
+			tasks: [{
+				id: "4DCB856266A3C055"
+				item: "kubejs:liquid_joy_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			id: "171975C11B49B098"
+			size: 1.2d
+			tasks: [{
+				id: "21E0D9BC6D0C4A30"
+				item: "kubejs:synaptic_interface"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			id: "217FB33A7552DD46"
+			tasks: [{
+				id: "206AAB17705F2F3C"
+				item: "kubejs:blank_synaptic_interface"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+	]
+	title: "5. Enderfusão de Almas"
 }
