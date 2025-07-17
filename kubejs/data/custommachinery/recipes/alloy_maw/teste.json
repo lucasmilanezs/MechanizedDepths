@@ -1,0 +1,31 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "custommachinery:alloy_maw",
+    "time": 100,
+    "requirements": [
+        {
+            "type": "custommachinery:block",
+            "mode": "input",
+            "action": "destroy",
+            "filter": ["minecraft:iron_block"],
+            "block": "minecraft:iron_block",
+            "pos": [-1, 0, -1, 1, 1, 1],
+            "whitelist": true
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "input",
+            "action": "destroy",
+            "filter": ["minecraft:gold_block"],
+            "block": "minecraft:gold_block",
+            "pos": [-1, 0, -1, 1, 1, 1],
+            "whitelist": true
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "minecraft:iron_ingot",
+            "amount": 1,
+            "mode": "output"
+        }
+    ]
+}

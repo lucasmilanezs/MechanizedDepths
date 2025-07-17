@@ -1,0 +1,30 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "custommachinery:codex_crucible",
+  "time": 100,
+  "requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:blank_tech_card",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:matter_data",
+			"amount": 8,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:matter_tech_card",
+			"amount": 1,
+			"mode": "output"
+		},
+        {
+            "type": "custommachinery:energy_per_tick",
+            "mode": "input",
+            "amount": 20
+        }
+  ]
+}

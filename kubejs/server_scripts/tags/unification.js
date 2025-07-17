@@ -1,5 +1,9 @@
 ServerEvents.tags('item', event => {
+// INGOTS
+  event.add('forge:ingots/titanium', 'kubejs:ingot_titanium');
+
   // Plates
+
 
   event.add('forge:plates/iron', 'thermal:iron_plate')
   event.add('forge:plates/copper', 'thermal:copper_plate')

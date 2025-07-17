@@ -1,0 +1,25 @@
+{
+  "parent": "block/cube",
+    "elements": [
+        {   "from": [-0.01, -0.01, -0.01],
+            "to": [16.01, 16.01, 16.01],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#down", "cullface": "down" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#up", "cullface": "up" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#north", "cullface": "north" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#south", "cullface": "south" },
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#west", "cullface": "west" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#east", "cullface": "east" }
+            }
+        }
+    ],
+  "textures": {
+    "particle": "custom:block/neural_agonizer_front",
+    "up": "custom:block/neural_agonizer_top",
+    "down": "custom:block/neural_agonizer_bottom",
+    "north": "custom:block/neural_agonizer_front",
+    "south": "custom:block/neural_agonizer_back",
+    "east": "custom:block/neural_agonizer_right",
+    "west": "custom:block/neural_agonizer_left"
+  }
+}

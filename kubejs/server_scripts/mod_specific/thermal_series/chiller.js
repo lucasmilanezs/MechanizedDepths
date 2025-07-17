@@ -36,7 +36,6 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'thermal:chiller',
     ingredients: [
-      { fluid: 'minecraft:water', amount: 500 },
       { item: 'kubejs:titanium_sponge_raw' }
     ],
     result: { item: 'kubejs:titanium_sponge_pure' },

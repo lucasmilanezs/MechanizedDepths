@@ -1,0 +1,53 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "custommachinery:ore_sorter",
+  "time": 200,
+  "requirements": [
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:lanthanic_crystal",
+      "amount": 12,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "mekanism:raw_uranium",
+      "amount": 4,
+      "chance": 0.65,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "mekanism:raw_osmium",
+      "amount": 5,
+      "chance": 0.75,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:neodymium_dust",
+      "amount": 1,
+      "chance": 0.35,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "alltheores:raw_platinum",
+      "amount": 2,
+      "chance": 0.25,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:ilmenite_dust",
+      "amount": 2,
+      "chance": 0.2,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy_per_tick",
+      "amount": 50,
+      "mode": "input"
+    }
+  ]
+}

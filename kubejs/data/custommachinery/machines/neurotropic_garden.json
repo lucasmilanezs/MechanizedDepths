@@ -3,7 +3,9 @@
     "text": "Neurotropic Garden",
     "color": "aqua"
   },
-  "appearance": {},
+  "appearance": {
+    "block": "custom:machine/neurotropic_garden"
+  },
   "components": [
     {
       "type": "custommachinery:item",

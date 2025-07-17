@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/facility_casing",
+        "up": "custom:block/facility_casing",
+        "down": "custom:block/facility_input",
+        "north": "custom:block/wafer_processing_facility_front",
+        "south": "custom:block/facility_casing",
+        "east": "custom:block/facility_casing",
+        "west": "custom:block/facility_input"
+    }
+}
+

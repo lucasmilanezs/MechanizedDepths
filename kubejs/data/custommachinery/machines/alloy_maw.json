@@ -1,0 +1,70 @@
+{
+  "name": {
+    "text": "The Alloy Maw",
+    "color": "dark_red"
+  },
+  "appearance": {
+    "running": {
+      "custommachinery:block": "custom:machine/alloy_maw_running"
+    },
+    "idle": {
+      "custommachinery:block": "custom:machine/alloy_maw"
+    }
+  },
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "id": "output",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "mode": "input",
+      "id": "input",
+      "capacity": 10000
+    }
+  ],
+  "gui": [
+    {
+      "type": "custommachinery:background",
+      "texture": "custom:textures/gui/common/bg_vanilla_dark.png",
+      "width": 176,
+      "height": 166
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 7,
+      "y": 83
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "output",
+      "texture": "custom:textures/gui/common/slot_vanilla_dark.png",
+      "x": 96,
+      "y": 49,
+      "width": 20,
+      "height": 20,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:fluid",
+      "id": "input",
+      "texture": "custom:textures/gui/common/liquid_vanilla_dark.png",
+      "x": 62,
+      "y": 21
+    },
+    {
+      "type": "custommachinery:progress",
+      "direction": "TOP",
+      "x": 97,
+      "y": 30,
+      "texture_empty": "custom:textures/gui/common/progress_maw.png",
+      "texture_filled": "custom:textures/gui/common/progress_maw_full.png"
+    }
+  ]
+}

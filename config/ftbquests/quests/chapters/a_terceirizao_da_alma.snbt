@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "a_terceirizao_da_alma"
+	group: "57CED54B61FDA52E"
+	icon: "occultism:ritual_dummy/summon_demonic_wife"
+	id: "57873001ACBCCA93"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "15. O Abismo Chama"
+}

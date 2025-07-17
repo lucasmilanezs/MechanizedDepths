@@ -2,5 +2,10 @@
 	chapter_groups: [
 		{ id: "0E3BAF4D0D92EEE1", title: "A Máquina Sonha em Despertar" }
 		{ id: "48009A32F221D9FC", title: "Arquitetura da Consciência" }
+		{ id: "42138693CA8E287F", title: "Estado de Execução Permanente" }
+		{ id: "530DF528E020E9E4", title: "A Máquina Desperta" }
+		{ id: "57CED54B61FDA52E", title: "Flor, Sangue e Véu" }
+		{ id: "5F94D0BCA2EE5D6B", title: "A Máquina Sonha em Ser Carne" }
+		{ id: "7A5D50945C97A2EB", title: "As profundezas mecanizadas" }
 	]
 }

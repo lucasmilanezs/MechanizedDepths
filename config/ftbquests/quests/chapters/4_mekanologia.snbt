@@ -43,6 +43,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["5349659FDCBDFA9F"]
 			description: [
 				"   O Metallurgic Infuser marca o fim da metalurgia como você conhecia. Ele não aquece nem funde — ele convence. Redstone, carvão, diamante… cada substância oferece mais do que seu peso. Elas oferecem significado. O metal deixa de ser um recurso e passa a ser um veículo para ideias."
 				""
@@ -61,6 +62,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["1D6A06602BA0DBBF"]
 			description: [
 				"   Você criou seu primeiro circuito. Simples, obediente, quase inocente. Uma pequena placa que sabe ligar e desligar, mas não entende o motivo. E talvez isso seja o melhor. A ignorância funcional é o que mantém qualquer sistema fluindo sem perguntas incômodas."
 				""
@@ -77,6 +79,10 @@
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"63B543C796CB2FDA"
+				"31CA32EACAEC3103"
+			]
 			description: [
 				"   Um pouco de Infused Alloy e a placa já começa a achar que tem personalidade. Ela reconhece padrões, antecipa comandos e até otimiza fluxos — dentro dos limites do que você programou, é claro. No fundo, ela só quer agradar. E funcionar."
 				""
@@ -93,6 +99,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1D6A06602BA0DBBF"]
 			description: [
 				"   Todo império começa com uma base sólida, mas o seu será construído com algo mais flexível: obediência metálica. A Infused Alloy é seu primeiro experimento bem-sucedido em submissão material. Um pedaço de ferro, convencido por redstone de que nasceu para algo maior. Não é mais uma liga — é um protocolo condensado."
 				""
@@ -109,6 +116,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["63B543C796CB2FDA"]
 			description: [
 				"   Se a Infused era promessa, a Reinforced Alloy é execução. Através do diamante, você ensinou o metal a suportar pressões além do bom senso. Agora ele se lembra de sua estrutura mesmo quando desmontado, e obedece comandos que ainda não foram dados. Isso não é reforço — é disciplina."
 				""
@@ -125,6 +133,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["3045D408E1816740"]
 			description: [
 				"   Aqui você para de brincar. A Atomic Alloy é o momento em que o metal deixa de ser suporte e vira plano. Criada com uma vontade sobreposta — um vestígio de um diamante que não queria morrer — ela responde apenas a comandos absolutos. Se você precisava de uma peça definitiva, acabou de construir seu dogma."
 				""
@@ -141,6 +150,10 @@
 			y: 2.0d
 		}
 		{
+			dependencies: [
+				"64A74170F9CFB70A"
+				"3045D408E1816740"
+			]
 			description: [
 				"   Aqui as placas já acham que são centrais de comando. Têm um ego elétrico, fazem exigências absurdas de materiais e se recusam a operar fora de infraestrutura adequada. Mas produzem resultados. Uma Elite Circuit não quer só existir — quer mandar."
 				""
@@ -157,6 +170,10 @@
 			y: 1.0d
 		}
 		{
+			dependencies: [
+				"7A2AE2FCE261223A"
+				"2DC3EA0884C7E043"
+			]
 			description: [
 				"   Nada mais é suficiente. Nem ferro, nem redstone, nem suas desculpas. A Ultimate Circuit quer alloys de última geração, combinações imorais de eficiência e recursos que você jurou guardar para momentos especiais. Ela aceita tudo. Menos ser ignorada."
 				""
@@ -173,6 +190,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["31CA32EACAEC3103"]
 			description: [
 				"   Durante muito tempo, duplicar minérios foi um exercício de espaço, ruído e paciência. Plataformas tremendo, martelos batendo, engrenagens gritando em agonia industrial. Era bonito, de um jeito arcaico. E então, surgiu isso."
 				""
@@ -193,6 +211,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["019813C5735449BB"]
 			description: [
 				"   Você já fundiu, aqueceu, quebrou e reconstituíu ligas até onde suas máquinas permitiam. Mas o Osmium Compressor faz algo diferente: ele aplica pressão com propósito."
 				"Aqui, o osmium não é só combustível — é catalisador. É assinatura."
@@ -373,6 +392,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["60714ABDF9D43683"]
 			description: [
 				"   Um metal que brilha. Até aí, nada novo. Mas este não brilha por combustão, nem por incandescência. Ele brilha porque foi convencido a fazê-lo — porque alguém o infundiu com propósito e osmium suficiente para se tornar útil."
 				""
@@ -390,6 +410,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["60714ABDF9D43683"]
 			description: [
 				"   Você pensou em chamá-lo de Osgloglas. Admitimos: seria poético."
 				"Um aceno ao passado, àquela liga mítica do PlusTic, adorada por mineradores obsessivos e picaretas que cavavam mais rápido que a sanidade."
@@ -432,6 +453,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["31CA32EACAEC3103"]
 			description: [
 				"   Não há pistões visíveis, nem engrenagens expostas. Nenhuma estrutura de três andares tremendo sob seu próprio peso."
 				"O Crusher do Mekanism faz tudo que seu antecessor fazia — só que sem parecer um experimento de engenharia pesada financiado por um império em decadência."
@@ -461,6 +483,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["42DCD489D10C6084"]
 			description: [
 				"   Você pegou três materiais com vontades próprias — quartzo bruto, obsidian refinada e a promissora Inductive Alloy — e os obrigou a colaborar. O resultado foi algo translúcido, resistente e condutivo. Um verdadeiro avanço… até onde avanços aguentam ser chamados assim."
 				""
@@ -481,6 +504,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["60714ABDF9D43683"]
 			description: [
 				"   Você já quebrou obsidian com picareta. Agora está prestes a usá-la como base para armamentos."
 				"   O Refined Obsidian não é apenas resistente — ele desafia o bom senso ao ser refinável."
@@ -779,34 +803,26 @@
 			y: -1.0d
 		}
 		{
-			id: "184D380634ACAE53"
+			id: "20B27B29415D1910"
+			size: 1.5d
 			tasks: [{
-				id: "319EB79599353C45"
-				item: "minecraft:spruce_log"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 4.5d
-		}
-		{
-			id: "3633F465A65581FC"
-			tasks: [{
-				id: "743C6006870BCD75"
-				item: "minecraft:stripped_oak_log"
+				id: "78D9E210361A35A7"
+				item: "kubejs:osglotronic_control_circuit"
 				type: "item"
 			}]
 			x: -2.5d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
-			id: "01709CEB8F2499A6"
+			id: "1DC95B7767355679"
+			size: 1.5d
 			tasks: [{
-				id: "6C9F7097C229BFF9"
-				item: "minecraft:oak_log"
+				id: "7CBB13046A7583EF"
+				item: "kubejs:simulation_processor"
 				type: "item"
 			}]
 			x: 4.5d
-			y: 4.5d
+			y: 4.0d
 		}
 	]
 	title: "4. Mekanologia"

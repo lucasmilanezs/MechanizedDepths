@@ -1,0 +1,139 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:diamond",
+  "availability": {
+    "tier": 6,
+    "categories": ["metal"],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "thermal_extra:twinite_ingot"
+    }
+  },
+  "name": {
+    "translate": "material.thermal_extra.twinite"
+  },
+  "stats": {
+    "main": {
+      "durability": 4400.0,
+      "armor_durability": 75.0,
+      "enchantment_value": 24.0,
+      "rarity": 90.0,
+      "charging_value": 1.1,
+      "harvest_speed": 19.0,
+      "melee_damage": 5.2,
+      "magic_damage": 3.0,
+      "attack_speed": 1.2,
+      "ranged_damage": 2.0,
+      "ranged_speed": 0.0,
+      "projectile_speed": 1.1,
+      "projectile_accuracy": 1.1,
+      "armor": 22.0,
+      "armor/helmet": 4.0,
+      "armor/chestplate": 7.0,
+      "armor/leggings": 6.0,
+      "armor/boots": 3.0,
+      "armor_toughness": 6.5,
+      "magic_armor": 6.0
+    },
+    "rod": {
+      "durability": {
+        "add": 500.0
+      },
+      "toughness": {
+        "add": 1.0
+      },
+      "attack_speed": {
+        "add": 0.1
+      }
+    },
+    "tip": {
+      "melee_damage": {
+        "add": 2.2
+      },
+      "harvest_speed": {
+        "add": 2.8
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:fiery",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_count",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "name": "silentgear:bounce",
+        "level": 1
+      },
+      {
+        "name": "silentgear:greedy",
+        "level": 2
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#FF2EBE"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#FF2EBE"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#FF2EBE"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#FF2EBE"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#FF2EBE"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#FF2EBE"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  },
+  "can_repair": true
+}

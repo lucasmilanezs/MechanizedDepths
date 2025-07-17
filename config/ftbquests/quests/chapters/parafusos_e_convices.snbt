@@ -935,7 +935,7 @@
 				""
 				"   Você construiu algo lindo. E como tudo que é lindo... ele está prestes a ser substituído."
 				""
-				"&7&o— Celebre o barulho. Em breve, só restarão leds e cálculo&r"
+				"&7&o— Eu sei que você vai construir 100 rodas dagua como solução energética, só não diga isso na frente dele. &r"
 				""
 				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
 			]
@@ -1242,6 +1242,46 @@
 			title: "&d&l&o O Coração do Que Vem Depois"
 			x: -6.0d
 			y: 11.0d
+		}
+		{
+			id: "0EA34113E022A3EE"
+			tasks: [{
+				id: "3170CD686EEAC1AD"
+				item: "silentgear:crimson_steel_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "7BBAC80378A7809C"
+			tasks: [{
+				id: "031104FE03558668"
+				item: "silentgear:blaze_gold_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "12EF3E1654854D85"
+			tasks: [{
+				id: "14B0558AE59D0D52"
+				item: "silentgear:material_grader"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "17AB9CC6DECC074B"
+			tasks: [{
+				id: "585029128D50260D"
+				item: "silentgear:metal_alloyer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
 		}
 	]
 	title: "2. Parafusos e Convicções"

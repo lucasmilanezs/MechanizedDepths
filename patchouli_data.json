@@ -2,6 +2,29 @@
   "bookGuiScale": 0,
   "clickedVisualize": false,
   "bookData": {
+    "apotheosis:apoth_chronicle": {
+      "viewedEntries": [
+        "apotheosis:garden/ender_lead",
+        "apotheosis:garden/sugarcane",
+        "apotheosis:garden/cactus",
+        "apotheosis:garden/bamboo",
+        "apotheosis:spawner/spawners",
+        "apotheosis:spawner/stats",
+        "apotheosis:spawner/capturing",
+        "apotheosis:enchanting/utility/library",
+        "apotheosis:enchanting/table/power",
+        "apotheosis:enchanting/table/stats",
+        "apotheosis:enchanting/table/info",
+        "apotheosis:enchanting/anvil/splitting",
+        "apotheosis:adventure/affix_loot/affixes",
+        "apotheosis:adventure/affix_loot/reforging",
+        "apotheosis:adventure/affix_loot/augmenting",
+        "apotheosis:adventure/affix_loot/rarities",
+        "apotheosis:adventure/affix_loot/gems"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "naturesaura:book": {
       "viewedEntries": [
         "naturesaura:intro/aura",
@@ -27,6 +50,39 @@
         "naturesaura:effects/animal",
         "naturesaura:effects/nether_grass",
         "naturesaura:effects/effect_powder"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "botania:lexicon": {
+      "viewedEntries": [
+        "botania:basics/welcome",
+        "botania:basics/flowers",
+        "botania:tools/overgrowth_seed",
+        "botania:ender/ender_air",
+        "botania:basics/black_lotus",
+        "botania:devices/fel_pumpkin",
+        "botania:basics/terrasteel",
+        "botania:basics/apothecary",
+        "botania:basics/pure_daisy",
+        "botania:basics/wand",
+        "botania:basics/rune_altar",
+        "botania:basics/lexicon",
+        "botania:mana/dreamwood_spreader",
+        "botania:devices/mana_alchemy",
+        "botania:devices/cocoon",
+        "botania:devices/mana_enchanting"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "actuallyadditions:booklet": {
+      "viewedEntries": [
+        "actuallyadditions:crystals",
+        "actuallyadditions:tutorial",
+        "actuallyadditions:engineer_house",
+        "actuallyadditions:intro",
+        "actuallyadditions:guide"
       ],
       "bookmarks": [],
       "completedManualQuests": []

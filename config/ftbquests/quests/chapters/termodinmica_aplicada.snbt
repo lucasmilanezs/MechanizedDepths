@@ -9,16 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7C388A6CE74ED7C8"
-			tasks: [{
-				id: "7E354A1BCE8F876F"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -4.0d
-		}
-		{
+			dependencies: ["7C388A6CE74ED7C8"]
 			id: "664F03BCD6779986"
 			tasks: [{
 				id: "67186B4357C78AC4"
@@ -29,6 +20,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["7C388A6CE74ED7C8"]
 			id: "578E232A3AA3AD15"
 			tasks: [{
 				id: "0E9898DD015E38BD"
@@ -39,6 +31,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1471DC4294CC3E31"]
 			id: "5697C0E23B256642"
 			tasks: [{
 				id: "01D4F38992F01604"
@@ -92,6 +85,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["13AC27CEA3409047"]
 			id: "4B17B25AEC9A0007"
 			tasks: [{
 				id: "6F0872D38830D62B"
@@ -130,6 +124,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["377D66DD47488FE4"]
 			description: [
 				"   Quando introduzido no processo, o pó de coque funciona como um auxiliar térmico adsorvente. Seu alto teor de carbono residual interage com elementos instáveis durante a fragmentação, promovendo reações de redução leve ou sublimação de traços metálicos."
 				"   Esse efeito favorece o desprendimento de subprodutos com maior eficiência, como óxidos ou sais metálicos ligados ao minério original. Seu consumo é intermediário, pois não se decompõe por completo, mas reage com parte dos compostos voláteis."
@@ -158,6 +153,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["1471DC4294CC3E31"]
 			id: "42B368C1DD78B214"
 			tasks: [{
 				id: "740B749F8EEC70EC"
@@ -168,6 +164,10 @@
 			y: 4.0d
 		}
 		{
+			dependencies: [
+				"664F03BCD6779986"
+				"377D66DD47488FE4"
+			]
 			id: "6AA53F03B0A46CA3"
 			tasks: [{
 				id: "40BB801A6266FDDC"
@@ -178,6 +178,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["4807891B99079DE0"]
 			id: "064CB1A828061888"
 			tasks: [{
 				id: "2786BE2E1B85B577"
@@ -188,6 +189,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["4853679644FEE30A"]
 			id: "13AC27CEA3409047"
 			tasks: [{
 				id: "2F12530956236BA2"
@@ -198,6 +200,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["4B17B25AEC9A0007"]
 			id: "1471DC4294CC3E31"
 			tasks: [{
 				id: "1ADFAB6B1990D901"
@@ -208,6 +211,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["504BB1A0C0A5D778"]
 			description: [
 				"   Esta substância viscosa, derivada de processos biológicos complexos, atua como um meio de solvatação ativa dentro da câmara. Sua composição gelatinosa permite encapsular partículas durante a moagem, evitando perdas por suspensão e otimizando reações secundárias."
 				""
@@ -226,6 +230,10 @@
 			y: 1.0d
 		}
 		{
+			dependencies: [
+				"4807891B99079DE0"
+				"3321B64AAB3C71A1"
+			]
 			description: [
 				"   O cinnabar, composto principalmente de sulfeto de mercúrio (HgS), possui uma estrutura cristalina que, ao ser pressionada, libera microcargas estáticas e sofre fratura lamelar."
 				""
@@ -244,6 +252,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["4B17B25AEC9A0007"]
 			description: [
 				"   Apesar de bem contra-intuitivo, a Ice Charge funciona como um agente térmico moderador. Durante a pulverização, sua liberação controlada de frio absorve parte da energia gerada por atrito, reduzindo o desgaste do sistema e permitindo ciclos curtos com menos interrupção."
 				""
@@ -262,6 +271,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["42B368C1DD78B214"]
 			description: [
 				"   Formado por resíduos de alto-forno ricos em óxidos metálicos, o Rich Slag atua como um promotor de reatividade superficial. Seus componentes — principalmente óxidos de ferro, silício e alumínio — interagem com partículas em processo de fratura, aumentando sua instabilidade química."
 				"   Esse efeito induz a liberação de subprodutos ligados por forças fracas ou que requerem ativação catalítica mínima. Apesar de não afetar a velocidade, sua eficiência em extrações secundárias é excepcional."
@@ -289,13 +299,14 @@
 				"&7&o— Fascinante. Dê a uma planta o paraíso, e ela se embalsama. Acha que está se adaptando... enquanto morre quietinha.&r&r"
 			]
 			id: "1E7A8B399C39BF92"
+			size: 1.5d
 			tasks: [{
 				id: "7B017C8ACAC68D96"
 				item: "kubejs:organic_polymer_mesh"
 				type: "item"
 			}]
 			x: -2.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			id: "1D32FAFD4B673752"
@@ -306,6 +317,67 @@
 			}]
 			x: -1.5d
 			y: 2.5d
+		}
+		{
+			id: "7C388A6CE74ED7C8"
+			size: 1.5d
+			tasks: [{
+				id: "7E354A1BCE8F876F"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			id: "6B537BB89F153E53"
+			tasks: [{
+				id: "513A2E1939669EF6"
+				item: "buildinggadgets2:gadget_building"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			id: "3C63CA9085B5D349"
+			tasks: [{
+				id: "1451EA4C6073C8B1"
+				item: {
+					Count: 1
+					id: "buildinggadgets2:gadget_copy_paste"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			id: "5ACA5135D067CE24"
+			tasks: [{
+				id: "0BEB0D14644E4319"
+				item: {
+					Count: 1
+					id: "buildinggadgets2:gadget_cut_paste"
+					tag: {
+						pastereplace: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			id: "05EE79C3F0B06EE3"
+			tasks: [{
+				id: "2E44B337198532A4"
+				item: "buildinggadgets2:gadget_destruction"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
 		}
 	]
 	title: "6. Termodinâmica Aplicada™"

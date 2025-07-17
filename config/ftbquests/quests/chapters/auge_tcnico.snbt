@@ -1,0 +1,180 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "auge_tcnico"
+	group: "530DF528E020E9E4"
+	icon: "mekanism:solar_neutron_activator"
+	id: "0ED6D0506090823C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5E8D1605049FEA10"
+			tasks: [{
+				id: "019A8A6D10B551AD"
+				item: "mekanism:hazmat_mask"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			id: "7DE44902DB0C8CAA"
+			tasks: [{
+				id: "1A84A1CB3AEF2626"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			id: "1E55007255619F67"
+			tasks: [{
+				id: "7940D69724079E8F"
+				item: "mekanism:yellow_cake_uranium"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			id: "6577F9FDECC8C74C"
+			size: 1.2d
+			tasks: [{
+				id: "14EF46FD496A65BA"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			x: 0.5357142857142918d
+			y: -1.982142857142854d
+		}
+		{
+			id: "6084530CC24F006A"
+			tasks: [{
+				id: "45564EF45B1E68C8"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			id: "2197FE496D7B1CA4"
+			tasks: [{
+				id: "6B3363E516E36DB5"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "51A9C788A77F1ABC"
+			tasks: [{
+				id: "659F7992C7FB9BDB"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:wafer_processing_facility"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			id: "61E548B72126BED4"
+			tasks: [{
+				id: "7AA0534923BEE9A8"
+				item: "kubejs:silicon_wafer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			id: "18D815D7C059C699"
+			tasks: [{
+				id: "2AEFDAE98806F801"
+				item: "kubejs:pure_silicon"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			id: "6035B402975AF909"
+			tasks: [{
+				id: "107A3B6D929D5C6A"
+				item: "kubejs:monosilicon"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "5E298BAE074B1DA2"
+			tasks: [{
+				id: "57EB610CB8E69206"
+				item: "kubejs:nugget_chrome"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			id: "59F2C93F2377D5C2"
+			tasks: [{
+				id: "7DB58F5456937D65"
+				item: "kubejs:chrome_mask"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			id: "094228B531640373"
+			tasks: [{
+				id: "1E56129691BE4866"
+				item: "kubejs:dense_processor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			id: "68A6BB49E9C2FD52"
+			tasks: [{
+				id: "712AD34F084220DC"
+				item: "mekanism:uranium_hexafluoride_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			id: "7014BCC2A9E687D5"
+			tasks: [{
+				id: "696174E7911CE463"
+				item: "mekanism:reprocessed_fissile_fragment"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "0C176E2E42FFFAA4"
+			tasks: [{
+				id: "7EA01DFA8EAF5E72"
+				item: "minecraft:dark_oak_log"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+	]
+	title: "11. Ideias Fissionáveis"
+}

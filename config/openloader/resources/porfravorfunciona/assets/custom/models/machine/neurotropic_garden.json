@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/neurotropic_garden_top",
+        "up": "custom:block/neurotropic_garden_top",
+        "down": "custom:block/neurotropic_garden_bottom",
+        "north": "custom:block/neurotropic_garden_front",
+        "south": "custom:block/neurotropic_garden_back",
+        "east": "custom:block/neurotropic_garden_side",
+        "west": "custom:block/neurotropic_garden_side"
+    }
+}

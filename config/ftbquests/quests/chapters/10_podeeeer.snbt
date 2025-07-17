@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "10_podeeeer"
+	group: "530DF528E020E9E4"
+	icon: {
+		Count: 1
+		id: "powah:battery_nitro"
+		tag: { }
+	}
+	id: "0B5AF43A7B70A3BD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "074D71DA9CEE09D4"
+			tasks: [{
+				id: "5B275E236E4DEADE"
+				item: "powah:capacitor_basic_tiny"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "04E0811D8092FC28"
+			tasks: [{
+				id: "799F4F4518C1B472"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			id: "58E2A9AB736E8FBE"
+			tasks: [{
+				id: "52AAC29934619581"
+				item: "kubejs:slag_slurry_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "70EE75725BACFBBB"
+			size: 1.2d
+			tasks: [{
+				id: "7DB7C86918FDBC44"
+				item: "kubejs:mineral_sludge_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			id: "625FE2A2F5F0D6FC"
+			tasks: [{
+				id: "1C1CD1F30252222F"
+				item: "mekanism:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "2DFC7C093B3B8A9F"
+			tasks: [{
+				id: "505D41A33AEBF0A7"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:ore_sorter"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			id: "55B8476F5F38AEEE"
+			tasks: [{
+				id: "491300E0AC260C7B"
+				item: "kubejs:ferrisil_slag"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			id: "2C7A58F98F5033EA"
+			tasks: [{
+				id: "0D697024B44FB33F"
+				item: "kubejs:vitroclastic_slag"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "2BFB1F1D3C763218"
+			tasks: [{
+				id: "099E7875E8F6CC77"
+				item: "kubejs:lanthanic_crystal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			id: "4CA301C25741D4D6"
+			tasks: [{
+				id: "0E9C4370281FB38D"
+				item: "kubejs:neodymium_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			id: "2FABF0263FBED373"
+			tasks: [{
+				id: "7DF32448FFFFF67D"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "509B1C1E7FBEFD8C"
+			tasks: [{
+				id: "153D359ECCDDCBCE"
+				item: "powah:dielectric_rod"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+	]
+	title: "10. PODEEEER"
+}

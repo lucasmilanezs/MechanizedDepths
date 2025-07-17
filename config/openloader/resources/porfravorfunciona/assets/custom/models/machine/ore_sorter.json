@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/facility_casing",
+        "up": "custom:block/facility_casing",
+        "down": "custom:block/facility_input",
+        "north": "custom:block/ore_sorting_facility",
+        "south": "custom:block/facility_casing",
+        "east": "custom:block/facility_casing",
+        "west": "custom:block/facility_input"
+    }
+}
+

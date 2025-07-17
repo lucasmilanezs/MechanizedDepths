@@ -1,3 +1,4 @@
+console.info('Registering Chapter 5 Items');
 // CHAPTER 5
 
 // ORES
@@ -47,6 +48,25 @@ StartupEvents.registry('item', event => {
 
 // CIRCUITS/ELECTRONICS
 
+// AGONY MODULE (kubejs:agony_module)
+StartupEvents.registry('item', event => {
+  event.create('agony_module')
+    .displayName('Agony Module')
+    .texture('custom:item/agony_module')
+    .maxDamage(200)
+    .unstackable()
+});
+
+// JOY MODULE (kubejs:joy_module)
+StartupEvents.registry('item', event => {
+  event.create('joy_module')
+    .displayName('Joy Module')
+    .texture('custom:item/joy_module')
+    .maxDamage(200)
+    .unstackable()
+
+});
+
 // DORMANT MEMORY CELL (kubejs:dormant_memory_cell)
 StartupEvents.registry('item', event => {
   event.create('dormant_memory_cell')
@@ -66,7 +86,7 @@ StartupEvents.registry('item', event => {
       Text.of('§7A cell that thinks too much.').italic()
     ])
     .texture('custom:item/overthinker_cell')
-    .maxDamage(128)
+    .maxDamage(400)
     .unstackable()
 });
 

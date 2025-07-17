@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/alloy_maw_side",
+        "up": "custom:block/alloy_maw_top",
+        "down": "custom:block/alloy_maw_bottom",
+        "north": "custom:block/alloy_maw_front_active",
+        "south": "custom:block/alloy_maw_back",
+        "east": "custom:block/alloy_maw_side",
+        "west": "custom:block/alloy_maw_side"
+    }
+}

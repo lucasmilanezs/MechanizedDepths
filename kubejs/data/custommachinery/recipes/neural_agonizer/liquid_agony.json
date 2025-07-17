@@ -9,6 +9,12 @@
 			"amount": 1,
 			"mode": "input"
 		},
+        {
+			"type": "custommachinery:durability",
+			"item": "kubejs:agony_module",
+			"amount": 1,
+			"mode": "input"
+		},
 		{
 			"type": "custommachinery:fluid",
 			"fluid": "kubejs:liquid_agony",

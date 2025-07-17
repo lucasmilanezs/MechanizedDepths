@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "17_no_leia_isso_em_voz_alta"
+	group: "5F94D0BCA2EE5D6B"
+	id: "27F1643AD8BC92C8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "17. Entropia Voluntária"
+}

@@ -33,4 +33,17 @@ ServerEvents.recipes(event => {
   });
 });
 
+// ELECTROLYTIC CORE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:electrolytic_core' });
+  event.shaped('mekanism:electrolytic_core', [
+    'AEA',
+    'SAS',
+    'AEA'
+  ], {
+    A: 'mekanism:alloy_atomic',
+    E: 'actuallyadditions:empowered_enori_crystal',
+    S: 'thermal_extra:shellite_dust'
+  });
+});
 //====================COMPATIBILITY RECIPES==================

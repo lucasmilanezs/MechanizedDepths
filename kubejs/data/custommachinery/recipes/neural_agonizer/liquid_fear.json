@@ -1,0 +1,26 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:neural_agonizer",
+	"time": 20,
+	"requirements": [
+        		{
+			"type": "custommachinery:durability",
+			"item": "kubejs:overthinker_cell",
+			"amount": 1,
+			"mode": "input"
+		},
+        {
+			"type": "custommachinery:durability",
+			"item": "kubejs:fear_module",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "kubejs:liquid_fear",
+			"amount": 250,
+			"mode": "output"
+		}
+
+	]
+}

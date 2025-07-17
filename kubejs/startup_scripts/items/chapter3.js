@@ -1,3 +1,4 @@
+console.info('Registering Chapter 3 Items');
 // CHAPTER 3
 
 // ORES

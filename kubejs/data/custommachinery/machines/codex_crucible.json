@@ -1,0 +1,111 @@
+{
+  "name": {
+    "text": "Codex Crucible"
+  },
+  "appearance": {
+    "block": "custom:machine/codex_crucible"
+  },
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "id": "techcard",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "data",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "output",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy",
+      "capacity": 100000,
+      "max_input": 10000,
+      "max_output": 10000
+    }
+  ],
+  "gui": [
+    {
+      "type": "custommachinery:background",
+      "texture": "custom:textures/gui/common/bg_vanilla.png",
+      "width": 176,
+      "height": 166
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 7,
+      "y": 83
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 44,
+      "y": 7,
+      "text": {
+        "text": "Codex Crucible"
+      }
+    },
+    {
+      "type": "custommachinery:energy",
+      "x": 8,
+      "y": 11,
+      "width": 4,
+      "height": 56
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 49,
+      "y": 24,
+      "texture_empty": "custom:textures/gui/common/2_1_progress.png",
+      "texture_filled": "custom:textures/gui/common/2_1_progress_full.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "techcard",
+      "x": 36,
+      "y": 22,
+      "ghost": {
+        "items": [
+          "kubejs:blank_tech_card"
+        ],
+        "color": {
+          "alpha": 0.30980393
+        }
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "data",
+      "x": 36,
+      "y": 45,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "output",
+      "x": 119,
+      "y": 22,
+      "width": 22,
+      "height": 22,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:config",
+      "x": 138,
+      "y": 106
+    }
+  ]
+}

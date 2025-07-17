@@ -19,7 +19,19 @@ ServerEvents.recipes((event) => {
 });
 //====================CHANGED RECIPES==================
 
-//RECIPE NAME
+//ENERGIZED GLOWSTONE
+ServerEvents.recipes((event) => {
+  event.remove({ id: 'thermal:machines/crucible/crucible_glowstone_dust' });
+  event.remove({ id: 'thermal:machines/crucible/crucible_glowstone_block' });
+  event.custom({
+    type: 'thermal:crucible',
+    ingredient: { item: 'mekanism:ingot_refined_glowstone' },
+    result: [
+      { fluid: 'thermal:glowstone', amount: 250 }
+    ],
+    energy: 6000
+  });
+});
 
 //====================COMPATIBILITY RECIPES==================
 

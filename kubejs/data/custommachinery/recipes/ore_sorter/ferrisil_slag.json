@@ -1,0 +1,62 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "custommachinery:ore_sorter",
+  "time": 200,
+  "requirements": [
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:ferrisil_slag",
+      "amount": 12,
+      "mode": "input",
+      "consume_on_end": true,
+      "keep": true
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "minecraft:raw_iron",
+      "amount": 5,
+      "chance": 0.8,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "minecraft:raw_copper",
+      "amount": 4,
+      "chance": 0.6,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "alltheores:raw_aluminum",
+      "amount": 4,
+      "chance": 0.6,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "alltheores:raw_tin",
+      "amount": 4,
+      "chance": 0.5,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "alltheores:raw_nickel",
+      "amount": 3,
+      "chance": 0.4,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "thermal:sulfur_dust",
+      "amount": 2,
+      "chance": 0.1,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy_per_tick",
+      "amount": 40,
+      "mode": "input"
+    }
+  ]
+}

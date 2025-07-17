@@ -215,6 +215,74 @@ ServerEvents.recipes(event => {
     });
 });
 
+//TWINITE ROD
+ServerEvents.recipes(event => {
+  event.remove({ id: 'thermal_extra:crafting/twinite_rod' });
+});
+
+
+//NITRATIC IGNITER
+ServerEvents.recipes(event => {
+  event.remove({ output: 'thermal_extra:nitratic_igniter' });
+  event.shaped('thermal_extra:nitratic_igniter', [
+    ' G ',
+    'PFP',
+    'ERE'
+  ], {
+    G: 'immersiveengineering:graphite_electrode',
+    R: 'kubejs:rf_resonator',
+    P: 'thermal_extra:polyolefin_plate',
+    E: 'thermal:enderium_gear',
+    F: 'thermal:machine_frame'
+    });
+});
+
+//ENDERIUM GEAR
+ServerEvents.recipes(event => {
+  event.remove({ output: 'thermal:enderium_gear' });
+  event.shaped('thermal:enderium_gear', [
+    'NIN',
+    'IEI',
+    'NIN'
+  ], {
+    I: 'thermal:enderium_ingot',
+    N: 'thermal:enderium_nugget',
+    E: 'thermal:lumium_gear'
+    });
+});
+
+//ENDOTHERMIC DEHYDRATOR
+ServerEvents.recipes(event => {
+  event.remove({ output: 'thermal_extra:endothermic_dehydrator' });
+  event.shaped('thermal_extra:endothermic_dehydrator', [
+    ' S ',
+    'HFH',
+    'ERE'
+  ], {
+    S: 'thermal_extra:soul_infused_ingot',
+    E: 'thermal:enderium_gear',
+    R: 'kubejs:rf_resonator',
+    H: 'thermal_extra:soul_infused_glass',
+    F: 'thermal:machine_frame'
+    });
+});
+
+//FLUID MIXER
+ServerEvents.recipes(event => {
+  event.remove({ output: 'thermal_extra:fluid_mixer' });
+  event.shaped('thermal_extra:fluid_mixer', [
+    'APA',
+    'BFB',
+    'ERE'
+  ], {
+    P: 'immersiveengineering:fluid_pump',
+    E: 'thermal:enderium_gear',
+    R: 'kubejs:rf_resonator',
+    A: 'thermal_extra:polyolefin_plate',
+    B: 'thermal_extra:twinite_glass',
+    F: 'thermal:machine_frame'
+    });
+});
 
 //====================COMPATIBILITY RECIPES==================
 

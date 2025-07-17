@@ -68,9 +68,82 @@ ServerEvents.recipes(event => {
   .transitionalItem('kubejs:incomplete_forged_assembly')
   .loops(1)
 })
+
+//BLANK TECH CARD
+ServerEvents.recipes(event => {
+  const transitional = 'kubejs:incomplete_blank_tech_card'
+
+  event.recipes.create.sequenced_assembly(
+    [Item.of('kubejs:blank_tech_card')],
+    'ae2:basic_card',
+    [
+      event.recipes.create.deploying(transitional, [transitional, 'mekanism:hdpe_sheet']),
+      event.recipes.create.deploying(transitional, [transitional, 'immersiveengineering:wirecoil_steel']),
+      event.custom({
+        type: 'create_new_age:energising',
+        energy_needed: 10000,
+        ingredients: [{ item: transitional }],
+        results: [{ item: transitional }]
+      }),
+    ]
+  )
+  .transitionalItem(transitional)
+  .loops(1);
+});
+
+// SILICON WAFER
+// SILICON WAFER PRODUCTION
+ServerEvents.recipes(event => {
+  const transitional = 'kubejs:incomplete_silicon_wafer'
+
+  event.recipes.create.sequenced_assembly(
+    [
+      Item.of('kubejs:silicon_wafer', 4)
+    ],
+    Item.of('kubejs:monosilicon'),
+    [
+      event.recipes.create.cutting(transitional, transitional).processingTime(100),
+      event.recipes.create.cutting(transitional, transitional).processingTime(100),
+      event.recipes.createmetallurgy.grinding(transitional, transitional)
+    ]
+  )
+  .transitionalItem(transitional)
+  .loops(1)
+  .id('kubejs:processing/silicon_wafer');
+});
+
+
 //====================CHANGED RECIPES==================
 
+//INDUSTRIAL CRUCIBLE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'createmetallurgy:sequenced_assembly/industrial_crucible' });
+  const transitional = 'kubejs:incoemplete_crucible'
+
+  event.recipes.create.sequenced_assembly(
+    [
+      Item.of('createmetallurgy:industrial_crucible', 1)
+    ],
+    Item.of('minecraft:deepslate_bricks'),
+    [
+      event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'createmetallurgy:refractory_mortar']),
+      event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'kubejs:meattherial']),
+      event.recipes.createmetallurgy.grinding(Item.of(transitional), Item.of(transitional)),
+      event.recipes.create.filling(Item.of(transitional), [
+        Item.of(transitional),
+        Fluid.of('kubejs:melted_blaze_metal', 250)
+      ]),
+    ]
+  )
+  .transitionalItem(transitional)
+  .loops(1)
+  .id('kubejs:createmetallurgy/sequenced/industrial_crucible');
+});
+
+
 //====================COMPATIBILITY RECIPES==================
+
+
 
 //====================FUNCTIONAL EXAMPLE==================
 ServerEvents.recipes(event => {
@@ -119,3 +192,7 @@ ServerEvents.recipes(event => {
   .loops(1)
 });
 
+
+
+
+ 
