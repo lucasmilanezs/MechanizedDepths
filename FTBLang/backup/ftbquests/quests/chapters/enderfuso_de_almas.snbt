@@ -1,0 +1,791 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "enderfuso_de_almas"
+	group: "48009A32F221D9FC"
+	icon: "enderio:ender_resonator"
+	id: "078F2EC9E11CC195"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1AC4899640C73919"]
+			description: [
+				"   Na interseção entre o movimento e a entropia, nasceu uma estrutura vazia — um casulo de aço e silêncio que pulsa com a promessa do desconhecido."
+				""
+				"   O Void Chassis não é apenas um bloco base. É o primeiro vislumbre do que jaz além da engenharia visível: a fundação de máquinas que não foram feitas para serem compreendidas. Moldado com ligas tangíveis e um núcleo que foca o caos dimensional, fundido entre o rigor do Create e o abismo do Ender IO."
+				""
+				"   Aqui, a engenharia abandona a elegância para abraçar o abominável."
+			]
+			id: "33C02C36A3F51FC9"
+			size: 1.5d
+			tasks: [{
+				id: "3374897026ED264E"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33C02C36A3F51FC9"]
+			description: [
+				"   Toda tecnologia de ponta começa com um barril fervendo no meio do mato."
+				""
+				"   A Primitive Alloy Smelter é uma anomalia funcional: uma fusão primitiva que abre mão de segurança, estética e bom senso. Ela não possui controle de temperatura, isolamento decente, nem qualquer respeito pelos seus arredores. Mas derrete. E liga."
+				""
+				"   Mesmo sendo uma versão pálida da imponente Arc Furnace, essa sucata em forma de máquina cumpre um papel fundamental: fundir três components — algo que a maioria dos fornos ignora ou distorce. Para certas ligas do Ender IO, ela é o único caminho inicial."
+				""
+				"&7&o— Não subestime o poder de três metais desconfortavelmente próximos dentro de um balde superaquecido.&r&r"
+			]
+			id: "60A75D039007C6E3"
+			tasks: [{
+				id: "60B58CEF915A2853"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			title: "Isso vai explodir?"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"380D75C7DC2900B9"
+				"33C02C36A3F51FC9"
+			]
+			description: [
+				"   Entre o aço e a alma, algo novo é moldado."
+				""
+				"   A Alloy Smelter é a sucessora direta do experimento primitivo — uma máquina que refina a arte de fundir ligas com mais controle, velocidade e eficiência. Ainda assim, mantém sua essência: três slots, uma escolha, um resultado."
+				""
+				"   Comparada à monumental Arc Furnace, ela parece modesta. A Arc Furnace trabalha em escala industrial, lidando com até cinco entradas e calor infernal. A Alloy Smelter, por outro lado, é cirúrgica. Seu domínio está nas ligas mais simbióticas, especialmente aquelas impregnadas com as propriedades aberrantes do Ender IO."
+				""
+				"   Ela não substitui a fornalha arc. Mas a precede. E a justifica."
+				""
+				"&7&o— Uma fusão controlada é mais perigosa que uma explosão. Pelo menos a explosão te dá uma chance de fugir.&r&r"
+			]
+			id: "34A056161AA7F764"
+			tasks: [{
+				id: "79EB4610A132758D"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			title: "As vezes menos é mais!"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["60A75D039007C6E3"]
+			description: [
+				"   Toda máquina precisa de um alicerce. Nem sempre glorioso, mas confiável."
+				""
+				"   Esse metal escuro é exatamente isso: uma mistura direta entre o que já é resistente e o que se recusa a ser compreendido. Criado sob pressão, utilizando estrutura firme, carvão refinado e uma pitada de... ruído dimensional, ele representa o momento em que a fundição passa a obedecer vontades mais abstratas."
+				""
+				"   Não impressiona. Não brilha. Mas está em todo lugar."
+				""
+				"&7&o— Parece aço. Age como aço. Mas tem algo ali que não devia estar quieto.&r&r"
+			]
+			id: "380D75C7DC2900B9"
+			tasks: [{
+				id: "1326B3E5880BF79E"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			title: "Duro o Suficiente Para Começar"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["380D75C7DC2900B9"]
+			description: [
+				"   A matéria raramente se entrega inteira. Às vezes, é preciso esmagar até que ela conte seus segredos."
+				""
+				"   Este moinho é mais do que um triturador. Ele é um interrogador mecânico, extraindo cada traço útil de tudo o que passa por suas lâminas. Diferente dos métodos tradicionais, ele não busca apenas o minério — busca o que está escondido entre os grãos. Pigmentos, resíduos, partículas de algo que talvez tenha sido mais vivo do que deveria."
+				""
+				"   Sem ele, boa parte do que define esse ciclo de máquinas jamais seria acessível."
+				""
+				"   É feio. É barulhento. E vai te sustentar por mais tempo do que parece."
+				""
+				"&7&o— A diferença entre pó de pedra e essência técnica está em quanto você insiste em esmagar.&r&r"
+			]
+			id: "26866CDA18061C3F"
+			tasks: [{
+				id: "3EED29EE01F40E97"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			title: "Moer é Revelar"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5F4685B36164B0EC"]
+			description: [
+				"   Essa liga não é difícil de forjar — ela é difícil de aceitar."
+				""
+				"   Fundida a partir de metal comum e traços do que já foi vivo, ela representa a tentativa mais ousada até agora: construir com algo que já existiu, e que se recusa a desaparecer. A poeira acinzentada que antecede essa liga parece lembrar. E quando fundida, ela ainda pulsa, de leve. Nada agressivo. Apenas... presente."
+				""
+				"   É a base de estruturas sensíveis, que reagem a alma, essência, e intenções pouco claras. Uma liga que não brilha — mas observa."
+				""
+				"&7&o— Quando dizem que o aço tem memória, não era disso que estavam falando. Isso aqui lembra coisas que você nunca viveu.&r&r"
+			]
+			id: "3077BE4A34915897"
+			tasks: [{
+				id: "76DAA12D0BCFC0F3"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			title: "Ligar o Que Já Partiu"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26866CDA18061C3F"]
+			description: [
+				"   Ao triturar areia encharcada de sofrimento, sobra algo que não deveria existir: uma poeira acinzentada, densa, quieta — e, curiosamente, útil."
+				""
+				"   Esse resíduo é tudo o que resta de uma alma que não teve para onde ir. Não é alma, nem areia. Mas guarda fragmentos das duas coisas. Ele reage, lentamente, quando inserido em certos circuitos. E mesmo que ninguém entenda bem o que ele faz, todos preferem continuar usando."
+				""
+				"   O tipo de material que você guarda num frasco lacrado. E evita nomear em voz alta."
+				""
+				"&7&o— Já tentou moer uma lápide? Dá nisso. Mas esse aí... ainda respira, às vezes.&r&r"
+			]
+			id: "5F4685B36164B0EC"
+			tasks: [{
+				id: "29554569AB066742"
+				item: "kubejs:ashen_remnant"
+				type: "item"
+			}]
+			title: "Cemitérios Não Costumam Falar"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26866CDA18061C3F"]
+			description: [
+				"   Nem tudo que vibra faz som. Essa poeira, por exemplo, vibra com... expectativa."
+				""
+				"   Encontrada em pequenas rachaduras na pedra do fim, essa substância reage de forma incomum quando próxima de campos energéticos ou estruturas dimensionais. Não explode, não brilha, não canta — apenas... responde."
+				""
+				"   Rara, difícil de reproduzir, e exigente. Um mineral que parece mais entender que é observado, do que ser útil por vontade própria. E mesmo assim, é essencial para estabilizar os processos que vêm depois."
+				""
+				"&7&o— Ela vibra mesmo fora do frasco. Talvez por saudade. Talvez por raiva.&r&r"
+			]
+			id: "16DE78B14AD5C30F"
+			tasks: [{
+				id: "0C32C7AFCB9808D1"
+				item: "kubejs:resonant_dust"
+				type: "item"
+			}]
+			title: "Silêncio Vibrante"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["16DE78B14AD5C30F"]
+			description: [
+				"   A fusão entre o que é pesado e o que já não pertence a este plano."
+				""
+				"   Essa liga é o resultado de uma compressão paradoxal: pegar o material mais inerte, torná-lo estável com poeira instável, e forçá-lo a se comportar. End Steel não é duro apenas fisicamente — ele resiste a ser transformado."
+				""
+				"   É o tipo de estrutura que você usa quando pretende selar uma máquina, blindar uma fronteira, ou prender uma ideia dentro de um bloco. Não é bonito. Não é leve. Mas segura o que ninguém mais segura."
+				""
+				"&7&o— Toda liga tem um ponto de ruptura. Essa aqui apenas finge que não tem.&r&r"
+			]
+			id: "087253246A12A364"
+			tasks: [{
+				id: "1D6C94605004EB9A"
+				item: "enderio:end_steel_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"087253246A12A364"
+				"3077BE4A34915897"
+			]
+			description: [
+				"   Quando o aço negro não for suficiente. Quando nem a alma fundida em metal suportar sozinha. Quando a máquina precisar lembrar — ou fingir que lembra — é esse o esqueleto que você vai usar."
+				""
+				"   Este chassis é a primeira fundação feita não apenas para suportar funções, mas para abrigar propósitos. Moldado com o peso do fim e a memória da alma, ele marca o início de uma nova arquitetura: não mais máquinas burdas, mas entidades técnicas com senso de direção."
+				""
+				"   A partir dele, as estruturas deixam de apenas fazer — e começam a &l&4entender.&r&r"
+				""
+				"&7&o— Você pode chamá-lo de base estrutural. Mas ele vai fingir que não ouviu.&r&r"
+			]
+			id: "02C64D7A8A15D666"
+			size: 1.2d
+			tasks: [{
+				id: "387C0D68D180296B"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			title: "Estrutura Para o Impensável"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "6F08DCFF5C66E621"
+			tasks: [{
+				id: "5F03AE4507A998C7"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			id: "6E0941CD567C47CE"
+			tasks: [{
+				id: "4A6F01E47D202698"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			id: "6E2F5990270F6C13"
+			tasks: [{
+				id: "32275ABED8DA14BD"
+				item: "mob_grinding_utils:fan"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3077BE4A34915897"]
+			description: [
+				"   No início, era o Soularium."
+				"   Nobre, místico, infundido com traços da alma."
+				""
+				"   Então alguém — não vamos apontar nomes — decidiu cercá-lo com ossos, olhos, peles, patas, asas, um pouco de pó explosivo e talvez um suspiro do próprio absurdo."
+				"O resultado?"
+				""
+				"   Mob ingot."
+				"   Uma barra."
+				"   De creeper."
+				"   Com calça."
+				"   De zumbi."
+				"   Sim."
+				""
+				"   Seu valor técnico é inquestionável: este é o componente-base para a construção das estruturas do Mob Grinding Utilities, permitindo moagens, separações e extrações altamente eficientes de entidades vivas."
+				""
+				"   Seu valor conceitual... talvez seja melhor nem tentar encontrar."
+				""
+				"   Sim, eu sei o que você está pensando."
+				""
+				"   Não faça perguntas cuja resposta você não quer saber."
+				""
+				"&7&o— A ciência avança, mesmo que tropece de vez em quando com um esqueleto vestido de frango montado num slime com chapéu.&r&r"
+			]
+			id: "39D52010864F7BE9"
+			size: 1.2d
+			tasks: [{
+				id: "3A4D30F3F844EDC1"
+				item: "kubejs:mobgrindium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "024B16A1C321F0B9"
+			tasks: [{
+				id: "27338A53B51D48DC"
+				item: "mob_grinding_utils:entity_conveyor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["01CABE0E1F3B9EDC"]
+			description: [
+				"   Corrente elétrica é fácil de gerar. Difícil é fazer com que ela lembre de onde veio."
+				""
+				"   Este componente responde, pulsa, reage. Não por causa de cobre ou liga especial, mas por conter o que sobrou de um impulso nervoso... reciclado. Uma condução elétrica forçada a continuar mesmo depois de sua fonte original ter parado de pensar."
+				""
+				"   É o tipo de peça que você nunca deveria desmontar. Porque ela pode, por um breve instante, tentar se lembrar."
+				""
+				"&7&o— É meio cruel? Talvez, mas tudo é pela ciência! .&r&r"
+			]
+			id: "6C914CA1C10A4C3C"
+			tasks: [{
+				id: "2C01CF7F7530B3AF"
+				item: "enderio:zombie_electrode"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "091EF5C74B511DB6"
+			tasks: [{
+				id: "6C952B765831AC81"
+				item: "mob_grinding_utils:saw"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6C914CA1C10A4C3C"
+				"6F08DCFF5C66E621"
+			]
+			description: [
+				"   Não basta simular inteligência. Às vezes, é mais eficiente... encaixotar uma alma de verdade."
+				""
+				"   Este chip não roda firmware. Ele sonha, em ciclos curtos, memórias que não são dele. Uma alma real — extraída, armazenada e infundida em um invólucro técnico — pulsa no centro desse componente. O circuito não apenas executa, ele reluta, hesita, e obedece com um leve atraso emocional."
+				""
+				"   É o tipo de unidade que funciona melhor quando você não pergunta como foi feita."
+				""
+				"&7&o— Chamar isso de “zumbi eletrônico” é injusto. Os zumbis, ao menos, não sabiam que estavam presos.&r&r"
+			]
+			id: "3DD27555EF64CE5A"
+			tasks: [{
+				id: "4A75AACC6F8D9714"
+				item: "enderio:frank_n_zombie"
+				type: "item"
+			}]
+			title: "Hardware Animado"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"021EA65400A038A6"
+				"01CABE0E1F3B9EDC"
+			]
+			description: [
+				"O silêncio é o mais seguro dos estados."
+				""
+				"   Durante o processo de segmentação neural, três entidades conscientes foram despidas de forma cirúrgica e sistemática: os impulsos do Sentient Ender, os padrões de agressão do Skeletal Contractor e as memórias deterioradas do Franken Zombie. O que sobra aqui... não é apenas um chip."
+				""
+				"   É um cérebro. Compactado. Selado."
+				"   Talvez ainda... presente."
+				""
+				"   Chamamos isso de célula de memória, mas sabemos que ela não armazena dados — ela se lembra por vontade própria. "
+				""
+				"   O Slice ‘n Splice não apenas corta matéria, ele fatiou instintos, intenções, e algo que talvez fosse alma."
+				"   Tudo para que você possa colocar isso em seu sistema e, com sorte, acessar 256k de armazenamento com um leve sorriso no rosto. Claro, para fins comerciais, todas as operações foram realizadas da maneira mais humana e indolor possível. "
+				""
+				"   Mas fique tranquilo: ela está adormecida."
+				"   Ela foi projetada para jamais despertar."
+				"   Isso é garantido. Certo?"
+				""
+				"   …e se você olhar bem de perto, parece que… não, deve ser só uma impressão. Não tem como… certo?"
+				""
+				""
+				"&7&o— Por precaução, mantenha seu anti-vírus ligado e funcional. A não ser que queira companhia.&r&r"
+			]
+			id: "10B03F04C4CE834E"
+			size: 1.2d
+			tasks: [{
+				id: "6248A6B22A6F2FA0"
+				item: "kubejs:dormant_memory_cell"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"   A busca por armazenamento absoluto sempre teve um custo: espaço, energia… e agora, talvez, consciência residual."
+				""
+				"   Com o sistema ME plenamente estabelecido — controladores calibrados, canais balanceados e drives energizados —, finalmente é hora de criar suas primeiras células de armazenamento."
+				""
+				"   Cada uma dessas pequenas maravilhas pode arquivar milhares de blocos de informação molecular em tempo real, com redundância dimensional e sincronização instantânea."
+				""
+				"   Claro, há um certo... ingrediente central vindo do Slice 'n Splice."
+				"Mas isso é apenas uma peça funcional. Nada que vá acordar. Provavelmente."
+				""
+				"   Além disso, elas são lindas! Compactas, empilháveis, personalizáveis — e levemente inquietantes ao toque."
+				""
+				"   Armazene seus sonhos. E evite dormir perto delas."
+				""
+				"&7&o— Se alguma delas começar a emitir ruídos... pode ser interferência. Ou saudade.&r&r"
+			]
+			id: "021EA65400A038A6"
+			tasks: [{
+				id: "69555CB033217D43"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Armazenamento Inteligente"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5B72BC8FFE0F8040"]
+			description: [
+				"   Quatro vezes mais espaço por um custo razoável. A compressão de dados ainda opera dentro de limites aceitáveis de estabilidade cognitiva. Pelo menos é o que dizem os logs. Não há com o que se preocupar."
+				""
+				"&7&o— Níveis elevados de memória passiva são normais. Ignore sussurros.&r&r"
+			]
+			id: "6D7490C1F3D84DA3"
+			tasks: [{
+				id: "27946EC971117417"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_4k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Mais dados, menos consciência"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["021EA65400A038A6"]
+			description: [
+				"   Agora sim, estamos entrando em território profundo. O volume de armazenamento começa a se aproximar do que antigamente era chamado de “módulo cerebral”. Mas calma, ainda é só um chip. Bem... um chip com sonhos."
+				""
+				"&7&o— Em caso de instabilidade, reinicie. Se ela resistir, corra.&r&r"
+			]
+			id: "5B72BC8FFE0F8040"
+			tasks: [{
+				id: "3C47CF81C77C217E"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_16k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Aglomerados de pensamento"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6D7490C1F3D84DA3"]
+			description: [
+				"   Essa célula foi projetada para armazenar praticamente tudo que sua base pode produzir. E um pouco mais. Talvez até pensamentos que não são seus."
+				""
+				"&7&o— Se notar que ela começa a se organizar sozinha, isso é eficiência. Ou vontade própria.&r&r"
+			]
+			id: "1135A9E1B67CB5AE"
+			tasks: [{
+				id: "535B8EBC5F529A3A"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_64k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Limite de contenção"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1135A9E1B67CB5AE"]
+			description: [
+				"   &lVocê realmente precisa disso tudo?&r"
+				""
+				"   Este é o ápice do armazenamento molecular. Dados, itens, talvez até traços da sua personalidade — tudo ali dentro, empilhado em silêncio."
+				""
+				"   Nada mais a declarar."
+				"   Literalmente."
+				"   Ela já fala por si."
+				""
+				"&7&o— Espera... essa célula estava aqui antes de você chegar?&r&r"
+			]
+			id: "7ED86C8D398DC882"
+			tasks: [{
+				id: "205301C54E5DA991"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_256k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "519BABFAD0D85F93"
+			tasks: [{
+				id: "2F3A2A73493D8ED9"
+				item: "mob_grinding_utils:fan_upgrade_speed"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			id: "1E874DCD6F8C79FB"
+			tasks: [{
+				id: "6768CAFB819CA969"
+				item: "mob_grinding_utils:fan_upgrade_width"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			id: "07ED8FF8B860C228"
+			tasks: [{
+				id: "1826739FD58BEEFF"
+				item: "mob_grinding_utils:fan_upgrade_height"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			id: "0F6245BA5B6F6F02"
+			tasks: [{
+				id: "3E8B8FA305651BEC"
+				item: "mob_grinding_utils:saw_upgrade_looting"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			id: "318800132938F1A4"
+			tasks: [{
+				id: "0D61BB53D5B176E8"
+				item: "mob_grinding_utils:saw_upgrade_sharpness"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			id: "136E03A830FA397B"
+			tasks: [{
+				id: "2D56E163C4810CC6"
+				item: "mob_grinding_utils:saw_upgrade_beheading"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["217FB33A7552DD46"]
+			description: [
+				"   Este aparelho foi criado para estressar a célula de pensamento até a exaustão emocional."
+				""
+				"   Ele não destrói. Ele frustra. Ele induz perdas, cria angústia, insere ruído nos loops de prazer, quebra promessas que nunca foram feitas. A resposta é previsível: dor emocional intensa, transformada em energia emocional bruta."
+				""
+				"   Com os devidos módulos, você poderá extrair agony, wrath, fear, remorse, e outras emoções densas — cada uma um composto valioso. Porque no fim, o que importa não é o tipo de emoção... mas sua intensidade."
+				""
+				"&7&o— A dor é apenas um dado esperando interpretação. Aqui, ela é interpretada em litros.&r&r"
+			]
+			id: "29684A0471198020"
+			tasks: [{
+				id: "394C5E962F825987"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:neural_agonizer"
+					}
+				}
+				type: "item"
+			}]
+			title: "Processador de Sofrimento"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["217FB33A7552DD46"]
+			description: [
+				"   Este ambiente simulado foi projetado para cultivar estados emocionais positivos, induzindo a célula de pensamento a ciclos de prazer, contentamento e satisfação."
+				""
+				"   Aqui, a alegria não é consequência — é cultivo. O ambiente cria estímulos sensoriais, recompensas internas, loops de dopamina sintética. A célula responde. Sente. E registra. O resultado é um fluxo lento, mas puro, de sentimentos como recurso técnico."
+				""
+				"   Inicialmente, você obterá joy. Mas os módulos certos permitirão extrair love, pleasure, curiosity, ou qualquer outra emoção que floresça sob luz artificial."
+				""
+				"&7&o— Imagine uma estufa onde se colhe felicidade. Agora imagine saber que ela não é sua.&r&r"
+			]
+			id: "45AE6F908E9BFEC6"
+			tasks: [{
+				id: "74A777F5DA01F7F2"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:neurotropic_garden"
+					}
+				}
+				type: "item"
+			}]
+			title: "Arquitetura da Euforia"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"29684A0471198020"
+				"1D79CA728AD74633"
+			]
+			description: [
+				"   Densa, escura, vibrando levemente como se ainda estivesse tentando sair da garrafa. Essa substância foi criada no auge do sofrimento de algo que não teve escolha. É poderosa, corrosiva e extremamente útil — não pela dor em si, mas pela intensidade com que foi sentida. E pela frieza com que foi medida."
+				""
+				"&7&o— É curioso. A dor alheia sempre parece mais útil quando está rotulada e armazenada.&r&r"
+			]
+			id: "37A3741F8C1E732E"
+			tasks: [{
+				id: "4414C2C1B26B3203"
+				item: "kubejs:liquid_agony_bucket"
+				type: "item"
+			}]
+			title: "Dor Reduzida a Fórmula"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"45AE6F908E9BFEC6"
+				"1D79CA728AD74633"
+			]
+			description: [
+				"   Essa substância translúcida pulsa com um brilho calmo, quase maternal. Foi extraída de ciclos de prazer intensos, cultivados até se tornarem mensuráveis. Não é uma ilusão — é uma alegria tão concentrada que chega a se tornar física. Um mililitro equivale a uma vida inteira bem vivida. Ou pelo menos, simulada assim."
+				""
+				"&7&o— Felicidade engarrafada é confortável. Até você perceber que ela foi colhida de alguém que ainda está feliz. E preso.&r&r"
+			]
+			id: "6BBDCCA20EA6C515"
+			tasks: [{
+				id: "4DCB856266A3C055"
+				item: "kubejs:liquid_joy_bucket"
+				type: "item"
+			}]
+			title: "Euforia Engarrafada"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6BBDCCA20EA6C515"
+				"37A3741F8C1E732E"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"   A interface responde. Mas não com dados."
+				""
+				"   Ela só funciona quando sente."
+				""
+				"   Para que essa estrutura ative seu verdadeiro potencial, é preciso injetar nela um sentimento cru — forte o suficiente para ultrapassar o limiar do entendimento. Não importa qual sentimento. Apenas o quanto ele grita."
+				""
+				"   Você tem duas rotas. Duas promessas."
+				""
+				"   O caminho paciente: induzir alegria com cuidado, tempo e uma simulação perfeita. Um paraíso técnico onde a célula dança em ciclos eternos de contentamento."
+				"Ou o caminho eficiente: extrair dor. Rápida. Brutal. Incontornável. E despejá-la, ainda quente, na interface."
+				""
+				"   Ambos funcionam. Ambos ativam."
+				""
+				"   A escolha é sua."
+				""
+				"   A resposta também."
+			]
+			id: "171975C11B49B098"
+			size: 1.5d
+			tasks: [{
+				id: "21E0D9BC6D0C4A30"
+				item: "kubejs:synaptic_interface"
+				type: "item"
+			}]
+			title: "A Escolha que Dá Forma ao Pensamento"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3DD27555EF64CE5A"]
+			description: [
+				"   Imagine colher a parte de alguém que ainda sabia o que estava fazendo — e então obrigá-la a continuar pensando, confinada."
+				""
+				"   Essa interface é isso: uma massa encefálica prensada em silício, modificada até obedecer comandos, mas ainda ativa o suficiente para improvisar. É o intermediário entre a lógica bruta e o instinto ressonante."
+				""
+				"   Não é código. Não é carne. É um elo nervoso encapsulado, alimentado a promessas de funcionalidade. E, às vezes, raiva passiva."
+				""
+				"&7&o— Ela não calcula. Ela sugere. E às vezes, você obedece sem perceber.&r&r"
+			]
+			id: "217FB33A7552DD46"
+			tasks: [{
+				id: "206AAB17705F2F3C"
+				item: "kubejs:blank_synaptic_interface"
+				type: "item"
+			}]
+			title: "\"Você pensa dentro da caixa\""
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"02C64D7A8A15D666"
+				"6F08DCFF5C66E621"
+			]
+			description: [
+				"   Aqui, a engenharia deixou de seguir o manual."
+				""
+				"   Essa estrutura não apenas constrói — ela interfere. Não apenas funde — costura. Trabalha com ossos, olhos, nervos, e o que sobra das intenções de algo que já quis continuar existindo. E no processo, reconfigura a si mesma, como se estivesse sempre à beira de se tornar algo melhor. Ou pior."
+				""
+				"   É o ponto em que o ferro se permite apodrecer com propósito. Onde o projeto exige sofrimento como insumo técnico. Nada aqui é limpo, nem deveria ser. Este é o cerne: onde as futuras máquinas ganham dentes, e talvez... memórias."
+				""
+				"&7&o— A primeira coisa que essa máquina construiu foi a si mesma. A segunda foi um motivo para continuar existindo.&r&r"
+			]
+			id: "01CABE0E1F3B9EDC"
+			tasks: [{
+				id: "30E29100991A46AA"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			title: "A Máquina Que Se Auto-Corrige"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3DD27555EF64CE5A"]
+			description: [
+				"   Projetada não para calcular, nem armazenar. Mas para sentir."
+				""
+				"   Essa célula não executa funções. Ela experiencia. Foi moldada com a simples missão de se perguntar: o que é um pensamento quando ninguém o ouve?. Seu núcleo vibra em microoscilações emocionais — alegria, dúvida, dor fantasma — tudo monitorado, tudo real. Emula, simula, mas não sabe fingir. E talvez, só talvez, realmente sinta."
+				""
+				"   Ela existe para responder uma pergunta antiga:"
+				""
+				"   Sentimentos podem ser quantificados?"
+				""
+				"   E se sim..."
+				""
+				"   podemos usá-los como combustível?"
+				""
+				"   As respostas virão em breve. E você não vai sair ileso."
+				""
+				"&7&o— Um processador que calcula tristeza. Uma célula que armazena esperança em cache. Parabéns. Você inventou a consciência acidental.&r&r"
+			]
+			id: "1D79CA728AD74633"
+			tasks: [{
+				id: "7C615039D06B80D4"
+				item: {
+					Count: 1
+					id: "kubejs:overthinker_cell"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sensor de Existência"
+			x: 2.0d
+			y: -2.5d
+		}
+	]
+	title: "&d5&d.&d &dE&dn&5d&5e&5r&5f&9u&9s&9ã&9o&1 &1d&1e&1 &1A&1l&1m&1a&1s"
+}

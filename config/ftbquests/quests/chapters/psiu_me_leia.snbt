@@ -12,11 +12,11 @@
 	quests: [
 		{
 			description: [
-				"   &lEu estava esperando por você!&r Na verdade, é mentira, não faço a menor ideia de quem seja ou como encontrou esse livro, mas se o fez, é um bom sinal! Sei que soa contraditório, mas se ainda está lendo isso provavelmente está perdido."
+				"{ftbquests.chapter.psiu_me_leia.quest1.description1}"
 				""
-				"   Se esse livro caiu em suas mãos, significa que algo deu muito certo ou muito errado — difícil te dizer com certeza —, mas também significa que você está pronto para lembrar &ode coisas que não sabia que sabia.&r"
+				"{ftbquests.chapter.psiu_me_leia.quest1.description2}"
 				""
-				"   Se for esse o caso e tive a sorte imensa de pelo menos isso acertar sobre você, que tal começarmos do básico? &5&lSobreviver&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest1.description3}"
 			]
 			icon: "minecraft:recovery_compass"
 			id: "558AD48F5D4237AC"
@@ -27,18 +27,18 @@
 				title: "{ftbquests.chapter.psiu_me_leia.quest1.task_6363087729449274880.title}"
 				type: "checkmark"
 			}]
-			title: "&l&4Eu conheço você"
+			title: "{ftbquests.chapter.psiu_me_leia.quest1.title}"
 			x: -9.75d
 			y: -0.75d
 		}
 		{
 			dependencies: ["558AD48F5D4237AC"]
 			description: [
-				"   O clichê mais absoluto que existe: Bater em uma árvore com a mão. Mas não se empolgue: madeira não rende como antes. Ela vai te dar só duas tábuas por bloco.  "
+				"{ftbquests.chapter.psiu_me_leia.quest2.description1}"
 				""
-				"   Sim. Isso é intencional. Sim. Isso é um problema seu."
+				"{ftbquests.chapter.psiu_me_leia.quest2.description2}"
 				""
-				"&o&7— Há ferramentas que esquecem seus donos. E há ferramentas que nunca foram feitas para esquecer. Vamos descobrir qual delas você irá criar.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest2.description3}"
 			]
 			id: "565979255D303596"
 			rewards: [{
@@ -118,20 +118,20 @@
 					type: "item"
 				}
 			]
-			title: "Soco na Árvore"
+			title: "{ftbquests.chapter.psiu_me_leia.quest2.title}"
 			x: -9.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["565979255D303596"]
 			description: [
-				"   Você conseguiu uma mesa. E talvez uma fogueira. Mas madeira não sustenta mais do que isso. Agora, você precisa de algo seu.  Deve modelar uma ferramenta, ou, talvez, permitir-se ser modelado por ela. Algo que responda à sua vontade.  "
-				" "
-				"   Existe um jeito de fazer isso — uma técnica antiga. Mas você precisará começar do início: criando um &1&lBlueprint&r.&r"
-				"  "
-				"   Pense nele como um gesto. Uma lembrança escrita daquilo que sua ferramenta deveria ser. Não será forte. Não será bonita. Mas será sua. E isso, no começo, é tudo que importa."
+				"{ftbquests.chapter.psiu_me_leia.quest3.description1}"
 				""
-				"&o&7— Há ferramentas que esquecem seus donos. E há ferramentas que nunca foram feitas para esquecer. Vamos descobrir qual delas você irá criar&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest3.description2}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest3.description3}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest3.description4}"
 			]
 			hide_dependency_lines: false
 			id: "64F2B2761FBEB6BD"
@@ -146,20 +146,20 @@
 				item: "silentgear:pickaxe_blueprint"
 				type: "item"
 			}]
-			title: "Engenharia do Ego"
+			title: "{ftbquests.chapter.psiu_me_leia.quest3.title}"
 			x: -8.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["64F2B2761FBEB6BD"]
 			description: [
-				"   Ferramentas não nascem inteiras. Elas são feitas de partes — e as partes, de escolhas. Escolhas que revelam o que você valoriza: leveza ou força? Durabilidade ou velocidade? Ordem ou caos? Cada haste, cada lâmina, cada traço do material carrega algo além de números. Carrega memória, intenção... ou erro.  "
-				" "
-				"   Há madeira que se parte, mas há madeira que canta ao ser usada. Você não verá isso logo de cara. Vai precisar prestar atenção.  "
+				"{ftbquests.chapter.psiu_me_leia.quest4.description1}"
 				""
-				"   Crie partes. Combine. Falhe. Refaça. Observe como no mesmo blueprint dá origem a centenas de ferramentas distintas — algumas úteis, outras apenas... honestas sobre quem as criou."
+				"{ftbquests.chapter.psiu_me_leia.quest4.description2}"
 				""
-				"&o&7— Não é a ferramenta que te define, mas as partes que você escolhe revelam mais do que pensa. Ou menos. Vai depender de quanta pedra você bater até perceber.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest4.description3}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest4.description4}"
 			]
 			icon: {
 				Count: 1
@@ -203,24 +203,24 @@
 					type: "item"
 				}
 			]
-			title: "Forma e Propósito "
+			title: "{ftbquests.chapter.psiu_me_leia.quest4.title}"
 			x: -8.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["708E4BE08506636D"]
 			description: [
-				"   Há coisas que crescem mesmo sem terra. E outras que morrem mesmo sob o sol certo.  "
+				"{ftbquests.chapter.psiu_me_leia.quest5.description1}"
 				""
-				"   Você já notou as folhas demorando para cair. A madeira mais escura no interior da floresta. A relva que parece se curvar para observar.  "
+				"{ftbquests.chapter.psiu_me_leia.quest5.description2}"
 				""
-				"   Isso tem nome. &2&lAura.&r  &r"
+				"{ftbquests.chapter.psiu_me_leia.quest5.description3}"
 				""
-				"   Não pense como magia. Pense como... um sistema natural com pretensões de consciência.  "
-				"  "
-				"   Se quiser entender, comece por um livro.  "
+				"{ftbquests.chapter.psiu_me_leia.quest5.description4}"
 				""
-				"   Não este. O outro."
+				"{ftbquests.chapter.psiu_me_leia.quest5.description5}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest5.description6}"
 			]
 			id: "213824CA4D01C95B"
 			rewards: [
@@ -247,16 +247,16 @@
 				}
 				type: "item"
 			}]
-			title: "&2&lSussuros nas Folhas"
+			title: "{ftbquests.chapter.psiu_me_leia.quest5.title}"
 			x: -6.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["213824CA4D01C95B"]
 			description: [
-				"A presença do éter começa a se manifestar no mundo de forma sutil. Árvores tocadas por fibras douradas reagem com o tempo, revelando folhas reluzentes. Este fenômeno não é apenas decorativo — é o primeiro passo para manipular diretamente a Aura. Prepare fibras especiais e aplique-as nas folhas de uma árvore para iniciar a transformação."
+				"{ftbquests.chapter.psiu_me_leia.quest6.description1}"
 				""
-				"&o&7— Aura não se vê, não se toca… mas ela te toca de volta. É como um vento educado que arrasta árvores inteiras sem pedir licença.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest6.description2}"
 			]
 			id: "52759072B76D79FD"
 			tasks: [{
@@ -265,21 +265,21 @@
 				item: { Count: 4, id: "naturesaura:gold_leaf" }
 				type: "item"
 			}]
-			title: "Sintomas do Éter"
+			title: "{ftbquests.chapter.psiu_me_leia.quest6.title}"
 			x: -5.5d
 			y: -1.5d
 		}
 		{
 			description: [
-				"   Você construiu. Escavou. Moldou aura, pedra e silêncio. Agora é hora de fundir tudo isso em algo concreto. Literalmente.  "
+				"{ftbquests.chapter.psiu_me_leia.quest7.description1}"
 				""
-				"   Dois materiais. Dois frutos de rituais complexos.  "
+				"{ftbquests.chapter.psiu_me_leia.quest7.description2}"
 				""
-				"   Madeira que &a&oouve.&r&r Pedra que &o&bpensa.&r&r "
-				" "
-				"   Nada disso tem sentido. E, ainda assim, entende exatamente o que fazer."
+				"{ftbquests.chapter.psiu_me_leia.quest7.description3}"
 				""
-				"&7&o— Você está levando madeira para uma fundição e pedra para uma engrenagem. Está tudo errado. Mas... só até funcionar.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest7.description4}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest7.description5}"
 			]
 			id: "41C7D076DE390330"
 			rewards: [
@@ -323,6 +323,18 @@
 			x: -3.0d
 			y: 2.0d
 		}
+		{
+			description: ["{ftbquests.chapter.psiu_me_leia.quest9.description1}"]
+			id: "14B4BC07E81899F6"
+			tasks: [{
+				id: "4040A480467B92D1"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.psiu_me_leia.quest9.title}"
+			x: -5.5d
+			y: 2.5d
+		}
 	]
-	title: "&d1. Psiu. Me leia"
+	title: "{ftbquests.chapter.psiu_me_leia.title}"
 }

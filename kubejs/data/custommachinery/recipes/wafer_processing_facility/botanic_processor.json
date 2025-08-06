@@ -1,0 +1,88 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "custommachinery:wafer_processing_facility",
+  "time": 100,
+  "requirements": [
+  { 
+    "type": "custommachinery:structure",
+    "pattern": [
+      [
+        "aaaaa",
+        "aaaaa",
+        "aaaam"
+      ],
+      [
+        "abaaa",
+        "b  cb",
+        "abbba"
+      ],
+      [
+        "aaaaa",
+        "aaaaa",
+        "aaaaa"
+      ]
+    ],
+    "keys": {
+      "a": "kubejs:facility_casing",
+      "b": "kubejs:facility_glass",
+      "c": "mekanism:laser"
+        }
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:manadoped_wafer",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "botania:manasteel_ingot",
+      "amount": 4,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "botania:white_petal",
+      "amount": 8,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "botania:mana_diamond",
+      "amount": 2,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:botanic_capacitor",
+      "amount": 2,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "fluid": "kubejs:photoresist_fluid",
+      "amount": 1000,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:chrome_mask",
+      "amount": 1,
+      "mode": "input",
+      "slot": "mask",
+      "chance": 0
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:botanic_processor",
+      "amount": 1,
+      "slot": "output",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy_per_tick",
+      "amount": 20,
+      "mode": "input"
+    }
+  ]
+}

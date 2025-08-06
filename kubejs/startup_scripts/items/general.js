@@ -152,6 +152,13 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/capacitor');
 });
 
+// BOTANIC CAPACITOR (kubejs:botanic_capacitor)
+StartupEvents.registry('item', event => {
+  event.create('botanic_capacitor')
+    .displayName('Botanic Capacitor')
+    .texture('custom:item/botanic_capacitor');
+});
+
 // ADVANCED CAPACITOR (kubejs:advanced_capacitor)
 StartupEvents.registry('item', event => {
   event.create('advanced_capacitor')
@@ -187,7 +194,7 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/matter_tech_card');
 });
 
-//MINERVA CORE (kubejs:minerva)
+//MINERVA (kubejs:minerva)
 StartupEvents.registry('item', event => {
   event.create('minerva')
     .displayName('M.I.N.E.R.V.A')
@@ -245,3 +252,17 @@ StartupEvents.registry('item', event => {
     .displayName('Mana Focus')
     .texture('custom:item/mana_focus');
 }); 
+
+// RUDIMENTARY REDSTONE COMPONENT (kubejs:rudimentary_redstone_component)
+StartupEvents.registry('item', event => {
+  event.create('rudimentary_redstone_component')
+    .displayName('Rudimentary Redstone Component')
+    .texture('custom:item/rudimentary_redstone_component');
+});
+
+// REDSTONE COMPONENT (kubejs:redstone_component)
+StartupEvents.registry('item', event => {
+  event.create('redstone_component')
+    .displayName('Redstone Component')
+    .texture('custom:item/redstone_component');
+});

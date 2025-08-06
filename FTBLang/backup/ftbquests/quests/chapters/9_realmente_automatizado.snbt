@@ -1,0 +1,525 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "9_realmente_automatizado"
+	group: "42138693CA8E287F"
+	icon: "actuallyadditions:atomic_reconstructor"
+	id: "24933D11CDDBB168"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3094DD885DDC65A5"
+			tasks: [{
+				id: "658A5AE48DCDB1AC"
+				item: "actuallyadditions:iron_casing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "4479F1A50CAB70C1"
+			tasks: [{
+				id: "69EB347921E7AEC1"
+				item: "actuallyadditions:atomic_reconstructor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			id: "2500AF1248D161FD"
+			tasks: [{
+				id: "6FC2ECBAF32771BA"
+				item: "actuallyadditions:restonia_crystal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			id: "283FFE1AA6DC422D"
+			tasks: [{
+				id: "4E5371BF9E8292EB"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			id: "6DEAE4B081FBB857"
+			tasks: [{
+				id: "0A7BD3BA16A9A708"
+				item: "apotheosis:gem_cutting_table"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			id: "7F8174218FF4A210"
+			tasks: [{
+				id: "1EC924933715C022"
+				item: "actuallyadditions:void_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "644E2971117A97B8"
+			tasks: [{
+				id: "59B430B0A1B9D2DF"
+				item: "actuallyadditions:palis_crystal"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			id: "0005E4CEB183D9B6"
+			tasks: [{
+				id: "4BE1205DBCA85284"
+				item: "actuallyadditions:diamatine_crystal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			id: "6680B1C26EC218E8"
+			tasks: [{
+				id: "2BAE04E7B2050BE2"
+				item: "actuallyadditions:emeradic_crystal"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			id: "4264BD422092DE20"
+			tasks: [{
+				id: "7B5B3F9B73ED1FBB"
+				item: "actuallyadditions:enori_crystal"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			id: "20DECFDDB6FF9666"
+			tasks: [{
+				id: "2F818E7A3EA468BF"
+				item: "actuallyadditions:empowered_restonia_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			id: "155AA4175A933163"
+			tasks: [{
+				id: "54AD5D3DB997367B"
+				item: "actuallyadditions:empowered_palis_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			id: "065D05B1EDDF9CBD"
+			tasks: [{
+				id: "59DCC9EF71E4DF8C"
+				item: "actuallyadditions:empowered_void_crystal"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			id: "72D368728D4BE109"
+			tasks: [{
+				id: "19D10D61D71811F8"
+				item: "actuallyadditions:empowered_diamatine_crystal"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			id: "6EB03F47FD79274B"
+			tasks: [{
+				id: "5CDF0005CA101B44"
+				item: "actuallyadditions:empowered_emeradic_crystal"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			id: "64EBA30CF38BACF1"
+			tasks: [{
+				id: "2AF8BA71C7706EA3"
+				item: "actuallyadditions:empowered_enori_crystal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "7F29B2F38E707B29"
+			tasks: [{
+				id: "269A84EEB6814E84"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			id: "005569951FB14178"
+			tasks: [{
+				id: "1A53B620D2A41F71"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			id: "5C63A5DE6BE82BD4"
+			size: 1.2d
+			tasks: [{
+				id: "1D5B8902E0AD9363"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			id: "0E84C15719B79465"
+			tasks: [{
+				id: "0BD45FF212E85E39"
+				item: "mekanism:thermal_evaporation_controller"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			id: "23C6C62611743C55"
+			tasks: [{
+				id: "36C8B41D86E83DEE"
+				item: "mekanism:brine_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			id: "46C18B3C06E263C6"
+			tasks: [{
+				id: "2349126490F40F55"
+				item: "kubejs:dust_titanium_dioxide"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			id: "1ED4B36FCDD0B66A"
+			tasks: [{
+				id: "0391770B832939CF"
+				item: "kubejs:titanium_sponge_raw"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			id: "04E6B91CFC1CEFDE"
+			tasks: [{
+				id: "3083A1AD329CBE23"
+				item: "kubejs:titanium_sponge_pure"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			id: "7D88DD6AF8713CF2"
+			size: 1.2d
+			tasks: [{
+				id: "36C2C3FC53A86243"
+				item: "kubejs:ingot_titanium"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			id: "39C400B5BAF29B98"
+			tasks: [{
+				id: "09A6F4E8F26E26D7"
+				item: "mekanism:hydrogen_chloride_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -9.0d
+		}
+		{
+			id: "09D64B4457C86420"
+			size: 1.2d
+			tasks: [{
+				id: "626EB4A1849D38F2"
+				item: "kubejs:blank_tech_card"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			id: "488AF270539E0D8C"
+			tasks: [{
+				id: "206E44747D6B22DE"
+				item: "kubejs:crafting_data"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.0d
+		}
+		{
+			id: "7839E9C9A012A9F9"
+			tasks: [{
+				id: "39010B9074D543FA"
+				item: "kubejs:crafting_tech_card"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			id: "5F6BDC6BABAE47E4"
+			tasks: [{
+				id: "7AAF6BB6890CF021"
+				item: "actuallyadditions:empowerer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			id: "012D53BACD4BDFAC"
+			tasks: [{
+				id: "6E2C445EDF1E1909"
+				item: "kubejs:certite_crystal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			id: "0FDBFB5AFE602B34"
+			tasks: [{
+				id: "62DDA4BC0557325B"
+				item: "kubejs:empowered_certite_crystal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			id: "177E45D188B53265"
+			tasks: [{
+				id: "57A574EF51D21A59"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:codex_crucible"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			id: "3D7407849CB4D124"
+			tasks: [{
+				id: "3B757C40DE6F696F"
+				item: "kubejs:crafting_processor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			id: "17D00E1BD670C22E"
+			tasks: [{
+				id: "1DD5F3E57EA8680C"
+				item: "ae2:interface"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			id: "5610C93424E59A1D"
+			tasks: [{
+				id: "205F1BAE08C3A8C9"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			id: "7C696E8A5DEEC4B3"
+			tasks: [{
+				id: "00A03B50902EE0A5"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			id: "3F22B061A52B60FE"
+			tasks: [{
+				id: "21F2E9BDCC5E25DA"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			id: "7EAE2E06DC195CCC"
+			tasks: [{
+				id: "7D179249E2B3524A"
+				item: "kubejs:chemistry_tech_card"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			id: "597A8260F49D96E4"
+			tasks: [{
+				id: "37E3C62258F1E8FD"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			id: "63EF030AFBD02C52"
+			size: 1.6d
+			tasks: [{
+				id: "5DD9B4D0485F787A"
+				item: "kubejs:prismalith"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			id: "3DB72A02D0731850"
+			tasks: [{
+				id: "268FC36B1D314ECB"
+				item: "kubejs:compulsort_cell"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			id: "7E70E3DDF5A07356"
+			tasks: [{
+				id: "3B2C0C0F7338CC61"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			id: "6A2068652EDA2D8D"
+			tasks: [{
+				id: "6A7B1CF949715F9F"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -10.0d
+		}
+		{
+			id: "5B8CB07139E40514"
+			tasks: [{
+				id: "4B955732C80A8B28"
+				item: {
+					Count: 1
+					id: "kubejs:fear_module"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			id: "055C4256D89EF433"
+			tasks: [{
+				id: "4CA1F70AB5EAC6F4"
+				item: {
+					Count: 1
+					id: "kubejs:love_module"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			id: "7353F1B964C7764F"
+			tasks: [{
+				id: "64A80C8D32F39623"
+				item: "kubejs:liquid_obsession_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			id: "0E6AA4D0AB678827"
+			tasks: [{
+				id: "5A19F7493893305F"
+				item: "kubejs:chemistry_data"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			id: "74C3DBD48DCC8417"
+			tasks: [{
+				id: "704C1B41E2E45C61"
+				item: "mekanism:electrolytic_core"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+	]
+	title: "9. Realmente Automatizado"
+}

@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     input: { item: 'kubejs:inductive_alloy' },
     additives: [
       { item: 'mekanism:ingot_refined_obsidian' },
-      { item: 'minecraft:quartz' }
+      { item: '2x minecraft:quartz' }
     ],
     results: [
       { item: 'kubejs:refined_quartz', count: 1 }

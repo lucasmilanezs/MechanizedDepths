@@ -59,3 +59,4 @@ StartupEvents.registry('fluid', event => {
     .color(0xFF8BC34A)
     .bucketColor(0xFF8BC34A);
 });
+

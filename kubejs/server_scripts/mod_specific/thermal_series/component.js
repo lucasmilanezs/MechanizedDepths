@@ -33,6 +33,21 @@ ServerEvents.recipes((event) => {
   });
 });
 
+// BOTANIC CAPACITOR 
+ServerEvents.recipes((event) => {
+  event.custom({
+    type: 'thermal_extra:component_assembly',
+    ingredients: [
+      { item: 'botania:red_petal', count: 4 },
+      { item: 'botania:livingwood_twig', count: 2 },
+      { item: 'minecraft:flower_pot' },
+      { item: 'minecraft:glass_bottle' }
+    ],
+    result: { item: 'kubejs:botanic_capacitor' },
+    energy: 4000
+  });
+}); 
+
 //====================CHANGED RECIPES==================
 
 //RECIPE NAME

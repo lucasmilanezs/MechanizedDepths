@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "psiu_me_leia"
 	group: "0E3BAF4D0D92EEE1"
 	hide_quest_details_until_startable: true
@@ -21,24 +21,95 @@
 			icon: "minecraft:recovery_compass"
 			id: "558AD48F5D4237AC"
 			shape: "netheritetier"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "584E3A93AC788E00"
 				title: "{ftbquests.chapter.psiu_me_leia.quest1.task_6363087729449274880.title}"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.psiu_me_leia.quest1.title}"
-			x: -7.0d
-			y: -0.5d
+			x: -9.75d
+			y: -0.75d
 		}
 		{
 			dependencies: ["558AD48F5D4237AC"]
-			description: ["{ftbquests.chapter.psiu_me_leia.quest2.description1}"]
+			description: [
+				"{ftbquests.chapter.psiu_me_leia.quest2.description1}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest2.description2}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest2.description3}"
+			]
 			id: "565979255D303596"
+			rewards: [{
+				id: "0073E33AF08294C9"
+				item: "minecraft:cherry_sapling"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "60B7C2398423B628"
-					item: "minecraft:oak_log"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:birch_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:oak_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cherry_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:mangrove_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:bamboo_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:crimson_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:warped_planks"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:ancient_planks"
+								}
+								{
+									Count: 1b
+									id: "silentgear:netherwood_planks"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -48,14 +119,28 @@
 				}
 			]
 			title: "{ftbquests.chapter.psiu_me_leia.quest2.title}"
-			x: -8.5d
-			y: -0.5d
+			x: -9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["565979255D303596"]
-			description: ["{ftbquests.chapter.psiu_me_leia.quest3.description1}"]
+			description: [
+				"{ftbquests.chapter.psiu_me_leia.quest3.description1}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest3.description2}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest3.description3}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest3.description4}"
+			]
 			hide_dependency_lines: false
 			id: "64F2B2761FBEB6BD"
+			rewards: [{
+				id: "137FC647ACAD0D5D"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5F16EA4B7F193C7D"
 				item: "silentgear:pickaxe_blueprint"
@@ -63,11 +148,19 @@
 			}]
 			title: "{ftbquests.chapter.psiu_me_leia.quest3.title}"
 			x: -8.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["64F2B2761FBEB6BD"]
-			description: ["{ftbquests.chapter.psiu_me_leia.quest4.description1}"]
+			description: [
+				"{ftbquests.chapter.psiu_me_leia.quest4.description1}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest4.description2}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest4.description3}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest4.description4}"
+			]
 			icon: {
 				Count: 1
 				id: "minecraft:stone_pickaxe"
@@ -76,6 +169,13 @@
 				}
 			}
 			id: "708E4BE08506636D"
+			rewards: [{
+				count: 16
+				id: "5C180C602AA54CDA"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "55D238B98F9B4A31"
@@ -104,12 +204,24 @@
 				}
 			]
 			title: "{ftbquests.chapter.psiu_me_leia.quest4.title}"
-			x: -7.0d
-			y: 1.0d
+			x: -8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["708E4BE08506636D"]
-			description: ["{ftbquests.chapter.psiu_me_leia.quest5.description1}"]
+			description: [
+				"{ftbquests.chapter.psiu_me_leia.quest5.description1}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest5.description2}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest5.description3}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest5.description4}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest5.description5}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest5.description6}"
+			]
 			id: "213824CA4D01C95B"
 			rewards: [
 				{
@@ -123,6 +235,7 @@
 					type: "item"
 				}
 			]
+			shape: "woodtier"
 			tasks: [{
 				id: "756856082466BF2C"
 				item: {
@@ -135,8 +248,92 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.psiu_me_leia.quest5.title}"
-			x: -5.0d
-			y: -0.5d
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["213824CA4D01C95B"]
+			description: [
+				"{ftbquests.chapter.psiu_me_leia.quest6.description1}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest6.description2}"
+			]
+			id: "52759072B76D79FD"
+			tasks: [{
+				count: 4L
+				id: "49DDCADBC56D6F20"
+				item: { Count: 4, id: "naturesaura:gold_leaf" }
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.psiu_me_leia.quest6.title}"
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.psiu_me_leia.quest7.description1}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest7.description2}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest7.description3}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest7.description4}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest7.description5}"
+			]
+			id: "41C7D076DE390330"
+			rewards: [
+				{
+					count: 8
+					id: "7F06E680C2925617"
+					item: "minecraft:iron_ore"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "59182D148A1E2F21"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1C0A15F9DBE46786"
+					item: "kubejs:living_timber"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "658AF1A47C3F8F69"
+					item: { Count: 4, id: "kubejs:runic_stone" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			id: "5CE4B6B3303A4D5A"
+			tasks: [{
+				id: "63F4F5ED66C6B6AF"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			description: ["{ftbquests.chapter.psiu_me_leia.quest9.description1}"]
+			id: "14B4BC07E81899F6"
+			tasks: [{
+				id: "4040A480467B92D1"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.psiu_me_leia.quest9.title}"
+			x: -5.5d
+			y: 2.5d
 		}
 	]
 	title: "{ftbquests.chapter.psiu_me_leia.title}"

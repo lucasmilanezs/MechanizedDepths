@@ -1,0 +1,54 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "12_aquele_que_v_e_sente"
+	group: "530DF528E020E9E4"
+	icon: "mekanism:pellet_antimatter"
+	id: "5FB6CF830D6A7389"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "697526B3628885F4"
+			tasks: [{
+				id: "07AC0E8046023A99"
+				item: "mekanism:sps_port"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			id: "69982077958D5631"
+			tasks: [{
+				id: "3987C78B35307180"
+				item: "minecraft:spruce_wood"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "6C964D616EF55AB6"
+			size: 2.0d
+			tasks: [{
+				id: "0F88BF735B901D8B"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6E3AEDFF632E1B27"
+			tasks: [{
+				id: "57B2EC0A22FE51C9"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+	title: "12. A Primeira Fenda"
+}

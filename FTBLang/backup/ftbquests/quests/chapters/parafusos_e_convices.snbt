@@ -1,0 +1,1288 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "parafusos_e_convices"
+	group: "0E3BAF4D0D92EEE1"
+	hide_quest_details_until_startable: true
+	icon: {
+		Count: 1
+		id: "immersiveengineering:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "04E87D18A8CF3C21"
+	images: [{
+		height: 2.7d
+		image: "custom:textures/gui/big_boys.png"
+		order: 111111
+		rotation: 0.0d
+		width: 2.7d
+		x: -5.892857142857146d
+		y: 6.303571428571431d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6A51D3D6D7650D5D"]
+			description: [
+				"   Uma madeira cultivada com cuidado, nutrida por rituais, transmutada com intenção... e agora mergulhada em óleo fervente para virar bancada de trabalho. Mas não pense nisso como traição. Isso é transição. Ciclos dentro de ciclos. Fases que se sobrepõem.  "
+				""
+				"   A natureza te ensinou a observar. A ouvir. A moldar. Agora é hora de soldar. Esmerilhar. Canalizar.  "
+				""
+				"   Porque até o verde mais vívido precisa de fios para alcançar distância. O quanto se distanciam o vento e a folha do vapor e do aço? Talvez menos do que gostaríamos de admitir."
+				""
+				"   Misture &a&o`Living Timber`&r&r com &c&o`Creosote Oil`.&r &rNão porque é bonito, mas porque funciona.  "
+				""
+				"&7&o— Você queimou uma árvore mágica pra fazer uma mesa. Parabéns. Você é oficialmente um engenheiro.&r&r"
+			]
+			id: "7D69FEEEED084E15"
+			rewards: [{
+				count: 4
+				id: "6E3F50B4F40FFADC"
+				item: "immersiveengineering:stick_treated"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "&oCurioso, não?&r "
+			tasks: [
+				{
+					count: 8L
+					id: "6C1968C6736F8703"
+					item: { Count: 8, id: "immersiveengineering:treated_wood_horizontal" }
+					type: "item"
+				}
+				{
+					id: "592FC1A70672DBFF"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+			]
+			title: "&lPara queimar o mundo certo"
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["58388432A718A31F"]
+			description: [
+				"   A aura se dissipa e, em seu lugar, sobra pedra — não qualquer pedra, mas uma que presenciou rituais, que absorveu intenções. Agora, ela será prensada com barro e carvão para formar um tijolo. Um forno nascido de algo que um dia ouviu a floresta respirar. Tudo isso para produzir fuligem, claro. É o tipo de ideia que faria um espírito da natureza ter um colapso metafísico."
+				"   Sim, ela é brutalmente lenta. Recomendo manter sempre cheia."
+				""
+				"&o&7— Você pegou algo vivo e enfiou num forno pra gerar fumaça. Genial. Estou sinceramente impressionado.&r&r"
+			]
+			id: "6A51D3D6D7650D5D"
+			shape: "hexagon"
+			tasks: [{
+				count: 27L
+				id: "0E2DE6CC496B7995"
+				item: { Count: 27, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			title: "Primeiras Cinzas"
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41C7D076DE390330"]
+			description: [
+				"   Todo ritual precisa de um catalisador, toda estrutura, de um ponto de partida. Este não é um artefato sagrado, nem um canalizador de aura — é apenas um martelo. Grande, pesado, funcional... e, de certo modo, definitivo. Você já usou ferramentas improvisadas, pedras encantadas e até raízes pulsantes. "
+				""
+				"   Mas agora é hora de algo mais direto: madeira, ferro e um punhado de teimosia. O Engineering Hammer não pede permissão à natureza. Ele molda, encaixa, força — e os blocos simplesmente obedecem."
+				""
+				"&7&o— Finalmente, uma ferramenta que não exige oferendas nem alinhamento lunar. Progresso&r."
+				"&r"
+			]
+			id: "58388432A718A31F"
+			rewards: [{
+				id: "04D9CB78840D0479"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			shape: "irontier"
+			size: 1.5d
+			tasks: [{
+				id: "7A6C813F8DA6F8BF"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&l&o***bonk***"
+			x: -6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["58388432A718A31F"]
+			description: [
+				"   Você começa a montar a estrutura com a confiança de quem já não sente culpa por enfiar pedras vivas em fornos. Tijolo por tijolo, o cheiro de fuligem se antecipa. Esta não é uma construção comum — é um altar moderno, dedicado ao culto do calor extremo. A Blast Furnace não emite luz sagrada, mas fumaça constante; não transforma essência, mas carvão e ferro. É lenta, barulhenta, e absolutamente necessária. "
+				""
+				"   Você não tem mais o luxo de trabalhar com galhos encantados ou folhas que sussurram — agora é brasa, carvão e ferrugem."
+				""
+				"&o&7— Não é bonita, não é limpa e não é gentil. Mas derrete ferro como ninguém. Continue.&r&r"
+			]
+			id: "11F168F0483CA912"
+			tasks: [{
+				id: "636CBD4A6C028A39"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			title: "Carbura e passa"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"11F168F0483CA912"
+				"6A51D3D6D7650D5D"
+			]
+			description: [
+				"   O ferro não era suficiente. Ele derrete, dobra, oxida — como tudo que nasce fácil demais. Mas agora você tem um forno que não perdoa, um combustível que não tolera fraquezas, e uma intenção: transformar o ordinário em permanente. O processo é lento, barulhento e deliciosamente ineficiente. E ainda assim, é progresso. O aço não se dobra por capricho, e nem você deveria."
+				""
+				"&7&o— Você passou carvão no ferro até ele ficar sério. Brilhante. Se continuar assim, talvez consiga respeito até de uma engrenagem.&r&r"
+			]
+			id: "1A526B97B149CBD3"
+			tasks: [{
+				id: "7446EBA3089F375D"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			title: "O Metal que não Quebra"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1A526B97B149CBD3"]
+			description: [
+				"   Uma faísca. É só disso que você precisa para começar algo irreversível. O aço certo, a pedra certa, e a decisão errada. Prático, portátil e absolutamente inadequado para resolver qualquer problema de verdade."
+				""
+				"&o&7— Mas às vezes... incendiar as coisas ajuda.&r&r"
+			]
+			id: "7768F0364DA14B55"
+			subtitle: "&oFogo no parquinho!&r"
+			tasks: [{
+				id: "1F7D30C502900634"
+				item: {
+					Count: 1
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Para queimar o Mundo Errado"
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7768F0364DA14B55"]
+			id: "004F5E63A1C4B294"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "38DB20D47C5EFA49"
+				type: "dimension"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			hide_dependency_lines: false
+			id: "693D256DD80F1B8F"
+			tasks: [{
+				count: 6L
+				id: "3E0E08871EDE2445"
+				item: { Count: 6, id: "minecraft:blaze_powder" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7D69FEEEED084E15"]
+			description: [
+				"   Os blueprints não são apenas papel e tinta. São a arrogância do \"sei o que estou fazendo\" materializada. Cada linha ali diz: “já pensei antes de você”. O Engenheiro escreveu para quem saberia ler — e agora, por algum motivo cósmico ou burrice industrial, essa responsabilidade é sua."
+				""
+				"&7&o— Você está copiando a lição de casa do passado, mas com estilo.&r"
+				"&r"
+			]
+			id: "64CA6B5E600B0E4F"
+			tasks: [{
+				id: "7FE086F6EFC9C5EF"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "components"
+					}
+				}
+				type: "item"
+			}]
+			title: "Rabiscos de Ferro Velho"
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7D69FEEEED084E15"
+				"64CA6B5E600B0E4F"
+			]
+			description: [
+				"   Você não construiu uma roda d’água — você contrariou um rio. Tomou algo livre, fluido, caótico… e obrigou a empurrar engrenagens. É quase poético, se não fosse tão feio. Mas no fim, ela gira. E por enquanto, isso é tudo que importa. Mais tarde, alguém chamará isso de \"geração limpa\". Por ora, chame de tentativa."
+				""
+				"&7&o— A energia que corre nunca volta. Mas a culpa pode ser redirecionada.&r&r"
+			]
+			icon: "immersiveengineering:watermill"
+			id: "2DB2853A44CAE161"
+			tasks: [
+				{
+					id: "0A764B10452A97A8"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+				{
+					id: "6B7A872CD5E71C8D"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+			]
+			title: "Correnteza Invertida"
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D69FEEEED084E15"]
+			description: [""]
+			id: "49BC49E90867B271"
+			tasks: [{
+				id: "44CA12ED82820720"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "molds"
+					}
+				}
+				type: "item"
+			}]
+			title: "Forjando Formas"
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2E8308871C5B9B21"
+				"22EC9AE04FCCCEE0"
+				"27A9ABA7161CD1EA"
+			]
+			description: [
+				"   A Metal Press é a negação romântica do martelo manual. Precisa, previsível, impessoal. Ela não erra — e por isso, não aprende. Você construiu algo que bate mais forte que você, e nem precisou ensinar. Só alimentou. Essa é a linha entre ferramenta e indústria: quando a repetição vira linguagem."
+				""
+				"   Para montá-la, você vai precisar de pistão, blocos de aço e o centro da sua sanidade. O layout é simples, mas alinhado — consulte o manual do engenheiro caso queira ter certeza de que não está montando uma escultura moderna."
+				""
+				"   Ela funciona como todo bom sistema capitalista: Ela não pensa, não avalia, não sente. Ela só transforma. Você coloca um lingote de um lado, e sai uma ideia comprimida do outro. E como toda máquina eficiente, ela vai te lembrar que você também pode ser substituído."
+				""
+				"&7&o— A máquina sabe o que fazer. Você só fornece o aço e não atrapalha.&r&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			icon: "immersiveengineering:metal_press"
+			id: "52A00CBEBE03F6D8"
+			tasks: [
+				{
+					id: "6EEC053FEA2A4CDE"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0FACFDCD42539424"
+					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					id: "70913BDED2B14FB7"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4BF7FEDA738269DD"
+					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					id: "26A73BA29D71A14E"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+			]
+			title: "A máquina que amassa"
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["64CA6B5E600B0E4F"]
+			description: [
+				"   Toda máquina começa com eles. E termina com eles. E provavelmente consome mais deles do que deveria."
+				""
+				"   Componentes são o pão e manteiga da infraestrutura do Immersive. Uma chapa aqui, um rebite ali, e você tem o direito de construir estruturas que pesam toneladas. Estranhamente... isso basta."
+				""
+				"   Não há glória nesse craft. Só necessidade."
+				""
+				"   Você vai fazê-los. Muitos. Sempre um a menos do que precisa. Sempre um clique antes de terminar."
+				""
+				"&7&o— A base da engenharia é feita de aço... e paciência&r"
+			]
+			id: "27A9ABA7161CD1EA"
+			tasks: [{
+				id: "5F7A8AD57129BED5"
+				item: "immersiveengineering:component_steel"
+				type: "item"
+			}]
+			title: "Componentes que Não se Comportam"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DB2853A44CAE161"]
+			description: [
+				"   Se construir a Water Wheel foi como domar um rio, conectá-la é como convencer a eletricidade a não fugir. Você agora está diante do velho dilema da engenharia: tudo está pronto, mas nada está funcionando."
+				""
+				"   A primeira coisa que você precisa saber é que cada Kinetic Dynamo só aceita até três Water Wheels conectadas. Mais do que isso e você está só empilhando madeira para desespero visual. Se tudo estiver girando, parabéns — agora é hora de estragar tudo com cabos."
+				""
+				"   Use LV Wire Connectors nos pontos de entrada e saída, e interligue-os com LV Wire Coils. Para distâncias maiores ou organização estética mínima, adicione Relays. Eles não fazem nada além de carregar fios — e, assim como na vida real, às vezes só servem pra bagunçar mais."
+				""
+				"   Conectou errado? Claro que conectou. Equipe um Wire Cutter, agache e clique no conector. Pronto. Finge que nunca errou. Mas vai errar de novo. Esse é o processo."
+				""
+				"   Quanto ao Capacitor, nada de interfaces bonitinhas. Use o Engineer’s Hammer diretamente nas faces do bloco:"
+				""
+				"   &9Azul&r: entrada (Input)"
+				""
+				"   &6Laranja&r: saída (Output)"
+				""
+				"   &7Sem cor&r: neutro, como sua fé no sistema"
+				""
+				"   Posicione o cabo vindo da Water Wheel no lado azul. Saída para sua primeira máquina, no laranja. Nada acontece? Reconfira tudo. E se ainda assim falhar… parabéns, agora você está realmente fazendo engenharia."
+				""
+				"&7&o— Todo sistema elétrico começa com esperança, um capacitor mal configurado, e pelo menos uma experiência de quase morte por cabo mal posicionado.&r&r"
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:wirecutter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "22EC9AE04FCCCEE0"
+			tasks: [
+				{
+					id: "28533212D0FC8D60"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					id: "1A1A8CFCE5E0C3E2"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
+				}
+				{
+					id: "1CBA5408948D698C"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "44943DDFB8A051C7"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+			]
+			title: "Fios, Limites e o Começo da Bagunça"
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49BC49E90867B271"]
+			description: [
+				"   Você já pode bater o ferro enquanto ele está quente. Mas por que parar por aí, se pode esmagar tudo de uma vez, automaticamente, sem pensar?"
+				""
+				"   Esses moldes representam suas primeiras escolhas como não-artesão. Rod, Plate, Gear, Wire. Quatro formas básicas de converter matéria em forma — e perder o controle criativo no processo."
+				""
+				"&7&o— Você não está mais fazendo peças. Está pedindo para que a máquina as faça. O começo do fim.&r&r"
+			]
+			id: "2E8308871C5B9B21"
+			tasks: [
+				{
+					id: "14EAF34AA439E8EB"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+				{
+					id: "20284F3157103F49"
+					item: "immersiveengineering:mold_gear"
+					type: "item"
+				}
+				{
+					id: "75B8ABB1C7CD8CC7"
+					item: "immersiveengineering:mold_wire"
+					type: "item"
+				}
+				{
+					id: "1C4D529CE0717E85"
+					item: "immersiveengineering:mold_rod"
+					type: "item"
+				}
+			]
+			title: "Moldando o Inevitável"
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["27A9ABA7161CD1EA"]
+			description: [
+				"    A Engineer’s Workbench era onde suas mãos ainda tinham algum valor. Você posicionava os materiais, segurava o martelo, fingia entender o que estava montando. Agora, até isso acabou."
+				""
+				"   A versão automatizada dessa bancada é um multibloco frio e indiferente. Ela aceita componentes pela face azul, produz o resultado, e o cospe com desgosto por um conveyor belt lateral. Você não monta mais — você alimenta."
+				""
+				"   É uma fábrica em miniatura. Uma negação final da oficina romântica. E se você ouvir ela funcionando sozinha, madrugada adentro, saiba que não é assombração. É só o som da substituição."
+				""
+				"&7&o— A produção não para. Você, sim.&r&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			icon: "immersiveengineering:auto_workbench"
+			id: "4186EA4004685166"
+			tasks: [
+				{
+					count: 2L
+					id: "7460BD818EE802BB"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "67AE0BF98CD08389"
+					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7D0A2F97825E863C"
+					item: { Count: 2, id: "immersiveengineering:slab_treated_wood_horizontal" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7347AF278B532EA3"
+					item: { Count: 4, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4B9A9905EBEC1834"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "4C25738ADA4B6D7C"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+			]
+			title: "A Bancada se Levanta"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1A526B97B149CBD3"
+				"1AEBFDE6990DCCB5"
+				"693D256DD80F1B8F"
+			]
+			description: [
+				"   Você já fundiu ferro, refinou carvão, moldou aço. O processo era conhecido, confiável, industrial. Mas desta vez, os ingredientes parecem errados demais para gerar algo estável — e ainda assim, funcionam."
+				""
+				"   O Blazing Steel nasce na Alloy Kiln, como qualquer liga. Mas o que sai dali não deveria existir. Um metal que brilha como fogo, mas não consome. Ardente, mas sólido. Ele não derrete, ele ameaça."
+				""
+				"   Talvez você só tenha misturado aço com o que encontrou no Nether. Talvez esteja começando a entender outra linguagem da matéria."
+				""
+				"&7&o— O forno é o mesmo. O resultado, nem de perto.&r&r"
+			]
+			id: "2C5BDE78E209CF0C"
+			tasks: [{
+				id: "28AC0A5FCF07E082"
+				item: "kubejs:blazing_steel"
+				type: "item"
+			}]
+			title: "&4Fogo Que Não Vem do Fogo"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4186EA4004685166"]
+			description: [
+				"   O Assembler do Immersive é, em essência, um autêntico trabalhador de linha de produção: discreto, eficiente, sem frescura."
+				""
+				"   Você cria até três moldes com a receita desejada, fornece energia, insere os materiais e — pronto — ele fabrica os itens para você como um bom operário sem alma. Nada de braços mecânicos dançando. Nada de melodias de engrenagens. Só trabalho."
+				""
+				"  Sim, o Create provavelmente já está disponível. E sim, você provavelmente vai ignorar esse bloco glorioso em favor de sistemas com rodinhas, trilhos, cataventos e graça estética."
+				""
+				"  Mas ei, &ogosto não se discute.&r Se você quer um montador que só quer fazer o serviço e não aparecer no Instagram das máquinas, o Assembler é pra você."
+				""
+				"  E se um dia você quiser montar 3 tipos diferentes de componentes com uma única entrada de energia, talvez… só talvez… ele esteja lá, te esperando. Silencioso. Pronto. Ressentido."
+				""
+				"&7&o— Ele não gira, mas faz o trabalho&r"
+			]
+			icon: "immersiveengineering:assembler"
+			id: "76264AD1E946DE2A"
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 2L
+					id: "19058164723F23ED"
+					item: { Count: 2, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "76E200BAB5DAE63E"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "6C88869B548D9CC6"
+					item: { Count: 9, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "035D9F35DC127F36"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "48AA9716691E5D45"
+					item: { Count: 6, id: "immersiveengineering:slab_sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "01AC9EC6C8548C8A"
+					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			title: "Assembleia Solitária"
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			id: "59DA4F14F739AE03"
+			tasks: [{
+				id: "66FB1D660F49F9A2"
+				item: "minecraft:nether_bricks"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"    Chega uma hora em que bater pó num caldeirão já não dá conta. Você pode até continuar misturando tudo na mão, mas isso só te leva até onde o cheiro de carvão permitir."
+				""
+				"   A Alloy Kiln é o próximo passo natural: dois ingredientes entram, uma liga sai. Sem perguntas. Sem pressa. Sem brilho. É um forno de compromisso — silencioso, meio lento e, dependendo da mistura, um pouco deprimente."
+				""
+				"   Mas é honesto. E se você for paciente, ele até parece eficaz. Quase."
+				""
+				"&7&o— A engenharia não precisa ser bonita. Só precisa não explodir.&r&r"
+			]
+			icon: "immersiveengineering:alloy_smelter"
+			id: "1AEBFDE6990DCCB5"
+			tasks: [{
+				id: "19A053AAAF70EF49"
+				item: "immersiveengineering:alloy_smelter"
+				type: "item"
+			}]
+			title: "Pó não tá com nada"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"    A Blast Furnace funcionava. Com calma, com carvão, com a sua paciência. Mas não por muito tempo."
+				""
+				"   Agora você está diante da versão melhorada — o que é um eufemismo técnico para \"deixe o aço fluir e a alma derreter\". A Improved Blast Furnace é mais rápida, aceita automação e responde a redstone, desde que você finja que entende o que está fazendo."
+				""
+				"   Ela requer novos materiais, nova estrutura, e um novo nível de comprometimento: conectar um Preheater para acelerar o processo e usar um Hopper para extrair automaticamente. Parabéns, você acaba de fundar sua primeira linha de produção — involuntária, mas funcional."
+				""
+				"&7&o— Produzir aço era difícil. Agora é só caro, barulhento e irreversível.&r&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "467C1405A6CCFB40"
+			tasks: [
+				{
+					count: 9L
+					id: "40EA3FDB41B0A6DB"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "4B8B5712AC91D47C"
+					item: "immersiveengineering:blastfurnace_preheater"
+					type: "item"
+				}
+				{
+					id: "22FD0A847C1D5E8F"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			title: "Veloz e automática = Linda"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["27A9ABA7161CD1EA"]
+			description: [
+				"    Você finalmente chegou lá. Agora seus minérios rendem o &ldobro&r. É isso mesmo: mais pó, mais progresso, mais poluição sonora."
+				""
+				"   O Crusher é tudo o que prometeram — eficiente, potente, expansivo e completamente antissocial. Ele ocupa um espaço absurdo, faz mais barulho que festa de vila e ainda te desafia a automatizar suas entradas e saídas como se fosse uma prova de resistência lógica."
+				""
+				"   Mas no fim das contas, ele entrega. Não com delicadeza. Não com elegância. Mas com um estrondo e um chute nas leis do rendimento térmico."
+				""
+				"&7&o— Você não está quebrando minério. Está quebrando o orgulho do seu sistema de transporte.&r&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			icon: "immersiveengineering:crusher"
+			id: "4EA7083C34FC1A44"
+			tasks: [
+				{
+					count: 10L
+					id: "1F7121D6418D7BDA"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "40587E2C7B1F26A5"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "16610677A943A10A"
+					item: { Count: 10, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3C7271CFEF71D67E"
+					item: { Count: 8, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "49FFC16A591FDDF0"
+					item: { Count: 9, id: "minecraft:hopper" }
+					type: "item"
+				}
+			]
+			title: "Triturando Sonhos Desde Sempre"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["22EC9AE04FCCCEE0"]
+			description: [
+				"   O LV funcionava... até você querer ligar duas máquinas em prédios diferentes."
+				""
+				"   O MV Wire Coil é sua primeira tentativa de escalar seu sistema elétrico. Maior alcance. Mais energia. E uma nova gama de erros possíveis. Agora os choques são mais simbólicos — e os curtos, mais dramáticos."
+				""
+				"   Os cabos ganham volume. A estética começa a implodir. Mas ei, agora dá pra alimentar uma prensa a 30 blocos de distância. O progresso tem dessas."
+				""
+				"&7&o— Você achou que o problema era a voltagem, mas era só você mesmo&r"
+			]
+			id: "43029D647EA34851"
+			tasks: [{
+				id: "535545563CCCCEF6"
+				item: "immersiveengineering:wirecoil_electrum"
+				type: "item"
+			}]
+			title: "Fio Mais Grosso, Problemas Maiores"
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["460A5B83307446ED"]
+			description: [
+				"   Você montou a roda d’água, conectou tudo, ligou a prensa... e ela piscou. Por quê?"
+				""
+				"   Porque você esqueceu o buffer."
+				""
+				"   O MV Capacitor é a sala de espera da sua energia. Ele segura, organiza, e distribui corrente como se fosse fácil. Mas atenção: ele só funciona se você ensinar ele a funcionar. Engineer’s Hammer nas faces. Azul: entrada. Laranja: saída. Cinza: status de quem ligou o cabo errado de novo."
+				""
+				"   E não — ele não mostra nada além de uma barra. E ainda assim, é mais informativo que certos tutoriais por aí."
+				""
+				"&7&o— Toda rede elétrica começa com um grito... e termina com um MV Capacitor mal orientado&r"
+			]
+			id: "53926EA02B461E01"
+			tasks: [{
+				id: "4A5C60AE0FACC2F0"
+				item: "immersiveengineering:capacitor_mv"
+				type: "item"
+			}]
+			title: "Onde a Energia Vai para Pensar"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["43029D647EA34851"]
+			description: [
+				"   É agora que os postes viram escultura."
+				""
+				"   Os HV Wire Coils não são só fios. Eles são declarações. De que você construiu algo tão poderoso que precisa de três isolantes por metro. São os cabos que atravessam céus, cortam paisagens, e acendem debates sobre segurança."
+				""
+				"   São difíceis de esconder. E talvez você nem devesse tentar."
+				""
+				"   Mas cuidado: eles transportam energia suficiente pra fritar seu sistema inteiro — ou, com sorte, só a sua paciência."
+				""
+				"&7&o— Alta voltagem, baixa expectativa de acerto na conexão&r"
+			]
+			id: "460A5B83307446ED"
+			tasks: [{
+				id: "795410735970C9B4"
+				item: "immersiveengineering:wirecoil_steel"
+				type: "item"
+			}]
+			title: "O Cabo que Assusta Crianças"
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["53926EA02B461E01"]
+			description: [
+				"   A conta é simples."
+				""
+				"   Se você não consome 100% da energia que produz o tempo todo, não precisa de mais geração. Só de mais tempo. O HV Capacitor é isso: tempo em forma de bloco."
+				""
+				"   Ele não melhora seu sistema. Ele só segura tudo o que você desperdiça. Mas às vezes, é só isso que falta."
+				""
+				"   Com ele, você pode montar uma reserva absurda, alimentar três máquinas por hora, e fingir que vive em abundância. É bonito. É funcional. É mentira — mas das boas."
+				""
+				"&7&o— Produzir mais é difícil. Estocar energia mal usada? Isso até você consegue&r"
+			]
+			id: "655DFFEBB378B043"
+			tasks: [{
+				id: "6BA7CDA599AE3E47"
+				item: "immersiveengineering:capacitor_hv"
+				type: "item"
+			}]
+			title: "Buffer ou Desculpa de Ineficiência?"
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25EF7B5E007B9C11"]
+			description: [
+				"   Você achou que plantar era coisa de fazenda. Que sementes eram pra galinha. Que baga era pra suco. Mas o Squeezer discorda."
+				""
+				"   Essa máquina transforma matéria sólida em líquido útil, com uma eficiência que faria até druida ficar sem graça. É barulhenta, feia, e nem tenta disfarçar o quanto gosta de esmagar sementes até sair óleo."
+				""
+				"   Se quiser entrar no mundo dos combustíveis e fluidos industriais, é aqui que começa. Espremendo."
+				""
+				"&7&o— Não subestime uma máquina que faz óleo com raiva. Um dia você ainda vai usar isso pra mover um trem.&r&r"
+			]
+			icon: "immersiveengineering:squeezer"
+			id: "55674CA71B329E3B"
+			tasks: [
+				{
+					count: 2L
+					id: "5D8395EED7E7AFB7"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "66EF735E7AA91DA9"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "2ACEEC1E28DCF905"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "58EF2F56DAA4290D"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0E600986F7AB5321"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "34CBA7F108F2A7D9"
+					item: { Count: 3, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "506E197D33BA8BA3"
+					item: { Count: 4, id: "immersiveengineering:wooden_barrel" }
+					type: "item"
+				}
+			]
+			title: "Esguicha, Logo Existe"
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4EA7083C34FC1A44"]
+			description: [
+				"   Você pensou que o carvão acabava na fornalha?"
+				""
+				"   Bem-vindo ao pós-combustão."
+				""
+				"   Coke Dust é o que sobra quando você processa carvão até ele esquecer quem era. É negro, fino, e essencial para tudo que virá. Sujeira industrial na forma mais pura — e agora, sua oficina inteira vai cheirar a isso."
+				""
+				"&7&o— Respirar não é mais prioridade&r"
+			]
+			id: "393576D2959060DC"
+			tasks: [{
+				count: 8L
+				id: "6CF8AECD9A50C87A"
+				item: "immersiveengineering:dust_coke"
+				type: "item"
+			}]
+			title: "Poeira de Carvão, Pulmões de Ferro"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"393576D2959060DC"
+				"55674CA71B329E3B"
+			]
+			description: [
+				"   Esse pó não é como os outros."
+				""
+				"   É refinado. Compactado. Digno de alimentar máquinas que consomem energia como quem respira. O HOP Graphite Dust é o ponto onde o carvão vira tecnologia — ou, pelo menos, finge muito bem."
+				""
+				"   Você vai moer bastante para fazer um só lingote. E mesmo assim, vai achar pouco."
+				""
+				"&7&o— Quando carvão aprende a se comportar&r"
+			]
+			id: "6D53CF017256846F"
+			tasks: [{
+				count: 12L
+				id: "252BBBB776008078"
+				item: "immersiveengineering:dust_hop_graphite"
+				type: "item"
+			}]
+			title: "Carvão com Diploma"
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["27A9ABA7161CD1EA"]
+			description: [
+				"   Você talvez tenha achado que o Fermenter ia produzir vinho. Que ia cheirar bem. Que ia ser elegante. Não foi."
+				""
+				"   O que ele faz é transformar tudo que tem um pingo de açúcar em uma gosma fermentada tecnicamente chamada de etanol. Se tiver sorte, isso ainda vai virar combustível. Se tiver azar, vai parecer uma sopa de beterraba esquecida no sol."
+				""
+				"   Mas o que importa é que ele funciona. Sem frescura, sem filtro, e sem julgamento. E se você ainda está com nojo… bem-vindo à indústria."
+				""
+				"&7&o— A alquimia começa quando você descobre que etanol fede. E mesmo assim, você quer mais.&r&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			icon: "immersiveengineering:fermenter"
+			id: "25EF7B5E007B9C11"
+			tasks: [{
+				id: "5B44ECF98A6DED18"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			title: "Se é Doce, Fermenta"
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6F89ADFAB2A59C2B"
+				"2F9EA9B259B79847"
+			]
+			description: [
+				"   Construiu sua Refinaria, produziu seu Biodiesel, canalizou fluidos com mais empenho que emoção... e agora, finalmente, você ergueu o que chamam de &lDiesel Generator&r."
+				""
+				"   Mas vamos deixar uma coisa clara: isso aqui não é só um motor. É uma ópera. Um monumento ao movimento bruto. Um ciclo explosivo ritmado por pistões invisíveis e fome por combustível. Um canto mecânico que ecoa o auge — e o fim — de uma era."
+				""
+				"   O Diesel Generator é sua primeira usina de verdade. Ele não aceita carvão, nem empurro. Ele exige cadeia produtiva. Planejamento. Otimização. É um organismo industrial que só canta quando está saciado. E quando canta... ah, quando canta, ele grita energia."
+				""
+				"   Mas não se iluda. Por mais glorioso que ele seja, por mais que seu ronco preencha a fábrica como um hino ancestral... tudo isso é transitório. Logo, virá o silêncio frio dos cabos energizados. A abstração das turbinas pressurizadas. O olhar pragmático do &a&lMekanism&r&r."
+				""
+				"   Você construiu algo lindo. E como tudo que é lindo... ele está prestes a ser substituído."
+				""
+				"&7&o— Eu sei que você vai construir 100 rodas dagua como solução energética, só não diga isso na frente dele. &r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:diesel_generator"
+			id: "6C3E18C9058CBAB4"
+			size: 1.3d
+			tasks: [{
+				id: "067E8C5FFEC7FF7A"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			title: "Biodiesel, Brutalidade e Barulho"
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6D53CF017256846F"]
+			description: [
+				"   De um único pó, nasce um lingote que carrega ambição."
+				""
+				"   Leve, denso, com estrutura cristalina o suficiente para enganar qualquer físico distraído. Empilha, sim — mas não se engane. Esses lingotes não são para estoque: são para rituais industriais."
+				""
+				"   Eles serão devorados por máquinas que não aceitam menos que isso."
+				""
+				"&7&o— Parece simples. É porque ainda não virou uma vara de três metros&r"
+			]
+			id: "33417C677CE79CB0"
+			tasks: [{
+				count: 12L
+				id: "60E768EEE414B7D4"
+				item: "immersiveengineering:ingot_hop_graphite"
+				type: "item"
+			}]
+			title: "O Lingote que Não Gosta de Gente"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2F9EA9B259B79847"]
+			description: [
+				"   Você chegou até aqui fundindo aço e esquentando blocos como um ferreiro com diploma. Mas isso acabou."
+				""
+				"   A Arc Furnace não é uma fornalha. É um reator. Um leviatã. Um monumento industrial que exige cabos, eletrodos, refratários e... obediência. Ela consome mais do que matéria-prima — ela devora ordem. A partir de agora, não existem mais receitas simples. Cada liga é um pacto. Cada composição é um sacrifício de tempo, energia e lógica."
+				""
+				"   Bem-vindo à metalurgia sintética."
+				""
+				"   Esse é o ponto onde a realidade começa a entortar. O cobre já não é suficiente. O ferro sozinho não serve. Você precisa de três, quatro, cinco ingredientes. Você precisa de controle de temperatura, de fluxo de entrada, de estabilidade — e vai perceber que não tem nada disso."
+				""
+				"   E é aqui, no meio desse colapso deliciosamente técnico, que o &a&lMekanism&r&r observa de longe. Ele espera. E você vai chamá-lo. Vai implorar por ordem. Vai desejar os cabos pressurizados, os sistemas de infusão, as máquinas que pensam por você. Mas antes, você precisa queimar um pouco mais."
+				""
+				"   A Arc Furnace não é o fim da linha. Ela é o trilho torto que aponta para o futuro. Para o que virá. Para o que &ovai te consumir de volta&r."
+				""
+				"&7&o— Toda grande indústria começa com um incêndio que ninguém apagou&r&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			id: "617989B418D326B0"
+			size: 1.3d
+			tasks: [{
+				id: "241EBEBF2EB53E5C"
+				item: "immersiveengineering:arc_furnace"
+				type: "item"
+			}]
+			title: "A Fábrica em chamas"
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"25EF7B5E007B9C11"
+				"55674CA71B329E3B"
+			]
+			description: [
+				"   Você acredita estar apenas montando tubos, tanques e engrenagens. Engano. Cada bloco posicionado aqui é mais um prego no caixão da sua neutralidade. A Refinaria não é uma simples máquina — é o primeiro divisor de águas. O limiar entre transformar e queimar. Entre criar matéria e extrair movimento."
+				""
+				"   Até agora, seus líquidos eram inofensivos. Um pouco de óleo, um gole de etanol, tudo muito rústico, quase pastoral. Mas aqui, eles se fundem. Eles se corrompem. E dessa corrupção nasce o poder. Não o poder estético das engrenagens girando — mas o poder real. O que escurece a alma da máquina. O que escolhe."
+				""
+				"   Dois caminhos se abrem, e nenhum deles leva de volta. Um deles molda o mundo à sua imagem: o &6&lDuroplast&r&r, matéria sólida, sintética, a negação da madeira e da natureza, perfeita para quem prefere a permanência ao crescimento. Um ciclo químico, preciso, controlado. O outro caminho é mais bruto, mais visceral. O &2&lBiodiesel&r&r. Ele não constrói — ele impulsiona. Uma energia que queima sem remorso, que grita por um gerador e por linhas de produção devorando o horizonte."
+				""
+				"   Você já sabe disso. Mesmo que não admita. A Refinaria não é uma invenção — é uma revelação. Um espelho. Ela mostra o que você está disposto a sacrificar em nome do avanço."
+				""
+				"&7&o— Toda escolha é uma combustão. Algumas só demoram mais para explodir&r&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			icon: "immersiveengineering:refinery"
+			id: "6F89ADFAB2A59C2B"
+			tasks: [{
+				id: "7C396D70076465F8"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			title: "Refinaria: a gota que faltava"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6F89ADFAB2A59C2B"]
+			description: [
+				"   Você fermentou cana-de-açúcar como um camponês alquimista. Achou poético. Quente. Quase sagrado. Mas a verdade é que o &oetanol&r é só o primeiro gole. O início de um processo que arranca do natural toda sua pretensão de pureza."
+				""
+				"   Adicione calor. Reduza. Transforme o etanol em &oacetaldehyde&r. Um composto volátil, impaciente, que já carrega o desejo de ser mais — ou menos — orgânico."
+				""
+				"   Depois, misture. Resina fenólica. Um nome chique para uma gosma sintética carregada de intenções. É aqui que a coisa engrossa — literalmente."
+				""
+				"   E então, com tudo isso em mãos, você funde essência com propósito. Derrama sua criação na &lBottling Machine&r, e assiste nascer a &oDuroplast Sheet&r: fria, rígida, perfeita. Um simulacro de matéria. Uma pele industrial."
+				""
+				"   Esse processo não é só uma cadeia produtiva. É uma filosofia. É o grito final do natural, sufocado sob camadas de engenharia."
+				""
+				"&7&o— O que começou com açúcar termina com uma armadura. Bem-vindo ao sintético&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:bottling_machine"
+			id: "254D3ED5237C2967"
+			tasks: [{
+				id: "58ADB47CE2B97E34"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			title: "Petrificando o Orgânico"
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2C5BDE78E209CF0C"]
+			description: [
+				"   Existe um momento, em toda jornada técnica, em que você olha para uma receita e pensa: “isso aqui não faz o menor sentido”."
+				""
+				"   Bem-vindo ao &0Blueprint de Electrode.&r"
+				""
+				"   Uma folha de papel, um pouco de tinta técnica... e uma barra de Blazing Steel. Porque claro, nada melhor para imprimir instruções do que um metal que ainda está praticamente pegando fogo."
+				""
+				"   Não pergunte. Essa é uma receita milenar. Você apenas repete. Sem olhar diretamente. E torce pra impressora não pegar fogo no processo."
+				""
+				"   Com isso, você poderá finalmente construir os Electrode de Graphite, alimentar a Arc Furnace… e continuar não entendendo absolutamente nada."
+				""
+				"&7&o— Há quem diga que o papel absorve o calor do conhecimento. Mas talvez fosse só burrice mesmo&r"
+			]
+			id: "421C0ACCE46F9463"
+			tasks: [{
+				id: "01A5F7EC4278B41C"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "electrode"
+					}
+				}
+				type: "item"
+			}]
+			title: "Papel Queimado"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"33417C677CE79CB0"
+				"421C0ACCE46F9463"
+			]
+			description: [
+				"   Quatro lingotes. Uma prensa. Um resultado inevitável."
+				""
+				"   O Graphite Electrode é o pilar da Arc Furnace. Consumível. Essencial. Enorme. Ele gira com eletricidade suficiente para evaporar seu bom senso, e quando acaba… você sente."
+				""
+				"   Não há como fingir que isso é só um item técnico. É um monumento."
+				""
+				"&7&o— Uma vara de carbono que decide se a indústria vive ou não&r"
+			]
+			id: "2F9EA9B259B79847"
+			tasks: [{
+				count: 3L
+				id: "066D32CE6F84DC24"
+				item: {
+					Count: 1
+					id: "immersiveengineering:graphite_electrode"
+					tag: {
+						graphDmg: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Tridente de Carbono"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6C3E18C9058CBAB4"]
+			description: [
+				"   Nem todo avanço tecnológico precisa ser sutil. Alguns simplesmente precisam ser grandes. Barulhentos. Ameaçadores. Como a &lExcavator&r."
+				""
+				"   Você passou tempo demais construindo circuitos, otimizando engrenagens e tentando fingir elegância. Esqueça isso. Agora você vai erguer uma estrutura de mais de 50 blocos que gira ininterruptamente contra a crosta terrestre. Uma ode à força bruta. Um moinho para veios minerais."
+				""
+				"   Mas ela não é burra. Pelo contrário. Antes de ativá-la, você vai precisar aprender a procurar os veios corretos. E para isso existe a &c&oCore Sample Drill&r&r — uma máquina discreta, que escaneia chunks em busca de depósitos subterrâneos."
+				""
+				"   Basta colocá-la, alimentá-la com energia e esperar. Se o chunk contiver um minério detectável, ela deixará uma amostra. Se não deixar nada… você cavou poesia onde não havia minério. Acontece."
+				""
+				"   Depois, erga a Excavator no chunk correto. Forneça energia em abundância. Ligue o sistema de transporte. E contemple o colosso girando. Perfurando. Devastando."
+				""
+				"   Sim. Você criou isso. E sim… você vai precisar de duas por chunk, eventualmente."
+				""
+				"&7&o— Quando a sofisticação falha, erga um braço de escavação giratório de 15 toneladas&r"
+				""
+				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+			]
+			icon: "immersiveengineering:excavator"
+			id: "04BA3BE1F94722AE"
+			size: 1.3d
+			tasks: [{
+				id: "45FF050C2BDD68DA"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			title: "Monstro de Ferro, Coração de Óleo"
+			x: -9.178571428571438d
+			y: 7.982142857142868d
+		}
+		{
+			dependencies: ["254D3ED5237C2967"]
+			description: [
+				"   Redstone em fio já não serve. Fios de cobre também não. O que vem agora exige mais."
+				""
+				"   Estes não são apenas circuitos — são encapsulados. Blindados. Construídos sobre placas de Duroplast, selados contra interferência, preparados para frequências que fariam um resistor tradicional evaporar. São chips que parecem estar prontos para pilotar naves, abrir portais ou resistir ao colapso do sistema que os criou."
+				""
+				"   Você não entende exatamente como eles funcionam. Mas vai usá-los mesmo assim."
+				""
+				"   É o que todo mundo faz."
+				""
+				"&7&o— Quando o metal não aguenta mais, o sintético assume&r"
+			]
+			id: "5B4C68B983FBA537"
+			tasks: [
+				{
+					id: "617F285475F24165"
+					item: "immersiveengineering:component_electronic_adv"
+					type: "item"
+				}
+				{
+					id: "5CB67CA6E6335164"
+					item: "immersiveengineering:circuit_board"
+					type: "item"
+				}
+			]
+			title: "Circuitos para Suportar a Tempestade"
+			x: -6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["617989B418D326B0"]
+			description: [
+				"   Não há magia nisso. Não há poesia. Há apenas poder."
+				""
+				"   O &b&lInductive Alloy&r&r é o resultado de empurrar metais até seus limites — e além. É o que acontece quando você força aço a aceitar pulsos de energia compactada, quando mistura um condutor avançado com traços de memória cristalina e pigmentos que ardem como o sol."
+				""
+				"   O resultado é denso. Vibrante. Quase volátil."
+				""
+				"   Essa liga não quer existir. Ela só continua coesa porque a estrutura molecular ainda não percebeu o absurdo que está abrigando. Você não criou um material: você acendeu um metal."
+				""
+				"   Prepare-se. Este é o último passo antes das máquinas pararem de obedecer comandos simples — e começarem a gritar por mais."
+				""
+				"&7&o— Onde termina a metalurgia, começa o fluxo&r"
+			]
+			id: "13939C95C3168861"
+			tasks: [{
+				id: "003C4F88D35650C9"
+				item: "kubejs:inductive_alloy"
+				type: "item"
+			}]
+			title: "Liga que resiste ao futuro"
+			x: -5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"5B4C68B983FBA537"
+				"13939C95C3168861"
+			]
+			description: [
+				"   Você já moldou aço bruto com carvão e paciência. Já viu ligas se tornarem mais difíceis de compreender do que de forjar. Já derreteu metais que se recusavam a obedecer, apenas para que, sob pressão, se curvassem ao seu projeto."
+				""
+				"   Você passou por cada etapa — do calor à estrutura, da madeira tratada à condução de energia, da engrenagem ao circuito encapsulado."
+				""
+				"   E agora está aqui."
+				""
+				"   O &9&lPrecision Matrix Core&r&r não é só mais um passo. É um ritual encerrado em um cubo. Uma fusão definitiva entre o esforço humano e a lógica impessoal que vem adiante. É a peça final que resume tudo o que foi aprendido até agora — e, ao mesmo tempo, o que será descartado em breve."
+				""
+				"   Feito com Duroplast, aquela folha sintética que parece sempre estar tentando escapar das suas mãos. Alimentado por ligas que só existem porque você ignorou o bom senso. Costurado com fragmentos de quartzo e impulsos vermelhos que quase lembram sangue... se sangue funcionasse em 60hz."
+				""
+				"   Este núcleo não brilha. Ele vibra. Ele espera. Ele está à altura das máquinas que virão."
+				""
+				"   E o mais curioso: depois de tudo isso, você vai usá-lo apenas como um ingrediente."
+				""
+				"&7&o— E pensar que você construiu tudo isso só para colocar dentro de uma caixa&r"
+			]
+			id: "376E59D9ADCD986B"
+			size: 2.0d
+			tasks: [{
+				id: "78DD59483D70B797"
+				item: "kubejs:precision_matrix_core"
+				type: "item"
+			}]
+			title: "&d&l&o O Coração do Que Vem Depois"
+			x: -6.0d
+			y: 11.0d
+		}
+		{
+			id: "0EA34113E022A3EE"
+			tasks: [{
+				id: "3170CD686EEAC1AD"
+				item: "silentgear:crimson_steel_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "7BBAC80378A7809C"
+			tasks: [{
+				id: "031104FE03558668"
+				item: "silentgear:blaze_gold_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "12EF3E1654854D85"
+			tasks: [{
+				id: "14B0558AE59D0D52"
+				item: "silentgear:material_grader"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "17AB9CC6DECC074B"
+			tasks: [{
+				id: "585029128D50260D"
+				item: "silentgear:metal_alloyer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+	]
+	title: "&82.&8 &7P&7a&7r&7a&8f&8u&8s&8o&8s &7e &8C&8o&8n&7v&7i&7c&7ç&8õ&8e&8s"
+}

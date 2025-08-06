@@ -33,6 +33,8 @@ ServerEvents.recipes(event => {
   });
 });
 
+// 
+
 // ELECTROLYTIC CORE
 ServerEvents.recipes(event => {
   event.remove({ id: 'mekanism:electrolytic_core' });
@@ -46,4 +48,50 @@ ServerEvents.recipes(event => {
     S: 'thermal_extra:shellite_dust'
   });
 });
+
+// ENRICHEMENT CHAMBER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:enrichment_chamber' });
+  event.shaped('mekanism:enrichment_chamber', [
+    'PBP',
+    'CSC',
+    'PBP'
+  ], {
+    C: 'kubejs:rudimentary_redstone_component',
+    B: 'mekanism:basic_control_circuit',
+    P: '#forge:plates/steel',
+    S: 'mekanism:steel_casing'
+  });
+});
+
+// OSMIUM COMPRESSOR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:osmium_compressor' });
+  event.shaped('mekanism:osmium_compressor', [
+    'IAI',
+    'TST',
+    'IAI'
+  ], {
+    I: 'mekanism:alloy_infused',
+    A: 'mekanism:advanced_control_circuit',
+    T: 'mekanism:basic_fluid_tank',
+    S: 'mekanism:steel_casing'
+  });
+});
+
+// CRUSHER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:crusher' });
+  event.shaped('mekanism:crusher', [
+    'PCP',
+    'WSW',
+    'PCP'
+  ], {
+    P: '#forge:plates/steel',
+    C: 'mekanism:basic_control_circuit',
+    W: 'create:crushing_wheel',
+    S: 'mekanism:steel_casing'
+  });
+});
+
 //====================COMPATIBILITY RECIPES==================

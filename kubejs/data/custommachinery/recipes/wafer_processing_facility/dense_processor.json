@@ -26,9 +26,7 @@
       "a": "kubejs:facility_casing",
       "b": "kubejs:facility_glass",
       "c": "mekanism:laser"
-      
-
-  }
+        }
     },
     {
       "type": "custommachinery:item",

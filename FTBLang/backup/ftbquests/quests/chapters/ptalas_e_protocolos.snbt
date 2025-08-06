@@ -1,0 +1,474 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "ptalas_e_protocolos"
+	group: "57CED54B61FDA52E"
+	icon: "botania:white_shiny_flower"
+	id: "452200173D099484"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2A32B9A64F11F8EE"
+			tasks: [{
+				id: "1CB8372EA3E3B6AD"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			id: "3B414E23C6C682D3"
+			tasks: [{
+				id: "7E4B4EDC4B7C4B50"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			id: "4A2A9A2C7AA75FF3"
+			tasks: [{
+				id: "042325CDFD56F265"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			id: "31E517BE9015DB9D"
+			tasks: [{
+				id: "238E2DAC4F369847"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "0D82472AA5A42117"
+			tasks: [{
+				id: "7AC64B8BB6D9DFA2"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			id: "5C1A48B369611F70"
+			tasks: [{
+				id: "284D4037FE616968"
+				item: "kubejs:lucent_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			id: "0644F3152CF49C0B"
+			tasks: [{
+				id: "2C51E4F97632A57E"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "7B0A0CEC398A6A49"
+			tasks: [{
+				id: "1D1B7FFD4E3C7177"
+				item: "kubejs:manadoped_monosilicon"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			id: "68E57882E89DA7E7"
+			tasks: [{
+				id: "3BD8B0AE34A596B2"
+				item: "kubejs:botanic_processor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "5BAF588DAEA797BB"
+			tasks: [{
+				id: "70F9410D38A31ADF"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			id: "7DA327BE0F0FDD8C"
+			size: 1.5d
+			tasks: [{
+				id: "1DD90A52D7278043"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			id: "53E5B39D09DFACB5"
+			tasks: [{
+				id: "3A130051A200EAF0"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			id: "70C23E88DB1496C9"
+			tasks: [{
+				id: "4261FECB599EF3AB"
+				item: "kubejs:ingot_vesselframe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			id: "424A7BCD9A8F6956"
+			tasks: [{
+				id: "5E1356116FF7E9A2"
+				item: "kubejs:mana_focus"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "0818282225104ABD"
+			tasks: [{
+				id: "1922511982EE5EDF"
+				item: "botania:rune_water"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "2F0E40D3782B738A"
+			tasks: [{
+				id: "63FBD4212B49F307"
+				item: "botania:rune_fire"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			id: "2E627B7477EDDDF8"
+			tasks: [{
+				id: "181DE5C93F2C913C"
+				item: "botania:rune_air"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "15A6F2A6A572E862"
+			tasks: [{
+				id: "00B1686C0E50D646"
+				item: "botania:rune_earth"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "0C41B7E0CF417D66"
+			tasks: [{
+				id: "03ED28158A7560C9"
+				item: "botania:rune_mana"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			id: "3A3EA1D35FBFBE7B"
+			tasks: [{
+				id: "1A53DA31C4C9269E"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			id: "1C7A60B3D42BBA84"
+			tasks: [{
+				id: "2DC0DB3738C149DE"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			id: "6016554BDE6DBD03"
+			tasks: [{
+				id: "6D46D384CED26574"
+				item: "botania:rune_spring"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			id: "5015E0DC1C7A70A2"
+			tasks: [{
+				id: "3A5CA28A5EDFA85C"
+				item: "botania:rune_summer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			id: "5CE4814A0C76DEE2"
+			tasks: [{
+				id: "063479860F7869A0"
+				item: "botania:rune_autumn"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			id: "11DF0282B8AA5E4B"
+			tasks: [{
+				id: "565CBE836AF6F4DA"
+				item: "botania:rune_winter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			id: "448E2AB0061C0BED"
+			tasks: [{
+				id: "2622D9A3E927AE5A"
+				item: "botanicadds:rune_energy"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			id: "6C933C5C8C25FE86"
+			tasks: [{
+				id: "5235F80C43B535AF"
+				item: "botanicadds:rune_tp"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			id: "545665A1DD5171A6"
+			tasks: [{
+				id: "7B22184851DFD253"
+				item: "botania:rune_lust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			id: "5938508FDB4BE5A8"
+			tasks: [{
+				id: "00A515BF985CED6E"
+				item: "botania:rune_gluttony"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			id: "572CE66E2BB2EEC9"
+			tasks: [{
+				id: "147AE011688BB678"
+				item: "botania:rune_greed"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			id: "0CA547ECFF9DB066"
+			tasks: [{
+				id: "713EFEC40CEB5EAB"
+				item: "botania:rune_sloth"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			id: "26C8BFF753E2233E"
+			tasks: [{
+				id: "2B7288D2FD830CD0"
+				item: "botania:rune_envy"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			id: "47C2CE941075AC1F"
+			tasks: [{
+				id: "1FAB18D34CB032E4"
+				item: "botania:rune_wrath"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			id: "50DA0AA983CBF129"
+			tasks: [{
+				id: "65C7B8AB08EE1431"
+				item: "botania:rune_pride"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			id: "7C7CB34417B4BF57"
+			tasks: [{
+				id: "671E7FA718850D28"
+				item: "botanicadds:gaiasteel_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			id: "37E8E183476803F1"
+			tasks: [{
+				id: "17E7878DF1D2728E"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			id: "597FE12F46F3112A"
+			tasks: [{
+				id: "34D43665CA64512D"
+				item: "kubejs:matter_data"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "2C633A9EC472F1B0"
+			tasks: [{
+				id: "7C53DAA7A469B5E4"
+				item: "kubejs:incomplete_blank_tech_card"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			id: "022D6CED4DF1798A"
+			tasks: [{
+				id: "28BF30FECFB60DD0"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			id: "04DDB1B3F559B891"
+			tasks: [{
+				id: "40ED2D82085E63D6"
+				item: "botanicadds:gaia_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			id: "66D5B91A821CA01E"
+			tasks: [{
+				id: "2425B3C7FB1CAA97"
+				item: "minecraft:oak_wood"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			id: "17D75DEE02722FFC"
+			tasks: [{
+				id: "3EDD2ABEEB1B232E"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			id: "68DA6A33E17A4F11"
+			tasks: [{
+				id: "5CF181D76BA6F3D7"
+				item: "botania:light_blue_mystical_flower"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			id: "220D1E5256253400"
+			tasks: [{
+				id: "1B6A2E288C70C7EB"
+				item: "occultism:datura_seeds"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			id: "26B325C729F7EFD7"
+			tasks: [{
+				id: "340A47BB7F64C1E1"
+				item: "occultism:datura"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			id: "7E29045CAC23AAFF"
+			tasks: [{
+				id: "643B43948012079A"
+				item: "kubejs:manadoped_wafer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: "13. Pétalas e protocolos"
+}

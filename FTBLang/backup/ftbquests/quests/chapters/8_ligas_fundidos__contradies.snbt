@@ -1,0 +1,315 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "8_ligas_fundidos__contradies"
+	group: "42138693CA8E287F"
+	icon: "createmetallurgy:obdurium_ingot"
+	id: "0389D86C2FC31D3E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "15A8DB114D66321A"
+			tasks: [{
+				id: "2AD386DB3DB18E81"
+				item: "createmetallurgy:tungsten_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			id: "38D8675995D28502"
+			tasks: [{
+				id: "6F53D43E7E2F350E"
+				item: "createmetallurgy:foundry_basin"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			id: "7E7093BDB6618DD8"
+			tasks: [{
+				id: "3D4A53B65CC2B926"
+				item: "createmetallurgy:glassed_foundry_lid"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			id: "251DD905DD8D17D9"
+			tasks: [{
+				id: "19C16594D479FBFC"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			id: "1914E8DDC794B475"
+			tasks: [{
+				id: "3E55F0BA405F07B6"
+				item: "createmetallurgy:industrial_crucible"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			id: "0EBBC56ADF493E8D"
+			tasks: [{
+				id: "11341169CA76E490"
+				item: "thermal_extra:soul_infused_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["15471307A782AFDF"]
+			id: "0C807F0EF36D1C78"
+			tasks: [{
+				id: "6F5506E6F3993D98"
+				item: "thermal_extra:shellite_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["705ECA595C9165A9"]
+			id: "690EAE1ED55A6E2D"
+			tasks: [{
+				id: "34F7E2A674519A31"
+				item: "thermal_extra:twinite_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0111F673A41E87E1"]
+			id: "00DD18AFA79B2928"
+			tasks: [{
+				id: "59ADC6E3B5C0FCB7"
+				item: "thermal_extra:dragonsteel_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["393162E0C31F83BC"]
+			id: "7A7D2C6218E12E61"
+			tasks: [{
+				id: "17536BBC1CD6C644"
+				item: "thermal_extra:abyssal_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			id: "14C606E45108CCD3"
+			tasks: [{
+				id: "0C1D499A6C4426B3"
+				item: "thermal_extra:nitratic_igniter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36FECDD1F394E50E"]
+			id: "705ECA595C9165A9"
+			tasks: [{
+				id: "7F1A7331B2C044F5"
+				item: "kubejs:blazing_composite"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0EBBC56ADF493E8D"]
+			id: "36FECDD1F394E50E"
+			tasks: [{
+				id: "6BF9A1F99DCD5181"
+				item: "thermal_extra:endothermic_dehydrator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5F477828A8E1FBDE"]
+			id: "0111F673A41E87E1"
+			tasks: [{
+				id: "5F6FA6FB84F3D754"
+				item: "kubejs:aetherforged_cinderblock"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0C807F0EF36D1C78"]
+			id: "5F477828A8E1FBDE"
+			tasks: [{
+				id: "35AFD73565E9AA1D"
+				item: "thermal_extra:advanced_refinery"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["76738A794BA365CD"]
+			id: "15471307A782AFDF"
+			tasks: [{
+				id: "7E5C1188B04CF540"
+				item: "kubejs:entropic_mycelite"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["690EAE1ED55A6E2D"]
+			id: "76738A794BA365CD"
+			tasks: [{
+				id: "31D5B4AFF54633FB"
+				item: "thermal_extra:fluid_mixer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2AF6DE56BFE2421B"]
+			id: "393162E0C31F83BC"
+			tasks: [{
+				id: "66C17364E57D69FD"
+				item: "kubejs:echo_fused_obsidianite"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["00DD18AFA79B2928"]
+			id: "2AF6DE56BFE2421B"
+			tasks: [{
+				id: "5107131E16B48BB6"
+				item: "thermal_extra:component_assembly"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			id: "3DD65B28F005DD45"
+			tasks: [{
+				id: "216999DF64AFF403"
+				item: "thermal_extra:soul_infused_machine_speed_augment"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			id: "6CBB949ED71E261A"
+			tasks: [{
+				id: "7A98434B59443DE2"
+				item: "thermal_extra:twinite_machine_speed_augment"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			id: "009283728B9D02A2"
+			tasks: [{
+				id: "029F1C3F964E47A5"
+				item: "thermal_extra:shellite_machine_speed_augment"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "0B442B308B7F0205"
+			tasks: [{
+				id: "662280E027545140"
+				item: "thermal_extra:dragonsteel_machine_speed_augment"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			id: "05268A865EBF4249"
+			tasks: [{
+				id: "4CB78249C73ACA5B"
+				item: "thermal_extra:abyssal_machine_speed_augment"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			id: "62EF39CEF25D0A38"
+			tasks: [{
+				id: "44853F7A35D00537"
+				item: "minecraft:shulker_shell"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			id: "49C0F93383E7A0DB"
+			tasks: [{
+				id: "56301CAB941A426C"
+				item: "industrialforegoingsouls:soul_laser_base"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			id: "1AF836598108A738"
+			tasks: [{
+				id: "44A426FDA086201F"
+				item: "industrialforegoingsouls:soul_surge"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			id: "36AC19976278842E"
+			tasks: [{
+				id: "133A4858DC86DEED"
+				item: "industrialforegoing:ore_laser_base"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			id: "039D7E83AEB9E25F"
+			tasks: [{
+				id: "1950F4E647B84C26"
+				item: "apotheosis:heart_seashelf"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+	]
+	title: "8. Ligas, Fundidos e Contradições"
+}

@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "holder_2"
+	group: "7A5D50945C97A2EB"
+	id: "7169DCFBFF9C975E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "holder 2"
+}

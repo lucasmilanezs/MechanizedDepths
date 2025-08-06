@@ -92,9 +92,8 @@ ServerEvents.recipes(event => {
 });
 
 // SILICON WAFER
-// SILICON WAFER PRODUCTION
 ServerEvents.recipes(event => {
-  const transitional = 'kubejs:incomplete_silicon_wafer'
+  const transitional = 'kubejs:silicon_wafer'
 
   event.recipes.create.sequenced_assembly(
     [
@@ -112,6 +111,25 @@ ServerEvents.recipes(event => {
   .id('kubejs:processing/silicon_wafer');
 });
 
+// MANA-DOPED WAFER
+ServerEvents.recipes(event => {
+  const transitional = 'kubejs:manadoped_wafer'
+
+  event.recipes.create.sequenced_assembly(
+    [
+      Item.of('kubejs:manadoped_wafer', 4)
+    ],
+    Item.of('kubejs:manadoped_monosilicon'),
+    [
+      event.recipes.create.cutting(transitional, transitional).processingTime(100),
+      event.recipes.create.cutting(transitional, transitional).processingTime(100),
+      event.recipes.createmetallurgy.grinding(transitional, transitional)
+    ]
+  )
+  .transitionalItem(transitional)
+  .loops(1)
+  .id('kubejs:processing/manadoped_wafer');
+});
 
 //====================CHANGED RECIPES==================
 
@@ -172,7 +190,6 @@ ServerEvents.recipes(event => {
 
 ServerEvents.recipes(event => {
   const transitional = 'kubejs:incomplete_obsidian_core'
-
   event.recipes.create.sequenced_assembly(
     [
       Item.of('kubejs:precision_matrix_core', 1)
@@ -192,7 +209,22 @@ ServerEvents.recipes(event => {
   .loops(1)
 });
 
-
+// RUDIMENTARY REDSTONE COMPONENT
+ServerEvents.recipes(event => {
+  const transitional = 'kubejs:rudimentary_redstone_component'
+  event.recipes.create.sequenced_assembly(
+    [
+      Item.of('kubejs:rudimentary_redstone_component', 1)
+    ],
+    Item.of('minecraft:stone_pressure_plate'),
+    [
+      event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'minecraft:redstone']),
+      event.recipes.create.pressing(Item.of(transitional), Item.of(transitional)),
+    ]
+  )
+  .transitionalItem(transitional) 
+  .loops(4)
+});
 
 
  
