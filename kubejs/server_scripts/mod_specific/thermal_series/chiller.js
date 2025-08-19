@@ -12,13 +12,15 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'thermal:chiller',
     ingredients: [
-      { fluid: 'kubejs:melted_blaze_metal', amount: 500 }
+      { fluid: 'kubejs:melted_blaze_metal', amount: 500 },
+      { item: 'thermal_extra:chiller_plate_cast' }
     ],
     result: { item: 'kubejs:blaze_glass_compound' },
     energy: 6000
   });
 });
 
+// ICE CHARGE
 ServerEvents.recipes(event => {
   event.custom({
     type: 'thermal:chiller',

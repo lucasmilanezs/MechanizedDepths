@@ -66,8 +66,8 @@ ServerEvents.recipes(event => {
     type: 'immersiveengineering:arc_furnace',
     input: { item: 'kubejs:inductive_alloy' },
     additives: [
-      { item: 'mekanism:ingot_refined_obsidian' },
-      { item: '2x minecraft:quartz' }
+      { base_ingredient: { item: 'mekanism:ingot_refined_obsidian' }, count: 1 },
+      { base_ingredient: { item: 'minecraft:quartz' }, count: 2 }
     ],
     results: [
       { item: 'kubejs:refined_quartz', count: 1 }
@@ -76,6 +76,7 @@ ServerEvents.recipes(event => {
     energy: 70000
   });
 });
+
 
 // =============== CHANGED RECIPES ===============
 

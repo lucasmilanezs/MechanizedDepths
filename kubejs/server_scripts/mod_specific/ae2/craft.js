@@ -99,6 +99,33 @@ ServerEvents.recipes(event => {
   }).id('kubejs:ae2/drive');
 });
 
+// ENERGY ACCEPTOR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'ae2:network/blocks/energy_energy_acceptor' });
+  event.shaped('ae2:energy_acceptor', [
+    'RQR',
+    'QIQ',
+    'RQR'
+  ], {
+    R: 'kubejs:refined_quartz',
+    Q: 'ae2:quartz_glass',
+    I: 'kubejs:osgloglium'
+  }).id('kubejs:ae2/energy_acceptor');
+});
+
+// CHARGER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'ae2:network/blocks/crystal_processing_charger' });
+  event.shaped('ae2:charger', [
+    'ROR',
+    'R  ',
+    'ROR'
+  ], {
+    R: 'kubejs:refined_quartz',
+    O: 'kubejs:osgloglium'
+  }).id('kubejs:ae2/charger');
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

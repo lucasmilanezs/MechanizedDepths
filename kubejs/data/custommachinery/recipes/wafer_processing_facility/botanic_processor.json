@@ -60,7 +60,7 @@
     },
     {
       "type": "custommachinery:fluid",
-      "fluid": "kubejs:photoresist_fluid",
+      "fluid": "thermal_extra:refined_sunflower_oil",
       "amount": 1000,
       "mode": "input"
     },

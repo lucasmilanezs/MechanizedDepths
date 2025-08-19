@@ -1,15 +1,1 @@
-[
-  {
-    "user": {
-      "type": "player",
-      "name": "Zambim",
-      "uniqueId": "91b8f301-e7e3-4f5b-a656-9e3da85c077b"
-    },
-    "time": 1749492213498,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/I1RBjXXcRZ"
-    }
-  }
-]
+[]

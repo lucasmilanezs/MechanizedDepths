@@ -1,35 +1,9 @@
-// ========================= Ingots & Alloys =========================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ========================= Biomaterials & Cores =========================
-
-
-
-
+// CAST CHILLER TEST:
+StartupEvents.registry('item', event => {
+  event.create('chiller_plate_cast')
+    .texture('kubejs:item/chiller_plate_cast')
+    .displayName('Chiller Plate Cast')
+});
 
 // Incomplete Obsidian Core (custom:incomplete_obsidian_core)
 StartupEvents.registry('item', event => {
@@ -40,10 +14,6 @@ StartupEvents.registry('item', event => {
     ])
     .texture('custom:item/incomplete_obsidian_core')
 })
-
-
-
-
 
 // ========================= Tools =========================
 // Stone Hammer (custom:stone_hammer)
@@ -71,8 +41,6 @@ StartupEvents.registry('item', event => {
 
 // ========================= Special / Other =========================
 
-
-
 // PLACEHOLDER SUB (custom:placeholder_sub)
 StartupEvents.registry('item', event => {
   event.create('placeholder_sub')
@@ -80,18 +48,27 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/placeholder_sub')
     .maxStackSize(64)
 })
-// ========================= Fluids =========================
-// Melted Blaze Metal (custom:melted_blaze_metal)
 
+// INCOMPLETE CRUCIBLE (kubejs:incomplete_crucible)
+StartupEvents.registry('item', event => {
+  event.create('incomplete_crucible')
+    .displayName('Incomplete Crucible')
+    .texture('custom:item/incomplete_crucible')
+});
 
+// `startup_scripts/blocks.js`
+StartupEvents.registry('block', event => {
+  event.create('melted_blaze_metal_block')
+    .displayName('Melted Blaze Metal')
+    .lightLevel(14)
+});
 
-// ========================= Progression Materials =========================
-
-
-
-
-
-
+// INCOMPLETE SILICON WAFER (kubejs:incomplete_silicon_wafer)
+StartupEvents.registry('item', event => {
+  event.create('incomplete_silicon_wafer')
+    .displayName('Incomplete Silicon Wafer')
+    .texture('custom:item/incomplete_silicon_wafer');
+});
 
 
 

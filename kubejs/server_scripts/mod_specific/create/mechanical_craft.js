@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
       F: 'ae2:fluix_crystal',
       E: 'ae2:engineering_processor',
       U: 'mekanism:ultimate_control_circuit',
-      C: 'mekanism:steel_casing',
+      C: 'ae2:energy_acceptor',
     }
   );
 });

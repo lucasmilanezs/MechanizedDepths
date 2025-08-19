@@ -61,17 +61,18 @@
     },
     {
       "type": "custommachinery:item",
-      "item": "kubejs:dense_processor",
+      "item": "kubejs:chrome_mask",
       "amount": 1,
-      "slot": "output",
-      "mode": "output"
+      "mode": "input",
+      "slot": "mask",
+      "chance": 0
     },
     {
       "type": "custommachinery:item",
-      "item": "kubejs:chrome_mask",
+      "item": "kubejs:dense_processor",
       "amount": 1,
-      "slot": "mask_output",
-      "mode": "output"
+      "mode": "output",
+      "slot": "output"
     },
     {
       "type": "custommachinery:energy_per_tick",
