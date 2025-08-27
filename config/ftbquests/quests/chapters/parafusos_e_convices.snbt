@@ -4,13 +4,7 @@
 	filename: "parafusos_e_convices"
 	group: "0E3BAF4D0D92EEE1"
 	hide_quest_details_until_startable: true
-	icon: {
-		Count: 1
-		id: "immersiveengineering:hammer"
-		tag: {
-			Damage: 0
-		}
-	}
+	icon: "immersiveengineering:arc_furnace"
 	id: "04E87D18A8CF3C21"
 	images: [{
 		height: 2.7d

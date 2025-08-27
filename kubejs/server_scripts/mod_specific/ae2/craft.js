@@ -90,12 +90,13 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'ae2:network/blocks/storage_drive' });
   event.shaped('ae2:drive', [
     'RPR',
-    'F F',
+    'FCF',
     'RPR'
   ], {
     R: 'kubejs:refined_quartz',
     P: 'ae2:engineering_processor',
-    F: 'ae2:fluix_glass_cable'
+    F: 'ae2:fluix_glass_cable',
+    C: 'mekanism:elite_control_circuit'
   }).id('kubejs:ae2/drive');
 });
 

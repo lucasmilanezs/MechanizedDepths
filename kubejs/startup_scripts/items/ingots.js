@@ -142,6 +142,13 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/ingot_vesselframe');
 });
 
+// COMPRESSED GOLD (kubejs:ingot_compressed_gold)
+StartupEvents.registry('item', event => {
+  event.create('ingot_gold_compressed')
+    .displayName('Compressed Gold Ingot')
+    .texture('custom:item/ingot_compressed_gold');
+});
+
 // CUBIC
 
 //polysilicon (kubejs:polysilicon_ingot)

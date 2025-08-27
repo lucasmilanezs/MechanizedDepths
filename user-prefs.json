@@ -1,0 +1,6892 @@
+{
+  "export": {
+    "filesSelection": [
+      {
+        "path": "config",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ae2",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ae2\\client.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ae2\\common.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\adventure.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\apotheosis.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\ench.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\enchantments.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\garden.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\names.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\potion.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\spawner.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\apotheosis\\village.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\de",
+        "isSelected": true
+      },
+      {
+        "path": "config\\de\\mari_023",
+        "isSelected": true
+      },
+      {
+        "path": "config\\de\\mari_023\\ae2wtlib.json5",
+        "isSelected": true
+      },
+      {
+        "path": "config\\drippyloadingscreen",
+        "isSelected": true
+      },
+      {
+        "path": "config\\drippyloadingscreen\\options.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\basic_incense-1.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\basic_incense.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\create_water.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\cure_zombie-1.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\cure_zombie.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\darklight_chant.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\dark_animal_sacrifice.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\dark_prayer.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\dark_touch.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\dark_villager_sacrifice-1.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\dark_villager_sacrifice.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\enthrall_spell.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\fire_chant.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\frost_touch.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\holy_touch.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\lay_on_hands.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\light_chant.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\light_prayer.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\reinforce_armor.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\smite_chant.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\sunder_armor.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\undead_lure.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon\\zombify_villager.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\enderio",
+        "isSelected": true
+      },
+      {
+        "path": "config\\enderio\\armory-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\enderio\\base-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\enderio\\base-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\enderio\\machines-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\enderio\\machines-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\aluminum.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\bronze.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\coal.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\copper.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\diamond.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\electrum.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\emerald.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\glowstone.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\gold.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\invar.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\iron.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\lapis_lazuli.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\lead.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\nickel.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\platinum.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\redstone.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\silver.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\steel.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting\\singularities\\tin.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\assets",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\customization",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\custom_locals",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\layout_editor",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\layout_editor\\widgets",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\layout_editor\\widgets\\element_layer_control.lewidget",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\panoramas",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\slideshows",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\ui_themes",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\ui_themes\\dark.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\ui_themes\\light.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\customizablemenus.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\custom_gui_screens.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\legacy_checklist.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\options.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fancymenu\\user_variables.db",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\10_podeeeer.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\12_aquele_que_v_e_sente.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\16_misturas_instveis_e_carne_obediente.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\17_no_leia_isso_em_voz_alta.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\18_pacto_final.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\4_mekanologia.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\8_ligas_fundidos__contradies.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\9_realmente_automatizado.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\auge_tcnico.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\a_terceirizao_da_alma.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\enderfuso_de_almas.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\engenharia_industrial_e_mekanofludica.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\holder_1.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\holder_2.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\holder_3.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\onde_o_ferro_aprende_a_danar.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\parafusos_e_convices.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\psiu_me_leia.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\ptalas_e_protocolos.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\sementes_do_impossvel.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\termodinmica_aplicada.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapter_groups.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\data.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\functionalstorage",
+        "isSelected": true
+      },
+      {
+        "path": "config\\functionalstorage\\functionalstorage-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\functionalstorage\\functionalstorage-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\recipes",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\recipes\\modded",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\recipes\\modded\\botanicadds.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\recipes\\modded\\hammerlib.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\tags",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\tags\\modded",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\tags\\modded\\botania.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\tags\\modded\\botanicadds.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\tags\\modded\\hammerlib.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\tags\\modded\\minecraft.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\foil_colors.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\hammerlib\\main.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoing",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoing\\machine-agriculture-husbandry.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoing\\machine-core-1.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoing\\machine-core.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoing\\machine-generator.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoing\\machine-misc.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoing\\machine-resource-production.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoingsouls",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoingsouls\\industrialforegoing-souls-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\industrialforegoingsouls\\industrialforegoing-souls-machines.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jade",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jade\\hide-blocks.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jade\\hide-entities.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jade\\jade.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jade\\plugins.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jade\\sort-order.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\lang",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\Mundo_das_sneak_peaks",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\Mundo_de_sneaka_peaks",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\New_World",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\New_World__1",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\New_World__4",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\schema",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\schema__1",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\testando",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\testando\\bookmarks.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\world\\local\\uuuu",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\blacklist.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\ingredient-list-mod-sort-order.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\ingredient-list-type-sort-order.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\jei-client.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\jei-colors.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\jei-debug.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\jei-mod-id-format.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\recipe-category-sort-order.ini",
+        "isSelected": true
+      },
+      {
+        "path": "config\\konkrete",
+        "isSelected": true
+      },
+      {
+        "path": "config\\konkrete\\locals",
+        "isSelected": true
+      },
+      {
+        "path": "config\\konkrete\\locals\\de_de.local",
+        "isSelected": true
+      },
+      {
+        "path": "config\\konkrete\\locals\\en_us.local",
+        "isSelected": true
+      },
+      {
+        "path": "config\\konkrete\\locals\\pl_pl.local",
+        "isSelected": true
+      },
+      {
+        "path": "config\\konkrete\\locals\\pt_br.local",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\gear.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\general.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\generator-storage.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\generators-gear.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\generators.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\machine-storage.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\machine-usage.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\tiers.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Mekanism\\world.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\data",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\Frinn38 Custom-Machinery 1.16.5 test_resourcepack",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\Frinn38 Custom-Machinery 1.16.5 test_resourcepack\\assets",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\Frinn38 Custom-Machinery 1.16.5 test_resourcepack\\assets\\testresourcepack",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\Frinn38 Custom-Machinery 1.16.5 test_resourcepack\\assets\\testresourcepack\\models",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\Frinn38 Custom-Machinery 1.16.5 test_resourcepack\\assets\\testresourcepack\\models\\machine",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\Frinn38 Custom-Machinery 1.16.5 test_resourcepack\\assets\\testresourcepack\\models\\machine\\stone_generator_model.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\Frinn38 Custom-Machinery 1.16.5 test_resourcepack\\pack.mcmeta",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\de_de.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\en_us.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\es_es.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\fr_fr.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\ja_jp.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\ko_kr.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\pt_br.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\ru_ru.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\zh_cn.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\zh_hk.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\assets\\minecraft\\lang\\zh_tw.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\FTB-Quests-Localization-Resourcepack\\pack.mcmeta",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine\\alloy_maw.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine\\alloy_maw_running.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine\\codex_crucible.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine\\neural_agonizer.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine\\neurotropic_garden.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine\\ore_sorter.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\machine\\wafer_processing_facility.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\textures",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\textures\\block",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\textures\\block\\neural_agonizer_back.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\textures\\block\\neural_agonizer_bottom.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\textures\\block\\neural_agonizer_front.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\textures\\block\\neural_agonizer_left.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\assets\\custom\\models\\textures\\block\\neural_agonizer_right.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\resources\\porfravorfunciona\\pack.mcmeta",
+        "isSelected": true
+      },
+      {
+        "path": "config\\openloader\\advanced_options.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft\\ArmorFeatureStatus.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft\\MicromissileDefaults.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft\\PneumaticArmorHUDLayout.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft\\ProgrammingPuzzleBlacklist.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft\\thirdparty.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\spark",
+        "isSelected": true
+      },
+      {
+        "path": "config\\spark\\activity.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\spark\\config.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\titanium",
+        "isSelected": true
+      },
+      {
+        "path": "config\\titanium\\titanium-tags.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\titanium\\titanium.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\af",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\af\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ar",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ar\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ast",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ast\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\az",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\az\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ba",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ba\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\be",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\be\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\bg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\bg\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\br-FR",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\br-FR\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\brb",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\brb\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\bs",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\bs\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ca",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ca\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\cs",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\cs\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\cy",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\cy\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\da",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\da\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\de",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\de\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\de-AT",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\de-AT\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\de-CH",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\de-CH\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\el",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\el\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-AU",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-AU\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-CA",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-CA\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-NZ",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-NZ\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-PT",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-PT\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-UD",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\en-UD\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\enp",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\enp\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\eo",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\eo\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-AR",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-AR\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-CL",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-CL\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-ES",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-ES\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-MX",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-MX\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-UY",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-UY\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-VE",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\es-VE\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\et",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\et\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\eu",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\eu\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fa",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fa\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fi",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fi\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fil",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fil\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fo",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fo\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fr",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fr\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fr-CA",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fr-CA\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fra-DE",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fra-DE\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fy-NL",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\fy-NL\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ga-IE",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ga-IE\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\gd",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\gd\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\gl",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\gl\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\got",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\got\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\gv",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\gv\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\haw",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\haw\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\he",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\he\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hi",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hi\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hr",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hr\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hu",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hu\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hy-AM",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\hy-AM\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\id",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\id\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ido",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ido\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ig",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ig\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\is",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\is\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\it",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\it\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ja",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ja\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\jbo",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\jbo\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ka",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ka\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kab",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kab\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kk",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kk\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kn",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kn\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ko",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ko\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ksh",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ksh\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kw",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\kw\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\la-LA",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\la-LA\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lb",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lb\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\li",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\li\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lol",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lol\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lt\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lv",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\lv\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mi",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mi\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mk",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mk\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mn",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mn\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\moh",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\moh\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ms",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ms\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\mt\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nds",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nds\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nl",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nl\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nl-BE",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nl-BE\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nn-NO",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nn-NO\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\no",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\no\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nuk",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\nuk\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\oc",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\oc\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\oj",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\oj\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\pl",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\pl\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\pt-BR",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\pt-BR\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\pt-PT",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\pt-PT\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\qya-AA",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\qya-AA\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ro",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ro\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ru",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ru\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\se",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\se\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sk",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sk\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sl",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sl\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\so",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\so\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sq",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sq\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sr",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sr\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sv-SE",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\sv-SE\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\swg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\swg\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\szl",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\szl\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ta",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\ta\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\th",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\th\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tlh-AA",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tlh-AA\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tr",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tr\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tt-RU",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tt-RU\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tzl",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\tzl\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\uk",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\uk\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\val-ES",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\val-ES\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\vec",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\vec\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\vi",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\vi\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\yi",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\yi\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\yo",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\yo\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\zh-CN",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\zh-CN\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\zh-TW",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\zh-TW\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\.unpack_finished",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\.archive-unpack\\2e1dd752\\strings.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\assets",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\schematics",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\schematics\\Base_showcase.schem",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\sessions",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\sessions\\91b8f301-e7e3-4f5b-a656-9e3da85c077b.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\worldedit\\worldedit.properties",
+        "isSelected": true
+      },
+      {
+        "path": "config\\actuallyadditions-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\advanced_ae-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\attributeslib.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\botania-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\botania-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\botanicadds.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\buildinggadgets2-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\cofh_core-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\cofh_core-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\commoncapabilities-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\create-client-1.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\create-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\create-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\create_new_age-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\create_new_age-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\cucumber-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\cucumber-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\cucumber-tags.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\curios-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\curios-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\custommachinery.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\cyclopscore-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\deeperdarker-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\deepresonance-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\deepresonance-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\eidolon-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\emi.css",
+        "isSelected": true
+      },
+      {
+        "path": "config\\expatternprovider-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\explorerscompass-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\explorerscompass-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\extendedcrafting-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fastsuite.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ferritecore-mixin.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\flywheel-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\fml.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\forge-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\framedblocks-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\framedblocks-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbxmodcompat.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\global_data_and_resourcepacks.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\guideme-1.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\guideme.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Hexerei-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\Hexerei-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\immersiveengineering-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\immersiveengineering-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\immersiveindustry-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\integrateddynamics-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\integrateddynamicscompat-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei_mekanism_multiblocks-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jeresources-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jeresources.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\lodestone-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\malum-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\malum-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\mbd2-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\mcjtylib-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\mekanismcovers.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\modonomicon-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\MouseTweaks.cfg",
+        "isSelected": true
+      },
+      {
+        "path": "config\\mysticalagriculture-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\mysticalagriculture-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\naturesaura-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\occultengineering-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\occultism-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\patchouli-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft-client-1.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft-client-2.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft-client-3.toml.bak",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\pneumaticcraft-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ponder-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\powah.json5",
+        "isSelected": true
+      },
+      {
+        "path": "config\\sidebar_buttons.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\silentgear-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\silentgear-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\sophisticatedbackpacks-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\sophisticatedcore-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\sophisticatedcore-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\thermal-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\thermal-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\thermal_integration-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "crash-reports",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-21_15.09.47-fml.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-21_15.39.17-fml.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-21_15.43.38-fml.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-25_02.26.59-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-25_03.06.24-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-25_03.07.30-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-25_03.10.41-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-25_03.16.39-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-25_03.26.11-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-29_14.52.42-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-29_14.54.40-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-29_14.54.42-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-29_14.54.44-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-30_06.17.51-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-30_06.19.31-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-05-30_08.08.49-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-02_21.03.54-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-02_21.36.27-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-02_22.00.01-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-06_22.00.24-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-06_22.04.10-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-09_18.26.23-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-10_03.24.49-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-10_03.52.05-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-12_03.54.10-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-12_03.54.49-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-14_00.30.13-fml.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-14_00.34.45-fml.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-14_17.53.33-fml.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-06-16_03.15.47-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "datapacks",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\gases",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\gases\\ferrous_solution.json",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\gases\\magnesium_chloride.json",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\gases\\titatanium_tetrachloride.json",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\gas_types",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\gas_types\\normal.json",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\lang",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\data\\kubejs\\lang\\en_us.json",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\kubejs_gases\\pack.mcmeta",
+        "isSelected": true
+      },
+      {
+        "path": "datapacks\\osgloglium_material",
+        "isSelected": true
+      },
+      {
+        "path": "defaultconfigs",
+        "isSelected": false
+      },
+      {
+        "path": "defaultconfigs\\ftblibrary",
+        "isSelected": false
+      },
+      {
+        "path": "defaultconfigs\\ftblibrary\\ftblibrary-client.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "defaultconfigs\\ftbquests",
+        "isSelected": false
+      },
+      {
+        "path": "defaultconfigs\\ftbquests\\client-config.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "defaultconfigs\\ftbxmodcompat",
+        "isSelected": false
+      },
+      {
+        "path": "defaultconfigs\\ftbxmodcompat\\ftbxmodcompat.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "downloads",
+        "isSelected": false
+      },
+      {
+        "path": "fancymenu_data",
+        "isSelected": false
+      },
+      {
+        "path": "fancymenu_data\\buddy",
+        "isSelected": false
+      },
+      {
+        "path": "fancymenu_data\\buddy\\buddy_save.json",
+        "isSelected": false
+      },
+      {
+        "path": "fancymenu_data\\cached_data",
+        "isSelected": false
+      },
+      {
+        "path": "fancymenu_data\\fancymenu_temp",
+        "isSelected": false
+      },
+      {
+        "path": "fancymenu_data\\last_world.fmdata",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\10_podeeeer.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\12_aquele_que_v_e_sente.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\16_misturas_instveis_e_carne_obediente.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\17_no_leia_isso_em_voz_alta.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\18_pacto_final.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\4_mekanologia.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\8_ligas_fundidos__contradies.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\9_realmente_automatizado.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\auge_tcnico.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\a_terceirizao_da_alma.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\enderfuso_de_almas.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\engenharia_industrial_e_mekanofludica.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\holder_1.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\holder_2.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\holder_3.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\onde_o_ferro_aprende_a_danar.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\parafusos_e_convices.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\psiu_me_leia.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\ptalas_e_protocolos.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\sementes_do_impossvel.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapters\\termodinmica_aplicada.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\chapter_groups.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\ftbquests\\quests\\data.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\de_de.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\en_us.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\es_es.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\fr_fr.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\ja_jp.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\ko_kr.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\pt_br.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\ru_ru.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\zh_cn.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\zh_hk.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\backup\\kubejs\\assets\\ftbquestlocalizer\\lang\\zh_tw.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\10_podeeeer.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\12_aquele_que_v_e_sente.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\16_misturas_instveis_e_carne_obediente.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\17_no_leia_isso_em_voz_alta.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\18_pacto_final.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\4_mekanologia.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\8_ligas_fundidos__contradies.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\9_realmente_automatizado.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\auge_tcnico.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\a_terceirizao_da_alma.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\enderfuso_de_almas.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\engenharia_industrial_e_mekanofludica.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\holder_1.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\holder_2.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\holder_3.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\onde_o_ferro_aprende_a_danar.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\parafusos_e_convices.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\psiu_me_leia.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\ptalas_e_protocolos.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\sementes_do_impossvel.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapters\\termodinmica_aplicada.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\chapter_groups.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\config\\ftbquests\\quests\\data.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\de_de.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\en_us.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\es_es.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\fr_fr.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\ja_jp.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\ko_kr.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\pt_br.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\ru_ru.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\zh_cn.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\zh_hk.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\kubejs\\assets\\ftbquestlocalizer\\lang\\zh_tw.json",
+        "isSelected": false
+      },
+      {
+        "path": "FTBLang\\FTB-Quests-Localization-Resourcepack.zip",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary\\data",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary\\data\\custommachinery",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary\\data\\custommachinery\\controllers",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary\\data\\custommachinery\\gui",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary\\data\\custommachinery\\machines",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary\\data\\custommachinery\\recipes",
+        "isSelected": false
+      },
+      {
+        "path": "global_packs\\required_data\\custom_machinary\\pack.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\blockstates",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\blockstates\\facility_glass.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\blockstates\\vitrified_obsidian.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\models",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\models\\block",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\models\\block\\vitrified_obsidian.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\models\\item",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\models\\item\\vitrified_obsidian.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\aetherforged_cinderblock.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\aetherforged_cinderblock.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\alloy_maw_back.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\alloy_maw_bottom.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\alloy_maw_front.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\alloy_maw_front_active.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\alloy_maw_front_active.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\alloy_maw_side.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\alloy_maw_top.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\blazing_composite.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\blazing_composite.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\codex_crucible_bottom.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\codex_crucible_front.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\codex_crucible_side.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\codex_crucible_top.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\echo_fused_obsidianite.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\echo_fused_obsidianite.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\echo_fused_obsidianite_top.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\echo_fused_obsidianite_top.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\entropic_mycelite.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\entropic_mycelite.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\entropic_mycelite_side.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\facility_casing.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\facility_glass.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\facility_input.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neural_agonizer_back.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neural_agonizer_bottom.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neural_agonizer_front.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neural_agonizer_left.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neural_agonizer_right.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neural_agonizer_top.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neurotropic_garden_back.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neurotropic_garden_bottom.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neurotropic_garden_front.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neurotropic_garden_side.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\neurotropic_garden_top.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\ore_sorting_facility.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\vitrified_obsidian.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\vivid_infused_stone.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\block\\wafer_processing_facility_front.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\fluid",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\fluid\\molten_base.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\fluid\\molten_base.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\2_1_progress.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\2_1_progress_full.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\bg_vanilla.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\bg_vanilla_dark.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\liquid_vanilla.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\liquid_vanilla_dark.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\ore_sorter_progress.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\ore_sorter_progress_full.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\progress_maw.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\progress_maw_full.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\slot_vanilla.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\slot_vanilla_dark.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\square_progress.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\common\\square_progress_full.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\neural_agonizer",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\neural_agonizer\\liquid_bar.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\neural_agonizer\\neural.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\neural_agonizer\\neural_agonizer_slot.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\neural_agonizer\\progress_bar.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\neural_agonizer\\progress_bar_full.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\wafer_processing",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\wafer_processing\\frame.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\wafer_processing\\mask_slot.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\wafer_processing\\progress_bar.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\wafer_processing\\progress_bar_full.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\big_boys.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\crafting_madness.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\kinectics.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\mechanized_title.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\gui\\the_clockwork.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\advanced_capacitor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\advanced_electric_engine.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\agony_module.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\aqueous_organic_solvent.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\aqueous_organic_solvent.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ashen_remnant.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\awaken_memmory_cell.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\basalt_cluster.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\basic_electric_engine.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\blank_emotional_module1.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\blank_emotional_module2.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\blank_synaptic_interface.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\blank_tech_card.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\blazebound_steel.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\blaze_glass_compound.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\blazing_steel.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\botanic_capacitor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\botanic_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\calcined_blaze_composite.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\capacitor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\certite_crystal.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\chemistry_data.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\chemistry_tech_card.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\chemistry_tech_card.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\chrome_mask.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\compulsort_cell.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\compulsort_cell.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\crafting_data.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\crafting_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\crafting_tech_card.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\crafting_tech_card.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\cromium_mask.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\crushed_endstone.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\demonic_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\demonic_processor.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dense_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dormant_memory_celll.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dormant_memory_celll.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dormant_memory_celll_fallback.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\double_plastic.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dust_ilmenite.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dust_magnesium.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dust_rutile.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\dust_titanium_dioxide.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\emotionally_stable_circuit.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\empowered_blaze_powder.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\empowered_blaze_rod.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\empowered_blazing_steel.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\entropic_drive.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\entropic_drive2.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\entropic_drive2.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\fear_module.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ferrisil_slag.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\flesh_compound.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\forged_assembly.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\futuristic_electric_engine.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\gelatinous_organic_solvent.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\high_density_capacitor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\incomplete_blazebound_steel.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\incomplete_entropic_drive.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\inductive_alloy.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ingot_chrome.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ingot_compressed_gold.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ingot_titanium.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ingot_titanium_bonegrade.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ingot_titanium_demonic.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\ingot_vesselframe.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\intricate_capacitor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\intricate_electric_engine.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\intricate_redstone_component.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\joy_module.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\laminated_alloy_plate.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\lanthanic_crystal.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\living_timber.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\love_module.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\lucent_plate.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\manadoped_monosilicon.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\manadoped_wafer.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\mana_focus.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_data.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card1.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card10.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card11.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card2.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card3.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card4.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card5.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card6.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card7.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card8.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\matter_tech_card9.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\meattherial.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\meat_bar.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\melted_blaze_metal_still.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\melted_blaze_metal_still.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\minerva.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\minerva.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\mob_grindium.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\monosilicon.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\mystical_data.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\mystical_tech_card.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\mystical_tech_card.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\neodymium.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\nugget_chrome.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\obsidianite.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\obsidian_cluster.aseprite",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\obsidian_cluster.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\obsidian_solution.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\obsidian_solution.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\organic_polymer_mesh.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\osgloglium.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\osgloglium_control_circuit.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\overthinker_cell.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\photomask.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\plastic.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\plate_template.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\polysilicon_ingot.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\precision_matrix.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\printed_crafting_circuit.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\printed_simulation_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\prismalith.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\prismalith.png.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\pure_silicon.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\raw_chrome.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\redstone_component.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\redstone_flux_super_coil.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\redstone_flux_ultra_coil.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\refined_quartz.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\resonant_dust.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\rf_flux_resonator.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\rudimentary_redstone_component.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\rudimentar_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\runic_stone.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\silicon_crystal_seed.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\silicon_wafer.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\simulation_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\soul_grit.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\synaptic_interface.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\titanium_sponge_pure.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\titanium_sponge_raw.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\vantablack_processor.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\vitrified_obisidan.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\vitroclastic_slag.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\custom\\textures\\item\\void_fragment.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\de_de.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\en_us.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\es_es.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\fr_fr.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\ja_jp.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\ko_kr.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\pt_br.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\ru_ru.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\zh_cn.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\zh_hk.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ftbquestlocalizer\\lang\\zh_tw.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\example_block.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\neural_agonizer_slot.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\example_item.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\client_scripts",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\client_scripts\\example.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\config",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\config\\client.properties",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\config\\common.properties",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\alloy_maw.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\codex_crucible.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\neural_agonizer.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\neurotropic_garden.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\ore_sorter.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\power_crusher.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\stone_generator.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\machines\\wafer_processing_facility.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\alloy_maw",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\alloy_maw\\teste.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\codex_crucible",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\codex_crucible\\chemistry_tech_card.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\codex_crucible\\crafting_tech_card.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\codex_crucible\\matter_tech_card.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\neural_agonizer",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\neural_agonizer\\liquid_agony.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\neural_agonizer\\liquid_fear.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\neural_agonizer\\teste.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\neural_agonizer\\teste2.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\neurotropic_garden",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\neurotropic_garden\\liquid_joy.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\ore_sorter",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\ore_sorter\\ferrisil_slag.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\ore_sorter\\lanthanic_crystal.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\ore_sorter\\vitroclastic_slag.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\power_crusher",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\power_crusher\\gravel.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\stone_genarator",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\stone_genarator\\stone.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\wafer_processing_facility",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\wafer_processing_facility\\botanic_processor.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\wafer_processing_facility\\dense_processor.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\wafer_processing_facility\\teste.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\custommachinery\\recipes\\wafer_processing_facility\\teste2.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\gases",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\gases\\ferrous_solution.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\gases\\magnesium_chloride.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\gases\\titatanium_tetrachloride.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\gas_types",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\gas_types\\normal.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\lang",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\mekanism\\lang\\en_us.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear\\silentgear_materials",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear\\silentgear_materials\\abyssal_ingot.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear\\silentgear_materials\\dragonsteel.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear\\silentgear_materials\\osgloglium.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear\\silentgear_materials\\shellite.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear\\silentgear_materials\\soul_infused_ingot.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\data\\silentgear\\silentgear_materials\\twinite.json",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\custom_items",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\custom_items\\stage_1.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\loottables",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\loottables\\general.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mechanics",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mechanics\\fire_rituals.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\.mod_template",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\.mod_template\\objectName.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\actually_additions",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\actually_additions\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\actually_additions\\empowered.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\actually_additions\\laser.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\ae2",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\ae2\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\ae2\\inscriber.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\biomancy",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\biomancy\\tests.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\botania",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\botania\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\botania\\manapool.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\botania\\runic_altar.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\create",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\create\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\create\\create.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\create\\mechanical_craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\create\\mixing1.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\create\\sequenced_assembly.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\create\\tests.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy\\alloying.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy\\casting.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy\\crucible.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy\\foundry.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy\\heat_sources.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\createmetallurgy\\tests.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\custommachinery",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\custommachinery\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\enderio",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\enderio\\alloy_smelter.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\enderio\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\enderio\\sagmill.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\enderio\\slicen_n_splice.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\extended_crafting",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\extended_crafting\\tier1.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\extended_crafting\\tier2.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\immersiveenginering",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\immersiveenginering\\alloy_kiln.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\immersiveenginering\\arc_furnance.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\immersiveenginering\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\immersiveenginering\\crusher.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\immersiveenginering\\metal_press.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\immersiveenginering\\workbench.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\industrialforegoin",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\industrialforegoin\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\industrialforegoin\\dissolution.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mekanism",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mekanism\\compressing.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mekanism\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mekanism\\infusing.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mekanism\\mekanism.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mekanism\\PRC.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mob_grinding",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\mob_grinding\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\pneumaticraft",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\pneumaticraft\\pressure_chamber.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\powah",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\powah\\coolant.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\powah\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\powah\\heat.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\adv_refinary.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\catalysts.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\centrifugal.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\chiller.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\component.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\craft.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\crucible.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\crystallizer.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\endothermic.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\fluido_encapsulator.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\fluid_mixer.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\insolator.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\press.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\pulverizer.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\pyrolyzer.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\refinary.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\test_placeholder.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\thermal_series\\thermal_smeltery.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\mod_specific\\vanilla.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\other",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\other\\global_hand_plate.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\remove_conflicts",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\remove_conflicts\\unify.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\tags",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\server_scripts\\tags\\unification.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\blocks",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\blocks\\custom_blocks.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\fluids",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\fluids\\chapter3.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\fluids\\chapter5.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\fluids\\chapter6.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\fluids\\chapter9.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\fluids\\general.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\gases",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\gases\\chapter6.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\heat_sources",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\heat_sources\\heat_sources.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\tests",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\tests\\general.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\cells.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\circuits.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\cores.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\dusts.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\gems.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\ingots.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\intermediate.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\modules.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\nuggets.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\organics.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\plants.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\plates.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\processors.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\raw.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\rods.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\tech_cards.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\items\\z_finish.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\00_Startup.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\constants.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\unify_targets.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\README.txt",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\ldlib",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\mbd2",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\mbd2\\machine",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\mbd2\\machine\\neural_agonizer.sm",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\mbd2\\models",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\mbd2\\recipe_type",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\mbd2\\recipe_type\\neural_agonizer.rt",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\mbd2\\textures",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\resources",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\resources\\colors",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\resources\\renderers",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\resources\\textures",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\resources\\textures\\new 0.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "ldlib\\assets\\resources\\textures\\new 1.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "local",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbquests",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbquests\\client-config.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "local\\kubejs",
+        "isSelected": false
+      },
+      {
+        "path": "local\\kubejs\\cache",
+        "isSelected": false
+      },
+      {
+        "path": "local\\kubejs\\export",
+        "isSelected": false
+      },
+      {
+        "path": "local\\kubejs\\exported_packs",
+        "isSelected": false
+      },
+      {
+        "path": "local\\kubejs\\dev.properties",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftblibrary-client.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "logs",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\kubejs",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\kubejs\\client.log",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\kubejs\\server.log",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\kubejs\\startup.log",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\telemetry",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\telemetry\\20250819-1.json.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\telemetry\\20250820-1.json.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\telemetry\\20250821-1.json.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\telemetry\\20250824-1.json.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\telemetry\\20250824-2.json.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\telemetry\\20250825-1.json",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-17-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-17-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-17-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-17-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-17-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-17-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-17-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-18-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-18-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-18-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-18-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-18-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-18-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-18-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-19-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-19-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-19-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-19-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-19-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-19-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-19-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-20-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-20-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-20-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-20-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-20-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-20-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-20-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-21-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-21-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-21-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-21-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-21-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-21-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-21-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-22-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-22-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-22-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-22-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-22-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-22-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-22-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-23-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-23-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-23-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-23-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-23-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-23-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-23-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-24-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-24-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-24-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-24-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-24-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-24-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-24-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-25-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-25-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-25-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-25-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-25-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-25-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-25-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-26-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-26-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-26-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-26-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-26-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-26-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-26-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-27-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-27-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-27-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-27-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-28-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-28-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-28-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-28-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-28-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-28-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-28-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-29-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-29-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-29-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-29-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-29-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-29-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-29-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-30-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-30-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-30-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-30-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-30-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-30-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-05-31-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-02-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-02-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-02-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-02-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-03-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-03-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-03-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-03-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-03-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-04-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-04-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-04-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-04-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-04-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-05-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-05-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-05-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-05-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-06-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-06-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-06-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-06-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-06-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-07-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-07-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-07-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-07-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-07-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-07-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-07-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-08-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-08-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-09-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-09-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-09-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-09-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-09-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-10-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-10-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-10-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-10-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-10-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-10-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-10-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-11-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-11-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-11-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-11-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-11-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-11-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-11-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-12-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-12-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-12-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-12-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-12-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-12-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-12-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-13-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-14-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-14-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-14-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-14-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-15-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-15-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-16-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-16-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-16-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-16-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-16-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-17-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-17-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-18-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-18-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-18-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-18-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-19-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-19-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-19-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-19-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-19-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-20-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-20-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-20-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-20-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-20-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-20-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-21-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-21-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-21-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-21-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-21-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-21-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-21-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-22-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-22-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-22-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-22-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-22-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-22-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-23-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-24-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-24-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-25-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-25-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-25-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-25-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-26-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-26-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-26-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-27-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-27-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-28-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-28-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-29-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-29-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-29-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-29-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-29-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-30-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-30-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-06-30-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-01-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-01-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-02-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-03-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-03-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-04-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-04-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-05-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-05-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-06-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-09-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-10-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-10-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-11-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-11-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-11-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-11-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-12-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-12-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-12-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-12-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-12-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-12-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-12-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-13-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-14-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-16-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-17-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-17-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-17-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-17-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-18-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-18-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-19-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-28-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-28-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-29-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-29-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-30-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-30-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-30-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-30-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-30-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-30-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-30-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-31-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-07-31-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-01-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-01-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-03-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-03-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-04-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-04-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-05-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-05-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-05-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-05-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-05-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-06-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-06-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-06-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-06-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-06-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-07-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-07-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-07-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-07-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-08-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-12-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-12-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-13-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-13-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-15-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-15-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-15-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-16-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-16-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-17-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-17-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-17-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-18-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-18-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-18-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-18-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-19-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-19-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-20-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-20-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-21-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-21-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-22-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-24-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-24-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\custommachinery.log",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\latest.log",
+        "isSelected": false
+      },
+      {
+        "path": "mods",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ActuallySubtractions-1.20.1-1.2.14.14+mc1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\AdvancedAE-1.1.2-1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ae2wtlib-15.2.3-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\alltheores-1.20.1-47.1.3-2.2.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Apotheosis-1.20.1-7.4.8.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ApothicAttributes-1.20.1-1.3.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Applied-Botanics-forge-1.5.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Applied-Mekanistics-1.4.2.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\appliedenergistics2-forge-15.4.2.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\architectury-9.2.14-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\athena-forge-1.20.1-3.1.2.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\biomancy-forge-1.20.1-2.8.19.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Botania-1.20.1-448-FORGE.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\BotanicAdditions-1.20.1-20.1.3.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\botarium-forge-1.20.1-2.3.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\buildinggadgets2-1.0.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\chipped-forge-1.20.1-3.0.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\cloth-config-11.1.136-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\cofh_core-1.20.1-11.0.2.56.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\CommonCapabilities-1.20.1-2.9.6.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\create-1.20.1-6.0.5.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\create-metalwork-1.20.1-1.0.11-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\create-new-age-forge-1.20.1-1.1.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\createmetallurgy-0.0.7-C6-1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\create_heat_js-1.20.1-0.0.3.jar.disabled",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\create_thermal-1.0.0-forge-1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Cucumber-1.20.1-7.0.13.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\curios-forge-5.14.1+1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\CustomMachinery-forge-1.20.1-0.10.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\custommachinerybotania-forge-1.3.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\CyclopsCore-1.20.1-1.20.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\deeperdarker-forge-1.20.1-1.3.3.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\deepresonance-1.20-5.0.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\eidolon_repraised-1.20.1-0.3.8.15.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\emi-1.1.22+1.20.1+forge.jar.disabled",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\EnderIO-1.20.1-6.2.11-beta-all.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ExplorersCompass-1.20.1-1.3.3-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ExtendedAE-1.20-1.4.2-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ExtendedCrafting-1.20.1-6.0.9.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\fancymenu_forge_3.6.2_MC_1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\FastSuite-1.20.1-5.1.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ferritecore-6.0.1-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\FramedBlocks-9.4.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ftb-library-forge-2001.2.9.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ftb-quests-forge-2001.4.13.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ftb-teams-forge-2001.3.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ftb-xmod-compat-forge-2.1.3.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ftbquestlocalizer-1.20.1-forge-3.2.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\functionalstorage-1.20.1-1.2.10.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\geckolib-forge-1.20.1-4.7.1.2.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\global_packs-forge-1.19.4-1.16.2_forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Glodium-1.20-1.5-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\GravitationalModulatingAdditionalUnit-1.20.1-3.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\guideme-20.1.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\HammerLib-1.20.1-20.1.50.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\hexerei-0.4.2.3.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ImmersiveIndustry-1.20.1-0.2.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\industrial-foregoing-1.20.1-3.5.19.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\industrial-foregoing-souls-1.20.1-1.0.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\IntegratedDynamics-1.20.1-1.26.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\item-filters-forge-2001.1.0-build.59.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Jade-1.20.1-Forge-11.13.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\jei-1.20.1-forge-15.20.0.106.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\jeimultiblocks-1.20.1-1.0.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\JustEnoughMekanismMultiblocks-1.20.1-4.10.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\JustEnoughResources-1.20.1-1.4.0.247.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs-create-forge-2001.3.0-build.8.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs-forge-2001.6.5-build.16.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs-immersive-engineering-2001.5.22-build.21.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs-mekanism-forge-2001.1.5.1-build.2.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs-thermal-2001.1.10-build.2.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejsadditions-forge-4.3.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejspowah-1.2.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejsthermalaugments-1.20.1-1.0.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs_enderio-forge-1.20.1-0.6.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs_extended_crafting-2001.5.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\kubejs_naturesaura-1.20.1-forge-1.0.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ldlib-forge-1.20.1-1.0.39.a.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\lodestone-1.20.1-1.6.4.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\lootjs-forge-1.20.1-2.13.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\malum-1.20.1-1.6.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\mcjtylib-1.20-8.0.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\mcw-bridges-3.1.0-mc1.20.1forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Mekanism-1.20.1-10.4.16.80.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\mekanismcovers-1.3-BETA+1.20.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\MekanismGenerators-1.20.1-10.4.16.80.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\mifa-forge-1.20.x-1.1.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\mob_grinding_utils-1.20.1-1.1.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\modonomicon-1.20.1-forge-1.77.6.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\multiblocked2-1.20.1-1.0.28.b.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\MysticalAgriculture-1.20.1-7.0.20.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\NaturesAura-39.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\occultengineering-1.20.1-0.8.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\occultism-1.20.1-1.141.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\occultism_kubejs-1.20.1-1.0.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\OpenLoader-Forge-1.20.1-19.0.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Patchouli-1.20.1-84.1-FORGE.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Placebo-1.20.1-8.6.3.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\pneumaticcraft-repressurized-6.0.20+mc1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\Powah-5.0.10.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\rebuilt.silent-gear-1.20.1-3.6.6.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\resourcefullib-forge-1.20.1-2.1.29.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\rftoolsbase-1.20-5.0.6.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\rhino-forge-2001.2.3-build.10.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\silent-gear-1.20.1-3.6.6.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\silent-lib-1.20.1-8.0.0.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\SmartBrainLib-forge-1.20.1-1.15.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\sophisticatedbackpacks-1.20.1-3.23.18.1247.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\sophisticatedcore-1.20.1-1.2.66.997.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\spark-1.10.53-forge.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\ThermalExtra-3.2.5-1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\thermal_cultivation-1.20.1-11.0.1.24.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\thermal_dynamics-1.20.1-11.0.1.23.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\thermal_expansion-1.20.1-11.0.1.29.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\thermal_foundation-1.20.1-11.0.6.70.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\thermal_innovation-1.20.1-11.0.1.23.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\thermal_integration-1.20.1-11.0.1.27.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\thermal_locomotion-1.20.1-11.0.1.19.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\titanium-1.20.1-3.8.32.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\vanity-forge-2.1.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\vestis-1.0.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods\\worldedit-mod-7.2.15.jar",
+        "isSelected": true
+      },
+      {
+        "path": "output",
+        "isSelected": false
+      },
+      {
+        "path": "output\\silentgear",
+        "isSelected": false
+      },
+      {
+        "path": "output\\silentgear\\traits_list.md",
+        "isSelected": false
+      },
+      {
+        "path": "patchouli_books",
+        "isSelected": false
+      },
+      {
+        "path": "resourcepacks",
+        "isSelected": true
+      },
+      {
+        "path": "resourcepacks\\AE2 TexturesBackport v0.7a.zip",
+        "isSelected": true
+      },
+      {
+        "path": "resourcepacks\\FTB-Vanilla-Like-1.0.zip",
+        "isSelected": true
+      },
+      {
+        "path": "resourcepacks\\HavenQuestingTheme-1.21.1-1.0.0.zip",
+        "isSelected": true
+      },
+      {
+        "path": "resourcepacks\\OurStoryFTBTheme-1.21.1-1.0.zip",
+        "isSelected": true
+      },
+      {
+        "path": "resourcepacks\\Suren FTB Quests 1.0.1 1.15-1.16.1.zip",
+        "isSelected": true
+      },
+      {
+        "path": "schematics",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-05-20_23.32.46.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-05-25_03.58.05.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-05-25_17.53.20.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-05-25_17.53.22.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-05-25_17.53.22_2.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-05-30_05.50.03.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-05-31_01.58.28.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_01.36.16.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_01.40.17.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_01.40.23.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_01.40.24.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_01.40.36.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_01.40.48.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_14.52.22.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_17.04.26.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-04_17.09.03.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-07_13.36.53.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-07_13.36.56.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-07_13.38.43.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-10_03.07.53.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-12_22.52.46.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-12_22.52.51.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-19_21.14.09.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.45.35.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.45.45.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.45.47.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.46.01.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.46.08.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.46.10.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.46.17.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.55.00.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.55.38.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.55.39.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.55.42.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_16.57.52.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_17.05.07.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_17.05.09.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-25_17.05.47.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots\\2025-06-27_14.04.28.png",
+        "isSelected": false
+      },
+      {
+        "path": "shaderpacks",
+        "isSelected": true
+      },
+      {
+        "path": ".curseclient",
+        "isSelected": false
+      },
+      {
+        "path": ".gitattributes",
+        "isSelected": false
+      },
+      {
+        "path": ".gitignore",
+        "isSelected": false
+      },
+      {
+        "path": "changed_material.md",
+        "isSelected": false
+      },
+      {
+        "path": "codex_crucible.json",
+        "isSelected": false
+      },
+      {
+        "path": "emi.json",
+        "isSelected": false
+      },
+      {
+        "path": "global_pack.json",
+        "isSelected": false
+      },
+      {
+        "path": "LICENSE",
+        "isSelected": false
+      },
+      {
+        "path": "minecraftinstance.json",
+        "isSelected": false
+      },
+      {
+        "path": "neural_agonizer.json",
+        "isSelected": false
+      },
+      {
+        "path": "options.txt",
+        "isSelected": false
+      },
+      {
+        "path": "pack.mcmeta",
+        "isSelected": false
+      },
+      {
+        "path": "patchouli_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "readme.md",
+        "isSelected": false
+      },
+      {
+        "path": "rhino.local.properties",
+        "isSelected": false
+      },
+      {
+        "path": "teste123.json",
+        "isSelected": false
+      },
+      {
+        "path": "usercache.json",
+        "isSelected": false
+      },
+      {
+        "path": "usernamecache.json",
+        "isSelected": false
+      }
+    ],
+    "recommendedRam": 9792,
+    "enableRecommendedRam": true
+  }
+}

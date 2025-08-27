@@ -94,6 +94,23 @@ ServerEvents.recipes(event => {
   })
 });
 
+// FLUID LASER BASE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'industrialforegoing:fluid_laser_base' });
+  event.shaped('industrialforegoing:fluid_laser_base', [
+    'LCL',
+    'TPT',
+    'GEG'
+  ], {
+    L: 'kubejs:double_plastic',
+    P: 'industrialforegoing:machine_frame_advanced',
+    T: 'mekanism:ultimate_fluid_tank',
+    C: 'mekanism:electric_pump',
+    G: 'thermal:enderium_gear',
+    E: 'kubejs:redstone_component'
+  })
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

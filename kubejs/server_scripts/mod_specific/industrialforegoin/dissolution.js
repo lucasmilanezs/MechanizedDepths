@@ -52,6 +52,50 @@ ServerEvents.recipes(event => {
   }).id('industrialforegoing:dissolution/machine_frame_simple');
 });
 
+//ADVANCED MACHINE FRAME
+ServerEvents.recipes(event => {
+  event.remove({ id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame' });
+  event.custom({
+    type: 'industrialforegoing:dissolution_chamber',
+    input: [
+      { item: 'kubejs:double_plastic' },
+      { item: 'industrialforegoing:machine_frame_simple' },
+      { item: 'kubejs:double_plastic' },
+      { item: 'naturesaura:depth_ingot' },
+      { item: 'naturesaura:depth_ingot' },
+      { item: 'industrialforegoing:pink_slime_ingot' },
+      { item: 'thermal:enderium_gear' },
+      { item: 'industrialforegoing:pink_slime_ingot' }
+    ],
+    inputFluid: '{Amount:500,FluidName:"industrialforegoing:pink_slime"}',
+    output: {
+      item: 'industrialforegoing:machine_frame_advanced',
+      count: 1
+    },
+    processingTime: 600
+  }).id('industrialforegoing:dissolution/machine_frame_advanced');
+});
+
+//PINK SLIME
+ServerEvents.recipes(event => {
+  event.remove({ id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot' });
+  event.custom({
+    type: 'industrialforegoing:dissolution_chamber',
+    input: [
+      { item: 'pneumaticcraft:ingot_iron_compressed' },
+      { item: 'pneumaticcraft:ingot_iron_compressed' },
+      { item: 'kubejs:ingot_gold_compressed' },
+      { item: 'kubejs:ingot_gold_compressed' }
+    ],
+    inputFluid: '{Amount:1000,FluidName:"industrialforegoing:pink_slime"}',
+    output: {
+      item: 'industrialforegoing:pink_slime_ingot',
+      count: 1
+    },
+    processingTime: 600
+  }).id('industrialforegoing:dissolution/pink_slime_ingot');
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

@@ -53,6 +53,36 @@ ServerEvents.recipes(event => {
     })
 });
 
+ServerEvents.recipes(event => {
+    event.custom({
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": [
+            { "item": "minecraft:gold_ingot" },
+        ],
+        "pressure": 3.0,
+        "results": [
+            {
+                "item": "kubejs:ingot_gold_compressed"
+            },
+        ]
+    })
+});
+
+ServerEvents.recipes(event => {
+    event.custom({
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": [
+            { "item": "industrialforegoing:plastic" },
+            { "item": "pneumaticcraft:plastic" }
+        ],
+        "pressure": 3.0,
+        "results": [
+            {
+                "item": "kubejs:double_plastic"
+            },
+        ]
+    })
+});
 
 //====================CHANGED RECIPES==================
 
