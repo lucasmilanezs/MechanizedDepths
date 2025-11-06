@@ -1,0 +1,36 @@
+{
+  "cm_block_id": "custommachinery:custom_machine_item",
+
+  "be_machine_field": "machine",
+
+  "default_cmd": 9001,
+
+  "protocols": {
+    "kubejs:precision_cutter": {
+      "protocol": "precision_cutter",
+      "subroutines": [
+        { "id": "slice_silicon", "cmd": 101 },
+        { "id": "carve_wafer",   "cmd": 102 },
+        { "id": "trim_die",      "cmd": 103 }
+      ]
+    },
+    "custommachinery:neural_agonizer": {
+      "protocol": "neural_agonizer",
+      "subroutines": [
+        { "id": "slice_silicon", "cmd": 101 },
+        { "id": "carve_wafer",   "cmd": 102 },
+        { "id": "trim_die",      "cmd": 103 }
+      ]
+    },
+
+    "kubejs:wafer_facility": {
+      "protocol": "wafer_processing",
+      "subroutines": [
+        { "id": "wash",         "cmd": 201 },
+        { "id": "oxidize",      "cmd": 202 },
+        { "id": "dope_boron",   "cmd": 203 },
+        { "id": "dope_phosph",  "cmd": 204 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "name": {
+    "text": "Precision Cutter"
+  },
+  "appearance": {
+    "block": "custom:machine/precision_cutter"
+  },
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "id": "input1",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input2",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "sawblade",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "routine",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "output1",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "output2",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy",
+      "capacity": 100000,
+      "max_input": 10000,
+      "max_output": 10000
+    },
+    {
+      "type": "custommachinery:fluid",
+      "mode": "input",
+      "id": "inputfluid",
+      "capacity": 10000
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "output3",
+      "mode": "output"
+    }
+  ],
+  "gui": [
+    {
+      "type": "custommachinery:background",
+      "texture": "custom:textures/gui/common/bg_vanilla.png",
+      "width": 176,
+      "height": 166
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 7,
+      "y": 83
+    },
+    {
+      "type": "custommachinery:energy",
+      "x": 8,
+      "y": 11,
+      "width": 4,
+      "height": 56
+    },
+    {
+      "type": "custommachinery:fluid",
+      "id": "inputfluid",
+      "texture": "custom:textures/gui/common/liquid_vanilla.png",
+      "x": 17,
+      "y": 11,
+      "width": 18,
+      "height": 48
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "routine",
+      "texture": "custom:textures/gui/wafer_processing/mask_slot.png",
+      "x": 17,
+      "y": 61,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:config",
+      "x": 176,
+      "y": 11
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 51,
+      "y": 39,
+      "texture_empty": "custom:textures/gui/common/saw_progress.png",
+      "texture_filled": "custom:textures/gui/common/saw_progress_full.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input1",
+      "x": 43,
+      "y": 21,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "output3",
+      "x": 133,
+      "y": 56,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "output2",
+      "x": 133,
+      "y": 38,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "output1",
+      "x": 133,
+      "y": 20,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 43,
+      "y": 11,
+      "text": {
+        "text": "Precision Cutter"
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "sawblade",
+      "x": 61,
+      "y": 21,
+      "ghost": {
+        "items": [
+          "kubejs:sawblade_carbide"
+        ],
+        "color": {
+          "alpha": 0.24705882,
+          "red": 0.0,
+          "green": 0.0,
+          "blue": 0.0
+        }
+      }
+    }
+  ]
+}

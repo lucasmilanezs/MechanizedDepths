@@ -5,13 +5,6 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/double_plastic')
 });
 
-// REFINED CRAFTING TABLE (kubejs:refined_crafting_table)
-StartupEvents.registry('item', event => {
-  event.create('refined_crafting_table')
-    .displayName('Refined Crafting Table')
-    .texture('custom:item/refined_crafting_table')
-});
-
 //BASIC ELECTRIC ENGINE (kubejs:basic_electric_engine)
 StartupEvents.registry('item', event => {
   event.create('basic_electric_engine')
@@ -139,4 +132,9 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/manadoped_wafer');
 });
 
-
+//TOKEN OF UTILITY
+StartupEvents.registry('item', event => {
+  event.create('token_utility')
+    .displayName('Token of Utility')
+    .texture('custom:item/token_utility');
+});

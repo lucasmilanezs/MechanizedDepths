@@ -37,6 +37,22 @@ ServerEvents.recipes(event => {
 }).tier(2);
 });
 
+//GOLDEN SACRIFICAL BOWL
+ServerEvents.recipes(event => {
+    event.remove({id: 'occultism:crafting/golden_sacrificial_bowl'});
+    event.recipes.extendedcrafting.shaped_table('occultism:golden_sacrificial_bowl', [
+  'SGGGS',
+  'GOVOG',
+  'GVOVG',
+  'GOVOG',
+  'SGGGS'
+], {
+  O: 'occultism:otherstone',
+  V: 'kubejs:vantablack_processor',
+  G: 'kubejs:ingot_gold_compressed',
+  S: 'botania:gaia_ingot',
+}).tier(2).id('kubejs:extended/golden_sacrificial_bowl');
+});
 
 //====================CHANGED RECIPES==================
 

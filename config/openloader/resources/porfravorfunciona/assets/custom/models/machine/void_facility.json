@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/facility_casing",
+        "up": "custom:block/facility_input",
+        "down": "custom:block/void_facility_bottom",
+        "north": "custom:block/void_facility_front",
+        "south": "custom:block/void_facility_side",
+        "east": "custom:block/void_facility_side",
+        "west": "custom:block/void_facility_side"
+    }
+}
+

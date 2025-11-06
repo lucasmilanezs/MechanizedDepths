@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "hexagon"
+	default_quest_shape: "square"
 	filename: "termodinmica_aplicada"
 	group: "48009A32F221D9FC"
 	icon: "thermal:dynamo_magmatic"
@@ -59,8 +59,8 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -0.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6AA53F03B0A46CA3"]
@@ -97,10 +97,6 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description1}"
-				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description2}"
-				""
 				"{ftbquests.chapter.termodinmica_aplicada.quest9.description3}"
 				""
 				"{ftbquests.chapter.termodinmica_aplicada.quest9.description4}"
@@ -132,13 +128,14 @@
 				"{ftbquests.chapter.termodinmica_aplicada.quest10.description3}"
 			]
 			id: "25FED667BD6B99AD"
+			shape: "hexagon"
 			tasks: [{
 				id: "6FD3BD75DC351BD3"
 				item: "immersiveengineering:dust_coke"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.termodinmica_aplicada.quest10.title}"
-			x: -6.5d
+			x: -5.0d
 			y: -2.0d
 		}
 		{
@@ -220,13 +217,14 @@
 				"{ftbquests.chapter.termodinmica_aplicada.quest17.description3}"
 			]
 			id: "0E15CFE7649C8E5E"
+			shape: "hexagon"
 			tasks: [{
 				id: "77215FC08FA0171E"
 				item: "kubejs:gelatinous_organic_solvent"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.termodinmica_aplicada.quest17.title}"
-			x: -6.5d
+			x: -5.0d
 			y: 1.0d
 		}
 		{
@@ -242,13 +240,14 @@
 				"{ftbquests.chapter.termodinmica_aplicada.quest18.description3}"
 			]
 			id: "1F6EBFB9DB2A2B14"
+			shape: "hexagon"
 			tasks: [{
 				id: "6D2A60FB21D90FE1"
 				item: "thermal:cinnabar"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.termodinmica_aplicada.quest18.title}"
-			x: -6.5d
+			x: -5.0d
 			y: -0.5d
 		}
 		{
@@ -261,13 +260,14 @@
 				"{ftbquests.chapter.termodinmica_aplicada.quest19.description3}"
 			]
 			id: "1DB47027209C4091"
+			shape: "hexagon"
 			tasks: [{
 				id: "418CDA44CA87730C"
 				item: "thermal:ice_charge"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.termodinmica_aplicada.quest19.title}"
-			x: -6.5d
+			x: -5.0d
 			y: 2.5d
 		}
 		{
@@ -279,13 +279,14 @@
 				"{ftbquests.chapter.termodinmica_aplicada.quest20.description3}"
 			]
 			id: "41F84F8BA400D58F"
+			shape: "hexagon"
 			tasks: [{
 				id: "4C1F251E95EB52D8"
 				item: "thermal:rich_slag"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.termodinmica_aplicada.quest20.title}"
-			x: -6.5d
+			x: -5.0d
 			y: 4.0d
 		}
 		{
@@ -299,6 +300,7 @@
 				"{ftbquests.chapter.termodinmica_aplicada.quest21.description4}"
 			]
 			id: "1E7A8B399C39BF92"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7B017C8ACAC68D96"
@@ -309,17 +311,8 @@
 			y: 6.0d
 		}
 		{
-			id: "1D32FAFD4B673752"
-			tasks: [{
-				id: "2B06910B71358973"
-				item: "thermal:device_rock_gen"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 2.5d
-		}
-		{
 			id: "7C388A6CE74ED7C8"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7E354A1BCE8F876F"
@@ -330,54 +323,47 @@
 			y: -4.0d
 		}
 		{
-			id: "6B537BB89F153E53"
+			dependencies: ["01214CC32B9E87BC"]
+			id: "439F76C8E719CE16"
 			tasks: [{
-				id: "513A2E1939669EF6"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -2.0d
-		}
-		{
-			id: "3C63CA9085B5D349"
-			tasks: [{
-				id: "1451EA4C6073C8B1"
-				item: {
-					Count: 1
-					id: "buildinggadgets2:gadget_copy_paste"
-					tag: { }
-				}
+				id: "699EF78D2C91E701"
+				item: "extendedcrafting:flux_crafter"
 				type: "item"
 			}]
 			x: -0.5d
 			y: 1.0d
 		}
 		{
-			id: "5ACA5135D067CE24"
+			dependencies: ["439F76C8E719CE16"]
+			id: "0516087C6CD75C8B"
 			tasks: [{
-				id: "0BEB0D14644E4319"
-				item: {
-					Count: 1
-					id: "buildinggadgets2:gadget_cut_paste"
-					tag: {
-						pastereplace: 1b
-					}
-				}
+				id: "2F8F36AC06490974"
+				item: "kubejs:redstone_flux_super_coil"
 				type: "item"
 			}]
 			x: -0.5d
 			y: 2.5d
 		}
 		{
-			id: "05EE79C3F0B06EE3"
+			dependencies: ["0516087C6CD75C8B"]
+			id: "3F4D6D0BF446A01F"
 			tasks: [{
-				id: "2E44B337198532A4"
-				item: "buildinggadgets2:gadget_destruction"
+				id: "671B5CD24393C59D"
+				item: "kubejs:rf_resonator"
 				type: "item"
 			}]
 			x: -0.5d
 			y: 4.0d
+		}
+		{
+			id: "01214CC32B9E87BC"
+			tasks: [{
+				id: "77C2C3A54616C691"
+				item: "extendedcrafting:redstone_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
 		}
 	]
 	title: "{ftbquests.chapter.termodinmica_aplicada.title}"

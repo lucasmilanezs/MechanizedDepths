@@ -1,0 +1,41 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:precision_cutter",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 200,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:sawblade_steel",
+			"amount": 1,
+			"mode": "input",
+            "slot": "sawblade",
+            "chance": 0
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "rt:routine_tablet",
+			"amount": 1,
+			"mode": "input",
+            "slot": "routine",
+            "nbt": "{protocol:\"precision_cutting\",subroutine:\"Plate\"}",
+            "chance": 0
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:iron_ingot",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"tag": "forge:plates/iron",
+			"amount": 4,
+			"mode": "output"
+		}
+	]
+}

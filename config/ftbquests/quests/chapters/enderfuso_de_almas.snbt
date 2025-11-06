@@ -703,8 +703,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.enderfuso_de_almas.quest35.title}"
-			x: 3.75d
-			y: -2.25d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3DD27555EF64CE5A"]

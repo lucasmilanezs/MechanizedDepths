@@ -45,6 +45,8 @@ ServerEvents.recipes((event) => {
   });
 });
 
+//
+
 // SYNAPTIC INTERFACE ( agony )
 ServerEvents.recipes((event) => {
   event.custom({
@@ -59,6 +61,20 @@ ServerEvents.recipes((event) => {
 });
 
 //====================CHANGED RECIPES==================
+
+// REDSTONE INGOT
+ServerEvents.recipes((event) => {
+  event.remove({ id: 'extendedcrafting:redstone_ingot' });
+  event.custom({
+    type: 'thermal:bottler',
+    ingredients: [
+      { tag: 'forge:ingots/steel' },
+      { fluid: 'thermal:redstone', amount: 450 }
+    ],
+    result: { item: 'extendedcrafting:redstone_ingot' },
+    energy: 4000
+  });
+});
 
 //CINNABAR
 ServerEvents.recipes(event => {

@@ -34,7 +34,6 @@ ServerEvents.recipes(event => {
     ]
   }).id('kubejs:thermal_extra/vitroclastic_slag');
 });
-//====================CHANGED RECIPES==================
 
 //LANTHANIC CRYSTAL
 ServerEvents.recipes(event => {
@@ -50,6 +49,24 @@ ServerEvents.recipes(event => {
     ]
   }).id('kubejs:thermal_extra/lanthanic_crystal');
 });
+
+//CRYSTAL OF DEMONIC LOVE
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal:crystallizer',
+    energy: 10000,
+    ingredients: [
+      { fluid: 'kubejs:liquid_love', amount: 500 },
+      { item: 'kubejs:demonic_love', count: 1},
+    ],
+    result: [
+      { item: 'kubejs:demonic_love', count: 2 }
+    ]
+  }).id('kubejs:thermal_extra/crystal_of_demonic_love');
+});
+
+//====================CHANGED RECIPES==================
+
 
 
 //RECIPE NAME

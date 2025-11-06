@@ -3,7 +3,12 @@
     "text": "Codex Crucible"
   },
   "appearance": {
-    "block": "custom:machine/codex_crucible"
+    "running": {
+      "custommachinery:block": "custom:machine/codex_crucible_active"
+    },
+    "idle": {
+      "custommachinery:block": "custom:machine/codex_crucible"
+    }
   },
   "components": [
     {
@@ -39,14 +44,6 @@
       "type": "custommachinery:player_inventory",
       "x": 7,
       "y": 83
-    },
-    {
-      "type": "custommachinery:text",
-      "x": 44,
-      "y": 7,
-      "text": {
-        "text": "Codex Crucible"
-      }
     },
     {
       "type": "custommachinery:energy",
@@ -104,8 +101,17 @@
     },
     {
       "type": "custommachinery:config",
-      "x": 138,
-      "y": 106
+      "x": 176,
+      "y": 11
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 37,
+      "y": 8,
+      "text": {
+        "text": "Codex Crucible",
+        "color": "dark_gray"
+      }
     }
   ]
 }

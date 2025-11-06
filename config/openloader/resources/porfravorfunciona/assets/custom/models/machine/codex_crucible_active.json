@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/codex_crucible_side",
+        "up": "custom:block/codex_crucible_top_active",
+        "down": "custom:block/codex_crucible_bottom",
+        "north": "custom:block/codex_crucible_front_active",
+        "south": "custom:block/codex_crucible_back",
+        "east": "custom:block/codex_crucible_side",
+        "west": "custom:block/codex_crucible_side"
+    }
+}

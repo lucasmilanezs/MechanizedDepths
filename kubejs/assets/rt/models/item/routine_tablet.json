@@ -1,0 +1,19 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "rt:item/tablet_base",
+    "layer1": "rt:item/visor_blank"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 9101 }, "model": "rt:item/overrides/tablet_cc_s1" },
+    { "predicate": { "custom_model_data": 9102 }, "model": "rt:item/overrides/tablet_cc_s2" },
+    { "predicate": { "custom_model_data": 9103 }, "model": "rt:item/overrides/tablet_cc_s3" },
+    { "predicate": { "custom_model_data": 9201 }, "model": "rt:item/overrides/tablet_am_s1" },
+    { "predicate": { "custom_model_data": 9202 }, "model": "rt:item/overrides/tablet_am_s2" },
+    { "predicate": { "custom_model_data": 9203 }, "model": "rt:item/overrides/tablet_am_s3" },
+    { "predicate": { "custom_model_data": 9301 }, "model": "rt:item/overrides/tablet_pc_plate" },
+    { "predicate": { "custom_model_data": 9302 }, "model": "rt:item/overrides/tablet_pc_wire" },
+    { "predicate": { "custom_model_data": 9303 }, "model": "rt:item/overrides/tablet_pc_machine_part" },
+    { "predicate": { "custom_model_data": 9304 }, "model": "rt:item/overrides/tablet_pc_double_plate" }
+  ]
+}

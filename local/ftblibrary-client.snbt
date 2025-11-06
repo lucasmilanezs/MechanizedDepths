@@ -4,7 +4,14 @@
 	colorselector: {
 		# Colors recently selected in the color selector
 		# Default: []
-		recents: [I; ]
+		recents: [I;
+			-171
+			-1
+			-5635926
+			-43691
+			-16645630
+			-16777216
+		]
 	}
 	tooltips: {
 		# Add the name of the mod that fluids belong to in the fluid selection GUI.

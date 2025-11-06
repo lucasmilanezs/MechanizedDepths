@@ -1,0 +1,8 @@
+{
+  "name": {
+    "text": "Void Seer Facility"
+  },
+  "appearance": {
+    "block": "custom:machine/void_facility"
+  }
+}

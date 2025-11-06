@@ -90,3 +90,30 @@ StartupEvents.registry('block', event => {
     .resistance(8.0)
     .defaultCutout()
 });
+
+// REFINED CRAFTING TABLE
+StartupEvents.registry('block', event => {
+  event.create('refined_crafting_table')
+    .displayName('Refined Crafting Table')
+    .material('metal')
+    .requiresTool(true)
+    .hardness(2.5)
+    .resistance(8.0)
+    .texture(Direction.UP,'custom:block/refined_crafting_table_top')
+    .texture(Direction.DOWN,'custom:block/refined_crafting_table_top')
+    .texture(Direction.NORTH,'custom:block/refined_crafting_table_front')
+    .texture(Direction.SOUTH,'custom:block/refined_crafting_table_front')
+    .texture(Direction.EAST,'custom:block/refined_crafting_table_front')
+    .texture(Direction.WEST,'custom:block/refined_crafting_table_front')
+});
+
+// kubejs/startup_scripts/packed_gravel.js
+StartupEvents.registry('block', event => {
+  event.create('packed_gravel')
+    .displayName('Packed Gravel')
+    .textureAll('custom:block/packed_gravel')
+    .soundType('gravel')
+    .mapColor('gray')
+    .hardness(1.5)
+    .resistance(6.0)
+});

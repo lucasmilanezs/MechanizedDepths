@@ -39,8 +39,8 @@
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.0d
+			x: -4.0d
+			y: -2.982142857142854d
 		}
 		{
 			dependencies: ["5349659FDCBDFA9F"]
@@ -782,6 +782,8 @@
 				"{ftbquests.chapter.4_mekanologia.quest52.description5}"
 				""
 				"{ftbquests.chapter.4_mekanologia.quest52.description6}"
+				""
+				"  Sei que, definitivamente, esse bloco de anotações não vai ajudar muito a entender o conceito, mas apertando \"G\" em um P2P ( Ou qualquer item do AE2 ), você terá acesso a um manual completo e interativo que explica muito bem esse conceito, recomendo fortemente dar uma olhada!"
 				""
 				"{ftbquests.chapter.4_mekanologia.quest52.description7}"
 				"{ftbquests.chapter.4_mekanologia.quest52.description8}"

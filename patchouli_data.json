@@ -1,6 +1,6 @@
 {
   "bookGuiScale": 0,
-  "clickedVisualize": false,
+  "clickedVisualize": true,
   "bookData": {
     "apotheosis:apoth_chronicle": {
       "viewedEntries": [
@@ -49,7 +49,37 @@
         "naturesaura:effects/ore_spawn",
         "naturesaura:effects/animal",
         "naturesaura:effects/nether_grass",
-        "naturesaura:effects/effect_powder"
+        "naturesaura:effects/effect_powder",
+        "naturesaura:devices/pickup_stopper",
+        "naturesaura:devices/aura_timer",
+        "naturesaura:items/infused_iron_tools",
+        "naturesaura:items/depth_tools",
+        "naturesaura:items/fortress_finder",
+        "naturesaura:items/ender_access",
+        "naturesaura:items/light_staff",
+        "naturesaura:items/break_prevention",
+        "naturesaura:items/death_ring",
+        "naturesaura:items/sky_tools",
+        "naturesaura:items/crimson_meal",
+        "naturesaura:items/sky_armor",
+        "naturesaura:items/infused_iron_armor",
+        "naturesaura:items/pet_reviver",
+        "naturesaura:items/aura_trove",
+        "naturesaura:items/color_changer",
+        "naturesaura:items/depth_ingot",
+        "naturesaura:items/range_visualizer",
+        "naturesaura:items/depth_armor",
+        "naturesaura:items/shockwave_creator",
+        "naturesaura:items/end_city_finder",
+        "naturesaura:items/outpost_finder",
+        "naturesaura:creating/potion_generator",
+        "naturesaura:creating/chorus_generator",
+        "naturesaura:using/rf_converter",
+        "naturesaura:using/animal_spawner",
+        "naturesaura:practices/tree_ritual",
+        "naturesaura:using/altar",
+        "naturesaura:creating/on_generating",
+        "naturesaura:practices/aura_bottle"
       ],
       "bookmarks": [],
       "completedManualQuests": []
@@ -84,6 +114,11 @@
         "actuallyadditions:intro",
         "actuallyadditions:guide"
       ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "thermal:guidebook": {
+      "viewedEntries": [],
       "bookmarks": [],
       "completedManualQuests": []
     }

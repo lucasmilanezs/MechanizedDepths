@@ -42,7 +42,7 @@ packwiz.lock.toml
 # Arquivos do CurseForge que não precisam ir pro Git
 modlist.html
 manifest.json
-overrides/
+
 
 # Evita conflitos com GitHub Actions (se usar)
 node_modules/

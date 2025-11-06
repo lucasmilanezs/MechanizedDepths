@@ -2,6 +2,18 @@
 
 //====================CUSTOM RECIPES==================
 
+// TITANIUM FRAME
+ServerEvents.recipes(event => {
+  event.shaped('kubejs:frame_titanium', [
+    'TRT',
+    'R R',
+    'TRT'
+  ], {
+    T: 'kubejs:plate_titanium',
+    R: 'kubejs:rod_titanium'
+  });
+});
+
 //====================CHANGED RECIPES==================
 
 // STEEL CASING

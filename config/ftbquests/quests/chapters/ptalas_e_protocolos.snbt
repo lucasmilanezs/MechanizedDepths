@@ -356,8 +356,8 @@
 				item: "botanicadds:gaiasteel_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -9.0d
+			x: 0.0d
+			y: -9.5d
 		}
 		{
 			id: "37E8E183476803F1"
@@ -366,8 +366,8 @@
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -7.5d
+			x: 2.0d
+			y: -9.5d
 		}
 		{
 			id: "022D6CED4DF1798A"
@@ -468,6 +468,16 @@
 			}]
 			x: 5.5d
 			y: 1.0d
+		}
+		{
+			id: "79A4916BDB05DB52"
+			tasks: [{
+				id: "11B1BE29F99C88FB"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
 		}
 	]
 	title: "{ftbquests.chapter.ptalas_e_protocolos.title}"

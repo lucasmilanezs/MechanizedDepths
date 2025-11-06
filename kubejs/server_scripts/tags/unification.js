@@ -18,3 +18,9 @@ ServerEvents.tags('item', event => {
   event.add('forge:dusts/copper', 'thermal:copper_dust')
   // etc.
 });
+
+ServerEvents.tags('item', event => {
+  // QUEST BOOKS
+  event.add('forge:paper', 'kubejs:torn_page');
+
+});

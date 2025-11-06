@@ -2,29 +2,7 @@
 
 //====================CUSTOM RECIPES==================
 
-// REDSTONE FLUX RESONATOR
-ServerEvents.recipes(event => {
-  event.shaped('kubejs:rf_resonator', [
-    'RER',
-    'ERE',
-    'RER'
-  ], {
-    R: 'kubejs:redstone_flux_super_coil',
-    E: 'kubejs:inductive_alloy'
-    });
-});
 
-// REDSTONE FLUX SUPER COIL
-ServerEvents.recipes(event => {
-  event.shaped('kubejs:redstone_flux_super_coil', [
-    'RER',
-    'ERE',
-    'RER'
-  ], {
-    R: 'thermal:rf_coil',
-    E: 'thermal:electrum_ingot'
-    });
-});
 
 //====================CHANGED RECIPES==================
 

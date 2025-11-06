@@ -181,8 +181,8 @@
 				id: "38DB20D47C5EFA49"
 				type: "dimension"
 			}]
-			x: -2.5d
-			y: -1.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			hide_dependency_lines: false
@@ -194,7 +194,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7D69FEEEED084E15"]
@@ -577,16 +577,6 @@
 			y: 1.5d
 		}
 		{
-			id: "59DA4F14F739AE03"
-			tasks: [{
-				id: "66FB1D660F49F9A2"
-				item: "minecraft:nether_bricks"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -0.5d
-		}
-		{
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest20.description1}"
 				""
@@ -916,7 +906,7 @@
 		{
 			dependencies: [
 				"6F89ADFAB2A59C2B"
-				"2F9EA9B259B79847"
+				"33417C677CE79CB0"
 			]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest31.description1}"
@@ -1238,43 +1228,60 @@
 			y: 11.0d
 		}
 		{
-			id: "0EA34113E022A3EE"
+			id: "4EE27046FC8F628E"
 			tasks: [{
-				id: "3170CD686EEAC1AD"
-				item: "silentgear:crimson_steel_ingot"
+				id: "111D817D7B8D8BB5"
+				item: "vital_herbs:tox_kiss"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			id: "4618E30363D2830E"
+			tasks: [{
+				id: "4DA666D50CC09070"
+				item: "naturesaura:token_fear"
+				type: "item"
+			}]
+			x: -4.0d
 			y: -1.5d
 		}
 		{
-			id: "7BBAC80378A7809C"
+			id: "5E453D385E923E39"
 			tasks: [{
-				id: "031104FE03558668"
-				item: "silentgear:blaze_gold_ingot"
+				id: "375D99A2C19D8871"
+				item: "naturesaura:token_anger"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.5d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
-			id: "12EF3E1654854D85"
+			id: "119A0B087885F107"
 			tasks: [{
-				id: "14B0558AE59D0D52"
-				item: "silentgear:material_grader"
+				id: "6A119C112A747BD2"
+				item: "vital_herbs:snap_pepper"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.5d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
-			id: "17AB9CC6DECC074B"
+			dependencies: ["004F5E63A1C4B294"]
+			id: "546FFC0AEC8B630F"
 			tasks: [{
-				id: "585029128D50260D"
-				item: "silentgear:metal_alloyer"
+				id: "26B5ADE310BD7083"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:nether"
+					}
+				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.0d
 			y: -1.5d
 		}
 	]

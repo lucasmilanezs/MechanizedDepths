@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/enhaced_machine_bottom",
+        "up": "custom:block/enhaced_machine_top",
+        "down": "custom:block/enhaced_machine_bottom",
+        "north": "custom:block/precision_cutter_front",
+        "south": "custom:block/enhaced_machine_back",
+        "east": "custom:block/enhaced_machine_side",
+        "west": "custom:block/enhaced_machine_side"
+    }
+}
+

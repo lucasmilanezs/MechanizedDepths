@@ -140,6 +140,11 @@
     "energy": true,
     "tooltip_renderer": true
   },
+  "delightful": {
+    "crop_progress": true,
+    "pie_icons": true,
+    "mushroom_colony": true
+  },
   "mysticalagriculture": {
     "infused_farmland": true,
     "crop": true,

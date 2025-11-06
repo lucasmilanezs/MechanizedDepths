@@ -5,7 +5,25 @@
 	group: "42138693CA8E287F"
 	icon: "actuallyadditions:atomic_reconstructor"
 	id: "24933D11CDDBB168"
-	order_index: 2
+	images: [
+		{
+			height: 1.2d
+			image: "custom:item/quest_research"
+			rotation: 0.0d
+			width: 1.2d
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			height: 1.2d
+			image: "custom:item/quest_research"
+			rotation: 0.0d
+			width: 1.2d
+			x: 1.0d
+			y: -9.0d
+		}
+	]
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -35,8 +53,8 @@
 				item: "actuallyadditions:restonia_crystal"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			id: "283FFE1AA6DC422D"
@@ -45,7 +63,7 @@
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
@@ -95,8 +113,8 @@
 				item: "actuallyadditions:emeradic_crystal"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.5d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
 			id: "4264BD422092DE20"
@@ -115,8 +133,8 @@
 				item: "actuallyadditions:empowered_restonia_crystal"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: -3.5d
+			y: -3.5d
 		}
 		{
 			id: "155AA4175A933163"
@@ -155,8 +173,8 @@
 				item: "actuallyadditions:empowered_emeradic_crystal"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			id: "64EBA30CF38BACF1"
@@ -175,7 +193,7 @@
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: -4.5d
 		}
 		{
@@ -185,7 +203,7 @@
 				item: "mekanism:hdpe_pellet"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: -5.5d
 		}
 		{
@@ -196,7 +214,7 @@
 				item: "mekanism:hdpe_sheet"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: -5.5d
 		}
 		{
@@ -206,7 +224,7 @@
 				item: "mekanism:thermal_evaporation_controller"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: -2.5d
 		}
 		{
@@ -216,7 +234,7 @@
 				item: "mekanism:brine_bucket"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: -2.5d
 		}
 		{
@@ -226,7 +244,7 @@
 				item: "kubejs:dust_titanium_dioxide"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -236,7 +254,7 @@
 				item: "kubejs:titanium_sponge_raw"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: -4.5d
 		}
 		{
@@ -246,7 +264,7 @@
 				item: "kubejs:titanium_sponge_pure"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: -5.5d
 		}
 		{
@@ -257,7 +275,7 @@
 				item: "kubejs:ingot_titanium"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: -6.5d
 		}
 		{
@@ -267,32 +285,36 @@
 				item: "mekanism:hydrogen_chloride_bucket"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: -9.0d
 		}
 		{
 			id: "09D64B4457C86420"
+			shape: "diamond"
 			size: 1.2d
 			tasks: [{
 				id: "626EB4A1849D38F2"
 				item: "kubejs:blank_tech_card"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: -9.0d
 		}
 		{
 			id: "488AF270539E0D8C"
+			shape: "diamond"
+			size: 1.0d
 			tasks: [{
 				id: "206E44747D6B22DE"
 				item: "kubejs:crafting_data"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: -10.0d
 		}
 		{
 			id: "7839E9C9A012A9F9"
+			shape: "square"
 			tasks: [{
 				id: "39010B9074D543FA"
 				item: "kubejs:crafting_tech_card"
@@ -344,7 +366,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: -6.5d
 		}
 		{
@@ -394,17 +416,18 @@
 				item: "mekanism:chemical_infuser"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: -9.0d
 		}
 		{
 			id: "7EAE2E06DC195CCC"
+			shape: "square"
 			tasks: [{
 				id: "7D179249E2B3524A"
 				item: "kubejs:chemistry_tech_card"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: -9.0d
 		}
 		{
@@ -445,7 +468,7 @@
 				item: "mekanism:chemical_dissolution_chamber"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: -8.0d
 		}
 		{
@@ -455,7 +478,7 @@
 				item: "mekanism:chemical_crystallizer"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: -10.0d
 		}
 		{
@@ -502,12 +525,13 @@
 		}
 		{
 			id: "0E6AA4D0AB678827"
+			shape: "diamond"
 			tasks: [{
 				id: "5A19F7493893305F"
 				item: "kubejs:chemistry_data"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: -10.0d
 		}
 		{
@@ -517,7 +541,17 @@
 				item: "mekanism:electrolytic_core"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			id: "1501CF550D5686CB"
+			tasks: [{
+				id: "4DDB3AF699C201EE"
+				item: "thermal_extra:component_assembly"
+				type: "item"
+			}]
+			x: 3.0d
 			y: -1.5d
 		}
 	]

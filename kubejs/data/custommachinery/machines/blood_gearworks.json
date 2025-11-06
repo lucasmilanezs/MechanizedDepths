@@ -1,0 +1,21 @@
+{
+  "name": {
+    "text": "Blood-Lubricated Gearworks",
+    "color": "red"
+  },
+  "appearance": {},
+  "gui": [
+    {
+      "type": "custommachinery:background",
+      "texture": "custom:textures/gui/common/bg_vanilla_dark.png",
+      "width": 176,
+      "height": 166
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 7,
+      "y": 83
+    }
+  ]
+}
+

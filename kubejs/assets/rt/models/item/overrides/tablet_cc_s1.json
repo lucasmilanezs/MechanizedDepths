@@ -1,0 +1,6 @@
+{
+  "parent": "rt:item/routine_tablet",
+  "textures": {
+    "layer1": "rt:item/tablet_cc_s1"
+  }
+}
