@@ -117,3 +117,194 @@ StartupEvents.registry('block', event => {
     .hardness(1.5)
     .resistance(6.0)
 });
+
+// ---------------------------
+// Chalcopyrite (Copper)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('chalcopyrite_ore')
+    .displayName('Chalcopyrite Ore')
+    .textureAll('custom:block/chalcopyrite_ore')
+    .soundType('stone')
+    .mapColor('yellow')
+    .hardness(1.0)
+    .resistance(2.0)
+});
+
+StartupEvents.registry('block', event => {
+  event.create('chalcopyrite_ore_deepslate')
+    .displayName('Chalcopyrite Ore Deepslate')
+    .textureAll('custom:block/chalcopyrite_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});
+
+
+// ---------------------------
+// Cassiterite (Tin)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('cassiterite_ore')
+    .displayName('Cassiterite Ore')
+    .textureAll('custom:block/cassiterite_ore')
+    .soundType('stone')
+    .mapColor('light_gray')
+    .hardness(1.0)
+    .resistance(2.0)
+});
+
+StartupEvents.registry('block', event => {
+  event.create('cassiterite_ore_deepslate')
+    .displayName('Cassiterite Ore Deepslate')
+    .textureAll('custom:block/cassiterite_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});
+
+
+// ---------------------------
+// Bauxite (Aluminum)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('bauxite_ore')
+    .displayName('Bauxite Ore')
+    .textureAll('custom:block/bauxite_ore')
+    .soundType('stone')
+    .mapColor('orange')
+    .hardness(1.0)
+    .resistance(2.0)
+});
+
+StartupEvents.registry('block', event => {
+  event.create('bauxite_ore_deepslate')
+    .displayName('Bauxite Ore Deepslate')
+    .textureAll('custom:block/bauxite_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});
+
+
+// ---------------------------
+// Galena (Lead)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('galena_ore')
+    .displayName('Galena Ore')
+    .textureAll('custom:block/galena_ore')
+    .soundType('stone')
+    .mapColor('gray')
+    .hardness(1.0)
+    .resistance(2.0)
+});
+
+StartupEvents.registry('block', event => {
+  event.create('galena_ore_deepslate')
+    .displayName('Galena Ore Deepslate')
+    .textureAll('custom:block/galena_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});
+
+
+// ---------------------------
+// Pentlandite (Nickel)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('pentlandite_ore')
+    .displayName('Pentlandite Ore')
+    .textureAll('custom:block/pentlandite_ore')
+    .soundType('stone')
+    .mapColor('brown')
+    .hardness(1.0)
+    .resistance(2.0)
+});
+
+StartupEvents.registry('block', event => {
+  event.create('pentlandite_ore_deepslate')
+    .displayName('Pentlandite Ore Deepslate')
+    .textureAll('custom:block/pentlandite_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});
+
+
+// ---------------------------
+// Argentite (Silver)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('argentite_ore')
+    .displayName('Argentite Ore')
+    .textureAll('custom:block/argentite_ore')
+    .soundType('stone')
+    .mapColor('light_gray')
+    .hardness(1.0)
+    .resistance(2.0)
+});
+
+StartupEvents.registry('block', event => {
+  event.create('argentite_ore_deepslate')
+    .displayName('Argentite Ore Deepslate')
+    .textureAll('custom:block/argentite_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});
+
+
+// ---------------------------
+// Gold-Bearing Quartz (Gold)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('gold_quartz_ore')
+    .displayName('Gold Quartz Ore')
+    .textureAll('custom:block/gold_quartz_ore')
+    .soundType('stone')
+    .mapColor('yellow')
+    .hardness(1.0)
+    .resistance(2.0)
+});
+
+StartupEvents.registry('block', event => {
+  event.create('gold_quartz_ore_deepslate')
+    .displayName('Gold Quartz Ore Deepslate')
+    .textureAll('custom:block/gold_quartz_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});
+
+
+// ---------------------------
+// Hematite (Iron)
+// ---------------------------
+StartupEvents.registry('block', event => {
+  event.create('hematite_ore')
+    .displayName('Hematite Ore')
+    .textureAll('custom:block/hematite_ore')
+    .soundType('stone')
+    .mapColor('red')
+    .hardness(1.0)
+    .resistance(2.0)
+}); 
+
+StartupEvents.registry('block', event => {
+  event.create('hematite_ore_deepslate')
+    .displayName('Hematite Ore Deepslate')
+    .textureAll('custom:block/hematite_ore_deepslate')
+    .soundType('stone')
+    .mapColor('dark_gray')
+    .hardness(2.0)
+    .resistance(4.0)
+});

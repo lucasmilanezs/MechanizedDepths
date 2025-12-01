@@ -8,7 +8,6 @@ global.ROUTINE_MAP = {
   protocols: {
     codex_crucible: {
       subroutines: ['cc_s1', 'cc_s2', 'cc_s3'],
-      // defina os CMDs que batem com seus overrides do item model
       cmd: { cc_s1: 9101, cc_s2: 9102, cc_s3: 9103 }
     },
     alloy_maw: {

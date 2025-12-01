@@ -154,11 +154,9 @@ ServerEvents.recipes(event => {
     const validLogs = logs.filter(exists)
     if (validLogs.length === 0) return
 
-    // Remove só crafting vanilla (não toca em máquinas)
     event.remove({ output: plank, type: 'minecraft:crafting_shaped' })
     event.remove({ output: plank, type: 'minecraft:crafting_shapeless' })
 
-    // OR-ingredient: qualquer um dos logs serve
     const anyLog = Ingredient.of(validLogs)
     event.shapeless(Item.of(plank, 2), [anyLog])
          .id(`kubejs:planks/${plank.replace(':', '_')}`)

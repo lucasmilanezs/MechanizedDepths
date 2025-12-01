@@ -20,6 +20,8 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xC0A678)
 });
 
+
+
 // INDUSTRIAL SOLVENT (kubejs:industrial_solvent)
 StartupEvents.registry('fluid', event => {
   event.create('industrial_solvent')
@@ -60,3 +62,44 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xFF8BC34A);
 });
 
+// AETHERIC VAPOR (kubejs:aetheric_vapor)
+StartupEvents.registry('fluid', event => {
+  event.create('aetheric_vapor')
+    .displayName('Aetheric Vapor')
+    .stillTexture('custom:fluid/molten_base')
+    .flowingTexture('custom:fluid/molten_base')
+    .color(0x4FC3F7)        
+    .bucketColor(0x4FC3F7);
+});
+
+
+// SPECTRAL OIL (kubejs:spectral_oil)
+StartupEvents.registry('fluid', event => {
+  event.create('spectral_oil')
+    .displayName('Spectral Oil')
+    .stillTexture('custom:fluid/molten_base')
+    .flowingTexture('custom:fluid/molten_base')
+    .color(0xAB47BC)        
+    .bucketColor(0xAB47BC);
+});
+
+
+// VOID HEAVY OIL (kubejs:void_heavy_oil)
+StartupEvents.registry('fluid', event => {
+  event.create('void_heavy_oil')
+    .displayName('Void Heavy Oil')
+    .stillTexture('custom:fluid/molten_base')
+    .flowingTexture('custom:fluid/molten_base')
+    .color(0x212121)        
+    .bucketColor(0x212121);
+});
+
+// V-RO Lubricant (kubejs:void_lubricant)
+StartupEvents.registry('fluid', event => {
+  event.create('void_lubricant')
+    .displayName('V-RO Lubricant')
+    .stillTexture('custom:fluid/molten_base')
+    .flowingTexture('custom:fluid/molten_base')
+    .color(0x757575)        
+    .bucketColor(0x757575);
+});

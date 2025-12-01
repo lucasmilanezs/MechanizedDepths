@@ -1,5 +1,5 @@
 // priority: 0
-
+/*
 console.info('Hello, World! (Loaded client scripts)')
 
 ClientEvents.blockRenderLayer(event => {
@@ -170,7 +170,7 @@ JEIEvents.hideItems(event => {
 
   event.hide(blacklist)
 })
-
+*/
 ClientEvents.lang("en_us", (event) => {
   event.add("create.recipe.heat_requirement.redstonante", "Redstonante");
 });
@@ -194,4 +194,5 @@ ClientEvents.lang("en_us", event => {
   event.add("gui.create.jei.category.basin.heat.aetherforged_cinderblock.title", "Requires Sky-Fired");
   event.add("gui.create.jei.category.basin.heat.echo_fused_obsidianite.title", "Requires Void-Touched");
 });
+
 

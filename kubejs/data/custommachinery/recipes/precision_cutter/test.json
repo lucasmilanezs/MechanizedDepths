@@ -17,13 +17,13 @@
             "chance": 0
 		},
 		{
-			"type": "custommachinery:item",
-			"item": "rt:routine_tablet",
-			"amount": 1,
-			"mode": "input",
-            "slot": "routine",
-            "nbt": "{protocol:\"precision_cutting\",subroutine:\"Plate\"}",
-            "chance": 0
+		"type": "custommachinery:item",
+		"item": "rt:routine_tablet",
+		"amount": 1,
+		"mode": "input",
+		"slot": "routine",
+		"nbt": "{protocol:\"precision_cutting\",subroutine:\"Plate\",\"CustomModelData\":9301}",
+		"chance": 0
 		},
 		{
 			"type": "custommachinery:item",

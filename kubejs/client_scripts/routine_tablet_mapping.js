@@ -21,8 +21,4 @@ ItemEvents.tooltip(e => {
 });
 
 
-JEIEvents.addItems(e => {
-  e.add([
-    Item.of('rt:routine_tablet', '{protocol:"precision_cutting",subroutine:"Plate",CustomModelData:9301}')
-  ]);
-});
+

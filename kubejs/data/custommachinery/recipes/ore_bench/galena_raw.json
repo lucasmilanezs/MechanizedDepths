@@ -1,0 +1,33 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "custommachinery:ore_bench",
+  "time": 5,
+  "requirements": [
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:galena_raw",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "thermal:raw_lead",
+      "amount": 1,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "thermal:raw_silver",
+      "amount": 1,
+      "chance": 0.3,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "minecraft:raw_copper",
+      "amount": 1,
+      "chance": 0.2,
+      "mode": "output"
+    }
+  ]
+}

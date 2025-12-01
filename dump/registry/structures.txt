@@ -1,0 +1,53 @@
+# Structure registry dump
+# Minecraft: 1.20.1
+# Entries: 48
+# Generated: 2025-12-01T01:45:43.820534-03:00
+
+ae2:meteorite 14
+apotheosis:tower_leaf 36
+apotheosis:tower_main 37
+apotheosis:tower_sand 38
+apotheosis:tower_spruce 39
+deeperdarker:ancient_temple 1
+eidolon:catacomb 5
+eidolon:lab 12
+eidolon:stray_tower 33
+hexerei:baba_yaga_hut 2
+hexerei:dark_coven 6
+hexerei:nature_coven 18
+hexerei:owl_post_office 22
+hexerei:witch_hut 47
+malum:weeping_well 46
+minecraft:ancient_city 0
+minecraft:bastion_remnant 3
+minecraft:buried_treasure 4
+minecraft:desert_pyramid 7
+minecraft:end_city 8
+minecraft:fortress 9
+minecraft:igloo 10
+minecraft:jungle_pyramid 11
+minecraft:mansion 13
+minecraft:mineshaft 15
+minecraft:mineshaft_mesa 16
+minecraft:monument 17
+minecraft:nether_fossil 19
+minecraft:ocean_ruin_cold 20
+minecraft:ocean_ruin_warm 21
+minecraft:pillager_outpost 23
+minecraft:ruined_portal 24
+minecraft:ruined_portal_desert 25
+minecraft:ruined_portal_jungle 26
+minecraft:ruined_portal_mountain 27
+minecraft:ruined_portal_nether 28
+minecraft:ruined_portal_ocean 29
+minecraft:ruined_portal_swamp 30
+minecraft:shipwreck 31
+minecraft:shipwreck_beached 32
+minecraft:stronghold 34
+minecraft:swamp_hut 35
+minecraft:trail_ruins 40
+minecraft:village_desert 41
+minecraft:village_plains 42
+minecraft:village_savanna 43
+minecraft:village_snowy 44
+minecraft:village_taiga 45

@@ -5,6 +5,7 @@
 
 //====================CUSTOM RECIPES==================
 /*
+
 // WATER 
 ServerEvents.recipes((event) => {
   event.custom({
@@ -23,6 +24,22 @@ ServerEvents.recipes((event) => {
   }).id('kubejs:thermal_extra/dehydrate_lava');
 });
 */
+// AETHERIC VAPOR, SPECTRAL OIL, VOID HEAVY OIL
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal_extra:advanced_refinery',
+    energy: 10000,
+    ingredients: [
+      { fluid: 'industrialforegoing:ether_gas', amount: 1000 }
+    ],
+    result: [
+      { fluid: 'kubejs:aetheric_vapor', amount: 300 },
+      { fluid: 'kubejs:spectral_oil', amount: 300 },
+      { fluid: 'kubejs:void_heavy_oil', amount: 200 }
+    ]
+  }).id('kubejs:thermal_extra/aetheric_spectral_void_refinery');
+});
+
 //INDUSTRIAL SOLVENT
 ServerEvents.recipes(event => {
   event.custom({
