@@ -4,8 +4,10 @@
     "kubejs",
     "thermal",
     "create",
-    "immersiveengineering",
-    "mekanism"
+    "mekanism",
+    "alltheores",
+    "immersiveengineering"
+
   ],
   "stoneStrata": [
     "stone",

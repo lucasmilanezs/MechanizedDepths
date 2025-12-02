@@ -4,15 +4,10 @@
   "time": 5,
   "requirements": [
     {
-      "type": "custommachinery:contraption",
-      "mode": "input",
-      "speed": 64
-    },
-    {
-		"type": "custommachinery:item",
-		"item": "kubejs:chalcopyrite_raw",
-		"amount": 1,
-		"mode": "input"
+      "type": "custommachinery:item",
+      "item": "kubejs:argentite_raw",
+      "amount": 1,
+      "mode": "input"
     },
 	{
 	  	"type": "custommachinery:durability",
@@ -21,32 +16,24 @@
 		"amount": 1,
 		"slot": "input2"
 	},
-
-	{
-      "type": "custommachinery:item",
-      "item": "minecraft:raw_copper",
-      "amount": 1,
-      "mode": "output"
-    },
     {
       "type": "custommachinery:item",
-      "item": "minecraft:raw_iron",
+      "item": "thermal:raw_silver",
       "amount": 1,
-      "chance": 0.3,
       "mode": "output"
     },
     {
       "type": "custommachinery:item",
       "item": "thermal:raw_silver",
       "amount": 1,
-      "chance": 0.05,
-      "mode": "output"
+      "mode": "output",
+      "chance": 0.3
     },
     {
       "type": "custommachinery:item",
-      "item": "thermal:sulfur_dust",
+      "item": "thermal:sulfur",
       "amount": 1,
-      "chance": 0.20,
+      "chance": 0.4,
       "mode": "output"
     }
   ]

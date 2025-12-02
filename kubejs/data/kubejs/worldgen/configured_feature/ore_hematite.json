@@ -10,7 +10,7 @@
           "tag": "minecraft:stone_ore_replaceables"
         },
         "state": {
-          "Name": "kubejs:chalcopyrite_ore"
+          "Name": "kubejs:hematite_ore"
         }
       },
       {
@@ -19,7 +19,7 @@
           "tag": "minecraft:deepslate_ore_replaceables"
         },
         "state": {
-          "Name": "kubejs:chalcopyrite_ore_deepslate"
+          "Name": "kubejs:hematite_ore_deepslate"
         }
       }
     ]

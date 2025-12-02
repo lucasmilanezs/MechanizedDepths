@@ -7,7 +7,7 @@ WorldgenEvents.remove(event => {
 
             // ----- VANILLA DOMINANTES -----
             // Remove duplicatas de deeperdarker + alltheores
-            // COAL
+            // COAL]
             "deeperdarker:sculk_stone_coal_ore",
             "deeperdarker:gloomslate_coal_ore",
             "alltheores:other_coal_ore",
@@ -17,6 +17,8 @@ WorldgenEvents.remove(event => {
             "alltheores:end_coal_ore",
 
             // COPPER
+            "minecraft:copper_ore",
+            "minecraft:deepslate_copper_ore",
             "deeperdarker:sculk_stone_copper_ore",
             "deeperdarker:gloomslate_copper_ore",
             "alltheores:other_copper_ore",
@@ -26,6 +28,8 @@ WorldgenEvents.remove(event => {
             "alltheores:end_copper_ore",
 
             // IRON
+            "minecraft:iron_ore",
+            "minecraft:deepslate_iron_ore",
             "deeperdarker:sculk_stone_iron_ore",
             "deeperdarker:gloomslate_iron_ore",
             "alltheores:iron_ore",
@@ -74,8 +78,6 @@ WorldgenEvents.remove(event => {
             "alltheores:end_redstone_ore",
 
             // ----- QUARTZ -----
-            "malum:natural_quartz_ore",
-            "malum:deepslate_quartz_ore",
             "alltheores:quartz_ore",
             "alltheores:deepslate_quartz_ore",
             "alltheores:nether_quartz_ore",
@@ -133,10 +135,8 @@ WorldgenEvents.remove(event => {
             // ----- URANIUM (dominante = IE) -----
             "mekanism:uranium_ore",
             "mekanism:deepslate_uranium_ore",
-            "alltheores:uranium_ore",
-            "alltheores:deepslate_uranium_ore",
-            "alltheores:nether_uranium_ore",
-            "alltheores:end_uranium_ore",
+            "immersiveengineering:ore_uranium",
+            "immersiveengineering:deepslate_ore_uranium",
 
             // ----- OSMIUM -----
             "alltheores:osmium_ore",
@@ -149,18 +149,6 @@ WorldgenEvents.remove(event => {
             "alltheores:deepslate_zinc_ore",
             "alltheores:nether_zinc_ore",
             "alltheores:end_zinc_ore",
-
-            // ----- IRIDIUM / PLATINUM / PERIDOT -----
-            "alltheores:iridium_ore",
-            "alltheores:deepslate_iridium_ore",
-            "alltheores:nether_iridium_ore",
-            "alltheores:end_iridium_ore",
-            "alltheores:platinum_ore",
-            "alltheores:deepslate_platinum_ore",
-            "alltheores:nether_platinum_ore",
-            "alltheores:end_platinum_ore",
-            "alltheores:peridot_ore",
-            "alltheores:deepslate_peridot_ore"
         ];
     });
 });

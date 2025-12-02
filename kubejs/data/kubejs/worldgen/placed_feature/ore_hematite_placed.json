@@ -1,5 +1,5 @@
 {
-  "feature": "kubejs:ore_chalcopyrite",
+  "feature": "kubejs:ore_hematite",
   "placement": [
     {
       "type": "minecraft:count",
@@ -11,10 +11,10 @@
     {
       "height": {
         "min_inclusive": {
-          "absolute": -34
+          "absolute": -48
         },
         "max_inclusive": {
-          "absolute": 280
+          "absolute": 144
         },
         "type": "minecraft:trapezoid"
       },

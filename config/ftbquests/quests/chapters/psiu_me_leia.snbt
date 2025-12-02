@@ -20,16 +20,16 @@
 			image: "minecraft:block/rose_bush_top"
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.4732142857142563d
-			y: 0.6571428571428726d
+			x: -0.9732142857142563d
+			y: 0.5d
 		}
 		{
 			height: 1.0d
 			image: "botania:block/cyan_double_flower_top"
 			rotation: 0.0d
 			width: 1.0d
-			x: -2.4732142857142776d
-			y: 0.6785714285714235d
+			x: -1.9732142857142776d
+			y: 0.5214285714285509d
 		}
 	]
 	order_index: 0
@@ -245,7 +245,7 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
+			x: 6.0d
 			y: -1.0d
 		}
 		{
@@ -304,8 +304,8 @@
 				item: "naturesaura:ancient_sapling"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.5d
+			x: -0.5d
+			y: 2.3428571428571274d
 		}
 		{
 			dependencies: [
@@ -321,8 +321,8 @@
 				item: "naturesaura:nature_altar"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.5d
+			x: -1.0d
+			y: 1.3428571428571274d
 		}
 		{
 			dependencies: ["7E88E307D7B20E6B"]
@@ -333,8 +333,8 @@
 				item: "naturesaura:infused_iron"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.5d
+			x: 0.0d
+			y: 1.3428571428571274d
 		}
 		{
 			dependencies: [
@@ -348,7 +348,7 @@
 				item: "naturesaura:offering_table"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: -1.0d
 		}
 		{
@@ -373,7 +373,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: -3.5d
 		}
 		{
@@ -385,7 +385,7 @@
 				item: "naturesaura:calling_spirit"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: -2.5d
 		}
 		{
@@ -509,7 +509,7 @@
 				item: "kubejs:token_utility"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: 2.5d
 		}
 		{
@@ -591,8 +591,8 @@
 				item: "naturesaura:gold_brick"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: -2.0d
+			y: 1.3428571428571274d
 		}
 		{
 			dependencies: ["042EC538643F435A"]
@@ -612,7 +612,7 @@
 				}
 			]
 			title: "Recipientes do Éter"
-			x: -2.5d
+			x: -2.0d
 			y: -3.5d
 		}
 		{
@@ -623,7 +623,7 @@
 				item: "naturesaura:sky_ingot"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: 0.5d
 		}
 		{
@@ -637,7 +637,7 @@
 				item: "naturesaura:token_joy"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 0.0d
 			y: -1.0d
 		}
 		{
@@ -652,7 +652,7 @@
 				item: "naturesaura:token_sorrow"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: -1.0d
 		}
 		{
@@ -663,19 +663,48 @@
 				item: "naturesaura:eye"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.5d
+			x: -1.5d
+			y: 2.3428571428571274d
 		}
 		{
-			dependencies: ["565979255D303596"]
-			hide_dependency_lines: true
+			dependencies: ["36ED84D6DA1ACBF6"]
 			id: "0D69EDFAA244A42E"
 			tasks: [{
 				id: "037EFD759C9FA947"
 				item: "kubejs:rose_needle"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["042EC538643F435A"]
+			id: "155BB7639312253D"
+			shape: "gear"
+			tasks: [{
+				id: "289CD381A5E9C0E8"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:ore_bench"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["155BB7639312253D"]
+			id: "36ED84D6DA1ACBF6"
+			shape: "gear"
+			tasks: [{
+				id: "526E3B892270476F"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: -2.0d
 			y: -1.0d
 		}
 	]

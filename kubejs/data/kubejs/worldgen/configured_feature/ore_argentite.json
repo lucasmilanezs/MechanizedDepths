@@ -1,8 +1,6 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 12,
-    "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {
@@ -10,7 +8,7 @@
           "tag": "minecraft:stone_ore_replaceables"
         },
         "state": {
-          "Name": "kubejs:chalcopyrite_ore"
+          "Name": "kubejs:argentite_ore"
         }
       },
       {
@@ -19,9 +17,11 @@
           "tag": "minecraft:deepslate_ore_replaceables"
         },
         "state": {
-          "Name": "kubejs:chalcopyrite_ore_deepslate"
+          "Name": "kubejs:argentite_ore_deepslate"
         }
       }
-    ]
+    ],
+    "size": 6,
+    "discard_chance_on_air_exposure": 0
   }
 }

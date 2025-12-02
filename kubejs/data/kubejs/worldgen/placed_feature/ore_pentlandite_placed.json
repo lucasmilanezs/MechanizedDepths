@@ -1,9 +1,9 @@
 {
-  "feature": "kubejs:ore_chalcopyrite",
+  "feature": "kubejs:ore_pentlandite",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 10
+      "count": 6
     },
     {
       "type": "minecraft:in_square"
@@ -11,10 +11,10 @@
     {
       "height": {
         "min_inclusive": {
-          "absolute": -34
+          "absolute": -59
         },
         "max_inclusive": {
-          "absolute": 280
+          "absolute": 40
         },
         "type": "minecraft:trapezoid"
       },

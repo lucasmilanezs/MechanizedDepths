@@ -1234,8 +1234,8 @@
 				item: "vital_herbs:tox_kiss"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -3.5d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			id: "4618E30363D2830E"
@@ -1264,8 +1264,8 @@
 				item: "vital_herbs:snap_pepper"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["004F5E63A1C4B294"]
