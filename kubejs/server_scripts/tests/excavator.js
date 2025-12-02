@@ -1,0 +1,50 @@
+/*
+ServerEvents.highPriorityData(event => {
+    event.addJson('immersiveengineering:recipes/mineral/cassiterite', {
+   "type":"immersiveengineering:mineral_mix",
+   "conditions":[
+      {
+         "type":"forge:not",
+         "value":{
+            "type":"forge:tag_empty",
+            "tag":"forge:ores/tin"
+         }
+      }
+   ],
+   "dimensions":[
+      "minecraft:overworld"
+   ],
+   "fail_chance":0.05,
+   "ores":[
+      {
+         "chance":1.0,
+         "output":{
+            "item":"kubejs:cassiterite_ore"
+         }
+      }
+   ],
+   "spoils":[
+      {
+         "chance":0.2,
+         "output":{
+            "item":"minecraft:gravel"
+         }
+      },
+      {
+         "chance":0.5,
+         "output":{
+            "item":"minecraft:cobblestone"
+         }
+      },
+      {
+         "chance":0.3,
+         "output":{
+            "item":"minecraft:cobbled_deepslate"
+         }
+      }
+   ],
+   "weight":20
+}
+    )
+});
+*/
