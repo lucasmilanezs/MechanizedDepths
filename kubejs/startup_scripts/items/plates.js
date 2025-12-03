@@ -20,3 +20,10 @@ StartupEvents.registry('item', event => {
     .displayName('Lucent Plate')
     .texture('custom:item/lucent_plate');
 });
+
+//TITANIUM PLATE
+StartupEvents.registry('item', event => {
+  event.create('plate_titanium')
+    .displayName('Titanium Plate')
+    .texture('custom:item/plate_titanium');
+});

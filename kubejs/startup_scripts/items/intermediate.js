@@ -138,3 +138,38 @@ StartupEvents.registry('item', event => {
     .displayName('Token of Utility')
     .texture('custom:item/token_utility');
 });
+
+//SOUL INFUSED COIL
+StartupEvents.registry('item', event => {
+  event.create('soul_infused_coil')
+    .displayName('Soul Infused Coil')
+    .texture('custom:item/soul_infused_coil');
+});
+
+// REFINED PLASTIC
+StartupEvents.registry('item', event => {
+  event.create('refined_plastic')
+    .displayName('Refined Plastic')
+    .texture('custom:item/refined_plastic');
+});
+
+// TWINITE WIRE
+StartupEvents.registry('item', event => {
+  event.create('twinite_wire')
+    .displayName('Twinite Wire')
+    .texture('custom:item/twinite_wire');
+});
+
+// TITANIUM FRAME
+StartupEvents.registry('item', event => {
+  event.create('frame_titanium')
+    .displayName('Titanium Frame')
+    .texture('custom:item/frame_titanium');
+});
+
+//MECHANICAL HEART
+StartupEvents.registry('item', event => {
+  event.create('mechanical_heart')
+    .displayName('Mechanical Heart')
+    .texture('custom:item/mechanical_heart');
+});

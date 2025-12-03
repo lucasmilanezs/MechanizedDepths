@@ -68,3 +68,18 @@ StartupEvents.registry('item', event => {
     .displayName('Mystical Tech Card')
     .texture('custom:item/mystical_tech_card');
 });
+
+// VOID DATA
+StartupEvents.registry('item', event => {
+  event.create('void_data')
+    .displayName('Void Data')
+    .texture('custom:item/void_data');
+});
+
+// VOID TECH CARD
+StartupEvents.registry('item', event => {
+  event.create('void_tech_card')
+    .displayName('Void Tech Card')
+    .texture('custom:item/void_tech_card');
+}); 
+

@@ -19,3 +19,10 @@ StartupEvents.registry('item', event => {
     .displayName('Prismalith')
     .texture('custom:item/prismalith')
 });
+
+//CRYSTAL OF DEMONIC LOVE
+StartupEvents.registry('item', event => {
+  event.create('demonic_love')
+    .displayName('Crystal of Demonic Love')
+    .texture('custom:item/demonic_love');
+});

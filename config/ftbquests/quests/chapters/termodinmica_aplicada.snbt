@@ -365,6 +365,16 @@
 			x: -0.5d
 			y: -0.5d
 		}
+		{
+			id: "442C5E4D8A87F50F"
+			tasks: [{
+				id: "2836DF5530F4C3E0"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
 	]
 	title: "{ftbquests.chapter.termodinmica_aplicada.title}"
 }

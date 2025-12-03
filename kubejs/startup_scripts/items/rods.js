@@ -5,3 +5,10 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/empowered_blaze_rod')
     .maxStackSize(64)
 });
+
+// TITANIUM ROD
+StartupEvents.registry('item', event => {
+  event.create('rod_titanium')
+    .displayName('Titanium Rod')
+    .texture('custom:item/rod_titanium');
+});
