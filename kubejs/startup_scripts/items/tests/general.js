@@ -24,19 +24,22 @@ StartupEvents.registry('item', event => {
     .displayName('Stone Hammer')
     .maxDamage(64)
     .tag('forge:tools/hammers')
-    .unstackable();
+    .unstackable()
+    .texture('custom:item/stone_hammer');
 
   event.create('metal_hammer')
     .displayName('Metal Hammer')
     .maxDamage(256)
     .tag('forge:tools/hammers')
-    .unstackable();
+    .unstackable()
+    .texture('custom:item/metal_hammer');
 
   event.create('diamond_hammer')
     .displayName('Diamond Hammer')
     .maxDamage(1024)
     .tag('forge:tools/hammers')
-    .unstackable();
+    .unstackable()
+    .texture('custom:item/diamond_hammer');
 });
 
 // ========================= Special / Other =========================

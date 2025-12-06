@@ -4,13 +4,7 @@
 	filename: "parafusos_e_convices"
 	group: "0E3BAF4D0D92EEE1"
 	hide_quest_details_until_startable: true
-	icon: {
-		Count: 1
-		id: "immersiveengineering:hammer"
-		tag: {
-			Damage: 0
-		}
-	}
+	icon: "immersiveengineering:arc_furnace"
 	id: "04E87D18A8CF3C21"
 	images: [{
 		height: 2.7d
@@ -27,15 +21,15 @@
 		{
 			dependencies: ["6A51D3D6D7650D5D"]
 			description: [
-				"   Uma madeira cultivada com cuidado, nutrida por rituais, transmutada com intenção... e agora mergulhada em óleo fervente para virar bancada de trabalho. Mas não pense nisso como traição. Isso é transição. Ciclos dentro de ciclos. Fases que se sobrepõem.  "
+				"   Wood cultivated with care, nurtured by rituals, transmuted with intent... and now dipped in boiling oil to become a workbench. Don’t think of it as betrayal. It’s transition. Cycles within cycles. Phases that overlap."
 				""
-				"   A natureza te ensinou a observar. A ouvir. A moldar. Agora é hora de soldar. Esmerilhar. Canalizar.  "
+				"   Nature taught you to observe. To listen. To shape. Now it’s time to weld. Grind. Channel."
 				""
-				"   Porque até o verde mais vívido precisa de fios para alcançar distância. O quanto se distanciam o vento e a folha do vapor e do aço? Talvez menos do que gostaríamos de admitir."
+				"   Because even the most vivid green needs wires to reach distance. How far are wind and leaf from steam and steel? Perhaps closer than we’d like to admit."
 				""
-				"   Misture &a&o`Living Timber`&r&r com &c&o`Creosote Oil`.&r &rNão porque é bonito, mas porque funciona.  "
+				"   Mix &a&o`Living Timber`&r&r with &c&o`Creosote Oil`.&r &rNot because it’s pretty, but because it works."
 				""
-				"&7&o— Você queimou uma árvore mágica pra fazer uma mesa. Parabéns. Você é oficialmente um engenheiro.&r&r"
+				"&7&o— You burned a magic tree to make a table. Congratulations. You are officially an engineer.&r&r"
 			]
 			id: "7D69FEEEED084E15"
 			rewards: [{
@@ -45,7 +39,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&oCurioso, não?&r "
+			subtitle: "&oCurious, isn’t it?&r "
 			tasks: [
 				{
 					count: 8L
@@ -59,17 +53,17 @@
 					type: "item"
 				}
 			]
-			title: "&lPara queimar o mundo certo"
+			title: "&lTo Burn the Right World"
 			x: -7.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["58388432A718A31F"]
 			description: [
-				"   A aura se dissipa e, em seu lugar, sobra pedra — não qualquer pedra, mas uma que presenciou rituais, que absorveu intenções. Agora, ela será prensada com barro e carvão para formar um tijolo. Um forno nascido de algo que um dia ouviu a floresta respirar. Tudo isso para produzir fuligem, claro. É o tipo de ideia que faria um espírito da natureza ter um colapso metafísico."
-				"   Sim, ela é brutalmente lenta. Recomendo manter sempre cheia."
+				"   The aura dissipates and, in its place, stone remains — not just any stone, but one that witnessed rituals and absorbed intentions. Now it will be pressed with clay and coal to form a brick. A furnace born from something that once heard the forest breathe. All that to produce soot, of course. The kind of idea that would make a nature spirit suffer a metaphysical breakdown."
+				"   Yes, it’s brutally slow. I recommend keeping it full at all times."
 				""
-				"&o&7— Você pegou algo vivo e enfiou num forno pra gerar fumaça. Genial. Estou sinceramente impressionado.&r&r"
+				"&o&7— You took something alive and shoved it in a furnace to make smoke. Genius. I’m sincerely impressed.&r&r"
 			]
 			id: "6A51D3D6D7650D5D"
 			shape: "hexagon"
@@ -79,18 +73,18 @@
 				item: { Count: 27, id: "immersiveengineering:cokebrick" }
 				type: "item"
 			}]
-			title: "Primeiras Cinzas"
+			title: "First Ashes"
 			x: -6.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["41C7D076DE390330"]
 			description: [
-				"   Todo ritual precisa de um catalisador, toda estrutura, de um ponto de partida. Este não é um artefato sagrado, nem um canalizador de aura — é apenas um martelo. Grande, pesado, funcional... e, de certo modo, definitivo. Você já usou ferramentas improvisadas, pedras encantadas e até raízes pulsantes. "
+				"   Every ritual needs a catalyst, every structure a starting point. This isn’t a sacred artifact, nor an aura channeller — it’s just a hammer. Big, heavy, functional... and, in a sense, final. You’ve used improvised tools, enchanted stones, even pulsing roots."
 				""
-				"   Mas agora é hora de algo mais direto: madeira, ferro e um punhado de teimosia. O Engineering Hammer não pede permissão à natureza. Ele molda, encaixa, força — e os blocos simplesmente obedecem."
+				"   But now it’s time for something more direct: wood, iron, and a fistful of stubbornness. The Engineering Hammer doesn’t ask nature for permission. It shapes, seats, forces — and the blocks simply obey."
 				""
-				"&7&o— Finalmente, uma ferramenta que não exige oferendas nem alinhamento lunar. Progresso&r."
+				"&7&o— Finally, a tool that requires no offerings or lunar alignment. Progress&r."
 				"&r"
 			]
 			id: "58388432A718A31F"
@@ -119,11 +113,11 @@
 		{
 			dependencies: ["58388432A718A31F"]
 			description: [
-				"   Você começa a montar a estrutura com a confiança de quem já não sente culpa por enfiar pedras vivas em fornos. Tijolo por tijolo, o cheiro de fuligem se antecipa. Esta não é uma construção comum — é um altar moderno, dedicado ao culto do calor extremo. A Blast Furnace não emite luz sagrada, mas fumaça constante; não transforma essência, mas carvão e ferro. É lenta, barulhenta, e absolutamente necessária. "
+				"   You start building the structure with the confidence of someone who no longer feels guilty about shoving living stones into furnaces. Brick by brick, the smell of soot arrives early. This isn’t a common build — it’s a modern altar, dedicated to the cult of extreme heat. The Blast Furnace emits no sacred light, only constant smoke; it doesn’t transform essence, just coal and iron. It’s slow, loud, and absolutely necessary."
 				""
-				"   Você não tem mais o luxo de trabalhar com galhos encantados ou folhas que sussurram — agora é brasa, carvão e ferrugem."
+				"   No more luxury of enchanted twigs or whispering leaves — now it’s embers, coal, and rust."
 				""
-				"&o&7— Não é bonita, não é limpa e não é gentil. Mas derrete ferro como ninguém. Continue.&r&r"
+				"&o&7— It’s not pretty, clean, or gentle. But nothing melts iron like it. Continue.&r&r"
 			]
 			id: "11F168F0483CA912"
 			tasks: [{
@@ -131,7 +125,7 @@
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
-			title: "Carbura e passa"
+			title: "Carburize and Move On"
 			x: -5.5d
 			y: -0.5d
 		}
@@ -141,9 +135,9 @@
 				"6A51D3D6D7650D5D"
 			]
 			description: [
-				"   O ferro não era suficiente. Ele derrete, dobra, oxida — como tudo que nasce fácil demais. Mas agora você tem um forno que não perdoa, um combustível que não tolera fraquezas, e uma intenção: transformar o ordinário em permanente. O processo é lento, barulhento e deliciosamente ineficiente. E ainda assim, é progresso. O aço não se dobra por capricho, e nem você deveria."
+				"   Iron wasn’t enough. It melts, bends, rusts — like anything born too easy. But now you have a furnace that doesn’t forgive, a fuel that doesn’t tolerate weakness, and one intention: turn the ordinary into the permanent. The process is slow, loud, and delightfully inefficient. And still, it’s progress. Steel doesn’t bend on a whim — and neither should you."
 				""
-				"&7&o— Você passou carvão no ferro até ele ficar sério. Brilhante. Se continuar assim, talvez consiga respeito até de uma engrenagem.&r&r"
+				"&7&o— You rubbed coal into iron until it got serious. Shiny. Keep it up and even a gear might respect you.&r&r"
 			]
 			id: "1A526B97B149CBD3"
 			tasks: [{
@@ -151,19 +145,19 @@
 				item: "thermal:steel_ingot"
 				type: "item"
 			}]
-			title: "O Metal que não Quebra"
+			title: "The Metal That Doesn’t Break"
 			x: -6.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["1A526B97B149CBD3"]
 			description: [
-				"   Uma faísca. É só disso que você precisa para começar algo irreversível. O aço certo, a pedra certa, e a decisão errada. Prático, portátil e absolutamente inadequado para resolver qualquer problema de verdade."
+				"   A spark. That’s all you need to start something irreversible. The right steel, the right stone, and the wrong decision. Practical, portable, and absolutely inadequate for solving any real problem."
 				""
-				"&o&7— Mas às vezes... incendiar as coisas ajuda.&r&r"
+				"&o&7— But sometimes… setting things on fire helps.&r&r"
 			]
 			id: "7768F0364DA14B55"
-			subtitle: "&oFogo no parquinho!&r"
+			subtitle: "&oPlayground on fire!&r"
 			tasks: [{
 				id: "1F7D30C502900634"
 				item: {
@@ -175,7 +169,7 @@
 				}
 				type: "item"
 			}]
-			title: "Para queimar o Mundo Errado"
+			title: "To Burn the Wrong World"
 			x: -5.0d
 			y: 0.5d
 		}
@@ -187,8 +181,8 @@
 				id: "38DB20D47C5EFA49"
 				type: "dimension"
 			}]
-			x: -2.5d
-			y: -1.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			hide_dependency_lines: false
@@ -200,14 +194,14 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7D69FEEEED084E15"]
 			description: [
-				"   Os blueprints não são apenas papel e tinta. São a arrogância do \"sei o que estou fazendo\" materializada. Cada linha ali diz: “já pensei antes de você”. O Engenheiro escreveu para quem saberia ler — e agora, por algum motivo cósmico ou burrice industrial, essa responsabilidade é sua."
+				"   Blueprints aren’t just paper and ink. They’re the materialized arrogance of “I know what I’m doing.” Every line says: “I thought of this before you.” The Engineer wrote for those who would know how to read — and now, by cosmic joke or industrial foolishness, that responsibility is yours."
 				""
-				"&7&o— Você está copiando a lição de casa do passado, mas com estilo.&r"
+				"&7&o— You’re copying homework from the past — with style.&r"
 				"&r"
 			]
 			id: "64CA6B5E600B0E4F"
@@ -222,7 +216,7 @@
 				}
 				type: "item"
 			}]
-			title: "Rabiscos de Ferro Velho"
+			title: "Old Iron Scribbles"
 			x: -7.5d
 			y: 1.5d
 		}
@@ -232,9 +226,9 @@
 				"64CA6B5E600B0E4F"
 			]
 			description: [
-				"   Você não construiu uma roda d’água — você contrariou um rio. Tomou algo livre, fluido, caótico… e obrigou a empurrar engrenagens. É quase poético, se não fosse tão feio. Mas no fim, ela gira. E por enquanto, isso é tudo que importa. Mais tarde, alguém chamará isso de \"geração limpa\". Por ora, chame de tentativa."
+				"   You didn’t build a water wheel — you contradicted a river. Took something free, fluid, chaotic… and forced it to push gears. Almost poetic, if it weren’t so ugly. But in the end, it spins. And for now, that’s all that matters. Later someone will call it “clean energy.” For now, call it an attempt."
 				""
-				"&7&o— A energia que corre nunca volta. Mas a culpa pode ser redirecionada.&r&r"
+				"&7&o— The energy that runs never returns. But guilt can be rerouted.&r&r"
 			]
 			icon: "immersiveengineering:watermill"
 			id: "2DB2853A44CAE161"
@@ -250,7 +244,7 @@
 					type: "item"
 				}
 			]
-			title: "Correnteza Invertida"
+			title: "Inverted Current"
 			x: -8.5d
 			y: 1.5d
 		}
@@ -269,7 +263,7 @@
 				}
 				type: "item"
 			}]
-			title: "Forjando Formas"
+			title: "Forging Forms"
 			x: -9.5d
 			y: 1.5d
 		}
@@ -280,15 +274,15 @@
 				"27A9ABA7161CD1EA"
 			]
 			description: [
-				"   A Metal Press é a negação romântica do martelo manual. Precisa, previsível, impessoal. Ela não erra — e por isso, não aprende. Você construiu algo que bate mais forte que você, e nem precisou ensinar. Só alimentou. Essa é a linha entre ferramenta e indústria: quando a repetição vira linguagem."
+				"   The Metal Press is the romantic denial of the hand hammer. Precise, predictable, impersonal. It doesn’t err — and therefore, doesn’t learn. You built something that hits harder than you, and you didn’t even have to teach it. You just fed it. That’s the line between tool and industry: when repetition becomes language."
 				""
-				"   Para montá-la, você vai precisar de pistão, blocos de aço e o centro da sua sanidade. O layout é simples, mas alinhado — consulte o manual do engenheiro caso queira ter certeza de que não está montando uma escultura moderna."
+				"   To assemble it, you’ll need a piston, steel blocks, and the center of your sanity. The layout is simple yet aligned — consult the engineer’s manual if you want to be sure you’re not building modern sculpture."
 				""
-				"   Ela funciona como todo bom sistema capitalista: Ela não pensa, não avalia, não sente. Ela só transforma. Você coloca um lingote de um lado, e sai uma ideia comprimida do outro. E como toda máquina eficiente, ela vai te lembrar que você também pode ser substituído."
+				"   It works like every good capitalist system: It doesn’t think, evaluate, or feel. It just transforms. You feed an ingot on one side, and a compressed idea comes out the other. And like every efficient machine, it will remind you that you, too, can be replaced."
 				""
-				"&7&o— A máquina sabe o que fazer. Você só fornece o aço e não atrapalha.&r&r"
+				"&7&o— The machine knows what to do. You just provide the steel and don’t get in the way.&r&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, component disappearance, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "52A00CBEBE03F6D8"
@@ -321,22 +315,22 @@
 					type: "item"
 				}
 			]
-			title: "A máquina que amassa"
+			title: "The Machine That Mashes"
 			x: -8.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["64CA6B5E600B0E4F"]
 			description: [
-				"   Toda máquina começa com eles. E termina com eles. E provavelmente consome mais deles do que deveria."
+				"   Every machine starts with them. And ends with them. And probably consumes more of them than it should."
 				""
-				"   Componentes são o pão e manteiga da infraestrutura do Immersive. Uma chapa aqui, um rebite ali, e você tem o direito de construir estruturas que pesam toneladas. Estranhamente... isso basta."
+				"   Components are the bread and butter of Immersive infrastructure. A plate here, a rivet there, and you’ve earned the right to build structures that weigh tons. Strangely... that’s enough."
 				""
-				"   Não há glória nesse craft. Só necessidade."
+				"   There’s no glory in this craft. Only necessity."
 				""
-				"   Você vai fazê-los. Muitos. Sempre um a menos do que precisa. Sempre um clique antes de terminar."
+				"   You’ll make them. Many. Always one fewer than you need. Always one click before finishing."
 				""
-				"&7&o— A base da engenharia é feita de aço... e paciência&r"
+				"&7&o— The base of engineering is made of steel... and patience&r"
 			]
 			id: "27A9ABA7161CD1EA"
 			tasks: [{
@@ -344,32 +338,32 @@
 				item: "immersiveengineering:component_steel"
 				type: "item"
 			}]
-			title: "Componentes que Não se Comportam"
+			title: "Components That Misbehave"
 			x: -7.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2DB2853A44CAE161"]
 			description: [
-				"   Se construir a Water Wheel foi como domar um rio, conectá-la é como convencer a eletricidade a não fugir. Você agora está diante do velho dilema da engenharia: tudo está pronto, mas nada está funcionando."
+				"   If building the Water Wheel was like taming a river, wiring it is like convincing electricity not to flee. You now face engineering’s old dilemma: everything is ready, and nothing works."
 				""
-				"   A primeira coisa que você precisa saber é que cada Kinetic Dynamo só aceita até três Water Wheels conectadas. Mais do que isso e você está só empilhando madeira para desespero visual. Se tudo estiver girando, parabéns — agora é hora de estragar tudo com cabos."
+				"   First thing to know: each Kinetic Dynamo accepts only up to three Water Wheels connected. Anything more and you’re just stacking wood for visual despair. If everything’s spinning — congrats — now it’s time to ruin it with cables."
 				""
-				"   Use LV Wire Connectors nos pontos de entrada e saída, e interligue-os com LV Wire Coils. Para distâncias maiores ou organização estética mínima, adicione Relays. Eles não fazem nada além de carregar fios — e, assim como na vida real, às vezes só servem pra bagunçar mais."
+				"   Use LV Wire Connectors on inputs and outputs, and link them with LV Wire Coils. For longer distances or minimal aesthetic order, add Relays. They do nothing but carry wires — and, just like in real life, sometimes only make the mess worse."
 				""
-				"   Conectou errado? Claro que conectou. Equipe um Wire Cutter, agache e clique no conector. Pronto. Finge que nunca errou. Mas vai errar de novo. Esse é o processo."
+				"   Wired it wrong? Of course you did. Equip a Wire Cutter, sneak, and click the connector. Done. Pretend you never messed up. You will again. That’s the process."
 				""
-				"   Quanto ao Capacitor, nada de interfaces bonitinhas. Use o Engineer’s Hammer diretamente nas faces do bloco:"
+				"   As for the Capacitor, forget pretty interfaces. Use the Engineer’s Hammer directly on the block faces:"
 				""
-				"   &9Azul&r: entrada (Input)"
+				"   &9Blue&r: input"
 				""
-				"   &6Laranja&r: saída (Output)"
+				"   &6Orange&r: output"
 				""
-				"   &7Sem cor&r: neutro, como sua fé no sistema"
+				"   &7Colorless&r: neutral, like your faith in the system"
 				""
-				"   Posicione o cabo vindo da Water Wheel no lado azul. Saída para sua primeira máquina, no laranja. Nada acontece? Reconfira tudo. E se ainda assim falhar… parabéns, agora você está realmente fazendo engenharia."
+				"   Put the cable from the Water Wheel on the blue side. Output to your first machine on orange. Nothing happens? Recheck everything. And if it still fails… congratulations, now you’re really doing engineering."
 				""
-				"&7&o— Todo sistema elétrico começa com esperança, um capacitor mal configurado, e pelo menos uma experiência de quase morte por cabo mal posicionado.&r&r"
+				"&7&o— Every electrical system begins with hope, a poorly configured capacitor, and at least one near-death experience from a badly placed cable.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -401,18 +395,18 @@
 					type: "item"
 				}
 			]
-			title: "Fios, Limites e o Começo da Bagunça"
+			title: "Wires, Limits, and the Start of the Mess"
 			x: -8.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["49BC49E90867B271"]
 			description: [
-				"   Você já pode bater o ferro enquanto ele está quente. Mas por que parar por aí, se pode esmagar tudo de uma vez, automaticamente, sem pensar?"
+				"   You can already strike iron while it’s hot. But why stop there if you can crush everything at once, automatically, without thinking?"
 				""
-				"   Esses moldes representam suas primeiras escolhas como não-artesão. Rod, Plate, Gear, Wire. Quatro formas básicas de converter matéria em forma — e perder o controle criativo no processo."
+				"   These molds mark your first choices as a non-artisan. Rod, Plate, Gear, Wire. Four basic ways to convert matter into form — and lose creative control in the process."
 				""
-				"&7&o— Você não está mais fazendo peças. Está pedindo para que a máquina as faça. O começo do fim.&r&r"
+				"&7&o— You’re not making parts anymore. You’re asking the machine to make them. The beginning of the end.&r&r"
 			]
 			id: "2E8308871C5B9B21"
 			tasks: [
@@ -437,22 +431,22 @@
 					type: "item"
 				}
 			]
-			title: "Moldando o Inevitável"
+			title: "Molding the Inevitable"
 			x: -9.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["27A9ABA7161CD1EA"]
 			description: [
-				"    A Engineer’s Workbench era onde suas mãos ainda tinham algum valor. Você posicionava os materiais, segurava o martelo, fingia entender o que estava montando. Agora, até isso acabou."
+				"    The Engineer’s Workbench was where your hands still had some value. You placed the materials, held the hammer, pretended to understand what you were assembling. Now even that is over."
 				""
-				"   A versão automatizada dessa bancada é um multibloco frio e indiferente. Ela aceita componentes pela face azul, produz o resultado, e o cospe com desgosto por um conveyor belt lateral. Você não monta mais — você alimenta."
+				"   The automated version of this bench is a cold, indifferent multiblock. It accepts components on the blue face, produces the result, and spits it out with disdain onto a side conveyor belt. You no longer assemble — you feed."
 				""
-				"   É uma fábrica em miniatura. Uma negação final da oficina romântica. E se você ouvir ela funcionando sozinha, madrugada adentro, saiba que não é assombração. É só o som da substituição."
+				"   It’s a miniature factory. A final denial of the romantic workshop. And if you hear it working alone in the middle of the night, know it isn’t a haunting. It’s just the sound of replacement."
 				""
-				"&7&o— A produção não para. Você, sim.&r&r"
+				"&7&o— Production doesn’t stop. You do.&r&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, component disappearance, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:auto_workbench"
 			id: "4186EA4004685166"
@@ -493,7 +487,7 @@
 					type: "item"
 				}
 			]
-			title: "A Bancada se Levanta"
+			title: "The Bench Rises"
 			x: -6.5d
 			y: 1.5d
 		}
@@ -504,13 +498,13 @@
 				"693D256DD80F1B8F"
 			]
 			description: [
-				"   Você já fundiu ferro, refinou carvão, moldou aço. O processo era conhecido, confiável, industrial. Mas desta vez, os ingredientes parecem errados demais para gerar algo estável — e ainda assim, funcionam."
+				"   You’ve smelted iron, refined coal, shaped steel. The process was known, reliable, industrial. But this time, the ingredients seem too wrong to yield anything stable — and yet, they do."
 				""
-				"   O Blazing Steel nasce na Alloy Kiln, como qualquer liga. Mas o que sai dali não deveria existir. Um metal que brilha como fogo, mas não consome. Ardente, mas sólido. Ele não derrete, ele ameaça."
+				"   Blazing Steel is born in the Alloy Kiln, like any alloy. But what emerges shouldn’t exist. A metal that shines like fire but doesn’t consume. Burning, yet solid. It doesn’t melt — it threatens."
 				""
-				"   Talvez você só tenha misturado aço com o que encontrou no Nether. Talvez esteja começando a entender outra linguagem da matéria."
+				"   Maybe you just mixed steel with what you found in the Nether. Maybe you’re starting to learn another language of matter."
 				""
-				"&7&o— O forno é o mesmo. O resultado, nem de perto.&r&r"
+				"&7&o— The furnace is the same. The result, nowhere close.&r&r"
 			]
 			id: "2C5BDE78E209CF0C"
 			tasks: [{
@@ -518,24 +512,24 @@
 				item: "kubejs:blazing_steel"
 				type: "item"
 			}]
-			title: "&4Fogo Que Não Vem do Fogo"
+			title: "&4Fire That Doesn’t Come from Fire"
 			x: -4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4186EA4004685166"]
 			description: [
-				"   O Assembler do Immersive é, em essência, um autêntico trabalhador de linha de produção: discreto, eficiente, sem frescura."
+				"   Immersive’s Assembler is, in essence, a true assembly-line worker: discreet, efficient, no frills."
 				""
-				"   Você cria até três moldes com a receita desejada, fornece energia, insere os materiais e — pronto — ele fabrica os itens para você como um bom operário sem alma. Nada de braços mecânicos dançando. Nada de melodias de engrenagens. Só trabalho."
+				"   You set up to three molds with the desired recipes, provide power, feed materials and — done — it manufactures items for you like a good soulless laborer. No dancing mechanical arms. No melodies of gears. Just work."
 				""
-				"  Sim, o Create provavelmente já está disponível. E sim, você provavelmente vai ignorar esse bloco glorioso em favor de sistemas com rodinhas, trilhos, cataventos e graça estética."
+				"  Yes, Create is probably available. And yes, you’ll probably ignore this glorious block in favor of systems with wheels, rails, windmills, and aesthetic charm."
 				""
-				"  Mas ei, &ogosto não se discute.&r Se você quer um montador que só quer fazer o serviço e não aparecer no Instagram das máquinas, o Assembler é pra você."
+				"  But hey, &otaste isn’t up for debate.&r If you want an assembler that just does the job and doesn’t show up on Machine-Instagram, the Assembler is for you."
 				""
-				"  E se um dia você quiser montar 3 tipos diferentes de componentes com uma única entrada de energia, talvez… só talvez… ele esteja lá, te esperando. Silencioso. Pronto. Ressentido."
+				"  And if one day you want to assemble three different component types with a single power input, maybe… just maybe… it’ll be there, waiting for you. Silent. Ready. Resentful."
 				""
-				"&7&o— Ele não gira, mas faz o trabalho&r"
+				"&7&o— It doesn’t spin, but it gets the job done&r"
 			]
 			icon: "immersiveengineering:assembler"
 			id: "76264AD1E946DE2A"
@@ -578,29 +572,19 @@
 					type: "item"
 				}
 			]
-			title: "Assembleia Solitária"
+			title: "Solitary Assembly"
 			x: -5.5d
 			y: 1.5d
 		}
 		{
-			id: "59DA4F14F739AE03"
-			tasks: [{
-				id: "66FB1D660F49F9A2"
-				item: "minecraft:nether_bricks"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -0.5d
-		}
-		{
 			description: [
-				"    Chega uma hora em que bater pó num caldeirão já não dá conta. Você pode até continuar misturando tudo na mão, mas isso só te leva até onde o cheiro de carvão permitir."
+				"    There comes a time when pounding powder in a cauldron just won’t cut it. You can keep hand-mixing, sure, but that only takes you as far as the smell of coal allows."
 				""
-				"   A Alloy Kiln é o próximo passo natural: dois ingredientes entram, uma liga sai. Sem perguntas. Sem pressa. Sem brilho. É um forno de compromisso — silencioso, meio lento e, dependendo da mistura, um pouco deprimente."
+				"   The Alloy Kiln is the natural next step: two ingredients go in, one alloy comes out. No questions. No rush. No shine. It’s a furnace of compromise — quiet, a bit slow, and depending on the mix, slightly depressing."
 				""
-				"   Mas é honesto. E se você for paciente, ele até parece eficaz. Quase."
+				"   But it’s honest. And if you’re patient, it even feels efficient. Almost."
 				""
-				"&7&o— A engenharia não precisa ser bonita. Só precisa não explodir.&r&r"
+				"&7&o— Engineering doesn’t have to be pretty. It just has to not explode.&r&r"
 			]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "1AEBFDE6990DCCB5"
@@ -609,21 +593,21 @@
 				item: "immersiveengineering:alloy_smelter"
 				type: "item"
 			}]
-			title: "Pó não tá com nada"
+			title: "Powder Ain’t Cutting It"
 			x: -3.5d
 			y: 1.5d
 		}
 		{
 			description: [
-				"    A Blast Furnace funcionava. Com calma, com carvão, com a sua paciência. Mas não por muito tempo."
+				"    The Blast Furnace worked. With calm, with coal, with your patience. But not for long."
 				""
-				"   Agora você está diante da versão melhorada — o que é um eufemismo técnico para \"deixe o aço fluir e a alma derreter\". A Improved Blast Furnace é mais rápida, aceita automação e responde a redstone, desde que você finja que entende o que está fazendo."
+				"   Now you face the improved version — technical euphemism for “let the steel flow and the soul melt.” The Improved Blast Furnace is faster, accepts automation, and responds to redstone, as long as you pretend you understand what you’re doing."
 				""
-				"   Ela requer novos materiais, nova estrutura, e um novo nível de comprometimento: conectar um Preheater para acelerar o processo e usar um Hopper para extrair automaticamente. Parabéns, você acaba de fundar sua primeira linha de produção — involuntária, mas funcional."
+				"   It requires new materials, a new structure, and a new level of commitment: attach a Preheater to speed things up and use a Hopper to auto-extract. Congrats, you’ve just founded your first production line — involuntary, but functional."
 				""
-				"&7&o— Produzir aço era difícil. Agora é só caro, barulhento e irreversível.&r&r"
+				"&7&o— Making steel used to be hard. Now it’s just expensive, loud, and irreversible.&r&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "467C1405A6CCFB40"
@@ -645,22 +629,22 @@
 					type: "item"
 				}
 			]
-			title: "Veloz e automática = Linda"
+			title: "Fast and Automatic = Pretty"
 			x: -3.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["27A9ABA7161CD1EA"]
 			description: [
-				"    Você finalmente chegou lá. Agora seus minérios rendem o &ldobro&r. É isso mesmo: mais pó, mais progresso, mais poluição sonora."
+				"    You finally made it. Now your ores yield &ldouble&r. That’s right: more dust, more progress, more noise pollution."
 				""
-				"   O Crusher é tudo o que prometeram — eficiente, potente, expansivo e completamente antissocial. Ele ocupa um espaço absurdo, faz mais barulho que festa de vila e ainda te desafia a automatizar suas entradas e saídas como se fosse uma prova de resistência lógica."
+				"   The Crusher is everything they promised — efficient, powerful, expansive, and completely antisocial. It hogs absurd space, makes more noise than a street fair, and dares you to automate I/O like a trial of logical endurance."
 				""
-				"   Mas no fim das contas, ele entrega. Não com delicadeza. Não com elegância. Mas com um estrondo e um chute nas leis do rendimento térmico."
+				"   But in the end, it delivers. Not delicately. Not elegantly. But with a bang and a kick to the laws of thermal yield."
 				""
-				"&7&o— Você não está quebrando minério. Está quebrando o orgulho do seu sistema de transporte.&r&r"
+				"&7&o— You’re not breaking ore. You’re breaking your transport system’s pride.&r&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:crusher"
 			id: "4EA7083C34FC1A44"
@@ -695,20 +679,20 @@
 					type: "item"
 				}
 			]
-			title: "Triturando Sonhos Desde Sempre"
+			title: "Grinding Dreams Since Forever"
 			x: -6.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["22EC9AE04FCCCEE0"]
 			description: [
-				"   O LV funcionava... até você querer ligar duas máquinas em prédios diferentes."
+				"   LV was fine... until you wanted to power two machines in different buildings."
 				""
-				"   O MV Wire Coil é sua primeira tentativa de escalar seu sistema elétrico. Maior alcance. Mais energia. E uma nova gama de erros possíveis. Agora os choques são mais simbólicos — e os curtos, mais dramáticos."
+				"   The MV Wire Coil is your first attempt at scaling your electrical system. Longer reach. More power. And a whole new range of possible mistakes. Shocks are now symbolic — and shorts, more dramatic."
 				""
-				"   Os cabos ganham volume. A estética começa a implodir. Mas ei, agora dá pra alimentar uma prensa a 30 blocos de distância. O progresso tem dessas."
+				"   Cables gain volume. Aesthetics begin to implode. But hey, now you can feed a press 30 blocks away. Progress does that."
 				""
-				"&7&o— Você achou que o problema era a voltagem, mas era só você mesmo&r"
+				"&7&o— You thought voltage was the problem, but it was just you&r"
 			]
 			id: "43029D647EA34851"
 			tasks: [{
@@ -716,22 +700,22 @@
 				item: "immersiveengineering:wirecoil_electrum"
 				type: "item"
 			}]
-			title: "Fio Mais Grosso, Problemas Maiores"
+			title: "Thicker Cable, Bigger Problems"
 			x: -7.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["460A5B83307446ED"]
 			description: [
-				"   Você montou a roda d’água, conectou tudo, ligou a prensa... e ela piscou. Por quê?"
+				"   You built the water wheel, wired everything, powered the press... and it flickered. Why?"
 				""
-				"   Porque você esqueceu o buffer."
+				"   Because you forgot the buffer."
 				""
-				"   O MV Capacitor é a sala de espera da sua energia. Ele segura, organiza, e distribui corrente como se fosse fácil. Mas atenção: ele só funciona se você ensinar ele a funcionar. Engineer’s Hammer nas faces. Azul: entrada. Laranja: saída. Cinza: status de quem ligou o cabo errado de novo."
+				"   The MV Capacitor is your grid’s waiting room. It holds, organizes, and dispenses current like it’s easy. But heads-up: it only works if you teach it to. Engineer’s Hammer on the faces. Blue: input. Orange: output. Gray: the status of whoever miswired it again."
 				""
-				"   E não — ele não mostra nada além de uma barra. E ainda assim, é mais informativo que certos tutoriais por aí."
+				"   And no — it shows nothing but a bar. And even so, it’s more informative than certain tutorials out there."
 				""
-				"&7&o— Toda rede elétrica começa com um grito... e termina com um MV Capacitor mal orientado&r"
+				"&7&o— Every power network begins with a scream... and ends with a poorly oriented MV Capacitor&r"
 			]
 			id: "53926EA02B461E01"
 			tasks: [{
@@ -739,22 +723,22 @@
 				item: "immersiveengineering:capacitor_mv"
 				type: "item"
 			}]
-			title: "Onde a Energia Vai para Pensar"
+			title: "Where Power Goes to Think"
 			x: -8.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["43029D647EA34851"]
 			description: [
-				"   É agora que os postes viram escultura."
+				"   This is where poles become sculpture."
 				""
-				"   Os HV Wire Coils não são só fios. Eles são declarações. De que você construiu algo tão poderoso que precisa de três isolantes por metro. São os cabos que atravessam céus, cortam paisagens, e acendem debates sobre segurança."
+				"   HV Wire Coils aren’t just wires. They’re statements. That you built something so powerful it needs three insulators per meter. These are the cables that cut skies, carve landscapes, and ignite arguments about safety."
 				""
-				"   São difíceis de esconder. E talvez você nem devesse tentar."
+				"   They’re hard to hide. And maybe you shouldn’t try."
 				""
-				"   Mas cuidado: eles transportam energia suficiente pra fritar seu sistema inteiro — ou, com sorte, só a sua paciência."
+				"   But careful: they carry enough energy to fry your whole system — or, with luck, just your patience."
 				""
-				"&7&o— Alta voltagem, baixa expectativa de acerto na conexão&r"
+				"&7&o— High voltage, low chance of wiring it right&r"
 			]
 			id: "460A5B83307446ED"
 			tasks: [{
@@ -762,22 +746,22 @@
 				item: "immersiveengineering:wirecoil_steel"
 				type: "item"
 			}]
-			title: "O Cabo que Assusta Crianças"
+			title: "The Cable That Scares Children"
 			x: -7.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["53926EA02B461E01"]
 			description: [
-				"   A conta é simples."
+				"   The math is simple."
 				""
-				"   Se você não consome 100% da energia que produz o tempo todo, não precisa de mais geração. Só de mais tempo. O HV Capacitor é isso: tempo em forma de bloco."
+				"   If you’re not consuming 100% of what you generate all the time, you don’t need more generation. You need more time. The HV Capacitor is that: time in block form."
 				""
-				"   Ele não melhora seu sistema. Ele só segura tudo o que você desperdiça. Mas às vezes, é só isso que falta."
+				"   It doesn’t improve your system. It just holds everything you waste. But sometimes, that’s exactly what’s missing."
 				""
-				"   Com ele, você pode montar uma reserva absurda, alimentar três máquinas por hora, e fingir que vive em abundância. É bonito. É funcional. É mentira — mas das boas."
+				"   With it, you can stash an absurd reserve, feed three machines an hour, and pretend you live in abundance. It’s pretty. It’s functional. It’s a lie — but a good one."
 				""
-				"&7&o— Produzir mais é difícil. Estocar energia mal usada? Isso até você consegue&r"
+				"&7&o— Producing more is hard. Stockpiling misused energy? Even you can do that&r"
 			]
 			id: "655DFFEBB378B043"
 			tasks: [{
@@ -785,20 +769,20 @@
 				item: "immersiveengineering:capacitor_hv"
 				type: "item"
 			}]
-			title: "Buffer ou Desculpa de Ineficiência?"
+			title: "Buffer or Excuse for Inefficiency?"
 			x: -9.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["25EF7B5E007B9C11"]
 			description: [
-				"   Você achou que plantar era coisa de fazenda. Que sementes eram pra galinha. Que baga era pra suco. Mas o Squeezer discorda."
+				"   You thought planting was farm stuff. That seeds were for chickens. That berries were for juice. The Squeezer disagrees."
 				""
-				"   Essa máquina transforma matéria sólida em líquido útil, com uma eficiência que faria até druida ficar sem graça. É barulhenta, feia, e nem tenta disfarçar o quanto gosta de esmagar sementes até sair óleo."
+				"   This machine turns solids into useful liquids with an efficiency that would make a druid blush. It’s loud, ugly, and doesn’t bother hiding how much it enjoys crushing seeds until oil leaks out."
 				""
-				"   Se quiser entrar no mundo dos combustíveis e fluidos industriais, é aqui que começa. Espremendo."
+				"   If you want to enter the world of fuels and industrial fluids, this is where it starts. By squeezing."
 				""
-				"&7&o— Não subestime uma máquina que faz óleo com raiva. Um dia você ainda vai usar isso pra mover um trem.&r&r"
+				"&7&o— Don’t underestimate a machine that makes oil in anger. One day you’ll use this to move a train.&r&r"
 			]
 			icon: "immersiveengineering:squeezer"
 			id: "55674CA71B329E3B"
@@ -844,20 +828,20 @@
 					type: "item"
 				}
 			]
-			title: "Esguicha, Logo Existe"
+			title: "It Squeezes, Therefore It Is"
 			x: -5.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["4EA7083C34FC1A44"]
 			description: [
-				"   Você pensou que o carvão acabava na fornalha?"
+				"   You thought coal ended in the furnace?"
 				""
-				"   Bem-vindo ao pós-combustão."
+				"   Welcome to post-combustion."
 				""
-				"   Coke Dust é o que sobra quando você processa carvão até ele esquecer quem era. É negro, fino, e essencial para tudo que virá. Sujeira industrial na forma mais pura — e agora, sua oficina inteira vai cheirar a isso."
+				"   Coke Dust is what’s left when you process coal until it forgets what it was. It’s black, fine, and essential for everything to come. Industrial grime in its purest form — and now your whole workshop will smell like it."
 				""
-				"&7&o— Respirar não é mais prioridade&r"
+				"&7&o— Breathing is no longer a priority&r"
 			]
 			id: "393576D2959060DC"
 			tasks: [{
@@ -866,7 +850,7 @@
 				item: "immersiveengineering:dust_coke"
 				type: "item"
 			}]
-			title: "Poeira de Carvão, Pulmões de Ferro"
+			title: "Coal Dust, Iron Lungs"
 			x: -5.0d
 			y: 2.5d
 		}
@@ -876,13 +860,13 @@
 				"55674CA71B329E3B"
 			]
 			description: [
-				"   Esse pó não é como os outros."
+				"   This powder isn’t like the others."
 				""
-				"   É refinado. Compactado. Digno de alimentar máquinas que consomem energia como quem respira. O HOP Graphite Dust é o ponto onde o carvão vira tecnologia — ou, pelo menos, finge muito bem."
+				"   It’s refined. Compacted. Worthy of feeding machines that consume energy like breathing. HOP Graphite Dust is where coal becomes technology — or at least fakes it convincingly."
 				""
-				"   Você vai moer bastante para fazer um só lingote. E mesmo assim, vai achar pouco."
+				"   You’ll grind a lot to make a single ingot. And still, it’ll feel like too little."
 				""
-				"&7&o— Quando carvão aprende a se comportar&r"
+				"&7&o— When coal learns to behave&r"
 			]
 			id: "6D53CF017256846F"
 			tasks: [{
@@ -891,22 +875,22 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			title: "Carvão com Diploma"
+			title: "Coal with a Diploma"
 			x: -4.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["27A9ABA7161CD1EA"]
 			description: [
-				"   Você talvez tenha achado que o Fermenter ia produzir vinho. Que ia cheirar bem. Que ia ser elegante. Não foi."
+				"   You might’ve thought the Fermenter would make wine. That it’d smell nice. That it’d be elegant. It wasn’t."
 				""
-				"   O que ele faz é transformar tudo que tem um pingo de açúcar em uma gosma fermentada tecnicamente chamada de etanol. Se tiver sorte, isso ainda vai virar combustível. Se tiver azar, vai parecer uma sopa de beterraba esquecida no sol."
+				"   What it does is turn anything with a hint of sugar into a fermented goo technically called ethanol. If you’re lucky, it will become fuel. If you’re not, it will look like beet soup forgotten in the sun."
 				""
-				"   Mas o que importa é que ele funciona. Sem frescura, sem filtro, e sem julgamento. E se você ainda está com nojo… bem-vindo à indústria."
+				"   What matters is that it works. No frills, no filter, no judgment. And if you’re still grossed out… welcome to industry."
 				""
-				"&7&o— A alquimia começa quando você descobre que etanol fede. E mesmo assim, você quer mais.&r&r"
+				"&7&o— Alchemy begins when you discover ethanol stinks. And you still want more.&r&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:fermenter"
 			id: "25EF7B5E007B9C11"
@@ -915,29 +899,29 @@
 				item: "immersiveengineering:light_engineering"
 				type: "item"
 			}]
-			title: "Se é Doce, Fermenta"
+			title: "If It’s Sweet, It Ferments"
 			x: -6.5d
 			y: 3.5d
 		}
 		{
 			dependencies: [
 				"6F89ADFAB2A59C2B"
-				"2F9EA9B259B79847"
+				"33417C677CE79CB0"
 			]
 			description: [
-				"   Construiu sua Refinaria, produziu seu Biodiesel, canalizou fluidos com mais empenho que emoção... e agora, finalmente, você ergueu o que chamam de &lDiesel Generator&r."
+				"   You built your Refinery, made your Biodiesel, piped fluids with more effort than emotion… and now, finally, you raised what they call a &lDiesel Generator&r."
 				""
-				"   Mas vamos deixar uma coisa clara: isso aqui não é só um motor. É uma ópera. Um monumento ao movimento bruto. Um ciclo explosivo ritmado por pistões invisíveis e fome por combustível. Um canto mecânico que ecoa o auge — e o fim — de uma era."
+				"   Let’s be clear: this isn’t just an engine. It’s an opera. A monument to brute motion. An explosive cycle paced by invisible pistons and a hunger for fuel. A mechanical chant echoing the peak — and the end — of an era."
 				""
-				"   O Diesel Generator é sua primeira usina de verdade. Ele não aceita carvão, nem empurro. Ele exige cadeia produtiva. Planejamento. Otimização. É um organismo industrial que só canta quando está saciado. E quando canta... ah, quando canta, ele grita energia."
+				"   The Diesel Generator is your first real power plant. It doesn’t take coal, nor a push. It demands a supply chain. Planning. Optimization. It’s an industrial organism that only sings when it’s fed. And when it sings… oh, when it sings, it screams energy."
 				""
-				"   Mas não se iluda. Por mais glorioso que ele seja, por mais que seu ronco preencha a fábrica como um hino ancestral... tudo isso é transitório. Logo, virá o silêncio frio dos cabos energizados. A abstração das turbinas pressurizadas. O olhar pragmático do &a&lMekanism&r&r."
+				"   Don’t be fooled. As glorious as it is, as much as its roar fills the factory like an ancestral hymn… all of this is transient. Soon will come the cold silence of energized cables. The abstraction of pressurized turbines. The pragmatic gaze of &a&lMekanism&r&r."
 				""
-				"   Você construiu algo lindo. E como tudo que é lindo... ele está prestes a ser substituído."
+				"   You built something beautiful. And like all things beautiful… it’s about to be replaced."
 				""
-				"&7&o— Eu sei que você vai construir 100 rodas dagua como solução energética, só não diga isso na frente dele. &r"
+				"&7&o— I know you’ll build 100 water wheels as your energy solution; just don’t say it in front of this one. &r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:diesel_generator"
@@ -948,20 +932,20 @@
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "Biodiesel, Brutalidade e Barulho"
+			title: "Biodiesel, Brutality, and Boom"
 			x: -8.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["6D53CF017256846F"]
 			description: [
-				"   De um único pó, nasce um lingote que carrega ambição."
+				"   From a single powder, an ingot is born — an ingot that carries ambition."
 				""
-				"   Leve, denso, com estrutura cristalina o suficiente para enganar qualquer físico distraído. Empilha, sim — mas não se engane. Esses lingotes não são para estoque: são para rituais industriais."
+				"   Light, dense, with crystalline structure enough to fool a distracted physicist. It stacks, yes — but don’t be fooled. These ingots aren’t for stockpiles: they’re for industrial rituals."
 				""
-				"   Eles serão devorados por máquinas que não aceitam menos que isso."
+				"   They’ll be devoured by machines that accept nothing less."
 				""
-				"&7&o— Parece simples. É porque ainda não virou uma vara de três metros&r"
+				"&7&o— Seems simple. That’s because it hasn’t become a three-meter rod yet&r"
 			]
 			id: "33417C677CE79CB0"
 			tasks: [{
@@ -970,28 +954,28 @@
 				item: "immersiveengineering:ingot_hop_graphite"
 				type: "item"
 			}]
-			title: "O Lingote que Não Gosta de Gente"
+			title: "The Ingot That Doesn’t Like People"
 			x: -5.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["2F9EA9B259B79847"]
 			description: [
-				"   Você chegou até aqui fundindo aço e esquentando blocos como um ferreiro com diploma. Mas isso acabou."
+				"   You got this far smelting steel and heating blocks like a blacksmith with a diploma. That’s over."
 				""
-				"   A Arc Furnace não é uma fornalha. É um reator. Um leviatã. Um monumento industrial que exige cabos, eletrodos, refratários e... obediência. Ela consome mais do que matéria-prima — ela devora ordem. A partir de agora, não existem mais receitas simples. Cada liga é um pacto. Cada composição é um sacrifício de tempo, energia e lógica."
+				"   The Arc Furnace is not a furnace. It’s a reactor. A leviathan. An industrial monument that demands cables, electrodes, refractories and… obedience. It consumes more than raw material — it devours order. From now on, no more simple recipes. Every alloy is a pact. Every composition is a sacrifice of time, energy, and logic."
 				""
-				"   Bem-vindo à metalurgia sintética."
+				"   Welcome to synthetic metallurgy."
 				""
-				"   Esse é o ponto onde a realidade começa a entortar. O cobre já não é suficiente. O ferro sozinho não serve. Você precisa de três, quatro, cinco ingredientes. Você precisa de controle de temperatura, de fluxo de entrada, de estabilidade — e vai perceber que não tem nada disso."
+				"   This is where reality starts to bend. Copper won’t cut it. Iron alone won’t do. You need three, four, five ingredients. You need temperature control, input flow, stability — and you’ll realize you have none of that."
 				""
-				"   E é aqui, no meio desse colapso deliciosamente técnico, que o &a&lMekanism&r&r observa de longe. Ele espera. E você vai chamá-lo. Vai implorar por ordem. Vai desejar os cabos pressurizados, os sistemas de infusão, as máquinas que pensam por você. Mas antes, você precisa queimar um pouco mais."
+				"   And here, in the middle of this deliciously technical collapse, &a&lMekanism&r&r watches from afar. It waits. And you will call it. You’ll beg for order. You’ll crave pressurized cables, infusion systems, machines that think for you. But first, you need to burn a little more."
 				""
-				"   A Arc Furnace não é o fim da linha. Ela é o trilho torto que aponta para o futuro. Para o que virá. Para o que &ovai te consumir de volta&r."
+				"   The Arc Furnace isn’t the end of the line. It’s the crooked rail pointing toward the future. Toward what’s coming. Toward what &owill consume you back&r."
 				""
-				"&7&o— Toda grande indústria começa com um incêndio que ninguém apagou&r&r"
+				"&7&o— Every great industry begins with a fire no one put out&r&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			id: "617989B418D326B0"
 			size: 1.3d
@@ -1000,7 +984,7 @@
 				item: "immersiveengineering:arc_furnace"
 				type: "item"
 			}]
-			title: "A Fábrica em chamas"
+			title: "The Factory on Fire"
 			x: -4.0d
 			y: 8.0d
 		}
@@ -1010,17 +994,17 @@
 				"55674CA71B329E3B"
 			]
 			description: [
-				"   Você acredita estar apenas montando tubos, tanques e engrenagens. Engano. Cada bloco posicionado aqui é mais um prego no caixão da sua neutralidade. A Refinaria não é uma simples máquina — é o primeiro divisor de águas. O limiar entre transformar e queimar. Entre criar matéria e extrair movimento."
+				"   You think you’re just assembling pipes, tanks, and gears. Wrong. Every block placed here is another nail in the coffin of your neutrality. The Refinery isn’t a simple machine — it’s the first watershed. The threshold between transforming and burning. Between creating matter and extracting motion."
 				""
-				"   Até agora, seus líquidos eram inofensivos. Um pouco de óleo, um gole de etanol, tudo muito rústico, quase pastoral. Mas aqui, eles se fundem. Eles se corrompem. E dessa corrupção nasce o poder. Não o poder estético das engrenagens girando — mas o poder real. O que escurece a alma da máquina. O que escolhe."
+				"   Until now, your fluids were harmless. A bit of oil, a sip of ethanol — rustic, almost pastoral. But here, they merge. They corrupt. And from that corruption, power is born. Not the aesthetic power of spinning gears — the real kind. The kind that darkens the machine’s soul. The kind that chooses."
 				""
-				"   Dois caminhos se abrem, e nenhum deles leva de volta. Um deles molda o mundo à sua imagem: o &6&lDuroplast&r&r, matéria sólida, sintética, a negação da madeira e da natureza, perfeita para quem prefere a permanência ao crescimento. Um ciclo químico, preciso, controlado. O outro caminho é mais bruto, mais visceral. O &2&lBiodiesel&r&r. Ele não constrói — ele impulsiona. Uma energia que queima sem remorso, que grita por um gerador e por linhas de produção devorando o horizonte."
+				"   Two paths open, and neither leads back. One shapes the world in your image: &6&lDuroplast&r&r, solid, synthetic matter — the negation of wood and nature — perfect if you prefer permanence over growth. A chemical cycle, precise, controlled. The other path is rougher, more visceral: &2&lBiodiesel&r&r. It doesn’t build — it drives. An energy that burns without remorse, screaming for a generator and production lines devouring the horizon."
 				""
-				"   Você já sabe disso. Mesmo que não admita. A Refinaria não é uma invenção — é uma revelação. Um espelho. Ela mostra o que você está disposto a sacrificar em nome do avanço."
+				"   You already know this, even if you won’t admit it. The Refinery isn’t an invention — it’s a revelation. A mirror. It shows what you’re willing to sacrifice in the name of advancement."
 				""
-				"&7&o— Toda escolha é uma combustão. Algumas só demoram mais para explodir&r&r"
+				"&7&o— Every choice is a combustion. Some just take longer to explode&r&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:refinery"
 			id: "6F89ADFAB2A59C2B"
@@ -1029,26 +1013,26 @@
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "Refinaria: a gota que faltava"
+			title: "Refinery: The Missing Drop"
 			x: -6.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["6F89ADFAB2A59C2B"]
 			description: [
-				"   Você fermentou cana-de-açúcar como um camponês alquimista. Achou poético. Quente. Quase sagrado. Mas a verdade é que o &oetanol&r é só o primeiro gole. O início de um processo que arranca do natural toda sua pretensão de pureza."
+				"   You fermented sugarcane like an alchemist peasant. Thought it was poetic. Warm. Almost sacred. But the truth is &oethanol&r is only the first sip. The start of a process that strips the natural of any pretense of purity."
 				""
-				"   Adicione calor. Reduza. Transforme o etanol em &oacetaldehyde&r. Um composto volátil, impaciente, que já carrega o desejo de ser mais — ou menos — orgânico."
+				"   Add heat. Reduce. Turn ethanol into &oacetaldehyde&r. A volatile, impatient compound that already carries the desire to become more — or less — organic."
 				""
-				"   Depois, misture. Resina fenólica. Um nome chique para uma gosma sintética carregada de intenções. É aqui que a coisa engrossa — literalmente."
+				"   Then, mix. Phenolic resin. A fancy name for a synthetic slime loaded with intent. This is where it thickens — literally."
 				""
-				"   E então, com tudo isso em mãos, você funde essência com propósito. Derrama sua criação na &lBottling Machine&r, e assiste nascer a &oDuroplast Sheet&r: fria, rígida, perfeita. Um simulacro de matéria. Uma pele industrial."
+				"   And then, with all that in hand, you fuse essence with purpose. Pour your creation into the &lBottling Machine&r, and watch a &oDuroplast Sheet&r be born: cold, rigid, perfect. An imitation of matter. An industrial skin."
 				""
-				"   Esse processo não é só uma cadeia produtiva. É uma filosofia. É o grito final do natural, sufocado sob camadas de engenharia."
+				"   This process isn’t just a production chain. It’s a philosophy. It’s nature’s final scream, smothered under layers of engineering."
 				""
-				"&7&o— O que começou com açúcar termina com uma armadura. Bem-vindo ao sintético&r"
+				"&7&o— What began with sugar ends as armor. Welcome to the synthetic&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:bottling_machine"
@@ -1058,24 +1042,24 @@
 				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
-			title: "Petrificando o Orgânico"
+			title: "Petrifying the Organic"
 			x: -6.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["2C5BDE78E209CF0C"]
 			description: [
-				"   Existe um momento, em toda jornada técnica, em que você olha para uma receita e pensa: “isso aqui não faz o menor sentido”."
+				"   There’s a moment in every technical journey when you look at a recipe and think: “this makes zero sense.”"
 				""
-				"   Bem-vindo ao &0Blueprint de Electrode.&r"
+				"   Welcome to the &0Electrode Blueprint.&r"
 				""
-				"   Uma folha de papel, um pouco de tinta técnica... e uma barra de Blazing Steel. Porque claro, nada melhor para imprimir instruções do que um metal que ainda está praticamente pegando fogo."
+				"   A sheet of paper, some technical ink… and a bar of Blazing Steel. Because of course, nothing prints instructions better than a metal that’s still practically on fire."
 				""
-				"   Não pergunte. Essa é uma receita milenar. Você apenas repete. Sem olhar diretamente. E torce pra impressora não pegar fogo no processo."
+				"   Don’t ask. It’s an ancient recipe. You just repeat it. Without looking directly. And hope the printer doesn’t catch fire in the process."
 				""
-				"   Com isso, você poderá finalmente construir os Electrode de Graphite, alimentar a Arc Furnace… e continuar não entendendo absolutamente nada."
+				"   With this, you can finally craft Graphite Electrodes, feed the Arc Furnace… and continue not understanding a single thing."
 				""
-				"&7&o— Há quem diga que o papel absorve o calor do conhecimento. Mas talvez fosse só burrice mesmo&r"
+				"&7&o— Some say paper absorbs the heat of knowledge. Maybe it was just stupidity&r"
 			]
 			id: "421C0ACCE46F9463"
 			tasks: [{
@@ -1089,7 +1073,7 @@
 				}
 				type: "item"
 			}]
-			title: "Papel Queimado"
+			title: "Burnt Paper"
 			x: -4.0d
 			y: 2.5d
 		}
@@ -1099,13 +1083,13 @@
 				"421C0ACCE46F9463"
 			]
 			description: [
-				"   Quatro lingotes. Uma prensa. Um resultado inevitável."
+				"   Four ingots. One press. An inevitable result."
 				""
-				"   O Graphite Electrode é o pilar da Arc Furnace. Consumível. Essencial. Enorme. Ele gira com eletricidade suficiente para evaporar seu bom senso, e quando acaba… você sente."
+				"   The Graphite Electrode is the Arc Furnace’s pillar. Consumable. Essential. Enormous. It spins with enough electricity to evaporate your common sense, and when it’s gone… you feel it."
 				""
-				"   Não há como fingir que isso é só um item técnico. É um monumento."
+				"   You can’t pretend this is just a technical item. It’s a monument."
 				""
-				"&7&o— Uma vara de carbono que decide se a indústria vive ou não&r"
+				"&7&o— A carbon rod that decides whether industry lives or not&r"
 			]
 			id: "2F9EA9B259B79847"
 			tasks: [{
@@ -1120,28 +1104,28 @@
 				}
 				type: "item"
 			}]
-			title: "Tridente de Carbono"
+			title: "Carbon Trident"
 			x: -3.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["6C3E18C9058CBAB4"]
 			description: [
-				"   Nem todo avanço tecnológico precisa ser sutil. Alguns simplesmente precisam ser grandes. Barulhentos. Ameaçadores. Como a &lExcavator&r."
+				"   Not every technological advance needs to be subtle. Some just need to be big. Loud. Threatening. Like the &lExcavator&r."
 				""
-				"   Você passou tempo demais construindo circuitos, otimizando engrenagens e tentando fingir elegância. Esqueça isso. Agora você vai erguer uma estrutura de mais de 50 blocos que gira ininterruptamente contra a crosta terrestre. Uma ode à força bruta. Um moinho para veios minerais."
+				"   You spent too long building circuits, optimizing gears, pretending elegance. Forget it. Now you’ll raise a structure of over 50 blocks that spins relentlessly against the earth’s crust. An ode to brute force. A windmill for ore veins."
 				""
-				"   Mas ela não é burra. Pelo contrário. Antes de ativá-la, você vai precisar aprender a procurar os veios corretos. E para isso existe a &c&oCore Sample Drill&r&r — uma máquina discreta, que escaneia chunks em busca de depósitos subterrâneos."
+				"   But it isn’t dumb. Quite the opposite. Before you turn it on, you’ll need to learn how to find the right veins. That’s what the &c&oCore Sample Drill&r&r is for — a discreet machine that scans chunks for underground deposits."
 				""
-				"   Basta colocá-la, alimentá-la com energia e esperar. Se o chunk contiver um minério detectável, ela deixará uma amostra. Se não deixar nada… você cavou poesia onde não havia minério. Acontece."
+				"   Just place it, feed it power, and wait. If the chunk contains a detectable ore, it leaves a sample. If it leaves nothing… you dug poetry where there was no ore. It happens."
 				""
-				"   Depois, erga a Excavator no chunk correto. Forneça energia em abundância. Ligue o sistema de transporte. E contemple o colosso girando. Perfurando. Devastando."
+				"   Then, raise the Excavator in the correct chunk. Supply abundant power. Hook up transport. And behold the colossus spinning. Boring. Devastating."
 				""
-				"   Sim. Você criou isso. E sim… você vai precisar de duas por chunk, eventualmente."
+				"   Yes. You made this. And yes… you’ll eventually need two per chunk."
 				""
-				"&7&o— Quando a sofisticação falha, erga um braço de escavação giratório de 15 toneladas&r"
+				"&7&o— When sophistication fails, raise a 15-ton rotating digging arm&r"
 				""
-				"&4&o⚠ Evite construir essa máquina exatamente na divisa de chunks. Instabilidade estrutural pode resultar em bugs, desaparecimento de componentes, ou pior — ciclos de repetição sem alma.&r&r"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:excavator"
 			id: "04BA3BE1F94722AE"
@@ -1151,22 +1135,22 @@
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "Monstro de Ferro, Coração de Óleo"
+			title: "Iron Monster, Oil Heart"
 			x: -9.178571428571438d
 			y: 7.982142857142868d
 		}
 		{
 			dependencies: ["254D3ED5237C2967"]
 			description: [
-				"   Redstone em fio já não serve. Fios de cobre também não. O que vem agora exige mais."
+				"   Redstone wire won’t do. Copper wires won’t either. What comes now demands more."
 				""
-				"   Estes não são apenas circuitos — são encapsulados. Blindados. Construídos sobre placas de Duroplast, selados contra interferência, preparados para frequências que fariam um resistor tradicional evaporar. São chips que parecem estar prontos para pilotar naves, abrir portais ou resistir ao colapso do sistema que os criou."
+				"   These aren’t just circuits — they’re encapsulated. Shielded. Built on Duroplast plates, sealed against interference, ready for frequencies that would make a traditional resistor evaporate. Chips that look ready to pilot ships, open portals, or withstand the collapse of the system that made them."
 				""
-				"   Você não entende exatamente como eles funcionam. Mas vai usá-los mesmo assim."
+				"   You don’t exactly understand how they work. You’ll use them anyway."
 				""
-				"   É o que todo mundo faz."
+				"   That’s what everyone does."
 				""
-				"&7&o— Quando o metal não aguenta mais, o sintético assume&r"
+				"&7&o— When metal can’t take it anymore, the synthetic takes over&r"
 			]
 			id: "5B4C68B983FBA537"
 			tasks: [
@@ -1181,24 +1165,24 @@
 					type: "item"
 				}
 			]
-			title: "Circuitos para Suportar a Tempestade"
+			title: "Circuits to Weather the Storm"
 			x: -6.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["617989B418D326B0"]
 			description: [
-				"   Não há magia nisso. Não há poesia. Há apenas poder."
+				"   There’s no magic here. No poetry. Only power."
 				""
-				"   O &b&lInductive Alloy&r&r é o resultado de empurrar metais até seus limites — e além. É o que acontece quando você força aço a aceitar pulsos de energia compactada, quando mistura um condutor avançado com traços de memória cristalina e pigmentos que ardem como o sol."
+				"   &b&lInductive Alloy&r&r is what happens when you push metals to their limits — and beyond. When you force steel to accept pulses of compacted energy, when you mix an advanced conductor with traces of crystalline memory and pigments that burn like the sun."
 				""
-				"   O resultado é denso. Vibrante. Quase volátil."
+				"   The result is dense. Vibrant. Almost volatile."
 				""
-				"   Essa liga não quer existir. Ela só continua coesa porque a estrutura molecular ainda não percebeu o absurdo que está abrigando. Você não criou um material: você acendeu um metal."
+				"   This alloy doesn’t want to exist. It only stays cohesive because the molecular structure hasn’t yet realized the absurdity it’s housing. You didn’t create a material: you lit a metal."
 				""
-				"   Prepare-se. Este é o último passo antes das máquinas pararem de obedecer comandos simples — e começarem a gritar por mais."
+				"   Brace yourself. This is the last step before machines stop obeying simple commands — and start screaming for more."
 				""
-				"&7&o— Onde termina a metalurgia, começa o fluxo&r"
+				"&7&o— Where metallurgy ends, flow begins&r"
 			]
 			id: "13939C95C3168861"
 			tasks: [{
@@ -1206,7 +1190,7 @@
 				item: "kubejs:inductive_alloy"
 				type: "item"
 			}]
-			title: "Liga que resiste ao futuro"
+			title: "Alloy That Resists the Future"
 			x: -5.5d
 			y: 9.0d
 		}
@@ -1216,21 +1200,21 @@
 				"13939C95C3168861"
 			]
 			description: [
-				"   Você já moldou aço bruto com carvão e paciência. Já viu ligas se tornarem mais difíceis de compreender do que de forjar. Já derreteu metais que se recusavam a obedecer, apenas para que, sob pressão, se curvassem ao seu projeto."
+				"   You’ve already shaped raw steel with coal and patience. Watched alloys become harder to understand than to forge. Melted metals that refused to obey, only to see them bow under pressure to your design."
 				""
-				"   Você passou por cada etapa — do calor à estrutura, da madeira tratada à condução de energia, da engrenagem ao circuito encapsulado."
+				"   You’ve moved through every stage — from heat to structure, from treated wood to power conduction, from gear to encapsulated circuit."
 				""
-				"   E agora está aqui."
+				"   And now you’re here."
 				""
-				"   O &9&lPrecision Matrix Core&r&r não é só mais um passo. É um ritual encerrado em um cubo. Uma fusão definitiva entre o esforço humano e a lógica impessoal que vem adiante. É a peça final que resume tudo o que foi aprendido até agora — e, ao mesmo tempo, o que será descartado em breve."
+				"   The &9&lPrecision Matrix Core&r&r isn’t just another step. It’s a ritual sealed into a cube. A definitive fusion between human effort and the impersonal logic that follows. It’s the final piece that sums up everything learned so far — and, at the same time, what will soon be discarded."
 				""
-				"   Feito com Duroplast, aquela folha sintética que parece sempre estar tentando escapar das suas mãos. Alimentado por ligas que só existem porque você ignorou o bom senso. Costurado com fragmentos de quartzo e impulsos vermelhos que quase lembram sangue... se sangue funcionasse em 60hz."
+				"   Made with Duroplast — that synthetic sheet that always seems to try to slip from your hands. Fed by alloys that only exist because you ignored common sense. Stitched with shards of quartz and red impulses that almost resemble blood… if blood ran at 60 Hz."
 				""
-				"   Este núcleo não brilha. Ele vibra. Ele espera. Ele está à altura das máquinas que virão."
+				"   This core doesn’t shine. It hums. It waits. It’s worthy of the machines to come."
 				""
-				"   E o mais curioso: depois de tudo isso, você vai usá-lo apenas como um ingrediente."
+				"   And the curious part: after all that, you’ll use it only as an ingredient."
 				""
-				"&7&o— E pensar que você construiu tudo isso só para colocar dentro de uma caixa&r"
+				"&7&o— Funny to think you built all this just to put it inside a box&r"
 			]
 			id: "376E59D9ADCD986B"
 			size: 2.0d
@@ -1239,50 +1223,67 @@
 				item: "kubejs:precision_matrix_core"
 				type: "item"
 			}]
-			title: "&d&l&o O Coração do Que Vem Depois"
+			title: "&d&l&o The Heart of What Comes After"
 			x: -6.0d
 			y: 11.0d
 		}
 		{
-			id: "0EA34113E022A3EE"
+			id: "4EE27046FC8F628E"
 			tasks: [{
-				id: "3170CD686EEAC1AD"
-				item: "silentgear:crimson_steel_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.5d
-		}
-		{
-			id: "7BBAC80378A7809C"
-			tasks: [{
-				id: "031104FE03558668"
-				item: "silentgear:blaze_gold_ingot"
+				id: "111D817D7B8D8BB5"
+				item: "vital_herbs:tox_kiss"
 				type: "item"
 			}]
 			x: -2.0d
+			y: -1.5d
+		}
+		{
+			id: "4618E30363D2830E"
+			tasks: [{
+				id: "4DA666D50CC09070"
+				item: "naturesaura:token_fear"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			id: "5E453D385E923E39"
+			tasks: [{
+				id: "375D99A2C19D8871"
+				item: "naturesaura:token_anger"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			id: "119A0B087885F107"
+			tasks: [{
+				id: "6A119C112A747BD2"
+				item: "vital_herbs:snap_pepper"
+				type: "item"
+			}]
+			x: -3.5d
 			y: -2.5d
 		}
 		{
-			id: "12EF3E1654854D85"
+			dependencies: ["004F5E63A1C4B294"]
+			id: "546FFC0AEC8B630F"
 			tasks: [{
-				id: "14B0558AE59D0D52"
-				item: "silentgear:material_grader"
+				id: "26B5ADE310BD7083"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:nether"
+					}
+				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.5d
-		}
-		{
-			id: "17AB9CC6DECC074B"
-			tasks: [{
-				id: "585029128D50260D"
-				item: "silentgear:metal_alloyer"
-				type: "item"
-			}]
-			x: -0.5d
+			x: -3.0d
 			y: -1.5d
 		}
 	]
-	title: "&82.&8 &7P&7a&7r&7a&8f&8u&8s&8o&8s &7e &8C&8o&8n&7v&7i&7c&7ç&8õ&8e&8s"
+	title: "&82.&8 &7S&7c&7r&7e&8w&8s &7a&7n&7d &8C&8o&8n&7v&7i&7c&7t&8i&8o&8n&8s"
 }

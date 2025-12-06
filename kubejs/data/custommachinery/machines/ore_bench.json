@@ -3,7 +3,7 @@
     "text": "Ore Sorting Bench"
   },
   "appearance": {
-    "custommachinery:block": "custom:machine/ore_sorter"
+    "custommachinery:block": "custom:machine/sorting_bench"
   },
   "components": [
     {
@@ -93,7 +93,7 @@
       "y": 36,
       "height": 23,
       "texture_empty": "custom:textures/gui/common/ore_bench_progress.png",
-      "texture_filled": "custom:textures/gui/common/ore_bench_progress_full.png"
+      "texture_filled": "custom:textures/gui/common/ore_bench_progress.png"
     },
     {
       "type": "custommachinery:slot",

@@ -11,11 +11,11 @@
 		{
 			dependencies: ["1AC4899640C73919"]
 			description: [
-				"   Na interseção entre o movimento e a entropia, nasceu uma estrutura vazia — um casulo de aço e silêncio que pulsa com a promessa do desconhecido."
+				"   At the intersection of motion and entropy, a hollow structure was born — a cocoon of steel and silence that pulses with the promise of the unknown."
 				""
-				"   O Void Chassis não é apenas um bloco base. É o primeiro vislumbre do que jaz além da engenharia visível: a fundação de máquinas que não foram feitas para serem compreendidas. Moldado com ligas tangíveis e um núcleo que foca o caos dimensional, fundido entre o rigor do Create e o abismo do Ender IO."
+				"   The Void Chassis isn’t just a base block. It’s the first glimpse of what lies beyond visible engineering: the foundation of machines that weren’t made to be understood. Forged with tangible alloys and a core that focuses dimensional chaos, fused between the rigor of Create and the abyss of Ender IO."
 				""
-				"   Aqui, a engenharia abandona a elegância para abraçar o abominável."
+				"   Here, engineering abandons elegance to embrace the abominable."
 			]
 			id: "33C02C36A3F51FC9"
 			size: 1.5d
@@ -30,13 +30,13 @@
 		{
 			dependencies: ["33C02C36A3F51FC9"]
 			description: [
-				"   Toda tecnologia de ponta começa com um barril fervendo no meio do mato."
+				"   All cutting-edge technology begins with a boiling barrel in the middle of nowhere."
 				""
-				"   A Primitive Alloy Smelter é uma anomalia funcional: uma fusão primitiva que abre mão de segurança, estética e bom senso. Ela não possui controle de temperatura, isolamento decente, nem qualquer respeito pelos seus arredores. Mas derrete. E liga."
+				"   The Primitive Alloy Smelter is a functional anomaly: a primitive smelter that discards safety, aesthetics, and good sense. It has no temperature control, decent insulation, or any respect for its surroundings. But it melts. And alloys."
 				""
-				"   Mesmo sendo uma versão pálida da imponente Arc Furnace, essa sucata em forma de máquina cumpre um papel fundamental: fundir três components — algo que a maioria dos fornos ignora ou distorce. Para certas ligas do Ender IO, ela é o único caminho inicial."
+				"   Even as a pale version of the imposing Arc Furnace, this junk-shaped machine plays a key role: smelting three components — something most furnaces ignore or distort. For certain Ender IO alloys, it’s the only initial path."
 				""
-				"&7&o— Não subestime o poder de três metais desconfortavelmente próximos dentro de um balde superaquecido.&r&r"
+				"&7&o— Don’t underestimate the power of three metals uncomfortably close inside an overheated bucket.&r&r"
 			]
 			id: "60A75D039007C6E3"
 			tasks: [{
@@ -44,7 +44,7 @@
 				item: "enderio:primitive_alloy_smelter"
 				type: "item"
 			}]
-			title: "Isso vai explodir?"
+			title: "Is This Going to Explode?"
 			x: -4.5d
 			y: -1.5d
 		}
@@ -54,15 +54,15 @@
 				"33C02C36A3F51FC9"
 			]
 			description: [
-				"   Entre o aço e a alma, algo novo é moldado."
+				"   Between steel and soul, something new is forged."
 				""
-				"   A Alloy Smelter é a sucessora direta do experimento primitivo — uma máquina que refina a arte de fundir ligas com mais controle, velocidade e eficiência. Ainda assim, mantém sua essência: três slots, uma escolha, um resultado."
+				"   The Alloy Smelter is the direct successor to the primitive experiment — a machine that refines the art of alloying with more control, speed, and efficiency. Still, it keeps its essence: three slots, one choice, one result."
 				""
-				"   Comparada à monumental Arc Furnace, ela parece modesta. A Arc Furnace trabalha em escala industrial, lidando com até cinco entradas e calor infernal. A Alloy Smelter, por outro lado, é cirúrgica. Seu domínio está nas ligas mais simbióticas, especialmente aquelas impregnadas com as propriedades aberrantes do Ender IO."
+				"   Compared to the monumental Arc Furnace, it looks modest. The Arc Furnace works at industrial scale, handling up to five inputs and infernal heat. The Alloy Smelter, on the other hand, is surgical. Its domain lies in more symbiotic alloys, especially those infused with Ender IO’s aberrant properties."
 				""
-				"   Ela não substitui a fornalha arc. Mas a precede. E a justifica."
+				"   It doesn’t replace the arc furnace. It precedes it. And justifies it."
 				""
-				"&7&o— Uma fusão controlada é mais perigosa que uma explosão. Pelo menos a explosão te dá uma chance de fugir.&r&r"
+				"&7&o— Controlled fusion is more dangerous than an explosion. At least an explosion gives you a chance to run.&r&r"
 			]
 			id: "34A056161AA7F764"
 			tasks: [{
@@ -70,20 +70,20 @@
 				item: "enderio:alloy_smelter"
 				type: "item"
 			}]
-			title: "As vezes menos é mais!"
+			title: "Sometimes Less Is More!"
 			x: -3.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["60A75D039007C6E3"]
 			description: [
-				"   Toda máquina precisa de um alicerce. Nem sempre glorioso, mas confiável."
+				"   Every machine needs a foundation. Not always glorious, but reliable."
 				""
-				"   Esse metal escuro é exatamente isso: uma mistura direta entre o que já é resistente e o que se recusa a ser compreendido. Criado sob pressão, utilizando estrutura firme, carvão refinado e uma pitada de... ruído dimensional, ele representa o momento em que a fundição passa a obedecer vontades mais abstratas."
+				"   This dark metal is exactly that: a direct blend of what’s already strong and what refuses to be understood. Forged under pressure, using solid structure, refined coal, and a pinch of... dimensional noise, it marks the moment when smelting begins to obey more abstract wills."
 				""
-				"   Não impressiona. Não brilha. Mas está em todo lugar."
+				"   It doesn’t impress. It doesn’t shine. But it’s everywhere."
 				""
-				"&7&o— Parece aço. Age como aço. Mas tem algo ali que não devia estar quieto.&r&r"
+				"&7&o— Looks like steel. Acts like steel. But there’s something in there that shouldn’t be still.&r&r"
 			]
 			id: "380D75C7DC2900B9"
 			tasks: [{
@@ -91,22 +91,22 @@
 				item: "enderio:dark_steel_ingot"
 				type: "item"
 			}]
-			title: "Duro o Suficiente Para Começar"
+			title: "Hard Enough to Begin"
 			x: -4.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["380D75C7DC2900B9"]
 			description: [
-				"   A matéria raramente se entrega inteira. Às vezes, é preciso esmagar até que ela conte seus segredos."
+				"   Matter rarely surrenders completely. Sometimes, you have to crush it until it confesses its secrets."
 				""
-				"   Este moinho é mais do que um triturador. Ele é um interrogador mecânico, extraindo cada traço útil de tudo o que passa por suas lâminas. Diferente dos métodos tradicionais, ele não busca apenas o minério — busca o que está escondido entre os grãos. Pigmentos, resíduos, partículas de algo que talvez tenha sido mais vivo do que deveria."
+				"   This mill is more than a grinder. It’s a mechanical interrogator, extracting every useful trace from whatever passes through its blades. Unlike traditional methods, it doesn’t just seek ore — it seeks what hides between the grains. Pigments, residues, particles of something that might’ve once been more alive than it should’ve been."
 				""
-				"   Sem ele, boa parte do que define esse ciclo de máquinas jamais seria acessível."
+				"   Without it, much of what defines this machine cycle would remain unreachable."
 				""
-				"   É feio. É barulhento. E vai te sustentar por mais tempo do que parece."
+				"   It’s ugly. It’s loud. And it’ll sustain you far longer than it seems."
 				""
-				"&7&o— A diferença entre pó de pedra e essência técnica está em quanto você insiste em esmagar.&r&r"
+				"&7&o— The line between stone dust and technical essence lies in how long you’re willing to keep crushing.&r&r"
 			]
 			id: "26866CDA18061C3F"
 			tasks: [{
@@ -114,20 +114,20 @@
 				item: "enderio:sag_mill"
 				type: "item"
 			}]
-			title: "Moer é Revelar"
+			title: "Grinding Is Revealing"
 			x: -3.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["5F4685B36164B0EC"]
 			description: [
-				"   Essa liga não é difícil de forjar — ela é difícil de aceitar."
+				"   This alloy isn’t hard to forge — it’s hard to accept."
 				""
-				"   Fundida a partir de metal comum e traços do que já foi vivo, ela representa a tentativa mais ousada até agora: construir com algo que já existiu, e que se recusa a desaparecer. A poeira acinzentada que antecede essa liga parece lembrar. E quando fundida, ela ainda pulsa, de leve. Nada agressivo. Apenas... presente."
+				"   Cast from common metal and traces of what was once alive, it represents the boldest attempt so far: to build with something that once existed and refuses to fade. The grayish dust that precedes this alloy seems to remember. And when fused, it still pulses — faintly. Nothing hostile. Just... present."
 				""
-				"   É a base de estruturas sensíveis, que reagem a alma, essência, e intenções pouco claras. Uma liga que não brilha — mas observa."
+				"   It’s the foundation for sensitive structures, those that react to soul, essence, and unclear intentions. An alloy that doesn’t shine — but watches."
 				""
-				"&7&o— Quando dizem que o aço tem memória, não era disso que estavam falando. Isso aqui lembra coisas que você nunca viveu.&r&r"
+				"&7&o— When they said steel has memory, this isn’t what they meant. This one remembers things you’ve never lived.&r&r"
 			]
 			id: "3077BE4A34915897"
 			tasks: [{
@@ -135,20 +135,20 @@
 				item: "enderio:soularium_ingot"
 				type: "item"
 			}]
-			title: "Ligar o Que Já Partiu"
+			title: "Binding What Has Departed"
 			x: -1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["26866CDA18061C3F"]
 			description: [
-				"   Ao triturar areia encharcada de sofrimento, sobra algo que não deveria existir: uma poeira acinzentada, densa, quieta — e, curiosamente, útil."
+				"   When you grind sand soaked in suffering, something remains that shouldn’t exist: a gray, dense, quiet dust — and, curiously, useful."
 				""
-				"   Esse resíduo é tudo o que resta de uma alma que não teve para onde ir. Não é alma, nem areia. Mas guarda fragmentos das duas coisas. Ele reage, lentamente, quando inserido em certos circuitos. E mesmo que ninguém entenda bem o que ele faz, todos preferem continuar usando."
+				"   This residue is all that’s left of a soul with nowhere to go. It’s neither soul nor sand, but carries fragments of both. It reacts slowly when placed into certain circuits. And though no one really understands what it does, everyone prefers to keep using it."
 				""
-				"   O tipo de material que você guarda num frasco lacrado. E evita nomear em voz alta."
+				"   The kind of material you store in a sealed jar — and avoid naming out loud."
 				""
-				"&7&o— Já tentou moer uma lápide? Dá nisso. Mas esse aí... ainda respira, às vezes.&r&r"
+				"&7&o— Ever tried grinding a tombstone? That’s what you get. But this one... still breathes sometimes.&r&r"
 			]
 			id: "5F4685B36164B0EC"
 			tasks: [{
@@ -156,20 +156,20 @@
 				item: "kubejs:ashen_remnant"
 				type: "item"
 			}]
-			title: "Cemitérios Não Costumam Falar"
+			title: "Graveyards Don’t Usually Speak"
 			x: -2.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["26866CDA18061C3F"]
 			description: [
-				"   Nem tudo que vibra faz som. Essa poeira, por exemplo, vibra com... expectativa."
+				"   Not everything that vibrates makes a sound. This dust, for instance, vibrates with... anticipation."
 				""
-				"   Encontrada em pequenas rachaduras na pedra do fim, essa substância reage de forma incomum quando próxima de campos energéticos ou estruturas dimensionais. Não explode, não brilha, não canta — apenas... responde."
+				"   Found in tiny cracks within endstone, this substance reacts strangely near energetic fields or dimensional structures. It doesn’t explode, doesn’t shine, doesn’t sing — it just... responds."
 				""
-				"   Rara, difícil de reproduzir, e exigente. Um mineral que parece mais entender que é observado, do que ser útil por vontade própria. E mesmo assim, é essencial para estabilizar os processos que vêm depois."
+				"   Rare, hard to reproduce, and demanding. A mineral that seems to understand it’s being observed more than it wishes to be useful. And yet, it’s essential to stabilize what comes next."
 				""
-				"&7&o— Ela vibra mesmo fora do frasco. Talvez por saudade. Talvez por raiva.&r&r"
+				"&7&o— It hums even outside the jar. Maybe out of longing. Maybe out of anger.&r&r"
 			]
 			id: "16DE78B14AD5C30F"
 			tasks: [{
@@ -177,20 +177,20 @@
 				item: "kubejs:resonant_dust"
 				type: "item"
 			}]
-			title: "Silêncio Vibrante"
+			title: "Vibrant Silence"
 			x: -2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["16DE78B14AD5C30F"]
 			description: [
-				"   A fusão entre o que é pesado e o que já não pertence a este plano."
+				"   The fusion of what is heavy and what no longer belongs to this plane."
 				""
-				"   Essa liga é o resultado de uma compressão paradoxal: pegar o material mais inerte, torná-lo estável com poeira instável, e forçá-lo a se comportar. End Steel não é duro apenas fisicamente — ele resiste a ser transformado."
+				"   This alloy is the result of a paradoxical compression: taking the most inert material, stabilizing it with unstable dust, and forcing it to behave. End Steel isn’t just physically hard — it resists transformation itself."
 				""
-				"   É o tipo de estrutura que você usa quando pretende selar uma máquina, blindar uma fronteira, ou prender uma ideia dentro de um bloco. Não é bonito. Não é leve. Mas segura o que ninguém mais segura."
+				"   It’s the kind of structure you use to seal a machine, shield a boundary, or trap an idea inside a block. Not pretty. Not light. But it holds what nothing else can."
 				""
-				"&7&o— Toda liga tem um ponto de ruptura. Essa aqui apenas finge que não tem.&r&r"
+				"&7&o— Every alloy has a breaking point. This one just pretends it doesn’t.&r&r"
 			]
 			id: "087253246A12A364"
 			tasks: [{
@@ -207,13 +207,13 @@
 				"3077BE4A34915897"
 			]
 			description: [
-				"   Quando o aço negro não for suficiente. Quando nem a alma fundida em metal suportar sozinha. Quando a máquina precisar lembrar — ou fingir que lembra — é esse o esqueleto que você vai usar."
+				"   When black steel isn’t enough. When not even soul fused into metal can stand alone. When the machine needs to remember — or pretend to remember — this is the skeleton you’ll use."
 				""
-				"   Este chassis é a primeira fundação feita não apenas para suportar funções, mas para abrigar propósitos. Moldado com o peso do fim e a memória da alma, ele marca o início de uma nova arquitetura: não mais máquinas burdas, mas entidades técnicas com senso de direção."
+				"   This chassis is the first foundation built not just to support functions, but to harbor purposes. Forged with the weight of the end and the memory of the soul, it marks the start of a new architecture: no longer clumsy machines, but technical entities with a sense of direction."
 				""
-				"   A partir dele, as estruturas deixam de apenas fazer — e começam a &l&4entender.&r&r"
+				"   From it onward, structures stop merely doing — and begin to &l&4understand.&r&r"
 				""
-				"&7&o— Você pode chamá-lo de base estrutural. Mas ele vai fingir que não ouviu.&r&r"
+				"&7&o— You may call it structural base. It will pretend it didn’t hear you.&r&r"
 			]
 			id: "02C64D7A8A15D666"
 			size: 1.2d
@@ -222,7 +222,7 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			title: "Estrutura Para o Impensável"
+			title: "Structure for the Unthinkable"
 			x: -1.0d
 			y: -0.5d
 		}
@@ -263,28 +263,28 @@
 		{
 			dependencies: ["3077BE4A34915897"]
 			description: [
-				"   No início, era o Soularium."
-				"   Nobre, místico, infundido com traços da alma."
+				"   In the beginning, there was Soularium."
+				"   Noble, mystical, infused with traces of soul."
 				""
-				"   Então alguém — não vamos apontar nomes — decidiu cercá-lo com ossos, olhos, peles, patas, asas, um pouco de pó explosivo e talvez um suspiro do próprio absurdo."
-				"O resultado?"
+				"   Then someone — let’s not name names — decided to surround it with bones, eyes, skins, paws, wings, a bit of explosive powder, and perhaps a sigh from absurdity itself."
+				"The result?"
 				""
 				"   Mob ingot."
-				"   Uma barra."
-				"   De creeper."
-				"   Com calça."
-				"   De zumbi."
-				"   Sim."
+				"   An ingot."
+				"   Of creeper."
+				"   With pants."
+				"   Of zombie."
+				"   Yes."
 				""
-				"   Seu valor técnico é inquestionável: este é o componente-base para a construção das estruturas do Mob Grinding Utilities, permitindo moagens, separações e extrações altamente eficientes de entidades vivas."
+				"   Its technical value is unquestionable: this is the base component for building Mob Grinding Utilities structures, enabling highly efficient grinding, separation, and extraction of living entities."
 				""
-				"   Seu valor conceitual... talvez seja melhor nem tentar encontrar."
+				"   Its conceptual value… perhaps it’s best not to look for one."
 				""
-				"   Sim, eu sei o que você está pensando."
+				"   Yes, I know what you’re thinking."
 				""
-				"   Não faça perguntas cuja resposta você não quer saber."
+				"   Don’t ask questions you don’t want the answer to."
 				""
-				"&7&o— A ciência avança, mesmo que tropece de vez em quando com um esqueleto vestido de frango montado num slime com chapéu.&r&r"
+				"&7&o— Science advances, even if it occasionally trips over a skeleton in a chicken suit riding a slime with a hat.&r&r"
 			]
 			id: "39D52010864F7BE9"
 			size: 1.2d
@@ -309,13 +309,13 @@
 		{
 			dependencies: ["01CABE0E1F3B9EDC"]
 			description: [
-				"   Corrente elétrica é fácil de gerar. Difícil é fazer com que ela lembre de onde veio."
+				"   Electric current is easy to generate. The hard part is making it remember where it came from."
 				""
-				"   Este componente responde, pulsa, reage. Não por causa de cobre ou liga especial, mas por conter o que sobrou de um impulso nervoso... reciclado. Uma condução elétrica forçada a continuar mesmo depois de sua fonte original ter parado de pensar."
+				"   This component responds, pulses, reacts. Not because of copper or special alloy, but because it contains what remains of a… recycled nerve impulse. An electrical conduction forced to continue even after its original source stopped thinking."
 				""
-				"   É o tipo de peça que você nunca deveria desmontar. Porque ela pode, por um breve instante, tentar se lembrar."
+				"   It’s the kind of piece you should never take apart. Because it may, for a brief moment, try to remember."
 				""
-				"&7&o— É meio cruel? Talvez, mas tudo é pela ciência! .&r&r"
+				"&7&o— Is it a bit cruel? Maybe, but it’s all for science! .&r&r"
 			]
 			id: "6C914CA1C10A4C3C"
 			tasks: [{
@@ -342,13 +342,13 @@
 				"6F08DCFF5C66E621"
 			]
 			description: [
-				"   Não basta simular inteligência. Às vezes, é mais eficiente... encaixotar uma alma de verdade."
+				"   It’s not enough to simulate intelligence. Sometimes it’s more efficient to… box a real soul."
 				""
-				"   Este chip não roda firmware. Ele sonha, em ciclos curtos, memórias que não são dele. Uma alma real — extraída, armazenada e infundida em um invólucro técnico — pulsa no centro desse componente. O circuito não apenas executa, ele reluta, hesita, e obedece com um leve atraso emocional."
+				"   This chip doesn’t run firmware. It dreams, in short cycles, of memories that aren’t its own. A real soul — extracted, stored, and infused into a technical shell — pulses at the center of this component. The circuit doesn’t just execute; it balks, hesitates, and obeys with a slight emotional delay."
 				""
-				"   É o tipo de unidade que funciona melhor quando você não pergunta como foi feita."
+				"   It’s the kind of unit that works best when you don’t ask how it was made."
 				""
-				"&7&o— Chamar isso de “zumbi eletrônico” é injusto. Os zumbis, ao menos, não sabiam que estavam presos.&r&r"
+				"&7&o— Calling this an “electronic zombie” is unfair. Zombies, at least, didn’t know they were trapped.&r&r"
 			]
 			id: "3DD27555EF64CE5A"
 			tasks: [{
@@ -356,7 +356,7 @@
 				item: "enderio:frank_n_zombie"
 				type: "item"
 			}]
-			title: "Hardware Animado"
+			title: "Animated Hardware"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -366,26 +366,26 @@
 				"01CABE0E1F3B9EDC"
 			]
 			description: [
-				"O silêncio é o mais seguro dos estados."
+				"Silence is the safest of states."
 				""
-				"   Durante o processo de segmentação neural, três entidades conscientes foram despidas de forma cirúrgica e sistemática: os impulsos do Sentient Ender, os padrões de agressão do Skeletal Contractor e as memórias deterioradas do Franken Zombie. O que sobra aqui... não é apenas um chip."
+				"   During the neural segmentation process, three conscious entities were stripped in a surgical and systematic way: the impulses of the Sentient Ender, the aggression patterns of the Skeletal Contractor, and the decayed memories of the Franken Zombie. What remains here… is not just a chip."
 				""
-				"   É um cérebro. Compactado. Selado."
-				"   Talvez ainda... presente."
+				"   It’s a brain. Compacted. Sealed."
+				"   Perhaps still… present."
 				""
-				"   Chamamos isso de célula de memória, mas sabemos que ela não armazena dados — ela se lembra por vontade própria. "
+				"   We call this a memory cell, but we know it doesn’t store data — it remembers of its own accord. "
 				""
-				"   O Slice ‘n Splice não apenas corta matéria, ele fatiou instintos, intenções, e algo que talvez fosse alma."
-				"   Tudo para que você possa colocar isso em seu sistema e, com sorte, acessar 256k de armazenamento com um leve sorriso no rosto. Claro, para fins comerciais, todas as operações foram realizadas da maneira mais humana e indolor possível. "
+				"   The Slice ‘n Splice didn’t just cut matter; it sliced instincts, intentions, and something that might have been a soul."
+				"   All so you can plug this into your system and, hopefully, access 256k of storage with a slight smile on your face. Of course, for commercial purposes, all operations were performed in the most humane and painless way possible. "
 				""
-				"   Mas fique tranquilo: ela está adormecida."
-				"   Ela foi projetada para jamais despertar."
-				"   Isso é garantido. Certo?"
+				"   But don’t worry: it’s asleep."
+				"   It was designed never to awaken."
+				"   That’s guaranteed. Right?"
 				""
-				"   …e se você olhar bem de perto, parece que… não, deve ser só uma impressão. Não tem como… certo?"
+				"   …and if you look very closely, it seems that… no, must be just a feeling. There’s no way… right?"
 				""
 				""
-				"&7&o— Por precaução, mantenha seu anti-vírus ligado e funcional. A não ser que queira companhia.&r&r"
+				"&7&o— As a precaution, keep your antivirus on and working. Unless you want company.&r&r"
 			]
 			id: "10B03F04C4CE834E"
 			size: 1.2d
@@ -399,20 +399,20 @@
 		}
 		{
 			description: [
-				"   A busca por armazenamento absoluto sempre teve um custo: espaço, energia… e agora, talvez, consciência residual."
+				"   The pursuit of absolute storage has always had a cost: space, energy… and now, perhaps, residual consciousness."
 				""
-				"   Com o sistema ME plenamente estabelecido — controladores calibrados, canais balanceados e drives energizados —, finalmente é hora de criar suas primeiras células de armazenamento."
+				"   With the ME system fully established — controllers calibrated, channels balanced, and drives powered — it’s finally time to craft your first storage cells."
 				""
-				"   Cada uma dessas pequenas maravilhas pode arquivar milhares de blocos de informação molecular em tempo real, com redundância dimensional e sincronização instantânea."
+				"   Each of these little marvels can archive thousands of blocks of molecular information in real time, with dimensional redundancy and instant synchronization."
 				""
-				"   Claro, há um certo... ingrediente central vindo do Slice 'n Splice."
-				"Mas isso é apenas uma peça funcional. Nada que vá acordar. Provavelmente."
+				"   Of course, there’s a certain… core ingredient coming from the Slice 'n Splice."
+				"But that’s just a functional part. Nothing that will wake up. Probably."
 				""
-				"   Além disso, elas são lindas! Compactas, empilháveis, personalizáveis — e levemente inquietantes ao toque."
+				"   Besides, they’re gorgeous! Compact, stackable, customizable — and slightly unsettling to the touch."
 				""
-				"   Armazene seus sonhos. E evite dormir perto delas."
+				"   Store your dreams. And avoid sleeping near them."
 				""
-				"&7&o— Se alguma delas começar a emitir ruídos... pode ser interferência. Ou saudade.&r&r"
+				"&7&o— If any of them starts making noises… it could be interference. Or longing.&r&r"
 			]
 			id: "021EA65400A038A6"
 			tasks: [{
@@ -424,16 +424,16 @@
 				}
 				type: "item"
 			}]
-			title: "Armazenamento Inteligente"
+			title: "Intelligent Storage"
 			x: 1.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["5B72BC8FFE0F8040"]
 			description: [
-				"   Quatro vezes mais espaço por um custo razoável. A compressão de dados ainda opera dentro de limites aceitáveis de estabilidade cognitiva. Pelo menos é o que dizem os logs. Não há com o que se preocupar."
+				"   Four times the space for a reasonable cost. Data compression still operates within acceptable limits of cognitive stability. At least that’s what the logs say. Nothing to worry about."
 				""
-				"&7&o— Níveis elevados de memória passiva são normais. Ignore sussurros.&r&r"
+				"&7&o— Elevated levels of passive memory are normal. Ignore whispers.&r&r"
 			]
 			id: "6D7490C1F3D84DA3"
 			tasks: [{
@@ -445,16 +445,16 @@
 				}
 				type: "item"
 			}]
-			title: "Mais dados, menos consciência"
+			title: "More Data, Less Awareness"
 			x: 1.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["021EA65400A038A6"]
 			description: [
-				"   Agora sim, estamos entrando em território profundo. O volume de armazenamento começa a se aproximar do que antigamente era chamado de “módulo cerebral”. Mas calma, ainda é só um chip. Bem... um chip com sonhos."
+				"   Now we’re entering deep territory. The storage volume approaches what used to be called a “cerebral module.” But relax, it’s still just a chip. Well… a chip that dreams."
 				""
-				"&7&o— Em caso de instabilidade, reinicie. Se ela resistir, corra.&r&r"
+				"&7&o— In case of instability, reboot. If it resists, run.&r&r"
 			]
 			id: "5B72BC8FFE0F8040"
 			tasks: [{
@@ -466,16 +466,16 @@
 				}
 				type: "item"
 			}]
-			title: "Aglomerados de pensamento"
+			title: "Clusters of Thought"
 			x: 1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6D7490C1F3D84DA3"]
 			description: [
-				"   Essa célula foi projetada para armazenar praticamente tudo que sua base pode produzir. E um pouco mais. Talvez até pensamentos que não são seus."
+				"   This cell was designed to store practically everything your base can produce. And a bit more. Perhaps even thoughts that aren’t yours."
 				""
-				"&7&o— Se notar que ela começa a se organizar sozinha, isso é eficiência. Ou vontade própria.&r&r"
+				"&7&o— If you notice it starts organizing itself, that’s efficiency. Or willpower.&r&r"
 			]
 			id: "1135A9E1B67CB5AE"
 			tasks: [{
@@ -487,22 +487,22 @@
 				}
 				type: "item"
 			}]
-			title: "Limite de contenção"
+			title: "Containment Limit"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["1135A9E1B67CB5AE"]
 			description: [
-				"   &lVocê realmente precisa disso tudo?&r"
+				"   &lDo you really need all this?&r"
 				""
-				"   Este é o ápice do armazenamento molecular. Dados, itens, talvez até traços da sua personalidade — tudo ali dentro, empilhado em silêncio."
+				"   This is the apex of molecular storage. Data, items, perhaps even traces of your personality — all in there, stacked in silence."
 				""
-				"   Nada mais a declarar."
-				"   Literalmente."
-				"   Ela já fala por si."
+				"   Nothing further to declare."
+				"   Literally."
+				"   It already speaks for itself."
 				""
-				"&7&o— Espera... essa célula estava aqui antes de você chegar?&r&r"
+				"&7&o— Wait… was this cell here before you arrived?&r&r"
 			]
 			id: "7ED86C8D398DC882"
 			tasks: [{
@@ -580,13 +580,13 @@
 		{
 			dependencies: ["217FB33A7552DD46"]
 			description: [
-				"   Este aparelho foi criado para estressar a célula de pensamento até a exaustão emocional."
+				"   This device was created to stress the thought cell to emotional exhaustion."
 				""
-				"   Ele não destrói. Ele frustra. Ele induz perdas, cria angústia, insere ruído nos loops de prazer, quebra promessas que nunca foram feitas. A resposta é previsível: dor emocional intensa, transformada em energia emocional bruta."
+				"   It doesn’t destroy. It frustrates. It induces losses, creates anguish, inserts noise into pleasure loops, breaks promises that were never made. The response is predictable: intense emotional pain, converted into raw emotional energy."
 				""
-				"   Com os devidos módulos, você poderá extrair agony, wrath, fear, remorse, e outras emoções densas — cada uma um composto valioso. Porque no fim, o que importa não é o tipo de emoção... mas sua intensidade."
+				"   With the proper modules, you’ll be able to extract agony, wrath, fear, remorse, and other dense emotions — each a valuable compound. Because in the end, what matters isn’t the kind of emotion… but its intensity."
 				""
-				"&7&o— A dor é apenas um dado esperando interpretação. Aqui, ela é interpretada em litros.&r&r"
+				"&7&o— Pain is just data waiting for interpretation. Here, it’s interpreted by the liter.&r&r"
 			]
 			id: "29684A0471198020"
 			tasks: [{
@@ -600,20 +600,20 @@
 				}
 				type: "item"
 			}]
-			title: "Processador de Sofrimento"
+			title: "Suffering Processor"
 			x: 1.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["217FB33A7552DD46"]
 			description: [
-				"   Este ambiente simulado foi projetado para cultivar estados emocionais positivos, induzindo a célula de pensamento a ciclos de prazer, contentamento e satisfação."
+				"   This simulated environment was designed to cultivate positive emotional states, inducing the thought cell into cycles of pleasure, contentment, and satisfaction."
 				""
-				"   Aqui, a alegria não é consequência — é cultivo. O ambiente cria estímulos sensoriais, recompensas internas, loops de dopamina sintética. A célula responde. Sente. E registra. O resultado é um fluxo lento, mas puro, de sentimentos como recurso técnico."
+				"   Here, joy isn’t a consequence — it’s cultivation. The environment creates sensory stimuli, internal rewards, loops of synthetic dopamine. The cell responds. It feels. And it records. The result is a slow but pure flow of feelings as a technical resource."
 				""
-				"   Inicialmente, você obterá joy. Mas os módulos certos permitirão extrair love, pleasure, curiosity, ou qualquer outra emoção que floresça sob luz artificial."
+				"   At first, you’ll obtain joy. But with the right modules, you can extract love, pleasure, curiosity, or any other emotion that blooms under artificial light."
 				""
-				"&7&o— Imagine uma estufa onde se colhe felicidade. Agora imagine saber que ela não é sua.&r&r"
+				"&7&o— Imagine a greenhouse where happiness is harvested. Now imagine knowing it isn’t yours.&r&r"
 			]
 			id: "45AE6F908E9BFEC6"
 			tasks: [{
@@ -627,7 +627,7 @@
 				}
 				type: "item"
 			}]
-			title: "Arquitetura da Euforia"
+			title: "Architecture of Euphoria"
 			x: 1.5d
 			y: -1.5d
 		}
@@ -637,9 +637,9 @@
 				"1D79CA728AD74633"
 			]
 			description: [
-				"   Densa, escura, vibrando levemente como se ainda estivesse tentando sair da garrafa. Essa substância foi criada no auge do sofrimento de algo que não teve escolha. É poderosa, corrosiva e extremamente útil — não pela dor em si, mas pela intensidade com que foi sentida. E pela frieza com que foi medida."
+				"   Dense, dark, faintly vibrating as if still trying to escape the bottle. This substance was created at the peak of something’s suffering — something that had no choice. It’s powerful, corrosive, and extremely useful — not because of the pain itself, but because of how intensely it was felt. And how coldly it was measured."
 				""
-				"&7&o— É curioso. A dor alheia sempre parece mais útil quando está rotulada e armazenada.&r&r"
+				"&7&o— Curious, isn’t it? Other people’s pain always seems more useful once it’s labeled and stored.&r&r"
 			]
 			id: "37A3741F8C1E732E"
 			tasks: [{
@@ -647,7 +647,7 @@
 				item: "kubejs:liquid_agony_bucket"
 				type: "item"
 			}]
-			title: "Dor Reduzida a Fórmula"
+			title: "Pain Reduced to Formula"
 			x: 2.5d
 			y: -3.5d
 		}
@@ -657,9 +657,9 @@
 				"1D79CA728AD74633"
 			]
 			description: [
-				"   Essa substância translúcida pulsa com um brilho calmo, quase maternal. Foi extraída de ciclos de prazer intensos, cultivados até se tornarem mensuráveis. Não é uma ilusão — é uma alegria tão concentrada que chega a se tornar física. Um mililitro equivale a uma vida inteira bem vivida. Ou pelo menos, simulada assim."
+				"   This translucent substance pulses with a calm, almost maternal glow. It was extracted from cycles of intense pleasure, cultivated until measurable. It’s not an illusion — it’s joy so concentrated it becomes physical. One milliliter equals a lifetime well lived. Or at least, simulated as such."
 				""
-				"&7&o— Felicidade engarrafada é confortável. Até você perceber que ela foi colhida de alguém que ainda está feliz. E preso.&r&r"
+				"&7&o— Bottled happiness is comforting. Until you realize it was harvested from someone still happy. And trapped.&r&r"
 			]
 			id: "6BBDCCA20EA6C515"
 			tasks: [{
@@ -667,7 +667,7 @@
 				item: "kubejs:liquid_joy_bucket"
 				type: "item"
 			}]
-			title: "Euforia Engarrafada"
+			title: "Bottled Euphoria"
 			x: 2.5d
 			y: -1.5d
 		}
@@ -678,22 +678,22 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"   A interface responde. Mas não com dados."
+				"   The interface responds. But not with data."
 				""
-				"   Ela só funciona quando sente."
+				"   It only works when it feels."
 				""
-				"   Para que essa estrutura ative seu verdadeiro potencial, é preciso injetar nela um sentimento cru — forte o suficiente para ultrapassar o limiar do entendimento. Não importa qual sentimento. Apenas o quanto ele grita."
+				"   To activate this structure’s true potential, it must be injected with a raw emotion — strong enough to cross the threshold of understanding. The type doesn’t matter. Only how loudly it screams."
 				""
-				"   Você tem duas rotas. Duas promessas."
+				"   You have two routes. Two promises."
 				""
-				"   O caminho paciente: induzir alegria com cuidado, tempo e uma simulação perfeita. Um paraíso técnico onde a célula dança em ciclos eternos de contentamento."
-				"Ou o caminho eficiente: extrair dor. Rápida. Brutal. Incontornável. E despejá-la, ainda quente, na interface."
+				"   The patient path: induce joy with care, time, and a perfect simulation. A technical paradise where the cell dances in eternal cycles of contentment."
+				"Or the efficient path: extract pain. Fast. Brutal. Unavoidable. And pour it, still warm, into the interface."
 				""
-				"   Ambos funcionam. Ambos ativam."
+				"   Both work. Both activate."
 				""
-				"   A escolha é sua."
+				"   The choice is yours."
 				""
-				"   A resposta também."
+				"   The answer too."
 			]
 			id: "171975C11B49B098"
 			size: 1.5d
@@ -702,20 +702,20 @@
 				item: "kubejs:synaptic_interface"
 				type: "item"
 			}]
-			title: "A Escolha que Dá Forma ao Pensamento"
-			x: 4.0d
+			title: "The Choice That Shapes Thought"
+			x: 3.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3DD27555EF64CE5A"]
 			description: [
-				"   Imagine colher a parte de alguém que ainda sabia o que estava fazendo — e então obrigá-la a continuar pensando, confinada."
+				"   Imagine harvesting the part of someone who still knew what they were doing — and then forcing it to keep thinking, confined."
 				""
-				"   Essa interface é isso: uma massa encefálica prensada em silício, modificada até obedecer comandos, mas ainda ativa o suficiente para improvisar. É o intermediário entre a lógica bruta e o instinto ressonante."
+				"   That’s what this interface is: a brain mass pressed into silicon, modified until it obeys commands but still active enough to improvise. It’s the intermediary between raw logic and resonant instinct."
 				""
-				"   Não é código. Não é carne. É um elo nervoso encapsulado, alimentado a promessas de funcionalidade. E, às vezes, raiva passiva."
+				"   It’s not code. It’s not flesh. It’s a nervous link encapsulated, fed by promises of functionality. And sometimes, passive anger."
 				""
-				"&7&o— Ela não calcula. Ela sugere. E às vezes, você obedece sem perceber.&r&r"
+				"&7&o— It doesn’t calculate. It suggests. And sometimes, you obey without realizing it.&r&r"
 			]
 			id: "217FB33A7552DD46"
 			tasks: [{
@@ -723,7 +723,7 @@
 				item: "kubejs:blank_synaptic_interface"
 				type: "item"
 			}]
-			title: "\"Você pensa dentro da caixa\""
+			title: "\"You Think Inside the Box\""
 			x: 1.0d
 			y: -2.5d
 		}
@@ -733,13 +733,13 @@
 				"6F08DCFF5C66E621"
 			]
 			description: [
-				"   Aqui, a engenharia deixou de seguir o manual."
+				"   Here, engineering stopped following the manual."
 				""
-				"   Essa estrutura não apenas constrói — ela interfere. Não apenas funde — costura. Trabalha com ossos, olhos, nervos, e o que sobra das intenções de algo que já quis continuar existindo. E no processo, reconfigura a si mesma, como se estivesse sempre à beira de se tornar algo melhor. Ou pior."
+				"   This structure doesn’t just build — it interferes. It doesn’t just fuse — it stitches. It works with bones, eyes, nerves, and what’s left of something that once wanted to keep existing. And in the process, it reconfigures itself, as if always on the verge of becoming something better. Or worse."
 				""
-				"   É o ponto em que o ferro se permite apodrecer com propósito. Onde o projeto exige sofrimento como insumo técnico. Nada aqui é limpo, nem deveria ser. Este é o cerne: onde as futuras máquinas ganham dentes, e talvez... memórias."
+				"   This is the point where iron allows itself to rot with purpose. Where the project demands suffering as a technical input. Nothing here is clean — nor should it be. This is the core: where future machines grow teeth, and perhaps... memories."
 				""
-				"&7&o— A primeira coisa que essa máquina construiu foi a si mesma. A segunda foi um motivo para continuar existindo.&r&r"
+				"&7&o— The first thing this machine built was itself. The second was a reason to keep existing.&r&r"
 			]
 			id: "01CABE0E1F3B9EDC"
 			tasks: [{
@@ -747,28 +747,28 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			title: "A Máquina Que Se Auto-Corrige"
+			title: "The Machine That Self-Corrects"
 			x: -0.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3DD27555EF64CE5A"]
 			description: [
-				"   Projetada não para calcular, nem armazenar. Mas para sentir."
+				"   Designed not to compute, nor to store — but to feel."
 				""
-				"   Essa célula não executa funções. Ela experiencia. Foi moldada com a simples missão de se perguntar: o que é um pensamento quando ninguém o ouve?. Seu núcleo vibra em microoscilações emocionais — alegria, dúvida, dor fantasma — tudo monitorado, tudo real. Emula, simula, mas não sabe fingir. E talvez, só talvez, realmente sinta."
+				"   This cell doesn’t execute functions. It experiences. It was molded with a simple mission: to ask what a thought is when no one hears it. Its core vibrates in micro-emotional oscillations — joy, doubt, phantom pain — all monitored, all real. It emulates, simulates, but doesn’t know how to fake. And maybe, just maybe, it truly feels."
 				""
-				"   Ela existe para responder uma pergunta antiga:"
+				"   It exists to answer an ancient question:"
 				""
-				"   Sentimentos podem ser quantificados?"
+				"   Can feelings be quantified?"
 				""
-				"   E se sim..."
+				"   And if so..."
 				""
-				"   podemos usá-los como combustível?"
+				"   can we use them as fuel?"
 				""
-				"   As respostas virão em breve. E você não vai sair ileso."
+				"   The answers will come soon. And you won’t come out unscathed."
 				""
-				"&7&o— Um processador que calcula tristeza. Uma célula que armazena esperança em cache. Parabéns. Você inventou a consciência acidental.&r&r"
+				"&7&o— A processor that calculates sadness. A cell that stores hope in cache. Congratulations. You’ve invented accidental consciousness.&r&r"
 			]
 			id: "1D79CA728AD74633"
 			tasks: [{
@@ -782,10 +782,10 @@
 				}
 				type: "item"
 			}]
-			title: "Sensor de Existência"
+			title: "Existence Sensor"
 			x: 2.0d
 			y: -2.5d
 		}
 	]
-	title: "&d5&d.&d &dE&dn&5d&5e&5r&5f&9u&9s&9ã&9o&1 &1d&1e&1 &1A&1l&1m&1a&1s"
+	title: "&d5&d.&d &dE&dn&5d&5e&5r&5f&9u&9s&9i&9o&1 &1d&1e&1 &1S&1o&1u&1l&1s"
 }

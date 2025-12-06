@@ -82,8 +82,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			id: "61E548B72126BED4"
@@ -92,8 +92,8 @@
 				item: "kubejs:silicon_wafer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.0d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			id: "18D815D7C059C699"
@@ -102,8 +102,8 @@
 				item: "kubejs:pure_silicon"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 1.0d
+			y: -6.0d
 		}
 		{
 			id: "6035B402975AF909"
@@ -112,8 +112,8 @@
 				item: "kubejs:monosilicon"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			id: "5E298BAE074B1DA2"
@@ -122,8 +122,8 @@
 				item: "kubejs:nugget_chrome"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.5d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			id: "59F2C93F2377D5C2"
@@ -132,8 +132,8 @@
 				item: "kubejs:chrome_mask"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			id: "094228B531640373"
@@ -166,15 +166,95 @@
 			y: -2.0d
 		}
 		{
-			id: "0C176E2E42FFFAA4"
+			id: "62D5F49EDAA045B6"
 			tasks: [{
-				id: "7EA01DFA8EAF5E72"
-				item: "minecraft:dark_oak_log"
+				id: "4182F7C97EC27248"
+				item: "kubejs:matter_tech_card"
 				type: "item"
 			}]
 			x: 4.5d
 			y: -2.0d
 		}
+		{
+			id: "0E3F87810C01B081"
+			tasks: [{
+				id: "3ED64D91B1BEA7A3"
+				item: "extendedcrafting:crafting_core"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "19D63E20F99CB8F9"
+			tasks: [{
+				id: "1BF56347929C9891"
+				item: "extendedcrafting:basic_table"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "109103E452A45F23"
+			tasks: [{
+				id: "268155C7848E5713"
+				item: "extendedcrafting:advanced_table"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "6B8F550033373C3D"
+			tasks: [{
+				id: "04D842ECB8CEC519"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			id: "6A25BBC079EA7DED"
+			tasks: [{
+				id: "6542EA5742E2BDC5"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "40FB78DD79788362"
+			tasks: [{
+				id: "144563D90A3476D1"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "6FA57641674E6C61"
+			tasks: [{
+				id: "3FB0B9A054F3193C"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			id: "70CAB704FC1831BB"
+			tasks: [{
+				id: "226C9A9C3908A965"
+				item: "kubejs:matter_data"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
 	]
-	title: "11. Ideias Fissionáveis"
+	title: "11. Fissionable Ideas"
 }

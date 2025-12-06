@@ -63,13 +63,13 @@
 				"497584693F232C18"
 			]
 			description: [
-				"  Pare e pense: nunca se perguntou como quatro tábuas de madeira conseguem formar um altar que une até nove componentes em algo único? Essa mesa é seu primeiro altar, o coração de toda criação, e a piada cósmica mais mal contada do jogo."
+				"{ftbquests.chapter.psiu_me_leia.quest2.description1}"
 				""
-				"  Para construí-la, plante uma muda no centro do ritual. Posicione 4 tábuas nos stands ao redor e dance para ela (sim, agache repetidamente como um lunático). Quando crescer, a aura se encarregará de entregar sua primeira Crafting Table."
+				"{ftbquests.chapter.psiu_me_leia.quest2.description2}"
 				""
-				"  Depois disso, você poderá criar mais delas pelo novo grid 3x3 — sem repetir o ritual. "
+				"{ftbquests.chapter.psiu_me_leia.quest2.description3}"
 				""
-				"&7&o— Ah, sim. Uma árvore mágica, dança patética e pronto: o maior mistério da civilização resolvido.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest2.description4}"
 			]
 			id: "565979255D303596"
 			rewards: [{
@@ -79,23 +79,19 @@
 			}]
 			shape: "square"
 			size: 1.1d
-			subtitle: "Eis o ápice: a Crafting Table."
+			subtitle: "{ftbquests.chapter.psiu_me_leia.quest2.subtitle}"
 			tasks: [{
 				id: "724F9153947F879D"
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			title: "A mesa que nunca questionou"
+			title: "{ftbquests.chapter.psiu_me_leia.quest2.title}"
 			x: -7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["565979255D303596"]
 			description: [
-				"  Você não achou que a bancada transformaria tábuas e gravetos magicamente em ferramentas, não é? Antes de tudo, vai precisar ensinar a ela forma e propósito."
-				""
-				"  Para o próximo passo, arranque algumas folhas em branco do final desse livro, basta me colocar sozinho no seu grid de crafting. Não se preocupe, não vou ficar sentido. Só não abuse. "
-				""
 				"{ftbquests.chapter.psiu_me_leia.quest3.description1}"
 				""
 				"{ftbquests.chapter.psiu_me_leia.quest3.description2}"
@@ -103,6 +99,10 @@
 				"{ftbquests.chapter.psiu_me_leia.quest3.description3}"
 				""
 				"{ftbquests.chapter.psiu_me_leia.quest3.description4}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest3.description5}"
+				""
+				"{ftbquests.chapter.psiu_me_leia.quest3.description6}"
 			]
 			hide_dependency_lines: false
 			id: "64F2B2761FBEB6BD"
@@ -181,39 +181,44 @@
 		{
 			dependencies: ["2B403653AED97321"]
 			description: [
-				"  A presença do éter começa a se manifestar no mundo de forma sutil. Árvores tocadas por fibras douradas reagem com o tempo, revelando folhas reluzentes. Este fenômeno não é apenas decorativo — é o primeiro passo para manipular diretamente a aura."
+				"{ftbquests.chapter.psiu_me_leia.quest5.description1}"
 				""
-				"  Pegue o ouro que conseguiu e combine com flores para criar Brilliant Fibers. Aplique essas fibras nas folhas de uma árvore próxima e aguarde. Quando toda a copa mudar, quebre as folhas transformadas para coletar Golden Leafs. Elas serão essenciais para produzir Gold Powder, ingrediente central do primeiro ritual."
+				"{ftbquests.chapter.psiu_me_leia.quest5.description2}"
 				""
-				"  E como sei que você é impaciente: se balançar bem este livro, talvez consiga arrancar um pouco de pó de ouro escondido entre as páginas. Um truque barato, mas suficiente para começar sem esperar a transformação completa."
+				"{ftbquests.chapter.psiu_me_leia.quest5.description3}"
 				""
-				""
-				"&7&o— Aura não se vê, não se toca… mas ela te toca de volta. E como um vento educado que arrasta árvores inteiras sem pedir licença. O ouro não cresce em árvores… exceto quando, por pura ironia, cresce.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest5.description4}"
 			]
 			icon: "naturesaura:gold_fiber"
 			id: "52759072B76D79FD"
+			rewards: [{
+				count: 12
+				id: "7EA83E28C891ED4E"
+				item: "naturesaura:gold_powder"
+				type: "item"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "1C461FE986760DB0"
 				item: "naturesaura:gold_fiber"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest6.title}"
+			title: "{ftbquests.chapter.psiu_me_leia.quest5.title}"
 			x: -7.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["021D8AC2257200B6"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest7.description1}"
+				"{ftbquests.chapter.psiu_me_leia.quest6.description1}"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description2}"
+				"{ftbquests.chapter.psiu_me_leia.quest6.description2}"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description3}"
+				"{ftbquests.chapter.psiu_me_leia.quest6.description3}"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description4}"
+				"{ftbquests.chapter.psiu_me_leia.quest6.description4}"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description5}"
+				"{ftbquests.chapter.psiu_me_leia.quest6.description5}"
 			]
 			id: "41C7D076DE390330"
 			rewards: [
@@ -251,35 +256,35 @@
 		{
 			dependencies: ["70983AD660631855"]
 			description: [
-				"  Neste modpack, nada é tão simples quanto “jogar um mod e pronto”. A progressão vem em blocos de três capítulos — cada um focado no que é essencial para domar um ou mais mods. Dentro do trio há certa liberdade, você pode brincar em paralelo, mas não se engane: o próximo grupo quase sempre pedirá que o essencial já esteja em mãos. Claro, há exceções… mas até elas parecem seguir uma lógica que você só percebe tarde demais."
+				"{ftbquests.chapter.psiu_me_leia.quest7.description1}"
 				""
-				"  À margem desses trios repousam os capítulos (UT), coleções de ferramentas e utilitários que emergem do próprio conjunto. Eles não empurram o enredo adiante, mas revelam o que pode ser refinado, torcido ou explorado além do necessário — curiosidades úteis para quem insiste em olhar entre as frestas."
+				"{ftbquests.chapter.psiu_me_leia.quest7.description2}"
 				""
-				"  Este modpack não foi feito para correr, mas para mastigar devagar. Aconselha-se fortemente adotar a mentalidade de resolver uma coisa de cada vez, sem ansiedade para chegar ao fim. O objetivo não é “terminar”, mas se perder no processo: quests escritas para entreter tanto quanto instruir, mods entrelaçados de modo a formar uma experiência própria. Nenhum deles está solto ou jogado em separado — aqui todos compõem um corpo único, algo que não é apenas um amontoado de mods, mas um organismo inteiro que responde a cada passo."
+				"{ftbquests.chapter.psiu_me_leia.quest7.description3}"
 				""
-				"  E no fundo, não se trata de simples progresso. Cada estrutura que ergue é uma vértebra daquilo que sempre esteve aí, fragmentado. Você lê, constrói, completa. E o que aparece como instrução pode ser apenas eco da sua própria escrita."
+				"{ftbquests.chapter.psiu_me_leia.quest7.description4}"
 				""
-				"&7&o— Estranho pensar que sigo te guiando, quando na verdade só copio a caligrafia que já era sua.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest7.description5}"
 			]
 			icon: "eidolon:zombie_heart"
 			id: "22E8C8BE07968048"
-			subtitle: "Um livro que gosta de ordem (até demais)"
+			subtitle: "{ftbquests.chapter.psiu_me_leia.quest7.subtitle}"
 			tasks: [{
 				id: "44694809009FB5DE"
 				type: "checkmark"
 			}]
-			title: "O fluxo essencial"
+			title: "{ftbquests.chapter.psiu_me_leia.quest7.title}"
 			x: -11.767857142857146d
 			y: -3.6607142857142883d
 		}
 		{
 			dependencies: ["22E8C8BE07968048"]
 			description: [
-				"  &4(UT)&r são capítulos paralelos, utilitários, um apêndice curioso no meio da ordem aparente. Eles não ditam o rumo, mas oferecem atalhos, ferramentas e truques que tornam o caminho menos áspero… ou apenas mais tortuoso. A cada grupo de três capítulos principais, surgem também esses desvios: eles se alimentam do que você já conquistou, mostrando que até o que parecia “supérfluo” pode ganhar uma função."
+				"{ftbquests.chapter.psiu_me_leia.quest8.description1}"
 				""
-				"  Esses capítulos espelham pontos-chave vistos no núcleo principal, servindo quase como marcadores de até onde você avançou nos veios numerados. Em alguns casos, oferecem até uma pequena linha paralela de progressão para itens mais especiais, mas nunca se afastam demais do tronco central. Pense neles como bifurcações: atalhos que se abrem a partir da estrada que você já percorreu, sem jamais criar um novo continente por conta própria."
+				"{ftbquests.chapter.psiu_me_leia.quest8.description2}"
 				""
-				"&7&o— Você chama de opcionais. Eu prefiro chamá-los de distrações bem calculadas.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest8.description3}"
 			]
 			icon: {
 				Count: 1
@@ -291,12 +296,17 @@
 				id: "5C9E8DD8C08B11AB"
 				type: "checkmark"
 			}]
-			title: "Brincadeiras à parte"
+			title: "{ftbquests.chapter.psiu_me_leia.quest8.title}"
 			x: -10.767857142857146d
 			y: -3.6607142857142883d
 		}
 		{
 			dependencies: ["7E88E307D7B20E6B"]
+			description: [
+				"  A passive and reliable way to slowly restore ambient aura. These enchanted trees draw energy from deeper places, releasing it back into the world as they grow. They are magical, but not immortal — with heavy use, their leaves will wither and fall in time. Treat them well, and they’ll withstand the strain with quiet resilience. And yes, they are as beautiful as they are useful."
+				""
+				"&7&o— Even miracles shed leaves.&r&r"
+			]
 			id: "33FDC0F2FD47BA47"
 			shape: "square"
 			tasks: [{
@@ -312,6 +322,15 @@
 				"462BCAE24399B514"
 				"5EC81561779BCF73"
 			]
+			description: [
+				"  The Natural Altar is your first method of channeling ambient aura into tangible transformation. Place items upon it to convert them using the energy suspended in the world around you. But be warned — each ritual drains the surrounding aura. Without ways to replenish it, the land may react in unpleasant and aggressive ways."
+				""
+				"  To simplify construction, open the Book of Natural Aura, find the altar entry, and click the small eye near the structure. This will project a guide into the world so you can build the multiblock accurately."
+				""
+				"  While the outer blocks must remain unchanged, the block directly beneath the altar may be replaced with &8hoppers&r or other item transport — making automation not only possible, but inevitable."
+				""
+				"&7&o— Aura appreciates tradition. But it tolerates a well-placed hopper.&r&r"
+			]
 			hide_dependency_lines: true
 			id: "7E88E307D7B20E6B"
 			shape: "square"
@@ -326,6 +345,13 @@
 		}
 		{
 			dependencies: ["7E88E307D7B20E6B"]
+			description: [
+				"  Plain iron holds structure, but lacks spirit. By placing it upon the Natural Altar, ambient aura infuses the metal with properties it never possessed — stronger, more receptive, and attuned to deeper rituals."
+				""
+				"  This is your first true transformation through aura. Remember: the power used must return to the land, one way or another."
+				""
+				"&7&o— Iron obeys force. Infused iron obeys intention.&r&r"
+			]
 			id: "3720B8882392764A"
 			shape: "square"
 			tasks: [{
@@ -341,6 +367,13 @@
 				"1E44769B1B4BAFA4"
 				"18DF48C8A8B52BA2"
 			]
+			description: [
+				"  To bridge the mortal and the divine, even simple gestures matter. Build a flowered clearing as the book suggests — colors and patterns left to your interpretation. With the Offering Table at its center, you may present objects to higher forces and receive something more elaborate in return. Whether it’s generosity or a cosmic joke remains uncertain."
+				""
+				"  Place the offering with right-click, then drop a &bSpirit of Calling&r onto the pillar to begin. After a short moment, the items will be consumed in a bolt of lightning, and your reward will fall from above. You can offer up to 16 of the same item at once using a single Spirit of Calling — frugal worship at its finest. The ritual can be &l&8automated&r&r with modest redstone and creativity."
+				""
+				"&7&o— Our humble junk becomes their humble junk, returned with ceremony.&r&r"
+			]
 			id: "021D8AC2257200B6"
 			shape: "square"
 			tasks: [{
@@ -353,6 +386,13 @@
 		}
 		{
 			dependencies: ["5FD7CCD89895AAAB"]
+			description: [
+				"  The first and most familiar aura you will encounter is Bottled Sunlight — the distilled essence of the Overworld. Right-click with a Bottle and Crock while in this realm to collect it."
+				""
+				"  This process can be &8automated&r with ease: a humble dispenser with the tool inside performs the capture unattended. Deities and aura seem to appreciate primitive contraptions."
+				""
+				"&7&o— The gods show restraint. They only ask for the sky in a bottle.&r&r"
+			]
 			icon: {
 				Count: 1
 				id: "naturesaura:aura_bottle"
@@ -378,6 +418,11 @@
 		}
 		{
 			dependencies: ["5BF0B3134EF672C0"]
+			description: [
+				"  A small token used to address the forces beyond your reach. Tossed not as payment, but as a request — or perhaps an invitation. Whether the higher powers answer out of compassion, curiosity, or amusement is unclear, but they do answer."
+				""
+				"&7&o— Prayer works better when it makes noise.&r&r"
+			]
 			id: "1E44769B1B4BAFA4"
 			shape: "diamond"
 			tasks: [{
@@ -391,11 +436,11 @@
 		{
 			dependencies: ["558AD48F5D4237AC"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest2.description1}"
+				"{ftbquests.chapter.psiu_me_leia.quest15.description1}"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest2.description2}"
+				"{ftbquests.chapter.psiu_me_leia.quest15.description2}"
 				""
-				"&7&o— O padrão da expert modpack experience! &r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest15.description3}"
 			]
 			id: "3BF0D53D85B2A4CA"
 			shape: "square"
@@ -410,18 +455,18 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest2.title}"
+			title: "{ftbquests.chapter.psiu_me_leia.quest15.title}"
 			x: -9.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3BF0D53D85B2A4CA"]
 			description: [
-				"  Você achava que cascalho era apenas aquele entulho inútil que atrapalha suas construções? Pois bem, junte quatro deles no inventário e compacte-os em algo chamado Packed Gravel. Parece banal, mas é a essência de um ofício antigo: o garimpo."
+				"{ftbquests.chapter.psiu_me_leia.quest16.description1}"
 				""
-				"  Agora, leve esse bloco e clique com o botão direito diretamente na água de um rio ou lago (não mire no bloco do fundo, não seja tapado). Com sorte, vai encontrar pequenas pepitas de ouro entre a lama. Brinque de ser garimpeiro… só não espere enriquecer rápido."
+				"{ftbquests.chapter.psiu_me_leia.quest16.description2}"
 				""
-				"&7&o— É ouro. Não, você não vai comprar um castelo. Mas sim, vai precisar disso.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest16.description3}"
 			]
 			icon: "kubejs:packed_gravel"
 			id: "2B403653AED97321"
@@ -438,16 +483,16 @@
 					type: "item"
 				}
 			]
-			title: "Cascalho dos tolos"
+			title: "{ftbquests.chapter.psiu_me_leia.quest16.title}"
 			x: -8.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3BF0D53D85B2A4CA"]
 			description: [
-				"  Com madeira, crie Stands, pilares essenciais para sustentar seu primeiro ritual. É simples, mas veja só: até madeira crua pode se tornar parte de um espetáculo místico. Quem diria, não?"
+				"{ftbquests.chapter.psiu_me_leia.quest17.description1}"
 				""
-				"&7&o— Nada como usar madeira mal cortada para sustentar a base de todo um ritual. Genial.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest17.description2}"
 			]
 			icon: "naturesaura:wood_stand"
 			id: "48B564A472DBB217"
@@ -457,19 +502,19 @@
 				item: "naturesaura:wood_stand"
 				type: "item"
 			}]
-			title: "Pilares da pretensão"
+			title: "{ftbquests.chapter.psiu_me_leia.quest17.title}"
 			x: -8.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["48B564A472DBB217"]
 			description: [
-				"  Hora de abrir outro compêndio: o Book of Natural Aura. Dentro dele, encontrará informações detalhadas sobre a aura ambiente — essa energia invisível que banha o mundo."
-				"Os rituais consomem aura, e se ela ficar em excesso ou faltar, o ambiente sofrerá efeitos bons ou ruins. Por enquanto, ignore: mais adiante terá ferramentas para medir e manipular esse equilíbrio."
+				"{ftbquests.chapter.psiu_me_leia.quest18.description1}"
+				"{ftbquests.chapter.psiu_me_leia.quest18.description2}"
 				""
-				"  Ah, e um truque: ao visualizar a receita de um ritual no livro, clique no ícone do olho. Ele gera um esquema projetável, que pode ser posicionado no mundo com botão direito, mostrando exatamente onde cada bloco deve ir. Até você conseguir entender."
+				"{ftbquests.chapter.psiu_me_leia.quest18.description3}"
 				""
-				"&7&o— Não confie tanto nesse livro. Ele finge ser seu guia, mas já está rindo de você.&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest18.description4}"
 			]
 			icon: {
 				Count: 1
@@ -496,12 +541,19 @@
 				id: "1A002CEF6E9549D6"
 				type: "checkmark"
 			}]
-			title: "O livro da aura"
+			title: "{ftbquests.chapter.psiu_me_leia.quest18.title}"
 			x: -7.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["4BE69805DC9E253E"]
+			description: [
+				"  A peculiar outcome of the offering ritual: instead of a Spirit of Calling, simply toss in a wrench. Somehow, the forces beyond interpret this as a request for something useful — quite literally."
+				""
+				"  It seems these entities appreciate function over symbolism. Or maybe they just have a sense of humor involving tools."
+				""
+				"&7&o— Look, I don’t actually know who’s answering this ritual. But it works, so let’s not question it.&r&r"
+			]
 			id: "3E6E088EDD954E6F"
 			size: 1.2d
 			tasks: [{
@@ -509,27 +561,28 @@
 				item: "kubejs:token_utility"
 				type: "item"
 			}]
+			title: "Askin’ for Somethin’ Useful?"
 			x: 3.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["558AD48F5D4237AC"]
 			description: [
-				"  Este modpack tem um jeito próprio de se apresentar. Esta é uma das poucas vezes em que eu, o autor, falo diretamente com você — que decidiu dar uma chance ao meu trabalho."
+				"{ftbquests.chapter.psiu_me_leia.quest20.description1}"
 				""
-				"  Daqui em diante, as quests vão te guiar por uma narrativa que conversa contigo de forma pessoal. Pode esperar algumas brincadeiras, um pouco de poesia, mas também explicações claras e objetivas para que você nunca fique perdido."
+				"{ftbquests.chapter.psiu_me_leia.quest20.description2}"
 				""
-				"  É importante dizer: a progressão aqui é linear e as receitas estão bem conectadas entre si. Se você prefere packs totalmente livres, talvez este não seja o ideal. Mas, se você gosta da ideia de uma jornada com caminhos definidos e bem costurados, acredito que vai se sentir em casa."
+				"{ftbquests.chapter.psiu_me_leia.quest20.description3}"
 				""
-				"  Cada detalhe foi pensado com carinho — dos itens às máquinas, passando por mecânicas feitas sob medida para este pack. Tudo para que a experiência seja única e integrada. Se topar seguir a biografia de um engenheiro meio maluco, seja muito bem-vindo."
+				"{ftbquests.chapter.psiu_me_leia.quest20.description4}"
 				""
-				"  As duas quests acima explicam melhor como funciona a estrutura do pack. Se bater qualquer dúvida, recomendo começar por elas."
+				"{ftbquests.chapter.psiu_me_leia.quest20.description5}"
 				""
-				"  Ah, e não se preocupe com a receita da crafting table — parece estranha no começo, mas prometo que é simples."
+				"{ftbquests.chapter.psiu_me_leia.quest20.description6}"
 				""
-				"  Boa sorte, divirta-se, e espero de coração que aproveite essa jornada. "
+				"{ftbquests.chapter.psiu_me_leia.quest20.description7}"
 				""
-				"  &aNos vemos no final dela! :)"
+				"{ftbquests.chapter.psiu_me_leia.quest20.description8}"
 			]
 			icon: {
 				Count: 1
@@ -552,23 +605,23 @@
 				}
 			}
 			id: "70983AD660631855"
-			subtitle: "&aSeja Bem-vindo!"
+			subtitle: "{ftbquests.chapter.psiu_me_leia.quest20.subtitle}"
 			tasks: [{
 				id: "6A57E5382B9F7CDF"
 				type: "checkmark"
 			}]
-			title: "Nota do autor"
+			title: "{ftbquests.chapter.psiu_me_leia.quest20.title}"
 			x: -11.267857142857146d
 			y: -2.6607142857142883d
 		}
 		{
 			dependencies: ["708E4BE08506636D"]
 			description: [
-				"  A companheira indiscutível da crafting table. Acredito que dispensa apresentações, é a fornalha que você já conhece."
+				"{ftbquests.chapter.psiu_me_leia.quest21.description1}"
 				""
-				"  Asse sua comida, esquente seus minérios, queime suas ideias, tudo é igualmente válido. "
+				"{ftbquests.chapter.psiu_me_leia.quest21.description2}"
 				""
-				"&7&o— O que? Esperava algo mais?&r&r"
+				"{ftbquests.chapter.psiu_me_leia.quest21.description3}"
 			]
 			id: "042EC538643F435A"
 			shape: "square"
@@ -578,12 +631,17 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			title: "O par perfeito"
+			title: "{ftbquests.chapter.psiu_me_leia.quest21.title}"
 			x: -5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["042EC538643F435A"]
+			description: [
+				"  These shimmering bricks form part of the multiblock structure for the Natural Altar. Their design is deliberate — gold conducts aura well, and stone keeps it grounded."
+				""
+				"&7&o— It’s decorative. It’s functional. Pretend you always knew that.&r&r"
+			]
 			id: "462BCAE24399B514"
 			shape: "square"
 			tasks: [{
@@ -596,6 +654,13 @@
 		}
 		{
 			dependencies: ["042EC538643F435A"]
+			description: [
+				"  The air itself is not empty — each realm carries an imprint of its nature, suspended as ambient aura. With the Bottle and Crock, you can capture that essence directly from the environment. Simply &ahold&r it and &aright-click&r while standing in the dimension whose aura you seek."
+				""
+				"  Each realm yields a different essence, and these will fuel rituals far beyond simple alchemy."
+				""
+				"&7&o— The world exhales; you just happen to have a jar.&r&r"
+			]
 			icon: "naturesaura:bottle_two_the_rebottling"
 			id: "5FD7CCD89895AAAB"
 			shape: "circle"
@@ -611,12 +676,17 @@
 					type: "item"
 				}
 			]
-			title: "Recipientes do Éter"
+			title: "{ftbquests.chapter.psiu_me_leia.quest23.title}"
 			x: -2.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["021D8AC2257200B6"]
+			description: [
+				"  Forged not by furnace but by favor, this light-touched metal descends as a gift from realms above. Used in crafts that require grace rather than force, its properties reflect the vastness of the open air."
+				""
+				"&7&o— Proof that sometimes the sky has leftovers.&r&r"
+			]
 			id: "4BE69805DC9E253E"
 			tasks: [{
 				id: "0C575E52B64245B2"
@@ -630,6 +700,11 @@
 			dependencies: [
 				"5BF0B3134EF672C0"
 				"0D69EDFAA244A42E"
+			]
+			description: [
+				"  A small charm carrying the trace of uplifting aura. Used as a crafting ingredient in rites where growth or good fortune is desired."
+				""
+				"&7&o— Joy, distilled and conveniently pocket-sized.&r&r"
 			]
 			id: "5EC81561779BCF73"
 			tasks: [{
@@ -646,6 +721,11 @@
 				"5BF0B3134EF672C0"
 				"0D69EDFAA244A42E"
 			]
+			description: [
+				"  A somber fragment of lingering aura. Required in crafts tied to loss, endings, or transformation."
+				""
+				"&7&o— Sorrow ages well. Some say it never expires.&r&r"
+			]
 			id: "18DF48C8A8B52BA2"
 			tasks: [{
 				id: "1AD764B727447CA5"
@@ -656,6 +736,14 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["7E88E307D7B20E6B"]
+			description: [
+				"  Your human senses are inadequate for reading the flow of aura — no amount of focus, meditation, or \"good vibes\" will change that. The Environmental Eye reveals the invisible levels around you, letting you see what the world offers and what you’ve already taken."
+				""
+				"  Use it to understand when it’s safe to draw power and when nature needs a moment to breathe."
+				""
+				"&7&o— Enlightenment sometimes comes in the shape of a lens.&r&r"
+			]
 			id: "2DA99CE16108C12A"
 			shape: "square"
 			tasks: [{
@@ -668,17 +756,44 @@
 		}
 		{
 			dependencies: ["36ED84D6DA1ACBF6"]
+			description: [
+				"  Some plants respond not to water or sunlight, but to sacrifice. The Rose Needle is your tool for coaxing life into unfamiliar shapes. Hold it and right-click a planted wheat seed — a single, delicate drop of blood is enough to trigger the change."
+				""
+				"  This is the fastest way to obtain vital herbs: plants with unique properties used in many rites and recipes. The transformation may produce either Bleeding Heart or Needle Heart at random, so repeat the ritual until you have what you need. Once acquired, cultivate them carefully — they will matter more than they appear to now."
+				""
+				"&7&o— Growth demands patience. And occasionally, a finger prick.&r&r"
+			]
+			icon: "kubejs:rose_needle"
 			id: "0D69EDFAA244A42E"
-			tasks: [{
-				id: "037EFD759C9FA947"
-				item: "kubejs:rose_needle"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "037EFD759C9FA947"
+					item: "kubejs:rose_needle"
+					type: "item"
+				}
+				{
+					id: "5001C490226E85D9"
+					item: "vital_herbs:bleeding_heart"
+					type: "item"
+				}
+				{
+					id: "3FC92D3FDBF7C4F5"
+					item: "vital_herbs:needle_heart"
+					type: "item"
+				}
+			]
 			x: -1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["042EC538643F435A"]
+			description: [
+				"  The chaos of raw stone hides patterns that the naked eye refuses to see. Ancient miners learned to separate dirt from promise, and promise from true metal. This bench is your introduction to that quiet art — a place where rough minerals are sorted, broken down, and persuaded to reveal their composite nature."
+				""
+				"  Place your ores here and watch them fracture into recognizable mineral compounds. It may look primitive, but many great discoveries begin with a rock, a tool, and the unsettling suspicion that the rock is lying."
+				""
+				"&7&o— If you thought ores came ready to smelt, you’re adorably mistaken.&r&r"
+			]
 			id: "155BB7639312253D"
 			shape: "gear"
 			tasks: [{
@@ -697,13 +812,27 @@
 		}
 		{
 			dependencies: ["155BB7639312253D"]
+			description: [
+				"  This land is &4old,&r and its metals are no longer found in pure form. Ages of upheaval fused once-separate veins into mixed mineral compounds."
+				""
+				"  The core metals you need are locked inside these mixtures. To obtain them, you must sort and break down the compounds first. Open the Ore Sorting Bench recipes by &aclicking U&r — there you can see every mineral compound and which usable metals each one produces. "
+				""
+				"&7&o— You call it “modded.” The planet calls it “trauma.”&r&r"
+			]
 			id: "36ED84D6DA1ACBF6"
 			shape: "gear"
-			tasks: [{
-				id: "526E3B892270476F"
-				item: "minecraft:raw_iron"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "526E3B892270476F"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					id: "63CDE00386925B3C"
+					item: "kubejs:hematite_raw"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: -1.0d
 		}

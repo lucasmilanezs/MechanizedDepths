@@ -6,17 +6,43 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:writable_book"
 	id: "5D08892A7CBE45DB"
+	images: [
+		{
+			height: 0.5d
+			image: "custom:textures/gui/rit_of_crafting.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/rose_bush_top"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.9732142857142563d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "botania:block/cyan_double_flower_top"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.9732142857142776d
+			y: 0.5214285714285509d
+		}
+	]
 	order_index: 0
 	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"   &lEu estava esperando por você!&r Na verdade, é mentira, não faço a menor ideia de quem seja ou como encontrou esse livro, mas se o fez, é um bom sinal! Sei que soa contraditório, mas se ainda está lendo isso provavelmente está perdido."
+				"   &lI was waiting for you!&r Actually, that’s a lie — I have no idea who you are or how you found this book, but if you did, that’s a good sign! I know it sounds contradictory, but if you’re still reading this, you’re probably lost."
 				""
-				"   Se esse livro caiu em suas mãos, significa que algo deu muito certo ou muito errado — difícil te dizer com certeza —, mas também significa que você está pronto para lembrar &ode coisas que não sabia que sabia.&r"
+				"   If this book fell into your hands, it means something went very right or very wrong — hard to say which — but it also means you’re ready to remember &othings you didn’t know you knew.&r"
 				""
-				"   Se for esse o caso e tive a sorte imensa de pelo menos isso acertar sobre você, que tal começarmos do básico? &5&lSobreviver&r&r"
+				"   If that’s the case — and if I’m lucky enough to have at least that right about you — how about we start with the basics? &5&lSurvive&r&r"
 			]
 			icon: "minecraft:recovery_compass"
 			id: "558AD48F5D4237AC"
@@ -27,18 +53,23 @@
 				title: "{quest.confuso.title}"
 				type: "checkmark"
 			}]
-			title: "&l&4Eu conheço você"
-			x: -9.75d
-			y: -0.75d
+			title: "&l&4I know you"
+			x: -11.2563775510204d
+			y: -1.0357142857142847d
 		}
 		{
-			dependencies: ["558AD48F5D4237AC"]
+			dependencies: [
+				"52759072B76D79FD"
+				"497584693F232C18"
+			]
 			description: [
-				"   O clichê mais absoluto que existe: Bater em uma árvore com a mão. Mas não se empolgue: madeira não rende como antes. Ela vai te dar só duas tábuas por bloco.  "
+				"  Pare e pense: nunca se perguntou como quatro tábuas de madeira conseguem formar um altar que une até nove componentes em algo único? Essa mesa é seu primeiro altar, o coração de toda criação, e a piada cósmica mais mal contada do jogo."
 				""
-				"   Sim. Isso é intencional. Sim. Isso é um problema seu."
+				"  Para construí-la, plante uma muda no centro do ritual. Posicione 4 tábuas nos stands ao redor e dance para ela (sim, agache repetidamente como um lunático). Quando crescer, a aura se encarregará de entregar sua primeira Crafting Table."
 				""
-				"&o&7— Há ferramentas que esquecem seus donos. E há ferramentas que nunca foram feitas para esquecer. Vamos descobrir qual delas você irá criar.&r&r"
+				"  Depois disso, você poderá criar mais delas pelo novo grid 3x3 — sem repetir o ritual. "
+				""
+				"&7&o— Ah, sim. Uma árvore mágica, dança patética e pronto: o maior mistério da civilização resolvido.&r&r"
 			]
 			id: "565979255D303596"
 			rewards: [{
@@ -46,92 +77,32 @@
 				item: "minecraft:cherry_sapling"
 				type: "item"
 			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "60B7C2398423B628"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "minecraft:birch_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:jungle_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:acacia_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:spruce_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:oak_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:cherry_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:mangrove_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:dark_oak_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:bamboo_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:crimson_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:warped_planks"
-								}
-								{
-									Count: 1b
-									id: "naturesaura:ancient_planks"
-								}
-								{
-									Count: 1b
-									id: "silentgear:netherwood_planks"
-								}
-							]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "724F9153947F879D"
-					item: "minecraft:crafting_table"
-					type: "item"
-				}
-			]
-			title: "Soco na Árvore"
-			x: -9.0d
-			y: 0.5d
+			shape: "square"
+			size: 1.1d
+			subtitle: "Eis o ápice: a Crafting Table."
+			tasks: [{
+				id: "724F9153947F879D"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "A mesa que nunca questionou"
+			x: -7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["565979255D303596"]
 			description: [
-				"   Você conseguiu uma mesa. E talvez uma fogueira. Mas madeira não sustenta mais do que isso. Agora, você precisa de algo seu.  Deve modelar uma ferramenta, ou, talvez, permitir-se ser modelado por ela. Algo que responda à sua vontade.  "
+				"  Você não achou que a bancada transformaria tábuas e gravetos magicamente em ferramentas, não é? Antes de tudo, vai precisar ensinar a ela forma e propósito."
 				""
-				"   Existe um jeito de fazer isso — uma técnica antiga. Mas você precisará começar do início: criando um &1&lBlueprint&r.&r"
+				"  Para o próximo passo, arranque algumas folhas em branco do final desse livro, basta me colocar sozinho no seu grid de crafting. Não se preocupe, não vou ficar sentido. Só não abuse. "
 				""
-				"   Pense nele como um gesto. Uma lembrança escrita daquilo que sua ferramenta deveria ser. Não será forte. Não será bonita. Mas será sua. E isso, no começo, é tudo que importa."
+				"   You’ve managed a table. Maybe a campfire. But wood won’t carry you much further. Now you need something of your own. You must shape a tool — or allow yourself to be shaped by it. Something that answers your will."
 				""
-				"&o&7— Há ferramentas que esquecem seus donos. E há ferramentas que nunca foram feitas para esquecer. Vamos descobrir qual delas você irá criar&r&r"
+				"   There’s a way to do that — an old technique. But you’ll have to start at the beginning: by making a &1&lBlueprint&r.&r"
+				""
+				"   Think of it as a gesture. A written memory of what your tool should be. It won’t be strong. It won’t be pretty. But it will be yours. And at the start, that’s all that matters."
+				""
+				"&o&7— Some tools forget their owners. And some were never made to forget. Let’s find out which one you’ll craft&r&r"
 			]
 			hide_dependency_lines: false
 			id: "64F2B2761FBEB6BD"
@@ -140,26 +111,26 @@
 				item: "minecraft:stick"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "square"
 			tasks: [{
 				id: "5F16EA4B7F193C7D"
 				item: "silentgear:pickaxe_blueprint"
 				type: "item"
 			}]
-			title: "Engenharia do Ego"
-			x: -8.5d
-			y: -0.5d
+			title: "Ego Engineering"
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["64F2B2761FBEB6BD"]
 			description: [
-				"   Ferramentas não nascem inteiras. Elas são feitas de partes — e as partes, de escolhas. Escolhas que revelam o que você valoriza: leveza ou força? Durabilidade ou velocidade? Ordem ou caos? Cada haste, cada lâmina, cada traço do material carrega algo além de números. Carrega memória, intenção... ou erro.  "
+				"   Tools aren’t born whole. They’re made of parts — and parts are made of choices. Choices that reveal what you value: lightness or strength? Durability or speed? Order or chaos? Every shaft, every blade, every trace of material carries more than numbers. It carries memory, intention… or error."
 				""
-				"   Há madeira que se parte, mas há madeira que canta ao ser usada. Você não verá isso logo de cara. Vai precisar prestar atenção.  "
+				"   Some wood splits; some wood sings when used. You won’t notice that at first. You’ll need to pay attention."
 				""
-				"   Crie partes. Combine. Falhe. Refaça. Observe como no mesmo blueprint dá origem a centenas de ferramentas distintas — algumas úteis, outras apenas... honestas sobre quem as criou."
+				"   Craft parts. Combine. Fail. Redo. Watch how the same blueprint gives rise to hundreds of distinct tools — some useful, others merely… honest about who created them."
 				""
-				"&o&7— Não é a ferramenta que te define, mas as partes que você escolhe revelam mais do que pensa. Ou menos. Vai depender de quanta pedra você bater até perceber.&r&r"
+				"&o&7— It isn’t the tool that defines you, but the parts you choose reveal more than you think. Or less. Depends on how many stones you’ll hit before you notice.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -175,7 +146,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "square"
 			tasks: [
 				{
 					id: "55D238B98F9B4A31"
@@ -203,83 +174,46 @@
 					type: "item"
 				}
 			]
-			title: "Forma e Propósito "
-			x: -8.0d
+			title: "Form and Purpose"
+			x: -5.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["708E4BE08506636D"]
+			dependencies: ["2B403653AED97321"]
 			description: [
-				"   Há coisas que crescem mesmo sem terra. E outras que morrem mesmo sob o sol certo.  "
+				"  A presença do éter começa a se manifestar no mundo de forma sutil. Árvores tocadas por fibras douradas reagem com o tempo, revelando folhas reluzentes. Este fenômeno não é apenas decorativo — é o primeiro passo para manipular diretamente a aura."
 				""
-				"   Você já notou as folhas demorando para cair. A madeira mais escura no interior da floresta. A relva que parece se curvar para observar.  "
+				"  Pegue o ouro que conseguiu e combine com flores para criar Brilliant Fibers. Aplique essas fibras nas folhas de uma árvore próxima e aguarde. Quando toda a copa mudar, quebre as folhas transformadas para coletar Golden Leafs. Elas serão essenciais para produzir Gold Powder, ingrediente central do primeiro ritual."
 				""
-				"   Isso tem nome. &2&lAura.&r  &r"
+				"  E como sei que você é impaciente: se balançar bem este livro, talvez consiga arrancar um pouco de pó de ouro escondido entre as páginas. Um truque barato, mas suficiente para começar sem esperar a transformação completa."
 				""
-				"   Não pense como magia. Pense como... um sistema natural com pretensões de consciência.  "
 				""
-				"   Se quiser entender, comece por um livro.  "
-				""
-				"   Não este. O outro."
+				"&7&o— Aura não se vê, não se toca… mas ela te toca de volta. E como um vento educado que arrasta árvores inteiras sem pedir licença. O ouro não cresce em árvores… exceto quando, por pura ironia, cresce.&r&r"
 			]
-			id: "213824CA4D01C95B"
-			rewards: [
-				{
-					id: "22682D5185178440"
-					item: "minecraft:oak_sapling"
-					type: "item"
-				}
-				{
-					id: "5235D89641E5A210"
-					item: "minecraft:big_dripleaf"
-					type: "item"
-				}
-			]
-			shape: "woodtier"
-			tasks: [{
-				id: "756856082466BF2C"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "naturesaura:book"
-					}
-				}
-				type: "item"
-			}]
-			title: "&2&lSussuros nas Folhas"
-			x: -6.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["213824CA4D01C95B"]
-			description: [
-				"A presença do éter começa a se manifestar no mundo de forma sutil. Árvores tocadas por fibras douradas reagem com o tempo, revelando folhas reluzentes. Este fenômeno não é apenas decorativo — é o primeiro passo para manipular diretamente a Aura. Prepare fibras especiais e aplique-as nas folhas de uma árvore para iniciar a transformação."
-				""
-				"&o&7— Aura não se vê, não se toca… mas ela te toca de volta. É como um vento educado que arrasta árvores inteiras sem pedir licença.&r&r"
-			]
+			icon: "naturesaura:gold_fiber"
 			id: "52759072B76D79FD"
+			shape: "square"
 			tasks: [{
-				count: 4L
-				id: "49DDCADBC56D6F20"
-				item: { Count: 4, id: "naturesaura:gold_leaf" }
+				id: "1C461FE986760DB0"
+				item: "naturesaura:gold_fiber"
 				type: "item"
 			}]
-			title: "Sintomas do Éter"
-			x: -5.5d
-			y: -1.5d
+			title: "Symptoms of the Aether"
+			x: -7.0d
+			y: -3.0d
 		}
 		{
+			dependencies: ["021D8AC2257200B6"]
 			description: [
-				"   Você construiu. Escavou. Moldou aura, pedra e silêncio. Agora é hora de fundir tudo isso em algo concreto. Literalmente.  "
+				"   You built. You dug. You shaped aura, stone, and silence. Now it’s time to fuse it all into something concrete. Literally."
 				""
-				"   Dois materiais. Dois frutos de rituais complexos.  "
+				"   Two materials. Two fruits of complex rituals."
 				""
-				"   Madeira que &a&oouve.&r&r Pedra que &o&bpensa.&r&r "
+				"   Wood that &a&olistens.&r&r Stone that &o&bthinks.&r&r"
 				""
-				"   Nada disso tem sentido. E, ainda assim, entende exatamente o que fazer."
+				"   None of it makes sense. And yet, it knows exactly what to do."
 				""
-				"&7&o— Você está levando madeira para uma fundição e pedra para uma engrenagem. Está tudo errado. Mas... só até funcionar.&r&r"
+				"&7&o— You’re taking wood to a foundry and stone to a gear. Everything’s wrong. But… only until it works.&r&r"
 			]
 			id: "41C7D076DE390330"
 			rewards: [
@@ -296,6 +230,7 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 8L
@@ -310,31 +245,468 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 0.0d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
-			id: "5CE4B6B3303A4D5A"
+			dependencies: ["70983AD660631855"]
+			description: [
+				"  Neste modpack, nada é tão simples quanto “jogar um mod e pronto”. A progressão vem em blocos de três capítulos — cada um focado no que é essencial para domar um ou mais mods. Dentro do trio há certa liberdade, você pode brincar em paralelo, mas não se engane: o próximo grupo quase sempre pedirá que o essencial já esteja em mãos. Claro, há exceções… mas até elas parecem seguir uma lógica que você só percebe tarde demais."
+				""
+				"  À margem desses trios repousam os capítulos (UT), coleções de ferramentas e utilitários que emergem do próprio conjunto. Eles não empurram o enredo adiante, mas revelam o que pode ser refinado, torcido ou explorado além do necessário — curiosidades úteis para quem insiste em olhar entre as frestas."
+				""
+				"  Este modpack não foi feito para correr, mas para mastigar devagar. Aconselha-se fortemente adotar a mentalidade de resolver uma coisa de cada vez, sem ansiedade para chegar ao fim. O objetivo não é “terminar”, mas se perder no processo: quests escritas para entreter tanto quanto instruir, mods entrelaçados de modo a formar uma experiência própria. Nenhum deles está solto ou jogado em separado — aqui todos compõem um corpo único, algo que não é apenas um amontoado de mods, mas um organismo inteiro que responde a cada passo."
+				""
+				"  E no fundo, não se trata de simples progresso. Cada estrutura que ergue é uma vértebra daquilo que sempre esteve aí, fragmentado. Você lê, constrói, completa. E o que aparece como instrução pode ser apenas eco da sua própria escrita."
+				""
+				"&7&o— Estranho pensar que sigo te guiando, quando na verdade só copio a caligrafia que já era sua.&r&r"
+			]
+			icon: "eidolon:zombie_heart"
+			id: "22E8C8BE07968048"
+			subtitle: "Um livro que gosta de ordem (até demais)"
 			tasks: [{
-				id: "63F4F5ED66C6B6AF"
-				item: "sophisticatedbackpacks:backpack"
+				id: "44694809009FB5DE"
+				type: "checkmark"
+			}]
+			title: "O fluxo essencial"
+			x: -11.767857142857146d
+			y: -3.6607142857142883d
+		}
+		{
+			dependencies: ["22E8C8BE07968048"]
+			description: [
+				"  &4(UT)&r são capítulos paralelos, utilitários, um apêndice curioso no meio da ordem aparente. Eles não ditam o rumo, mas oferecem atalhos, ferramentas e truques que tornam o caminho menos áspero… ou apenas mais tortuoso. A cada grupo de três capítulos principais, surgem também esses desvios: eles se alimentam do que você já conquistou, mostrando que até o que parecia “supérfluo” pode ganhar uma função."
+				""
+				"  Esses capítulos espelham pontos-chave vistos no núcleo principal, servindo quase como marcadores de até onde você avançou nos veios numerados. Em alguns casos, oferecem até uma pequena linha paralela de progressão para itens mais especiais, mas nunca se afastam demais do tronco central. Pense neles como bifurcações: atalhos que se abrem a partir da estrada que você já percorreu, sem jamais criar um novo continente por conta própria."
+				""
+				"&7&o— Você chama de opcionais. Eu prefiro chamá-los de distrações bem calculadas.&r&r"
+			]
+			icon: {
+				Count: 1
+				id: "actuallyadditions:laser_wrench"
+				tag: { }
+			}
+			id: "07A61EFA0186CB52"
+			tasks: [{
+				id: "5C9E8DD8C08B11AB"
+				type: "checkmark"
+			}]
+			title: "Brincadeiras à parte"
+			x: -10.767857142857146d
+			y: -3.6607142857142883d
+		}
+		{
+			dependencies: ["7E88E307D7B20E6B"]
+			id: "33FDC0F2FD47BA47"
+			shape: "square"
+			tasks: [{
+				id: "3EF867CD949093BD"
+				item: "naturesaura:ancient_sapling"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.3428571428571274d
+		}
+		{
+			dependencies: [
+				"462BCAE24399B514"
+				"5EC81561779BCF73"
+			]
+			hide_dependency_lines: true
+			id: "7E88E307D7B20E6B"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "11967428B0D78714"
+				item: "naturesaura:nature_altar"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.3428571428571274d
+		}
+		{
+			dependencies: ["7E88E307D7B20E6B"]
+			id: "3720B8882392764A"
+			shape: "square"
+			tasks: [{
+				id: "214F7B3719194C0B"
+				item: "naturesaura:infused_iron"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.3428571428571274d
+		}
+		{
+			dependencies: [
+				"1E44769B1B4BAFA4"
+				"18DF48C8A8B52BA2"
+			]
+			id: "021D8AC2257200B6"
+			shape: "square"
+			tasks: [{
+				id: "26012A39BB03BEC0"
+				item: "naturesaura:offering_table"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5FD7CCD89895AAAB"]
+			icon: {
+				Count: 1
+				id: "naturesaura:aura_bottle"
+				tag: {
+					stored_type: "naturesaura:overworld"
+				}
+			}
+			id: "5BF0B3134EF672C0"
+			shape: "circle"
+			tasks: [{
+				id: "789D21DBBE3A1EBC"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:overworld"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5BF0B3134EF672C0"]
+			id: "1E44769B1B4BAFA4"
+			shape: "diamond"
+			tasks: [{
+				id: "63816A8C0D3CE0FD"
+				item: "naturesaura:calling_spirit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["558AD48F5D4237AC"]
+			description: [
+				"   The most absolute cliché there is: punching a tree. Don’t get excited: wood doesn’t yield like it used to. It’ll only give you two planks per log."
+				""
+				"   Yes. That’s intentional. Yes. That’s your problem."
+				""
+				"&7&o— O padrão da expert modpack experience! &r&r"
+			]
+			id: "3BF0D53D85B2A4CA"
+			shape: "square"
+			tasks: [{
+				id: "32BAB6B31DC2E466"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				type: "item"
+			}]
+			title: "Punch the Tree"
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BF0D53D85B2A4CA"]
+			description: [
+				"  Você achava que cascalho era apenas aquele entulho inútil que atrapalha suas construções? Pois bem, junte quatro deles no inventário e compacte-os em algo chamado Packed Gravel. Parece banal, mas é a essência de um ofício antigo: o garimpo."
+				""
+				"  Agora, leve esse bloco e clique com o botão direito diretamente na água de um rio ou lago (não mire no bloco do fundo, não seja tapado). Com sorte, vai encontrar pequenas pepitas de ouro entre a lama. Brinque de ser garimpeiro… só não espere enriquecer rápido."
+				""
+				"&7&o— É ouro. Não, você não vai comprar um castelo. Mas sim, vai precisar disso.&r&r"
+			]
+			icon: "kubejs:packed_gravel"
+			id: "2B403653AED97321"
+			shape: "square"
+			tasks: [
+				{
+					id: "3662E3AB8600AE38"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+				{
+					id: "16B5799F3E411ABA"
+					item: "kubejs:packed_gravel"
+					type: "item"
+				}
+			]
+			title: "Cascalho dos tolos"
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3BF0D53D85B2A4CA"]
+			description: [
+				"  Com madeira, crie Stands, pilares essenciais para sustentar seu primeiro ritual. É simples, mas veja só: até madeira crua pode se tornar parte de um espetáculo místico. Quem diria, não?"
+				""
+				"&7&o— Nada como usar madeira mal cortada para sustentar a base de todo um ritual. Genial.&r&r"
+			]
+			icon: "naturesaura:wood_stand"
+			id: "48B564A472DBB217"
+			shape: "square"
+			tasks: [{
+				id: "256FA8F29993B769"
+				item: "naturesaura:wood_stand"
+				type: "item"
+			}]
+			title: "Pilares da pretensão"
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["48B564A472DBB217"]
+			description: [
+				"  Hora de abrir outro compêndio: o Book of Natural Aura. Dentro dele, encontrará informações detalhadas sobre a aura ambiente — essa energia invisível que banha o mundo."
+				"Os rituais consomem aura, e se ela ficar em excesso ou faltar, o ambiente sofrerá efeitos bons ou ruins. Por enquanto, ignore: mais adiante terá ferramentas para medir e manipular esse equilíbrio."
+				""
+				"  Ah, e um truque: ao visualizar a receita de um ritual no livro, clique no ícone do olho. Ele gera um esquema projetável, que pode ser posicionado no mundo com botão direito, mostrando exatamente onde cada bloco deve ir. Até você conseguir entender."
+				""
+				"&7&o— Não confie tanto nesse livro. Ele finge ser seu guia, mas já está rindo de você.&r&r"
+			]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "naturesaura:book"
+				}
+			}
+			id: "497584693F232C18"
+			rewards: [{
+				id: "086E8AAD6D366A8C"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "naturesaura:book"
+					}
+				}
+				type: "item"
+			}]
+			shape: "woodtier"
+			size: 1.1d
+			tasks: [{
+				id: "1A002CEF6E9549D6"
+				type: "checkmark"
+			}]
+			title: "O livro da aura"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4BE69805DC9E253E"]
+			id: "3E6E088EDD954E6F"
+			size: 1.2d
+			tasks: [{
+				id: "45AB68D21D1C0292"
+				item: "kubejs:token_utility"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["558AD48F5D4237AC"]
+			description: [
+				"  Este modpack tem um jeito próprio de se apresentar. Esta é uma das poucas vezes em que eu, o autor, falo diretamente com você — que decidiu dar uma chance ao meu trabalho."
+				""
+				"  Daqui em diante, as quests vão te guiar por uma narrativa que conversa contigo de forma pessoal. Pode esperar algumas brincadeiras, um pouco de poesia, mas também explicações claras e objetivas para que você nunca fique perdido."
+				""
+				"  É importante dizer: a progressão aqui é linear e as receitas estão bem conectadas entre si. Se você prefere packs totalmente livres, talvez este não seja o ideal. Mas, se você gosta da ideia de uma jornada com caminhos definidos e bem costurados, acredito que vai se sentir em casa."
+				""
+				"  Cada detalhe foi pensado com carinho — dos itens às máquinas, passando por mecânicas feitas sob medida para este pack. Tudo para que a experiência seja única e integrada. Se topar seguir a biografia de um engenheiro meio maluco, seja muito bem-vindo."
+				""
+				"  As duas quests acima explicam melhor como funciona a estrutura do pack. Se bater qualquer dúvida, recomendo começar por elas."
+				""
+				"  Ah, e não se preocupe com a receita da crafting table — parece estranha no começo, mas prometo que é simples."
+				""
+				"  Boa sorte, divirta-se, e espero de coração que aproveite essa jornada. "
+				""
+				"  &aNos vemos no final dela! :)"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:player_head"
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							-1850150143
+							-404533413
+							-1504272835
+							-1470363781
+						]
+						Name: "Zambim"
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTc1ODIyMzYxNDY5OCwKICAicHJvZmlsZUlkIiA6ICI5MWI4ZjMwMWU3ZTM0ZjViYTY1NjllM2RhODVjMDc3YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJaYW1iaW0iLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjI4MTI0ZGUzNjY1MjMyODZiZjI3MWNjMTY1MThhYmU0OTBmNmYzNGJmNGUzOGIxZGJhNjJjYWU2NjY0OGY3YyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzNDBjMGUwM2RkMjRhMTFiMTVhOGIzM2MyYTdlOWUzMmFiYjIwNTFiMjQ4MWQwYmE3ZGVmZDYzNWNhN2E5MzMiCiAgICB9CiAgfQp9"
+							}]
+						}
+					}
+				}
+			}
+			id: "70983AD660631855"
+			subtitle: "&aSeja Bem-vindo!"
+			tasks: [{
+				id: "6A57E5382B9F7CDF"
+				type: "checkmark"
+			}]
+			title: "Nota do autor"
+			x: -11.267857142857146d
+			y: -2.6607142857142883d
+		}
+		{
+			dependencies: ["708E4BE08506636D"]
+			description: [
+				"  A companheira indiscutível da crafting table. Acredito que dispensa apresentações, é a fornalha que você já conhece."
+				""
+				"  Asse sua comida, esquente seus minérios, queime suas ideias, tudo é igualmente válido. "
+				""
+				"&7&o— O que? Esperava algo mais?&r&r"
+			]
+			id: "042EC538643F435A"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "5786D04DC397B04C"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "O par perfeito"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["042EC538643F435A"]
+			id: "462BCAE24399B514"
+			shape: "square"
+			tasks: [{
+				id: "0D3F8E779435E2DA"
+				item: "naturesaura:gold_brick"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.3428571428571274d
+		}
+		{
+			dependencies: ["042EC538643F435A"]
+			icon: "naturesaura:bottle_two_the_rebottling"
+			id: "5FD7CCD89895AAAB"
+			shape: "circle"
+			tasks: [
+				{
+					id: "03D57A35FD4C5553"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "56275F9AC560239B"
+					item: "naturesaura:bottle_two_the_rebottling"
+					type: "item"
+				}
+			]
+			title: "Recipientes do Éter"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["021D8AC2257200B6"]
+			id: "4BE69805DC9E253E"
+			tasks: [{
+				id: "0C575E52B64245B2"
+				item: "naturesaura:sky_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5BF0B3134EF672C0"
+				"0D69EDFAA244A42E"
+			]
+			id: "5EC81561779BCF73"
+			tasks: [{
+				id: "3DDE40AB4D426508"
+				item: "naturesaura:token_joy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3720B8882392764A"
+				"5BF0B3134EF672C0"
+				"0D69EDFAA244A42E"
+			]
+			id: "18DF48C8A8B52BA2"
+			tasks: [{
+				id: "1AD764B727447CA5"
+				item: "naturesaura:token_sorrow"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "2DA99CE16108C12A"
+			shape: "square"
+			tasks: [{
+				id: "4F2B1FF27B190705"
+				item: "naturesaura:eye"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.3428571428571274d
+		}
+		{
+			dependencies: ["36ED84D6DA1ACBF6"]
+			id: "0D69EDFAA244A42E"
+			tasks: [{
+				id: "037EFD759C9FA947"
+				item: "kubejs:rose_needle"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["042EC538643F435A"]
+			id: "155BB7639312253D"
+			shape: "gear"
+			tasks: [{
+				id: "289CD381A5E9C0E8"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:ore_bench"
+					}
+				}
 				type: "item"
 			}]
 			x: -3.0d
-			y: 2.0d
+			y: -1.0d
 		}
 		{
-			description: ["teste!"]
-			id: "14B4BC07E81899F6"
+			dependencies: ["155BB7639312253D"]
+			id: "36ED84D6DA1ACBF6"
+			shape: "gear"
 			tasks: [{
-				id: "4040A480467B92D1"
-				item: "minecraft:oak_log"
+				id: "526E3B892270476F"
+				item: "minecraft:raw_iron"
 				type: "item"
 			}]
-			title: "just a test"
-			x: -5.5d
-			y: 2.5d
+			x: -2.0d
+			y: -1.0d
 		}
 	]
-	title: "&d1. Psiu. Me leia"
+	title: "&d1. Psst. Read me"
 }

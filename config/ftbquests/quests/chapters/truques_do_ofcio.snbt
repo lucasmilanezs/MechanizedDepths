@@ -37,7 +37,7 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -2.0d
 		}
 		{
@@ -63,7 +63,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 1.0d
 		}
 		{
@@ -79,7 +79,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: 1.0d
 		}
 		{
@@ -89,7 +89,7 @@
 				item: "create:schematicannon"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: 1.0d
 		}
 		{
@@ -181,7 +181,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -0.5d
 		}
 		{
@@ -303,5 +303,5 @@
 			y: -1.0d
 		}
 	]
-	title: "&4(UT)&r Truques do Ofício"
+	title: "{ftbquests.chapter.truques_do_ofcio.title}"
 }

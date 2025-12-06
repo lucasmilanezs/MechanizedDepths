@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "hexagon"
+	default_quest_shape: "square"
 	filename: "termodinmica_aplicada"
 	group: "48009A32F221D9FC"
 	icon: "thermal:dynamo_magmatic"
@@ -59,8 +59,8 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -0.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6AA53F03B0A46CA3"]
@@ -97,21 +97,17 @@
 		}
 		{
 			description: [
-				"   Antes de mais nada, vamos falar sobre os tais catalisadores."
+				"   Catalysts are auxiliary components inserted into the process to alter its behavior: they accelerate, divert, amplify. They’re not mandatory — until they are."
 				""
-				"   Você pode até achar que o Pulverizer funciona sozinho — joga um minério lá, gira um tambor mágico com dentes de aço e pronto. Mas o que separa um triturador comum de uma máquina industrial otimizada é a ciência da intervenção."
+				"   In most cases, they’re the only way to extract rare by-products like ilmenite, rutile, obsidianite, or things even less pronounceable. Treat them with care — actually, with planning."
 				""
-				"   Os catalisadores são componentes auxiliares que se inserem no processo para alterar seu comportamento: aceleram, desviam, amplificam. Eles não são obrigatórios — até que se tornem."
+				"   They will decide whether your industrial chain is efficient… or just loud."
 				""
-				"   Na maioria dos casos, são o único jeito de extrair subprodutos raros como ilmenita, rutile, obsidianita ou coisas ainda menos pronunciáveis. Então, trate-os com carinho. Ou melhor: com planejamento."
+				"   Ground quartz acts as a crystalline abrasive inside the pulverizer chamber. Its sharp edges and high hardness index mechanically interfere with ore fragmentation, helping destabilize micro-structures."
 				""
-				"   Eles vão definir se sua cadeia industrial será eficiente... ou só barulhenta."
+				"   Though not participating chemically, its silicate nature improves cutting action, speeding up milling. However, like any light abrasive, it wears easily, being more useful for short, low-demand sessions."
 				""
-				"   O quartzo moído atua como um abrasivo cristalino dentro da câmara do pulverizador. Suas bordas afiadas e alto índice de dureza interferem mecanicamente na fragmentação do minério, ajudando a desestabilizar microestruturas."
-				""
-				"   Embora não participe quimicamente, sua natureza silicatada melhora a ação de corte, acelerando a moagem. Contudo, como todo abrasivo leve, se desgasta com facilidade, sendo mais útil em sessões curtas e pouco exigentes. "
-				""
-				"&7&o— Corta bem, dura pouco. Como muitos discursos.&r&r"
+				"&7&o— Cuts well, lasts little. Like many speeches.&r&r"
 			]
 			id: "377D66DD47488FE4"
 			tasks: [{
@@ -119,26 +115,27 @@
 				item: "mekanism:dust_quartz"
 				type: "item"
 			}]
-			title: "Eficiência Abrasiva"
+			title: "Abrasive Efficiency"
 			x: -3.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["377D66DD47488FE4"]
 			description: [
-				"   Quando introduzido no processo, o pó de coque funciona como um auxiliar térmico adsorvente. Seu alto teor de carbono residual interage com elementos instáveis durante a fragmentação, promovendo reações de redução leve ou sublimação de traços metálicos."
-				"   Esse efeito favorece o desprendimento de subprodutos com maior eficiência, como óxidos ou sais metálicos ligados ao minério original. Seu consumo é intermediário, pois não se decompõe por completo, mas reage com parte dos compostos voláteis."
+				"   When introduced into the process, coke dust acts as an adsorptive thermal aid. Its high residual carbon content interacts with unstable elements during fragmentation, promoting mild reduction reactions or sublimation of metallic traces."
+				"   This effect favors the release of by-products with greater efficiency, such as oxides or metal salts bound to the original ore. Consumption is intermediate: it doesn’t fully decompose, but it does react with part of the volatile compounds."
 				""
-				"&7&o— A brasa que não apaga, apenas se torna útil de novo.&r&r"
+				"&7&o— An ember that never dies — it just becomes useful again.&r&r"
 			]
 			id: "25FED667BD6B99AD"
+			shape: "hexagon"
 			tasks: [{
 				id: "6FD3BD75DC351BD3"
 				item: "immersiveengineering:dust_coke"
 				type: "item"
 			}]
-			title: "Combustão Reativa"
-			x: -6.5d
+			title: "Reactive Combustion"
+			x: -5.0d
 			y: -2.0d
 		}
 		{
@@ -213,20 +210,21 @@
 		{
 			dependencies: ["504BB1A0C0A5D778"]
 			description: [
-				"   Esta substância viscosa, derivada de processos biológicos complexos, atua como um meio de solvatação ativa dentro da câmara. Sua composição gelatinosa permite encapsular partículas durante a moagem, evitando perdas por suspensão e otimizando reações secundárias."
+				"   This viscous substance, derived from complex biological processes, acts as an active solvation medium inside the chamber. Its gelatinous composition encapsulates particles during milling, preventing suspension losses and optimizing secondary reactions."
 				""
-				"   Além disso, certos compostos orgânicos instáveis nela presentes funcionam como precursores de reações catalíticas, especialmente com minerais sensíveis a pH ou ligação orgânica-metal. Sua durabilidade e rendimento o colocam como padrão ouro de catalisador. Excelente e balanceado, só poderia durar um pouquinho mais..."
+				"   In addition, certain unstable organic compounds within it serve as precursors for catalytic reactions, especially with minerals sensitive to pH or organo-metallic bonding. Its durability and yield make it the gold-standard catalyst. Excellent and balanced — it could just last a little longer..."
 				""
-				"&7&o— Ele dissolve coisas que você nem sabia que estavam lá. Inclusive sua certeza.&r&r"
+				"&7&o— It dissolves things you didn’t know were there. Including your certainty.&r&r"
 			]
 			id: "0E15CFE7649C8E5E"
+			shape: "hexagon"
 			tasks: [{
 				id: "77215FC08FA0171E"
 				item: "kubejs:gelatinous_organic_solvent"
 				type: "item"
 			}]
-			title: "Catalisador Bioestrutural"
-			x: -6.5d
+			title: "Bio-Structural Catalyst"
+			x: -5.0d
 			y: 1.0d
 		}
 		{
@@ -235,70 +233,74 @@
 				"3321B64AAB3C71A1"
 			]
 			description: [
-				"   O cinnabar, composto principalmente de sulfeto de mercúrio (HgS), possui uma estrutura cristalina que, ao ser pressionada, libera microcargas estáticas e sofre fratura lamelar."
+				"   Cinnabar, primarily mercury sulfide (HgS), has a crystalline structure that, when stressed, releases micro-static charges and undergoes lamellar fracture."
 				""
-				"   Durante a pulverização, esses efeitos provocam uma dispersão eletrostática nos particulados, reduzindo aglomeração e aumentando a exposição de superfícies para o processamento. Seu desempenho equilibrado o torna um catalisador técnico de ampla aplicabilidade."
+				"   During pulverization, these effects cause electrostatic dispersion of particulates, reducing agglomeration and increasing surface exposure for processing. Its balanced performance makes it a broadly applicable technical catalyst."
 				""
-				"&7&o— A beleza está no equilíbrio... mas também em um leve grau de toxidade funcional.&r&r"
+				"&7&o— Beauty lies in balance… and in a slight degree of functional toxicity.&r&r"
 			]
 			id: "1F6EBFB9DB2A2B14"
+			shape: "hexagon"
 			tasks: [{
 				id: "6D2A60FB21D90FE1"
 				item: "thermal:cinnabar"
 				type: "item"
 			}]
-			title: "Reagente de Cristal Vermelho"
-			x: -6.5d
+			title: "Red Crystal Reagent"
+			x: -5.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["4B17B25AEC9A0007"]
 			description: [
-				"   Apesar de bem contra-intuitivo, a Ice Charge funciona como um agente térmico moderador. Durante a pulverização, sua liberação controlada de frio absorve parte da energia gerada por atrito, reduzindo o desgaste do sistema e permitindo ciclos curtos com menos interrupção."
+				"   Counter-intuitive as it is, the Ice Charge works as a moderating thermal agent. During milling, its controlled cold release absorbs part of the friction-generated energy, reducing system wear and enabling short cycles with fewer interruptions."
 				""
-				"   Sua ação é puramente física e limitada, mas a agilidade que proporciona é valiosa em fluxos de processamento rápido. Frágil e volátil, raramente sobrevive por mais de uma rodada."
+				"   Its action is purely physical and limited, but the agility it provides is valuable in fast-processing flows. Fragile and volatile, it rarely survives more than a single round."
 				""
-				"&7&o— Não dura muito, mas esfria os ânimos e acelera o trabalho. Um alívio temporário, como um bom argumento improvável.&r&r"
+				"&7&o— It doesn’t last long, but it cools tempers and speeds the work. A temporary relief — like a good improbable argument.&r&r"
 			]
 			id: "1DB47027209C4091"
+			shape: "hexagon"
 			tasks: [{
 				id: "418CDA44CA87730C"
 				item: "thermal:ice_charge"
 				type: "item"
 			}]
-			title: "Choque Térmico Direcionado"
-			x: -6.5d
+			title: "Directed Thermal Shock"
+			x: -5.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["42B368C1DD78B214"]
 			description: [
-				"   Formado por resíduos de alto-forno ricos em óxidos metálicos, o Rich Slag atua como um promotor de reatividade superficial. Seus componentes — principalmente óxidos de ferro, silício e alumínio — interagem com partículas em processo de fratura, aumentando sua instabilidade química."
-				"   Esse efeito induz a liberação de subprodutos ligados por forças fracas ou que requerem ativação catalítica mínima. Apesar de não afetar a velocidade, sua eficiência em extrações secundárias é excepcional."
+				"   Formed by blast-furnace residues rich in metal oxides, Rich Slag acts as a promoter of surface reactivity. Its components — chiefly iron, silicon, and aluminum oxides — interact with particles under fracture, increasing their chemical instability."
+				"   This effect induces the release of by-products bound by weak forces or requiring minimal catalytic activation. Though it doesn’t affect speed, its efficiency in secondary extractions is exceptional."
 				""
-				"&7&o— O que restou da fundição... agora extrai o que nunca saía da pedra. Segunda chance para catalisadores e pecadores.&r&r"
+				"&7&o— What’s left from smelting… now extracts what never left the stone. Second chances for catalysts and sinners.&r&r"
 			]
 			id: "41F84F8BA400D58F"
+			shape: "hexagon"
 			tasks: [{
 				id: "4C1F251E95EB52D8"
 				item: "thermal:rich_slag"
 				type: "item"
 			}]
-			title: "Resíduo de Pureza Reprocessada"
-			x: -6.5d
+			title: "Reprocessed Purity Residue"
+			x: -5.0d
 			y: 4.0d
 		}
 		{
 			description: [
-				"   Dado estímulo demais, até uma planta se entrega. No Phytogenic Insolator, sob luz constante, água pura e Phyto-Gro em excesso, ela tenta se proteger. Fecha os estômatos. Reforça suas fibras. Enrijece suas paredes celulares até se tornar... algo mais. Algo morto."
+				"   Given too much stimulus, even a plant yields. In the Phytogenic Insolator — under constant light, pure water, and excess Phyto-Gro — it tries to protect itself. It closes its stomata. Reinforces its fibers. Stiffens its cell walls until it becomes… something else. Something dead."
 				""
-				"   Em vez de florescer, ela cria uma carapaça de celulose densa e lignina modificada — uma reação de defesa que, ironicamente, a sufoca. Sem perceber, a planta literalmente se blinda até a morte, uma \"doença autoimune\". O resultado é o Organic Polymer Mesh: um polímero vegetal de alta performance, flexível, resistente ao calor e completamente inerte. Perfeito para máquinas. Horrível para fotossíntese."
+				"   Instead of blooming, it forms a carapace of dense cellulose and modified lignin — a defense reaction that, ironically, suffocates it. Without noticing, the plant literally embalms itself to death — an “auto-immune disease.” The result is Organic Polymer Mesh: a high-performance plant polymer, flexible, heat-resistant, and completely inert. Perfect for machines. Horrible for photosynthesis."
 				""
-				"   Curioso como procuramos metais densos e raros, para que o material mais útil desse capítulo vir de plantas e água. Não subestime a &2&lengenharia verde!&r&r"
+				"   Curious how we chase dense, rare metals only to find the chapter’s most useful material comes from plants and water. Don’t underestimate &2&lgreen engineering!&r&r"
 				""
-				"&7&o— Fascinante. Dê a uma planta o paraíso, e ela se embalsama. Acha que está se adaptando... enquanto morre quietinha.&r&r"
+				"&7&o— Fascinating. Give a plant paradise and it embalms itself. Thinks it’s adapting… while it quietly dies.&r&r"
 			]
 			id: "1E7A8B399C39BF92"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7B017C8ACAC68D96"
@@ -309,17 +311,8 @@
 			y: 6.0d
 		}
 		{
-			id: "1D32FAFD4B673752"
-			tasks: [{
-				id: "2B06910B71358973"
-				item: "thermal:device_rock_gen"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 2.5d
-		}
-		{
 			id: "7C388A6CE74ED7C8"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7E354A1BCE8F876F"
@@ -330,54 +323,57 @@
 			y: -4.0d
 		}
 		{
-			id: "6B537BB89F153E53"
+			dependencies: ["01214CC32B9E87BC"]
+			id: "439F76C8E719CE16"
 			tasks: [{
-				id: "513A2E1939669EF6"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -2.0d
-		}
-		{
-			id: "3C63CA9085B5D349"
-			tasks: [{
-				id: "1451EA4C6073C8B1"
-				item: {
-					Count: 1
-					id: "buildinggadgets2:gadget_copy_paste"
-					tag: { }
-				}
+				id: "699EF78D2C91E701"
+				item: "extendedcrafting:flux_crafter"
 				type: "item"
 			}]
 			x: -0.5d
 			y: 1.0d
 		}
 		{
-			id: "5ACA5135D067CE24"
+			dependencies: ["439F76C8E719CE16"]
+			id: "0516087C6CD75C8B"
 			tasks: [{
-				id: "0BEB0D14644E4319"
-				item: {
-					Count: 1
-					id: "buildinggadgets2:gadget_cut_paste"
-					tag: {
-						pastereplace: 1b
-					}
-				}
+				id: "2F8F36AC06490974"
+				item: "kubejs:redstone_flux_super_coil"
 				type: "item"
 			}]
 			x: -0.5d
 			y: 2.5d
 		}
 		{
-			id: "05EE79C3F0B06EE3"
+			dependencies: ["0516087C6CD75C8B"]
+			id: "3F4D6D0BF446A01F"
 			tasks: [{
-				id: "2E44B337198532A4"
-				item: "buildinggadgets2:gadget_destruction"
+				id: "671B5CD24393C59D"
+				item: "kubejs:rf_resonator"
 				type: "item"
 			}]
 			x: -0.5d
 			y: 4.0d
+		}
+		{
+			id: "01214CC32B9E87BC"
+			tasks: [{
+				id: "77C2C3A54616C691"
+				item: "extendedcrafting:redstone_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			id: "442C5E4D8A87F50F"
+			tasks: [{
+				id: "2836DF5530F4C3E0"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
 		}
 	]
 	title: "&66. &6Termo&e&edinâ&emi&eca&c &cApli&4cada™"

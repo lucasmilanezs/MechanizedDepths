@@ -3,7 +3,7 @@
 	default_quest_shape: "hexagon"
 	filename: "onde_o_ferro_aprende_a_danar"
 	group: "0E3BAF4D0D92EEE1"
-	icon: "create:wrench"
+	icon: "create:mechanical_arm"
 	id: "3FBA78EC5B9B5F80"
 	images: [{
 		height: 3.0d
@@ -18,36 +18,36 @@
 	quests: [
 		{
 			description: [
-				"   Até aqui, você trilhou o caminho tradicional: fogo, pressão, aço e cabos. O Immersive ensinou que o mundo se molda com força. Mas — e se ele também pudesse ser movido?"
+				"   Up to now, you’ve followed the traditional path: fire, pressure, steel, and cables. Immersive taught you that the world bends through force. But — what if it could also move?"
 				""
-				"   O capítulo que se abre agora não é um desvio. Não é um atalho mágico. É a outra face da mesma indústria que você já começou a construir. O Create não substitui nada. Ele expande tudo."
+				"   The chapter that opens now isn’t a detour. Not a magical shortcut. It’s the other face of the same industry you’ve already built. Create doesn’t replace anything. It expands everything."
 				""
-				"   Enquanto você prensa eletrodos e bombeia fluido vegetal com dor na alma, o Create observa... e oferece uma alternativa: engrenagens, rotação, fluxo contínuo."
+				"   While you press electrodes and pump plant fluid through gritted teeth, Create watches... and offers an alternative: gears, rotation, continuous flow."
 				""
-				"   Aqui, você não verá receitas milagrosas nem acesso imediato a grandes máquinas. Mas verá braços que repetem gestos. Rodas que carregam minérios. Sequências que transformam um crafting doloroso em uma dança mecânica."
+				"   Here, you won’t find miraculous recipes or instant access to grand machines. But you’ll see arms repeating gestures. Wheels carrying ores. Sequences turning painful crafting into mechanical dance."
 				""
-				"   E se acha que pode ignorar isso porque já tem energia e ligas… lembre-se: este modpack não vai te respeitar se você continuar craftando tudo na mão."
+				"   And if you think you can ignore this because you already have power and alloys… remember: this modpack won’t respect you if you keep crafting everything by hand."
 				""
-				"   A progressão futura vai pedir fábricas. Linhas. Fluxos. E um senso mínimo de infraestrutura. O Applied Energistics está longe. Muito longe. E o dia em que você vai finalmente poder clicar em “autocraft” será épico — mas não é agora."
+				"   Future progress will demand factories. Lines. Flows. And a minimal sense of infrastructure. Applied Energistics is far away. Very far. And the day you finally get to click “autocraft” will be epic — but that day is not today."
 				""
-				"   Então aqui está sua sugestão disfarçada de liberdade:"
-				"Comece pequeno. Um funil aqui, uma prensa ali. Teste layouts. Pense na logística. Fique imerso nessa estética rústica e máquinas enormes antes de poder seguir para o digital. Não corra dos problemas e gargalos, faça da experiência resolver um problema por vez."
+				"   So here’s your suggestion disguised as freedom:"
+				"Start small. A funnel here, a press there. Test layouts. Think logistics. Immerse yourself in this rustic aesthetic and these massive machines before you can go digital. Don’t run from bottlenecks — make the experience of solving them your reward."
 				""
-				"   Porque o fardo de carregar a revolução nos ombros... pode muito bem ser colocado em uma esteira."
+				"   Because the burden of carrying a revolution on your shoulders... can very well be placed on a conveyor belt."
 				""
-				"&7&o— A verdadeira automação não começa com um clique. Começa quando você decide parar de repetir a mesma tarefa como um lunático.&r&r"
+				"&7&o— True automation doesn’t begin with a click. It begins when you stop repeating the same task like a lunatic.&r&r"
 			]
 			hide_dependent_lines: true
 			icon: "create:cogwheel"
 			id: "6FFDC0CD59E051D1"
 			shape: "netheritetier"
 			size: 2.0d
-			subtitle: "Uma sugestão obrigatória"
+			subtitle: "A mandatory suggestion"
 			tasks: [{
 				id: "29A3F42A9CF66B5F"
 				type: "checkmark"
 			}]
-			title: "Engrenanges à Beira do Colapso"
+			title: "Gears on the Verge of Collapse"
 			x: 0.0d
 			y: -1.0d
 		}
@@ -57,14 +57,14 @@
 				"41C7D076DE390330"
 			]
 			description: [
-				"   Você dominou rituais. Moldou madeira viva e pedra rúnica, deu forma ao invisível. Agora, porém, é hora de trocar o inexplicável pelo inevitável: engrenagens."
+				"   You mastered rituals. Shaped living timber and runic stone, gave form to the invisible. Now it’s time to trade the inexplicable for the inevitable: gears."
 				""
-				"   Essa é a primeira liga verdadeira. Não no sentido metálico, mas simbólico: ela une ideias que não deveriam conversar. Rituais arcanos e torque mecânico. Sussurros de aura e cliques de engrenagens."
+				"   This is the first true alloy. Not in the metallic sense, but the symbolic one: it binds ideas that shouldn’t speak to each other. Arcane rituals and mechanical torque. Whispers of aura and the click of gears."
 				""
-				"   Criar uma &8&landesite alloy&r&r é como fundir dois mundos — e se você acha que isso é exagero, espera até ver os trens."
+				"   Creating &8&landesite alloy&r&r is like fusing two worlds — and if you think that’s exaggeration, wait until you see the trains."
 				""
-				" "
-				"&7&o— Nada gira sem ela. Nem ideias, nem máquinas, nem esse modpack.&r&r"
+				" "
+				"&7&o— Nothing turns without it. Not ideas, not machines, not this modpack.&r&r"
 			]
 			id: "2A261C789F73E3A9"
 			shape: "gear"
@@ -75,7 +75,7 @@
 				item: { Count: 4, id: "create:andesite_alloy" }
 				type: "item"
 			}]
-			title: "Pedra para girar mundos"
+			title: "Stone to Spin Worlds"
 			x: 0.0d
 			y: -4.2d
 		}
@@ -93,11 +93,11 @@
 		{
 			dependencies: ["2A261C789F73E3A9"]
 			description: [
-				"   Eixos conectam tudo — inclusive seus erros."
+				"   Shafts connect everything — including your mistakes."
 				""
-				"   São discretos, diretos e inevitáveis. Toda construção começa girando um... e termina girando todos."
+				"   They’re discreet, direct, inevitable. Every build starts by spinning one... and ends by spinning them all."
 				""
-				"&7&o— Olhe para um Shaft. Agora olhe para o caos que ele está espalhando. Você não o respeitou.&r&r"
+				"&7&o— Look at a Shaft. Now look at the chaos it’s spreading. You didn’t respect it.&r&r"
 			]
 			id: "3265B3C72791C9EA"
 			tasks: [{
@@ -105,20 +105,20 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			title: "Tá girando..."
+			title: "It’s Spinning..."
 			x: 0.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   As pequenas engrenagens não apenas transmitem movimento. Elas traduzem força em lógica — e às vezes, em desespero."
+				"   Small gears don’t just transmit motion. They translate force into logic — and sometimes, into despair."
 				""
-				"   Quando usadas entre peças do mesmo tamanho, o giro se propaga normalmente. Mas se você misturar tamanhos… bem, parabéns. Você agora tem uma calculadora rotacional viva."
+				"   Used between same-sized parts, the spin propagates normally. Mix sizes and… well, congratulations. You now have a living rotational calculator."
 				""
-				"   Aumente a velocidade, perca torque. Aumente torque, perca velocidade. E se tudo der certo, nada explode. Se der errado, tudo trava."
+				"   Increase speed, lose torque. Increase torque, lose speed. And if everything goes right, nothing explodes. If it goes wrong, everything jams."
 				""
-				"&7&o— Essa engrenagem não gira sozinha. Mas vai girar com você... até quebrar algo que você não viu.&r&r"
+				"&7&o— This gear doesn’t turn on its own. But it’ll turn with you... until it breaks something you didn’t see.&r&r"
 			]
 			id: "3DE2667B06DFB607"
 			tasks: [{
@@ -126,20 +126,20 @@
 				item: "create:cogwheel"
 				type: "item"
 			}]
-			title: "Dentes, Dúvidas e Descobertas"
+			title: "Teeth, Doubts, and Discoveries"
 			x: 1.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   A engrenagem grande é o começo da mentira técnica: \"Mais é melhor\"."
+				"   The large gear is the beginning of the technical lie: “More is better.”"
 				""
-				"   Ela gira mais devagar. Mas, com a engrenagem pequena certa ao lado, pode multiplicar a velocidade — ou multiplicar seu erro."
+				"   It spins slower. But with the right small gear beside it, it can multiply speed — or multiply your mistake."
 				""
-				"   Colocar duas engrenagens diferentes uma acima da outra cria um sistema. Colocar três cria uma dúvida. Colocar quatro cria um post no Reddit pedindo ajuda."
+				"   Stack two different gears and you get a system. Stack three and you get doubt. Stack four and you get a Reddit post begging for help."
 				""
-				"&7&o— Rotação não é energia. É paciência com matemática aplicada.&r&r"
+				"&7&o— Rotation isn’t energy. It’s patience with applied math.&r&r"
 			]
 			id: "30E4ADB9A99F0519"
 			tasks: [{
@@ -147,18 +147,18 @@
 				item: "create:large_cogwheel"
 				type: "item"
 			}]
-			title: "Girar é fácil, Já girar certo,,,"
+			title: "Spinning Is Easy; Spinning Right..."
 			x: -1.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3DE2667B06DFB607"]
 			description: [
-				"   Finalmente: movimento sem sacrifício — só precisa de um rio, uma parede, e sua alma técnica."
+				"   Finally: movement without sacrifice — all you need is a river, a wall, and your technical soul."
 				""
-				"   A Water Wheel gera stress, a \"energia rotacional\" que mantém tudo funcionando. Quanto mais girar, mais stress. Mas não se empolgue: ela gira devagar, com torque alto — o contrário de velocidade."
+				"   The Water Wheel generates stress — the “rotational energy” that keeps everything running. The more it turns, the more stress. Don’t get excited: it spins slowly, with high torque — the opposite of speed."
 				""
-				"   Ideal para setups iniciais, e perfeita para aprender que nem tudo gira igual. Ou para descobrir que seu sistema inteiro está consumindo mais do que ela gera."
+				"   Ideal for early setups, and perfect to learn that not everything spins the same. Or to discover your whole system is consuming more than it generates."
 			]
 			id: "50EE1E57C08D77C8"
 			tasks: [{
@@ -166,20 +166,20 @@
 				item: "create:water_wheel"
 				type: "item"
 			}]
-			title: "O Primeiro Giro Sempre é o Mais Lento"
+			title: "The First Spin Is Always the Slowest"
 			x: 1.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["30E4ADB9A99F0519"]
 			description: [
-				"   A Water Wheel comum era o sussurro do fluxo. A versão grande é o rugido de quem cansou de esperar."
+				"   The regular Water Wheel was the whisper of the flow. The large version is the roar of someone tired of waiting."
 				""
-				"   A Large Water Wheel oferece mais stress — mais potência bruta para máquinas pesadas. Mas, como tudo que oferece mais, ela também exige mais: mais espaço, mais alinhamento, mais cuidado."
+				"   The Large Water Wheel offers more stress — more brute power for heavy machines. But like anything that offers more, it also demands more: more space, more alignment, more care."
 				""
-				"   O design muda, mas a verdade permanece: se você quer que sua fábrica respire, você precisa dar a ela pulmões maiores."
+				"   The design changes, but the truth remains: if you want your factory to breathe, you need to give it bigger lungs."
 				""
-				"&7&o— Quando o torque sussurra, você ouve. Quando ele grita, a engrenagem cede.&r&r"
+				"&7&o— When torque whispers, you listen. When it screams, the gear yields.&r&r"
 			]
 			id: "157A36109CDC7C2B"
 			tasks: [{
@@ -187,19 +187,19 @@
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			title: "O Rio Não Basta Mais"
+			title: "The River Is No Longer Enough"
 			x: -1.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   Horizontal vira vertical."
-				"   Vertical vira horizontal."
+				"   Horizontal becomes vertical."
+				"   Vertical becomes horizontal."
 				""
-				"   A gearbox existe para converter movimento sem converter sua sanidade. Mas como tudo no Create, ela só ajuda até o momento em que você liga duas por engano e cria uma rotação invertida em toda a fábrica."
+				"   The gearbox exists to convert motion without converting your sanity. But like everything in Create, it only helps until you cross-wire two by accident and invert rotation across your whole factory."
 				""
-				"&7&o— A rotação muda de plano. A lógica muda com ela. Sua paciência, nem sempre acompanha.&r&r"
+				"&7&o— Rotation changes planes. Logic changes with it. Your patience doesn’t always keep up.&r&r"
 			]
 			id: "54E40EA8FC901031"
 			tasks: [{
@@ -207,17 +207,17 @@
 				item: "create:gearbox"
 				type: "item"
 			}]
-			title: "O Eixo que Vira Canto"
+			title: "The Shaft That Turns Corners"
 			x: -2.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   O gearshift inverte a direção da rotação quando recebe redstone."
-				"Isso pode ser útil. Ou devastador. Ou os dois, dependendo se seu sistema tem um freio ou uma criança em cima de um belt."
+				"   The gearshift reverses rotational direction when it receives a redstone signal."
+				"That can be useful. Or disastrous. Or both, depending on whether your system has a brake — or a child standing on a belt."
 				""
-				"&7&o— Às vezes, para seguir em frente, você precisa girar para trás. Isso é Create. Isso é terapia.&r&r"
+				"&7&o— Sometimes, to move forward, you need to spin backward. That’s Create. That’s therapy.&r&r"
 			]
 			id: "1C7464A392E4AA20"
 			tasks: [{
@@ -225,18 +225,18 @@
 				item: "create:gearshift"
 				type: "item"
 			}]
-			title: "O Botão da Contradição"
+			title: "The Contradiction Button"
 			x: -1.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["1C7464A392E4AA20"]
 			description: [
-				"   Imagine ter o poder de cortar a energia de um sistema inteiro com um pulso de redstone."
+				"   Imagine having the power to cut power from an entire system with a pulse of redstone."
 				""
-				"   Parar, isolar, interromper — o clutch é o disjuntor do Create. Mas cuidado: se esquecer de religar, você vai passar horas achando que quebrou tudo. Spoiler: quebrou sim — sua atenção."
+				"   Stop, isolate, interrupt — the clutch is Create’s circuit breaker. But be careful: forget to turn it back on and you’ll spend hours thinking you broke everything. Spoiler: you did — your attention span."
 				""
-				"&7&o— O clutch não é para girar. É para pausar. Um lembrete de que às vezes, parar é estratégico.&r&r"
+				"&7&o— The clutch isn’t for turning. It’s for pausing. A reminder that sometimes, stopping is strategic.&r&r"
 			]
 			id: "48060F3F5D2E60F9"
 			tasks: [{
@@ -244,18 +244,18 @@
 				item: "create:clutch"
 				type: "item"
 			}]
-			title: "O Silêncio entre os Dentes"
+			title: "The Silence Between the Teeth"
 			x: -2.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   Às vezes você só quer que duas máquinas girem igual, do mesmo lado e na mesma velocidade."
+				"   Sometimes you just want two machines to spin the same way—same direction, same speed."
 				""
-				"   A chain drive faz isso — elegantemente. Mas alinhe errado e você descobre o conceito de “desincronização funcional rotacional” na prática."
+				"   The chain drive does exactly that — elegantly. But misalign it and you’ll discover the concept of “rotational functional desynchronization” in practice."
 				""
-				"&7&o— É como um cabo de dados entre engrenagens. Ou uma corrente. Literalmente. Só que encasulada, porque estilo importa.&r&r"
+				"&7&o— It’s like a data cable between gears. Or a chain. Literally. Just encased, because style matters.&r&r"
 			]
 			id: "0ECC57331741E458"
 			tasks: [{
@@ -263,21 +263,21 @@
 				item: "create:encased_chain_drive"
 				type: "item"
 			}]
-			title: "Síncrono ou Caótico?"
+			title: "Synchronous or Chaotic?"
 			x: -2.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   Se a Metal Press do Immersive é um braço hidráulico industrial, a Mechanical Press do Create é mais como… um martelo de ogro com precisão improvisada."
+				"   If Immersive’s Metal Press is an industrial hydraulic arm, Create’s Mechanical Press is more like… an ogre’s hammer with improvised precision."
 				""
-				"   Ela não precisa de moldes. Não precisa de fios. Não tem polidez, tampouco elegância."
-				"Ela apenas desce, com fúria controlada, e transforma metal em placa, item em bloco, esperança em automação."
+				"   It doesn’t need molds. It doesn’t need wires. It has neither polish nor elegance."
+				"It just comes down, with controlled fury, and turns metal into plates, items into blocks, hope into automation."
 				""
-				"   Menos eficiente? Talvez. Mais barulhenta? Com certeza. Mais satisfatória? Absolutamente."
+				"   Less efficient? Maybe. Louder? Definitely. More satisfying? Absolutely."
 				""
-				"&7&o— O progresso raramente é sutil. E o Create nunca tenta fingir que é.&r&r"
+				"&7&o— Progress is rarely subtle. And Create never pretends it is.&r&r"
 			]
 			id: "0173BAF7AFCB573B"
 			tasks: [{
@@ -285,18 +285,18 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "O Peso do Progresso"
+			title: "The Weight of Progress"
 			x: 1.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   A Millstone não vai te dar ouro. Mas vai fazer sua flor render mais tinta, transformar sua pedra em cascalho, e seu cascalho em flint — com sorte."
+				"   The Millstone won’t give you gold. But it will make your flower yield more dye, turn your stone into gravel, and your gravel into flint — with luck."
 				""
-				"   Ela representa o primeiro contato com processamento mecânico primitivo. Nada de ligas ou máquinas complexas. Aqui é pedra contra pedra, girando até virar pó ou alguma coisa útil."
+				"   It represents your first contact with primitive mechanical processing. No alloys or complex machines here. It’s stone against stone, spinning until it becomes dust — or something useful."
 				""
-				"&7&o— Às vezes o progresso começa moendo flor pra fazer corante. Outras vezes, começa exatamente igual.&r&r"
+				"&7&o— Sometimes progress starts by grinding a flower for dye. Other times, it starts exactly the same.&r&r"
 			]
 			id: "03FD87CD166B54A2"
 			tasks: [{
@@ -304,19 +304,19 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			title: " Moendo as Ideias"
+			title: " Grinding Ideas"
 			x: 2.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"   Um bloco que sopra coisas e, de alguma forma, é extremamente útil."
+				"   A block that blows things and is, somehow, extremely useful."
 				""
-				"   Sopre para cozinhar (com lava), lavar (com água), ou fermentar (com soulsand)."
-				"Você só entende o valor de um ventilador industrial quando ele limpa um stack de minério e devolve esperança."
+				"   Blow to cook (with lava), wash (with water), or ferment (with soulsand)."
+				"You only grasp the value of an industrial fan when it cleans a stack of ore and hands back hope."
 				""
-				"&7&o— O ar move o mundo. E os itens também. Desde que estejam no lugar certo e não bugados no chão.&r&r"
+				"&7&o— Air moves the world. And items too. As long as they’re in the right spot and not bugged on the ground.&r&r"
 			]
 			id: "2B611465A25BABEC"
 			tasks: [{
@@ -324,18 +324,18 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			title: "O Vento Traz a Forma"
+			title: "The Wind Brings Shape"
 			x: 2.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["3DE2667B06DFB607"]
 			description: [
-				"   Um mixer, um bowl, e caos semi-controlado."
+				"   A mixer, a basin, and semi-controlled chaos."
 				""
-				"   Combinando fluidos e sólidos, essa dupla permite criar ligas, massas e \"substâncias que talvez sejam legais\". É daqui que sai o brass, mas você ainda não está pronto. Não mesmo."
+				"   Combining fluids and solids, this duo lets you create alloys, doughs, and \"substances that might be legal.\" This is where brass comes from — but you’re not ready yet. Not even close."
 				""
-				"&7&o— Cozinhar no Create exige mais do que receita. Exige rotação. E um leve desvio de sanidade.&r&r"
+				"&7&o— Cooking in Create demands more than a recipe. It demands rotation. And a slight lapse of sanity.&r&r"
 			]
 			id: "61A973C8B8739001"
 			tasks: [
@@ -350,18 +350,18 @@
 					type: "item"
 				}
 			]
-			title: "Cozinha da Locurua"
+			title: "Kitchen of Madness"
 			x: 2.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["2301AE3626A0CD3B"]
 			description: [
-				"   Eles giram sem nunca parar. Não perguntam \"pra onde\", nem \"por quê\" — apenas carregam, como uma língua infinita de engrenagens que esqueceram o gosto de descansar."
-				"Os belts são o primeiro passo para fazer as coisas fluírem sem que você precise pensar demais. Monte suas correias conectando shafts, e observe os itens percorrerem o mesmo caminho para sempre."
-				"   Ideal para linhas de produção simples ou organizar seu caos doméstico, um belt nunca julga o que você está transportando."
+				"   They spin without ever stopping. They don’t ask “where” or “why” — they just carry, like an endless tongue of gears that forgot the taste of resting."
+				"Belts are the first step toward making things flow without you overthinking it. Hook your belts between shafts and watch items follow the same path forever."
+				"   Ideal for simple production lines or tidying your domestic chaos, a belt never judges what you’re transporting."
 				""
-				"— &o&7Pensei em colocar minha autoestima nesse belt, mas descobri que ela não é item válido.&r&r"
+				"— &o&7I thought about putting my self-esteem on this belt, but it turns out it isn’t a valid item.&r&r"
 			]
 			id: "713D876FFB963462"
 			tasks: [{
@@ -369,21 +369,21 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			title: "Vamos passear por aí"
+			title: "Let’s Go for a Ride"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["2301AE3626A0CD3B"]
 			description: [
-				"   Nem todo movimento é eterno. Às vezes, o progresso precisa esperar no lugar certo."
+				"   Not all movement is eternal. Sometimes progress needs to wait in the right place."
 				""
-				"   O Depot é a pausa estratégica — onde os itens repousam antes de serem esmagados, polidos, ou tocados por mãos mecânicas."
+				"   The Depot is the strategic pause — where items rest before being smashed, polished, or touched by mechanical hands."
 				""
-				"   Ele se torna o ponto central de interação com Deployers, Presses e Mixers. Pense nele como a mesa do ritual, onde o item aguarda transformação."
-				"Simples, barato e absurdamente útil. Se você ainda não colocou um desses no meio da sua bagunça, você vai."
+				"   It becomes the central point of interaction with Deployers, Presses, and Mixers. Think of it as the ritual table where the item awaits transformation."
+				"Simple, cheap, and absurdly useful. If you haven’t dropped one of these in the middle of your mess yet, you will."
 				""
-				"— &o&7Eu fico parado, mas o mundo gira. Talvez eu seja um Depot também.&r&r"
+				"— &o&7I stand still, yet the world turns. Maybe I’m a Depot too.&r&r"
 			]
 			id: "0B02A3BD59761C4A"
 			tasks: [{
@@ -397,15 +397,15 @@
 		{
 			dependencies: ["2301AE3626A0CD3B"]
 			description: [
-				"   Nada entra, nada sai — a menos que você diga como."
+				"   Nothing goes in, nothing goes out — unless you tell it how."
 				""
-				"   Funnels são os guardiões dos inventários, os filtros do mundo material. Eles decidem quem entra e quem sai, como porteiros de uma balada interdimensional."
+				"   Funnels are the gatekeepers of inventories, the filters of the material world. They decide who enters and who leaves, like bouncers at an interdimensional nightclub."
 				""
-				"   Com um toque de redstone ou um empurrão do caos, eles organizam o fluxo entre seus baús e as máquinas."
+				"   With a touch of redstone or a shove from chaos, they organize the flow between your chests and your machines."
 				""
-				"   Comece com os de andesite, e quando for digno, o brass funnel permitirá até mesmo filtragem avançada. Mas calma, jovem inventor... uma coisa de cada vez."
+				"   Start with andesite ones, and when you’re worthy, the brass funnel will even allow advanced filtering. But easy there, young inventor... one thing at a time."
 				""
-				"— &o&7É um funil. Mas com estilo. Tipo... um funil com terno.&r&r"
+				"— &o&7It’s a funnel. But with style. Like... a funnel in a suit.&r&r"
 			]
 			id: "732C63E9D2C1CB1B"
 			tasks: [{
@@ -419,19 +419,19 @@
 		{
 			dependencies: ["41C7D076DE390330"]
 			description: [
-				"   Ele reluz. Não como um diamante. Não como algo natural."
+				"   It gleams. Not like a diamond. Not like something natural."
 				""
-				"   O Rose Quartz é... quase mágico. Mas não é."
+				"   Rose Quartz is... almost magical. But it isn’t."
 				""
-				"   Você o cria não com máquinas — mas com um gesto manual, quase íntimo: jogue quartz bruto no chão, misture com corante vermelho, e então… esfregue."
+				"   You make it not with machines, but with a manual, almost intimate gesture: throw raw quartz on the ground, mix it with red dye, and then… rub."
 				""
-				"   Use uma sand paper como se estivesse lustrando sua paciência. Segure com a mão, mire no item jogado no chão, e clique com o botão direito como se não estivesse se perguntando por que raios isso funciona."
+				"   Use sandpaper as if you were polishing your patience. Hold it, aim at the item dropped on the ground, and right-click as if you weren’t questioning why on earth this works."
 				""
-				"   Esse processo — humilhante e artesanal — é o primeiro passo em direção ao electron tube."
+				"   This — humbling and handcrafted — is the first step toward the electron tube."
 				""
-				"   E, por consequência, ao Deployer, que um dia fará isso por você."
+				"   And, consequently, toward the Deployer, which will one day do this for you."
 				""
-				"— &o&7No começo, você lixa quartzo com papel. No fim, cria braços robóticos que lixam por você. Parabéns, evolução.&r&r"
+				"— &o&7At first you sand quartz with paper. In the end, you build robotic arms that sand for you. Congratulations, evolution.&r&r"
 			]
 			id: "0EC1760A6B2B0CB6"
 			tasks: [{
@@ -439,25 +439,25 @@
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			title: "Ele Brilha mas não é Raro"
+			title: "It Shines but Isn’t Rare"
 			x: 7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
 			description: [
-				"   A automação começa com um clique. O seu clique. E termina com o dele."
+				"   Automation begins with a click. Yours. And ends with his."
 				""
-				"   O Deployer é o ápice do ócio criativo — ele clica, aperta, aplica casings, planta, alimenta, quebra blocos, dá tapa no próprio criador."
+				"   The Deployer is the pinnacle of creative laziness — it clicks, presses, applies casings, plants, feeds, breaks blocks, and slaps its own creator."
 				""
-				"   Você pode usá-lo para automatizar andesite casing, electron tubes, e até mesmo mais Deployers."
+				"   You can use it to automate andesite casing, electron tubes — and even more Deployers."
 				""
-				"   É irônico? Sim. É brilhante? Também."
+				"   Is it ironic? Yes. Brilliant? Also yes."
 				""
-				"   Combine um brass hand, um electron tube e a carcaça de um sonho quebrado... e você terá criado sua primeira mão robótica."
-				"Quando ela apertar o botão por você, vai doer um pouco menos."
+				"   Combine a brass hand, an electron tube, and the shell of a broken dream... and you’ll have built your first robotic hand."
+				"When it presses the button for you, it’ll sting a little less."
 				""
-				"— &o&7Quando percebi que podia automatizar o crafting dele com ele mesmo, entendi o que era orgulho técnico.&r&r"
+				"— &o&7When I realized I could automate crafting it with itself, I understood technical pride.&r&r"
 			]
 			id: "465013195CB95147"
 			tasks: [{
@@ -465,7 +465,7 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "Que tal uma mãozinha?"
+			title: "How About a Helping Hand?"
 			x: 6.5d
 			y: -2.0d
 		}
@@ -475,23 +475,23 @@
 				"6FFDC0CD59E051D1"
 			]
 			description: [
-				"   Chegamos no ponto onde engrenagens não bastam. Você precisa de calor. De chama viva."
+				"   We’ve reached the point where gears aren’t enough. You need heat. Living flame."
 				""
-				"   Mas antes de fundir metais ou derreter lógica, precisa dar um passo prático (e suicida):"
+				"   But before you melt metal or logic, you need to take a practical (and suicidal) step:"
 				""
-				"   Ir até o Nether e clicar com o botão direito em um blaze com seu recém-craftado Empty Blaze Burner."
+				"   Go to the Nether and right-click a blaze with your freshly crafted Empty Blaze Burner."
 				""
-				"   Sim, é manual. Sim, ele ainda cospe fogo. Sim, você vai queimar."
+				"   Yes, it’s manual. Yes, it still spits fire. Yes, you will burn."
 				""
-				"   Mas só com o fogo dele aceso que a verdadeira fundição começa."
+				"   But only with its fire lit does true smelting begin."
 				""
-				"    Para construir esse burner, você vai precisar de Blazing Steel — uma liga que diz “já passei da fase do andesite”. Você pode forjá-lo no Arc Furnace, claro... Mas se ainda não chegou lá, a boa e velha Alloy Kiln do Immersive também serve. Basta aquecer o suficiente para fazer aço sentir vergonha."
+				"    To build this burner, you’ll need Blazing Steel — an alloy that says “I’m past the andesite phase.” You can forge it in the Arc Furnace, of course... But if you’re not there yet, the good old Immersive Alloy Kiln works too. Just heat it enough to make steel feel ashamed."
 				""
-				"   Este é o seu limiar:"
-				"   Da rotação para o fogo."
-				"   Do Create inocente para a alquimia pesada."
+				"   This is your threshold:"
+				"   From rotation to fire."
+				"   From innocent Create to heavy alchemy."
 				""
-				"— &o&7O botão direito no blaze. Isso. O que pode dar errado? Além do óbvio.&r&r"
+				"— &o&7Right-click the blaze. Yes. What could go wrong? Besides the obvious.&r&r"
 			]
 			id: "3C8B4742E0008284"
 			shape: "gear"
@@ -508,23 +508,23 @@
 					type: "item"
 				}
 			]
-			title: "&lAquecer é o Novo Girar"
+			title: "&lHeating Is the New Spinning"
 			x: 3.267857142857146d
 			y: -0.9464285714285694d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
 			description: [
-				"   O Brass não é uma liga qualquer. Ele é sensível. Sentimental. Não aceita qualquer calor. Não se mistura em qualquer fornalha. Ele exige a temperatura de um Blaze vivo — não um substituto, não um forno a carvão. Um Blaze que você capturou, irritou, prendeu… e agora queima por você."
+				"   Brass isn’t just any alloy. It’s sensitive. Sentimental. It won’t accept just any heat. It doesn’t mingle in just any furnace. It demands the temperature of a living Blaze — not a substitute, not a coal furnace. A Blaze you captured, angered, caged… and now burns for you."
 				""
-				"   Para formar um Brass Ingot, você deve colocar Copper Ingot e Zinc Ingot num Mechanical Mixer com um Blaze Burner ativo logo abaixo."
-				"Misture com carinho. Ele gosta de atenção."
+				"   To form a Brass Ingot, you must place a Copper Ingot and a Zinc Ingot in a Mechanical Mixer with an active Blaze Burner directly beneath."
+				"Stir with care. It likes attention."
 				""
-				"   Esse processo é mais que metalurgia — é alquimia emocional."
-				"E quando finalmente formar seu primeiro lingote dourado, algo muda."
-				"Você cruzou a fronteira do Create. Não há mais volta."
+				"   This process is more than metallurgy — it’s emotional alchemy."
+				"And when you finally form your first golden ingot, something changes."
+				"You’ve crossed Create’s border. There’s no way back."
 				""
-				"— &o&7Brass não é apenas cobre + zinco. É drama fundido com fogo cativo. Você vai entender quando ele começar a exigir casing.&r&r"
+				"— &o&7Brass isn’t just copper + zinc. It’s drama fused with captive fire. You’ll understand when it starts demanding casings.&r&r"
 			]
 			id: "11D7B1868C95CDE6"
 			tasks: [{
@@ -532,18 +532,18 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "O coração da mente?"
+			title: "The Heart of the Mind?"
 			x: 5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["0EC1760A6B2B0CB6"]
 			description: [
-				"   O Electron Tube é o primeiro componente que parece... elétrico. Não gira, não carrega. Ele pensa. E sem ele, o Create nunca sairia da infância analógica. Você vai usá-lo para fazer braços robóticos, sensores, craftadores mecânicos, detectores de conteúdo e... bem, o caos sob controle."
+				"   The Electron Tube is the first component that actually feels... electric. It doesn’t spin, it doesn’t carry. It thinks. And without it, Create would never leave its analog childhood. You’ll use it to build robotic arms, sensors, mechanical crafters, content detectors and... well, controlled chaos."
 				""
-				"   Para fabricá-lo, você vai precisar do seu velho conhecido Rose Quartz e algumas ligas que já conhece. Seus olhos vão brilhar. O tubo também."
+				"   To craft it, you’ll need your old friend Rose Quartz and a few alloys you already know. Your eyes will shine. So will the tube."
 				""
-				"— &o&7Você sabe que a tecnologia avançou quando até os parafusos têm autoestima.&r&r"
+				"— &o&7You know technology has advanced when even the screws have self-esteem.&r&r"
 			]
 			id: "48D3A3797AE759A7"
 			tasks: [{
@@ -551,20 +551,20 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			title: "Um Tubo Com Ideias"
+			title: "A Tube with Ideas"
 			x: 6.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
 			description: [
-				"   O que era um funil, agora pensa."
+				"   What used to be a funnel now thinks."
 				""
-				"   Com o Smart Funnel e o Smart Chute, o transporte ganha cérebro. Você pode filtrar, condicionar, priorizar."
+				"   With the Smart Funnel and the Smart Chute, transport grows a brain. You can filter, condition, prioritize."
 				""
-				"   Controle o que entra e sai com tags, redstone, sinais de esperança. Comece a montar sistemas logísticos que não apenas funcionam, mas funcionam com propósito."
+				"   Control what goes in and out with tags, redstone, and signals of hope. Start building logistics that not only work — they work with purpose."
 				""
-				"— &o&7Esse chute recusa terra. Exijo o mesmo do meu cérebro.&r&r"
+				"— &o&7This chute refuses dirt. I demand the same of my brain.&r&r"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -574,18 +574,18 @@
 				item: "create:brass_funnel"
 				type: "item"
 			}]
-			title: "A Consciência da Funilagem"
+			title: "The Consciousness of Funneling"
 			x: 7.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
 			description: [
-				"   Antes, tudo girava na mesma velocidade — rápido demais, ou lento demais, ou quebrando as engrenagens por pura birra."
+				"   Before, everything spun at the same speed — too fast, too slow, or snapping gears out of pure spite."
 				""
-				"   Agora, você controla a rotação como um maestro da física aplicada. Rotation Speed Controller define a exata RPM do seu sistema. Adjustable Gearshift permite trocar de marcha com redstone. Com esses dois, sua fábrica finalmente aprende a andar... e frear."
+				"   Now you conduct rotation like a maestro of applied physics. The Rotation Speed Controller sets your system’s exact RPM. The Adjustable Gearshift lets you change gears with redstone. With these two, your factory finally learns to walk... and to brake."
 				""
-				"— &o&7A diferença entre uma turbina e um liquidificador? Três blocos de brass e um pouco de bom senso.&r&r"
+				"— &o&7The difference between a turbine and a blender? Three blocks of brass and a bit of common sense.&r&r"
 			]
 			id: "4DC86BFC3EA99D1F"
 			tasks: [{
@@ -593,20 +593,20 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			title: "Velocidade controlada é luxo"
+			title: "Controlled Speed Is a Luxury"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
 			description: [
-				"   Você ligava máquinas com fios? Patético. Agora, você liga sistemas inteiros sem toque, sem conexão física, sem dó."
+				"   You used to power machines with wires? Pathetic. Now you trigger entire systems without touch, without physical connection, without mercy."
 				""
-				"   Redstone Link é como telepatia — dois blocos sincronizados por um item qualquer, enviando sinais à distância. Quer acionar uma fábrica escondida atrás da montanha? Um alçapão secreto do outro lado do mapa? Agora você pode."
+				"   Redstone Link is like telepathy — two blocks synchronized by any item, sending signals at a distance. Want to trigger a factory hidden behind the mountain? A secret trapdoor on the other side of the map? Now you can."
 				""
-				"E tudo o que você precisa é... de dois blocos que se reconheçam pelo cheiro."
+				"And all you need is... two blocks that recognize each other by scent."
 				""
-				"— &o&7Eu uso Redstone Link pra chamar o elevador. Uma alavanca é tão século XIX.&r&r"
+				"— &o&7I use Redstone Link to call the elevator. A lever is so nineteenth-century.&r&r"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -616,9 +616,9 @@
 				item: "create:redstone_link"
 				type: "item"
 			}]
-			title: "O Segredo Está no Ar"
-			x: 8.0d
-			y: -1.0d
+			title: "The Secret Is in the Air"
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -626,12 +626,12 @@
 				"48D3A3797AE759A7"
 			]
 			description: [
-				"   O mundo é feito de formas. O que muda é como você as enxerga... e como você as monta. O Mechanical Crafter é a mesa de trabalho que parou de esperar você clicar — agora ela mesma entende o formato do que está tentando criar. Você conecta blocos, define direções, e assiste as peças se encaixarem como se tivessem memória."
+				"   The world is made of shapes. What changes is how you see them... and how you assemble them. The Mechanical Crafter is the workbench that stopped waiting for your clicks — now it understands the form of what it’s trying to create. You connect blocks, set directions, and watch the parts fit together as if they had memory."
 				""
-				"   Esse sistema permite montar componentes que exigem posicionamento — engrenagens de precisão, circuitos, estruturas avançadas e tudo aquilo que um simples funil jamais entenderia."
-				"Mas mais do que função, ele carrega intenção: cada receita feita aqui é um lembrete de que forma importa. E que mesmo em um mundo cúbico, geometria ainda é arte."
+				"   This system lets you assemble components that require placement — precision gears, circuits, advanced structures, and all the things a simple funnel would never understand."
+				"But more than function, it carries intent: every recipe made here is a reminder that shape matters. And that even in a cubic world, geometry is still art."
 				""
-				"— &o&7Fiz um crafter automático e ele montou uma estrela de cinco pontas. Não sei se isso é eficiência... ou um sinal.&r&r"
+				"— &o&7I built an automatic crafter and it assembled a five-pointed star. I’m not sure if that’s efficiency... or a sign.&r&r"
 			]
 			id: "7C1F6A35AF3BA808"
 			tasks: [{
@@ -639,20 +639,20 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			title: " A Forma Tem Poder"
+			title: " Shape Has Power"
 			x: 5.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["465013195CB95147"]
 			description: [
-				"   Há momentos em que um mod muda sua base. Mas há momentos mais raros em que uma mecânica muda o mod inteiro. O Sequenced Assembly é exatamente isso. Ele não é só uma alternativa. É a fundação de uma nova forma de pensar. Ao usar correias, braços e uma linha de montagem lógica, você ensina as máquinas a repetirem ideias, não apenas ações."
+				"   There are times when a mod changes your base. Rarer still are the times when a single mechanic changes the entire mod. Sequenced Assembly is exactly that. It isn’t just an alternative. It’s the foundation of a new way of thinking. By using belts, arms, and a logical assembly line, you teach machines to repeat ideas, not just actions."
 				""
-				"   Este sistema não pertence apenas ao Create. Ele transcende o mod. A partir daqui, itens de outros mods — ou até mesmo de origens que desafiam a lógica — vão exigir montagem modular. Você vai ver deployers criando componentes mágicos, crafters conectando partes químicas, engrenagens que só ganham forma após uma dança de etapas. Porque nesse mundo, automatizar não é mais repetir cliques. É coreografar propósito."
+				"   This system doesn’t belong only to Create. It transcends the mod. From here on, items from other mods — or even from origins that defy logic — will demand modular assembly. You’ll see deployers crafting magical components, crafters linking chemical parts, gears that only take shape after a dance of steps. Because in this world, automating is no longer repeating clicks. It’s choreographing purpose."
 				""
-				"   Toda vez que você montar uma sequência, estará dizendo ao mundo: \"isso tem um jeito certo de ser feito\". E mais importante: estará criando uma estrutura que pode — e vai — crescer com você. Quando a sequência se torna padrão, o modpack muda. A complexidade cresce. Mas a beleza... também."
+				"   Every time you build a sequence, you’re telling the world: \"there’s a right way to do this.\" More importantly, you’re creating a structure that can — and will — grow with you. When the sequence becomes the standard, the modpack changes. Complexity rises. But so does beauty."
 				""
-				"— &o&7A primeira vez que usei isso foi pra fazer um tubo. Agora estou construindo um deus. Um passo por vez.&r&r"
+				"— &o&7The first time I used this was to make a tube. Now I’m building a god. One step at a time.&r&r"
 			]
 			id: "4007E353BE3EF6F1"
 			tasks: [{
@@ -666,20 +666,20 @@
 		{
 			dependencies: ["4007E353BE3EF6F1"]
 			description: [
-				"   Tudo gira. Desde o primeiro eixo até o mais complexo dos sistemas, a rotação foi o seu idioma. Você falou com o mundo através de engrenagens, esteiras, braços e ritmo. Mas há um ponto onde o giro desacelera — não por falha, mas porque o que precisava ser montado, enfim, foi."
+				"   Everything turns. From the first shaft to the most complex systems, rotation was your language. You spoke to the world through gears, belts, arms, and rhythm. But there comes a point where the spin slows — not from failure, but because what needed to be assembled, finally was."
 				""
-				"   O &d&lEntropic Drive&r&r é a condensação de tudo o que você aprendeu com o Create. Uma sequência precisa. Um núcleo de latão. Mecanismos que se repetem com intenção. Energia latente canalizada através de tubo, olho e vazio. Ele não gira. Ele pulsa. E quando ele pulsa... o mundo escuta."
+				"   The &d&lEntropic Drive&r&r is the condensation of everything you learned with Create. A precise sequence. A brass core. Mechanisms repeating with intent. Latent energy channeled through tube, eye, and void. It doesn’t spin. It pulses. And when it pulses... the world listens."
 				""
-				"   Esse artefato é a chave. Ele não abre uma porta — ele permite que você construa a próxima. Com ele, você alcança o que as engrenagens não tocam: o pulso elétrico, a lógica dimensional, o IO além da matéria."
-				"Não se engane: você não está abandonando a máquina."
-				"Você está dando a ela uma nova forma."
+				"   This artifact is the key. It doesn’t open a door — it lets you build the next one. With it, you reach what gears can’t touch: the electric pulse, the dimensional logic, the IO beyond matter."
+				"Make no mistake: you’re not abandoning the machine."
+				"You’re giving it a new form."
 				""
-				"   E ainda assim... algo permanece. Um olho de latão, fixado no centro do motor que não se move. Ele não observa, ele encara."
-				"Dizem que quando você olha tempo demais para o abismo, ele olha de volta."
-				"Neste caso, é literal."
-				"O Entropic Drive vê você."
+				"   And still... something remains. A brass eye, fixed at the center of the engine that doesn’t move. It doesn’t observe — it stares."
+				"They say if you gaze long enough into the abyss, it gazes back."
+				"In this case, literally."
+				"The Entropic Drive sees you."
 				""
-				"— &o&7Quando tudo o que gira finalmente para, o que resta é aquilo que continua mesmo sem movimento. E é isso que conduz o Ender IO.&r&r"
+				"— &o&7When everything that spins finally stops, what remains is what goes on without movement. And that’s what drives Ender IO.&r&r"
 			]
 			id: "1AC4899640C73919"
 			size: 1.5d
@@ -688,7 +688,7 @@
 				item: "kubejs:entropic_drive"
 				type: "item"
 			}]
-			title: "O Silêncio do Último giro"
+			title: "The Silence of the Last Spin"
 			x: 9.0d
 			y: -6.75d
 		}
@@ -698,16 +698,16 @@
 				"4007E353BE3EF6F1"
 			]
 			description: [
-				"   Você percorreu o caminho das engrenagens. Moldou ligas, controlou rotação, ajustou pressões. Mas agora é hora de parar. Não porque falhou — mas porque tudo o que era fluido e adaptável precisa se fixar. A engenharia pede estrutura. E o que gira deve, cedo ou tarde, se firmar."
+				"   You walked the path of gears. Shaped alloys, controlled rotation, tuned pressures. But now it’s time to stop. Not because you failed — but because all that was fluid and adaptable must set. Engineering demands structure. And what spins must, sooner or later, stand firm."
 				""
-				"   O &l&6Forged Assembly&r&r é a materialização dessa transição: um núcleo criado não para mudar, mas para suportar. Ele não canaliza energia oculta. Ele suporta calor real, pressão contínua e a lógica repetitiva das máquinas práticas. Ele é o que permite a fundação térmica de um novo tipo de avanço."
+				"   The &l&6Forged Assembly&r&r materializes that transition: a core created not to change, but to endure. It doesn’t channel hidden energy. It withstands real heat, continuous pressure, and the repetitive logic of practical machines. It’s what enables the thermal foundation of a new kind of advance."
 				""
-				"   Com ele, você deixa de girar engrenagens."
-				"Você começa a controlar o calor que as alimenta."
+				"   With it, you stop spinning gears."
+				"You begin controlling the heat that feeds them."
 				""
-				"   Este é o começo do Thermal Expansion — um capítulo que não brilha, mas ferve."
+				"   This is the beginning of Thermal Expansion — a chapter that doesn’t shine, but boils."
 				""
-				"— &o&7Alguns mundos são movidos a propósito. Outros, a vapor. Este... é forjado em repetição.&r&r"
+				"— &o&7Some worlds run on purpose. Others on steam. This one... is forged in repetition.&r&r"
 			]
 			id: "21D37F976576C885"
 			size: 1.5d
@@ -716,19 +716,19 @@
 				item: "kubejs:forged_assembly"
 				type: "item"
 			}]
-			title: "O Núcleo Que Aguenta o Calor"
+			title: "The Core That Handles Heat"
 			x: 5.517857142857139d
 			y: -6.696428571428569d
 		}
 		{
 			description: [
-				"   Quando os antigos falavam em plantar e colher, não imaginavam que o solo em si poderia decidir se mover. Com um Mechanical Bearing, um pouco de Glue, e a dose certa de desrespeito às leis naturais, você pode fazer a própria terra girar."
+				"   When the ancients spoke of sowing and reaping, they didn’t imagine the soil itself might choose to move. With a Mechanical Bearing, some Glue, and the right dose of disrespect for natural law, you can make the earth spin."
 				""
-				"   Chassis colados em terra, rotação aplicada na base, e o campo ganha vida."
-				"Agora você não caminha entre as plantações."
-				"Elas passam por você."
+				"   Chassis glued to dirt, rotation applied at the base, and the field comes alive."
+				"Now you don’t walk through the crops."
+				"They pass by you."
 				""
-				"— &o&7Se a terra se mexe e a planta cresce, quem está realmente enraizado?&r&r"
+				"— &o&7If the earth moves and the plant grows, who’s truly rooted?&r&r"
 			]
 			id: "2904654A6CDCBAF8"
 			shape: "gear"
@@ -738,18 +738,18 @@
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			title: "Terra que Anda"
+			title: "Walking Earth"
 			x: -3.3000000000000003d
 			y: -1.1d
 		}
 		{
 			description: [
-				"   Nada de arar o solo com suor na testa. Hoje, é uma máquina com uma pá que decide o que cresce e quando. Posicione seus Deployers, equipe-os com enxadas e sementes, e observe: a agricultura entrou na era do aço."
+				"   No plowing with sweat on your brow. Today, it’s a machine with a hoe deciding what grows and when. Place your Deployers, equip them with hoes and seeds, and watch: agriculture has entered the age of steel."
 				""
-				"   O ritmo é mecânico. A lógica é fria. A plantação, precisa."
-				"Nada de intuição — só repetição."
+				"   The rhythm is mechanical. The logic is cold. The field, precise."
+				"No intuition — only repetition."
 				""
-				"— &o&7Cultivar nunca foi tão... industrial.&r&r"
+				"— &o&7Farming has never been so... industrial.&r&r"
 			]
 			icon: "minecraft:wheat_seeds"
 			id: "43A0F10845723DF8"
@@ -770,12 +770,12 @@
 		}
 		{
 			description: [
-				"   Colher era um gesto de gratidão. Agora, é um braço metálico com uma lâmina. Configure Deployers com tesouras, foices ou até Harvesters para completar o ciclo."
-				"Do nascimento à colheita — o humano foi removido da equação."
+				"   Harvesting used to be a gesture of gratitude. Now it’s a metal arm with a blade. Configure Deployers with shears, scythes, or even Harvesters to complete the cycle."
+				"From birth to harvest — the human has been removed from the equation."
 				""
-				"   Tudo isso para que o trigo entre em um baú e você nem precise olhar."
+				"   All so the wheat lands in a chest and you don’t even have to look."
 				""
-				"— &o&7A colheita é automática. A fome, nem tanto.&r&r"
+				"— &o&7The harvest is automatic. Hunger, not so much.&r&r"
 			]
 			id: "3C805F01FCA2C984"
 			tasks: [{
@@ -783,7 +783,7 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			title: "O Ciclo do Gole"
+			title: "The Gulp Cycle"
 			x: -4.5d
 			y: -2.0d
 		}
@@ -801,27 +801,27 @@
 					type: "item"
 				}
 			]
-			title: "Guardando pro inverno"
+			title: "Saving for Winter"
 			x: -4.5d
 			y: 0.0d
 		}
 		{
 			description: [
-				"   Nada nessa plantação é só alimento."
+				"   Nothing in this field is just food."
 				""
-				"   Folhas e sementes são matéria-prima energética."
+				"   Leaves and seeds are energetic raw material."
 				""
-				"   E você, agricultor de precisão, agora está cultivando o que o futuro vai converter em combustível."
+				"   And you, precision farmer, are now growing what the future will convert into fuel."
 				""
-				"   Mais adiante, no Mekanism, isso se chama Bio Fuel."
-				"Por enquanto, só saiba: essa fazenda vai queimar bem."
+				"   Later, in Mekanism, this is called Bio Fuel."
+				"For now, just know: this farm will burn well."
 				""
-				"— &o&7Tudo começa com uma folha. Até o ácido.&r&r"
+				"— &o&7Everything starts with a leaf. Even acid.&r&r"
 			]
 			id: "64818C8CE74F770C"
 			tasks: [{
 				id: "0CB4519F41FE18A7"
-				title: "A Semente do Ácido"
+				title: "The Seed of Acid"
 				type: "checkmark"
 			}]
 			x: -6.0d
@@ -833,16 +833,16 @@
 				"11D7B1868C95CDE6"
 			]
 			description: [
-				"   Entre todas as engrenagens, plataformas giratórias e eixos barulhentos, existe um braço que age com delicadeza. O Mechanical Arm não gira o mundo, ele o organiza."
-				"   Ele observa, calcula e decide para onde cada item vai."
+				"   Among all the gears, turntables, and noisy shafts, there’s an arm that acts with finesse. The Mechanical Arm doesn’t spin the world — it organizes it."
+				"   It watches, computes, and decides where each item goes."
 				""
-				"   Com filtros inteligentes e caminhos definidos, ele é o que impede que trigo vire caos, carvão vire gargalo, e que sua base pareça uma fazenda feita por um polvo bêbado."
+				"   With smart filters and defined paths, it keeps wheat from becoming chaos, coal from becoming a bottleneck, and your base from looking like a farm built by a drunk octopus."
 				""
-				"   Posicione entradas e saídas, defina as regras, e o braço fará o resto."
-				"   Com precisão. Sem pressa."
-				"   Com uma arrogância quase educada."
+				"   Set inputs and outputs, define the rules, and the arm does the rest."
+				"   With precision. Without hurry."
+				"   With almost courteous arrogance."
 				""
-				"— &o&7Nem toda força está na rotação. Às vezes, está em saber para onde cada coisa deve ir.&r&r"
+				"— &o&7Not all strength is in rotation. Sometimes it’s in knowing where each thing should go.&r&r"
 			]
 			id: "4242DD5606BE354E"
 			tasks: [{
@@ -850,26 +850,26 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			title: "Lave um mamão"
-			x: 6.5d
-			y: 0.0d
+			title: "Wash a Papaya"
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
 			description: [
-				"   Você já domou a chama. Agora, é hora de fazer com que ela produza algo útil. No Create, calor pode virar rotação — desde que você tenha o sistema certo."
+				"   You’ve already tamed the flame. Now it’s time to make it produce something useful. In Create, heat can become rotation — provided you have the right setup."
 				""
-				"   Para montar um gerador a vapor funcional, você vai precisar de um Blaze Burner ativo (com um blaze aprisionado, como manda o manual da crueldade técnica), um Tank do Create posicionado logo acima dele, e uma entrada de água sendo injetada nesse tanque. A injeção de água deve ser feita por um Fluid Pipe, com uma fonte estável como tanque ou bomba. Nada de jogar balde manualmente — a automação agradece."
+				"   To build a functional steam generator, you’ll need an active Blaze Burner (with a blaze imprisoned, as the manual of technical cruelty demands), a Create Tank placed right above it, and a water input injected into that tank. Feed water through a Fluid Pipe from a stable source like a tank or pump. No manual bucket dumping — automation appreciates it."
 				""
-				"   O ponto mais importante: assim que você conecta uma Steam Engine ou um Steam Whistle a esse tanque aquecido, ele é reconhecido automaticamente como uma boiler. Não há estrutura multi-bloco, nem ritual místico: o simples ato de conectar é suficiente para ativar o sistema."
+				"   Most important point: as soon as you attach a Steam Engine or a Steam Whistle to that heated tank, it’s automatically recognized as a boiler. No multiblock structure, no mystical ritual: the simple act of connecting is enough to activate the system."
 				""
-				"   A quantidade de rotação gerada depende da temperatura. Um Blaze Burner comum gera uma boa pressão, mas se você alimentá-lo com combustíveis avançados (como blaze cake), ele entra em estado superaquecido e a eficiência aumenta consideravelmente."
+				"   The amount of rotation generated depends on temperature. A regular Blaze Burner gives decent pressure, but if you feed it advanced fuels (like blaze cake), it enters a superheated state and efficiency climbs considerably."
 				""
-				"   Mas aqui vai o alerta técnico: boilers no Create são bonitos, potentes... e um pesadelo para o TPS se usados sem critério. Eles recalculam stress, calor e rotação constantemente, o que pode engasgar servidores — especialmente se estiverem ligados o tempo todo."
+				"   Technical warning: Create boilers are pretty, powerful... and a TPS nightmare when used carelessly. They constantly recalculate stress, heat, and rotation, which can choke servers — especially if they’re left running all the time."
 				""
-				"   Use esse sistema como um ritual de força: potente, breve, intencional. Não como uma fazenda de engrenagens perpétuas."
+				"   Use this setup like a ritual of strength: potent, brief, intentional. Not like a perpetual gear farm."
 				""
-				"— &o&7O silêncio entre o borbulhar e o colapso é mais curto do que parece. E o lag, mais próximo do que você imagina.&r&r"
+				"— &o&7The silence between bubbling and collapse is shorter than it seems. And lag is closer than you think.&r&r"
 			]
 			id: "586E5CF965DD1845"
 			tasks: [
@@ -885,22 +885,22 @@
 					type: "item"
 				}
 			]
-			title: "Quando a Água Ferve"
+			title: "When Water Boils"
 			x: 4.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["586E5CF965DD1845"]
 			description: [
-				"   Ao contrário da caldeira, o Spout não explode."
-				"   Ele sussurra. Ele pinga."
-				"   A precisão com que ele aplica líquidos é digna de alquimia ou culinária extrema."
+				"   Unlike the boiler, the Spout doesn’t explode."
+				"   It whispers. It drips."
+				"   The precision with which it applies fluids is worthy of alchemy or extreme cuisine."
 				""
-				"   Configure um Spout para aplicar fluidos sobre itens ou blocos:"
-				"seja mel em bolo, lava em slime, ou simplesmente água sobre um sandpaper."
-				"   Não importa o fluido — importa que ele vá para o lugar certo, na dose certa."
+				"   Set up a Spout to apply fluids onto items or blocks:"
+				"be it honey on cake, lava on slime, or simply water onto sandpaper."
+				"   The fluid doesn’t matter — what matters is the right place, in the right dose."
 				""
-				"— &o&7Engrenagens forçam. O Spout negocia.&r&r"
+				"— &o&7Gears force. The Spout negotiates.&r&r"
 			]
 			id: "497E333A1E8722A5"
 			tasks: [{
@@ -919,18 +919,18 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			title: "Por Onde Escorre"
+			title: "Where It Flows"
 			x: 6.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7C1F6A35AF3BA808"]
 			description: [
-				"   Duas rodas colossais, girando em sentidos opostos, esmagando tudo que ousa atravessar entre elas. Se a Engenharia Industrial do Immersive é sobre potência bruta, o Create traz poesia mecânica: velocidade, torque, rotação precisa. O Crushing Wheel é elegante no caos — moendo pedras, alimentos, almas (se você deixar algo orgânico cair lá)."
+				"   Two colossal wheels, spinning in opposite directions, crushing anything that dares pass between them. If Immersive’s Industrial Engineering is about brute force, Create brings mechanical poetry: speed, torque, precise rotation. The Crushing Wheel is elegance in chaos — grinding stone, food, souls (if you let something organic fall in)."
 				""
-				"   Além disso, ele é essencial para transformar matérias-primas em formas mais úteis. E quando conectado com funis, filtros ou belts inteligentes, torna-se uma peça vital na sua cadeia automatizada."
+				"   It’s also essential for turning raw materials into more useful forms. And when paired with funnels, filters, or smart belts, it becomes a vital piece of your automated chain."
 				""
-				"— &o&7Se você ouvir um crack estranho, talvez fosse seu pé.&r"
+				"— &o&7If you hear a strange crack, that might’ve been your foot.&r"
 			]
 			id: "4F62549360D185F1"
 			tasks: [{
@@ -938,7 +938,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			title: "Moagem Filosofal"
+			title: "Philosophical Grinding"
 			x: 7.0d
 			y: -3.0d
 		}
@@ -948,11 +948,11 @@
 				"497E333A1E8722A5"
 			]
 			description: [
-				"   O calor comum é insuficiente para moldar certos materiais. Alguns processos exigem mais — uma fúria ardente, uma combustão viva. O Blaze Burner pode até se contentar com alguns carvões, mas se você quiser ver algo realmente ferver, precisará alimentá-lo com aquilo que ele mesmo teme: um Blaze Cake."
+				"   Ordinary heat isn’t enough to shape certain materials. Some processes demand more — a blazing fury, a living combustion. The Blaze Burner may put up with some coal, but if you want to see something truly boil, you must feed it what it fears: a Blaze Cake."
 				""
-				"   Feito com açúcar, lava, combustíveis e um toque de imprudência, este é o alimento que transforma uma fornalha comum em um forno dos deuses. E é ele quem ativa a superheated forge capaz de derreter o impossível."
+				"   Made with sugar, lava, fuels, and a touch of recklessness, this is the food that turns a common furnace into a forge of the gods. And it’s what triggers the superheated state capable of melting the impossible."
 				""
-				"— &o&7Dê bolo a uma criatura feita de fogo. O que poderia dar errado?&r"
+				"— &o&7Give cake to a creature made of fire. What could go wrong?&r"
 			]
 			id: "41B7C35997BE51CB"
 			tasks: [{
@@ -960,20 +960,20 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			title: "Bolo do Inferno"
+			title: "Hellcake"
 			x: 4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["41B7C35997BE51CB"]
 			description: [
-				"   A alquimia começa com o pó: um composto instável de lápis, diamante e calor elemental. O Empowered Blaze Powder carrega em si uma centelha primitiva — meio mágica, meio explosiva. Junte-o ao ferro e ao fogo, e surgirá o &b&lEmpowered Blazing Steel&r&r: uma liga vibrante, quente, pulsante."
+				"   Alchemy begins with powder: an unstable compound of lapis, diamond, and elemental heat. Empowered Blaze Powder carries a primitive spark — half magic, half explosive. Join it with iron and fire, and &b&lEmpowered Blazing Steel&r&r emerges: a vibrant, hot, pulsing alloy."
 				""
-				"   Mas atenção. Essa energia não é eterna. Ela vive durante uma janela curta de tempo. Uma vez que misture ou aqueça demais, ela abandona a memória do Blaze... e derrete em um metal sem identidade: o &0&l&oMelted Blaze Metal.&r&r&r"
+				"   But beware. This energy isn’t eternal. It lives within a short window. Once you mix or overheat it, it abandons the Blaze’s memory... and slumps into a metal without identity: &0&l&oMelted Blaze Metal.&r&r&r"
 				""
-				"   Essa linha de produção, apesar de caótica, será absolutamente crucial no futuro. Vários dos materiais mais avançados partem exatamente desse ciclo incandescente. Melhor ir se acostumando com ele — vocês vão passar bastante tempo juntos. Por enquanto o resultado da sua falta de atenção, por acaso, é justamente do que precisa. Mas não irá demorar para que uma liga de transição seja necessária, e, sua atenção, também."
+				"   This production line, chaotic as it is, will be absolutely crucial later. Several of the most advanced materials start exactly from this incandescent cycle. Better get used to it — you’ll be spending a lot of time together. For now, the result of your inattention just so happens to be exactly what you need. But it won’t be long before a transitional alloy is required — and your attention as well."
 				""
-				"— &o&7Se você ainda não deu nome pro seu Mixer, talvez seja hora. Relacionamentos longos exigem intimidade.&r"
+				"— &o&7If you haven’t named your Mixer yet, maybe it’s time. Long relationships require intimacy.&r"
 			]
 			icon: "kubejs:empowered_blazing_steel"
 			id: "3A8272171D92E40F"
@@ -995,7 +995,7 @@
 					type: "item"
 				}
 			]
-			title: "As Chamas Aprisionadas"
+			title: "Imprisoned Flames"
 			x: 4.5d
 			y: -4.0d
 		}
@@ -1005,13 +1005,13 @@
 				"662FA29C4130FE53"
 			]
 			description: [
-				"   Pegue o metal fundido. Pegue a estrutura firme. Una-os sob uma sequência precisa: calor, fluxo, compressão e, por fim, o choque da água. O resultado? O Blazebound Steel — um lingote pesado, firme, ainda pulsante no centro."
+				"   Take the molten metal. Take the solid structure. Join them under a precise sequence: heat, flow, compression, and finally, the shock of water. The result? Blazebound Steel — a heavy ingot, firm, still pulsing at the core."
 				""
-				"   Essa liga representa o controle absoluto da instabilidade. O ápice de uma jornada que começou com pó de Blaze e terminou com um núcleo incandescente envolto em aço."
+				"   This alloy represents absolute control of instability. The apex of a journey that began with Blaze powder and ended with an incandescent core wrapped in steel."
 				""
-				"   Ele é o metal que lembra. O aço que carrega a cicatriz do fogo, mas que não se deixou consumir por ele."
+				"   It is the metal that remembers. The steel that bears the scar of fire yet refused to be consumed by it."
 				""
-				"— &o&7E quando o calor cessou, ele não era mais chama. Era vontade.&r"
+				"— &o&7And when the heat ceased, it was no longer flame. It was will.&r"
 			]
 			id: "673611D238FF2FD1"
 			tasks: [{
@@ -1019,7 +1019,7 @@
 				item: "kubejs:blazebound_steel"
 				type: "item"
 			}]
-			title: "Aço de Sangue e Fogo"
+			title: "Steel of Blood and Fire"
 			x: 5.5d
 			y: -4.0d
 		}
@@ -1045,5 +1045,5 @@
 			y: -4.0d
 		}
 	]
-	title: "&63.&6 &eF&aa&az &fG&fi&fr&aa&6r&6,&6 &eF&aa&az &aV&ai&av&ae&6r"
+	title: "&63.&6 &eM&aa&ak&fi&an&ag &fI&an &fS&ap&ai&an&ag, &6 &eM&aa&ak&ai&an&ag &aL&ai&av&ai&an&ag"
 }

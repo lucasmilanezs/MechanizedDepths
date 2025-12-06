@@ -21,7 +21,6 @@ StartupEvents.registry('fluid', event => {
 });
 
 
-
 // INDUSTRIAL SOLVENT (kubejs:industrial_solvent)
 StartupEvents.registry('fluid', event => {
   event.create('industrial_solvent')

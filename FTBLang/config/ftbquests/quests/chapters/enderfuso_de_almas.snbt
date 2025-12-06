@@ -703,7 +703,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.enderfuso_de_almas.quest35.title}"
-			x: 4.0d
+			x: 3.5d
 			y: -2.5d
 		}
 		{

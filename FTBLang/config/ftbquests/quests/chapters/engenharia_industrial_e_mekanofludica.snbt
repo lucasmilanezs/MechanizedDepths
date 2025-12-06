@@ -136,8 +136,8 @@
 				item: "pneumaticcraft:air_compressor"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.5d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			id: "6EFA2DC8F8F51431"
@@ -176,7 +176,7 @@
 				item: "pneumaticcraft:thermal_lagging"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 3.0d
 			y: 3.5d
 		}
 		{
@@ -308,6 +308,16 @@
 			}]
 			x: 4.0d
 			y: -0.5d
+		}
+		{
+			id: "7395945B9A4DD281"
+			tasks: [{
+				id: "407C637C62137ACA"
+				item: "pneumaticcraft:manual_compressor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
 		}
 	]
 	title: "{ftbquests.chapter.engenharia_industrial_e_mekanofludica.title}"

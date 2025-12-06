@@ -11,25 +11,25 @@
 	quests: [
 		{
 			description: [
-				"   Aço. Vidro. Tubos herméticos. Redstone. Nada disso importa."
-				"O que você está segurando nas mãos não é uma caixa — é a negação do caos."
+				"   Steel. Glass. Hermetic tubes. Redstone. None of that matters."
+				"What you’re holding isn’t a box — it’s the negation of chaos."
 				""
-				"   A Steel Casing é o divisor de eras. Não há fumaça, não há alavancas rangendo."
-				"Apenas luz fria, interfaces impassíveis e a sensação desconfortável de que"
-				"alguém pensou demais em como isso deveria funcionar."
+				"   The Steel Casing is the divider of eras. No smoke, no creaking levers."
+				"Only cold light, impassive interfaces, and the uncomfortable feeling that"
+				"someone overthought how this should work."
 				""
-				"   O Precision Matrix embutido em seu coração é um insulto direto à rusticidade do Immersive Engineering — cada linha de solda nele parece perguntar:"
-				"“Era isso mesmo que você achava que era tecnologia?”"
+				"   The Precision Matrix embedded in its heart is a direct insult to the rusticity of Immersive Engineering — every weld line on it seems to ask:"
+				"“Was this really what you thought technology was?”"
 				""
-				"   A partir daqui, não se trata mais de operar máquinas. Você vai orquestrar protocolos."
-				"Os gases virão. As câmaras serão pressurizadas. A temperatura será uma variável,"
-				"não uma consequência. "
+				"   From here, it’s no longer about operating machines. You’re going to orchestrate protocols."
+				"Gases will come. Chambers will be pressurized. Temperature will be a variable,"
+				"not a consequence. "
 				""
-				"   Se estava esperando o futuro… bem, ele começou quando você apertou esse bloco no chão."
+				"   If you were waiting for the future… well, it started when you pressed this block into the ground."
 				""
-				"   Mas mesmo que isso soe incrível, mekanism é uma tecnologia extensa e que deve ser dissecada em partes. Que tal começarmos do básico?"
+				"   But even if that sounds amazing, Mekanism is a sprawling technology that should be dissected in parts. How about we start from the basics?"
 				""
-				"&7&o— Parabéns, você criou uma caixa. Mas uma caixa que olha de volta.&r&r"
+				"&7&o— Congrats, you made a box. But a box that stares back.&r&r"
 			]
 			id: "5349659FDCBDFA9F"
 			shape: "netheritetier"
@@ -39,17 +39,17 @@
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.0d
+			x: -4.0d
+			y: -2.982142857142854d
 		}
 		{
 			dependencies: ["5349659FDCBDFA9F"]
 			description: [
-				"   O Metallurgic Infuser marca o fim da metalurgia como você conhecia. Ele não aquece nem funde — ele convence. Redstone, carvão, diamante… cada substância oferece mais do que seu peso. Elas oferecem significado. O metal deixa de ser um recurso e passa a ser um veículo para ideias."
+				"   The Metallurgic Infuser marks the end of metallurgy as you knew it. It doesn’t heat or fuse — it persuades. Redstone, coal, diamond… each substance offers more than its weight. They offer meaning. Metal ceases to be a resource and becomes a vehicle for ideas."
 				""
-				"   Essa máquina não fabrica ligas, ela cria componentes com memória, peças que carregam intenções codificadas. É o nascimento da eficiência programada, da matéria obediente. A partir daqui, seus circuitos não serão apenas técnicos — serão ideológicos."
+				"   This machine doesn’t craft alloys; it creates components with memory, pieces that carry encoded intentions. It’s the birth of programmed efficiency, of obedient matter. From now on, your circuits won’t just be technical — they’ll be ideological."
 				""
-				"&7&o— Um infusor é uma espécie de filósofo industrial. Só que ele aceita carvão como argumento.&r&r"
+				"&7&o— An infuser is a sort of industrial philosopher. It just accepts coal as an argument.&r&r"
 			]
 			id: "1D6A06602BA0DBBF"
 			tasks: [{
@@ -57,16 +57,16 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			title: "Injetando Dependências"
+			title: "Injecting Dependencies"
 			x: -4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1D6A06602BA0DBBF"]
 			description: [
-				"   Você criou seu primeiro circuito. Simples, obediente, quase inocente. Uma pequena placa que sabe ligar e desligar, mas não entende o motivo. E talvez isso seja o melhor. A ignorância funcional é o que mantém qualquer sistema fluindo sem perguntas incômodas."
+				"   You created your first circuit. Simple, obedient, almost innocent. A small board that knows how to turn on and off, but doesn’t understand why. And maybe that’s for the best. Functional ignorance is what keeps any system flowing without awkward questions."
 				""
-				"&7&o— Em termos computacionais, é um estagiário. Barato, incansável e substituível.&r&r"
+				"&7&o— In computing terms, it’s an intern. Cheap, tireless, and replaceable.&r&r"
 			]
 			id: "31CA32EACAEC3103"
 			tasks: [{
@@ -74,7 +74,7 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			title: "Núcleo de Comando"
+			title: "Command Core"
 			x: -3.0d
 			y: -1.0d
 		}
@@ -84,9 +84,9 @@
 				"31CA32EACAEC3103"
 			]
 			description: [
-				"   Um pouco de Infused Alloy e a placa já começa a achar que tem personalidade. Ela reconhece padrões, antecipa comandos e até otimiza fluxos — dentro dos limites do que você programou, é claro. No fundo, ela só quer agradar. E funcionar."
+				"   A bit of Infused Alloy and the board already starts thinking it has a personality. It recognizes patterns, anticipates commands, and even optimizes flows — within the limits you programmed, of course. Deep down, it just wants to please. And work."
 				""
-				"&7&o— Ainda obedece. Mas às vezes pergunta \"por quê?\" em silêncio.&r&r"
+				"&7&o— It still obeys. But sometimes it silently asks “why?”&r&r"
 			]
 			id: "64A74170F9CFB70A"
 			tasks: [{
@@ -94,16 +94,16 @@
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			title: "Lógica Intermediária"
+			title: "Intermediate Logic"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1D6A06602BA0DBBF"]
 			description: [
-				"   Todo império começa com uma base sólida, mas o seu será construído com algo mais flexível: obediência metálica. A Infused Alloy é seu primeiro experimento bem-sucedido em submissão material. Um pedaço de ferro, convencido por redstone de que nasceu para algo maior. Não é mais uma liga — é um protocolo condensado."
+				"   Every empire starts with a solid foundation, but yours will be built with something more flexible: metallic obedience. Infused Alloy is your first successful experiment in material submission. A piece of iron, convinced by redstone it was born for something greater. It’s no longer an alloy — it’s a condensed protocol."
 				""
-				"&7&o— Ligas que obedecem são muito mais úteis que soldados que pensam.&r&r"
+				"&7&o— Alloys that obey are far more useful than soldiers who think.&r&r"
 			]
 			id: "63B543C796CB2FDA"
 			tasks: [{
@@ -111,16 +111,16 @@
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
-			title: "Ligas de obediência"
+			title: "Alloys of Obedience"
 			x: -3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["63B543C796CB2FDA"]
 			description: [
-				"   Se a Infused era promessa, a Reinforced Alloy é execução. Através do diamante, você ensinou o metal a suportar pressões além do bom senso. Agora ele se lembra de sua estrutura mesmo quando desmontado, e obedece comandos que ainda não foram dados. Isso não é reforço — é disciplina."
+				"   If Infused was promise, Reinforced Alloy is execution. Through diamond, you taught metal to withstand pressures beyond good sense. Now it remembers its structure even when dismantled, and obeys commands that haven’t yet been given. This isn’t reinforcement — it’s discipline."
 				""
-				"&7&o— Quanto mais precioso o insumo, mais caro o erro. Boa sorte.&r&r"
+				"&7&o— The more precious the input, the pricier the mistake. Good luck.&r&r"
 			]
 			id: "3045D408E1816740"
 			tasks: [{
@@ -128,16 +128,16 @@
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
-			title: "Ligas de eficiência"
+			title: "Alloys of Efficiency"
 			x: -4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3045D408E1816740"]
 			description: [
-				"   Aqui você para de brincar. A Atomic Alloy é o momento em que o metal deixa de ser suporte e vira plano. Criada com uma vontade sobreposta — um vestígio de um diamante que não queria morrer — ela responde apenas a comandos absolutos. Se você precisava de uma peça definitiva, acabou de construir seu dogma."
+				"   Here the metal stops being support and becomes a plan. Forged with an overlaid will — a vestige of a diamond that didn’t want to die — it responds only to absolute commands. If you needed a definitive piece, you’ve just built your dogma."
 				""
-				"&7&o— Chamá-la de \"liga\" é ofensivo. Ela prefere “entidade técnica”.&r&r"
+				"&7&o— Calling it an “alloy” is offensive. It prefers “technical entity.”&r&r"
 			]
 			id: "7A2AE2FCE261223A"
 			tasks: [{
@@ -145,7 +145,7 @@
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
-			title: "Ligas de ambição"
+			title: "Alloys of Ambition"
 			x: -3.5d
 			y: 2.0d
 		}
@@ -155,9 +155,9 @@
 				"3045D408E1816740"
 			]
 			description: [
-				"   Aqui as placas já acham que são centrais de comando. Têm um ego elétrico, fazem exigências absurdas de materiais e se recusam a operar fora de infraestrutura adequada. Mas produzem resultados. Uma Elite Circuit não quer só existir — quer mandar."
+				"   By now the boards think they’re command centers. They have an electric ego, make absurd material demands, and refuse to operate outside proper infrastructure. But they deliver results. An Elite Circuit doesn’t just want to exist — it wants to command."
 				""
-				"&7&o— Custa caro, reclama muito, mas entrega. Basicamente um gerente técnico.&r&r"
+				"&7&o— Expensive, complains a lot, but delivers. Basically a technical manager.&r&r"
 			]
 			id: "2DC3EA0884C7E043"
 			tasks: [{
@@ -165,7 +165,7 @@
 				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
-			title: "Núcleo Estratégico"
+			title: "Strategic Core"
 			x: -3.0d
 			y: 1.0d
 		}
@@ -175,9 +175,9 @@
 				"2DC3EA0884C7E043"
 			]
 			description: [
-				"   Nada mais é suficiente. Nem ferro, nem redstone, nem suas desculpas. A Ultimate Circuit quer alloys de última geração, combinações imorais de eficiência e recursos que você jurou guardar para momentos especiais. Ela aceita tudo. Menos ser ignorada."
+				"   Nothing is enough anymore. Not iron, not redstone, not your excuses. The Ultimate Circuit wants bleeding-edge alloys, immoral combinations of efficiency, and resources you swore to save for special moments. It accepts everything. Except being ignored."
 				""
-				"&7&o— Parabéns, você criou um circuito mais exigente que seu PC.&r&r"
+				"&7&o— Congrats, you made a circuit more demanding than your PC.&r&r"
 			]
 			id: "027EC1E7EE94FEF4"
 			tasks: [{
@@ -185,20 +185,20 @@
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
-			title: "Arquitetura Suprema"
+			title: "Supreme Architecture"
 			x: -2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["31CA32EACAEC3103"]
 			description: [
-				"   Durante muito tempo, duplicar minérios foi um exercício de espaço, ruído e paciência. Plataformas tremendo, martelos batendo, engrenagens gritando em agonia industrial. Era bonito, de um jeito arcaico. E então, surgiu isso."
+				"   For a long time, doubling ores was an exercise in space, noise, and patience. Platforms trembling, hammers pounding, gears screaming in industrial agony. It was beautiful, in an archaic way. And then, this appeared."
 				""
-				"   A Enrichment Chamber é tudo o que o velho Crusher do Immersive não é: compacta, silenciosa, escalável. Enquanto aquele mamute mecânico demandava pátios inteiros e manutenção constante, esta câmara faz o mesmo trabalho — melhor — ocupando o espaço de uma porta."
+				"   The Enrichment Chamber is everything the old Immersive Crusher isn’t: compact, quiet, scalable. While that mechanical mammoth demanded entire yards and constant maintenance, this chamber does the same job — better — in the footprint of a door."
 				""
-				"   É uma ruptura elegante com o passado, mas difícil de ignorar. Porque, convenhamos, o velho Crusher tinha personalidade. E claro, não se esqueça que ela também faz seus minérios renderem mais na metalurgia. Situação ganha ganha."
+				"   It’s an elegant break with the past, but a hard one to ignore. Because, let’s be honest, the old Crusher had personality. And of course, don’t forget it also makes your ores go further in metallurgy. Win–win."
 				""
-				"&7&o— Ele ainda está lá fora, parado... enorme... inútil... mas bonito, não é?&r&r"
+				"&7&o— It’s still out there, standing… huge… useless… but beautiful, isn’t it?&r&r"
 			]
 			id: "019813C5735449BB"
 			tasks: [{
@@ -206,21 +206,21 @@
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			title: "Duplicação elegante"
+			title: "Elegant Duplication"
 			x: -2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["019813C5735449BB"]
 			description: [
-				"   Você já fundiu, aqueceu, quebrou e reconstituíu ligas até onde suas máquinas permitiam. Mas o Osmium Compressor faz algo diferente: ele aplica pressão com propósito."
-				"Aqui, o osmium não é só combustível — é catalisador. É assinatura."
+				"   You’ve already smelted, heated, broken, and reconstituted alloys as far as your machines would let you. But the Osmium Compressor does something different: it applies pressure with purpose."
+				"Here, osmium isn’t just fuel — it’s a catalyst. It’s a signature."
 				""
-				"   Cada barra produzida carrega o peso de um recurso que não aceita ser reduzido a mera porcentagem. É uma máquina de custo alto, mas de promessas ainda mais caras. E ela cumpre."
+				"   Each ingot produced carries the weight of a resource that refuses to be reduced to a mere percentage. It’s a machine with a high cost and even higher promises. And it delivers."
 				""
-				"   E sim, se me perguntar, sempre vou dizer que toda máquina é diferente de todas as outras. É um jeito especial de fazê-las sentirem-se queridas. "
+				"   And yes, if you ask me, I’ll always say every machine is different from all the others. It’s a special way of making them feel loved."
 				""
-				"&7&o— O segredo está na compressão. E na cara de pau de cobrar tanto por um único lingote.&r&r"
+				"&7&o— The secret is in the compression. And in the audacity to charge so much for a single ingot.&r&r"
 			]
 			id: "60714ABDF9D43683"
 			tasks: [{
@@ -232,6 +232,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["31CA32EACAEC3103"]
 			id: "36B87B9AB9136B19"
 			tasks: [{
 				id: "31FDF2DB35D1D3D4"
@@ -242,6 +243,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["2CE00923CED67C01"]
 			id: "48483CCB1581FFD7"
 			tasks: [{
 				id: "3EFC9D2AC0E10742"
@@ -252,6 +254,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["48483CCB1581FFD7"]
 			id: "6C11A1FCDF2A16C7"
 			tasks: [{
 				id: "186A208B1691EC1C"
@@ -262,6 +265,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["36B87B9AB9136B19"]
 			id: "2CE00923CED67C01"
 			tasks: [{
 				id: "76BB6C2EF4006DFA"
@@ -282,6 +286,10 @@
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"63B543C796CB2FDA"
+				"58F5A7FF52EDB971"
+			]
 			id: "68AA789CFB0AAFFF"
 			tasks: [{
 				id: "5646E492B0608CD8"
@@ -292,6 +300,10 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"7A2AE2FCE261223A"
+				"7F75B5A10F5ABF4A"
+			]
 			id: "44F726567106734B"
 			tasks: [{
 				id: "7DBD14A57E642298"
@@ -302,6 +314,10 @@
 			y: 2.0d
 		}
 		{
+			dependencies: [
+				"3045D408E1816740"
+				"68AA789CFB0AAFFF"
+			]
 			id: "7F75B5A10F5ABF4A"
 			tasks: [{
 				id: "44B1D2C755EB3F96"
@@ -332,6 +348,10 @@
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"63B543C796CB2FDA"
+				"7D008FFC53E0CD02"
+			]
 			id: "199A1B7D8009C537"
 			tasks: [{
 				id: "750DE352DE003F4A"
@@ -342,6 +362,10 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"3045D408E1816740"
+				"199A1B7D8009C537"
+			]
 			id: "1B9EB2EC3274017B"
 			tasks: [{
 				id: "6E13BBB49B5FBD03"
@@ -352,6 +376,10 @@
 			y: 1.0d
 		}
 		{
+			dependencies: [
+				"7A2AE2FCE261223A"
+				"1B9EB2EC3274017B"
+			]
 			id: "3AF91CB9BF334FC3"
 			tasks: [{
 				id: "2D723E51A0BD171F"
@@ -362,6 +390,10 @@
 			y: 2.0d
 		}
 		{
+			dependencies: [
+				"63B543C796CB2FDA"
+				"66F3746ED884653D"
+			]
 			id: "2681AA90363DEDE1"
 			tasks: [{
 				id: "684FC71F43348907"
@@ -372,6 +404,10 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"3045D408E1816740"
+				"2681AA90363DEDE1"
+			]
 			id: "72126CEEE3C2FDF8"
 			tasks: [{
 				id: "29EEA8C5831C490D"
@@ -382,6 +418,10 @@
 			y: 1.0d
 		}
 		{
+			dependencies: [
+				"7A2AE2FCE261223A"
+				"72126CEEE3C2FDF8"
+			]
 			id: "09F5B66903C853A7"
 			tasks: [{
 				id: "364B18B825BF6E96"
@@ -394,11 +434,11 @@
 		{
 			dependencies: ["60714ABDF9D43683"]
 			description: [
-				"   Um metal que brilha. Até aí, nada novo. Mas este não brilha por combustão, nem por incandescência. Ele brilha porque foi convencido a fazê-lo — porque alguém o infundiu com propósito e osmium suficiente para se tornar útil."
+				"   A metal that shines. So far, nothing new. But this one doesn’t shine from combustion or incandescence. It shines because it was convinced to — because someone infused it with purpose and enough osmium to become useful."
 				""
-				"   O Refined Glowstone é sua porta de entrada para ligas que parecem mágicas, mas cobram como tecnologia militar. Ele flutua. Ele emite luz. Ele funciona. É difícil não respeitar algo assim, mesmo que sua primeira reação tenha sido \"isso é ouro com ego\"."
+				"   Refined Glowstone is your gateway to alloys that seem magical but charge like military tech. It floats. It emits light. It works. It’s hard not to respect that, even if your first reaction was “that’s gold with an ego.”"
 				""
-				"&7&o— Glowstone refinada: para quem acha que o sol precisava de uma versão portátil e instável.&r&r"
+				"&7&o— Refined glowstone: for those who thought the sun needed a portable, unstable version.&r&r"
 			]
 			id: "7ECA41DE215F4F9A"
 			tasks: [{
@@ -412,15 +452,15 @@
 		{
 			dependencies: ["60714ABDF9D43683"]
 			description: [
-				"   Você pensou em chamá-lo de Osgloglas. Admitimos: seria poético."
-				"Um aceno ao passado, àquela liga mítica do PlusTic, adorada por mineradores obsessivos e picaretas que cavavam mais rápido que a sanidade."
+				"   You thought of calling it Osgloglas. We admit: that would be poetic."
+				"A nod to the past, to that mythical PlusTic alloy beloved by obsessive miners and pickaxes that dug faster than sanity."
 				""
-				"   Mas este é outro material. Ele brilha diferente. Ele vibra."
-				"O Osgloglium é nossa versão — tóxica, radioativa, extremamente eficiente, e absurdamente difícil de justificar em projetos pequenos. Ele existe para quem já superou o medo de exagerar."
+				"   But this is another material. It shines differently. It vibrates."
+				"Osgloglium is our version — toxic, radioactive, extremely efficient, and absurdly hard to justify in small projects. It exists for those who’ve gotten over the fear of overdoing it."
 				""
-				"   E cá entre nós, com esse nome... é claro que vai parar numa bigorna. Repetidamente."
+				"   And between us, with that name… of course it’ll end up on an anvil. Repeatedly."
 				""
-				"&7&o— Poderíamos ter chamado de Esgloglas, mas... não. Esse aqui tem personalidade própria. E radiação.&r&r"
+				"&7&o— We could’ve called it Esgloglas, but… no. This one has a personality of its own. And radiation.&r&r"
 			]
 			id: "45A24742CEE97DB3"
 			tasks: [{
@@ -428,7 +468,7 @@
 				item: "kubejs:osgloglium"
 				type: "item"
 			}]
-			title: "Osgloglium: o nome que quase foi"
+			title: "Osgloglium: the name that almost was"
 			x: -1.0d
 			y: 1.0d
 		}
@@ -443,6 +483,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["45A24742CEE97DB3"]
 			id: "70927E9BB7B641B1"
 			tasks: [{
 				id: "722861D5216550B4"
@@ -455,12 +496,12 @@
 		{
 			dependencies: ["31CA32EACAEC3103"]
 			description: [
-				"   Não há pistões visíveis, nem engrenagens expostas. Nenhuma estrutura de três andares tremendo sob seu próprio peso."
-				"O Crusher do Mekanism faz tudo que seu antecessor fazia — só que sem parecer um experimento de engenharia pesada financiado por um império em decadência."
+				"   There are no visible pistons, no exposed gears. No three-story structure shaking under its own weight."
+				"Mekanism’s Crusher does everything its predecessor did — just without looking like a heavy engineering experiment funded by a crumbling empire."
 				""
-				"   É limpo, eficiente, conectável. Em vez de honrar a tradição da brutalidade mecânica, ele simplesmente entrega resultados. Isso é o futuro. Mesmo que, no fundo, você ainda ouça o som dos martelos do velho Crusher batendo na sua memória."
+				"   It’s clean, efficient, connectable. Instead of honoring the tradition of mechanical brutality, it simply delivers results. This is the future. Even if, deep down, you still hear the hammers of the old Crusher pounding in your memory."
 				""
-				"&7&o— Crescer é perceber que não precisa de 400 blocos de aço pra esmagar uma pedra. Mas não significa que não sinta falta deles.&r&r"
+				"&7&o— Growing up is realizing you don’t need 400 blocks of steel to crush a rock. Doesn’t mean you won’t miss them.&r&r"
 			]
 			id: "30275E34EB213DB7"
 			tasks: [{
@@ -468,11 +509,15 @@
 				item: "mekanism:crusher"
 				type: "item"
 			}]
-			title: "A máquina que venceu a força"
+			title: "The Machine That Beat Brute Force"
 			x: -1.0d
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"027EC1E7EE94FEF4"
+				"45A24742CEE97DB3"
+			]
 			id: "11124FC23FF38E22"
 			tasks: [{
 				id: "1D1ADBE3AAEA6CC2"
@@ -485,13 +530,13 @@
 		{
 			dependencies: ["42DCD489D10C6084"]
 			description: [
-				"   Você pegou três materiais com vontades próprias — quartzo bruto, obsidian refinada e a promissora Inductive Alloy — e os obrigou a colaborar. O resultado foi algo translúcido, resistente e condutivo. Um verdadeiro avanço… até onde avanços aguentam ser chamados assim."
+				"   You took three materials with wills of their own — raw quartz, refined obsidian, and the promising Inductive Alloy — and forced them to collaborate. The result was something translucent, strong, and conductive. A real breakthrough… insofar as breakthroughs stand being called that."
 				""
-				"   O Refined Quartz surge como o sonho da integração perfeita: leveza, força e energia em equilíbrio. Mas logo você percebe que ele não brilha tanto quanto prometido. O Inductive Alloy, vendido como ápice da condução, aqui se mostra mais um ponto médio com bom marketing."
+				"   Refined Quartz appears as the dream of perfect integration: lightness, strength, and energy in balance. But soon you notice it doesn’t shine as much as promised. The Inductive Alloy, sold as the apex of conduction, here shows itself as one more midpoint with good marketing."
 				""
-				"   Ainda assim, o material tem valor. Ele serve. Ele responde. E, acima de tudo, ele sobrevive a sistemas que quebrariam qualquer outro composto. Isso já é mais do que a maioria pode dizer."
+				"   Still, the material has value. It serves. It responds. And above all, it survives systems that would break any other compound. That’s already more than most can say."
 				""
-				"&7&o— O problema de chamar algo de “ápice” é que sempre aparece alguém com um degrau a mais.&r&r"
+				"&7&o— The problem with calling something an “apex” is that someone always shows up with one more step.&r&r"
 			]
 			id: "7E7E50A6C31FDC60"
 			tasks: [{
@@ -499,20 +544,20 @@
 				item: "kubejs:refined_quartz"
 				type: "item"
 			}]
-			title: "Claridade Forçada"
+			title: "Forced Clarity"
 			x: 3.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["60714ABDF9D43683"]
 			description: [
-				"   Você já quebrou obsidian com picareta. Agora está prestes a usá-la como base para armamentos."
-				"   O Refined Obsidian não é apenas resistente — ele desafia o bom senso ao ser refinável."
-				"Nada com essa dureza deveria ser processado, e ainda assim, aqui está você, comprimindo rocha vulcânica como se fosse alumínio."
+				"   You’ve broken obsidian with a pickaxe. Now you’re about to use it as the basis for armaments."
+				"   Refined Obsidian isn’t just tough — it defies common sense by being refinable."
+				"Nothing this hard should be processable, and yet here you are, compressing volcanic rock as if it were aluminum."
 				""
-				"   Esse material não quer ceder. E por isso mesmo, vale cada segundo de esforço."
+				"   This material doesn’t want to yield. And for that very reason, it’s worth every second of effort."
 				""
-				"&7&o— A armadura definitiva começa onde termina a paciência do geólogo.&r&r"
+				"&7&o— The ultimate armor begins where the geologist’s patience ends.&r&r"
 			]
 			id: "42DCD489D10C6084"
 			tasks: [{
@@ -520,11 +565,12 @@
 				item: "mekanism:ingot_refined_obsidian"
 				type: "item"
 			}]
-			title: "Obsessão Sólida"
+			title: "Solid Obsession"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["45A24742CEE97DB3"]
 			id: "3D58C19D32143C3C"
 			tasks: [{
 				id: "3A20F15CD820B50D"
@@ -535,6 +581,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["7E7E50A6C31FDC60"]
 			id: "5B874AD0DE922C66"
 			tasks: [{
 				id: "5BEBDCD0A12DE44C"
@@ -545,6 +592,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["027EC1E7EE94FEF4"]
 			id: "31230A1FC61C2AC9"
 			tasks: [{
 				id: "1D2CD3235A06329F"
@@ -555,6 +603,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["31230A1FC61C2AC9"]
 			id: "26CADFF16C276DE7"
 			tasks: [{
 				id: "7A6AC794702B2EB9"
@@ -565,6 +614,10 @@
 			y: 2.0d
 		}
 		{
+			dependencies: [
+				"7E7E50A6C31FDC60"
+				"26CADFF16C276DE7"
+			]
 			id: "0C45664D1271FD1B"
 			tasks: [{
 				id: "04F5F1FFB8FF7132"
@@ -575,6 +628,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["0C45664D1271FD1B"]
 			id: "2DAA198A9FE1C430"
 			tasks: [{
 				id: "2AE96976D01D0D5F"
@@ -585,6 +639,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["2DAA198A9FE1C430"]
 			id: "11D60685CEA53B84"
 			tasks: [{
 				id: "102C800232596A76"
@@ -595,6 +650,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["1FA19FA935CE587A"]
 			id: "08C12C63E831EF73"
 			tasks: [{
 				id: "58D255B79F7EA096"
@@ -605,6 +661,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["5B874AD0DE922C66"]
 			id: "1FA19FA935CE587A"
 			tasks: [{
 				id: "44B64B2B96D9783E"
@@ -615,6 +672,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["08C12C63E831EF73"]
 			id: "28AC0C318B3109A3"
 			tasks: [{
 				id: "79F5CCAD9EA33995"
@@ -625,21 +683,25 @@
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"11D60685CEA53B84"
+				"1FA19FA935CE587A"
+			]
 			description: [
-				"Este é o ponto de convergência. Cabos se alinham. Interfaces ganham direção. Fluxos de dados encontram seu ritmo. O ME Controller não é apenas uma peça central — ele é o primeiro componente da sua rede que entende que você não entende nada."
+				"This is the convergence point. Cables align. Interfaces find direction. Data flows find their rhythm. The ME Controller isn’t just a central piece — it’s the first component in your network that understands that you don’t understand anything."
 				""
-				"Na prática, ele permite que múltiplos canais coexistam. Expande sua capacidade de conexão. Divide lógica e infraestrutura. Ele transforma um amontoado de cabos funcionais em um sistema escalável, com 32 canais por face, conexões paralelas e ramificações modulares."
-				"Se antes você estava apenas ligando coisas, agora você está gerenciando caminhos."
+				"In practice, it allows multiple channels to coexist. It expands your connection capacity. It divides logic and infrastructure. It turns a bundle of functional cables into a scalable system, with 32 channels per face, parallel connections, and modular branches."
+				"If before you were just connecting things, now you’re managing paths."
 				""
-				"Vale lembrar que ele adora amigos. Caso 6 faces e 182 canais pareçam pouco, sempre é possível adicionar mais. Mas não se esqueça, ele é do tipo que gosta de gente mas gosta que haja ordem na sua festa. Ele só irá aceitar mais blocos caso o formato seja válido, sempre se dispondo em formas cubóides e diretamente conectadas — ferraduras, retangulos, arestas, quadrados, cantos, cubos ou um insano teseract, fica a gosto do freguês. E não se preocupe, caso ele não goste do formato que escolheu, ele vai deixar isso &4&lbem claro&r&r"
+				"Keep in mind it loves friends. If 6 faces and 182 channels seem too little, you can always add more. But don’t forget, it’s the social type that still wants order at its party. It will only accept more blocks if the shape is valid, always arranging itself in cuboid forms and directly connected — horseshoes, rectangles, edges, squares, corners, cubes, or a wild tesseract, take your pick. And don’t worry, if it doesn’t like the shape you chose, it will make that &4&lvery clear&r&r"
 				""
-				"Ao colocá-lo, tudo parece mais sério. Mais legítimo. Mais técnico. O que era uma gambiarra de terminais soltos vira agora um sistema de verdade. Ele não faz muita coisa sozinho, claro. Mas impõe respeito. E consumo de energia."
+				"When you place it, everything feels more serious. More legitimate. More technical. What used to be a hacky mess of loose terminals now becomes a real system. It doesn’t do much on its own, of course. But it commands respect. And power consumption."
 				""
-				"Ele é a ilusão de controle — o nome não nega — num mar de conexões que você ainda vai bagunçar tentando ser organizado."
+				"It’s the illusion of control — the name doesn’t deny it — in a sea of connections you’ll still mess up while trying to be organized."
 				""
-				"Mas não se preocupe. É isso que a maioria dos sistemas fazem: simular ordem por tempo suficiente até ninguém mais questionar."
+				"But don’t worry. That’s what most systems do: simulate order long enough for no one to question it anymore."
 				""
-				"&7&o— Criar um ME Controller é como declarar que você sabe o que está fazendo. É mentira, mas ajuda os cabos a se comportarem.&r&r"
+				"&7&o— Creating an ME Controller is like declaring you know what you’re doing. It’s a lie, but it helps the cables behave.&r&r"
 			]
 			id: "642557D5CB896C1E"
 			tasks: [{
@@ -647,11 +709,12 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			title: "O núcleo do labirinto"
+			title: "The Labyrinth’s Core"
 			x: 4.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["31CA32EACAEC3103"]
 			id: "4C89A0A823554E00"
 			tasks: [{
 				id: "4D478B46617DAD90"
@@ -662,6 +725,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["11D60685CEA53B84"]
 			id: "4666E915E5565296"
 			tasks: [{
 				id: "663889ECF445D9B1"
@@ -672,6 +736,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["11D60685CEA53B84"]
 			id: "29F2529BCD05C523"
 			tasks: [{
 				id: "309B53A8ADE40EDB"
@@ -682,6 +747,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["11D60685CEA53B84"]
 			id: "3EB7545A62453FFC"
 			tasks: [{
 				id: "06A6D15C6D4A100F"
@@ -692,6 +758,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["3674CA2BE4A0DA7A"]
 			id: "2585738C92D5B5FD"
 			tasks: [{
 				id: "11B90E62547246E3"
@@ -702,25 +769,28 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["4C89A0A823554E00"]
 			description: [
-				"   Agora que você tem seu ME Controller, o sistema finalmente se comporta como uma criatura viva — com órgãos, sinapses e um humor instável baseado em canais."
+				"   Now that you have your ME Controller, the system finally behaves like a living creature — with organs, synapses, and a mood that swings based on channels."
 				""
-				"   Cada face de um Controller pode emitir até 32 canais lógicos independentes, conectando-se a máquinas, terminais, interfaces e tudo mais que dependa de automação e controle. Mas atenção:   isso não é energia. É comunicação. Cada conexão inteligente consome um canal, e cabos simples entram em colapso nervoso antes mesmo de completar a instalação."
+				"   Each face of a Controller can emit up to 32 independent logical channels, connecting to machines, terminals, interfaces, and everything else that depends on automation and control. But note:   this isn’t power. It’s communication. Each smart connection consumes a channel, and simple cables have a nervous breakdown before even finishing the installation."
 				""
-				"   É aqui que a rede ganha profundidade: subredes e P2P."
+				"   This is where the network gains depth: subnets and P2P."
 				""
-				"   O P2P Tunnel permite comprimir toda essa lógica em um fluxo encapsulado. Você pode usar uma única face do Controller para alimentar vários túneis P2P, cada um retransmitindo até 32 canais para outras áreas. Isso permite criar clusters de subredes independentes, alimentadas por um único ponto, que podem inclusive transmitir as faces de outros Controllers conectados mais à frente. O resultado? Um sistema fractal, modular, inteligente e incrivelmente fácil de quebrar se você desconectar o cabo errado."
+				"   The P2P Tunnel lets you compress all that logic into an encapsulated flow. You can use a single face of the Controller to feed several P2P tunnels, each retransmitting up to 32 channels to other areas. This allows creating clusters of independent subnets, fed from a single point, which can even transmit the faces of other Controllers connected further ahead. The result? A fractal, modular, intelligent system — and incredibly easy to break if you disconnect the wrong cable."
 				""
-				"   Além da complexidade inerante, vale ressaltar que alguns cuidados são mandotórios. A regra continua a mesma, uma rede só pode suportar um único grupo de controllers que precisam estar conectados diretamente, sem cabos ou estruturas entre eles. Por isso, qualquer subcontroller &4&lNÃO&r&r pode conectar nenhuma de suas faces a qualquer cabo que interaja diretamente com o controller principal. Toda a interação do controller principal com qualquer subcontroller deve ser feita unicamente via p2p. Eu sei, soa complicado, mas quando você construir um sistema funcional desse porte pela primeira vez, nunca mais vai querer um sistema simples. Confia."
+				"   Besides the inherent complexity, some precautions are mandatory. The rule remains the same: a network can only support a single controller group that must be directly connected, with no cables or structures between them. Therefore, any subcontroller &4&lMUST NOT&r&r connect any of its faces to any cable that directly interacts with the main controller. All interaction from the main controller with any subcontroller must be done solely via P2P. I know, it sounds complicated, but once you build a functional system of this scale for the first time, you’ll never want a simple system again. Trust me."
 				""
-				"   Ainda assim, estrutura sem inteligência é só desperdício com cabos coloridos. Por isso, chega a hora de pensar em passivação."
+				"   Still, structure without intelligence is just waste with colored cables. So it’s time to think about passivation."
 				""
-				"   Passivar é criar estoques constantes de itens intermediários — como alloys, chips, pure crystals ou fluix dust — produzidos em segundo plano, 24/7, sem esperar que alguém peça. Um simples Drawer com Storage Bus já faz isso. Uma linha dedicada de produção para alimentar esse drawer torna a rede autônoma."
-				"A diferença entre uma fábrica viva e uma planilha caótica é isso: buffers bem pensados."
+				"  Sei que, definitivamente, esse bloco de anotações não vai ajudar muito a entender o conceito, mas apertando \"G\" em um P2P ( Ou qualquer item do AE2 ), você terá acesso a um manual completo e interativo que explica muito bem esse conceito, recomendo fortemente dar uma olhada!"
 				""
-				"   Você não está apenas otimizando. Está projetando um sistema que espera o mundo acontecer — e responde antes que ele peça."
+				"   To passivate is to create constant stocks of intermediate items — like alloys, chips, pure crystals, or fluix dust — produced in the background, 24/7, without waiting for a request. A simple Drawer with a Storage Bus already does that. A dedicated production line to feed that drawer makes the network autonomous."
+				"The difference between a living factory and a chaotic spreadsheet is this: well-planned buffers."
 				""
-				"&7&o— Se você não entendeu metade disso, tudo bem. Nem o sistema entendeu quando foi ligado pela primeira vez. Bem-vindo ao AE2.&r&r"
+				"   You’re not just optimizing. You’re designing a system that expects the world to happen — and answers before it asks."
+				""
+				"&7&o— If you didn’t understand half of this, that’s fine. The system didn’t either when it was first powered on. Welcome to AE2.&r&r"
 			]
 			id: "518B46107EA4E2C8"
 			tasks: [{
@@ -732,6 +802,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["3EB7545A62453FFC"]
 			id: "3674CA2BE4A0DA7A"
 			tasks: [{
 				id: "78E0463E06D75350"
@@ -742,6 +813,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["11D60685CEA53B84"]
 			id: "2BE6AA64D18D7C15"
 			tasks: [{
 				id: "3F929828F911590B"
@@ -752,6 +824,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["4666E915E5565296"]
 			id: "44D7476D60126160"
 			tasks: [{
 				id: "59C02C8C93A05154"
@@ -762,6 +835,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["44D7476D60126160"]
 			id: "198615D7D892BBC9"
 			tasks: [{
 				id: "37BD5320C2E9B8E1"
@@ -772,37 +846,42 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["44D7476D60126160"]
 			description: [
-				"   O espaço prometido"
+				"   The promised space"
 				""
-				"   Você passou horas conectando cabos, montando máquinas de nome pretensioso e organizando interfaces com uma precisão que beira o transtorno obsessivo-compulsivo. E tudo isso por quê? Porque viu uma imagem. Uma imagem de drives brilhantes, enfileirados como monumentos à era da informação."
+				"   You spent hours connecting cables, assembling machines with pretentious names, and organizing interfaces with a precision bordering on obsessive–compulsive. And all that for what? Because you saw an image. An image of gleaming drives, lined up like monuments to the information age."
 				""
-				"   Só que não."
+				"   Except no."
 				""
-				"   Sim, esta é a última quest do capítulo. Sim, ela exibe exatamente aquilo que você esperava estar construindo. Mas não, você ainda não tem acesso às Storage Cells. Aquilo que faz tudo isso valer a pena não se esconde aqui."
+				"   Yes, this is the final quest of the chapter. Yes, it shows exactly what you thought you were building. But no, you still don’t have access to Storage Cells. The thing that makes all this worthwhile isn’t hiding here."
 				""
-				"   Este capítulo foi sobre a base. O alicerce. A promessa. Uma vitrine bem iluminada sem estoque nos fundos."
+				"   This chapter was about the foundation. The footing. The promise. A well-lit storefront with no stock in the back."
 				""
-				"   Você montou uma central de controle para... olhar coisas. Como um telescópio apontado para um buraco negro que você mesmo criou. Mas ei, os cabos ficaram bonitos."
+				"   You built a control center to… look at things. Like a telescope pointed at a black hole you created yourself. But hey, the cables look nice."
 				""
-				"   Agora, respire fundo, admire a estrutura e prepare-se para o real motivo de existir: armazenar alguma coisa, o que — veja só — será gentilmente liberado por um mod completamente diferente. Ender IO, talvez? Quem sabe..."
+				"   Now take a deep breath, admire the structure, and get ready for the real reason it exists: storing anything — which, would you look at that — will be generously unlocked by a completely different mod. Ender IO, perhaps? Who knows…"
 				""
-				"  Se sentindo um pouco enganado? Ótimo. Esse é o primeiro passo para entender como o sistema realmente funciona."
+				"  Feeling a little cheated? Great. That’s the first step to understanding how the system really works."
 				""
-				"\"&7&o— Um terminal sem armazenamento é como um filósofo sem angústia: bonito, mas absolutamente inútil.&r&r\""
+				"\"&7&o— A terminal without storage is like a philosopher without angst: pretty, but absolutely useless.&r&r\""
 			]
 			id: "3D546802A869AC66"
-			subtitle: "Cadê????"
+			subtitle: "Where is it????"
 			tasks: [{
 				id: "2C5ABFE01493DE24"
 				item: "ae2:creative_item_cell"
 				type: "item"
 			}]
-			title: "O Espaço Prometido"
+			title: "The Promised Space"
 			x: 7.0d
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"027EC1E7EE94FEF4"
+				"45A24742CEE97DB3"
+			]
 			id: "20B27B29415D1910"
 			size: 1.5d
 			tasks: [{
@@ -814,6 +893,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["2DAA198A9FE1C430"]
 			id: "1DC95B7767355679"
 			size: 1.5d
 			tasks: [{

@@ -356,8 +356,8 @@
 				item: "botanicadds:gaiasteel_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -9.0d
+			x: 0.0d
+			y: -9.5d
 		}
 		{
 			id: "37E8E183476803F1"
@@ -366,28 +366,8 @@
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -7.5d
-		}
-		{
-			id: "597FE12F46F3112A"
-			tasks: [{
-				id: "34D43665CA64512D"
-				item: "kubejs:matter_data"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.5d
-		}
-		{
-			id: "2C633A9EC472F1B0"
-			tasks: [{
-				id: "7C53DAA7A469B5E4"
-				item: "kubejs:incomplete_blank_tech_card"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 1.0d
+			x: 2.0d
+			y: -9.5d
 		}
 		{
 			id: "022D6CED4DF1798A"
@@ -430,16 +410,6 @@
 			y: -7.0d
 		}
 		{
-			id: "68DA6A33E17A4F11"
-			tasks: [{
-				id: "5CF181D76BA6F3D7"
-				item: "botania:light_blue_mystical_flower"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -3.5d
-		}
-		{
 			id: "220D1E5256253400"
 			tasks: [{
 				id: "1B6A2E288C70C7EB"
@@ -468,6 +438,46 @@
 			}]
 			x: 1.0d
 			y: 0.0d
+		}
+		{
+			id: "11931F7820E5C70C"
+			tasks: [{
+				id: "540811DA94E8D6A1"
+				item: "kubejs:mystical_data"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "567F25A8CD6E3FED"
+			tasks: [{
+				id: "2C0EDDDDDAB11767"
+				item: "appbot:mana_cell_housing"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			id: "36B206EDF26B1C6B"
+			tasks: [{
+				id: "5D4C1146F6A653A3"
+				item: "kubejs:mystical_tech_card"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			id: "79A4916BDB05DB52"
+			tasks: [{
+				id: "11B1BE29F99C88FB"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
 		}
 	]
 	title: "{ftbquests.chapter.ptalas_e_protocolos.title}"

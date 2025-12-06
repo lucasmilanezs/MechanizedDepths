@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "custom:block/sorting_bench_top",
+        "up": "custom:block/sorting_bench_top",
+        "down": "minecraft:block/oak_planks",
+        "north": "custom:block/sorting_bench_front",
+        "south": "custom:block/sorting_bench_front",
+        "east": "custom:block/sorting_bench_side",
+        "west": "custom:block/sorting_bench_side"
+    }
+}
+

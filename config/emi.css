@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -202,12 +202,12 @@
 	/**
 	 * The pages in the right sidebar
 	 */
-	right-sidebar-pages: index, craftables;
+	right-sidebar-pages: index, craftables, empty;
 
 	/**
 	 * The subpanels in the right sidebar
 	 */
-	right-sidebar-subpanels: none;
+	right-sidebar-subpanels: lookup-history 2;
 
 	/**
 	 * How many columns and rows of ingredients to limit the right sidebar to
@@ -448,7 +448,7 @@
 	 * Whether development functions should be enabled. Not recommended for general
 	 * play.
 	 */
-	dev-mode: false;
+	dev-mode: true;
 
 	/**
 	 * Whether editing the index is enabled

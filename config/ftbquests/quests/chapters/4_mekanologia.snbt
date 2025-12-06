@@ -783,14 +783,14 @@
 				""
 				"{ftbquests.chapter.4_mekanologia.quest52.description6}"
 				""
-				"  Sei que, definitivamente, esse bloco de anotações não vai ajudar muito a entender o conceito, mas apertando \"G\" em um P2P ( Ou qualquer item do AE2 ), você terá acesso a um manual completo e interativo que explica muito bem esse conceito, recomendo fortemente dar uma olhada!"
-				""
 				"{ftbquests.chapter.4_mekanologia.quest52.description7}"
-				"{ftbquests.chapter.4_mekanologia.quest52.description8}"
 				""
+				"{ftbquests.chapter.4_mekanologia.quest52.description8}"
 				"{ftbquests.chapter.4_mekanologia.quest52.description9}"
 				""
 				"{ftbquests.chapter.4_mekanologia.quest52.description10}"
+				""
+				"{ftbquests.chapter.4_mekanologia.quest52.description11}"
 			]
 			id: "518B46107EA4E2C8"
 			tasks: [{

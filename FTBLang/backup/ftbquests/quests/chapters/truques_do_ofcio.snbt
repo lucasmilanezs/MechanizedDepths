@@ -1,0 +1,307 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "truques_do_ofcio"
+	group: "0E3BAF4D0D92EEE1"
+	icon: {
+		Count: 1
+		id: "actuallyadditions:laser_wrench"
+		tag: { }
+	}
+	id: "1B6D1E3FDCBB76DB"
+	images: [
+		{
+			height: 2.0d
+			image: "custom:textures/gui/tricks_of_the_trade.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "custom:textures/gui/number_i.png"
+			rotation: 0.0d
+			width: 0.75d
+			x: 2.5d
+			y: -6.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7B700EB89246EACC"
+			tasks: [{
+				id: "0CD0F0939F5FD3F9"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "0791CBB476723F0F"
+			tasks: [{
+				id: "3C563A845BEF1D8B"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			id: "22FF67BC1E1F07CD"
+			tasks: [{
+				id: "02F8B5C87AEBE447"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			id: "5CC7E2DCF21162E3"
+			tasks: [{
+				id: "7CC3ECBCDB26C8D5"
+				item: {
+					Count: 1
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "34637F718E3C8B62"
+			tasks: [{
+				id: "14F4334BE653D553"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			id: "5CF2E32AA3E4EBB2"
+			tasks: [{
+				id: "2B491520646995E3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "immersiveengineering:toolbox"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "6CC6E1AFF83ACB2E"
+			tasks: [{
+				id: "2CDDE784E1C69948"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "immersiveengineering:drill"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "2220929079DE91EB"
+			tasks: [{
+				id: "6586164066CAFD68"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
+						}
+					}
+					id: "immersiveengineering:chemthrower"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			id: "79EDCC502927B8E7"
+			tasks: [{
+				id: "4F730D69F30295E3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "immersiveengineering:buzzsaw"
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			id: "16533F539E22B141"
+			tasks: [{
+				id: "14A8BC19D6DE8C5D"
+				item: {
+					Count: 1
+					id: "create:netherite_backtank"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "47109FD7BB78712C"
+			tasks: [{
+				id: "32DC422468F1D322"
+				item: "naturesaura:spawn_lamp"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			id: "5C962106A4EF506F"
+			tasks: [{
+				id: "4CF32F9A46F0DB51"
+				item: {
+					Count: 1
+					id: "actuallyadditions:coffee_cup"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			id: "5FA664885673791C"
+			tasks: [{
+				id: "71B870AD2D41DF9D"
+				item: "naturesaura:placer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			id: "73B5B6D64E40BE8F"
+			tasks: [{
+				id: "1509DD11CE241297"
+				item: "kubejs:token_utility"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			id: "1D66DCA52A9103FB"
+			tasks: [{
+				id: "5ED48F566B09C796"
+				item: "naturesaura:rf_converter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "0F40A53E3889945D"
+			tasks: [{
+				id: "432190D23CE1CD13"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			id: "0857EFBE85C8886A"
+			tasks: [{
+				id: "4F55756A821F6F4F"
+				item: "naturesaura:infused_iron"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			id: "0E141F104B456EBB"
+			tasks: [{
+				id: "1EB7C4023EAC0E8D"
+				item: "naturesaura:sky_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			id: "0F1E40D2499FBCC7"
+			tasks: [{
+				id: "4B3A92A7E085FA98"
+				item: {
+					Count: 1
+					id: "naturesaura:sky_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			id: "19AF2F53BCBD5275"
+			tasks: [{
+				id: "634EA64962632A41"
+				item: {
+					Count: 1
+					id: "naturesaura:infused_iron_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+	]
+	title: "&4(UT)&r Truques do Ofício"
+}

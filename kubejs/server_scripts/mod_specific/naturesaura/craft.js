@@ -51,6 +51,22 @@ ServerEvents.recipes(event => {
   }).id('kubejs:natures_aura/spirit_of_calling')
 })
 
+// OFFERING TABLE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'naturesaura:offering_table' });
+  event.shaped('naturesaura:offering_table', [
+    'GIG',
+    'JGT',
+    'WWW'
+  ], {
+    G: '#forge:plates/gold',
+    I: 'naturesaura:infused_iron',
+    J: 'naturesaura:token_joy',
+    T: 'naturesaura:token_sorrow',
+    W: '#minecraft:logs'
+  }).id('kubejs:natures_aura/offering_table');
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

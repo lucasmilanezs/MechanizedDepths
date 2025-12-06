@@ -5,8 +5,481 @@
 	group: "57CED54B61FDA52E"
 	icon: "occultism:ritual_dummy/summon_demonic_wife"
 	id: "57873001ACBCCA93"
+	images: [
+		{
+			alpha: 150
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			alpha: 150
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/7"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			alpha: 150
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/4"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			alpha: 150
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/11"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			alpha: 150
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/10"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			alpha: 150
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/2"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			alpha: 150
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/6"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			alpha: 100
+			color: 16777045
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/1"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			alpha: 100
+			color: 16777045
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/2"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			alpha: 100
+			color: 16777045
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/12"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			alpha: 100
+			color: 16777045
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/11"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			alpha: 100
+			color: 11141290
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/3"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			alpha: 100
+			color: 11141290
+			height: 1.0d
+			image: "occultengineering:block/chalk_glyph/1"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			alpha: 100
+			color: 11141290
+			height: 1.0d
+			image: "occultengineering:block/chalk_glyph/0"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			alpha: 150
+			color: 16733525
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/12"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			alpha: 150
+			color: 16733525
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/9"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			alpha: 150
+			color: 16733525
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/8"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			alpha: 150
+			color: 16733525
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/10"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "occultism:textures/gui/book/demonic_partner.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			alpha: 200
+			color: 131586
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/11"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			alpha: 200
+			color: 0
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/5"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			color: 0
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/12"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			color: 0
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/7"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			color: 0
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/0"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			color: 0
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/6"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			alpha: 100
+			color: 11141290
+			height: 1.0d
+			image: "occultism:block/chalk_glyph/7"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 1.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
-	title: "15. O Abismo Chama"
+	quests: [
+		{
+			id: "38FE3329D16A2218"
+			tasks: [{
+				id: "12758DB633EF18F4"
+				item: "occultism:spirit_fire"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			id: "5FCDAD29A119B60C"
+			tasks: [{
+				id: "1B69FAC9CBF3238F"
+				item: "occultism:otherstone"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			id: "05B67B498DF465EC"
+			tasks: [{
+				id: "266B2E888B9A07C3"
+				item: "occultism:otherworld_ashes"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "64052364A01D2C11"
+			shape: "circle"
+			tasks: [{
+				id: "509F926FD751F5CB"
+				item: "occultism:golden_sacrificial_bowl"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "26F1008A73A1EB54"
+			tasks: [{
+				id: "034F7617F9CE88FE"
+				item: "kubejs:vantablack_processor"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5C317125E151C069"
+				"598146BF7D49CB3B"
+			]
+			id: "6B8E8421F9C966B9"
+			tasks: [{
+				id: "614564639009F230"
+				item: {
+					Count: 1
+					id: "occultism:chalk_red"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			id: "0289E03E22139FB0"
+			tasks: [{
+				id: "49999EE3B5F67415"
+				item: {
+					Count: 1
+					id: "occultism:chalk_purple"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			id: "6C50D3FF57B34990"
+			tasks: [{
+				id: "0219A8B2DFCDA147"
+				item: {
+					Count: 1
+					id: "occultism:chalk_gold"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["64052364A01D2C11"]
+			id: "3914F37784491668"
+			tasks: [{
+				id: "76BBFD3C2EAC3C6D"
+				item: "occultism:ritual_dummy/summon_foliot_crusher"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			id: "6DBE9278269B101A"
+			tasks: [{
+				id: "48F0B9ED5AE19350"
+				item: "occultism:ritual_dummy/summon_wild_afrit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			id: "5C317125E151C069"
+			tasks: [{
+				id: "25D868F13BF8F14D"
+				item: "occultism:afrit_essence"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			id: "082BF01517FDEFC7"
+			tasks: [{
+				id: "3DDC0DAEF1B6BCBE"
+				item: "mekanism:dust_obsidian"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "313715BE2A4E93A7"
+			tasks: [{
+				id: "2232627F95D10D1B"
+				item: "mekanism:dust_gold"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "0B48981E354E9A1D"
+			tasks: [{
+				id: "43DD28976F3B9668"
+				item: "occultism:ritual_dummy/summon_demonic_wife"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			id: "0A0CECF8C0733530"
+			shape: "square"
+			tasks: [{
+				id: "504C33A601F80B63"
+				item: "occultism:book_of_binding_empty"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			id: "598146BF7D49CB3B"
+			tasks: [{
+				id: "697A433EE8B8AD85"
+				item: "kubejs:demonic_love"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			id: "1EE1521209014755"
+			tasks: [{
+				id: "06480DFB83AAE507"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:void_facility"
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			id: "6E59CF0046E6D525"
+			size: 1.0d
+			tasks: [{
+				id: "539592DA85315A03"
+				item: "kubejs:void_tech_card"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			id: "405FE7CB60CB0435"
+			tasks: [{
+				id: "73DB5072B5335C5E"
+				item: "kubejs:void_data"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+	]
+	title: "15. The Abyss Calls"
 }

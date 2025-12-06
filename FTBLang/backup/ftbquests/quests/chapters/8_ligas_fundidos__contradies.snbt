@@ -5,7 +5,134 @@
 	group: "42138693CA8E287F"
 	icon: "createmetallurgy:obdurium_ingot"
 	id: "0389D86C2FC31D3E"
-	order_index: 1
+	images: [
+		{
+			height: 1.5d
+			image: "custom:textures/gui/crafting_madness.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			height: 1.2d
+			image: "custom:item/quest_research"
+			rotation: 0.0d
+			width: 1.2d
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			height: 0.5d
+			image: "custom:item/chemistry_tech_card"
+			order: 10
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.035714285714299d
+			y: 4.249999999999993d
+		}
+		{
+			color: 2171169
+			height: 1.0d
+			image: "custom:fluid/molten_base"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			color: 11225020
+			height: 1.0d
+			image: "custom:fluid/molten_base"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			color: 5227511
+			height: 1.0d
+			image: "custom:fluid/molten_base"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal_extra:block/shellite_glass"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: 11.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal_extra:block/dragonsteel_glass"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal_extra:block/soul_infused_glass"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal_extra:block/twinite_glass"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal_extra:block/abyssal_glass"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			height: 1.5d
+			image: "createmetallurgy:block/obdurium_block"
+			rotation: 0.0d
+			width: 1.5d
+			x: 11.5d
+			y: 9.0d
+		}
+	]
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -15,8 +142,8 @@
 				item: "createmetallurgy:tungsten_ingot"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.5d
+			x: -4.5d
+			y: -5.0d
 		}
 		{
 			id: "38D8675995D28502"
@@ -25,8 +152,8 @@
 				item: "createmetallurgy:foundry_basin"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.5d
+			x: -3.5d
+			y: -6.0d
 		}
 		{
 			id: "7E7093BDB6618DD8"
@@ -35,18 +162,8 @@
 				item: "createmetallurgy:glassed_foundry_lid"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.5d
-		}
-		{
-			id: "251DD905DD8D17D9"
-			tasks: [{
-				id: "19C16594D479FBFC"
-				item: "apotheosis:simple_reforging_table"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -2.5d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			id: "1914E8DDC794B475"
@@ -55,8 +172,8 @@
 				item: "createmetallurgy:industrial_crucible"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.5d
+			x: -4.5d
+			y: -6.0d
 		}
 		{
 			id: "0EBBC56ADF493E8D"
@@ -211,105 +328,331 @@
 			y: -4.5d
 		}
 		{
-			id: "3DD65B28F005DD45"
+			id: "69D347BE36CF6E1D"
 			tasks: [{
-				id: "216999DF64AFF403"
-				item: "thermal_extra:soul_infused_machine_speed_augment"
+				id: "1F76E43E3DDD4DAC"
+				item: "thermal_extra:soul_infused_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.5d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
-			id: "6CBB949ED71E261A"
+			dependencies: ["0DDC02B62815A72A"]
+			id: "561407CF10EAE33F"
 			tasks: [{
-				id: "7A98434B59443DE2"
-				item: "thermal_extra:twinite_machine_speed_augment"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -5.5d
-		}
-		{
-			id: "009283728B9D02A2"
-			tasks: [{
-				id: "029F1C3F964E47A5"
-				item: "thermal_extra:shellite_machine_speed_augment"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			id: "0B442B308B7F0205"
-			tasks: [{
-				id: "662280E027545140"
-				item: "thermal_extra:dragonsteel_machine_speed_augment"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -5.5d
-		}
-		{
-			id: "05268A865EBF4249"
-			tasks: [{
-				id: "4CB78249C73ACA5B"
-				item: "thermal_extra:abyssal_machine_speed_augment"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -2.5d
-		}
-		{
-			id: "62EF39CEF25D0A38"
-			tasks: [{
-				id: "44853F7A35D00537"
-				item: "minecraft:shulker_shell"
+				id: "114E6857CB185C7D"
+				item: "thermal_extra:twinite_ingot"
 				type: "item"
 			}]
 			x: 3.0d
-			y: -4.5d
+			y: 3.0d
 		}
 		{
-			id: "49C0F93383E7A0DB"
+			dependencies: ["5D435D5D094F5788"]
+			id: "2D88552EB108A4B1"
 			tasks: [{
-				id: "56301CAB941A426C"
-				item: "industrialforegoingsouls:soul_laser_base"
+				id: "30DB2CFDBAA70678"
+				item: "thermal_extra:shellite_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -3.5d
+			x: -3.5d
+			y: 11.0d
 		}
 		{
-			id: "1AF836598108A738"
+			dependencies: ["41FA93B39F986D8A"]
+			id: "7DD7AEEA9F4C8801"
 			tasks: [{
-				id: "44A426FDA086201F"
-				item: "industrialforegoingsouls:soul_surge"
+				id: "1F59ABBB92109FFC"
+				item: "thermal_extra:dragonsteel_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: -1.0d
+			y: 11.0d
 		}
 		{
-			id: "36AC19976278842E"
+			dependencies: [
+				"1EA87FAB0FEFB46D"
+				"3510203E45DF11B9"
+			]
+			id: "1C46A0F4CAE79179"
 			tasks: [{
-				id: "133A4858DC86DEED"
-				item: "industrialforegoing:ore_laser_base"
+				id: "52E56A122BF1633B"
+				item: "thermal_extra:abyssal_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.5d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
-			id: "039D7E83AEB9E25F"
+			dependencies: ["0CD08555F440A32E"]
+			id: "0DDC02B62815A72A"
+			shape: "square"
 			tasks: [{
-				id: "1950F4E647B84C26"
-				item: "apotheosis:heart_seashelf"
+				id: "69A4102A41003AA6"
+				item: "kubejs:blazing_composite"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.5d
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["182277A47121C017"]
+			id: "5D435D5D094F5788"
+			shape: "square"
+			tasks: [{
+				id: "307149109B1885AF"
+				item: "kubejs:entropic_mycelite"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["28707EE5EE9E9B23"]
+			id: "1EA87FAB0FEFB46D"
+			shape: "square"
+			tasks: [{
+				id: "003D5CAE8EABF372"
+				item: "kubejs:echo_fused_obsidianite"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5BD915083679A527"]
+			id: "41FA93B39F986D8A"
+			shape: "square"
+			tasks: [{
+				id: "6AFE7E8910B3D07C"
+				item: "kubejs:aetherforged_cinderblock"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			icon: "industrialforegoing:ether_gas_bucket"
+			id: "7475FE1EF23DE698"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "3C8BBB628016EE37"
+				item: "thermal_extra:advanced_refinery"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0DC7ECB9507089FF"]
+			id: "0CD08555F440A32E"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "4061891062AF5855"
+				item: "thermal_extra:endothermic_dehydrator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["72CF79F7FAA29547"]
+			id: "7B19AAF10D2D9DFA"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "6151C29F3A31440B"
+				item: "thermal_extra:fluid_mixer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["25D3A2C554041C98"]
+			id: "3510203E45DF11B9"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "0923980E76E7F7AB"
+				item: "thermal_extra:nitratic_igniter"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6671B61E73558B25"]
+			id: "0DC7ECB9507089FF"
+			tasks: [{
+				id: "2E37DAAD3C3FAED3"
+				item: "kubejs:basic_electric_engine"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["512E85AF48E41FED"]
+			id: "25D3A2C554041C98"
+			tasks: [{
+				id: "1772B866FFAA38D9"
+				item: "kubejs:advanced_electric_engine"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"7FFB257BC7524268"
+				"7B19AAF10D2D9DFA"
+			]
+			id: "512E85AF48E41FED"
+			tasks: [{
+				id: "2E750A5FFCEFDAAF"
+				item: "kubejs:void_lubricant_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7475FE1EF23DE698"]
+			hide_dependency_lines: true
+			id: "2A1E8EA28CFE73B7"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "665E8DE362DB03BB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "pneumaticcraft:refinery"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:advanced_refinery"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A1E8EA28CFE73B7"]
+			id: "7FFB257BC7524268"
+			shape: "none"
+			tasks: [{
+				id: "1528F1CE09C18990"
+				item: "kubejs:void_heavy_oil_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A1E8EA28CFE73B7"]
+			id: "182277A47121C017"
+			shape: "none"
+			tasks: [{
+				id: "15E215EF1077EF3D"
+				item: "kubejs:spectral_oil_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A1E8EA28CFE73B7"]
+			id: "5BD915083679A527"
+			shape: "none"
+			tasks: [{
+				id: "08D1F6E66658BE6D"
+				item: "kubejs:aetheric_vapor_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["69D347BE36CF6E1D"]
+			id: "6671B61E73558B25"
+			tasks: [{
+				id: "0F7E314A0BFF2FCE"
+				item: "kubejs:soul_infused_coil"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["561407CF10EAE33F"]
+			id: "72CF79F7FAA29547"
+			tasks: [{
+				id: "0EE3D67F3C34C595"
+				item: "kubejs:twinite_wire"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1C46A0F4CAE79179"]
+			id: "79BC9C780E5804EA"
+			tasks: [{
+				id: "4D046937C44CB34D"
+				item: "thermal:chiller_ingot_cast"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.0d
+		}
+		{
+			id: "435AA9BE9BF74B76"
+			size: 1.5d
+			tasks: [{
+				id: "22BE693FA1DD5B0B"
+				item: "createmetallurgy:obdurium_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"7FFB257BC7524268"
+				"7B19AAF10D2D9DFA"
+			]
+			id: "28707EE5EE9E9B23"
+			tasks: [{
+				id: "0FC121CC21341BBF"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			id: "7DA785DFD09B40E1"
+			tasks: [{
+				id: "52F3F1CC4AF098CB"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.0d
 		}
 	]
-	title: "8. Ligas, Fundidos e Contradições"
+	title: "8. Alloys, Fusions and Contradictions"
 }

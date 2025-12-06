@@ -1,0 +1,97 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ii_extenses_de_desenho"
+	group: "48009A32F221D9FC"
+	icon: {
+		Count: 1
+		id: "actuallyadditions:laser_wrench"
+		tag: { }
+	}
+	id: "3AFA900F2190ACFB"
+	images: [
+		{
+			height: 2.25d
+			image: "custom:textures/gui/drafting_extensions.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "custom:textures/gui/number_ii.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			height: 3.0d
+			image: "custom:textures/gui/bg_element_bp.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.0d
+			y: 2.5d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0E73B8FCEA087CB8"
+			shape: "square"
+			tasks: [{
+				id: "23F6967125DE9C46"
+				item: "buildinggadgets2:gadget_building"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			id: "56384C975503E386"
+			shape: "square"
+			tasks: [{
+				id: "4E88AE85C725E79A"
+				item: {
+					Count: 1
+					id: "buildinggadgets2:gadget_copy_paste"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			id: "6AFC683BFDE3566F"
+			shape: "square"
+			tasks: [{
+				id: "5996E5EBE89C02C6"
+				item: "buildinggadgets2:gadget_destruction"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			id: "32FE424A6874EF56"
+			shape: "square"
+			tasks: [{
+				id: "145428DB103EC035"
+				item: {
+					Count: 1
+					id: "buildinggadgets2:gadget_cut_paste"
+					tag: {
+						pastereplace: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+	]
+	title: "&4(UT)&r Extensões de Desenho"
+}

@@ -3,7 +3,7 @@
 	default_quest_shape: "hexagon"
 	filename: "onde_o_ferro_aprende_a_danar"
 	group: "0E3BAF4D0D92EEE1"
-	icon: "create:wrench"
+	icon: "create:mechanical_arm"
 	id: "3FBA78EC5B9B5F80"
 	images: [{
 		height: 3.0d
@@ -617,8 +617,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest27.title}"
-			x: 8.0d
-			y: -1.0d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -851,8 +851,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.title}"
-			x: 6.5d
-			y: 0.0d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
