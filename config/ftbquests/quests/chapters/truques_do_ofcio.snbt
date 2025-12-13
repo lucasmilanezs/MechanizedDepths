@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "truques_do_ofcio"
 	group: "0E3BAF4D0D92EEE1"
 	icon: {
@@ -26,31 +26,210 @@
 			x: 2.5d
 			y: -6.0d
 		}
+		{
+			height: 5.0d
+			image: "custom:textures/gui/immersive_bg.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			height: 5.0d
+			image: "custom:textures/gui/nature_bg.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			height: 0.5d
+			image: "biomesoplenty:block/rose"
+			rotation: 0.0d
+			width: 0.5d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/orange_tulip"
+			rotation: 0.0d
+			width: 0.5d
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/cornflower"
+			rotation: 0.0d
+			width: 0.5d
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			height: 0.5d
+			image: "biomesoplenty:block/rose"
+			rotation: 0.0d
+			width: 0.5d
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			height: 0.5d
+			image: "biomesoplenty:block/rose"
+			rotation: 0.0d
+			width: 0.5d
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/lily_of_the_valley"
+			rotation: 0.0d
+			width: 0.5d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/allium"
+			rotation: 0.0d
+			width: 0.5d
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/cornflower"
+			rotation: 0.0d
+			width: 0.5d
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/orange_tulip"
+			rotation: 0.0d
+			width: 0.5d
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/lily_of_the_valley"
+			rotation: 0.0d
+			width: 0.5d
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/dandelion"
+			rotation: 0.0d
+			width: 0.5d
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/allium"
+			rotation: 0.0d
+			width: 0.5d
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/cornflower"
+			rotation: 0.0d
+			width: 0.5d
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/allium"
+			rotation: 0.0d
+			width: 0.5d
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			height: 5.0d
+			image: "custom:textures/gui/create_bg.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/lily_of_the_valley"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/cornflower"
+			rotation: 0.0d
+			width: 0.5d
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			height: 0.5d
+			image: "minecraft:block/orange_tulip"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			height: 0.5d
+			image: "biomesoplenty:block/rose"
+			rotation: 0.0d
+			width: 0.5d
+			x: 3.5d
+			y: 1.5d
+		}
 	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7B700EB89246EACC"
-			tasks: [{
-				id: "0CD0F0939F5FD3F9"
-				item: "create:brass_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -2.0d
-		}
-		{
+			dependencies: ["1A526B97B149CBD3"]
 			id: "0791CBB476723F0F"
 			tasks: [{
 				id: "3C563A845BEF1D8B"
-				item: "thermal:steel_ingot"
+				item: "thermal:steel_plate"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
+			dependencies: [
+				"4F33867E49AF45C9"
+				"16533F539E22B141"
+			]
 			id: "22FF67BC1E1F07CD"
 			tasks: [{
 				id: "02F8B5C87AEBE447"
@@ -63,10 +242,14 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
+			dependencies: [
+				"4F33867E49AF45C9"
+				"16533F539E22B141"
+			]
 			id: "5CC7E2DCF21162E3"
 			tasks: [{
 				id: "7CC3ECBCDB26C8D5"
@@ -79,20 +262,22 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["36ED84D6DA1ACBF6"]
 			id: "34637F718E3C8B62"
 			tasks: [{
 				id: "14F4334BE653D553"
 				item: "create:schematicannon"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.0d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["1EC2816129663219"]
 			id: "5CF2E32AA3E4EBB2"
 			tasks: [{
 				id: "2B491520646995E3"
@@ -108,10 +293,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 7.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["5CB3ED61EF14A6A5"]
 			id: "6CC6E1AFF83ACB2E"
 			tasks: [{
 				id: "2CDDE784E1C69948"
@@ -127,11 +313,13 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: 10.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["5CB3ED61EF14A6A5"]
 			id: "2220929079DE91EB"
+			shape: "square"
 			tasks: [{
 				id: "6586164066CAFD68"
 				item: {
@@ -146,10 +334,11 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.0d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["5CB3ED61EF14A6A5"]
 			id: "79EDCC502927B8E7"
 			tasks: [{
 				id: "4F730D69F30295E3"
@@ -165,26 +354,28 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["2A261C789F73E3A9"]
 			id: "16533F539E22B141"
 			tasks: [{
 				id: "14A8BC19D6DE8C5D"
 				item: {
 					Count: 1
-					id: "create:netherite_backtank"
+					id: "create:copper_backtank"
 					tag: {
 						Air: 900
 					}
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: -0.5d
+			x: -3.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["73B5B6D64E40BE8F"]
 			id: "47109FD7BB78712C"
 			tasks: [{
 				id: "32DC422468F1D322"
@@ -195,6 +386,10 @@
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"1EC2816129663219"
+				"73B5B6D64E40BE8F"
+			]
 			id: "5C962106A4EF506F"
 			tasks: [{
 				id: "4CF32F9A46F0DB51"
@@ -207,18 +402,19 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.0d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["73B5B6D64E40BE8F"]
 			id: "5FA664885673791C"
 			tasks: [{
 				id: "71B870AD2D41DF9D"
 				item: "naturesaura:placer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			id: "73B5B6D64E40BE8F"
@@ -228,9 +424,13 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -2.0d
+			y: 0.5d
 		}
 		{
+			dependencies: [
+				"73B5B6D64E40BE8F"
+				"0E141F104B456EBB"
+			]
 			id: "1D66DCA52A9103FB"
 			tasks: [{
 				id: "5ED48F566B09C796"
@@ -238,17 +438,18 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["0791CBB476723F0F"]
 			id: "0F40A53E3889945D"
 			tasks: [{
 				id: "432190D23CE1CD13"
 				item: "functionalstorage:storage_controller"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.0d
+			x: 10.0d
+			y: -1.0d
 		}
 		{
 			id: "0857EFBE85C8886A"
@@ -257,8 +458,8 @@
 				item: "naturesaura:infused_iron"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -2.0d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			id: "0E141F104B456EBB"
@@ -267,8 +468,8 @@
 				item: "naturesaura:sky_ingot"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -2.0d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			id: "0F1E40D2499FBCC7"
@@ -283,8 +484,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: -1.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			id: "19AF2F53BCBD5275"
@@ -299,8 +500,92 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "1EC2816129663219"
+			tasks: [{
+				id: "2E775EAD99D87D29"
+				item: "alltheores:aluminum_plate"
+				type: "item"
+			}]
+			x: 7.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["5CB3ED61EF14A6A5"]
+			id: "1EF29ACD1DFF98BD"
+			tasks: [{
+				id: "68C5B40FBFE94D54"
+				item: "immersiveengineering:sawmill"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["27A9ABA7161CD1EA"]
+			id: "5CB3ED61EF14A6A5"
+			tasks: [{
+				id: "32EF0A87ED22A15E"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4007E353BE3EF6F1"]
+			id: "4F33867E49AF45C9"
+			tasks: [{
+				id: "345A03C4C0304FC8"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3DE2667B06DFB607"]
+			id: "6F0C7945153DE3B7"
+			tasks: [{
+				id: "04D1ED8EE91E17D0"
+				item: "create:brown_toolbox"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "3428B004DA140905"
+			tasks: [{
+				id: "1E8D2F220D159D22"
+				item: "create:empty_schematic"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "75F8E16DBD585B00"
+			tasks: [{
+				id: "6213871A53E9E1D2"
+				item: "create_new_age:generator_coil"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			id: "29E77F1CF3CE8A85"
+			tasks: [{
+				id: "103C2531F00EBC96"
+				item: "create_new_age:nuclear_fuel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
 		}
 	]
 	title: "{ftbquests.chapter.truques_do_ofcio.title}"

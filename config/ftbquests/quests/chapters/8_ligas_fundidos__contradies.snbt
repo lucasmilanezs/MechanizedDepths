@@ -88,7 +88,7 @@
 			image: "thermal_extra:block/shellite_glass"
 			rotation: 0.0d
 			width: 1.0d
-			x: -3.5d
+			x: -3.0d
 			y: 11.0d
 		}
 		{
@@ -356,7 +356,7 @@
 				item: "thermal_extra:shellite_ingot"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 11.0d
 		}
 		{
@@ -405,7 +405,7 @@
 				item: "kubejs:entropic_mycelite"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 7.0d
 		}
 		{
@@ -644,10 +644,11 @@
 			y: 7.0d
 		}
 		{
-			id: "7DA785DFD09B40E1"
+			dependencies: ["5BD915083679A527"]
+			id: "6D66F137D48744B1"
 			tasks: [{
-				id: "52F3F1CC4AF098CB"
-				item: "minecraft:stripped_oak_log"
+				id: "265CADA9DDA789B6"
+				item: "kubejs:refined_plastic"
 				type: "item"
 			}]
 			x: 1.0d

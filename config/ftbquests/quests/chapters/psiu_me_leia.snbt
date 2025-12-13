@@ -370,7 +370,7 @@
 			description: [
 				"  To bridge the mortal and the divine, even simple gestures matter. Build a flowered clearing as the book suggests — colors and patterns left to your interpretation. With the Offering Table at its center, you may present objects to higher forces and receive something more elaborate in return. Whether it’s generosity or a cosmic joke remains uncertain."
 				""
-				"  Place the offering with right-click, then drop a &bSpirit of Calling&r onto the pillar to begin. After a short moment, the items will be consumed in a bolt of lightning, and your reward will fall from above. You can offer up to 16 of the same item at once using a single Spirit of Calling — frugal worship at its finest. The ritual can be &l&8automated&r&r with modest redstone and creativity."
+				"  Place the offering with right-click, then drop a &bSpirit of Calling&r onto the pillar to begin. After a short moment, the items will be consumed in a bolt of lightning, and your reward will fall from above. You can offer &2up to 16&r of the same item at once using a &2single Spirit of Calling&r — frugal worship at its finest. The ritual can be &8&lautomated&r&r with modest redstone and creativity."
 				""
 				"&7&o— Our humble junk becomes their humble junk, returned with ceremony.&r&r"
 			]
@@ -624,6 +624,12 @@
 				"{ftbquests.chapter.psiu_me_leia.quest21.description3}"
 			]
 			id: "042EC538643F435A"
+			rewards: [{
+				count: 16
+				id: "7373C0C04F367784"
+				item: "actuallyadditions:tiny_coal"
+				type: "item"
+			}]
 			shape: "square"
 			size: 1.0d
 			tasks: [{

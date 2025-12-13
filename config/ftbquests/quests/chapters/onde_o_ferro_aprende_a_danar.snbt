@@ -5,14 +5,50 @@
 	group: "0E3BAF4D0D92EEE1"
 	icon: "create:mechanical_arm"
 	id: "3FBA78EC5B9B5F80"
-	images: [{
-		height: 3.0d
-		image: "custom:textures/gui/kinectics.png"
-		rotation: 0.0d
-		width: 3.0d
-		x: 0.0d
-		y: -10.5d
-	}]
+	images: [
+		{
+			height: 3.0d
+			image: "custom:textures/gui/kinectics.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			height: 1.5d
+			image: "enderio:block/machine_bottom"
+			rotation: 0.0d
+			width: 1.5d
+			x: 9.0d
+			y: -7.0d
+		}
+		{
+			height: 1.5d
+			image: "thermal:block/machines/machine_side"
+			rotation: 0.0d
+			width: 1.5d
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			color: 11184810
+			height: 1.45d
+			image: "custom:textures/gui/quest.png"
+			rotation: 0.0d
+			width: 1.45d
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			color: 11184810
+			height: 1.45d
+			image: "custom:textures/gui/quest.png"
+			rotation: 0.0d
+			width: 1.45d
+			x: 9.0d
+			y: -7.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -37,7 +73,6 @@
 				""
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description10}"
 			]
-			hide_dependent_lines: true
 			icon: "create:cogwheel"
 			id: "6FFDC0CD59E051D1"
 			shape: "netheritetier"
@@ -49,7 +84,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.title}"
 			x: 0.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -68,7 +103,7 @@
 			]
 			id: "2A261C789F73E3A9"
 			shape: "gear"
-			size: 1.1d
+			size: 1.0d
 			tasks: [{
 				count: 4L
 				id: "6B7465457FED091D"
@@ -77,7 +112,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.title}"
 			x: 0.0d
-			y: -4.2d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -88,7 +123,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -7.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2A261C789F73E3A9"]
@@ -107,7 +142,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest4.title}"
 			x: 0.0d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -128,7 +163,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest5.title}"
 			x: 1.0d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -149,7 +184,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest6.title}"
 			x: -1.0d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3DE2667B06DFB607"]
@@ -168,7 +203,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest7.title}"
 			x: 1.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["30E4ADB9A99F0519"]
@@ -189,7 +224,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest8.title}"
 			x: -1.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -209,7 +244,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest9.title}"
 			x: -2.0d
-			y: -7.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -227,7 +262,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest10.title}"
 			x: -1.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1C7464A392E4AA20"]
@@ -246,7 +281,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest11.title}"
 			x: -2.0d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -265,7 +300,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest12.title}"
 			x: -2.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -287,7 +322,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest13.title}"
 			x: 1.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -306,7 +341,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest14.title}"
 			x: 2.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
@@ -326,7 +361,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest15.title}"
 			x: 2.0d
-			y: -7.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3DE2667B06DFB607"]
@@ -352,7 +387,7 @@
 			]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest16.title}"
 			x: 2.0d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2301AE3626A0CD3B"]
@@ -371,7 +406,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest17.title}"
 			x: 0.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["2301AE3626A0CD3B"]
@@ -392,7 +427,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2301AE3626A0CD3B"]
@@ -414,7 +449,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["41C7D076DE390330"]
@@ -441,7 +476,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.title}"
 			x: 7.0d
-			y: -1.0d
+			y: -1.0892857142857153d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
@@ -467,7 +502,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.title}"
 			x: 6.5d
-			y: -2.0d
+			y: -2.0892857142857153d
 		}
 		{
 			dependencies: [
@@ -495,7 +530,7 @@
 			]
 			id: "3C8B4742E0008284"
 			shape: "gear"
-			size: 1.1d
+			size: 1.0d
 			tasks: [
 				{
 					id: "5D8286884D9A2E16"
@@ -509,8 +544,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.title}"
-			x: 3.267857142857146d
-			y: -0.9464285714285694d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
@@ -534,7 +569,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.title}"
 			x: 5.0d
-			y: -1.0d
+			y: -1.0892857142857153d
 		}
 		{
 			dependencies: ["0EC1760A6B2B0CB6"]
@@ -553,7 +588,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest24.title}"
 			x: 6.0d
-			y: -1.0d
+			y: -1.0892857142857153d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
@@ -576,7 +611,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest25.title}"
 			x: 7.5d
-			y: 0.0d
+			y: -0.0892857142857153d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
@@ -595,7 +630,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest26.title}"
 			x: 5.5d
-			y: 0.0d
+			y: -0.0892857142857153d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
@@ -618,7 +653,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest27.title}"
 			x: 6.5d
-			y: 0.0d
+			y: -0.0892857142857153d
 		}
 		{
 			dependencies: [
@@ -641,7 +676,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest28.title}"
 			x: 5.5d
-			y: -2.0d
+			y: -2.0892857142857153d
 		}
 		{
 			dependencies: ["465013195CB95147"]
@@ -661,7 +696,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -2.0d
+			y: -2.0892857142857153d
 		}
 		{
 			dependencies: ["4007E353BE3EF6F1"]
@@ -682,6 +717,7 @@
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description10}"
 			]
 			id: "1AC4899640C73919"
+			shape: "none"
 			size: 1.5d
 			tasks: [{
 				id: "32C5CB65F14BC375"
@@ -690,7 +726,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.title}"
 			x: 9.0d
-			y: -6.75d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -710,6 +746,7 @@
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description6}"
 			]
 			id: "21D37F976576C885"
+			shape: "none"
 			size: 1.5d
 			tasks: [{
 				id: "314235E2A430BB07"
@@ -717,10 +754,16 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.title}"
-			x: 5.517857142857139d
-			y: -6.696428571428569d
+			x: 5.5d
+			y: -7.0d
 		}
 		{
+			dependencies: [
+				"6FFDC0CD59E051D1"
+				"43A0F10845723DF8"
+				"3C805F01FCA2C984"
+				"64818C8CE74F770C"
+			]
 			description: [
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.description1}"
 				""
@@ -732,15 +775,15 @@
 			]
 			id: "2904654A6CDCBAF8"
 			shape: "gear"
-			size: 1.1d
+			size: 1.0d
 			tasks: [{
 				id: "1A3669C6885EEAB2"
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.title}"
-			x: -3.3000000000000003d
-			y: -1.1d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -765,8 +808,8 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
-			y: -1.0d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -784,26 +827,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.title}"
-			x: -4.5d
-			y: -2.0d
-		}
-		{
-			id: "720947A62F9D3D8A"
-			tasks: [
-				{
-					id: "6BDE62148E387006"
-					item: "create:chute"
-					type: "item"
-				}
-				{
-					id: "268D2BD9D6CABB2F"
-					item: "create:belt_connector"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest35.title}"
-			x: -4.5d
-			y: 0.0d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -824,8 +849,8 @@
 				title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.task_915446368711874727.title}"
 				type: "checkmark"
 			}]
-			x: -6.0d
-			y: -1.0d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -852,7 +877,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.title}"
 			x: 8.0d
-			y: -1.0d
+			y: -1.0892857142857153d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
@@ -887,7 +912,7 @@
 			]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.title}"
 			x: 4.5d
-			y: -2.0d
+			y: -2.0892857142857153d
 		}
 		{
 			dependencies: ["586E5CF965DD1845"]
@@ -909,7 +934,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -3.0d
+			y: -3.0892857142857153d
 		}
 		{
 			dependencies: ["586E5CF965DD1845"]
@@ -921,7 +946,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest40.title}"
 			x: 6.0d
-			y: -3.0d
+			y: -3.0892857142857153d
 		}
 		{
 			dependencies: ["7C1F6A35AF3BA808"]
@@ -940,7 +965,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest41.title}"
 			x: 7.0d
-			y: -3.0d
+			y: -3.0892857142857153d
 		}
 		{
 			dependencies: [
@@ -997,7 +1022,7 @@
 			]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest43.title}"
 			x: 4.5d
-			y: -4.0d
+			y: -4.089285714285715d
 		}
 		{
 			dependencies: [
@@ -1021,7 +1046,7 @@
 			}]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest44.title}"
 			x: 5.5d
-			y: -4.0d
+			y: -4.089285714285715d
 		}
 		{
 			dependencies: ["4F62549360D185F1"]
@@ -1032,7 +1057,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -4.0d
+			y: -4.089285714285715d
 		}
 		{
 			id: "7DC8EAACC288097C"
@@ -1042,7 +1067,96 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -4.0d
+			y: -4.089285714285715d
+		}
+		{
+			dependencies: ["6FFDC0CD59E051D1"]
+			id: "58A05F41F03AAE61"
+			shape: "gear"
+			tasks: [{
+				id: "35B2C755D82714C6"
+				item: "create_new_age:basic_motor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["58A05F41F03AAE61"]
+			id: "5A73253D3751FBC3"
+			tasks: [{
+				id: "713327F66FBE6E55"
+				item: "create_new_age:energiser_t1"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["70D26FF67316FD6F"]
+			id: "48C3269929ABF7CF"
+			tasks: [{
+				id: "595E59397C6A79AC"
+				item: "create_new_age:advanced_motor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5AEBBC853AF4039F"]
+			id: "4B9E59CE020AD0D0"
+			tasks: [{
+				id: "4D16D83732AF7C73"
+				item: "create_new_age:reinforced_motor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["70D26FF67316FD6F"]
+			id: "7E41A5365C09FDE2"
+			tasks: [{
+				id: "109705BB9CB562F2"
+				item: "create_new_age:basic_motor_extension"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5AEBBC853AF4039F"]
+			id: "5AA2883D7ADEF312"
+			tasks: [{
+				id: "38B759A7142E02DE"
+				item: "create_new_age:advanced_motor_extension"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5A73253D3751FBC3"]
+			id: "5AEBBC853AF4039F"
+			tasks: [{
+				id: "6557E915A1A05562"
+				item: "create_new_age:overcharged_diamond"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5A73253D3751FBC3"]
+			id: "70D26FF67316FD6F"
+			tasks: [{
+				id: "0660583332367B93"
+				item: "create_new_age:overcharged_iron"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
 		}
 	]
 	title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.title}"

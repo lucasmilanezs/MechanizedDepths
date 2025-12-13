@@ -53,6 +53,10 @@
 			y: 1.0d
 		}
 		{
+			dependencies: [
+				"13AC27CEA3409047"
+				"0516087C6CD75C8B"
+			]
 			id: "004288D8EF9D1107"
 			tasks: [{
 				id: "0842B0CEE3C177E6"
@@ -85,7 +89,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["13AC27CEA3409047"]
+			dependencies: [
+				"13AC27CEA3409047"
+				"0516087C6CD75C8B"
+			]
 			id: "4B17B25AEC9A0007"
 			tasks: [{
 				id: "6F0872D38830D62B"
@@ -150,7 +157,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["1471DC4294CC3E31"]
+			dependencies: [
+				"1471DC4294CC3E31"
+				"3F4D6D0BF446A01F"
+			]
 			id: "42B368C1DD78B214"
 			tasks: [{
 				id: "740B749F8EEC70EC"
@@ -290,6 +300,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["5697C0E23B256642"]
 			description: [
 				"{ftbquests.chapter.termodinmica_aplicada.quest21.description1}"
 				""
@@ -356,6 +367,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["4807891B99079DE0"]
 			id: "01214CC32B9E87BC"
 			tasks: [{
 				id: "77C2C3A54616C691"
