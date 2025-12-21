@@ -31,6 +31,7 @@
 			y: -7.0d
 		}
 		{
+			alpha: 200
 			color: 11184810
 			height: 1.45d
 			image: "custom:textures/gui/quest.png"
@@ -40,6 +41,7 @@
 			y: -7.0d
 		}
 		{
+			alpha: 200
 			color: 11184810
 			height: 1.45d
 			image: "custom:textures/gui/quest.png"
@@ -1067,7 +1069,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -4.089285714285715d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6FFDC0CD59E051D1"]
@@ -1157,6 +1159,22 @@
 			}]
 			x: 2.0d
 			y: 5.5d
+		}
+		{
+			description: [
+				"&63. Ro&r&eund&r &7and&r &eRou&r&6nd&r"
+				"&a4. Mekan&r&2ology&r"
+				"&d5. En&r&5der&r &9Syna&r&1pses&r"
+				"&66. App&r&elied&r &cThermody&r&4namics™&r"
+			]
+			id: "2F55CB29FE73F1A1"
+			tasks: [{
+				id: "0A8CA8CAFE963252"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
 		}
 	]
 	title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.title}"

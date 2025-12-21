@@ -1,0 +1,42 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "backstage"
+	group: ""
+	id: "1F0773B3A93BB2E2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2BDFECE84C0290B4"
+			rewards: [{
+				auto: "no_toast"
+				command: "/mdbook hookf chapter1.crafting_table"
+				id: "4774FBA248B0E0AC"
+				type: "command"
+			}]
+			tasks: [{
+				disable_toast: true
+				entity: "minecraft:zombie"
+				id: "132F642F50CEF488"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "46E64647467CA374"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "0B9340594C54E58F"
+				type: "dimension"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+	]
+	title: "backstage"
+}

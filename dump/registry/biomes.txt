@@ -1,7 +1,7 @@
 # Biome registry dump
 # Minecraft: 1.20.1
 # Entries: 135
-# Generated: 2025-12-12T19:00:41.1399151-03:00
+# Generated: 2025-12-21T01:50:31.1565588-03:00
 
 ae2:spatial_storage 107
 biomesoplenty:auroral_garden 0
