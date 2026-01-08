@@ -20,13 +20,11 @@ MDBook.Registry = {
 
     if (!def.kind) def.kind = (def.hookId ? 'hook' : 'time')
     if (def.weight === undefined) def.weight = 1
-
     this.defs.set(def.id, def)
   },
 
   has: function (id) { return this.defs.has(id) },
   get: function (id) { return this.defs.get(id) },
-
   all: function () { return Array.from(this.defs.values()) },
 
   allTime: function () {

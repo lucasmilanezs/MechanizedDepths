@@ -23,18 +23,54 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
 			can_repeat: true
 			id: "46E64647467CA374"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "0B9340594C54E58F"
-				type: "dimension"
+			rewards: [{
+				auto: "disabled"
+				command: "/mdbook start"
+				id: "620E0040B2FCA493"
+				type: "command"
 			}]
-			x: -1.5d
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "65579052B3E96DFD"
+			rewards: [{
+				auto: "invisible"
+				command: "/mdbook hook general.killed_cat"
+				id: "61E45333F2D55700"
+				type: "command"
+			}]
+			tasks: [{
+				entity: "minecraft:cat"
+				id: "4868F1EEEE815BCB"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "1A512D7A1BE59D93"
+			rewards: [{
+				command: "/mdbook hook general.cat"
+				id: "03717FBF5A8A543D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "23070207FD4BF6CB"
+				observe_type: 5
+				timer: 0L
+				to_observe: "minecraft:cat"
+				type: "observation"
+			}]
+			x: 1.5d
 			y: 0.0d
 		}
 	]
