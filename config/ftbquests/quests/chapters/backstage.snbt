@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "backstage"
 	group: ""
+	icon: "immersiveengineering:strip_curtain"
 	id: "1F0773B3A93BB2E2"
 	order_index: 0
 	quest_links: [ ]
@@ -23,7 +24,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -35,7 +36,7 @@
 				id: "620E0040B2FCA493"
 				type: "command"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -53,7 +54,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
@@ -70,7 +71,7 @@
 				to_observe: "minecraft:cat"
 				type: "observation"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 0.0d
 		}
 	]

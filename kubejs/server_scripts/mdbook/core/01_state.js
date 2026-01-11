@@ -1,14 +1,15 @@
-// kubejs/server_scripts/mdbook/core/01_state.js
 global.MDBook = global.MDBook || {}
 var MDBook = global.MDBook
 
 MDBook.State = {
   _ensure: function (root) {
     if (root.seen === undefined) root.seen = {}
-    if (root.cooldowns === undefined) root.cooldowns = {}
+    if (root.cooldowns === undefined) root.cooldowns = {} // legacy
     if (root.flags === undefined) root.flags = {}
     if (root.counters === undefined) root.counters = {}
     if (root.lastTimeRollAt === undefined) root.lastTimeRollAt = 0
+    if (root.sessionSeen === undefined) root.sessionSeen = {}
+
     return root
   },
 
@@ -27,14 +28,22 @@ MDBook.State = {
     server.persistentData.mdbook.debug = !!enabled
   },
 
-  hasSeen: function (player, id) {
-    return !!this.playerRoot(player).seen[id]
+  // persistente (para sempre)
+  hasSeen: function (player, id) { return !!this.playerRoot(player).seen[id] },
+  markSeen: function (player, id) { this.playerRoot(player).seen[id] = true },
+
+  // ✅ novo: por sessão (runtime)
+  hasSeenThisSession: function (player, id) {
+    var root = this.playerRoot(player)
+    return root.sessionSeen[id] === MDBook.sessionId
   },
 
-  markSeen: function (player, id) {
-    this.playerRoot(player).seen[id] = true
+  markSeenThisSession: function (player, id) {
+    var root = this.playerRoot(player)
+    root.sessionSeen[id] = MDBook.sessionId
   },
 
+  // legado (mantido caso você use em outras coisas)
   cooldownUntil: function (player, id) {
     var v = this.playerRoot(player).cooldowns[id]
     return Number(v === undefined ? 0 : v)

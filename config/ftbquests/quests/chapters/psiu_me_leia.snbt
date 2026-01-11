@@ -41,6 +41,22 @@
 			x: -7.0d
 			y: -1.0d
 		}
+		{
+			height: 1.0d
+			image: "integrateddynamics:aspect/write/double/effect/particle"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "integrateddynamics:aspect/write/double/effect/particle"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5714285714285623d
+			y: 0.6928571428571431d
+		}
 	]
 	order_index: 0
 	progression_mode: "linear"
@@ -831,7 +847,7 @@
 			description: [
 				"  This land is &4old,&r and its metals are no longer found in pure form. Ages of upheaval fused once-separate veins into mixed mineral compounds."
 				""
-				"  The core metals you need are locked inside these mixtures. To obtain them, you must sort and break down the compounds first. Open the Ore Sorting Bench recipes by &aclicking U&r — there you can see every mineral compound and which usable metals each one produces. "
+				"  The core metals you need are locked inside these mixtures. To obtain them, you must sort and break down the compounds first. Open the Ore Sorting Bench recipes by &aclicking U&r in a ore composite. — there you can see every mineral compound and which usable metals each one produces. "
 				""
 				"&7&o— You call it “modded.” The planet calls it “trauma.”&r&r"
 			]

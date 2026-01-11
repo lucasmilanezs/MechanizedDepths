@@ -127,6 +127,12 @@ ServerEvents.recipes(event => {
     B: 'immersiveengineering:blastbrick'
   });
 });
+
+// MECHANICAL COMPONENT
+ServerEvents.recipes(event => {
+  event.remove({ id: 'immersiveengineering:crafting/component_steel' });
+  event.remove({ id: 'immersiveengineering:crafting/component_iron' });
+});
 //==================COMPATIBILITY RECIPES==================
 
 

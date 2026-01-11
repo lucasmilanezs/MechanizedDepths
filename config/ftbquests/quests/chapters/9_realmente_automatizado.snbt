@@ -11,16 +11,50 @@
 			image: "custom:item/quest_research"
 			rotation: 0.0d
 			width: 1.2d
-			x: 4.0d
-			y: -9.0d
+			x: 9.5d
+			y: -10.5d
 		}
 		{
 			height: 1.2d
 			image: "custom:item/quest_research"
 			rotation: 0.0d
 			width: 1.2d
-			x: 1.0d
-			y: -9.0d
+			x: -2.5d
+			y: -10.5d
+		}
+		{
+			height: 0.5d
+			image: "custom:item/crafting_tech_card"
+			order: 100
+			rotation: 0.0d
+			width: 0.5d
+			x: -2.482142857142854d
+			y: -11.232142857142858d
+		}
+		{
+			height: 0.5d
+			image: "custom:item/chemistry_tech_card"
+			rotation: 0.0d
+			width: 0.5d
+			x: 9.517857142857174d
+			y: -11.196428571428573d
+		}
+		{
+			height: 1.1d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.1d
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			color: 6563679
+			height: 1.0d
+			image: "mekanism:liquid/steam"
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.0d
+			y: -4.5d
 		}
 	]
 	order_index: 1
@@ -28,248 +62,283 @@
 	quests: [
 		{
 			id: "3094DD885DDC65A5"
+			shape: "square"
+			size: 1.2d
 			tasks: [{
 				id: "658A5AE48DCDB1AC"
 				item: "actuallyadditions:iron_casing"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: 1.0d
 		}
 		{
+			dependencies: ["3094DD885DDC65A5"]
 			id: "4479F1A50CAB70C1"
+			shape: "gear"
+			size: 1.2d
 			tasks: [{
 				id: "69EB347921E7AEC1"
 				item: "actuallyadditions:atomic_reconstructor"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -1.0d
 		}
 		{
+			dependencies: ["4479F1A50CAB70C1"]
 			id: "2500AF1248D161FD"
 			tasks: [{
 				id: "6FC2ECBAF32771BA"
 				item: "actuallyadditions:restonia_crystal"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: -2.5d
 		}
 		{
+			dependencies: [
+				"74C3DBD48DCC8417"
+				"065D05B1EDDF9CBD"
+			]
 			id: "283FFE1AA6DC422D"
+			shape: "square"
 			tasks: [{
 				id: "4E5371BF9E8292EB"
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: -3.5d
 		}
 		{
+			dependencies: ["72D368728D4BE109"]
 			id: "6DEAE4B081FBB857"
 			tasks: [{
 				id: "0A7BD3BA16A9A708"
 				item: "apotheosis:gem_cutting_table"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -3.5d
+			x: -5.0d
+			y: -5.0d
 		}
 		{
+			dependencies: ["4479F1A50CAB70C1"]
 			id: "7F8174218FF4A210"
 			tasks: [{
 				id: "1EC924933715C022"
 				item: "actuallyadditions:void_crystal"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: -2.5d
 		}
 		{
+			dependencies: ["4479F1A50CAB70C1"]
 			id: "644E2971117A97B8"
 			tasks: [{
 				id: "59B430B0A1B9D2DF"
 				item: "actuallyadditions:palis_crystal"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["4479F1A50CAB70C1"]
 			id: "0005E4CEB183D9B6"
 			tasks: [{
 				id: "4BE1205DBCA85284"
 				item: "actuallyadditions:diamatine_crystal"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
+			dependencies: ["4479F1A50CAB70C1"]
 			id: "6680B1C26EC218E8"
 			tasks: [{
 				id: "2BAE04E7B2050BE2"
 				item: "actuallyadditions:emeradic_crystal"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: -3.0d
 		}
 		{
+			dependencies: ["4479F1A50CAB70C1"]
 			id: "4264BD422092DE20"
 			tasks: [{
 				id: "7B5B3F9B73ED1FBB"
 				item: "actuallyadditions:enori_crystal"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["2500AF1248D161FD"]
 			id: "20DECFDDB6FF9666"
 			tasks: [{
 				id: "2F818E7A3EA468BF"
 				item: "actuallyadditions:empowered_restonia_crystal"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.5d
 			y: -3.5d
 		}
 		{
+			dependencies: ["644E2971117A97B8"]
 			id: "155AA4175A933163"
 			tasks: [{
 				id: "54AD5D3DB997367B"
 				item: "actuallyadditions:empowered_palis_crystal"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: -2.5d
 		}
 		{
+			dependencies: ["7F8174218FF4A210"]
+			hide_dependent_lines: true
 			id: "065D05B1EDDF9CBD"
 			tasks: [{
 				id: "59DCC9EF71E4DF8C"
 				item: "actuallyadditions:empowered_void_crystal"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -3.5d
 		}
 		{
+			dependencies: ["0005E4CEB183D9B6"]
 			id: "72D368728D4BE109"
 			tasks: [{
 				id: "19D10D61D71811F8"
 				item: "actuallyadditions:empowered_diamatine_crystal"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: -4.0d
 		}
 		{
+			dependencies: ["6680B1C26EC218E8"]
+			hide_dependent_lines: true
 			id: "6EB03F47FD79274B"
 			tasks: [{
 				id: "5CDF0005CA101B44"
 				item: "actuallyadditions:empowered_emeradic_crystal"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -4.0d
 		}
 		{
+			dependencies: ["4264BD422092DE20"]
+			hide_dependent_lines: true
 			id: "64EBA30CF38BACF1"
 			tasks: [{
 				id: "2AF8BA71C7706EA3"
 				item: "actuallyadditions:empowered_enori_crystal"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: -2.5d
 		}
 		{
+			dependencies: ["6EB03F47FD79274B"]
 			id: "7F29B2F38E707B29"
+			shape: "square"
 			tasks: [{
 				id: "269A84EEB6814E84"
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
-			id: "005569951FB14178"
-			tasks: [{
-				id: "1A53B620D2A41F71"
-				item: "mekanism:hdpe_pellet"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -5.5d
-		}
-		{
+			dependencies: ["7F29B2F38E707B29"]
 			id: "5C63A5DE6BE82BD4"
-			size: 1.2d
+			shape: "square"
+			size: 1.1d
 			tasks: [{
 				id: "1D5B8902E0AD9363"
 				item: "mekanism:hdpe_sheet"
 				type: "item"
 			}]
 			x: 2.0d
-			y: -5.5d
+			y: -6.5d
 		}
 		{
+			dependencies: ["74C3DBD48DCC8417"]
 			id: "0E84C15719B79465"
+			shape: "square"
 			tasks: [{
 				id: "0BD45FF212E85E39"
 				item: "mekanism:thermal_evaporation_controller"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.5d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["0E84C15719B79465"]
 			id: "23C6C62611743C55"
+			shape: "square"
 			tasks: [{
 				id: "36C8B41D86E83DEE"
 				item: "mekanism:brine_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.5d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
+			dependencies: [
+				"5C018F4707C54886"
+				"7F29B2F38E707B29"
+			]
 			id: "46C18B3C06E263C6"
+			shape: "square"
 			tasks: [{
 				id: "2349126490F40F55"
 				item: "kubejs:dust_titanium_dioxide"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.5d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
+			dependencies: ["46C18B3C06E263C6"]
 			id: "1ED4B36FCDD0B66A"
+			shape: "square"
 			tasks: [{
 				id: "0391770B832939CF"
 				item: "kubejs:titanium_sponge_raw"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.5d
+			x: 5.0d
+			y: -5.0d
 		}
 		{
+			dependencies: ["1ED4B36FCDD0B66A"]
 			id: "04E6B91CFC1CEFDE"
+			shape: "square"
 			tasks: [{
 				id: "3083A1AD329CBE23"
 				item: "kubejs:titanium_sponge_pure"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.5d
+			x: 5.0d
+			y: -6.5d
 		}
 		{
+			dependencies: ["04E6B91CFC1CEFDE"]
 			id: "7D88DD6AF8713CF2"
-			size: 1.2d
+			shape: "square"
+			size: 1.1d
 			tasks: [{
 				id: "36C2C3FC53A86243"
 				item: "kubejs:ingot_titanium"
@@ -279,16 +348,19 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["3F22B061A52B60FE"]
 			id: "39C400B5BAF29B98"
+			shape: "square"
 			tasks: [{
 				id: "09A6F4E8F26E26D7"
 				item: "mekanism:hydrogen_chloride_bucket"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -9.0d
+			x: 11.0d
+			y: -8.5d
 		}
 		{
+			dependencies: ["177E45D188B53265"]
 			id: "09D64B4457C86420"
 			shape: "diamond"
 			size: 1.2d
@@ -297,10 +369,11 @@
 				item: "kubejs:blank_tech_card"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -9.0d
+			x: 3.5d
+			y: -10.5d
 		}
 		{
+			dependencies: ["09D64B4457C86420"]
 			id: "488AF270539E0D8C"
 			shape: "diamond"
 			size: 1.0d
@@ -309,10 +382,11 @@
 				item: "kubejs:crafting_data"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -10.0d
+			x: 3.0d
+			y: -11.5d
 		}
 		{
+			dependencies: ["488AF270539E0D8C"]
 			id: "7839E9C9A012A9F9"
 			shape: "square"
 			tasks: [{
@@ -320,30 +394,41 @@
 				item: "kubejs:crafting_tech_card"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -9.0d
+			x: 2.0d
+			y: -10.5d
 		}
 		{
+			dependencies: [
+				"6EB03F47FD79274B"
+				"72D368728D4BE109"
+			]
 			id: "5F6BDC6BABAE47E4"
 			tasks: [{
 				id: "7AAF6BB6890CF021"
 				item: "actuallyadditions:empowerer"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
+			dependencies: ["5F6BDC6BABAE47E4"]
 			id: "012D53BACD4BDFAC"
 			tasks: [{
 				id: "6E2C445EDF1E1909"
 				item: "kubejs:certite_crystal"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: -3.0d
+			y: -5.0d
 		}
 		{
+			dependencies: [
+				"012D53BACD4BDFAC"
+				"5F6BDC6BABAE47E4"
+			]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
 			id: "0FDBFB5AFE602B34"
 			tasks: [{
 				id: "62DDA4BC0557325B"
@@ -351,10 +436,16 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -8.0d
+			y: -5.0d
 		}
 		{
+			dependencies: [
+				"7D88DD6AF8713CF2"
+				"5C63A5DE6BE82BD4"
+			]
 			id: "177E45D188B53265"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "57A574EF51D21A59"
 				item: {
@@ -366,60 +457,80 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -6.5d
+			x: 3.5d
+			y: -8.5d
 		}
 		{
+			dependencies: [
+				"7839E9C9A012A9F9"
+				"0FDBFB5AFE602B34"
+			]
 			id: "3D7407849CB4D124"
+			shape: "square"
 			tasks: [{
 				id: "3B757C40DE6F696F"
 				item: "kubejs:crafting_processor"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -8.0d
+			x: -2.5d
+			y: -10.5d
 		}
 		{
+			dependencies: ["3D7407849CB4D124"]
 			id: "17D00E1BD670C22E"
+			shape: "square"
 			tasks: [{
 				id: "1DD5F3E57EA8680C"
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -9.0d
+			x: -2.0d
+			y: -8.5d
 		}
 		{
+			dependencies: [
+				"3D7407849CB4D124"
+				"3DB72A02D0731850"
+			]
 			id: "5610C93424E59A1D"
+			shape: "square"
 			tasks: [{
 				id: "205F1BAE08C3A8C9"
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -9.0d
+			x: -3.0d
+			y: -8.5d
 		}
 		{
+			dependencies: ["3D7407849CB4D124"]
 			id: "7C696E8A5DEEC4B3"
+			shape: "square"
 			tasks: [{
 				id: "00A03B50902EE0A5"
 				item: "ae2:pattern_provider"
 				type: "item"
 			}]
 			x: -1.0d
-			y: -10.0d
+			y: -8.5d
 		}
 		{
+			dependencies: [
+				"1615CAAE78479B8A"
+				"0E210EFBF4AC2F20"
+			]
 			id: "3F22B061A52B60FE"
+			shape: "square"
 			tasks: [{
 				id: "21F2E9BDCC5E25DA"
 				item: "mekanism:chemical_infuser"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -9.0d
+			x: 10.0d
+			y: -8.5d
 		}
 		{
+			dependencies: ["0E6AA4D0AB678827"]
 			id: "7EAE2E06DC195CCC"
 			shape: "square"
 			tasks: [{
@@ -427,20 +538,27 @@
 				item: "kubejs:chemistry_tech_card"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -9.0d
+			x: 5.0d
+			y: -10.5d
 		}
 		{
+			dependencies: [
+				"3D7407849CB4D124"
+				"3DB72A02D0731850"
+			]
 			id: "597A8260F49D96E4"
+			shape: "square"
 			tasks: [{
 				id: "37E3C62258F1E8FD"
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -10.0d
+			x: -4.0d
+			y: -8.5d
 		}
 		{
+			dependencies: ["5F6BDC6BABAE47E4"]
+			hide_dependency_lines: true
 			id: "63EF030AFBD02C52"
 			size: 1.6d
 			tasks: [{
@@ -448,40 +566,53 @@
 				item: "kubejs:prismalith"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -6.5d
 		}
 		{
+			dependencies: ["7353F1B964C7764F"]
 			id: "3DB72A02D0731850"
+			shape: "square"
 			tasks: [{
 				id: "268FC36B1D314ECB"
 				item: "kubejs:compulsort_cell"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -9.0d
+			x: -8.0d
+			y: -8.5d
 		}
 		{
+			dependencies: [
+				"1615CAAE78479B8A"
+				"0E210EFBF4AC2F20"
+			]
 			id: "7E70E3DDF5A07356"
+			shape: "square"
 			tasks: [{
 				id: "3B2C0C0F7338CC61"
 				item: "mekanism:chemical_dissolution_chamber"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -8.0d
+			x: 8.0d
+			y: -8.5d
 		}
 		{
+			dependencies: [
+				"1615CAAE78479B8A"
+				"0E210EFBF4AC2F20"
+			]
 			id: "6A2068652EDA2D8D"
+			shape: "square"
 			tasks: [{
 				id: "6A7B1CF949715F9F"
 				item: "mekanism:chemical_crystallizer"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -10.0d
+			x: 9.0d
+			y: -8.5d
 		}
 		{
+			dependencies: ["155AA4175A933163"]
 			id: "5B8CB07139E40514"
 			tasks: [{
 				id: "4B955732C80A8B28"
@@ -494,10 +625,11 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.5d
+			x: -6.5d
+			y: -3.5d
 		}
 		{
+			dependencies: ["20DECFDDB6FF9666"]
 			id: "055C4256D89EF433"
 			tasks: [{
 				id: "4CA1F70AB5EAC6F4"
@@ -510,20 +642,26 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: -4.5d
 		}
 		{
+			dependencies: [
+				"055C4256D89EF433"
+				"5B8CB07139E40514"
+			]
 			id: "7353F1B964C7764F"
+			shape: "none"
 			tasks: [{
 				id: "64A80C8D32F39623"
 				item: "kubejs:liquid_obsession_bucket"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -8.0d
 			y: -4.5d
 		}
 		{
+			dependencies: ["09D64B4457C86420"]
 			id: "0E6AA4D0AB678827"
 			shape: "diamond"
 			tasks: [{
@@ -531,28 +669,90 @@
 				item: "kubejs:chemistry_data"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -10.0d
+			x: 4.0d
+			y: -11.5d
 		}
 		{
+			dependencies: [
+				"1501CF550D5686CB"
+				"64EBA30CF38BACF1"
+			]
 			id: "74C3DBD48DCC8417"
+			shape: "square"
 			tasks: [{
 				id: "704C1B41E2E45C61"
 				item: "mekanism:electrolytic_core"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.5d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["3094DD885DDC65A5"]
 			id: "1501CF550D5686CB"
+			shape: "square"
 			tasks: [{
 				id: "4DDB3AF699C201EE"
 				item: "thermal_extra:component_assembly"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"283FFE1AA6DC422D"
+				"23C6C62611743C55"
+			]
+			icon: {
+				Count: 1
+				id: "mekanism:creative_chemical_tank"
+				tag: {
+					mekData: {
+						GasTanks: [{
+							Tank: 0b
+							stored: {
+								amount: 9223372036854775807L
+								gasName: "kubejs:titanium_tetrachloride"
+							}
+						}]
+					}
+				}
+			}
+			id: "5C018F4707C54886"
+			progression_mode: "linear"
+			shape: "square"
+			tasks: [{
+				id: "60B556B840C1BD63"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["04E6B91CFC1CEFDE"]
+			id: "1615CAAE78479B8A"
+			shape: "square"
+			size: 1.1d
+			tasks: [{
+				id: "6A01FE79BA692AAF"
+				item: "kubejs:ingot_titanium_alloy"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7EAE2E06DC195CCC"]
+			id: "0E210EFBF4AC2F20"
+			shape: "square"
+			tasks: [{
+				id: "13CEA8AB03079B50"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -10.5d
 		}
 	]
 	title: "{ftbquests.chapter.9_realmente_automatizado.title}"

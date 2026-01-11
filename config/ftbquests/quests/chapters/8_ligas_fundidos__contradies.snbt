@@ -112,8 +112,8 @@
 			image: "thermal_extra:block/twinite_glass"
 			rotation: 0.0d
 			width: 1.0d
-			x: 3.0d
-			y: 3.0d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			height: 1.0d
@@ -142,8 +142,8 @@
 				item: "createmetallurgy:tungsten_ingot"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.0d
+			x: -3.5d
+			y: -3.5d
 		}
 		{
 			id: "38D8675995D28502"
@@ -152,8 +152,8 @@
 				item: "createmetallurgy:foundry_basin"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -6.0d
+			x: -2.5d
+			y: -4.5d
 		}
 		{
 			id: "7E7093BDB6618DD8"
@@ -162,8 +162,8 @@
 				item: "createmetallurgy:glassed_foundry_lid"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.0d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			id: "1914E8DDC794B475"
@@ -172,8 +172,8 @@
 				item: "createmetallurgy:industrial_crucible"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -6.0d
+			x: -3.5d
+			y: -4.5d
 		}
 		{
 			id: "0EBBC56ADF493E8D"
@@ -193,7 +193,7 @@
 				item: "thermal_extra:shellite_ingot"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: -3.5d
 		}
 		{
@@ -215,7 +215,7 @@
 				item: "thermal_extra:dragonsteel_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: -4.5d
 		}
 		{
@@ -226,7 +226,7 @@
 				item: "thermal_extra:abyssal_ingot"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: -3.5d
 		}
 		{
@@ -269,7 +269,7 @@
 				item: "kubejs:aetherforged_cinderblock"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: -4.5d
 		}
 		{
@@ -280,7 +280,7 @@
 				item: "thermal_extra:advanced_refinery"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
@@ -291,7 +291,7 @@
 				item: "kubejs:entropic_mycelite"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: -3.5d
 		}
 		{
@@ -313,7 +313,7 @@
 				item: "kubejs:echo_fused_obsidianite"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -324,7 +324,7 @@
 				item: "thermal_extra:component_assembly"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: -4.5d
 		}
 		{
@@ -345,8 +345,8 @@
 				item: "thermal_extra:twinite_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.0d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5D435D5D094F5788"]
@@ -472,7 +472,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["25D3A2C554041C98"]
+			dependencies: [
+				"25D3A2C554041C98"
+				"75E7DA63B9BD7FD6"
+			]
 			id: "3510203E45DF11B9"
 			shape: "gear"
 			size: 1.2d
@@ -482,7 +485,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 9.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["6671B61E73558B25"]
@@ -496,14 +499,17 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["512E85AF48E41FED"]
+			dependencies: [
+				"512E85AF48E41FED"
+				"6D66F137D48744B1"
+			]
 			id: "25D3A2C554041C98"
 			tasks: [{
 				id: "1772B866FFAA38D9"
 				item: "kubejs:advanced_electric_engine"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 3.0d
 			y: 11.0d
 		}
 		{
@@ -605,7 +611,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1C46A0F4CAE79179"]
@@ -653,6 +659,17 @@
 			}]
 			x: 1.0d
 			y: 11.0d
+		}
+		{
+			dependencies: ["7B19AAF10D2D9DFA"]
+			id: "75E7DA63B9BD7FD6"
+			tasks: [{
+				id: "2A43F90076CA8F0B"
+				item: "thermal_extra:polyolefin_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
 		}
 	]
 	title: "{ftbquests.chapter.8_ligas_fundidos__contradies.title}"

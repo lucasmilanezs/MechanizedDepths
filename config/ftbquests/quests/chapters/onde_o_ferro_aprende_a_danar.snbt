@@ -101,7 +101,6 @@
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.description3}"
 				""
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.description4}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.description5}"
 			]
 			id: "2A261C789F73E3A9"
 			shape: "gear"
@@ -760,12 +759,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"6FFDC0CD59E051D1"
-				"43A0F10845723DF8"
-				"3C805F01FCA2C984"
-				"64818C8CE74F770C"
-			]
+			dependencies: ["6FFDC0CD59E051D1"]
 			description: [
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.description1}"
 				""
@@ -788,6 +782,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2904654A6CDCBAF8"]
 			description: [
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest33.description1}"
 				""
@@ -814,6 +809,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2904654A6CDCBAF8"]
 			description: [
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.description1}"
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.description2}"
@@ -833,6 +829,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["2904654A6CDCBAF8"]
 			description: [
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.description1}"
 				""
@@ -1159,22 +1156,6 @@
 			}]
 			x: 2.0d
 			y: 5.5d
-		}
-		{
-			description: [
-				"&63. Ro&r&eund&r &7and&r &eRou&r&6nd&r"
-				"&a4. Mekan&r&2ology&r"
-				"&d5. En&r&5der&r &9Syna&r&1pses&r"
-				"&66. App&r&elied&r &cThermody&r&4namics™&r"
-			]
-			id: "2F55CB29FE73F1A1"
-			tasks: [{
-				id: "0A8CA8CAFE963252"
-				item: "minecraft:stripped_oak_log"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 2.0d
 		}
 	]
 	title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.title}"

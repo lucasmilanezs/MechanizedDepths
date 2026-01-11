@@ -10,8 +10,7 @@ MDBook.defer(function () {
     kind: 'time',
     weight: 10,
     once: false,
-    cooldownTicks: 20 * 60 * 30,
-
+    sessionOnce: true,
     say: '&7&o— Manual breathing activated! No need to thank me.&r'
   })
 })

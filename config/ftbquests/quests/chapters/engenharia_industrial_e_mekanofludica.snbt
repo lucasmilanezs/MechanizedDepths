@@ -5,10 +5,81 @@
 	group: "42138693CA8E287F"
 	icon: "industrialforegoing:pink_slime_ingot"
 	id: "0972D1C091659526"
+	images: [
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "industrialforegoing:block/fluids/meat_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "industrialforegoing:block/fluids/pink_slime_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "industrialforegoing:block/fluids/ether_gas_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "pneumaticcraft:block/fluid/plastic_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.5d
+			y: 3.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7395945B9A4DD281"]
 			id: "6D455C57D676FE98"
 			shape: "woodtier"
 			tasks: [{
@@ -16,268 +87,318 @@
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["5B44B9D6535281EF"]
 			id: "51173E68765AFF34"
+			shape: "square"
 			tasks: [{
 				id: "44B5FFB289040241"
 				item: "industrialforegoing:latex_processing_unit"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.5d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["6D455C57D676FE98"]
 			id: "5B44B9D6535281EF"
+			shape: "square"
 			tasks: [{
 				id: "07DF2D46B2E86F1B"
 				item: "industrialforegoing:fluid_extractor"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: 0.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["51173E68765AFF34"]
 			id: "65F23778D3D2A835"
 			tasks: [{
 				id: "2A1D9363F99A91D5"
 				item: "industrialforegoing:plastic"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["65F23778D3D2A835"]
 			id: "6F4D84B8E81534CF"
+			shape: "square"
 			tasks: [{
 				id: "342D7A4D8F29A63C"
 				item: "industrialforegoing:dissolution_chamber"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["6F4D84B8E81534CF"]
 			id: "00C9D6DBFA67F10E"
+			shape: "square"
 			tasks: [{
 				id: "6EA2874150E6F735"
 				item: "industrialforegoing:machine_frame_simple"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
+			dependencies: ["00C9D6DBFA67F10E"]
 			id: "376F4052AC08F61B"
+			shape: "square"
 			tasks: [{
 				id: "768A0B08237EE6B1"
 				item: "industrialforegoing:mob_slaughter_factory"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.5d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
+			dependencies: ["39B08A02E1FEEA3A"]
 			id: "67DAC614C592EC24"
 			tasks: [{
 				id: "53B858E1E9A78845"
 				item: "industrialforegoing:pink_slime_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: -1.5d
+			y: 9.0d
 		}
 		{
+			dependencies: ["376F4052AC08F61B"]
 			id: "39B08A02E1FEEA3A"
+			shape: "none"
 			tasks: [{
 				id: "60D6EF7959ED0B45"
 				item: "industrialforegoing:pink_slime_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: -1.5d
+			y: 7.5d
 		}
 		{
+			dependencies: [
+				"67DAC614C592EC24"
+				"397EB373679BD67D"
+			]
 			id: "0D84CB73757EE770"
+			shape: "square"
 			tasks: [{
 				id: "05D5D2AC55583656"
 				item: "industrialforegoing:machine_frame_advanced"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.5d
+			x: -3.0d
+			y: 7.5d
 		}
 		{
+			dependencies: ["376F4052AC08F61B"]
 			id: "53FD5DFFD8338B2C"
+			shape: "none"
 			tasks: [{
 				id: "062846E90C1C2F92"
 				item: "industrialforegoing:meat_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -0.5d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
+			dependencies: ["7E06ED1CC3DDB67B"]
 			id: "1FFEAE168FB2E07F"
 			tasks: [{
 				id: "727DA0D97084ECBC"
 				item: "pneumaticcraft:assembly_drill"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.5d
+			x: -7.5d
+			y: 7.5d
 		}
 		{
+			dependencies: ["7395945B9A4DD281"]
 			id: "65C9E9331138AC05"
+			shape: "square"
 			tasks: [{
 				id: "47DE5E4CA13047E1"
 				item: "pneumaticcraft:air_compressor"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.5d
+			x: -9.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["14627A7AFBFD0BD8"]
 			id: "6EFA2DC8F8F51431"
 			tasks: [{
 				id: "2A07921AD296D724"
 				item: "pneumaticcraft:pressure_chamber_wall"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.5d
+			x: -10.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["4E50A94579D82173"]
 			id: "249CAFA280A58859"
+			shape: "square"
 			tasks: [{
 				id: "182E1DDF3FE973B3"
 				item: "pneumaticcraft:refinery"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: -9.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["249CAFA280A58859"]
 			id: "2FF33C432FCE953B"
+			shape: "square"
 			tasks: [{
 				id: "1CD094496B990FD7"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: -7.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["249CAFA280A58859"]
 			id: "13C1C6C0E9D7464C"
 			tasks: [{
 				id: "4C4F8871EBCCD86C"
 				item: "pneumaticcraft:thermal_lagging"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.5d
+			x: -10.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["65C9E9331138AC05"]
 			id: "4E50A94579D82173"
+			shape: "square"
 			tasks: [{
 				id: "04F8DBDD244FD1D9"
 				item: "pneumaticcraft:vortex_tube"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: -9.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["4E50A94579D82173"]
 			id: "140F02A225A72911"
 			tasks: [{
 				id: "736FAB3A6DB78159"
 				item: "pneumaticcraft:heat_sink"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.5d
+			x: -10.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["2FF33C432FCE953B"]
 			id: "0560C98A35585F66"
+			shape: "none"
 			tasks: [{
 				id: "63D4271002B42CE1"
 				item: "pneumaticcraft:plastic_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.5d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["0560C98A35585F66"]
 			id: "2022E4E5370102AA"
 			tasks: [{
 				id: "2875E424BC4B763F"
 				item: "pneumaticcraft:plastic"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.5d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["056B1AD0D593B4D6"]
 			id: "14627A7AFBFD0BD8"
 			tasks: [{
 				id: "1924B0542A9927ED"
 				item: "pneumaticcraft:pressure_tube"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.5d
+			x: -10.5d
+			y: 0.0d
 		}
 		{
+			dependencies: [
+				"0560C98A35585F66"
+				"65F23778D3D2A835"
+			]
 			id: "397EB373679BD67D"
 			tasks: [{
 				id: "2FCFEEF205411B17"
 				item: "kubejs:double_plastic"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.5d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["0D84CB73757EE770"]
 			id: "09E3496E4310A7DF"
+			shape: "square"
 			tasks: [{
 				id: "25B8A907296230E3"
 				item: "industrialforegoing:fluid_laser_base"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.5d
+			x: -3.0d
+			y: 10.5d
 		}
 		{
+			dependencies: ["09E3496E4310A7DF"]
 			id: "52F6EB4B25CEFFDE"
+			shape: "none"
 			tasks: [{
 				id: "7B81D32EC02FF00E"
 				item: "industrialforegoing:ether_gas_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.5d
+			x: 0.0d
+			y: 10.5d
 		}
 		{
+			dependencies: ["53FD5DFFD8338B2C"]
 			id: "2DD3B8F89C0A7CE1"
 			tasks: [{
 				id: "1534F9F06E523F6C"
 				item: "kubejs:meat_bar"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.5d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
+			dependencies: [
+				"2DD3B8F89C0A7CE1"
+				"52F6EB4B25CEFFDE"
+			]
 			id: "02783899EE7F23BB"
 			tasks: [{
 				id: "642C4FF688B531F1"
 				item: "kubejs:meattherial"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.5d
+			x: 3.0d
+			y: 10.5d
 		}
 		{
 			id: "056B1AD0D593B4D6"
@@ -286,8 +407,8 @@
 				item: "pneumaticcraft:ingot_iron_compressed"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: -10.5d
+			y: -1.0d
 		}
 		{
 			id: "1A9D6F3969B07C8C"
@@ -297,7 +418,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -0.5d
+			y: 2.0d
 		}
 		{
 			id: "52CD9D51508EBA6B"
@@ -307,17 +428,51 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -0.5d
+			y: 2.0d
 		}
 		{
 			id: "7395945B9A4DD281"
+			shape: "square"
 			tasks: [{
 				id: "407C637C62137ACA"
 				item: "pneumaticcraft:manual_compressor"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.5d
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2022E4E5370102AA"]
+			id: "7E06ED1CC3DDB67B"
+			tasks: [{
+				id: "703066D475C675F4"
+				item: "pneumaticcraft:pneumatic_cylinder"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7E06ED1CC3DDB67B"]
+			id: "6C49E5851DB750F6"
+			tasks: [{
+				id: "010524485CFA5380"
+				item: "pneumaticcraft:assembly_io_unit_import"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7E06ED1CC3DDB67B"]
+			id: "2449BC0AFC42094A"
+			tasks: [{
+				id: "763A437E5846BB08"
+				item: "pneumaticcraft:assembly_laser"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 7.5d
 		}
 	]
 	title: "{ftbquests.chapter.engenharia_industrial_e_mekanofludica.title}"

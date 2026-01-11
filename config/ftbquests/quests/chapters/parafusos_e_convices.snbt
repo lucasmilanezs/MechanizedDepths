@@ -12,8 +12,8 @@
 		order: 111111
 		rotation: 0.0d
 		width: 2.7d
-		x: -5.892857142857146d
-		y: 6.303571428571431d
+		x: -5.892857142857139d
+		y: 8.5d
 	}]
 	order_index: 1
 	quest_links: [ ]
@@ -54,8 +54,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest1.title}"
-			x: -7.0d
-			y: 0.5d
+			x: -9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["58388432A718A31F"]
@@ -75,7 +75,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest2.title}"
 			x: -6.5d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["41C7D076DE390330"]
@@ -127,7 +127,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest4.title}"
 			x: -5.5d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -147,7 +147,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest5.title}"
 			x: -6.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1A526B97B149CBD3"]
@@ -171,7 +171,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest6.title}"
 			x: -5.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7768F0364DA14B55"]
@@ -181,10 +181,11 @@
 				id: "38DB20D47C5EFA49"
 				type: "dimension"
 			}]
-			x: -3.5d
-			y: -0.5d
+			x: -3.0d
+			y: -1.0d
 		}
 		{
+			dependencies: ["004F5E63A1C4B294"]
 			hide_dependency_lines: false
 			id: "693D256DD80F1B8F"
 			tasks: [{
@@ -193,8 +194,8 @@
 				item: { Count: 6, id: "minecraft:blaze_powder" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7D69FEEEED084E15"]
@@ -217,7 +218,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest9.title}"
-			x: -7.5d
+			x: -8.5d
 			y: 1.5d
 		}
 		{
@@ -245,7 +246,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest10.title}"
-			x: -8.5d
+			x: -9.5d
 			y: 1.5d
 		}
 		{
@@ -264,14 +265,13 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest11.title}"
-			x: -9.5d
+			x: -10.5d
 			y: 1.5d
 		}
 		{
 			dependencies: [
 				"2E8308871C5B9B21"
-				"22EC9AE04FCCCEE0"
-				"27A9ABA7161CD1EA"
+				"5E02CDB52EBA2E43"
 			]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest12.description1}"
@@ -316,31 +316,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest12.title}"
-			x: -8.5d
+			x: -10.5d
 			y: 3.5d
-		}
-		{
-			dependencies: ["64CA6B5E600B0E4F"]
-			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest13.description1}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest13.description2}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest13.description3}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest13.description4}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest13.description5}"
-			]
-			id: "27A9ABA7161CD1EA"
-			tasks: [{
-				id: "5F7A8AD57129BED5"
-				item: "immersiveengineering:component_steel"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest13.title}"
-			x: -7.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["2DB2853A44CAE161"]
@@ -396,7 +373,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest14.title}"
-			x: -8.0d
+			x: -9.5d
 			y: 2.5d
 		}
 		{
@@ -432,11 +409,11 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest15.title}"
-			x: -9.0d
+			x: -11.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["27A9ABA7161CD1EA"]
+			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest16.description1}"
 				""
@@ -493,7 +470,6 @@
 		}
 		{
 			dependencies: [
-				"1A526B97B149CBD3"
 				"1AEBFDE6990DCCB5"
 				"693D256DD80F1B8F"
 			]
@@ -513,11 +489,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest17.title}"
-			x: -4.5d
+			x: -2.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["4186EA4004685166"]
+			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest18.description1}"
 				""
@@ -630,11 +606,11 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest20.title}"
-			x: -3.0d
-			y: 2.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["27A9ABA7161CD1EA"]
+			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest21.description1}"
 				""
@@ -680,8 +656,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest21.title}"
-			x: -6.0d
-			y: 2.5d
+			x: -4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["22EC9AE04FCCCEE0"]
@@ -701,8 +677,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest22.title}"
-			x: -7.5d
-			y: 3.5d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["460A5B83307446ED"]
@@ -724,8 +700,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest23.title}"
-			x: -8.0d
-			y: 4.5d
+			x: -10.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["43029D647EA34851"]
@@ -747,8 +723,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest24.title}"
-			x: -7.0d
-			y: 4.5d
+			x: -9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["53926EA02B461E01"]
@@ -770,11 +746,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest25.title}"
-			x: -9.0d
-			y: 4.5d
+			x: -10.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["25EF7B5E007B9C11"]
+			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest26.description1}"
 				""
@@ -829,8 +805,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest26.title}"
-			x: -5.5d
-			y: 3.5d
+			x: -6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4EA7083C34FC1A44"]
@@ -851,8 +827,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest27.title}"
-			x: -5.0d
-			y: 2.5d
+			x: -5.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -876,11 +852,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest28.title}"
-			x: -4.5d
-			y: 3.5d
+			x: -6.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["27A9ABA7161CD1EA"]
+			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest29.description1}"
 				""
@@ -900,8 +876,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest29.title}"
-			x: -6.5d
-			y: 3.5d
+			x: -7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -934,7 +910,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest30.title}"
 			x: -8.0d
-			y: 8.0d
+			y: 10.49107142857143d
 		}
 		{
 			dependencies: ["6D53CF017256846F"]
@@ -956,7 +932,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest31.title}"
 			x: -5.0d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2F9EA9B259B79847"]
@@ -985,8 +961,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest32.title}"
-			x: -4.0d
-			y: 8.0d
+			x: -3.8214285714285623d
+			y: 10.508928571428562d
 		}
 		{
 			dependencies: [
@@ -1014,8 +990,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest33.title}"
-			x: -6.0d
-			y: 4.5d
+			x: -7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6F89ADFAB2A59C2B"]
@@ -1044,7 +1020,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest34.title}"
 			x: -6.0d
-			y: 8.0d
+			y: 10.49107142857143d
 		}
 		{
 			dependencies: ["2C5BDE78E209CF0C"]
@@ -1074,7 +1050,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest35.title}"
-			x: -4.0d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
@@ -1105,8 +1081,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest36.title}"
-			x: -3.0d
-			y: 4.5d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6C3E18C9058CBAB4"]
@@ -1136,8 +1112,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest37.title}"
-			x: -9.178571428571438d
-			y: 7.982142857142868d
+			x: -9.5d
+			y: 10.49107142857143d
 		}
 		{
 			dependencies: ["254D3ED5237C2967"]
@@ -1167,7 +1143,7 @@
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest38.title}"
 			x: -6.5d
-			y: 9.0d
+			y: 11.49107142857143d
 		}
 		{
 			dependencies: ["617989B418D326B0"]
@@ -1192,7 +1168,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest39.title}"
 			x: -5.5d
-			y: 9.0d
+			y: 11.49107142857143d
 		}
 		{
 			dependencies: [
@@ -1225,7 +1201,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest40.title}"
 			x: -6.0d
-			y: 11.0d
+			y: 13.49107142857143d
 		}
 		{
 			id: "4EE27046FC8F628E"
@@ -1234,28 +1210,36 @@
 				item: "vital_herbs:tox_kiss"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
+			dependencies: [
+				"546FFC0AEC8B630F"
+				"119A0B087885F107"
+			]
 			id: "4618E30363D2830E"
 			tasks: [{
 				id: "4DA666D50CC09070"
 				item: "naturesaura:token_fear"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.5d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
+			dependencies: [
+				"546FFC0AEC8B630F"
+				"4EE27046FC8F628E"
+			]
 			id: "5E453D385E923E39"
 			tasks: [{
 				id: "375D99A2C19D8871"
 				item: "naturesaura:token_anger"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -0.5d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			id: "119A0B087885F107"
@@ -1264,8 +1248,8 @@
 				item: "vital_herbs:snap_pepper"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["004F5E63A1C4B294"]
@@ -1281,8 +1265,53 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.5d
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1A526B97B149CBD3"
+				"1AEBFDE6990DCCB5"
+				"64CA6B5E600B0E4F"
+			]
+			hide_until_deps_complete: false
+			id: "5E02CDB52EBA2E43"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "058E5177D4C79584"
+					item: "immersiveengineering:component_iron"
+					type: "item"
+				}
+				{
+					id: "3E87ABFC6F2D7F52"
+					item: "immersiveengineering:component_steel"
+					type: "item"
+				}
+				{
+					id: "169828CBD70AC4A1"
+					item: "kubejs:rudimentary_redstone_component"
+					type: "item"
+				}
+				{
+					id: "159A1FDC2406DF2F"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "3BB33A7BB1483B37"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "348993B1EF7AEB88"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 3.5d
 		}
 	]
 	title: "{ftbquests.chapter.parafusos_e_convices.title}"
