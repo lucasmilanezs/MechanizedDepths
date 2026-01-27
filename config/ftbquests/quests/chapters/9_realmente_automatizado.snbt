@@ -56,6 +56,40 @@
 			x: -8.0d
 			y: -4.5d
 		}
+		{
+			height: 1.1d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.1d
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			color: 16769140
+			height: 1.0d
+			image: "mekanism:liquid/liquid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			height: 1.1d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.1d
+			x: 11.0d
+			y: -8.5d
+		}
+		{
+			color: 43690
+			height: 1.0d
+			image: "mekanism:liquid/liquid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: -8.5d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -286,7 +320,7 @@
 		{
 			dependencies: ["0E84C15719B79465"]
 			id: "23C6C62611743C55"
-			shape: "square"
+			shape: "none"
 			tasks: [{
 				id: "36C8B41D86E83DEE"
 				item: "mekanism:brine_bucket"
@@ -350,7 +384,7 @@
 		{
 			dependencies: ["3F22B061A52B60FE"]
 			id: "39C400B5BAF29B98"
-			shape: "square"
+			shape: "none"
 			tasks: [{
 				id: "09A6F4E8F26E26D7"
 				item: "mekanism:hydrogen_chloride_bucket"

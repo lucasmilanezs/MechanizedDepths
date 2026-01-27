@@ -82,6 +82,20 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/redstone_component');
 });
 
+// REDSTONE CIRCUIT SUBSTRATE (kubejs:redstone_circuit_substrate)
+StartupEvents.registry('item', event => {
+  event.create('redstone_circuit_substrate')
+    .displayName('Redstone Circuit Substrate')
+    .texture('custom:item/redstone_circuit_substrate');
+});
+
+// DRILLED REDSTONE SUBSTRATE (kubejs:drilled_redstone_substrate)
+StartupEvents.registry('item', event => {
+  event.create('drilled_redstone_substrate')
+    .displayName('Drilled Redstone Substrate')
+    .texture('custom:item/drilled_redstone_substrate');
+});
+
 // INTRICATE REDSTONE COMPONENT (kubejs:intricate_redstone_component)
 StartupEvents.registry('item', event => {
   event.create('intricate_redstone_component')

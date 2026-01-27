@@ -5,9 +5,6 @@
 		# Colors recently selected in the color selector
 		# Default: []
 		recents: [I;
-			-171
-			-1
-			-5635926
 			-43691
 			-16645630
 			-16777216
@@ -20,6 +17,10 @@
 			-1361153
 			-11791534
 			-10213537
+			-16733696
+			-16739584
+			-8076
+			-16733526
 		]
 	}
 	tooltips: {

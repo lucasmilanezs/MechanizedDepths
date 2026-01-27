@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
     ]
   )
   .transitionalItem(transitional) 
-  .loops(4)
+  .loops(2)
 });
 
 

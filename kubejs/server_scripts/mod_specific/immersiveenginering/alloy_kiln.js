@@ -16,33 +16,6 @@ time: 200
 
 //===============CUSTOM RECIPES==================
 
-// BLAZING STEEL
-ServerEvents.recipes(event => {
-  event.custom({
-    type: 'immersiveengineering:alloy',
-    input0: { item: 'thermal:steel_ingot' },
-    input1: { item: 'minecraft:blaze_powder' },
-    result: {
-      item: 'kubejs:blazing_steel',
-      count: 1
-    },
-    time: 300
-  });
-});
-
-// OSGLOGLIUM
-ServerEvents.recipes(event => {
-  event.custom({
-    type: 'immersiveengineering:alloy',
-    input0: { item: 'kubejs:inductive_alloy' },
-    input1: { item: 'mekanism:ingot_refined_glowstone' },
-    result: {
-      item: 'kubejs:osgloglium',
-      count: 1
-    },
-time: 200
-  });
-});
 
 //=================CHANGED RECIPES==================
 

@@ -1274,6 +1274,18 @@
 				"1AEBFDE6990DCCB5"
 				"64CA6B5E600B0E4F"
 			]
+			description: [
+				"  Steel doesn’t become industry by accident."
+				"Before the noise, the smoke, and the comforting hum of oversized machines, there is a quiet step most people ignore: components. Bolts, coils, casings — the unglamorous anatomy of progress."
+				""
+				"  These parts are crafted in the Engineer’s Workbench, using the blueprints unlocked earlier and a steady supply of steel and supporting materials. This is where raw resources finally agree to behave like machinery."
+				""
+				"  These blocks and components form the structural language of Immersive Engineering. Every multiblock you’ll assemble later speaks through them. Miss one, and the machine simply refuses to exist."
+				""
+				"  Build them once, understand them well — and then automate them as soon as you can. Trust me, you do not want to handcraft these forever."
+				""
+				"&7&o— This is the part where automation stops being a luxury and starts being basic self-respect.&r&r"
+			]
 			hide_until_deps_complete: false
 			id: "5E02CDB52EBA2E43"
 			shape: "gear"

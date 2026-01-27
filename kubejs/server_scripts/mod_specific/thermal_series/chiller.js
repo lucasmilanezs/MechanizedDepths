@@ -46,10 +46,23 @@ ServerEvents.recipes(event => {
 });
 
 
+
+
 //====================CHANGED RECIPES==================
 
 //RECIPE NAME
 
 //====================COMPATIBILITY RECIPES==================
 
-//RECIPE NAME
+// PLASTIC
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal:chiller',
+    ingredients: [
+      { fluid: 'pneumaticcraft:plastic', amount: 1000 },
+      { item: 'thermal_extra:chiller_plate_cast' }
+    ],
+    result: { item: 'pneumaticcraft:plastic', amount: 2 },
+    energy: 3000
+  });
+});

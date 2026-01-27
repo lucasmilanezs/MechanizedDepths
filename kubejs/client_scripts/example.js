@@ -195,4 +195,55 @@ ClientEvents.lang("en_us", event => {
   event.add("gui.create.jei.category.basin.heat.echo_fused_obsidianite.title", "Requires Void-Touched");
 });
 
+// Sync CustomModelData with stack size (4-step variant: 0..3)
+
+const MD_STACK_SKIN_ITEMS = new Set([
+  'kubejs:plate_refined_quartz'
+])
+
+// Choose thresholds (tune freely).
+// This version scales with maxStackSize and works for 16/64 stacks.
+function md_bucketForCount(count, max) {
+  if (count <= 1) return 0
+  if (count < max * 0.34) return 1
+  if (count < max * 0.67) return 2
+  return 3
+}
+
+function md_getCMD(stack) {
+  const nbt = stack.nbt
+  if (!nbt) return 0
+  const v = nbt.CustomModelData
+  return v ? Number(v) : 0
+}
+
+function md_setCMD(stack, cmd) {
+  const nbt = stack.nbt || {}
+  nbt.CustomModelData = cmd
+  stack.nbt = nbt
+}
+
+PlayerEvents.tick(e => {
+  const p = e.player
+  if (!p || p.level.isClientSide()) return
+
+  // Throttle: run every 10 ticks
+  if ((p.age % 10) !== 0) return
+
+  const inv = p.inventory
+  const size = inv.getContainerSize()
+
+  for (let i = 0; i < size; i++) {
+    const s = inv.getItem(i)
+    if (s.isEmpty()) continue
+
+    const id = String(s.id)
+    if (!MD_STACK_SKIN_ITEMS.has(id)) continue
+
+    const want = md_bucketForCount(s.count, s.maxStackSize)
+    const have = md_getCMD(s)
+
+    if (have !== want) md_setCMD(s, want)
+  }
+})
 

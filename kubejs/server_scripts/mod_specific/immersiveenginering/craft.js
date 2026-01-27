@@ -133,6 +133,20 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'immersiveengineering:crafting/component_steel' });
   event.remove({ id: 'immersiveengineering:crafting/component_iron' });
 });
+
+// REDSTONE ENGINEERING BLOCK
+ServerEvents.recipes(event => {
+  event.remove({ id: 'immersiveengineering:crafting/rs_engineering' });
+  event.shaped('immersiveengineering:rs_engineering', [
+    'IRI',
+    'RCR',
+    'IRI'
+  ], {
+    R: 'kubejs:rudimentary_redstone_component',
+    C: 'minecraft:copper_ingot',
+    I: 'immersiveengineering:sheetmetal_iron'
+  });
+});
 //==================COMPATIBILITY RECIPES==================
 
 

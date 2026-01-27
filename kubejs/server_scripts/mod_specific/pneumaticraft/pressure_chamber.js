@@ -84,6 +84,25 @@ ServerEvents.recipes(event => {
     })
 });
 
+//REDSTONE CIRCUIT SUBSTRATE
+ServerEvents.recipes(event => {
+    event.custom({
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": [
+            { "item": "kubejs:redstone_component" },
+            { "type": "pneumaticcraft:stacked_item", "item": "pneumaticcraft:plastic", "count": 2 },
+            { "type": "pneumaticcraft:stacked_item", "item": "minecraft:redstone", "count": 6 }
+        ],
+        "pressure": 4.0,
+        "results": [
+            {
+                "item": "kubejs:redstone_circuit_substrate"
+            },
+        ]
+    })
+});
+
+
 //====================CHANGED RECIPES==================
 
 //RECIPE NAME

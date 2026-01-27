@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "custom:item/plate_refined_quartz_0"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1 }, "model": "custom:item/plate_refined_quartz_1" },
+    { "predicate": { "custom_model_data": 2 }, "model": "custom:item/plate_refined_quartz_2" },
+    { "predicate": { "custom_model_data": 3 }, "model": "custom:item/plate_refined_quartz_3" }
+  ]
+}

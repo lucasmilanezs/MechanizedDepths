@@ -27,3 +27,9 @@ StartupEvents.registry('item', event => {
     .displayName('Titanium Plate')
     .texture('custom:item/plate_titanium');
 });
+
+//REFINED QUARTZ PLATE
+StartupEvents.registry('item', event => {
+  event.create('plate_refined_quartz')
+    .displayName('Refined Quartz Plate')
+});

@@ -3,20 +3,6 @@
 
 //=========================CUSTOM RECIPES=========================
 
-// OSGLOGLIUM
-ServerEvents.recipes(event => {
-    event.custom({
-    "type": "thermal:smelter",
-    "ingredients": [
-        { "item": "kubejs:inductive_alloy" },
-        { "item": "mekanism:ingot_refined_glowstone" }
-    ],
-    "result": [
-        { "item": "kubejs:osgloglium", "count": 1 }
-    ],
-    "energy": 2400
-    })
-});
 
 
 // TITANIUM ALLOY]

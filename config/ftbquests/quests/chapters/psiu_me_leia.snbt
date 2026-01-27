@@ -349,7 +349,7 @@
 				"5EC81561779BCF73"
 			]
 			description: [
-				"  The Natural Altar is your first method of channeling ambient aura into tangible transformation. Place items upon it to convert them using the energy suspended in the world around you. But be warned — each ritual drains the surrounding aura. Without ways to replenish it, the land may react in unpleasant and aggressive ways."
+				"  The Natural Altar is your first method of channeling ambient aura into tangible transformation. Place items upon it to convert them using the energy suspended in the world around you. But be warned — each ritual &4drains&r the surrounding aura. Without ways to replenish it, the land may react in unpleasant and aggressive ways."
 				""
 				"  To simplify construction, open the Book of Natural Aura, find the altar entry, and click the small eye near the structure. This will project a guide into the world so you can build the multiblock accurately."
 				""
@@ -789,9 +789,9 @@
 		{
 			dependencies: ["36ED84D6DA1ACBF6"]
 			description: [
-				"  Some plants respond not to water or sunlight, but to sacrifice. The Rose Needle is your tool for coaxing life into unfamiliar shapes. Hold it and right-click a planted wheat seed — a single, delicate drop of blood is enough to trigger the change."
+				"  Some plants respond not to water or sunlight, but to sacrifice. The &dRose Needle&r is your tool for coaxing life into unfamiliar shapes. Hold it and &aright-click&r a planted &awheat seed&r — a single, delicate drop of blood is enough to trigger the change."
 				""
-				"  This is the fastest way to obtain vital herbs: plants with unique properties used in many rites and recipes. The transformation may produce either Bleeding Heart or Needle Heart at random, so repeat the ritual until you have what you need. Once acquired, cultivate them carefully — they will matter more than they appear to now."
+				"  This is the fastest way to obtain vital herbs: plants with unique properties used in many rites and recipes. The transformation &amay produce either&r Bleeding Heart or Needle Heart at random, so repeat the ritual until you have what you need. Once acquired, cultivate them carefully — they will matter more than they appear to now."
 				""
 				"&7&o— Growth demands patience. And occasionally, a finger prick.&r&r"
 			]

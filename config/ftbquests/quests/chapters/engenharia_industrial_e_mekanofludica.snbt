@@ -74,12 +74,29 @@
 			x: -7.5d
 			y: 3.0d
 		}
+		{
+			color: 37632
+			height: 1.0d
+			image: "mekanism:liquid/liquid"
+			rotation: 0.0d
+			width: 1.0d
+			x: -12.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: -12.0d
+			y: 6.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7395945B9A4DD281"]
 			id: "6D455C57D676FE98"
 			shape: "woodtier"
 			tasks: [{
@@ -212,15 +229,18 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["7E06ED1CC3DDB67B"]
+			dependencies: [
+				"13749A1AFD55873B"
+				"3075B3649C421019"
+			]
 			id: "1FFEAE168FB2E07F"
 			tasks: [{
 				id: "727DA0D97084ECBC"
 				item: "pneumaticcraft:assembly_drill"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.5d
+			x: -11.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7395945B9A4DD281"]
@@ -243,7 +263,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4E50A94579D82173"]
@@ -335,7 +355,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -392,6 +412,7 @@
 				"52F6EB4B25CEFFDE"
 			]
 			id: "02783899EE7F23BB"
+			size: 1.2d
 			tasks: [{
 				id: "642C4FF688B531F1"
 				item: "kubejs:meattherial"
@@ -408,7 +429,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			id: "1A9D6F3969B07C8C"
@@ -431,6 +452,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["6D455C57D676FE98"]
 			id: "7395945B9A4DD281"
 			shape: "square"
 			tasks: [{
@@ -442,37 +464,190 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["2022E4E5370102AA"]
-			id: "7E06ED1CC3DDB67B"
-			tasks: [{
-				id: "703066D475C675F4"
-				item: "pneumaticcraft:pneumatic_cylinder"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["7E06ED1CC3DDB67B"]
+			dependencies: [
+				"13749A1AFD55873B"
+				"3075B3649C421019"
+			]
 			id: "6C49E5851DB750F6"
-			tasks: [{
-				id: "010524485CFA5380"
-				item: "pneumaticcraft:assembly_io_unit_import"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 7.5d
+			tasks: [
+				{
+					id: "010524485CFA5380"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "45EC23880837E2F1"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+				{
+					id: "2516717072E1316D"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "02DBD5DC8C817D10"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["7E06ED1CC3DDB67B"]
+			dependencies: [
+				"13749A1AFD55873B"
+				"3075B3649C421019"
+			]
 			id: "2449BC0AFC42094A"
 			tasks: [{
 				id: "763A437E5846BB08"
 				item: "pneumaticcraft:assembly_laser"
 				type: "item"
 			}]
+			x: -9.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2022E4E5370102AA"]
+			id: "27D146782BA2FA66"
+			tasks: [{
+				id: "54340F87294DEB54"
+				item: "pneumaticcraft:empty_pcb"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5D7E1AABCDCBC2AB"
+				"27D146782BA2FA66"
+			]
+			id: "2001C5EFE3CBF9A1"
+			tasks: [{
+				id: "45DCAAE4438CB23E"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:empty_pcb"
+					tag: {
+						"pneumaticcraft:uv_exposure": 100
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"6D2B708A05F20CD4"
+				"2001C5EFE3CBF9A1"
+				"1EA2B973E7F2EFED"
+			]
+			id: "72CA59F2F217C71B"
+			tasks: [{
+				id: "6191E681810027ED"
+				item: "pneumaticcraft:unassembled_pcb"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["72CA59F2F217C71B"]
+			id: "13749A1AFD55873B"
+			size: 1.2d
+			tasks: [{
+				id: "440B8793B706D44C"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
 			x: -10.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["7B1A240B12E94CAC"]
+			id: "1EA2B973E7F2EFED"
+			shape: "none"
+			tasks: [{
+				id: "720A280AEFABE94F"
+				item: "pneumaticcraft:etching_acid_bucket"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6EFA2DC8F8F51431"]
+			id: "7B1A240B12E94CAC"
+			tasks: [{
+				id: "04D45B95773D0EAB"
+				item: "minecraft:stripped_oak_wood"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2022E4E5370102AA"]
+			id: "3E7FB41AD37DD388"
+			tasks: [{
+				id: "3506E15F1F71D87D"
+				item: "pneumaticcraft:amadron_tablet"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3E7FB41AD37DD388"]
+			id: "5D7E1AABCDCBC2AB"
+			tasks: [{
+				id: "38E7F64F18B455EA"
+				item: "pneumaticcraft:uv_light_box"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5D7E1AABCDCBC2AB"]
+			id: "6D2B708A05F20CD4"
+			tasks: [{
+				id: "23FE44F6177D87A2"
+				item: "pneumaticcraft:etching_tank"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2022E4E5370102AA"]
+			id: "3075B3649C421019"
+			tasks: [{
+				id: "192C838E25EF5EFD"
+				item: "pneumaticcraft:pneumatic_cylinder"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1FFEAE168FB2E07F"
+				"2449BC0AFC42094A"
+				"6C49E5851DB750F6"
+			]
+			id: "51683105E92D2758"
+			size: 1.2d
+			tasks: [{
+				id: "7F11DD9E52D242D4"
+				item: "kubejs:intricate_redstone_component"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 10.5d
 		}
 	]
 	title: "{ftbquests.chapter.engenharia_industrial_e_mekanofludica.title}"
