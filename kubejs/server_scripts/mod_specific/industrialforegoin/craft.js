@@ -15,13 +15,12 @@
 ServerEvents.recipes(event => {
   event.remove({ id: 'industrialforegoing:machine_frame_pity' });
   event.shaped('industrialforegoing:machine_frame_pity', [
-    'PEP',
+    'OWO',
     'WSW',
-    'PWP'
+    'OWO'
   ], {
-    S: 'enderio:ensouled_chassis',
-    P: 'kubejs:organic_polymer_mesh',
-    E: 'kubejs:emotionally_stable_circuit',
+    S: 'kubejs:synaptic_interface',
+    O: 'kubejs:organic_polymer_mesh',
     W: '#minecraft:planks'
   });
 });

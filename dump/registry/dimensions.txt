@@ -1,7 +1,7 @@
 # Dimension (LevelStem) registry dump
 # Minecraft: 1.20.1
 # Entries: 4
-# Generated: 2026-01-26T19:18:22.1250634-03:00
+# Generated: 2026-02-05T21:03:11.3997502-03:00
 
 deeperdarker:otherside 3
 minecraft:overworld 0

@@ -97,6 +97,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"  Just a simple box. Cheap wood, no flair, no attempt to look important. The Pity Machine Frame is intentionally underwhelming — and very aware of it."
+				""
+				"  Built with Organic Polymer Mesh and a Synaptic Interface, it exists only as a foundation. On its own, it does nothing worth praising. &8PneumaticCraft&r and &dIndustrial Foregoing&r, however, see it as a valid anchor point, quietly unlocking machines and processes that expect something this… unremarkable."
+				""
+				"  It’s a component that hides behind its appearance on purpose. It wants to be underestimated. It wants you to feel a little sorry for it. And if you give in and craft it anyway, you’ll at least be rewarded with utility later on."
+				""
+				"&7&o— Yes, it looks pathetic. That’s not a flaw. That’s the strategy.&r&r"
+			]
 			id: "6D455C57D676FE98"
 			shape: "woodtier"
 			tasks: [{
@@ -104,6 +113,7 @@
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
 			}]
+			title: "Go on. Pity me."
 			x: -4.5d
 			y: -0.5d
 		}
@@ -243,7 +253,21 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["7395945B9A4DD281"]
+			dependencies: [
+				"7395945B9A4DD281"
+				"056B1AD0D593B4D6"
+			]
+			description: [
+				"  This is where things stop being polite."
+				""
+				"  The Air Compressor produces real pressure, at real speed, and with very real consequences. Its output rate can be increased, sometimes aggressively so — but pressure that isn’t consumed doesn’t vanish. It accumulates. And when it accumulates too much, you won’t need a tooltip to know something went wrong."
+				""
+				"  If your system can’t keep up, the compressor will let you know. &4Loudly.&r Permanently."
+				""
+				"  Before pushing it further, make sure you understand where that air is going. For deeper control, diagnostics, and smarter setups, check the &9Parallel Protocols&r UT chapter."
+				""
+				"&7&o— If you hear hissing, you’re fine. If you hear nothing… you’re about to learn.&r&r"
+			]
 			id: "65C9E9331138AC05"
 			shape: "square"
 			tasks: [{
@@ -251,34 +275,79 @@
 				item: "pneumaticcraft:air_compressor"
 				type: "item"
 			}]
+			title: "Pressurized Mistakes"
 			x: -9.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["14627A7AFBFD0BD8"]
+			description: [
+				"  The Pressure Chamber is where PneumaticCraft starts behaving like an actual factory."
+				""
+				"  This multiblock uses pressure itself as a crafting tool, violently compressing items into new forms. It’s powerful, flexible, and very easy to misuse if you don’t understand how pressure behaves inside a closed space."
+				""
+				"  Build it carefully, seal it properly, and make sure your air supply and consumption are balanced. Once it’s stable, it becomes one of the most reliable processing tools in this entire system."
+				""
+				"&7&o— Nothing says “precision engineering” like weaponized air.&r&r"
+			]
 			id: "6EFA2DC8F8F51431"
 			tasks: [{
 				id: "2A07921AD296D724"
 				item: "pneumaticcraft:pressure_chamber_wall"
 				type: "item"
 			}]
+			title: "Contained Violence"
 			x: -10.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4E50A94579D82173"]
+			description: [
+				"  This is where that annoying black liquid finally stops being a problem and starts being useful."
+				""
+				"  The Refinery doesn’t behave like your usual one-block magic machines. To function, it demands structure. &8Refinery Outputs&r must be stacked above it, and each one is responsible for holding a specific product of the fractional distillation process. Feed the system with the required heat, balance the outputs, and watch controlled petrochemical chaos unfold."
+				""
+				"  This machine is essential for proper refining chains and advanced materials. Yes, it’s technically how you’re supposed to make light plastic."
+				""
+				"  But let’s be honest."
+				""
+				"  Right now, you mostly just want plastic. And &othere is&r an easier path. That biodiesel generator you built back when everything was gears and oversized machines? Immersive Engineering’s biodiesel can also be used to produce light plastic. It’s simpler. Cleaner. Less dramatic."
+				""
+				"  Still — build the Refinery anyway. Even if you don’t lean on it yet, you’ll need it later. And if you ignore it for too long… well. It will remember."
+				""
+				"&7&o— You can skip me for now. Just don’t forget me. We’ll talk again.&r&r"
+			]
+			icon: "pneumaticcraft:refinery"
 			id: "249CAFA280A58859"
 			shape: "square"
-			tasks: [{
-				id: "182E1DDF3FE973B3"
-				item: "pneumaticcraft:refinery"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "182E1DDF3FE973B3"
+					item: "pneumaticcraft:refinery"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4F920449358FE45D"
+					item: "pneumaticcraft:refinery_output"
+					type: "item"
+				}
+			]
+			title: "Black Alchemy"
 			x: -9.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["249CAFA280A58859"]
+			description: [
+				"  The Thermopneumatic Processing Plant is where PneumaticCraft stops feeling improvised and starts feeling intentional. It can operate using pressure alone, heat alone, or both at the same time — and it does so with far more grace than most systems you’ve dealt with so far."
+				""
+				"  For now, your interest is simple: light plastic. This machine will handle that soon enough. What matters at this stage is understanding its potential. The plant can accept an item, a fluid, heat, and pressure simultaneously. It doesn’t require all of them every time… but yes, at some point, it absolutely will."
+				""
+				"  Learn to read its inputs, respect its conditions, and appreciate the fact that this is a single machine capable of replacing entire chains — if you’re willing to meet its demands."
+				""
+				"&7&o— Enjoy the simplicity while it lasts. You will use all four."
+			]
 			id: "2FF33C432FCE953B"
 			shape: "square"
 			tasks: [{
@@ -286,22 +355,42 @@
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 				type: "item"
 			}]
+			title: "Thermopneumatic Elegance"
 			x: -7.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["249CAFA280A58859"]
+			description: [
+				"  Thermal Lagging is insulation, and insulation is respect."
+				""
+				"  Applied to machines, it prevents them from leaking heat — or cold — back into the environment. Any temperature you carefully built up stays where it belongs, instead of evaporating into wasted effort."
+				""
+				"  If you’re working with refined thermal systems, skipping insulation is self-sabotage. Cultivate temperature, protect it, and don’t let the world steal it back."
+				""
+				"&7&o— You worked hard for that heat. Don’t just give it away.&r&r"
+			]
 			id: "13C1C6C0E9D7464C"
 			tasks: [{
 				id: "4C4F8871EBCCD86C"
 				item: "pneumaticcraft:thermal_lagging"
 				type: "item"
 			}]
+			title: "Keep What You Earned"
 			x: -10.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["65C9E9331138AC05"]
+			description: [
+				"  If you thought compressed air was the only unbearable mechanic here, welcome to heat."
+				""
+				"  The Vortex Tube doesn’t create temperature out of nowhere. It weaponizes differences. Feed it pressure and it amplifies the temperature gap between its North and South sides. The colder one side gets, the hotter the other becomes — and yes, that works both ways."
+				""
+				"  Relying on the environment to casually exchange heat is unreliable at best. This device exists to take control of that process. Just remember: no input, no disparity. It doesn’t heat or cool by itself — it only makes extremes more extreme."
+				""
+				"&7&o— It’s not magic. It’s imbalance, carefully engineered.&r&r"
+			]
 			id: "4E50A94579D82173"
 			shape: "square"
 			tasks: [{
@@ -309,22 +398,46 @@
 				item: "pneumaticcraft:vortex_tube"
 				type: "item"
 			}]
+			title: "Thermal Whiplash"
 			x: -9.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["4E50A94579D82173"]
+			description: [
+				"  Heat Pipes and Heat Sinks are how temperature actually travels."
+				""
+				"  Heat Pipes move thermal energy across your system, plain and simple. Heat Sinks interact with the environment, bleeding heat away and cooling things down naturally. Together, they form the backbone of any serious thermal setup."
+				""
+				"  If the Vortex Tube demands a temperature difference, these are how you create it without praying to biome RNG. Slow, predictable, and far less annoying than guessing."
+				""
+				"&7&o— Turns out heat needs plumbing too. Who knew.&r&r"
+			]
 			id: "140F02A225A72911"
 			tasks: [{
 				id: "736FAB3A6DB78159"
 				item: "pneumaticcraft:heat_sink"
 				type: "item"
 			}]
+			title: "Moving the Invisible"
 			x: -10.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["2FF33C432FCE953B"]
+			description: [
+				"  This is it. Actual plastic."
+				""
+				"  The process is refreshingly direct: combine LPG with coal — or biodiesel with charcoal — apply heat up to 100 °C, and watch molten plastic take shape. No tricks, no hidden mechanics. Just chemistry doing its job."
+				""
+				"  If you chose to steal fuel from the Biodiesel Generator, there’s little to worry about beyond its constant hunger. It works, it’s stable, and yes… it’s the coward’s route. No judgment. Mostly."
+				""
+				"  If you went down the LPG path, you’re rewarded with options. Heavier fractions produced during LPG refining can be further processed, yielding even more molten plastic and pushing the system toward proper petrochemical efficiency."
+				""
+				"  Both paths work. One is convenient. The other scales."
+				""
+				"&7&o— Plastic is cheap. The decisions that lead to it are not.&r&r"
+			]
 			id: "0560C98A35585F66"
 			shape: "none"
 			tasks: [{
@@ -337,6 +450,20 @@
 		}
 		{
 			dependencies: ["0560C98A35585F66"]
+			description: [
+				"  Molten plastic is only useful once it stops being molten."
+				""
+				"  The intended method is… natural. Fill plastic buckets and let them cool down over time — inside a chest, exposed to the environment, or accelerated using everything you’ve learned about heat transfer. It works, it’s consistent, and it proves you understand the system."
+				""
+				"  Let’s be honest, though. Nobody enjoys this."
+				""
+				"  Thankfully, there’s an alternative. Thermal’s Blast Chiller offers a far simpler solution: liquid plastic, a mold, and cold generated purely through energy. No thermal balancing, no patience, no sprawling infrastructure. Just abstraction doing what abstraction does best."
+				""
+				"  This time, the chiller isn’t the coward’s choice."
+				"It’s the sane one."
+				""
+				"&7&o— Sometimes efficiency isn’t cheating. It’s mercy.&r&r"
+			]
 			id: "2022E4E5370102AA"
 			tasks: [{
 				id: "2875E424BC4B763F"
@@ -348,12 +475,24 @@
 		}
 		{
 			dependencies: ["056B1AD0D593B4D6"]
+			description: [
+				"  Pressure Tubes look innocent. They are not magical conduits."
+				""
+				"  Unlike energy cables or item pipes, these tubes have limits. Push more pressure through them than they are rated for and they don’t degrade gracefully — they fail. Instantly. Catastrophically. Say goodbye."
+				""
+				"  Also, pressure doesn’t fill a system instantly. You’re moving compressed air, not power or fluids. Large networks take time to equalize, and impatience will absolutely sabotage your setups."
+				""
+				"  Learn the limits, respect the numbers, and give the system time to breathe. You will still get headaches. That part is unavoidable."
+				""
+				"&7&o— It’s not lag. It’s physics. Unfortunately.&r&r"
+			]
 			id: "14627A7AFBFD0BD8"
 			tasks: [{
 				id: "1924B0542A9927ED"
 				item: "pneumaticcraft:pressure_tube"
 				type: "item"
 			}]
+			title: "Air Has Somewhere to Go"
 			x: -10.5d
 			y: 0.5d
 		}
@@ -422,12 +561,22 @@
 			y: 10.5d
 		}
 		{
+			description: [
+				"  Compressed Iron is not refined. It’s coerced."
+				""
+				"  At this stage, the process is brutally simple: surround iron ingots with TNT and hope for the best. Explosions do the job, but they also waste materials, demand manual setup, and generally make you feel like there should be a better way. And there is — just not yet."
+				""
+				"  This method exists to get you started, nothing more. Accept the losses, craft what you need, and keep moving. PneumaticCraft is very aware this is inefficient, and it will let you fix that later."
+				""
+				"&7&o— Yes, blowing things up is “industrial” now. Don’t get used to it.&r&r"
+			]
 			id: "056B1AD0D593B4D6"
 			tasks: [{
 				id: "27D36C46F15B1FC8"
 				item: "pneumaticcraft:ingot_iron_compressed"
 				type: "item"
 			}]
+			title: "Compressed the Hard Way"
 			x: -10.5d
 			y: -0.5d
 		}
@@ -452,7 +601,19 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6D455C57D676FE98"]
+			dependencies: [
+				"6D455C57D676FE98"
+				"056B1AD0D593B4D6"
+			]
+			description: [
+				"  This is pressure in its most honest form. No automation, no safety nets — just you, a handle, and the vague understanding that air is supposed to go somewhere useful."
+				""
+				"  The Manual Compressor is slow, inefficient, and slightly humiliating, but it teaches the core rule of PneumaticCraft early: pressure does not exist unless you actively create it. It’s enough to get basic systems online, test setups, and understand how air behaves before things start spinning on their own."
+				""
+				"  Use it while you can. Once machines take over, this kind of simplicity disappears fast."
+				""
+				"&7&o— Turn handle. Get air. Feel productive.&r&r"
+			]
 			id: "7395945B9A4DD281"
 			shape: "square"
 			tasks: [{
@@ -460,6 +621,7 @@
 				item: "pneumaticcraft:manual_compressor"
 				type: "item"
 			}]
+			title: "Manual Pressure"
 			x: -9.0d
 			y: -0.5d
 		}
@@ -467,6 +629,19 @@
 			dependencies: [
 				"13749A1AFD55873B"
 				"3075B3649C421019"
+			]
+			description: [
+				"  The Assembly system looks more complex than it really is."
+				""
+				"  Place the Assembly Controller, Assembly IO Units (Import and Export), and the Assembly Platform close to each other. The controller only needs to be connected to any one of the parts and supplied with pressure. The platform sits in the middle, while inputs and outputs can be arranged however you prefer."
+				""
+				"  Chests placed directly adjacent to the IO units are used to insert and extract items automatically. No pipes required, no tricks involved."
+				""
+				"  The internal HUD provides all the relevant information, and since it’s surprisingly clear, I’ll trust you to read the manual this time."
+				""
+				"  Just this once."
+				""
+				"&7&o— If this still confuses you, that one’s on you.&r&r"
 			]
 			id: "6C49E5851DB750F6"
 			tasks: [
@@ -556,6 +731,19 @@
 		}
 		{
 			dependencies: ["72CA59F2F217C71B"]
+			description: [
+				"  Yes, that process was manual. And boring. Painfully so."
+				""
+				"  Fortunately, this is the payoff. The Finished PCB is exactly what you need to stop doing things the hard way. Once you understand the assembly mechanics, PCB production becomes far more comfortable, more sophisticated, and — finally — pleasant to watch."
+				""
+				"  This is the point where the system starts respecting your time."
+				""
+				"  Automate your components as soon as possible."
+				""
+				"  Seriously."
+				""
+				"&7&o— You’ve suffered enough. Let the machines take over.&r&r"
+			]
 			id: "13749A1AFD55873B"
 			size: 1.2d
 			tasks: [{
@@ -591,28 +779,72 @@
 		}
 		{
 			dependencies: ["2022E4E5370102AA"]
+			description: [
+				"  Buying things from a sentient company of unknown origin, with unclear motives and zero physical presence? Much better."
+				""
+				"  The Amadron Tablet lets you designate an inventory — a chest works just fine — insert the required currency, and browse a rotating list of offers. Once you confirm a deal, a drone handles the rest: it collects the payment and returns with your purchases, no questions asked."
+				""
+				"  There’s no haggling, no logistics on your side, and no explanation of where any of this comes from. Just commerce, abstracted to its most unsettling form."
+				""
+				"&7&o— Don’t worry about who they are. They already know who you are.&r&r"
+			]
+			icon: "pneumaticcraft:amadron_tablet"
 			id: "3E7FB41AD37DD388"
-			tasks: [{
-				id: "3506E15F1F71D87D"
-				item: "pneumaticcraft:amadron_tablet"
-				type: "item"
-			}]
+			subtitle: "Trading is boring."
+			tasks: [
+				{
+					id: "3506E15F1F71D87D"
+					item: "pneumaticcraft:amadron_tablet"
+					type: "item"
+				}
+				{
+					id: "7AD8D42CB8E6AAA7"
+					item: "pneumaticcraft:charging_station"
+					type: "item"
+				}
+			]
 			x: -6.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3E7FB41AD37DD388"]
+			description: [
+				"  Pressure and filtered sunlight. That’s it."
+				""
+				"  The UV Light Box introduces basic lithography using simple inputs and simple rules. It works, it’s slow, and it’s not meant to stick around for long."
+				""
+				"  Use it, learn the idea, and move on."
+				""
+				"&7&o— I really don’t like the concept of stepping-stone machines, but we’re stepping on this one.&r&r"
+			]
+			icon: "pneumaticcraft:uv_light_box"
 			id: "5D7E1AABCDCBC2AB"
-			tasks: [{
-				id: "38E7F64F18B455EA"
-				item: "pneumaticcraft:uv_light_box"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "38E7F64F18B455EA"
+					item: "pneumaticcraft:uv_light_box"
+					type: "item"
+				}
+				{
+					id: "39F80EF0405939AE"
+					item: "pneumaticcraft:pcb_blueprint"
+					type: "item"
+				}
+			]
 			x: -7.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["5D7E1AABCDCBC2AB"]
+			description: [
+				"  Another step in the chain that you’ll be able to skip soon enough."
+				""
+				"  The Etching Tank does exactly what it claims. It’s a boring container filled with etching acid where you drop in empty PCBs and wait. If everything goes right, you get an unassembled PCB. That’s the entire trick."
+				""
+				"  Don’t get attached. It exists to do one job, slowly, until something better replaces it."
+				""
+				"&7&o— No mystery here. Just acid and patience.&r&r"
+			]
 			id: "6D2B708A05F20CD4"
 			tasks: [{
 				id: "23FE44F6177D87A2"

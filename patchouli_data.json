@@ -146,6 +146,13 @@
       "viewedEntries": [],
       "bookmarks": [],
       "completedManualQuests": []
+    },
+    "industrialforegoing:industrial_foregoing": {
+      "viewedEntries": [
+        "industrialforegoing:misc/stasis_chamber"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
     }
   }
 }

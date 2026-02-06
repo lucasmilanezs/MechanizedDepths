@@ -50,6 +50,37 @@ ServerEvents.recipes(event => {
   }).id('kubejs:thermal_extra/mineral_sludge');
 });
 
+//VOID HEAVY OIL -> SPECTRAL OIL
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal_extra:fluid_mixer',
+    energy: 50000,
+    ingredients: [
+      { fluid: 'kubejs:void_heavy_oil', amount: 1000 },
+      { fluid: 'mekanism:steam', amount: 250 },
+    ],
+    result: [
+      { fluid: 'kubejs:spectral_oil', amount: 750 }
+    ]
+  }).id('kubejs:thermal_extra/spectral_oil_synthesis');
+});
+
+//SPECTRAL OIL -> AETHERIC VAPOR
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal_extra:fluid_mixer',
+    energy: 70000,
+    ingredients: [
+      { fluid: 'kubejs:spectral_oil', amount: 750 },
+      { fluid: 'mekanism:steam', amount: 250 },
+    ],
+    result: [
+      { fluid: 'kubejs:aetheric_vapor', amount: 500 }
+    ]
+  }).id('kubejs:thermal_extra/aetheric_vapor_synthesis');
+});
+
+
 //====================CHANGED RECIPES==================
 
 //RECIPE NAME

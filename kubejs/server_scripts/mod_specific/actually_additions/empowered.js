@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     type: 'actuallyadditions:empowering',
     base: { item: 'kubejs:certite_crystal' },
     color: 5029631,
-    energy: 5000,
+    energy: 25000,
     modifiers: [
       { item: 'create_new_age:overcharged_diamond' },
       { item: 'minecraft:quartz_block' },
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     type: 'actuallyadditions:empowering',
     base: { item: 'actuallyadditions:empowered_void_crystal' },
     color: 5029631,
-    energy: 5000,
+    energy: 50000,
     modifiers: [
       { item: 'actuallyadditions:empowered_palis_crystal' },
       { item: 'actuallyadditions:empowered_diamatine_crystal' },

@@ -54,6 +54,21 @@ ServerEvents.recipes(event => {
     }).id('pneumaticcraft:manual_compressor');
 });
 
+//GPS TOOL
+ServerEvents.recipes(event => {
+    event.remove({id: 'pneumaticcraft:gps_tool'});
+    event.shaped('pneumaticcraft:gps_tool', [
+        ' R ',
+        'PGP',
+        'PAP'
+    ], {
+        R: 'kubejs:redstone_component',
+        P: 'pneumaticcraft:plastic',
+        G: '#c:glass_panes',
+        A: 'immersiveengineering:component_electronic_adv'
+    }).id('pneumaticcraft:gps_tool');
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME
