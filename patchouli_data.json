@@ -1,5 +1,5 @@
 {
-  "bookGuiScale": 0,
+  "bookGuiScale": 3,
   "clickedVisualize": true,
   "bookData": {
     "apotheosis:apoth_chronicle": {
@@ -142,8 +142,22 @@
       "bookmarks": [],
       "completedManualQuests": []
     },
+    "extendedcrafting:guide": {
+      "viewedEntries": [
+        "extendedcrafting:crafting/flux_crafting",
+        "extendedcrafting:utilities/handheld_table",
+        "extendedcrafting:crafting/combination",
+        "extendedcrafting:crafting/compression",
+        "extendedcrafting:crafting/auto_tables"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "thermal:guidebook": {
-      "viewedEntries": [],
+      "viewedEntries": [
+        "thermal:technology/65_items",
+        "thermal:technology/devices/fisher"
+      ],
       "bookmarks": [],
       "completedManualQuests": []
     },

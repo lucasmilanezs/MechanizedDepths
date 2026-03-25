@@ -67,6 +67,58 @@ ServerEvents.recipes(event => {
   }).id('kubejs:natures_aura/offering_table');
 });
 
+// WOODEN STAND
+ServerEvents.recipes(event => {
+  event.remove({ id: 'naturesaura:wood_stand' });
+event.shaped(
+    Item.of('naturesaura:wood_stand', 2),
+    [
+        '   ',
+        ' A ',
+        ' A '
+    ],
+    {
+        A: '#minecraft:logs'
+    })
+});
+
+//IMPERCEPTIBLE BUILDER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'naturesaura:placer' });
+  event.shaped(
+      Item.of('naturesaura:placer'),
+      [
+          'ABA',
+          'ACA',
+          'ADA'
+      ],
+      {
+          B: 'minecraft:hopper',
+          C: 'minecraft:dispenser',
+          D: 'kubejs:token_utility',
+          A: 'minecraft:cobblestone'
+      })
+});
+
+//ENERGETIC AURA FORGE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'naturesaura:rf_converter' });
+  event.shaped(
+    Item.of('naturesaura:rf_converter'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: 'minecraft:redstone_block',
+        B: 'naturesaura:token_rage',
+        D: 'naturesaura:conversion_catalyst',
+        C: 'kubejs:token_utility'
+    })
+});
+
+//
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

@@ -3,7 +3,7 @@
 	default_quest_shape: "square"
 	filename: "termodinmica_aplicada"
 	group: "48009A32F221D9FC"
-	icon: "thermal:dynamo_magmatic"
+	icon: "thermal:rf_coil"
 	id: "2115161FB44BE811"
 	order_index: 2
 	quest_links: [ ]
@@ -103,6 +103,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["664F03BCD6779986"]
 			description: [
 				"{ftbquests.chapter.termodinmica_aplicada.quest9.description1}"
 				""
@@ -130,6 +131,7 @@
 			dependencies: ["377D66DD47488FE4"]
 			description: [
 				"{ftbquests.chapter.termodinmica_aplicada.quest10.description1}"
+				""
 				"{ftbquests.chapter.termodinmica_aplicada.quest10.description2}"
 				""
 				"{ftbquests.chapter.termodinmica_aplicada.quest10.description3}"
@@ -322,6 +324,9 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["21D37F976576C885"]
+			description: [""]
+			hide_until_deps_complete: false
 			id: "7C388A6CE74ED7C8"
 			shape: "hexagon"
 			size: 1.5d
@@ -336,11 +341,19 @@
 		{
 			dependencies: ["01214CC32B9E87BC"]
 			id: "439F76C8E719CE16"
-			tasks: [{
-				id: "699EF78D2C91E701"
-				item: "extendedcrafting:flux_crafter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "699EF78D2C91E701"
+					item: "extendedcrafting:flux_crafter"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "54C653C7E2BAEDC6"
+					item: "extendedcrafting:flux_alternator"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: 1.0d
 		}
@@ -389,5 +402,5 @@
 			y: -2.0d
 		}
 	]
-	title: "{ftbquests.chapter.termodinmica_aplicada.title}"
+	title: "&6&l6.&r&r Thermodynamics™ "
 }

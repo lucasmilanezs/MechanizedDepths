@@ -58,6 +58,7 @@ ServerEvents.recipes(event => {
         }
     }).id("kubejs:immersiveengineering/redstone_component");
 });
+
 //====================CHANGED RECIPES==================
 
 //RECIPE NAME

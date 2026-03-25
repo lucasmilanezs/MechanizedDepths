@@ -47,4 +47,24 @@ ServerEvents.recipes(event => {
   );
 });
 
+// CODEX CRUCIBLE
+ServerEvents.recipes(event => {
+  event.shaped(
+    Item.of('custommachinery:custom_machine_item', {
+      machine: 'custommachinery:codex_crucible'
+    }),
+    [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+        A: 'kubejs:simulation_processor',
+        C: 'kubejs:frame_titanium',
+        B: 'thermal:machine_crucible',
+        D: 'enderio:ensouled_chassis',
+        E: 'mekanism:hdpe_sheet'
+    });
+});
+
 

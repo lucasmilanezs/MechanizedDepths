@@ -12,8 +12,8 @@
 		order: 111111
 		rotation: 0.0d
 		width: 2.7d
-		x: -5.892857142857139d
-		y: 8.5d
+		x: -6.0d
+		y: 9.5d
 	}]
 	order_index: 1
 	quest_links: [ ]
@@ -24,8 +24,6 @@
 				"{ftbquests.chapter.parafusos_e_convices.quest1.description1}"
 				""
 				"{ftbquests.chapter.parafusos_e_convices.quest1.description2}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest1.description3}"
 				""
 				"{ftbquests.chapter.parafusos_e_convices.quest1.description4}"
 				""
@@ -61,6 +59,7 @@
 			dependencies: ["58388432A718A31F"]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest2.description1}"
+				""
 				"{ftbquests.chapter.parafusos_e_convices.quest2.description2}"
 				""
 				"{ftbquests.chapter.parafusos_e_convices.quest2.description3}"
@@ -108,7 +107,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest3.title}"
 			x: -6.0d
-			y: -2.25d
+			y: -3.0d
 		}
 		{
 			dependencies: ["58388432A718A31F"]
@@ -125,7 +124,7 @@
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest4.title}"
+			title: "Puff, Puff, Pass"
 			x: -5.5d
 			y: -1.0d
 		}
@@ -188,12 +187,19 @@
 			dependencies: ["004F5E63A1C4B294"]
 			hide_dependency_lines: false
 			id: "693D256DD80F1B8F"
-			tasks: [{
-				count: 6L
-				id: "3E0E08871EDE2445"
-				item: { Count: 6, id: "minecraft:blaze_powder" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 6L
+					id: "3E0E08871EDE2445"
+					item: { Count: 6, id: "minecraft:blaze_powder" }
+					type: "item"
+				}
+				{
+					id: "44A1D6968FEDA853"
+					item: "minecraft:nether_brick"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: 0.0d
 		}
@@ -224,7 +230,7 @@
 		{
 			dependencies: [
 				"7D69FEEEED084E15"
-				"64CA6B5E600B0E4F"
+				"5E02CDB52EBA2E43"
 			]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest10.description1}"
@@ -286,6 +292,31 @@
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "52A00CBEBE03F6D8"
+			rewards: [{
+				id: "0472A35E133C829A"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							3
+							3
+							5
+						]
+						Deployed: 0b
+						File: "metal_press.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6EEC053FEA2A4CDE"
@@ -427,6 +458,31 @@
 			]
 			icon: "immersiveengineering:auto_workbench"
 			id: "4186EA4004685166"
+			rewards: [{
+				id: "71269F12BEB3FB21"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							5
+							2
+							5
+						]
+						Deployed: 0b
+						File: "automatic_workbench.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 2L
@@ -465,7 +521,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest16.title}"
-			x: -6.5d
+			x: -7.0d
 			y: 1.5d
 		}
 		{
@@ -509,6 +565,31 @@
 			]
 			icon: "immersiveengineering:assembler"
 			id: "76264AD1E946DE2A"
+			rewards: [{
+				id: "7B2509966273F96B"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							5
+							3
+							5
+						]
+						Deployed: 0b
+						File: "assembler.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -549,10 +630,11 @@
 				}
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest18.title}"
-			x: -5.5d
+			x: -5.0d
 			y: 1.5d
 		}
 		{
+			dependencies: ["693D256DD80F1B8F"]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest19.description1}"
 				""
@@ -574,6 +656,10 @@
 			y: 1.5d
 		}
 		{
+			dependencies: [
+				"2C5BDE78E209CF0C"
+				"693D256DD80F1B8F"
+			]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest20.description1}"
 				""
@@ -624,6 +710,31 @@
 			]
 			icon: "immersiveengineering:crusher"
 			id: "4EA7083C34FC1A44"
+			rewards: [{
+				id: "4323E56119C7C0EA"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							5
+							3
+							7
+						]
+						Deployed: 0b
+						File: "crusher.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 10L
@@ -762,6 +873,31 @@
 			]
 			icon: "immersiveengineering:squeezer"
 			id: "55674CA71B329E3B"
+			rewards: [{
+				id: "276ABDCFDAAFA949"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							5
+							3
+							5
+						]
+						Deployed: 0b
+						File: "squeezer.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 2L
@@ -870,6 +1006,31 @@
 			]
 			icon: "immersiveengineering:fermenter"
 			id: "25EF7B5E007B9C11"
+			rewards: [{
+				id: "7264D9193951D7C6"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							5
+							3
+							5
+						]
+						Deployed: 0b
+						File: "fermenter.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5B44ECF98A6DED18"
 				item: "immersiveengineering:light_engineering"
@@ -902,6 +1063,31 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:diesel_generator"
 			id: "6C3E18C9058CBAB4"
+			rewards: [{
+				id: "38627A23172D5F73"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							7
+							3
+							5
+						]
+						Deployed: 0b
+						File: "generator.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			size: 1.3d
 			tasks: [{
 				id: "067E8C5FFEC7FF7A"
@@ -910,7 +1096,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest30.title}"
 			x: -8.0d
-			y: 10.49107142857143d
+			y: 11.49107142857143d
 		}
 		{
 			dependencies: ["6D53CF017256846F"]
@@ -954,6 +1140,31 @@
 				"{ftbquests.chapter.parafusos_e_convices.quest32.description8}"
 			]
 			id: "617989B418D326B0"
+			rewards: [{
+				id: "5D1F289F5B321834"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							7
+							5
+							7
+						]
+						Deployed: 0b
+						File: "arc_furnace.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			size: 1.3d
 			tasks: [{
 				id: "241EBEBF2EB53E5C"
@@ -962,7 +1173,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest32.title}"
 			x: -3.8214285714285623d
-			y: 10.508928571428562d
+			y: 11.508928571428562d
 		}
 		{
 			dependencies: [
@@ -984,6 +1195,31 @@
 			]
 			icon: "immersiveengineering:refinery"
 			id: "6F89ADFAB2A59C2B"
+			rewards: [{
+				id: "3AE587C610AD7513"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							7
+							3
+							5
+						]
+						Deployed: 0b
+						File: "refinery.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C396D70076465F8"
 				item: "immersiveengineering:heavy_engineering"
@@ -1013,6 +1249,31 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:bottling_machine"
 			id: "254D3ED5237C2967"
+			rewards: [{
+				id: "274BCDF744A0E8E5"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							5
+							3
+							4
+						]
+						Deployed: 0b
+						File: "bottler.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "58ADB47CE2B97E34"
 				item: "immersiveengineering:plate_duroplast"
@@ -1020,7 +1281,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest34.title}"
 			x: -6.0d
-			y: 10.49107142857143d
+			y: 11.49107142857143d
 		}
 		{
 			dependencies: ["2C5BDE78E209CF0C"]
@@ -1050,8 +1311,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest35.title}"
-			x: -2.0d
-			y: 2.5d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1081,7 +1342,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest36.title}"
-			x: -2.0d
+			x: -2.5d
 			y: 6.5d
 		}
 		{
@@ -1105,15 +1366,47 @@
 			]
 			icon: "immersiveengineering:excavator"
 			id: "04BA3BE1F94722AE"
-			size: 1.3d
-			tasks: [{
-				id: "45FF050C2BDD68DA"
-				item: "immersiveengineering:heavy_engineering"
+			rewards: [{
+				id: "3099FB76026A2C74"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							5
+							7
+							9
+						]
+						Deployed: 0b
+						File: "excavator.nbt"
+						Mirror: "NONE"
+						Owner: "Zambim"
+						Rotation: "NONE"
+					}
+				}
 				type: "item"
 			}]
+			size: 1.3d
+			tasks: [
+				{
+					id: "45FF050C2BDD68DA"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "503D900F31B531F6"
+					item: "immersiveengineering:sample_drill"
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest37.title}"
 			x: -9.5d
-			y: 10.49107142857143d
+			y: 11.49107142857143d
 		}
 		{
 			dependencies: ["254D3ED5237C2967"]
@@ -1143,7 +1436,7 @@
 			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest38.title}"
 			x: -6.5d
-			y: 11.49107142857143d
+			y: 12.49107142857143d
 		}
 		{
 			dependencies: ["617989B418D326B0"]
@@ -1168,7 +1461,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest39.title}"
 			x: -5.5d
-			y: 11.49107142857143d
+			y: 12.49107142857143d
 		}
 		{
 			dependencies: [
@@ -1201,7 +1494,7 @@
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest40.title}"
 			x: -6.0d
-			y: 13.49107142857143d
+			y: 14.49107142857143d
 		}
 		{
 			id: "4EE27046FC8F628E"
@@ -1276,7 +1569,8 @@
 			]
 			description: [
 				"  Steel doesn’t become industry by accident."
-				"Before the noise, the smoke, and the comforting hum of oversized machines, there is a quiet step most people ignore: components. Bolts, coils, casings — the unglamorous anatomy of progress."
+				""
+				"  Before the noise, the smoke, and the comforting hum of oversized machines, there is a quiet step most people ignore: components. Bolts, coils, casings — the unglamorous anatomy of progress."
 				""
 				"  These parts are crafted in the Engineer’s Workbench, using the blueprints unlocked earlier and a steady supply of steel and supporting materials. This is where raw resources finally agree to behave like machinery."
 				""
@@ -1326,5 +1620,5 @@
 			y: 3.5d
 		}
 	]
-	title: "{ftbquests.chapter.parafusos_e_convices.title}"
+	title: "&8&l2.&r&r Screws and Convictions"
 }

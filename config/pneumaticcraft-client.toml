@@ -16,7 +16,7 @@
 	#Should tube modules emit redstone play redstone particle effects when active?
 	tube_module_redstone_particles = true
 	#Should widgets in the GUI Remote Editor be snapped to a 4x4 grid?
-	gui_remote_grid_snap = true
+	gui_remote_grid_snap = false
 	#Should the SSP game pause when the Programmer GUI is open (does not apply in SMP)?
 	programmer_gui_pauses = false
 	#Should players holding an Amadron Tablet get a notification message when offers are shuffled periodically?

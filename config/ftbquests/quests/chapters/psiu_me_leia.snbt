@@ -57,6 +57,98 @@
 			x: -1.5714285714285623d
 			y: 0.6928571428571431d
 		}
+		{
+			height: 2.5d
+			image: "custom:textures/gui/mechanized_depths.png"
+			rotation: 0.0d
+			width: 7.5d
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			click: "https://discord.gg/Smm3AAyF"
+			height: 1.5d
+			hover: ["Check the discord server for support and discussions!"]
+			image: "custom:textures/gui/discord-logo-discord-icon-transparent-free-png.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			height: 0.5d
+			image: "custom:textures/gui/playtest.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -1.0d
+			y: -11.0d
+		}
+		{
+			click: "https://github.com/lucasmilanezs/MechanizedDepths"
+			color: 16754127
+			height: 1.0d
+			hover: ["Check the code on github!"]
+			image: "custom:textures/gui/github_logo_icon_206752.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			click: "https://forms.gle/xbHNNAbkG6he1Y5E7"
+			height: 1.0d
+			hover: ["Click here to send your feedback!"]
+			image: "custom:item/mechanical_heart"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			height: 1.0d
+			image: "custom:item/quest_research"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			height: 1.0d
+			image: "custom:item/quest_research"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			click: "https://github.com/lucasmilanezs/MechanizedDepths/issues/new"
+			height: 1.0d
+			hover: ["Click here to report issues!"]
+			image: "pneumaticcraft:textures/gui/icon/gui_warning.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "expatternprovider:block/ex_pattern_provider"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			color: 16724021
+			height: 1.0d
+			image: "ae2:block/pattern_provider"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -7.5d
+		}
 	]
 	order_index: 0
 	progression_mode: "linear"
@@ -73,7 +165,7 @@
 			icon: "minecraft:recovery_compass"
 			id: "558AD48F5D4237AC"
 			shape: "netheritetier"
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "584E3A93AC788E00"
 				title: "{ftbquests.chapter.psiu_me_leia.quest1.task_6363087729449274880.title}"
@@ -89,13 +181,13 @@
 				"497584693F232C18"
 			]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest2.description1}"
+				"  Stop for a moment and think: have you ever wondered how four wooden planks suddenly become a magic workbench with the ability to unite nine components? This table is your true first altar, the heart of all creation, and perhaps the game’s oldest cosmic joke."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest2.description2}"
+				"  To build it, plant a &asapling&r at the center of the ritual. Place &64 planks&r on the surrounding stands and dance for it a little. Yes, crouch repeatedly like a lunatic. Once it grows, the aura itself will see fit to grant you your first Crafting Table."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest2.description3}"
+				"  After that, you will be able to craft more of them through the new 3x3 grid, without needing to repeat the ritual."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest2.description4}"
+				"&7&o— Ah, yes. A magic tree, a ridiculous dance, and presto: civilization’s greatest mystery solved.&r&r"
 			]
 			id: "565979255D303596"
 			rewards: [{
@@ -105,30 +197,28 @@
 			}]
 			shape: "square"
 			size: 1.1d
-			subtitle: "{ftbquests.chapter.psiu_me_leia.quest2.subtitle}"
+			subtitle: "The Crafting Table."
 			tasks: [{
 				id: "724F9153947F879D"
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest2.title}"
+			title: "Where Every Journey Truly Begins"
 			x: -7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["565979255D303596"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest3.description1}"
+				"  So, no, the table was never going to transform planks and sticks into tools out of pure goodwill. First, it needs direction. A plan. Preferably one drawn by someone only slightly more organized than you."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest3.description2}"
+				"  For the next step, take a few blank pages from the back of this book. You only need to place me alone in the crafting grid. Relax, I will not take it personally. Just try not to overdo it. &4I'm Serious.&r"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest3.description3}"
+				"  Use those pages to make a Blueprint. Think of it as the first sketch of intent: a crude memory of the tool you want to create. It will not be powerful. It will not be beautiful. But it will be yours, and for now, that is enough."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest3.description4}"
+				"  You have already managed the table. Now it is time to make something that answers your will."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest3.description5}"
-				""
-				"{ftbquests.chapter.psiu_me_leia.quest3.description6}"
+				"&7&o— Some tools forget their owners. And some were never made to. Let us find out which kind you are about to craft.&r&r"
 			]
 			hide_dependency_lines: false
 			id: "64F2B2761FBEB6BD"
@@ -207,13 +297,13 @@
 		{
 			dependencies: ["2B403653AED97321"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest5.description1}"
+				"  The presence of the aether begins to reveal itself in the world in subtle ways. Trees touched by golden fibers start to react over time, exposing luminous flaws in their leaves. This is more than decoration, it is the first step toward directly handling aura."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest5.description2}"
+				"  Take the gold you gathered and combine it with flowers to create Brilliant Fibers. Place those fibers into the leaves of a nearby tree and wait. Once the entire canopy has changed, break the transformed leaves to collect Golden Leaves. They will be essential for producing Gold Powder, the central ingredient of your first ritual."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest5.description3}"
+				"  And since I know you are impatient: if you shake this book hard enough, you may manage to knock a little gold dust loose from between its pages. A cheap trick, yes, but enough to get things moving while you wait for the full transformation."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest5.description4}"
+				"&7&o— Gold does not grow on trees... except when, through sheer irony, it does.&r&r"
 			]
 			icon: "naturesaura:gold_fiber"
 			id: "52759072B76D79FD"
@@ -282,35 +372,37 @@
 		{
 			dependencies: ["70983AD660631855"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest7.description1}"
+				"  Here, things are rarely as simple as “play a mod and move on.” Progress unfolds in &asets of three chapters&r, each focused on mastering the essentials of one or more mods. Within each trio there is some freedom — you can explore them in parallel if you wish. Still, the next group will usually assume those essentials are already in your hands. There are exceptions… though even those tend to follow a logic you only recognize when it's too late."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description2}"
+				"  Alongside these trios are the &l&4TECH chapters&r&r, which expand on what you unlock in the main progression veins. Some introduce quality-of-life upgrades or direct improvements to machines and components you already use. Others reveal interesting mechanics or alternative production paths. And a few… well, you will quickly realize they are simply &7&otoo useful to live without.&r&r"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description3}"
+				"  This modpack was not made to be rushed, but to be chewed slowly. It rewards solving one thing at a time, without anxiety about reaching the end. The goal is not simply to “finish,” but to lose yourself in the process: quests that guide while entertaining, and mods woven together into a single ecosystem. Nothing here stands alone — everything forms part of a larger machine that responds to each step you take."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description4}"
-				""
-				"{ftbquests.chapter.psiu_me_leia.quest7.description5}"
+				"  And in the end, this is not just about progress. Every structure you build becomes another vertebra of something that was always there, only fragmented. You read, construct, complete. And what appears to be instruction may simply be the echo of your own writing."
 			]
-			icon: "eidolon:zombie_heart"
+			icon: "kubejs:mechanical_heart"
 			id: "22E8C8BE07968048"
-			subtitle: "{ftbquests.chapter.psiu_me_leia.quest7.subtitle}"
+			subtitle: "A book that likes order"
 			tasks: [{
 				id: "44694809009FB5DE"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest7.title}"
+			title: "The Essential Flow"
 			x: -11.5d
-			y: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["22E8C8BE07968048"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest8.description1}"
+				"  The &4&lTECH&r&r chapters run parallel to the main progression — small utility detours, a curious appendix in the middle of an otherwise orderly path. They do not dictate the route, but they offer shortcuts, tools, and clever tricks that make the journey less rough… or simply more enjoyable."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest8.description2}"
+				"  After every set of three main chapters, these side paths appear. They build on what you have already unlocked, often showing that even things that once seemed superfluous can find their place."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest8.description3}"
+				"  These chapters mirror key milestones from the main progression, almost acting as markers of how far you have advanced through the numbered veins. They expand the technologies you unlocked to embrace their full potential!"
+				"  "
+				"  &4&lWARNING:&r&r TECH chapters are currently deeply incomplete or missleading in this build. &mPlease help me.&r "
+				""
+				"&7&o— You call them optional. I prefer to think of them as carefully calculated distractions.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -322,9 +414,9 @@
 				id: "5C9E8DD8C08B11AB"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest8.title}"
+			title: "A Brief Aside"
 			x: -10.5d
-			y: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7E88E307D7B20E6B"]
@@ -353,7 +445,7 @@
 				""
 				"  To simplify construction, open the Book of Natural Aura, find the altar entry, and click the small eye near the structure. This will project a guide into the world so you can build the multiblock accurately."
 				""
-				"  While the outer blocks must remain unchanged, the block directly beneath the altar may be replaced with &8hoppers&r or other item transport — making automation not only possible, but inevitable."
+				"  While the outer blocks must remain unchanged, the block directly beneath the altar may be replaced with &l&8hoppers&r&r or other item transport method — making automation not only possible, but inevitable."
 				""
 				"&7&o— Aura appreciates tradition. But it tolerates a well-placed hopper.&r&r"
 			]
@@ -396,7 +488,7 @@
 			description: [
 				"  To bridge the mortal and the divine, even simple gestures matter. Build a flowered clearing as the book suggests — colors and patterns left to your interpretation. With the Offering Table at its center, you may present objects to higher forces and receive something more elaborate in return. Whether it’s generosity or a cosmic joke remains uncertain."
 				""
-				"  Place the offering with right-click, then drop a &bSpirit of Calling&r onto the pillar to begin. After a short moment, the items will be consumed in a bolt of lightning, and your reward will fall from above. You can offer &2up to 16&r of the same item at once using a &2single Spirit of Calling&r — frugal worship at its finest. The ritual can be &8&lautomated&r&r with modest redstone and creativity."
+				"  Place the offering with &aright-click&r, then drop a &bSpirit of Calling&r onto the pillar to begin. After a short moment, the items will be consumed in a bolt of lightning, and your reward will fall from above. You can offer &2up to 16&r of the same item at once using a &2single Spirit of Calling&r — frugal worship at its finest. The ritual can be &8&lautomated&r&r with modest redstone and creativity."
 				""
 				"&7&o— Our humble junk becomes their humble junk, returned with ceremony.&r&r"
 			]
@@ -413,9 +505,9 @@
 		{
 			dependencies: ["5FD7CCD89895AAAB"]
 			description: [
-				"  The first and most familiar aura you will encounter is Bottled Sunlight — the distilled essence of the Overworld. Right-click with a Bottle and Crock while in this realm to collect it."
+				"  The first and most familiar aura you will encounter is Bottled Sunlight — the distilled essence of the Overworld. &aRight-click&r with a Bottle and Crock while in this realm to collect it."
 				""
-				"  This process can be &8automated&r with ease: a humble dispenser with the tool inside performs the capture unattended. Deities and aura seem to appreciate primitive contraptions."
+				"  This process can be &l&8automated&r&r with ease: a humble dispenser with the tool inside performs the capture unattended. Deities and aura seem to appreciate primitive contraptions."
 				""
 				"&7&o— The gods show restraint. They only ask for the sky in a bottle.&r&r"
 			]
@@ -466,7 +558,7 @@
 				""
 				"{ftbquests.chapter.psiu_me_leia.quest15.description2}"
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest15.description3}"
+				"&7&o— The unwritten rule of the Expert Modpack experience!&r&r"
 			]
 			id: "3BF0D53D85B2A4CA"
 			shape: "square"
@@ -488,11 +580,11 @@
 		{
 			dependencies: ["3BF0D53D85B2A4CA"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest16.description1}"
+				"  You thought gravel was just useless rubble cluttering your builds? Well, take &2four&r of them in your inventory and compress them into something called &8Packed Gravel&r. It sounds trivial, but it is the essence of an old craft: panning."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest16.description2}"
+				"  Now take that block and &aright-click directly&r on the &bwater surface&r of a river or lake. &cDo not&r aim at the block below, and do not be submerged. With a bit of luck, you will find tiny gold nuggets mixed in with the silt. Feel free to pretend you are a prospector... just do not expect to get rich overnight."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest16.description3}"
+				"&7&o— No, you are not buying a castle. But yes, you are going to need it.&r&r"
 			]
 			icon: "kubejs:packed_gravel"
 			id: "2B403653AED97321"
@@ -509,16 +601,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.psiu_me_leia.quest16.title}"
+			title: "Fool's Gravel"
 			x: -8.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3BF0D53D85B2A4CA"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest17.description1}"
+				"  With wood, craft some stands, simple pillars meant to support your first ritual. It is a humble step, but consider this: even raw timber can become part of a mystical spectacle. "
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest17.description2}"
+				"&7&o— Nothing like poorly cut wood to serve as the foundation of an entire ritual. Brilliant.&r&r"
 			]
 			icon: "naturesaura:wood_stand"
 			id: "48B564A472DBB217"
@@ -528,19 +620,18 @@
 				item: "naturesaura:wood_stand"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest17.title}"
+			title: "Pillars for your Pretension"
 			x: -8.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["48B564A472DBB217"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest18.description1}"
-				"{ftbquests.chapter.psiu_me_leia.quest18.description2}"
+				"  Time to open another compendium: the Book of Natural Aura. Inside, you will find detailed information about aura itself, the invisible energy that bathes the world. Rituals consume aura, and if there is too much or too little of it, the environment may respond with beneficial or harmful effects. For now, do not worry about that; later on, you will gain the tools needed to measure and manipulate this balance."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest18.description3}"
+				"  Ah, and one more trick: when viewing a ritual recipe in the book, click the eye icon. It generates a projected blueprint that can be placed in the world with right-click, showing exactly where each block should go. Very helpful, until you are finally capable of understanding things on your own."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest18.description4}"
+				"&7&o— Do not trust that book too much. It pretends to be your guide, but it is already getting tired of you.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -567,12 +658,15 @@
 				id: "1A002CEF6E9549D6"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest18.title}"
+			title: "The book of Aura"
 			x: -7.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["4BE69805DC9E253E"]
+			dependencies: [
+				"4BE69805DC9E253E"
+				"4618E30363D2830E"
+			]
 			description: [
 				"  A peculiar outcome of the offering ritual: instead of a Spirit of Calling, simply toss in a wrench. Somehow, the forces beyond interpret this as a request for something useful — quite literally."
 				""
@@ -594,21 +688,21 @@
 		{
 			dependencies: ["558AD48F5D4237AC"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest20.description1}"
+				"  This modpack has its own way of presenting itself. This is one of the few moments where I, the author, speak to you directly — the one who decided to give my work a chance."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest20.description2}"
+				"  From here on, the quests will guide you through a narrative that speaks to you personally. You can expect a bit of humor, a touch of poetry, but also clear and objective explanations so you never feel lost."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest20.description3}"
+				"  It's important to say: progression here is linear, and the recipes are deeply connected to one another. If you prefer completely freeform packs, this one might not be ideal. But if you enjoy the idea of a journey with well-defined paths and carefully woven progression, I believe you'll feel right at home."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest20.description4}"
+				"  Every detail was crafted with care — from the smallest machines to custom mechanics built specifically for this pack. Everything exists to make the experience feel unique and integrated. If you happen to stumble upon the biography of a slightly unhinged engineer along the way, consider yourself very welcome."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest20.description5}"
+				"  The two quests above explain the structure of the pack in more detail. If you're unsure where to begin, I recommend starting with them."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest20.description6}"
+				"  Oh, and don't worry about the crafting table recipe — it may look strange at first, but I promise it's simple."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest20.description7}"
+				"  Good luck, have fun, and I sincerely hope you enjoy the journey ahead."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest20.description8}"
+				"  See you at the end of it. &l&a:)&r&r"
 			]
 			icon: {
 				Count: 1
@@ -631,23 +725,23 @@
 				}
 			}
 			id: "70983AD660631855"
-			subtitle: "{ftbquests.chapter.psiu_me_leia.quest20.subtitle}"
+			subtitle: "&l&aWelcome to Mechanized Depths!&r&r"
 			tasks: [{
 				id: "6A57E5382B9F7CDF"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest20.title}"
+			title: "Author's Note"
 			x: -11.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["708E4BE08506636D"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest21.description1}"
+				"  The unquestioned companion to the crafting table. I doubt this one needs much introduction, it is the furnace you already know."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest21.description2}"
+				"  Cook your food, smelt your ores, burn your ideas. All perfectly valid uses."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest21.description3}"
+				"&7&o— What? Were you expecting something more elaborate?&r&r"
 			]
 			id: "042EC538643F435A"
 			rewards: [{
@@ -663,7 +757,7 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest21.title}"
+			title: "The Game's Oldest Couple"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -820,11 +914,13 @@
 		{
 			dependencies: ["042EC538643F435A"]
 			description: [
-				"  The chaos of raw stone hides patterns that the naked eye refuses to see. Ancient miners learned to separate dirt from promise, and promise from true metal. This bench is your introduction to that quiet art — a place where rough minerals are sorted, broken down, and persuaded to reveal their composite nature."
+				"  The chaos of raw stone hides patterns that the naked eye refuses to see. Ancient miners learned to separate dirt from &lpromise,&r and promise from true &lmetal.&r This bench is your introduction to that quiet art. A place where rough minerals are sorted, broken down, and persuaded to reveal their composite nature."
 				""
-				"  Place your ores here and watch them fracture into recognizable mineral compounds. It may look primitive, but many great discoveries begin with a rock, a tool, and the unsettling suspicion that the rock is lying."
+				"  Drop a &6Crafting Table&r into &bwater&r with &5me&r as catalyst. The JEI entry will make it look like I'm consumed in the transformation — dramatically, I might add. I'm not. &m&7Probably&r.&r"
 				""
-				"&7&o— If you thought ores came ready to smelt, you’re adorably mistaken.&r&r"
+				"  Once you have the Ore Sorting Bench, place your ores there and watch them fracture into recognizable mineral compounds. It may look primitive, but many great discoveries begin with a rock, a tool, and the unsettling suspicion that the rock is &clying.&r"
+				""
+				"&7&o— If you thought ores came ready to smelt, you're adorably mistaken.&r"
 			]
 			id: "155BB7639312253D"
 			shape: "gear"
@@ -839,6 +935,7 @@
 				}
 				type: "item"
 			}]
+			title: "Rock Solid Lies"
 			x: -3.0d
 			y: -1.0d
 		}
@@ -847,7 +944,7 @@
 			description: [
 				"  This land is &4old,&r and its metals are no longer found in pure form. Ages of upheaval fused once-separate veins into mixed mineral compounds."
 				""
-				"  The core metals you need are locked inside these mixtures. To obtain them, you must sort and break down the compounds first. Open the Ore Sorting Bench recipes by &aclicking U&r in a ore composite. — there you can see every mineral compound and which usable metals each one produces. "
+				"  The core metals you need are locked inside these mixtures. To obtain them, you must sort and break down the compounds first. Open the Ore Sorting Bench recipes by &aclicking U&r in a ore composite or clicking the progress bar in the bench itself. — there you can see every mineral compound and which usable metals each one produces. "
 				""
 				"&7&o— You call it “modded.” The planet calls it “trauma.”&r&r"
 			]
@@ -868,6 +965,63 @@
 			x: -2.0d
 			y: -1.0d
 		}
+		{
+			description: [
+				"  &l&5Mechanized Depths&r&r is currently in active development, and this version exists primarily for &lplaytesting.&r"
+				""
+				"  The design philosophy of the pack aims to create a progression that starts relatively smooth and approachable, gradually increasing in complexity as the player gains access to better tools, machines, and automation systems. The goal is to reward infrastructure building, experimentation, and thoughtful automation rather than repetitive grinding."
+				""
+				"  If you are looking for a fully polished and carefully balanced experience, you may prefer waiting for an official release. That said, the pack is already very much \"\"playable\"\"."
+				""
+				"  Chapters &21&r through &28&r (out of &421&r planned chapters) are currently structured and the main progression through them is well established. Not every quest has full descriptions yet, some mechanics might — and probably will — change, but all of this will be addressed and implemented gradually as development continues."
+				""
+				"  And... Yeah, I know. The playtest ends right when things start to get &l&4f&r&r&l&dr&r&r&l&ee&r&r&l&da&r&r&l&bk&r&r&l&ay&r&r and actually unique. I really wanted to have more playable content, especially where the systems begin to diverge from the usual progression trees and the custom mechanics shine. But I also need to start gathering feedback to validate and refine what’s already here. At some point, I realized that if I keep gatekeeping the pack until it has everything I want… it’s never getting done. So playtesting it is. "
+				""
+				"  Anyways, If you're here, you're already part of making this pack better."
+				""
+				"  Thank you for taking the time to try it out and help shape its future &l&a:)&r&r"
+			]
+			icon: "kubejs:minerva"
+			id: "36B004CC913D8CC7"
+			shape: "square"
+			tasks: [{
+				id: "4E03077442D29486"
+				type: "checkmark"
+			}]
+			title: "Overal info!"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			description: [
+				"  While Chapters 1 through 8 represent the currently playable progression, many of the later chapters are already present in this build as well."
+				""
+				"  Some of them contain notes describing ideas, concepts, or systems currently being developed. Others are simply structural placeholders or isolated quests that exist out of order as part of the pack's internal framework."
+				""
+				"  If you are curious and want to explore these experimental sections — or see parts of the pack's backbone systems (such as the quest hooks used for book interactions and game stage control) — you can do so easily."
+				""
+				"  Simply enter a world with &acheats enabled&r, open the FTB Quests interface, and click \"&aEnable editing mode&r\" in the &abottom-right corner&r of the HUD."
+				""
+				"  This will allow you to browse the full quest structure and take a look at features that are still under development."
+			]
+			icon: {
+				Count: 1
+				id: "powah:wrench"
+				tag: {
+					PowahWrenchNBT: { }
+				}
+			}
+			id: "114E7031B333CA04"
+			shape: "square"
+			tasks: [{
+				id: "3D025595213D8FBF"
+				type: "checkmark"
+			}]
+			title: "See experimental features!"
+			x: -2.5d
+			y: -7.0d
+		}
 	]
-	title: "{ftbquests.chapter.psiu_me_leia.title}"
+	subtitle: ["Yeah!  You there!"]
+	title: "&l{ftbquests.chapter.psiu_me_leia.title}&r"
 }

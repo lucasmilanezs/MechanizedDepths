@@ -74,19 +74,6 @@ ItemEvents.rightClicked('kubejs:packed_gravel', event => {
   event.cancel();
 });
 
-// kubejs/server_scripts/open_quest_book.js
-ItemEvents.rightClicked('minecraft:stick', event => {
-  // apenas mão principal para não duplicar
-
-
-  // abre o livro de quests para o jogador
-  event.player.tell("§aAbrindo o livro de quests...");
-  event.player.runCommandSilent(`/ftbquests open_book`);
-
-  // opcional: evita comportamento vanilla do stick
-  event.cancel();
-});
-
 
 // // Item do “livro” — troque para o real quando sair do teste
 // const BOOK_ITEM_ID = 'minecraft:stick';       // em teste pode usar 'minecraft:stick'
@@ -185,7 +172,7 @@ ItemEvents.rightClicked('kubejs:torn_page', e => {
 
 // kubejs/server_scripts/book_pages_punishments_refund.js
 
-const BOOK_ITEM_ID      = 'minecraft:stick';      // troque pelo seu livro real (ex.: 'ftbquests:book')
+const BOOK_ITEM_ID      = 'minecraft:stick';
 const PAGE_ID           = 'kubejs:torn_page';     // páginas exclusivas deste craft
 const RECIPE_ID         = 'kubejs:book_to_pages';
 const PAGES_PER         = 3;                      // por craft

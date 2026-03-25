@@ -20,13 +20,29 @@ ServerEvents.recipes(event => {
 
 //====================CUSTOM RECIPES==================
 
-//PRINTED SIMULATION PROCESSOR
+//PRINTED CRAFTING CIRCUIT
 ServerEvents.recipes(event => {
     event.custom({
         type: 'ae2:inscriber',
         mode: 'press',
         ingredients: {
-        middle: { item: 'mekanism:ingot_refined_obsidian' }
+          top: { item: 'ae2:logic_processor_press' },
+          middle: { item: 'kubejs:empowered_certite_crystal' }
+        },
+        result: {
+          item: 'kubejs:printed_crafting_circuit'
+        }
+    });
+});
+
+//PRINTED SIMULATION CIRCUIT
+ServerEvents.recipes(event => {
+    event.custom({
+        type: 'ae2:inscriber',
+        mode: 'press',
+        ingredients: {
+          top: { item: 'ae2:calculation_processor_press' },
+          middle: { item: 'mekanism:ingot_refined_obsidian' }
         },
         result: {
         item: 'kubejs:printed_simulation_processor'
@@ -49,6 +65,23 @@ ServerEvents.recipes(event => {
     }
   });
 });
+
+//CRAFTING PROCESSOR
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'ae2:inscriber',
+    mode: 'press',
+    ingredients: {
+      top: { item: 'kubejs:printed_crafting_circuit' },
+      middle: { item: 'kubejs:intricate_redstone_component' },
+      bottom: { item: 'ae2:printed_silicon' }
+    },
+    result: {
+      item: 'kubejs:crafting_processor'
+    }
+  });
+});
+
 
 //====================CHANGED RECIPES==================
 

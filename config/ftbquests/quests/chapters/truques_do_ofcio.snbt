@@ -250,6 +250,7 @@
 				"4F33867E49AF45C9"
 				"16533F539E22B141"
 			]
+			description: ["&4TECH&r"]
 			id: "5CC7E2DCF21162E3"
 			tasks: [{
 				id: "7CC3ECBCDB26C8D5"
@@ -391,17 +392,24 @@
 				"73B5B6D64E40BE8F"
 			]
 			id: "5C962106A4EF506F"
-			tasks: [{
-				id: "4CF32F9A46F0DB51"
-				item: {
-					Count: 1
-					id: "actuallyadditions:coffee_cup"
-					tag: {
-						Damage: 0
-					}
+			tasks: [
+				{
+					id: "1BF51611C56B04C1"
+					item: "actuallyadditions:coffee_machine"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "432CEE929AAEBDE1"
+					item: {
+						Count: 1
+						id: "actuallyadditions:coffee_cup"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			x: 4.0d
 			y: 0.5d
 		}
@@ -431,10 +439,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"73B5B6D64E40BE8F"
-				"0E141F104B456EBB"
-			]
+			dependencies: ["73B5B6D64E40BE8F"]
 			id: "1D66DCA52A9103FB"
 			tasks: [{
 				id: "5ED48F566B09C796"
@@ -514,6 +519,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["36ED84D6DA1ACBF6"]
 			id: "1EC2816129663219"
 			tasks: [{
 				id: "2E775EAD99D87D29"
@@ -535,6 +541,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["5E02CDB52EBA2E43"]
 			id: "5CB3ED61EF14A6A5"
 			tasks: [{
 				id: "32EF0A87ED22A15E"
@@ -598,5 +605,5 @@
 			y: 0.5d
 		}
 	]
-	title: "{ftbquests.chapter.truques_do_ofcio.title}"
+	title: "&4TECH&r Tricks of the Trade"
 }

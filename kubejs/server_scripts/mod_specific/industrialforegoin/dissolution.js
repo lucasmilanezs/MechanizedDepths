@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',
     output: {
       item: 'kubejs:meattherial',
-      count: 1
+      count: 3
     },
     processingTime: 600
   }).id('industrialforegoing:dissolution/meattherial');

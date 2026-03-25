@@ -1,0 +1,12 @@
+{
+  "damage_dark": {
+    "sounds": [
+      {
+        "name": "custom:damage_dark",
+        "volume": 1.0,
+        "pitch": 1.0,
+        "stream": false
+      }
+    ]
+  }
+}

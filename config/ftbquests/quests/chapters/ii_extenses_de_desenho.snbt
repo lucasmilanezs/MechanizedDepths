@@ -40,7 +40,7 @@
 	quests: [
 		{
 			id: "0E73B8FCEA087CB8"
-			shape: "square"
+			shape: "none"
 			tasks: [{
 				id: "23F6967125DE9C46"
 				item: "buildinggadgets2:gadget_building"
@@ -51,7 +51,7 @@
 		}
 		{
 			id: "56384C975503E386"
-			shape: "square"
+			shape: "none"
 			tasks: [{
 				id: "4E88AE85C725E79A"
 				item: {
@@ -66,7 +66,7 @@
 		}
 		{
 			id: "6AFC683BFDE3566F"
-			shape: "square"
+			shape: "none"
 			tasks: [{
 				id: "5996E5EBE89C02C6"
 				item: "buildinggadgets2:gadget_destruction"
@@ -77,7 +77,7 @@
 		}
 		{
 			id: "32FE424A6874EF56"
-			shape: "square"
+			shape: "none"
 			tasks: [{
 				id: "145428DB103EC035"
 				item: {
@@ -92,6 +92,138 @@
 			x: -2.5d
 			y: 3.0d
 		}
+		{
+			id: "3FF4DA4FE25215A9"
+			tasks: [{
+				id: "20688D1AE97594D7"
+				item: "extendedcrafting:auto_flux_crafter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "519E7E749743C167"
+			tasks: [{
+				id: "5517E9BF7F1A5A54"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			id: "7DA784777C692BE2"
+			tasks: [{
+				id: "47A8EF6F6712806D"
+				item: "thermal:device_fisher"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			id: "6CA89B99DBD8C5B6"
+			tasks: [{
+				id: "5C7DE56AA454138E"
+				item: "enderio:enchanter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "0C6911DFDC71DC58"
+			tasks: [{
+				id: "34B038ACD712BD98"
+				item: "enderio:travel_anchor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "656369DF8217029E"
+			tasks: [{
+				id: "3DA9E6AD3A043D83"
+				item: {
+					Count: 1
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			id: "3B767A5E3460ECBC"
+			tasks: [
+				{
+					id: "7330A4C2CAD39519"
+					item: "enderio:crafter"
+					type: "item"
+				}
+				{
+					id: "1D492BD1C026F54C"
+					item: "mekanism:formulaic_assemblicator"
+					type: "item"
+				}
+				{
+					id: "73BDF31487516C86"
+					item: "thermal:machine_crafter"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			id: "720013549866E6E4"
+			tasks: [{
+				id: "486FD7A56E6374A2"
+				item: "thermal:machine_speed_augment"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			id: "65E6A396D20E049C"
+			tasks: [{
+				id: "7647DC414726DC6E"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			id: "1D94DA07E165094F"
+			tasks: [{
+				id: "74BA8A136C9FA4E1"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			id: "04E2CD7FEA6BB65A"
+			tasks: [{
+				id: "3DAF5627103CB9B0"
+				item: "mob_grinding_utils:absorption_hopper"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
 	]
-	title: "{ftbquests.chapter.ii_extenses_de_desenho.title}"
+	title: "&4TECH&r Drafting Extensions"
 }

@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iii_excedentes_de_poder"
@@ -29,6 +30,15 @@
 	]
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
-	title: "{ftbquests.chapter.iii_excedentes_de_poder.title}"
+	quests: [{
+		id: "460E193B2C2B312B"
+		tasks: [{
+			id: "58C4EFCCE27423BB"
+			item: "minecraft:stripped_oak_wood"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 2.5d
+	}]
+	title: "&4TECH&r Utilities of Power"
 }

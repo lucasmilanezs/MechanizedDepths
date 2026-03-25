@@ -10,36 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "2BDFECE84C0290B4"
-			rewards: [{
-				auto: "no_toast"
-				command: "/mdbook hookf chapter1.crafting_table"
-				id: "4774FBA248B0E0AC"
-				type: "command"
-			}]
-			tasks: [{
-				disable_toast: true
-				entity: "minecraft:zombie"
-				id: "132F642F50CEF488"
-				type: "kill"
-				value: 1L
-			}]
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
-			id: "46E64647467CA374"
-			rewards: [{
-				auto: "disabled"
-				command: "/mdbook start"
-				id: "620E0040B2FCA493"
-				type: "command"
-			}]
-			x: -3.5d
-			y: 0.0d
-		}
-		{
 			can_repeat: true
 			id: "65579052B3E96DFD"
 			rewards: [{
@@ -54,7 +24,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -71,7 +41,47 @@
 				to_observe: "minecraft:cat"
 				type: "observation"
 			}]
-			x: 1.0d
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "6C7CB0AD1F6BB43D"
+			rewards: [{
+				command: "/mdbook hook chapter1.ore_bench_1"
+				id: "0B8749D41D4817A7"
+				type: "command"
+			}]
+			tasks: [{
+				id: "560617B3A67DE7A4"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:ore_bench"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: ["The heartbeat of time based book interactions. "]
+			id: "01978F496B8A51A1"
+			rewards: [{
+				auto: "enabled"
+				command: "/mdbook roll"
+				id: "373D0590A23EAA3C"
+				type: "command"
+			}]
+			tasks: [{
+				elapsedTime: 300L
+				id: "45C308F6F6BFE5A2"
+				type: "questsadditions:time"
+			}]
+			title: "Scheduler!"
+			x: -3.5d
 			y: 0.0d
 		}
 	]

@@ -104,7 +104,7 @@
 			image: "thermal_extra:block/soul_infused_glass"
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
+			x: 1.0d
 			y: 1.0d
 		}
 		{
@@ -252,6 +252,7 @@
 		}
 		{
 			dependencies: ["0EBBC56ADF493E8D"]
+			description: ["&l&e9.&r&r "]
 			id: "36FECDD1F394E50E"
 			tasks: [{
 				id: "6BF9A1F99DCD5181"
@@ -334,7 +335,7 @@
 				item: "thermal_extra:soul_infused_ingot"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 1.0d
 			y: 1.0d
 		}
 		{
@@ -599,8 +600,8 @@
 				item: "kubejs:soul_infused_coil"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["561407CF10EAE33F"]
@@ -672,5 +673,5 @@
 			y: 9.0d
 		}
 	]
-	title: "{ftbquests.chapter.8_ligas_fundidos__contradies.title}"
+	title: "&l&e9.&r&r Alloys, Fusions and Contradictions"
 }

@@ -9,7 +9,9 @@
 
 // REDSTONE FLUX SUPER COIL
 ServerEvents.recipes(event => {
-    event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:redstone_flux_super_coil', [
+    event.recipes.extendedcrafting.shaped_flux_crafter(
+        Item.of('kubejs:redstone_flux_super_coil', 3),     
+    [
         'RER',
         'ERE',
         'RER'
@@ -21,7 +23,9 @@ ServerEvents.recipes(event => {
 
 //REDSTONE FLUX RESONATOR
 ServerEvents.recipes(event => {
-    event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:rf_resonator', [
+    event.recipes.extendedcrafting.shaped_flux_crafter(
+        Item.of('kubejs:rf_resonator', 3),     
+    [
         'RER',
         'ERE',
         'RER'

@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "10_podeeeer"
@@ -138,6 +139,16 @@
 			}]
 			x: -0.5d
 			y: 2.5d
+		}
+		{
+			id: "44681EDA9AF3242A"
+			tasks: [{
+				id: "6C14FF06E52CFCCD"
+				item: "rt:routine_tablet"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.10_podeeeer.title}"

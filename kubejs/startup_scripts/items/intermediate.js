@@ -187,3 +187,10 @@ StartupEvents.registry('item', event => {
     .displayName('Mechanical Heart')
     .texture('custom:item/mechanical_heart');
 });
+
+//THERMAL SENSOR
+StartupEvents.registry('item', event => {
+  event.create('thermal_sensor')
+    .displayName('Thermal Sensor')
+    .texture('custom:item/thermal_sensor');
+});

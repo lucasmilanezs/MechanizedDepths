@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "holder_3"
@@ -6,6 +7,15 @@
 	id: "04FA79C5E1486227"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "7968CA6DCC17F12A"
+		tasks: [{
+			id: "3B997571B743F569"
+			item: "minecraft:oak_log"
+			type: "item"
+		}]
+		x: 1.0d
+		y: 1.5d
+	}]
 	title: "{ftbquests.chapter.holder_3.title}"
 }

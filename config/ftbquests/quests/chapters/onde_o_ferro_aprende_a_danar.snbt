@@ -5,52 +5,14 @@
 	group: "0E3BAF4D0D92EEE1"
 	icon: "create:mechanical_arm"
 	id: "3FBA78EC5B9B5F80"
-	images: [
-		{
-			height: 3.0d
-			image: "custom:textures/gui/kinectics.png"
-			rotation: 0.0d
-			width: 3.0d
-			x: 0.0d
-			y: -9.5d
-		}
-		{
-			height: 1.5d
-			image: "enderio:block/machine_bottom"
-			rotation: 0.0d
-			width: 1.5d
-			x: 9.0d
-			y: -7.0d
-		}
-		{
-			height: 1.5d
-			image: "thermal:block/machines/machine_side"
-			rotation: 0.0d
-			width: 1.5d
-			x: 5.5d
-			y: -7.0d
-		}
-		{
-			alpha: 200
-			color: 11184810
-			height: 1.45d
-			image: "custom:textures/gui/quest.png"
-			rotation: 0.0d
-			width: 1.45d
-			x: 5.5d
-			y: -7.0d
-		}
-		{
-			alpha: 200
-			color: 11184810
-			height: 1.45d
-			image: "custom:textures/gui/quest.png"
-			rotation: 0.0d
-			width: 1.45d
-			x: 9.0d
-			y: -7.0d
-		}
-	]
+	images: [{
+		height: 3.0d
+		image: "custom:textures/gui/kinectics.png"
+		rotation: 0.0d
+		width: 3.0d
+		x: 0.0d
+		y: -9.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -470,17 +432,27 @@
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description7}"
 			]
 			id: "0EC1760A6B2B0CB6"
-			tasks: [{
-				id: "426FD4B7AA4C9F68"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "426FD4B7AA4C9F68"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					id: "578C0728D7A0A181"
+					item: "create:rose_quartz"
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.title}"
 			x: 7.0d
 			y: -1.0892857142857153d
 		}
 		{
-			dependencies: ["11D7B1868C95CDE6"]
+			dependencies: [
+				"11D7B1868C95CDE6"
+				"48D3A3797AE759A7"
+			]
 			description: [
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description1}"
 				""
@@ -511,23 +483,23 @@
 				"6FFDC0CD59E051D1"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description1}"
+				"  We've reached the point where gears aren't enough. You need heat. &l&cLiving&r &l&eflame&r&r.&r"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description2}"
+				"  But before you melt metal or logic, you need to take a practical (and suicidal) step:"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description3}"
+				"  Go to the Nether and &aright-click&r a &eblaze&r with your freshly crafted Empty Blaze Burner."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description4}"
+				"  Yes, it's manual. Yes, it still spits fire. Yes, you will burn."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description5}"
+				"  But only with its fire lit does true smelting begin."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description6}"
+				"  To build this burner, you'll need Blazing Steel — an alloy that says \"I'm past the andesite phase.\" You can forge it in the Arc Furnace, of course... But if you're not there yet, the good old Immersive Alloy Kiln works too. Just heat it enough to make steel feel ashamed."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description7}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description8}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description9}"
+				"  This is your threshold:"
+				"  From rotation to fire."
+				"  From innocent Create to heavy alchemy."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.description10}"
+				"&7&o— Right-click the blaze. Yes. What could go wrong? Besides the obvious.&r&r"
 			]
 			id: "3C8B4742E0008284"
 			shape: "gear"
@@ -700,25 +672,27 @@
 			y: -2.0892857142857153d
 		}
 		{
-			dependencies: ["4007E353BE3EF6F1"]
+			dependencies: [
+				"4007E353BE3EF6F1"
+				"7344A30E5BD438C1"
+			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description1}"
+				"  Everything turns. From the first shaft to the most complex systems, rotation was your language. You spoke to the world through gears, belts, arms, and rhythm. But there comes a moment when the spin slows — not from failure, but because what needed to be assembled finally was."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description2}"
+				"  The &5&lEntropic Drive&r&r condenses everything you learned with Create. A precise sequence. A brass core. Mechanisms repeating with intent. Latent energy guided through tube, eye, and void. It does not spin. It pulses. And when it pulses… the world listens."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description3}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description4}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description5}"
+				"  And yet… something remains. A brass eye fixed at the center of the engine. It does not move. It does not observe — &l&5it stares.&r&r"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description6}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description7}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description8}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description9}"
+				"  They say that if you gaze long enough into the abyss, it gazes back."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.description10}"
+				"  In this case, quite literally."
+				""
+				"  The Entropic Drive sees you."
+				""
+				"&8&o— When everything that spins finally stops, what remains is what acts without movement. Find that. That's what drives Ender IO.&r&r"
 			]
 			id: "1AC4899640C73919"
-			shape: "none"
+			shape: "goldtier"
 			size: 1.5d
 			tasks: [{
 				id: "32C5CB65F14BC375"
@@ -747,7 +721,7 @@
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description6}"
 			]
 			id: "21D37F976576C885"
-			shape: "none"
+			shape: "goldtier"
 			size: 1.5d
 			tasks: [{
 				id: "314235E2A430BB07"
@@ -917,11 +891,13 @@
 			dependencies: ["586E5CF965DD1845"]
 			description: [
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description1}"
+				""
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description2}"
+				""
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description3}"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description4}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description5}"
+				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description4} {ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description5}"
+				""
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description6}"
 				""
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description7}"
@@ -1015,7 +991,6 @@
 				{
 					id: "7E7260097A6F78D4"
 					item: "kubejs:melted_blaze_metal_bucket"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -1057,16 +1032,6 @@
 			}]
 			x: 6.5d
 			y: -4.089285714285715d
-		}
-		{
-			id: "7DC8EAACC288097C"
-			tasks: [{
-				id: "58421048CE5571EE"
-				item: "kubejs:void_fragment"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -4.0d
 		}
 		{
 			dependencies: ["6FFDC0CD59E051D1"]
@@ -1157,6 +1122,27 @@
 			x: 2.0d
 			y: 5.5d
 		}
+		{
+			id: "694D4DE9458FFBFA"
+			tasks: [{
+				id: "03130DF394F4CADC"
+				item: "minecraft:oak_button"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7768F0364DA14B55"]
+			id: "7344A30E5BD438C1"
+			tasks: [{
+				id: "0BD40979A089A259"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
 	]
-	title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.title}"
+	title: "&6&l3.&r&r Factories in Motion"
 }

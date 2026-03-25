@@ -127,6 +127,70 @@ ServerEvents.recipes(event => {
   }).id('kubejs:ae2/charger');
 });
 
+// MOLECULAR ASSEMBLER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'ae2:network/crafting/molecular_assembler' });
+  event.shaped(
+    Item.of('ae2:molecular_assembler'),
+    [
+        'ABA',
+        'NCF',
+        'ABA'
+    ],
+    {
+        C: 'kubejs:crafting_processor',
+        A: 'kubejs:refined_quartz',
+        B: 'ae2:quartz_glass',
+        N: 'ae2:annihilation_core',
+        F: 'ae2:formation_core'
+    });
+});
+
+// CRAFTING UNIT
+ServerEvents.recipes(event => {
+  event.remove({ id: 'ae2:network/crafting/cpu_crafting_unit' });
+  event.shaped(
+    Item.of('ae2:crafting_unit'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'ae2:logic_processor',
+        C: 'ae2:calculation_processor',
+        D: 'kubejs:crafting_processor',
+        A: 'kubejs:refined_quartz'
+    });
+});
+
+//PATTERN PROVIDER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'ae2:network/blocks/pattern_providers_interface' });
+  event.shaped(
+    Item.of('ae2:pattern_provider'),
+    [
+        'ABA',
+        'C D',
+        'ABA'
+    ],
+    {
+        B: 'kubejs:crafting_processor',
+        C: 'ae2:annihilation_core',
+        D: 'ae2:formation_core',
+        A: 'kubejs:refined_quartz'
+    });
+});
+
+// CRAFTING CARD
+ServerEvents.recipes(event => {
+  event.remove({ id: 'ae2:materials/cardcrafting' });
+  event.shapeless('ae2:crafting_card', [
+    'ae2:basic_card',
+    'kubejs:crafting_processor',
+  ]).id('kubejs:ae2/crafting_card');
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

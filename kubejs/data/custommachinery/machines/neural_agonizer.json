@@ -9,11 +9,6 @@
   },
   "components": [
     {
-      "type": "custommachinery:item",
-      "id": "input",
-      "mode": "input"
-    },
-    {
       "type": "custommachinery:fluid",
       "mode": "output",
       "id": "output",
@@ -21,84 +16,84 @@
     },
     {
       "type": "custommachinery:item",
-      "id": "module",
+      "id": "input2",
       "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input1",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:energy",
+      "capacity": 100000,
+      "max_input": 10000,
+      "max_output": 10000
     }
   ],
   "gui": [
     {
       "type": "custommachinery:background",
-      "texture": "custom:textures/gui/common/bg_vanilla_dark.png",
+      "texture": "custom:textures/gui/common/bg_vanilla.png",
       "width": 176,
       "height": 166
     },
     {
       "type": "custommachinery:player_inventory",
-      "priority": 20,
-      "x": 8,
-      "y": 84
-    },
-    {
-      "type": "custommachinery:text",
-      "priority": 10,
-      "x": 8,
-      "y": 12,
-      "text": {
-        "text": "Neural Agonizer",
-        "color": "dark_gray"
-      },
-      "jei": true
-    },
-    {
-      "type": "custommachinery:fluid",
-      "id": "output",
-      "texture": "custom:textures/gui/common/liquid_vanilla_dark.png",
-      "x": 136,
-      "y": 16,
-      "width": 24,
-      "height": 60
+      "x": 7,
+      "y": 83
     },
     {
       "type": "custommachinery:progress",
-      "x": 68,
-      "y": 43,
-      "width": 60,
-      "height": 9,
-      "texture_empty": "custom:textures/gui/neural_agonizer/progress_bar.png",
-      "texture_filled": "custom:textures/gui/neural_agonizer/progress_bar_full.png"
+      "x": 86,
+      "y": 40
     },
     {
       "type": "custommachinery:slot",
-      "id": "input",
-      "priority": 20,
-      "texture": "kubejs:textures/block/neural_agonizer_slot.png",
-      "x": 42,
-      "y": 37,
-      "width": 20,
-      "height": 20,
-      "ghost": {
-        "items": [
-          "kubejs:dormant_memory_cell"
-        ],
-        "color": {
-          "alpha": 0.0
-        }
-      }
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "module",
-      "x": 20,
-      "y": 37,
-      "width": 20,
-      "height": 20,
-      "texture": "kubejs:textures/block/neural_agonizer_slot.png",
+      "id": "input1",
+      "texture": "custom:textures/gui/wafer_processing/mask_slot.png",
+      "x": 40,
+      "y": 38,
       "ghost": {
         "items": [
           "minecraft:air"
         ],
         "color": {}
       }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input2",
+      "x": 59,
+      "y": 38,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:fluid",
+      "id": "output",
+      "x": 114,
+      "y": 25
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 17,
+      "y": 12,
+      "text": {
+        "text": "Neural Agonizer",
+        "color": "dark_red"
+      }
+    },
+    {
+      "type": "custommachinery:energy",
+      "x": 8,
+      "y": 19,
+      "width": 4,
+      "height": 58
     }
   ]
 }

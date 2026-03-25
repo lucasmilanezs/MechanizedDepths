@@ -2,65 +2,73 @@
   "name": {
     "text": "Wafer Processing Facility"
   },
-   "appearance": {
-    "block": "custom:machine/wafer_processing_facility"
+  "appearance": {
+    "custommachinery:block": "custom:machine/wafer_processing_facility"
   },
   "components": [
     {
       "type": "custommachinery:item",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"],
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "id": "input1",
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"],
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "id": "input2",
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"],
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "id": "input3",
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"],
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "id": "input4",
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"],
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "id": "input5",
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "id": "input6",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"],
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "id": "output",
-      "mode": "output",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"]
+      "mode": "output"
     },
     {
       "type": "custommachinery:fluid",
       "mode": "input",
+      "filter": [
+        "#kubejs:chrome_mask"
+      ],
       "id": "input",
-      "whitelist": false,
-      "filter": ["kubejs:chrome_mask"],
       "capacity": 10000
     },
     {
@@ -69,10 +77,12 @@
     },
     {
       "type": "custommachinery:item",
-      "id": "mask",
-      "mode": "input",
+      "filter": [
+        "kubejs:chrome_mask"
+      ],
       "whitelist": true,
-      "filter": ["kubejs:chrome_mask"]
+      "id": "mask",
+      "mode": "input"
     },
     {
       "type": "custommachinery:item",
@@ -240,6 +250,15 @@
           "minecraft:air"
         ],
         "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:text",
+      "x": 8,
+      "y": 8,
+      "text": {
+        "text": "Wafer Processing Facility",
+        "color": "dark_gray"
       }
     }
   ]

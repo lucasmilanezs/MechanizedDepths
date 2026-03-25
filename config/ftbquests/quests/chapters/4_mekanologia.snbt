@@ -4,12 +4,13 @@
 	filename: "4_mekanologia"
 	group: "48009A32F221D9FC"
 	hide_quest_details_until_startable: true
-	icon: "mekanism:basic_energy_cube"
+	icon: "mekanism:crafting_formula"
 	id: "7ECEDBF9DFAD1B11"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["376E59D9ADCD986B"]
 			description: [
 				"{ftbquests.chapter.4_mekanologia.quest1.description1}"
 				"{ftbquests.chapter.4_mekanologia.quest1.description2}"
@@ -46,8 +47,6 @@
 			dependencies: ["5349659FDCBDFA9F"]
 			description: [
 				"{ftbquests.chapter.4_mekanologia.quest2.description1}"
-				""
-				"{ftbquests.chapter.4_mekanologia.quest2.description2}"
 				""
 				"{ftbquests.chapter.4_mekanologia.quest2.description3}"
 			]
@@ -211,7 +210,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["019813C5735449BB"]
+			dependencies: [
+				"019813C5735449BB"
+				"64A74170F9CFB70A"
+			]
 			description: [
 				"{ftbquests.chapter.4_mekanologia.quest11.description1}"
 				"{ftbquests.chapter.4_mekanologia.quest11.description2}"
@@ -276,6 +278,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["376E59D9ADCD986B"]
 			id: "58F5A7FF52EDB971"
 			tasks: [{
 				id: "42B1EA2A0C6A8745"
@@ -328,6 +331,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["376E59D9ADCD986B"]
 			id: "66F3746ED884653D"
 			tasks: [{
 				id: "44BB4A4BD06BBEF4"
@@ -338,6 +342,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["376E59D9ADCD986B"]
 			id: "7D008FFC53E0CD02"
 			tasks: [{
 				id: "7EF8AB9A4319B91E"
@@ -434,8 +439,6 @@
 		{
 			dependencies: ["60714ABDF9D43683"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest28.description1}"
-				""
 				"{ftbquests.chapter.4_mekanologia.quest28.description2}"
 				""
 				"{ftbquests.chapter.4_mekanologia.quest28.description3}"
@@ -450,7 +453,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["60714ABDF9D43683"]
+			dependencies: [
+				"60714ABDF9D43683"
+				"7ECA41DE215F4F9A"
+			]
 			description: [
 				"{ftbquests.chapter.4_mekanologia.quest29.description1}"
 				"{ftbquests.chapter.4_mekanologia.quest29.description2}"
@@ -552,8 +558,10 @@
 			dependencies: ["60714ABDF9D43683"]
 			description: [
 				"{ftbquests.chapter.4_mekanologia.quest35.description1}"
+				""
 				"{ftbquests.chapter.4_mekanologia.quest35.description2}"
-				"{ftbquests.chapter.4_mekanologia.quest35.description3}"
+				""
+				"   {ftbquests.chapter.4_mekanologia.quest35.description3}"
 				""
 				"{ftbquests.chapter.4_mekanologia.quest35.description4}"
 				""
@@ -686,6 +694,7 @@
 			dependencies: [
 				"11D60685CEA53B84"
 				"1FA19FA935CE587A"
+				"7C1F6A35AF3BA808"
 			]
 			description: [
 				"{ftbquests.chapter.4_mekanologia.quest46.description1}"
@@ -738,11 +747,18 @@
 		{
 			dependencies: ["11D60685CEA53B84"]
 			id: "29F2529BCD05C523"
-			tasks: [{
-				id: "309B53A8ADE40EDB"
-				item: "ae2:import_bus"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "309B53A8ADE40EDB"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+				{
+					id: "6F138DEB11EF2069"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+			]
 			x: 5.5d
 			y: 0.0d
 		}
@@ -751,7 +767,7 @@
 			id: "3EB7545A62453FFC"
 			tasks: [{
 				id: "06A6D15C6D4A100F"
-				item: "ae2:storage_bus"
+				item: "ae2:interface"
 				type: "item"
 			}]
 			x: 5.5d
@@ -760,11 +776,18 @@
 		{
 			dependencies: ["3674CA2BE4A0DA7A"]
 			id: "2585738C92D5B5FD"
-			tasks: [{
-				id: "11B90E62547246E3"
-				item: "ae2:crafting_terminal"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "11B90E62547246E3"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "3F66CDB28FF5C029"
+					item: "ae2:terminal"
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 2.0d
 		}
@@ -806,7 +829,7 @@
 			id: "3674CA2BE4A0DA7A"
 			tasks: [{
 				id: "78E0463E06D75350"
-				item: "ae2:terminal"
+				item: "ae2:storage_bus"
 				type: "item"
 			}]
 			x: 6.5d
@@ -878,21 +901,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"027EC1E7EE94FEF4"
-				"45A24742CEE97DB3"
-			]
-			id: "20B27B29415D1910"
-			size: 1.5d
-			tasks: [{
-				id: "78D9E210361A35A7"
-				item: "kubejs:osglotronic_control_circuit"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 4.0d
-		}
-		{
 			dependencies: ["2DAA198A9FE1C430"]
 			id: "1DC95B7767355679"
 			size: 1.5d
@@ -905,5 +913,5 @@
 			y: 4.0d
 		}
 	]
-	title: "{ftbquests.chapter.4_mekanologia.title}"
+	title: "&a&l4.&r&r Applied Mekanology"
 }

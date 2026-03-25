@@ -1,7 +1,7 @@
 StartupEvents.registry('item', event => {
-  // LAMINATED ALLOY PLATE
+  // ALUMINUM-STEEL LAMINATED PLATE
   event.create('laminated_alloy_plate')
-    .displayName('Laminated Alloy Plate')
+    .displayName('Aluminum-Steel Laminated Plate')
     .texture('custom:item/laminated_alloy_plate')
 
   // BLAZE GLASS COMPOUND
@@ -32,4 +32,11 @@ StartupEvents.registry('item', event => {
 StartupEvents.registry('item', event => {
   event.create('plate_refined_quartz')
     .displayName('Refined Quartz Plate')
+});
+
+// TITANIUM-OSMIUM LAMINATED PLATE
+StartupEvents.registry('item', event => {
+  event.create('laminated_titanium_osmium_plate')
+    .displayName('Titanium-Osmium Laminated Plate')
+    .texture('custom:item/laminated_titanium_osmium_plate');
 });

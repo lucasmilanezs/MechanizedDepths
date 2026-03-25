@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 
 //ATOMIC RECONSTRUCTOR
 ServerEvents.recipes(event => {
-  event.remove({ id: 'actuallyadditions:atomic_reconstructor' });
+  event.remove({ id: 'actuallyadditions:atomic_reconstructor' })
   event.shaped('actuallyadditions:atomic_reconstructor', [
     'SSS',
     'OCL',
@@ -38,9 +38,26 @@ ServerEvents.recipes(event => {
     O: 'create_new_age:overcharged_golden_wire',
     S: 'immersiveengineering:sheetmetal_steel',
     C: 'actuallyadditions:iron_casing'
-  });
+  })
 });
 
+//COFFEE MACHINE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'actuallyadditions:coffee_machine' });
+  event.shaped(
+    Item.of('actuallyadditions:coffee_machine'),
+    [
+        ' A ',
+        'BCB',
+        'BDB'
+    ],
+    {
+        D: 'minecraft:bucket',
+        A: 'kubejs:token_utility',
+        C: 'immersiveengineering:wirecoil_copper',
+        B: '#forge:plates/aluminum'
+    })
+});
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE 

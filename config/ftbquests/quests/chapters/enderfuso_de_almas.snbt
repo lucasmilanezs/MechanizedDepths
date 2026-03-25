@@ -86,12 +86,13 @@
 				"{ftbquests.chapter.enderfuso_de_almas.quest4.description4}"
 			]
 			id: "380D75C7DC2900B9"
+			subtitle: "The Favorite Ingot of the Author's Favorite Author"
 			tasks: [{
 				id: "1326B3E5880BF79E"
 				item: "enderio:dark_steel_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest4.title}"
+			title: "Hard Enough to Begin"
 			x: -4.0d
 			y: -0.5d
 		}
@@ -227,6 +228,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["01CABE0E1F3B9EDC"]
 			id: "6F08DCFF5C66E621"
 			tasks: [{
 				id: "5F03AE4507A998C7"
@@ -237,6 +239,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["3DD27555EF64CE5A"]
 			id: "6E0941CD567C47CE"
 			tasks: [{
 				id: "4A6F01E47D202698"
@@ -247,18 +250,22 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -3.5d
 		}
 		{
+			dependencies: [
+				"091EF5C74B511DB6"
+				"39D52010864F7BE9"
+			]
 			id: "6E2F5990270F6C13"
 			tasks: [{
 				id: "32275ABED8DA14BD"
 				item: "mob_grinding_utils:fan"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.5d
+			x: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3077BE4A34915897"]
@@ -297,16 +304,6 @@
 			y: -2.5d
 		}
 		{
-			id: "024B16A1C321F0B9"
-			tasks: [{
-				id: "27338A53B51D48DC"
-				item: "mob_grinding_utils:entity_conveyor"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -4.5d
-		}
-		{
 			dependencies: ["01CABE0E1F3B9EDC"]
 			description: [
 				"{ftbquests.chapter.enderfuso_de_almas.quest16.description1}"
@@ -327,14 +324,18 @@
 			y: -2.5d
 		}
 		{
+			dependencies: [
+				"6E0941CD567C47CE"
+				"39D52010864F7BE9"
+			]
 			id: "091EF5C74B511DB6"
 			tasks: [{
 				id: "6C952B765831AC81"
 				item: "mob_grinding_utils:saw"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.5d
+			x: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -366,7 +367,7 @@
 				"01CABE0E1F3B9EDC"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description1}"
+				"   {ftbquests.chapter.enderfuso_de_almas.quest19.description1}"
 				""
 				"{ftbquests.chapter.enderfuso_de_almas.quest19.description2}"
 				""
@@ -518,16 +519,18 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["6E2F5990270F6C13"]
 			id: "519BABFAD0D85F93"
 			tasks: [{
 				id: "2F3A2A73493D8ED9"
 				item: "mob_grinding_utils:fan_upgrade_speed"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.5d
+			x: -3.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["6E2F5990270F6C13"]
 			id: "1E874DCD6F8C79FB"
 			tasks: [{
 				id: "6768CAFB819CA969"
@@ -535,9 +538,10 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
+			dependencies: ["6E2F5990270F6C13"]
 			id: "07ED8FF8B860C228"
 			tasks: [{
 				id: "1826739FD58BEEFF"
@@ -545,9 +549,10 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
+			dependencies: ["091EF5C74B511DB6"]
 			id: "0F6245BA5B6F6F02"
 			tasks: [{
 				id: "3E8B8FA305651BEC"
@@ -555,19 +560,21 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
+			dependencies: ["091EF5C74B511DB6"]
 			id: "318800132938F1A4"
 			tasks: [{
 				id: "0D61BB53D5B176E8"
 				item: "mob_grinding_utils:saw_upgrade_sharpness"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: -4.5d
 		}
 		{
+			dependencies: ["091EF5C74B511DB6"]
 			id: "136E03A830FA397B"
 			tasks: [{
 				id: "2D56E163C4810CC6"
@@ -575,10 +582,13 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["217FB33A7552DD46"]
+			dependencies: [
+				"217FB33A7552DD46"
+				"1DC95B7767355679"
+			]
 			description: [
 				"{ftbquests.chapter.enderfuso_de_almas.quest31.description1}"
 				""
@@ -588,24 +598,47 @@
 				""
 				"{ftbquests.chapter.enderfuso_de_almas.quest31.description4}"
 			]
-			id: "29684A0471198020"
-			tasks: [{
-				id: "394C5E962F825987"
-				item: {
-					Count: 1
-					id: "custommachinery:custom_machine_item"
-					tag: {
-						machine: "custommachinery:neural_agonizer"
-					}
+			icon: {
+				Count: 1
+				id: "custommachinery:custom_machine_item"
+				tag: {
+					machine: "custommachinery:neural_agonizer"
 				}
-				type: "item"
-			}]
+			}
+			id: "29684A0471198020"
+			tasks: [
+				{
+					id: "394C5E962F825987"
+					item: {
+						Count: 1
+						id: "custommachinery:custom_machine_item"
+						tag: {
+							machine: "custommachinery:neural_agonizer"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "036E5C8698D8A5CF"
+					item: {
+						Count: 1
+						id: "kubejs:agony_module"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.enderfuso_de_almas.quest31.title}"
 			x: 1.5d
 			y: -3.5d
 		}
 		{
-			dependencies: ["217FB33A7552DD46"]
+			dependencies: [
+				"217FB33A7552DD46"
+				"1DC95B7767355679"
+			]
 			description: [
 				"{ftbquests.chapter.enderfuso_de_almas.quest32.description1}"
 				""
@@ -615,18 +648,38 @@
 				""
 				"{ftbquests.chapter.enderfuso_de_almas.quest32.description4}"
 			]
-			id: "45AE6F908E9BFEC6"
-			tasks: [{
-				id: "74A777F5DA01F7F2"
-				item: {
-					Count: 1
-					id: "custommachinery:custom_machine_item"
-					tag: {
-						machine: "custommachinery:neurotropic_garden"
-					}
+			icon: {
+				Count: 1
+				id: "custommachinery:custom_machine_item"
+				tag: {
+					machine: "custommachinery:neurotropic_garden"
 				}
-				type: "item"
-			}]
+			}
+			id: "45AE6F908E9BFEC6"
+			tasks: [
+				{
+					id: "74A777F5DA01F7F2"
+					item: {
+						Count: 1
+						id: "custommachinery:custom_machine_item"
+						tag: {
+							machine: "custommachinery:neurotropic_garden"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11D7757D46D35D42"
+					item: {
+						Count: 1
+						id: "kubejs:joy_module"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.enderfuso_de_almas.quest32.title}"
 			x: 1.5d
 			y: -1.5d
@@ -687,7 +740,8 @@
 				"{ftbquests.chapter.enderfuso_de_almas.quest35.description4}"
 				""
 				"{ftbquests.chapter.enderfuso_de_almas.quest35.description5}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description6}"
+				""
+				"   {ftbquests.chapter.enderfuso_de_almas.quest35.description6}"
 				""
 				"{ftbquests.chapter.enderfuso_de_almas.quest35.description7}"
 				""
@@ -728,10 +782,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"02C64D7A8A15D666"
-				"6F08DCFF5C66E621"
-			]
+			dependencies: ["02C64D7A8A15D666"]
 			description: [
 				"{ftbquests.chapter.enderfuso_de_almas.quest37.description1}"
 				""
@@ -787,5 +838,5 @@
 			y: -2.5d
 		}
 	]
-	title: "{ftbquests.chapter.enderfuso_de_almas.title}"
+	title: "&5&l5.&r&r Endercortex"
 }

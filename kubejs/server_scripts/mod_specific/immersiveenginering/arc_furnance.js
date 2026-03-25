@@ -40,11 +40,23 @@ ServerEvents.recipes(event => {
       { item: 'kubejs:inductive_alloy', count: 2 }
     ],
     time: 400,
-    energy: 51200
+    energy: 10000
   });
 });
 
-
+// TITANIUM INGOT
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'immersiveengineering:arc_furnace',
+    input: { item: 'kubejs:titanium_sponge_pure' },
+    additives: [],
+    results: [
+      { item: 'kubejs:ingot_titanium' }
+    ],
+    time: 400,
+    energy: 100000
+  });
+});
 
 // =============== CHANGED RECIPES ===============
 
@@ -63,7 +75,7 @@ ServerEvents.recipes(event => {
       { item: 'enderio:energetic_alloy_ingot' }
     ],
     time: 400,
-    energy: 60000
+    energy: 20000
   });
 });
 

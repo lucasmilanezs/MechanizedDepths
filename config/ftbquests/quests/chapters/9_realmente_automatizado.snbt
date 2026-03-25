@@ -62,7 +62,7 @@
 			rotation: 0.0d
 			width: 1.1d
 			x: 5.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			color: 16769140
@@ -71,7 +71,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 5.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			height: 1.1d
@@ -90,11 +90,82 @@
 			x: 11.0d
 			y: -8.5d
 		}
+		{
+			height: 1.1d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.1d
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			color: 7989732
+			height: 1.0d
+			image: "mekanism:liquid/liquid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			height: 1.1d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.1d
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			color: 13224393
+			height: 1.0d
+			image: "mekanism:liquid/liquid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			height: 1.1d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.1d
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			color: 12973333
+			height: 1.0d
+			image: "mekanism:liquid/liquid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			color: 13224393
+			dependency: "64BEB9EFB2A55EB6"
+			height: 1.0d
+			image: "mekanism:liquid/liquid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependency: "64BEB9EFB2A55EB6"
+			height: 1.1d
+			image: "realms:textures/gui/realms/slot_frame.png"
+			rotation: 0.0d
+			width: 1.1d
+			x: 6.5d
+			y: -2.0d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["51683105E92D2758"]
 			id: "3094DD885DDC65A5"
 			shape: "square"
 			size: 1.2d
@@ -143,7 +214,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["72D368728D4BE109"]
@@ -289,11 +360,11 @@
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: -5.0d
 		}
 		{
-			dependencies: ["7F29B2F38E707B29"]
+			dependencies: ["3CB158BADFEAC6B4"]
 			id: "5C63A5DE6BE82BD4"
 			shape: "square"
 			size: 1.1d
@@ -306,46 +377,39 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["74C3DBD48DCC8417"]
+			dependencies: ["3EBFC563B277B997"]
 			id: "0E84C15719B79465"
 			shape: "square"
-			tasks: [{
-				id: "0BD45FF212E85E39"
-				item: "mekanism:thermal_evaporation_controller"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0BD45FF212E85E39"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5732B7CBE5536E36"
+					item: { Count: 12, id: "mekanism:thermal_evaporation_block" }
+					type: "item"
+				}
+			]
 			x: 5.0d
-			y: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0E84C15719B79465"]
 			id: "23C6C62611743C55"
 			shape: "none"
 			tasks: [{
-				id: "36C8B41D86E83DEE"
+				id: "21A2DF32947C2493"
 				item: "mekanism:brine_bucket"
 				type: "item"
 			}]
 			x: 5.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"5C018F4707C54886"
-				"7F29B2F38E707B29"
-			]
-			id: "46C18B3C06E263C6"
-			shape: "square"
-			tasks: [{
-				id: "2349126490F40F55"
-				item: "kubejs:dust_titanium_dioxide"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["46C18B3C06E263C6"]
+			dependencies: ["5C018F4707C54886"]
 			id: "1ED4B36FCDD0B66A"
 			shape: "square"
 			tasks: [{
@@ -476,6 +540,7 @@
 			dependencies: [
 				"7D88DD6AF8713CF2"
 				"5C63A5DE6BE82BD4"
+				"166A1161F84A91EA"
 			]
 			id: "177E45D188B53265"
 			shape: "gear"
@@ -498,12 +563,20 @@
 			dependencies: [
 				"7839E9C9A012A9F9"
 				"0FDBFB5AFE602B34"
+				"3DB72A02D0731850"
 			]
+			icon: "kubejs:crafting_processor"
 			id: "3D7407849CB4D124"
+			rewards: [{
+				id: "0FB88DAD97AAE814"
+				item: "kubejs:crafting_processor"
+				type: "item"
+			}]
 			shape: "square"
 			tasks: [{
-				id: "3B757C40DE6F696F"
-				item: "kubejs:crafting_processor"
+				count: 32L
+				id: "5BAE58C6089EBA94"
+				item: { Count: 32, id: "kubejs:crafting_tech_card" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -514,25 +587,29 @@
 			id: "17D00E1BD670C22E"
 			shape: "square"
 			tasks: [{
-				id: "1DD5F3E57EA8680C"
-				item: "ae2:interface"
+				id: "2A630315B7BC4DCC"
+				item: "ae2:crafting_card"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"3D7407849CB4D124"
-				"3DB72A02D0731850"
-			]
+			dependencies: ["3D7407849CB4D124"]
 			id: "5610C93424E59A1D"
 			shape: "square"
-			tasks: [{
-				id: "205F1BAE08C3A8C9"
-				item: "ae2:crafting_unit"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "67BAE0A2549AFB4E"
+					item: "ae2:crafting_unit"
+					type: "item"
+				}
+				{
+					id: "201788A8244F9810"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: -8.5d
 		}
@@ -545,7 +622,7 @@
 				item: "ae2:pattern_provider"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: -8.5d
 		}
 		{
@@ -576,10 +653,7 @@
 			y: -10.5d
 		}
 		{
-			dependencies: [
-				"3D7407849CB4D124"
-				"3DB72A02D0731850"
-			]
+			dependencies: ["3D7407849CB4D124"]
 			id: "597A8260F49D96E4"
 			shape: "square"
 			tasks: [{
@@ -613,7 +687,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: -8.5d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -719,10 +793,11 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3094DD885DDC65A5"]
+			description: [""]
 			id: "1501CF550D5686CB"
 			shape: "square"
 			tasks: [{
@@ -735,8 +810,9 @@
 		}
 		{
 			dependencies: [
-				"283FFE1AA6DC422D"
-				"23C6C62611743C55"
+				"7F36BD27BDFB616C"
+				"7F29B2F38E707B29"
+				"1D5BF1DC2E664F83"
 			]
 			icon: {
 				Count: 1
@@ -754,8 +830,9 @@
 				}
 			}
 			id: "5C018F4707C54886"
+			min_required_tasks: 1
 			progression_mode: "linear"
-			shape: "square"
+			shape: "none"
 			tasks: [{
 				id: "60B556B840C1BD63"
 				type: "checkmark"
@@ -770,7 +847,7 @@
 			size: 1.1d
 			tasks: [{
 				id: "6A01FE79BA692AAF"
-				item: "kubejs:ingot_titanium_alloy"
+				item: "kubejs:laminated_titanium_osmium_plate"
 				type: "item"
 			}]
 			x: 9.5d
@@ -778,16 +855,213 @@
 		}
 		{
 			dependencies: ["7EAE2E06DC195CCC"]
+			icon: "mekanism:upgrade_gas"
 			id: "0E210EFBF4AC2F20"
 			shape: "square"
 			tasks: [{
-				id: "13CEA8AB03079B50"
-				item: "minecraft:stripped_oak_log"
+				count: 32L
+				id: "5CC95A7DF1320DC5"
+				item: { Count: 32, id: "kubejs:chemistry_tech_card" }
 				type: "item"
 			}]
 			x: 9.5d
 			y: -10.5d
 		}
+		{
+			dependencies: [
+				"23C6C62611743C55"
+				"283FFE1AA6DC422D"
+			]
+			description: [""]
+			icon: "mekanism:basic_chemical_tank"
+			id: "7F36BD27BDFB616C"
+			shape: "none"
+			tasks: [
+				{
+					id: "25676578798470C2"
+					type: "checkmark"
+				}
+				{
+					id: "776BB782D913D3C1"
+					item: "mekanism:chlorine_bucket"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7785B07145AD88A0"]
+			icon: "kubejs:dust_rutile"
+			id: "1D5BF1DC2E664F83"
+			shape: "square"
+			tasks: [{
+				id: "712AAC2E3486561B"
+				item: "kubejs:dust_rutile"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"64BEB9EFB2A55EB6"
+				"7785B07145AD88A0"
+			]
+			hide_until_deps_complete: true
+			icon: "kubejs:dust_ilmenite"
+			id: "5E656B45AAD75AAB"
+			shape: "gear"
+			tasks: [{
+				id: "3C05DE7C308513F0"
+				item: "kubejs:dust_ilmenite"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["283FFE1AA6DC422D"]
+			icon: "mekanism:basic_chemical_tank"
+			id: "5547875EB7D4E67A"
+			shape: "none"
+			tasks: [
+				{
+					id: "0EAE542429978622"
+					item: "mekanism:hydrogen_bucket"
+					type: "item"
+				}
+				{
+					id: "18617675F3E95884"
+					item: "mekanism:oxygen_bucket"
+					type: "item"
+				}
+				{
+					id: "7146410CF3717459"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5E656B45AAD75AAB"
+				"0486A6C19BEC593F"
+				"5547875EB7D4E67A"
+			]
+			hide_dependency_lines: false
+			hide_until_deps_visible: true
+			id: "119374868A1F75FC"
+			shape: "gear"
+			tasks: [{
+				id: "2BF2D7C0A98C543B"
+				item: "kubejs:dust_titanium_dioxide"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			id: "7785B07145AD88A0"
+			shape: "square"
+			tasks: [
+				{
+					id: "248E995FBD0F8C0C"
+					item: "kubejs:basalt_cluster"
+					type: "item"
+				}
+				{
+					id: "2FA3F47561356C4A"
+					item: "kubejs:obsidian_cluster"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7785B07145AD88A0"]
+			icon: "kubejs:dust_ilmenite"
+			id: "64BEB9EFB2A55EB6"
+			shape: "gear"
+			tasks: [{
+				id: "4479157B28A0949D"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7F29B2F38E707B29"
+				"5547875EB7D4E67A"
+			]
+			id: "3CB158BADFEAC6B4"
+			shape: "square"
+			tasks: [
+				{
+					id: "505C2C885B2D8E54"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+				{
+					id: "7110B83149112ACA"
+					item: "mekanism:substrate"
+					type: "item"
+				}
+				{
+					id: "4284C0ED878C98F4"
+					item: "mekanism:hdpe_pellet"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["64BEB9EFB2A55EB6"]
+			hide_until_deps_complete: true
+			id: "0486A6C19BEC593F"
+			shape: "none"
+			tasks: [{
+				id: "1B2F5868695DA416"
+				item: "kubejs:acidic_flux_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1501CF550D5686CB"]
+			id: "3EBFC563B277B997"
+			shape: "square"
+			tasks: [{
+				id: "18C9A86D2D364198"
+				item: "kubejs:thermal_sensor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"  Some items in this pack are intended to be locked behind the research mechanic — meaning their recipes shouldn't be visible in JEI, and crafting them outright shouldn't be possible until you've unlocked that technology by spending Tech Cards."
+				""
+				"  For now, during the playtest, recipes are left visible and craftable regardless of research progress — opacity is disabled so you can explore the full progression freely. In the final experience, recipes will only become visible and executable once you've purchased that tech tier. Keep that in mind when giving feedback!"
+			]
+			icon: "rftoolsbase:manual"
+			id: "166A1161F84A91EA"
+			shape: "diamondtier"
+			tasks: [{
+				id: "625AE2C98F44A7FC"
+				type: "checkmark"
+			}]
+			title: "GameStaging!"
+			x: 5.0d
+			y: -8.5d
+		}
 	]
-	title: "{ftbquests.chapter.9_realmente_automatizado.title}"
+	title: "&2&l8.&r&r Actually Automated"
 }

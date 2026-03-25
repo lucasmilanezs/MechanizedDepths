@@ -89,7 +89,7 @@
   "blockTagInheritanceMode": "ALLOW",
   "blockTagInheritance": {},
   "ignoredTags": ["forge:dusts/obsidian"],
-  "ignoredItems": [],
+  "ignoredItems": ["mekanism:block_steel"],
   "ignoredRecipeTypes": [
     "cucumber:shaped_tag"
   ],

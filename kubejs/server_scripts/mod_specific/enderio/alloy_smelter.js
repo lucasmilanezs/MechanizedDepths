@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 // FLESH COMPOUND
 ServerEvents.recipes(event => {
   event.recipes.enderio.alloy_smelting(
-      Item.of("kubejs:flesh_compound"),
+      Item.of("4x kubejs:flesh_compound"),
       [Ingredient.of("enderio:end_steel_ingot"), "4x minecraft:rotten_flesh", "enderio:soularium_ingot"]
   ).energy(10000).experience(3);
 });

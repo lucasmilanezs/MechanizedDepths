@@ -97,6 +97,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"1E7A8B399C39BF92"
+				"171975C11B49B098"
+			]
 			description: [
 				"  Just a simple box. Cheap wood, no flair, no attempt to look important. The Pity Machine Frame is intentionally underwhelming — and very aware of it."
 				""
@@ -190,6 +194,7 @@
 		}
 		{
 			dependencies: ["39B08A02E1FEEA3A"]
+			description: [""]
 			id: "67DAC614C592EC24"
 			tasks: [{
 				id: "53B858E1E9A78845"
@@ -264,7 +269,7 @@
 				""
 				"  If your system can’t keep up, the compressor will let you know. &4Loudly.&r Permanently."
 				""
-				"  Before pushing it further, make sure you understand where that air is going. For deeper control, diagnostics, and smarter setups, check the &9Parallel Protocols&r UT chapter."
+				"  Before pushing it further, make sure you understand where that air is going. For deeper control, diagnostics, and smarter setups, check the &9Parallel Protocols&r &cTECH&r chapter."
 				""
 				"&7&o— If you hear hissing, you’re fine. If you hear nothing… you’re about to learn.&r&r"
 			]
@@ -291,13 +296,14 @@
 				"&7&o— Nothing says “precision engineering” like weaponized air.&r&r"
 			]
 			id: "6EFA2DC8F8F51431"
+			shape: "square"
 			tasks: [{
 				id: "2A07921AD296D724"
 				item: "pneumaticcraft:pressure_chamber_wall"
 				type: "item"
 			}]
 			title: "Contained Violence"
-			x: -10.5d
+			x: -12.0d
 			y: 1.5d
 		}
 		{
@@ -333,7 +339,7 @@
 					type: "item"
 				}
 			]
-			title: "Black Alchemy"
+			title: "Dark Alchemy"
 			x: -9.0d
 			y: 4.5d
 		}
@@ -414,11 +420,18 @@
 				"&7&o— Turns out heat needs plumbing too. Who knew.&r&r"
 			]
 			id: "140F02A225A72911"
-			tasks: [{
-				id: "736FAB3A6DB78159"
-				item: "pneumaticcraft:heat_sink"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "736FAB3A6DB78159"
+					item: "pneumaticcraft:heat_sink"
+					type: "item"
+				}
+				{
+					id: "7F3A13B5D5EDCC7E"
+					item: "pneumaticcraft:heat_pipe"
+					type: "item"
+				}
+			]
 			title: "Moving the Invisible"
 			x: -10.5d
 			y: 3.0d
@@ -428,7 +441,15 @@
 			description: [
 				"  This is it. Actual plastic."
 				""
-				"  The process is refreshingly direct: combine LPG with coal — or biodiesel with charcoal — apply heat up to 100 °C, and watch molten plastic take shape. No tricks, no hidden mechanics. Just chemistry doing its job."
+				"  The process is refreshingly direct, you can combine: "
+				""
+				"  &l&eLPG&r&r + &l&0COAL&r&r"
+				""
+				"  or "
+				""
+				"  &l&6BIODISEL&r&r + &l&8CHARCOAL&r&r"
+				""
+				"  Apply heat up to 100 °C, and watch molten plastic take shape. No tricks, no hidden mechanics. Just chemistry doing its job."
 				""
 				"  If you chose to steal fuel from the Biodiesel Generator, there’s little to worry about beyond its constant hunger. It works, it’s stable, and yes… it’s the coward’s route. No judgment. Mostly."
 				""
@@ -457,10 +478,11 @@
 				""
 				"  Let’s be honest, though. Nobody enjoys this."
 				""
-				"  Thankfully, there’s an alternative. Thermal’s Blast Chiller offers a far simpler solution: liquid plastic, a mold, and cold generated purely through energy. No thermal balancing, no patience, no sprawling infrastructure. Just abstraction doing what abstraction does best."
+				"  Thankfully, there’s an alternative. Thermal’s &9Blast Chiller&r offers a far simpler solution: liquid plastic, a mold, and cold generated purely through energy. No thermal balancing, no patience, no sprawling infrastructure. Just abstraction doing what abstraction does best."
 				""
 				"  This time, the chiller isn’t the coward’s choice."
-				"It’s the sane one."
+				""
+				"  It’s the sane one."
 				""
 				"&7&o— Sometimes efficiency isn’t cheating. It’s mercy.&r&r"
 			]
@@ -471,7 +493,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["056B1AD0D593B4D6"]
@@ -493,13 +515,13 @@
 				type: "item"
 			}]
 			title: "Air Has Somewhere to Go"
-			x: -10.5d
+			x: -12.0d
 			y: 0.5d
 		}
 		{
 			dependencies: [
-				"0560C98A35585F66"
 				"65F23778D3D2A835"
+				"2022E4E5370102AA"
 			]
 			id: "397EB373679BD67D"
 			tasks: [{
@@ -561,6 +583,7 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["1E7A8B399C39BF92"]
 			description: [
 				"  Compressed Iron is not refined. It’s coerced."
 				""
@@ -577,28 +600,8 @@
 				type: "item"
 			}]
 			title: "Compressed the Hard Way"
-			x: -10.5d
+			x: -12.0d
 			y: -0.5d
-		}
-		{
-			id: "1A9D6F3969B07C8C"
-			tasks: [{
-				id: "37310AB2B45BDF6E"
-				item: "industrialforegoing:enchantment_extractor"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 2.0d
-		}
-		{
-			id: "52CD9D51508EBA6B"
-			tasks: [{
-				id: "67F4399A3D10525B"
-				item: "apotheosis:infused_hellshelf"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -718,7 +721,6 @@
 			dependencies: [
 				"6D2B708A05F20CD4"
 				"2001C5EFE3CBF9A1"
-				"1EA2B973E7F2EFED"
 			]
 			id: "72CA59F2F217C71B"
 			tasks: [{
@@ -755,7 +757,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["7B1A240B12E94CAC"]
+			dependencies: ["6EFA2DC8F8F51431"]
 			id: "1EA2B973E7F2EFED"
 			shape: "none"
 			tasks: [{
@@ -765,17 +767,6 @@
 			}]
 			x: -12.0d
 			y: 6.0d
-		}
-		{
-			dependencies: ["6EFA2DC8F8F51431"]
-			id: "7B1A240B12E94CAC"
-			tasks: [{
-				id: "04D45B95773D0EAB"
-				item: "minecraft:stripped_oak_wood"
-				type: "item"
-			}]
-			x: -12.0d
-			y: 1.5d
 		}
 		{
 			dependencies: ["2022E4E5370102AA"]
@@ -790,6 +781,8 @@
 			]
 			icon: "pneumaticcraft:amadron_tablet"
 			id: "3E7FB41AD37DD388"
+			shape: "gear"
+			size: 1.2d
 			subtitle: "Trading is boring."
 			tasks: [
 				{
@@ -819,6 +812,7 @@
 			]
 			icon: "pneumaticcraft:uv_light_box"
 			id: "5D7E1AABCDCBC2AB"
+			shape: "square"
 			tasks: [
 				{
 					id: "38E7F64F18B455EA"
@@ -835,7 +829,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["5D7E1AABCDCBC2AB"]
+			dependencies: [
+				"5D7E1AABCDCBC2AB"
+				"1EA2B973E7F2EFED"
+			]
 			description: [
 				"  Another step in the chain that you’ll be able to skip soon enough."
 				""
@@ -846,6 +843,7 @@
 				"&7&o— No mystery here. Just acid and patience.&r&r"
 			]
 			id: "6D2B708A05F20CD4"
+			shape: "square"
 			tasks: [{
 				id: "23FE44F6177D87A2"
 				item: "pneumaticcraft:etching_tank"
@@ -882,5 +880,5 @@
 			y: 10.5d
 		}
 	]
-	title: "{ftbquests.chapter.engenharia_industrial_e_mekanofludica.title}"
+	title: "&d&l7.&r&r Pressure and... &dPink Slime?&r"
 }

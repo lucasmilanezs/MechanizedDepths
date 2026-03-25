@@ -262,6 +262,43 @@ ServerEvents.recipes(event => {
     });
 });
 
+//SEQUENTIAL FABRICATOR
+ServerEvents.recipes(event => {
+  event.remove({ output: 'thermal:machine_crafter' });
+  event.shaped(
+    Item.of('thermal:machine_crafter'),
+    [
+        ' A ',
+        'BCB',
+        'DED'
+    ],
+    {
+        A: 'minecraft:crafting_table',
+        D: 'thermal:lead_gear',
+        B: 'kubejs:laminated_alloy_plate',
+        C: 'thermal:machine_frame',
+        E: 'thermal:rf_coil'
+    })
+});
+
+// COMPONENT ASSEMBLY
+ServerEvents.recipes(event => {
+  event.remove({ id: 'thermal_extra:crafting/component_assembly' });
+  event.shaped(
+      Item.of('thermal_extra:component_assembly'),
+      [
+          'ABA',
+          'CDC',
+          'EEE'
+      ],
+      {
+          D: 'actuallyadditions:iron_casing',
+          E: 'kubejs:organic_polymer_mesh',
+          C: 'create:mechanical_arm',
+          A: 'mekanism:elite_control_circuit',
+          B: 'thermal:machine_crafter'
+      })
+});
 //====================COMPATIBILITY RECIPES==================
 
 

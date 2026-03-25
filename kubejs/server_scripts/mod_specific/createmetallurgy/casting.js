@@ -5,6 +5,29 @@
 
 //====================CUSTOM RECIPES==================
 
+// OBDURIUM INGOT
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'createmetallurgy:casting_in_table',
+    conditions: [
+      {
+        type: 'forge:not',
+        value: {
+          type: 'forge:tag_empty',
+          tag: 'forge:ingots/obdurium'
+        }
+      }
+    ],
+    ingredients: [
+      { item: 'thermal:chiller_ingot_cast' },
+      { amount: 90, fluid: 'createmetallurgy:molten_obdurium', nbt: {} }
+    ],
+    processingTime: 60,
+    result: {
+      item: 'createmetallurgy:obdurium_ingot'
+    }
+  }).id('kubejs:createmetallurgy/casting/obdurium_ingot');
+});
 
 
 //====================CHANGED RECIPES==================
@@ -119,6 +142,6 @@ ServerEvents.recipes(event => {
     }
   }).id('kubejs:createmetallurgy/casting/titanium_ingot');
 });
-//====================COMPATIBILITY RECIPES==================
+//====================COMPATIBILITY RECIPES===================
 
 //RECIPE NAME

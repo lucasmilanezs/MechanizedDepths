@@ -17,8 +17,6 @@ ItemEvents.rightClicked('kubejs:liquid_love_bucket', event => {
   event.server.scheduleInTicks(1, () => {
     player.give('kubejs:demonic_love');
     });
-
-  // Efeitos visuais e sonoros opcionais
   const { x, y, z } = target;
   event.server.runCommandSilent(`particle heart ${x} ${y + 1.2} ${z} 0.5 0.5 0.5 0 20 normal @a`);
   event.level.playSound(null, x, y, z, 'minecraft:entity.player.levelup', 'players', 0.8, 1.2);

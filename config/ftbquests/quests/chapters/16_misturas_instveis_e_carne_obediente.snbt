@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "16_misturas_instveis_e_carne_obediente"
@@ -6,21 +7,47 @@
 	id: "13A5B3BF92F37762"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "1591E87078B0EC44"
-		tasks: [{
-			id: "0B141125CEEAD090"
-			item: {
-				Count: 1
-				id: "custommachinery:custom_machine_item"
-				tag: {
-					machine: "custommachinery:alloy_maw"
+	quests: [
+		{
+			id: "1591E87078B0EC44"
+			tasks: [{
+				id: "0B141125CEEAD090"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:alloy_maw"
+					}
 				}
-			}
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			id: "0B2F3BD717AFC5A2"
+			tasks: [{
+				id: "520D614570BD2B14"
+				item: {
+					Count: 1
+					id: "hexerei:book_of_shadows"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			id: "26331A1728AFEFBE"
+			tasks: [{
+				id: "688E88952E75D495"
+				item: "biomancy:bio_forge"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+	]
 	title: "{ftbquests.chapter.16_misturas_instveis_e_carne_obediente.title}"
 }

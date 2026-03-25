@@ -3,18 +3,31 @@
 	"machine": "custommachinery:neurotropic_garden",
 	"time": 150,
 	"requirements": [
-        		{
+        {
+			"type": "custommachinery:item",
+			"item": "kubejs:joy_module",
+			"amount": 1,
+			"chance": 0,
+			"mode": "input",
+			"slot": "input1"
+		},
+        {
 			"type": "custommachinery:durability",
 			"item": "kubejs:overthinker_cell",
 			"amount": 1,
-			"mode": "input"
+			"mode": "input",
+			"slot": "input2"
 		},
 		{
 			"type": "custommachinery:fluid",
 			"fluid": "kubejs:liquid_joy",
 			"amount": 250,
 			"mode": "output"
+		},
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 200,
+			"mode": "input"
 		}
-
 	]
 }

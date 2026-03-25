@@ -69,6 +69,16 @@ ServerEvents.recipes(event => {
   ).id('kubejs:mixing/monosilicon');
 });
 
+// LIQUID OBSESSION 
+ServerEvents.recipes((event) => {
+  event.recipes.create.mixing(
+    Fluid.of('kubejs:liquid_obsession', 1000),
+    [
+      Fluid.of('kubejs:liquid_love', 500),
+      Fluid.of('kubejs:liquid_fear', 500)
+    ]
+  ).id('kubejs:mixing/liquid_obsession');
+});
 
 //====================CHANGED RECIPES==================
 

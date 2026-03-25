@@ -55,4 +55,37 @@ ServerEvents.recipes(event => {
       event.remove({ output: `minecraft:${m}_${t}`, type: 'minecraft:crafting_shaped' })
     }
   }
-})
+});
+
+// CRAFTING TABLE
+ServerEvents.recipes(event => {
+    event.shaped(
+        Item.of('minecraft:crafting_table'),
+        [
+            'ABA',
+            'B B',
+            'ABA'
+        ],
+        {
+            A: '#minecraft:planks',
+            B: 'minecraft:stick'
+        });
+});
+
+// PISTON
+ServerEvents.recipes(event => {
+    event.remove({ id: 'minecraft:piston' });
+    event.shaped(
+        Item.of('minecraft:piston'),
+        [
+            'AAA',
+            'BCB',
+            'BDB'
+        ],
+        {
+            C: 'alltheores:iron_rod',
+            D: 'kubejs:rudimentary_redstone_component',
+            B: 'minecraft:cobblestone',
+            A: 'minecraft:oak_planks'
+        })
+});

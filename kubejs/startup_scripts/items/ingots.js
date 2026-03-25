@@ -118,13 +118,9 @@ StartupEvents.registry('item', event => {
 StartupEvents.registry('item', event => {
   event.create('meattherial')
     .displayName('Meattherial™')
-    .tooltip([
-      'Soft, volatile, and faintly pulsing.', 
-      'Almost edible.',
-      '',
-      '§7A new line of technical nutrition with 0% guilt,',
-      '§7and 100% soul. Now with flavor!'
-    ])
+    .tooltip(
+      'Soft, volatile, and faintly pulsing.\n Almost edible.\n\n §7A new line of technical nutrition with 0% guilt §7and 100% soul.\n Now with flavor!'
+    )
     .texture('custom:item/meattherial')
 });
 

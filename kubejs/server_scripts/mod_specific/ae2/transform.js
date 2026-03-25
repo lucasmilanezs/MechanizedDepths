@@ -35,6 +35,22 @@ ServerEvents.recipes(event => {
   }).id("kubejs:ae2/transform/gold_nugget_from_gravel_valid");
 });
 
+ServerEvents.recipes(event => {
+  event.custom({
+    type: "ae2:transform",
+    circumstance: { type: "fluid", tag: "minecraft:water" },
+    ingredients: [
+      { item: "kubejs:quest_book_1" },
+      { item: "minecraft:crafting_table" }
+    ],
+    result: {
+      item: "custommachinery:custom_machine_item",
+      nbt: {
+        machine: "custommachinery:ore_bench",
+      }
+    }
+  }).id("kubejs:ae2/transform/ore_bench");
+});
 
 //====================CHANGED RECIPES==================
 

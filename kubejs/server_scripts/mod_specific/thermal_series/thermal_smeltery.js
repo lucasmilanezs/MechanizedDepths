@@ -3,7 +3,7 @@
 
 //=========================CUSTOM RECIPES=========================
 
-// TITANIUM ALLOY]
+// TITANIUM ALLOY
 ServerEvents.recipes(event => {
   event.custom({
     type: 'thermal:smelter',

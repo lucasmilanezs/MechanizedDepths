@@ -33,18 +33,33 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'), 
     [
-      'BPB',
-      'WGW',
-      ' D '
+      'GGG',
+      'BBB',
+      'PPP'
     ],
     {
       B: 'kubejs:blazing_steel',
       P: 'minecraft:paper',
-      W: 'immersiveengineering:treated_wood_horizontal',
-      G: 'immersiveengineering:ingot_hop_graphite',
-      D: 'immersiveengineering:blue_dye'
+      G: 'immersiveengineering:ingot_hop_graphite'
     }
-  );
+);
+});
+
+// KINETIC DYNAMO
+ServerEvents.recipes(event => {
+  event.remove({ id: 'immersiveengineering:crafting/dynamo' });
+  event.shaped('immersiveengineering:dynamo',
+    [
+        'ABA',
+        'CDC',
+        'ACA'
+    ],
+    {
+        C: 'kubejs:rudimentary_redstone_component',
+        B: 'immersiveengineering:component_iron',
+        D: 'immersiveengineering:coil_lv',
+        A: '#forge:plates/steel'
+    })
 });
 
 // PRECISION MATRIX CORE
@@ -58,7 +73,7 @@ ServerEvents.recipes(event => {
     C: 'immersiveengineering:circuit_board',
     Q: 'thermal:quartz_dust',
     R: 'immersiveengineering:component_electronic_adv'
-  });
+  })
 });
 
 //==================CHANGED RECIPES==================
@@ -99,21 +114,9 @@ ServerEvents.recipes(event => {
 ], {
   S: 'immersiveengineering:waterwheel_segment',
   C: 'immersiveengineering:component_iron'
+})
 });
-// DYNAMO
-  event.remove({ output: 'immersiveengineering:dynamo' });
-  event.shaped('immersiveengineering:dynamo', [
-    ' I ',
-    'RMR',
-    'SCS'
-  ], {
-    I: 'minecraft:copper_ingot',
-    M: 'immersiveengineering:component_iron',
-    R: 'minecraft:redstone',
-    C: 'immersiveengineering:coil_lv',
-    S: 'immersiveengineering:ingot_steel'
-  });
-});
+
 // REINFORCED BLAST BRICK
 ServerEvents.recipes(event => {
   event.remove({ output: 'immersiveengineering:blastbrick_reinforced' });

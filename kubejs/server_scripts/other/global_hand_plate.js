@@ -13,7 +13,9 @@ ServerEvents.recipes(event => {
     { input: '#forge:ingots/invar', output: 'thermal:invar_plate' },
     { input: '#forge:ingots/signalum', output: 'thermal:signalum_plate' },
     { input: '#forge:ingots/lumium', output: 'thermal:lumium_plate' },
-    { input: '#forge:ingots/enderium', output: 'thermal:enderium_plate' }
+    { input: '#forge:ingots/enderium', output: 'thermal:enderium_plate' },
+    { input: '#forge:ingots/refined_quartz', output: 'kubejs:plate_refined_quartz' },
+    { input: '#forge:ingots/titanium', output: 'kubejs:plate_titanium' }
   ];
 
   const hammers = [

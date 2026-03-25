@@ -1,7 +1,7 @@
 {
 	"type": "custommachinery:custom_machine",
 	"machine": "custommachinery:neural_agonizer",
-	"time": 20,
+	"time": 150,
 	"requirements": [
         		{
 			"type": "custommachinery:durability",
@@ -20,7 +20,11 @@
 			"fluid": "kubejs:liquid_agony",
 			"amount": 250,
 			"mode": "output"
+		},
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 200,
+			"mode": "input"
 		}
-
 	]
 }

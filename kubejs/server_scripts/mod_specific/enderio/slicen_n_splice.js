@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
       "enderio:basic_capacitor",
       "enderio:end_steel_ingot"
     ]
-  ).energy(8000); // Ajuste conforme o pacing desejado
+  ).energy(8000);
 });
 
 //BLANK SYNAPTIC INTERFACE — Slice 'n Splice
@@ -56,8 +56,24 @@ ServerEvents.recipes(event => {
       "enderio:basic_capacitor",
       "kubejs:flesh_compound"
     ]
-  ).energy(8000); // Ajuste conforme o pacing desejado
+  ).energy(8000);
 });
+
+//OVERTHINKER CELL
+ServerEvents.recipes(event => {
+  event.recipes.enderio.slicing(
+    Item.of("kubejs:overthinker_cell"),
+    [
+      "#forge:plates/invar",
+      "enderio:z_logic_controller",
+      "#forge:plates/invar",
+      "enderio:basic_capacitor",
+      "kubejs:redstone_component",
+      "enderio:basic_capacitor"
+    ]
+  ).energy(10000);
+});
+
 
 //====================CHANGED RECIPES==================
 

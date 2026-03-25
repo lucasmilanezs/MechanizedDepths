@@ -1,8 +1,6 @@
 global.MDBook = global.MDBook || {}
 var MDBook = global.MDBook
 
-console.log('[MDBook] loading interaction: chapter1.crafting_table')
-
 MDBook.defer(function () {
   console.log('[MDBook] registering interaction: chapter1.crafting_table')
 

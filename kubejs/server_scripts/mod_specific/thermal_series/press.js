@@ -11,8 +11,8 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'thermal:press',
     ingredients: [
-      { item: 'immersiveengineering:plate_steel' },
-      { item: 'minecraft:glass_pane' }
+      { tag: 'forge:plates/steel' },
+      { tag: 'forge:plates/aluminum' }
     ],
     result: { item: 'kubejs:laminated_alloy_plate' },
     energy: 2400
@@ -40,6 +40,45 @@ ServerEvents.recipes(event => {
     energy: 2400
   });
 });
+
+//TITANIUM-OSMIUM LAMINATED PLATE
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [
+      { item: 'kubejs:plate_titanium' },
+      { tag: 'forge:plates/osmium' }
+    ],
+    result: { item: 'kubejs:laminated_titanium_osmium_plate' },
+    energy: 5000
+  });
+});
+
+//TITANIUM PLATE
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [
+      { item: 'kubejs:ingot_titanium' }
+    ],
+    result: { item: 'kubejs:plate_titanium' },
+    energy: 2400
+  });
+});
+
+//TITANIUM ROD
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [
+      { item: 'kubejs:ingot_titanium' },
+      { item: 'thermal_extra:press_rod_die' }
+    ],
+    result: { item: 'kubejs:rod_titanium', count: 2 },
+    energy: 2400
+  });
+});
+
 //====================CHANGED RECIPES==================
 
 //RECIPE NAME

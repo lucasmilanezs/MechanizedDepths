@@ -45,8 +45,6 @@ ServerEvents.recipes((event) => {
   });
 });
 
-//
-
 // SYNAPTIC INTERFACE ( agony )
 ServerEvents.recipes((event) => {
   event.custom({
@@ -68,7 +66,7 @@ ServerEvents.recipes((event) => {
   event.custom({
     type: 'thermal:bottler',
     ingredients: [
-      { tag: 'forge:ingots/steel' },
+      { tag: 'forge:ingots/silver' },
       { fluid: 'thermal:redstone', amount: 450 }
     ],
     result: { item: 'extendedcrafting:redstone_ingot' },

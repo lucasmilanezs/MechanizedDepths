@@ -32,7 +32,7 @@ MDBook.State = {
   hasSeen: function (player, id) { return !!this.playerRoot(player).seen[id] },
   markSeen: function (player, id) { this.playerRoot(player).seen[id] = true },
 
-  // ✅ novo: por sessão (runtime)
+  // novo: por sessão (runtime)
   hasSeenThisSession: function (player, id) {
     var root = this.playerRoot(player)
     return root.sessionSeen[id] === MDBook.sessionId
