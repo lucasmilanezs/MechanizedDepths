@@ -102,17 +102,17 @@ ServerEvents.commandRegistry(function (event) {
       )
 
       // --- /mdbook list -------------------------------------------------------
-      .then(
-        Commands.literal('list')
-          .executes(function (ctx) {
-            var arr = MDBook.Registry ? MDBook.Registry.all() : []
-            ctx.source.sendSuccess(Text.of('[MDBook] registradas: ' + arr.length), false)
-            for (var i = 0; i < arr.length; i++) {
-              ctx.source.sendSuccess(Text.of('  ' + arr[i].id + ' [' + arr[i].kind + ']'), false)
-            }
-            return 1
-          })
-      )
+          .then(
+            Commands.literal('list')
+              .executes(function (ctx) {
+                var arr = MDBook.Registry ? MDBook.Registry.all() : []
+                ctx.source.sendSuccess(Text.of('[MDBook] Total interactions: ' + arr.length), false)
+                for (var i = 0; i < arr.length; i++) {
+                  ctx.source.sendSuccess(Text.of('  ' + arr[i].id + ' [' + arr[i].kind + ']'), false)
+                }
+                return 1
+              })
+          )
 
       // --- /mdbook resetSeen <id|all> -----------------------------------------
       .then(

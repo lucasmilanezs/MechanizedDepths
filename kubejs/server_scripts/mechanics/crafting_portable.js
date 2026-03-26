@@ -165,6 +165,10 @@ ItemEvents.rightClicked('kubejs:packed_gravel', event => {
 //   }
 // });
 
+ItemEvents.rightClicked('kubejs:quest_book_1', event => {
+  event.player.runCommandSilent('ftbquests open_book')
+})
+
 ItemEvents.rightClicked('kubejs:torn_page', e => {
   e.player.persistentData.book_pages_uses = 0
   e.player.tell('counter resetado')
@@ -172,7 +176,7 @@ ItemEvents.rightClicked('kubejs:torn_page', e => {
 
 // kubejs/server_scripts/book_pages_punishments_refund.js
 
-const BOOK_ITEM_ID      = 'minecraft:stick';
+const BOOK_ITEM_ID      = 'kubejs:quest_book_1';
 const PAGE_ID           = 'kubejs:torn_page';     // páginas exclusivas deste craft
 const RECIPE_ID         = 'kubejs:book_to_pages';
 const PAGES_PER         = 3;                      // por craft
@@ -203,10 +207,10 @@ ItemEvents.crafted(PAGE_ID, event => {
 
   if (over === 1) { // atingiu o limite
     p.potionEffects.add('minecraft:instant_damage', 1, 0);
-    p.tell('§cI warned you not to abuse this.');
+    p.tell('§c—I warned you not to abuse this.');
     event.server.runCommandSilent(`clear ${p.username} ${PAGE_ID} ${PAGES_TO_REMOVE}`);
   } else if (over === 2) { // primeira acima do limite
-    p.tell('§cYou don\'t learn, do you?');
+    p.tell('§c—You don\'t learn, do you?');
     p.potionEffects.add('minecraft:darkness', DARKNESS_TICKS, 1);
     // som de caverna (variação aleatória do pool)
     p.playSound('minecraft:ambient.cave', 1.0, 1.0);
@@ -215,7 +219,7 @@ ItemEvents.crafted(PAGE_ID, event => {
       p.potionEffects.add('minecraft:instant_damage', 1, 1); // dano mais forte
     });
   } else if (over === 3) { // segunda acima do limite
-    p.tell('§cDude — that page actually had content. Give you a hand and you want the whole arm.');
+    p.tell('§c—Dude... that page actually had content. Stop.');
     event.server.runCommandSilent(`clear ${p.username} ${PAGE_ID} ${PAGES_TO_REMOVE}`);
     p.give(Item.of(SPECIAL_REWARD_ID, 1));
   } else if (over >= 4) { // terceira e seguintes

@@ -76,8 +76,8 @@
 				type: "command"
 			}]
 			tasks: [{
-				elapsedTime: 300L
-				id: "45C308F6F6BFE5A2"
+				elapsedTime: 600L
+				id: "479EF0350667DE25"
 				type: "questsadditions:time"
 			}]
 			title: "Scheduler!"

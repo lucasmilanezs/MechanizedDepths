@@ -40,17 +40,17 @@ ServerEvents.recipes(event => {
   }).id('kubejs:foundry_lid');
 })
 
-ServerEvents.recipes(event => {
-  event.remove({ id: 'createmetallurgy:crafting/content/glassed_foundry_lid' });
-  event.shaped('createmetallurgy:glassed_foundry_lid', [
-    'ABA',
-    'G G'
-  ], {
-    A: 'createmetallurgy:tungsten_ingot',
-    B: 'kubejs:meattherial',
-    G: 'kubejs:vitrified_obsidian'
-  }).id('kubejs:glassed_foundry_lid');
-})
+// ServerEvents.recipes(event => {
+//   event.remove({ id: 'createmetallurgy:crafting/content/glassed_foundry_lid' });
+//   event.shaped('createmetallurgy:glassed_foundry_lid', [
+//     'ABA',
+//     'G G'
+//   ], {
+//     A: 'createmetallurgy:tungsten_ingot',
+//     B: 'kubejs:meattherial',
+//     G: 'kubejs:vitrified_obsidian'
+//   }).id('kubejs:glassed_foundry_lid');
+// })
 
 // BLAZING COMPOSITE
 ServerEvents.recipes(event => {

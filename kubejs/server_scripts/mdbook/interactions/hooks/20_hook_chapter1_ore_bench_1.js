@@ -15,7 +15,7 @@ MDBook.defer(function () {
       var s = ctx.server
       s.scheduleInTicks(20*10, function() {
         p.give('kubejs:quest_book_1')
-        p.tell("§7— I told you. I'm alright! Not a single scratch.")
+        p.tell("§7— Gosh, I'm awesome, aren't I? §r")
         s.runCommandSilent('playsound custom:damage_dark master ' + p.username + ' ' + p.x + ' ' + p.y + ' ' + p.z + ' 1.0 1.0')
       })
     }

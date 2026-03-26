@@ -1,7 +1,7 @@
 # Structure registry dump
 # Minecraft: 1.20.1
 # Entries: 52
-# Generated: 2026-03-25T16:21:25.1032328-03:00
+# Generated: 2026-03-25T17:09:50.0726899-03:00
 
 ae2:meteorite 16
 apotheosis:tower_leaf 39
