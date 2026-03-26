@@ -1,7 +1,11 @@
 # ⚙️ Modpack Project — WIP
 
 > A technical-narrative Minecraft modpack focused on infrastructure, symbolic progression, and high-tier automation.
-![paisagem-mecha](kubejs/assets/custom/gui/menu/paisagem-mecha.png)
+---
+<p align="center">
+  <img src="assets/imagem.png" alt="MechanizedDepths"/>
+</p>
+![paisagem-mecha](kubejs/assets/custom/textures/gui/menu/paisagem-mecha.png)
 
 ## 📦 Overview
 
