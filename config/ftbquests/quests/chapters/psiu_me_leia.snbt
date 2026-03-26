@@ -164,6 +164,11 @@
 			]
 			icon: "minecraft:recovery_compass"
 			id: "558AD48F5D4237AC"
+			rewards: [{
+				id: "0073E33AF08294C9"
+				item: "kubejs:quest_book_1"
+				type: "item"
+			}]
 			shape: "netheritetier"
 			size: 2.0d
 			tasks: [{
@@ -191,7 +196,7 @@
 			]
 			id: "565979255D303596"
 			rewards: [{
-				id: "0073E33AF08294C9"
+				id: "3AFCE7B6565FF9F0"
 				item: "minecraft:cherry_sapling"
 				type: "item"
 			}]
