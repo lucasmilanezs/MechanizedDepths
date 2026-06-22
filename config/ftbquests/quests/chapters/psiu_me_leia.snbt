@@ -177,7 +177,7 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.psiu_me_leia.quest1.title}"
-			x: -11.0d
+			x: -12.0d
 			y: -1.0d
 		}
 		{
@@ -188,7 +188,7 @@
 			description: [
 				"  Stop for a moment and think: have you ever wondered how four wooden planks suddenly become a magic workbench with the ability to unite nine components? This table is your true first altar, the heart of all creation, and perhaps the game’s oldest cosmic joke."
 				""
-				"  To build it, plant a &asapling&r at the center of the ritual. Place &64 planks&r on the surrounding stands and dance for it a little. Yes, crouch repeatedly like a lunatic. Once it grows, the aura itself will see fit to grant you your first Crafting Table."
+				"  To build it, plant a &aoak sapling&r at the center of the ritual. Place &64 planks&r on the surrounding stands and dance for it a little. Yes, crouch repeatedly like a lunatic. Once it grows, the aura itself will see fit to grant you your first Crafting Table."
 				""
 				"  After that, you will be able to craft more of them through the new 3x3 grid, without needing to repeat the ritual."
 				""
@@ -245,13 +245,15 @@
 		{
 			dependencies: ["64F2B2761FBEB6BD"]
 			description: [
-				"{ftbquests.chapter.psiu_me_leia.quest4.description1}"
+				"  They're assembled from choices."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest4.description2}"
+				"  Every part carries a material. Every material has a weight, an edge, a &5memory&r. Pick stone and get endurance. Pick bone and get something faster, rougher. The blueprint stays the same. What changes is everything else."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest4.description3}"
+				"  Any &6SGear material&r works. Head, handle, blade, each slot accepts whatever you can craft or find. Mix freely. The system won't stop you. Whether the result is reliable or embarrassing is entirely your choice."
 				""
-				"{ftbquests.chapter.psiu_me_leia.quest4.description4}"
+				"  Craft parts. Combine them. Break things. Try again."
+				""
+				"&7&o— The parts you choose reveal more than you think. Or less, depends on how many stones you hit before you notice.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -268,30 +270,23 @@
 				type: "item"
 			}]
 			shape: "square"
+			subtitle: "Tools aren't born whole"
 			tasks: [
 				{
-					id: "55D238B98F9B4A31"
+					id: "63B649C6271E04F3"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					id: "4C5A5F82783BE4C2"
 					item: {
 						Count: 1
 						id: "silentgear:pickaxe_head"
 						tag: {
-							CraftedCount: 1
 							Damage: 0
-							Materials: [{
-								Count: 3b
-								ID: "silentgear:stone"
-								Item: {
-									Count: 1b
-									id: "minecraft:cobblestone"
-								}
-							}]
 						}
 					}
-					type: "item"
-				}
-				{
-					id: "63B649C6271E04F3"
-					item: "minecraft:stick"
+					title: "Any SGear head"
 					type: "item"
 				}
 			]
@@ -337,11 +332,14 @@
 				""
 				"{ftbquests.chapter.psiu_me_leia.quest6.description3}"
 				""
+				"   &l&8Immersive Engineering&r&r and &l&6Create.&r&r"
+				""
 				"{ftbquests.chapter.psiu_me_leia.quest6.description4}"
 				""
 				"{ftbquests.chapter.psiu_me_leia.quest6.description5}"
 			]
 			id: "41C7D076DE390330"
+			min_width: 250
 			rewards: [
 				{
 					count: 8
@@ -387,13 +385,14 @@
 			]
 			icon: "kubejs:mechanical_heart"
 			id: "22E8C8BE07968048"
+			min_width: 300
 			subtitle: "A book that likes order"
 			tasks: [{
 				id: "44694809009FB5DE"
 				type: "checkmark"
 			}]
 			title: "The Essential Flow"
-			x: -11.5d
+			x: -12.5d
 			y: -4.0d
 		}
 		{
@@ -415,12 +414,13 @@
 				tag: { }
 			}
 			id: "07A61EFA0186CB52"
+			min_width: 250
 			tasks: [{
 				id: "5C9E8DD8C08B11AB"
 				type: "checkmark"
 			}]
 			title: "A Brief Aside"
-			x: -10.5d
+			x: -11.5d
 			y: -4.0d
 		}
 		{
@@ -730,13 +730,14 @@
 				}
 			}
 			id: "70983AD660631855"
+			min_width: 300
 			subtitle: "&l&aWelcome to Mechanized Depths!&r&r"
 			tasks: [{
 				id: "6A57E5382B9F7CDF"
 				type: "checkmark"
 			}]
 			title: "Author's Note"
-			x: -11.0d
+			x: -12.0d
 			y: -3.0d
 		}
 		{
@@ -988,6 +989,7 @@
 			]
 			icon: "kubejs:minerva"
 			id: "36B004CC913D8CC7"
+			min_width: 300
 			shape: "square"
 			tasks: [{
 				id: "4E03077442D29486"
@@ -1017,6 +1019,7 @@
 				}
 			}
 			id: "114E7031B333CA04"
+			min_width: 250
 			shape: "square"
 			tasks: [{
 				id: "3D025595213D8FBF"

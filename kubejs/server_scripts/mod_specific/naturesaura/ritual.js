@@ -92,6 +92,28 @@ ServerEvents.recipes(event => {
   }).id("kubejs:natures_aura/tree_ritual/token_of_sorrow");
 });
 
+// CRUMBLING CATALYST
+ServerEvents.recipes(event => {
+  event.remove({ id: 'naturesaura:tree_ritual/crushing_catalyst' });
+  event.custom({
+    "type": "naturesaura:tree_ritual",
+    "ingredients": [
+      { "item": "naturesaura:gold_brick" },
+      { "item": "naturesaura:infused_stone" },
+      { "item": "minecraft:piston" },
+      { "item": "minecraft:flint" },
+      { "item": "naturesaura:token_anger" },
+      { "item": "kubejs:token_utility" }
+    ],
+    "sapling": { "item": "minecraft:oak_sapling" },
+    "output": { 
+      "item": "naturesaura:crushing_catalyst",
+      "count": 1
+    },
+    "time": 200
+  }).id("kubejs:natures_aura/tree_ritual/crushing_catalyst");
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

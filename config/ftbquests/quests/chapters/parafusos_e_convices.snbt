@@ -64,6 +64,7 @@
 				""
 				"{ftbquests.chapter.parafusos_e_convices.quest2.description3}"
 			]
+			icon: "immersiveengineering:coke_oven"
 			id: "6A51D3D6D7650D5D"
 			shape: "hexagon"
 			tasks: [{
@@ -118,8 +119,10 @@
 				""
 				"{ftbquests.chapter.parafusos_e_convices.quest4.description3}"
 			]
+			icon: "immersiveengineering:blast_furnace"
 			id: "11F168F0483CA912"
 			tasks: [{
+				count: 27L
 				id: "636CBD4A6C028A39"
 				item: "immersiveengineering:blastbrick"
 				type: "item"
@@ -647,8 +650,9 @@
 			icon: "immersiveengineering:alloy_smelter"
 			id: "1AEBFDE6990DCCB5"
 			tasks: [{
-				id: "19A053AAAF70EF49"
-				item: "immersiveengineering:alloy_smelter"
+				count: 8L
+				id: "2A092EFC02B88CC3"
+				item: "immersiveengineering:alloybrick"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest19.title}"
@@ -1031,11 +1035,43 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "5B44ECF98A6DED18"
-				item: "immersiveengineering:light_engineering"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "328E52F2DAA29431"
+					item: { Count: 2, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "78082BE7894ABA81"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "5135C8B2ECF2EC25"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7F5DE257F295BD00"
+					item: { Count: 4, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6762784F98DA5A44"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "04D37AB0068E1DFB"
+					item: { Count: 4, id: "minecraft:cauldron" }
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest29.title}"
 			x: -7.5d
 			y: 5.5d
@@ -1063,6 +1099,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:diesel_generator"
 			id: "6C3E18C9058CBAB4"
+			min_width: 250
 			rewards: [{
 				id: "38627A23172D5F73"
 				item: {
@@ -1089,11 +1126,43 @@
 				type: "item"
 			}]
 			size: 1.3d
-			tasks: [{
-				id: "067E8C5FFEC7FF7A"
-				item: "immersiveengineering:heavy_engineering"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 5L
+					id: "221708389A5B909D"
+					item: { Count: 5, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "71A1B2FECD49D582"
+					item: { Count: 9, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7343AAAEC22F6118"
+					item: { Count: 4, id: "immersiveengineering:generator" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "2C09515E6E07168D"
+					item: { Count: 13, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "74CEB360407BDAD2"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2955F5B2CE7D9584"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest30.title}"
 			x: -8.0d
 			y: 11.49107142857143d
@@ -1139,7 +1208,9 @@
 				""
 				"{ftbquests.chapter.parafusos_e_convices.quest32.description8}"
 			]
+			icon: "immersiveengineering:arc_furnace"
 			id: "617989B418D326B0"
+			min_width: 250
 			rewards: [{
 				id: "5D1F289F5B321834"
 				item: {
@@ -1166,11 +1237,60 @@
 				type: "item"
 			}]
 			size: 1.3d
-			tasks: [{
-				id: "241EBEBF2EB53E5C"
-				item: "immersiveengineering:arc_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 27L
+					id: "228A7D3296899E5F"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "135D7BDC8CAD59B8"
+					item: { Count: 8, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "42ADA1B417EAF67C"
+					item: { Count: 14, id: "immersiveengineering:slab_sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7350893F7404CEB0"
+					item: { Count: 6, id: "mekanism:block_steel" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2E09182F80B42006"
+					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					id: "7059D89BD9F2F819"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "4521B250127CC00C"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "73EF4D6FFB01C958"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5D8DA59A9844D9B3"
+					item: { Count: 5, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest32.title}"
 			x: -3.8214285714285623d
 			y: 11.508928571428562d
@@ -1195,6 +1315,7 @@
 			]
 			icon: "immersiveengineering:refinery"
 			id: "6F89ADFAB2A59C2B"
+			min_width: 250
 			rewards: [{
 				id: "3AE587C610AD7513"
 				item: {
@@ -1220,11 +1341,43 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "7C396D70076465F8"
-				item: "immersiveengineering:heavy_engineering"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 5L
+					id: "78C030EB0556645B"
+					item: { Count: 5, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2E0AA1EE8D9B95BA"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1CFEF3BF778EE9F4"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6A2E34E61C6F49A5"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					id: "5B989AE44EAA68B6"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1E806CBEB8D05780"
+					item: { Count: 8, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest33.title}"
 			x: -7.0d
 			y: 6.5d
@@ -1249,6 +1402,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:bottling_machine"
 			id: "254D3ED5237C2967"
+			min_width: 250
 			rewards: [{
 				id: "274BCDF744A0E8E5"
 				item: {
@@ -1274,11 +1428,42 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "58ADB47CE2B97E34"
-				item: "immersiveengineering:plate_duroplast"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "212236686D11A80F"
+					item: "immersiveengineering:fluid_pump"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2B1F725292BE5DF2"
+					item: { Count: 2, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "302C59B0320D66B0"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7D90D82967EC7299"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4B784B2B982DF79D"
+					item: { Count: 3, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "35A0B3C86D80DF07"
+					item: { Count: 3, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest34.title}"
 			x: -6.0d
 			y: 11.49107142857143d
@@ -1366,6 +1551,7 @@
 			]
 			icon: "immersiveengineering:excavator"
 			id: "04BA3BE1F94722AE"
+			min_width: 250
 			rewards: [{
 				id: "3099FB76026A2C74"
 				item: {
@@ -1394,12 +1580,48 @@
 			size: 1.3d
 			tasks: [
 				{
-					id: "45FF050C2BDD68DA"
-					item: "immersiveengineering:heavy_engineering"
+					count: 26L
+					id: "5E92331A0BC4A088"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
 					type: "item"
 				}
 				{
-					id: "503D900F31B531F6"
+					count: 16L
+					id: "40082F034FB88F58"
+					item: { Count: 16, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "21B0FCA7C8FB2FDF"
+					item: { Count: 3, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "32C1F4CB27DDE7A7"
+					item: { Count: 9, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "728C4A36C71DCBA1"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5ED4790BAB2ED833"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "153FB12F2594945C"
+					item: { Count: 9, id: "mekanism:block_steel" }
+					type: "item"
+				}
+				{
+					id: "755F38E970FA2426"
 					item: "immersiveengineering:sample_drill"
 					type: "item"
 				}

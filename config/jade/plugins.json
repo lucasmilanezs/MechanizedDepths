@@ -141,6 +141,9 @@
     "pie_icons": true,
     "mushroom_colony": true
   },
+  "gravestone": {
+    "grave": true
+  },
   "astages": {
     "block_component_provider": true
   },

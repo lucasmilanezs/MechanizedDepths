@@ -1050,7 +1050,7 @@
 			id: "5A73253D3751FBC3"
 			tasks: [{
 				id: "713327F66FBE6E55"
-				item: "create_new_age:energiser_t1"
+				item: "create_new_age:basic_energiser"
 				type: "item"
 			}]
 			x: 0.0d
@@ -1121,16 +1121,6 @@
 			}]
 			x: 2.0d
 			y: 5.5d
-		}
-		{
-			id: "694D4DE9458FFBFA"
-			tasks: [{
-				id: "03130DF394F4CADC"
-				item: "minecraft:oak_button"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["7768F0364DA14B55"]

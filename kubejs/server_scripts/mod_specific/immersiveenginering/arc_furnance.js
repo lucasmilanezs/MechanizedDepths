@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
     additives: [
       { item: 'thermal:constantan_ingot' },
       { item: 'thermal:lapis_dust' },
-      { item: 'thermal:quartz_dust' }
+      { tag: 'forge:dusts/quartz' }
     ],
     results: [
       { item: 'kubejs:inductive_alloy', count: 2 }

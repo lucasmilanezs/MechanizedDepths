@@ -224,6 +224,19 @@
 			x: 6.0d
 			y: 3.0d
 		}
+		{
+			id: "7DF91C87E56AD25D"
+			shape: "netheritetier"
+			size: 2.0d
+			subtitle: "&4&lWARNING:&r&r TECH chapters are currently deeply incomplete or missleading in this build."
+			tasks: [{
+				id: "0B4E876C0148BFB3"
+				item: "rftoolsbase:manual"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
 	]
-	title: "&4TECH&r Drafting Extensions"
+	title: "&l&4TECH.&r&r Drafting Extensions"
 }

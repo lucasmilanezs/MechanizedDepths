@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     {
       B: 'kubejs:blazing_steel',
       P: 'minecraft:paper',
-      G: 'immersiveengineering:ingot_hop_graphite'
+      G: 'minecraft:blue_dye'
     }
 );
 });
@@ -77,6 +77,22 @@ ServerEvents.recipes(event => {
 });
 
 //==================CHANGED RECIPES==================
+
+// KILN BRICK
+ServerEvents.recipes(event => {
+  event.remove({ id: 'immersiveengineering:crafting/alloybrick' });
+  event.shaped(
+    Item.of('immersiveengineering:alloybrick', 3),
+    [
+        'ABA',
+        'BAB',
+        'ABA'
+    ],
+    {
+        A: 'minecraft:nether_brick',
+        B: 'minecraft:brick'
+    });
+});
 
 // COKE BRICK
 ServerEvents.recipes(event => {
@@ -120,15 +136,18 @@ ServerEvents.recipes(event => {
 // REINFORCED BLAST BRICK
 ServerEvents.recipes(event => {
   event.remove({ output: 'immersiveengineering:blastbrick_reinforced' });
-  event.shaped('immersiveengineering:blastbrick_reinforced', [
-    'SPS',
-    'PBP',
-    'SPS'
-  ], {
-    S: 'kubejs:blazing_steel',
-    P: '#forge:plates/steel',
-    B: 'immersiveengineering:blastbrick'
-  });
+  event.shaped(
+      Item.of('immersiveengineering:blastbrick_reinforced', 3),
+      [
+          'ABA',
+          'CCC',
+          'ABA'
+      ],
+      {
+          B: 'kubejs:blazing_steel',
+          A: '#forge:plates/steel',
+          C: 'immersiveengineering:blastbrick'
+    });
 });
 
 // MECHANICAL COMPONENT
