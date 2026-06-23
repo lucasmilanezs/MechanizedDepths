@@ -1,0 +1,204 @@
+{
+	"replace": false,
+	"slots": [
+		"crossbow/stock"
+	],
+	"materialSlotCount": 1,
+	"displayType": "major",
+	"glyph": {
+		"textureX": 128,
+		"textureY": 48
+	},
+	"translation": {
+		"secondaryAttributes": {
+			"tetra:draw_speed": -2
+		},
+		"durability": 3,
+		"integrity": 2,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:bone\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/bone",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

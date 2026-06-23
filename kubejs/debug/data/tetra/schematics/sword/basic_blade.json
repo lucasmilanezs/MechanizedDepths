@@ -1,0 +1,239 @@
+{
+	"replace": false,
+	"slots": [
+		"sword/blade"
+	],
+	"materialSlotCount": 1,
+	"displayType": "major",
+	"translation": {
+		"primaryAttributes": {
+			"generic.attack_damage": 3
+		},
+		"durability": 4,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"mechanized:amethyst\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/amethyst",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:bone\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/bone",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"mechanized:diamond\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/diamond",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:obsidian\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/obsidian",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

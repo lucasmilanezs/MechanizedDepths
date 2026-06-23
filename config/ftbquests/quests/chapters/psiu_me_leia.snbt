@@ -21,7 +21,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: -0.9732142857142563d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			height: 1.0d
@@ -29,7 +29,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: -1.9732142857142776d
-			y: 0.5214285714285509d
+			y: 1.521428571428551d
 		}
 		{
 			alpha: 200
@@ -47,7 +47,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: -0.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			height: 1.0d
@@ -55,7 +55,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: -1.5714285714285623d
-			y: 0.6928571428571431d
+			y: 1.692857142857143d
 		}
 		{
 			height: 2.5d
@@ -438,7 +438,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.3428571428571274d
+			y: 3.3428571428571274d
 		}
 		{
 			dependencies: [
@@ -464,7 +464,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 1.3428571428571274d
+			y: 2.3428571428571274d
 		}
 		{
 			dependencies: ["7E88E307D7B20E6B"]
@@ -483,7 +483,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.3428571428571274d
+			y: 2.3428571428571274d
 		}
 		{
 			dependencies: [
@@ -782,7 +782,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 1.3428571428571274d
+			y: 2.3428571428571274d
 		}
 		{
 			dependencies: ["042EC538643F435A"]
@@ -884,7 +884,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 2.3428571428571274d
+			y: 3.3428571428571274d
 		}
 		{
 			dependencies: ["36ED84D6DA1ACBF6"]
@@ -1028,6 +1028,135 @@
 			title: "See experimental features!"
 			x: -2.5d
 			y: -7.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "060FA0F8F1A6AB86"
+			tasks: [
+				{
+					block: "tetra:basic_workbench"
+					block_type: 0
+					checkItem: false
+					id: "486D9E21102B4313"
+					isItemInteraction: false
+					type: "questsadditions:use"
+					value: 1L
+				}
+				{
+					id: "45746C5B55E2EE54"
+					item: {
+						Count: 1
+						id: "tetra:modular_double"
+						tag: {
+							Damage: 0
+							"double/basic_hammer_left_material": "basic_hammer/oak"
+							"double/basic_hammer_right_material": "basic_hammer/oak"
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							id: "2b3e7060-b1a6-4df4-b4f2-6c5881445b7d"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			icon: "tconstruct:part_builder"
+			id: "7232275EDAC31F38"
+			tasks: [
+				{
+					id: "6C3FA54208493353"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+				{
+					id: "062A969DCFC9DD3F"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "6F84B4FB0F208D05"
+					item: {
+						Count: 1
+						id: "tconstruct:pick_head"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "775F67C479D598E6"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			id: "6780ACB8C856A057"
+			tasks: [{
+				id: "13E7E05F88AEC148"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			id: "3761F44611198DF6"
+			tasks: [
+				{
+					id: "3FF041B36CFE817E"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "16B61DDA03767941"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "196E5F1EF0E69F0D"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "3DA45E0BB2906A0D"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "044F911E09B0A105"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7FC5B55B39482370"
+					item: { Count: 6, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 5.0d
 		}
 	]
 	subtitle: ["Yeah!  You there!"]

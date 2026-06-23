@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "key": "electrum",
+  "category": "metal",
+  "primary": "4",
+  "secondary": "3.5",
+  "tertiary": "2",
+  "durability": "225",
+  "integrityCost": "1",
+  "integrityGain": "4",
+  "magicCapacity": "120",
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": "8",
+  "hidden": false,
+  "glyph": {
+    "textureX": 0,
+    "textureY": 0,
+    "tint": "E8D040"
+  },
+  "tints": {
+    "glyph": "E8D040",
+    "texture": "E8D040"
+  },
+  "textures": [
+    "metal",
+    "shiny"
+  ],
+  "material": {
+    "items": [
+      "thermal:electrum_ingot"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:stone"
+  }
+}

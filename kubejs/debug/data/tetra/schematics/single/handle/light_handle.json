@@ -1,0 +1,209 @@
+{
+	"replace": false,
+	"slots": [
+		"single/handle"
+	],
+	"materialSlotCount": 1,
+	"displayType": "major",
+	"glyph": {
+		"textureX": 16
+	},
+	"translation": {
+		"secondaryAttributes": {
+			"generic.attack_speed": -1
+		},
+		"secondaryEffects": {
+			"throwable": [
+				0.0,
+				1.0
+			]
+		},
+		"durability": 1,
+		"integrity": 3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:bone\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/bone",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "single/light_handle",
+			"moduleVariant": "light_handle/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

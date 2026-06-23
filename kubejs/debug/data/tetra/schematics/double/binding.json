@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"slots": [
+		"double/binding"
+	],
+	"materialSlotCount": 1,
+	"displayType": "minor",
+	"glyph": {
+		"textureX": 88,
+		"textureY": 112
+	},
+	"outcomes": []
+}

@@ -688,20 +688,6 @@
 			x: 1.5d
 			y: 1.5d
 		}
-		{
-			description: [""]
-			id: "34CD58689E63A55A"
-			shape: "netheritetier"
-			size: 2.0d
-			subtitle: "&4&lWARNING:&r&r TECH chapters are currently deeply incomplete or missleading in this build."
-			tasks: [{
-				id: "54E4FF05AA1C6F10"
-				item: "rftoolsbase:manual"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -3.5d
-		}
 	]
 	title: "&l&4TECH.&r&r Tricks of the Trade"
 }

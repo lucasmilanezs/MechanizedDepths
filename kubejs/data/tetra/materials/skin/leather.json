@@ -1,0 +1,28 @@
+{
+    "key": "leather",
+    "category": "skin",
+    "primary": 3,
+    "secondary": 2,
+    "tertiary": 4.5,
+    "durability": 198,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 90,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "leather_glyph",
+        "texture": "leather"
+    },
+    "textures": [
+        "skin",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:leather" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

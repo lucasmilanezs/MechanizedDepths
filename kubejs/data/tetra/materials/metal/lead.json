@@ -1,0 +1,30 @@
+{
+  "key": "lead",
+  "category": "metal",
+  "primary": 2.5,
+  "secondary": 6.5,
+  "tertiary": 0.5,
+  "durability": 200,
+  "integrityCost": 1,
+  "integrityGain": 3,
+  "magicCapacity": 72,
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": 4.0,
+  "tints": {
+    "glyph": "lead_glyph",
+    "texture": "lead"
+  },
+  "textures": [
+    "metal",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "kubejs:lead"
+    ]
+  },
+  "effects": {},
+  "requiredTools": {
+    "hammer_dig": "minecraft:stone"
+  }
+}

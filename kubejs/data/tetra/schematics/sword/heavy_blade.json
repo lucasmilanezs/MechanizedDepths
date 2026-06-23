@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "slots": [
+    "sword/blade"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "major",
+  "glyph": {
+    "textureX": 48
+  },
+  "translation": {
+    "primaryAttributes": {
+      "generic.attack_damage": 2
+    },
+    "secondaryAttributes": {
+      "generic.attack_damage": 1,
+      "generic.attack_speed": -1
+    },
+    "primaryEffects": {
+      "sweeping": 2
+    },
+    "durability": 3,
+    "integrity": -3,
+    "magicCapacity": 3
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "tconstruct:broad_blade"
+        ],
+        "nbt": "{Material:\"tconstruct:aluminum\"}"
+      },
+      "moduleKey": "sword/heavy_blade",
+      "moduleVariant": "heavy_blade/aluminum",
+      "requiredTools": {
+        "hammer_dig": 2
+      }
+    }
+  ]
+}

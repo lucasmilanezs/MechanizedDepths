@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "key": "manyullyn",
+  "category": "metal",
+  "primary": "6.5",
+  "secondary": "5.5",
+  "tertiary": "1",
+  "durability": "1250",
+  "integrityCost": "3",
+  "integrityGain": "5",
+  "magicCapacity": "84",
+  "toolLevel": "minecraft:netherite",
+  "toolEfficiency": "6.5",
+  "hidden": false,
+  "glyph": {
+    "textureX": 0,
+    "textureY": 0,
+    "tint": "6020A0"
+  },
+  "tints": {
+    "glyph": "6020A0",
+    "texture": "6020A0"
+  },
+  "textures": [
+    "metal",
+    "shiny"
+  ],
+  "material": {
+    "items": [
+      "tconstruct:manyullyn_ingot"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:diamond"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "key": "silver",
+  "category": "metal",
+  "primary": "4.5",
+  "secondary": "3.5",
+  "tertiary": "1.5",
+  "durability": "300",
+  "integrityCost": "1",
+  "integrityGain": "4",
+  "magicCapacity": "96",
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": "5.5",
+  "hidden": false,
+  "glyph": {
+    "textureX": 0,
+    "textureY": 0,
+    "tint": "C8D8E0"
+  },
+  "tints": {
+    "glyph": "C8D8E0",
+    "texture": "C8D8E0"
+  },
+  "textures": [
+    "metal",
+    "shiny"
+  ],
+  "material": {
+    "items": [
+      "thermal:silver_ingot"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:stone"
+  }
+}

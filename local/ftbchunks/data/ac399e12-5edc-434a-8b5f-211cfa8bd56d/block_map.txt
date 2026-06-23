@@ -67,6 +67,7 @@
 #2C2F91 immersiveengineering:coresample
 #CC07F6 minecraft:cornflower
 #306005 minecraft:cracked_stone_bricks
+#8C5E34 tconstruct:crafting_station
 #468304 minecraft:crafting_table
 #DFC019 mekanism:creative_energy_cube
 #6B35EC mekanism:creative_fluid_tank
@@ -213,6 +214,10 @@
 #3C4AE0 create:schematic_table
 #257ED7 create:schematicannon
 #705189 minecraft:sea_lantern
+#B74BCC tconstruct:seared_bricks
+#3EE7D8 tconstruct:seared_drain
+#A09272 tconstruct:seared_faucet
+#377233 tconstruct:seared_fuel_tank
 #D3CCFE create:shaft
 #8B3F27 immersiveengineering:sheetmetal_iron
 #079D5C immersiveengineering:sheetmetal_steel
@@ -220,6 +225,7 @@
 #9B2B73 immersiveengineering:slab_treated_wood_horizontal
 #181A83 enderio:slice_and_splice
 #7C220E pneumaticcraft:small_tank
+#9FF19F tconstruct:smeltery_controller
 #8638B9 minecraft:smooth_basalt
 #329290 vital_herbs:snap_pepper_plant
 #872D76 minecraft:snow

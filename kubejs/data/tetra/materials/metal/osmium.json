@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "key": "osmium",
+  "category": "metal",
+  "primary": "4.5",
+  "secondary": "5.5",
+  "tertiary": "0.5",
+  "durability": "500",
+  "integrityCost": "2",
+  "integrityGain": "4",
+  "magicCapacity": "78",
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": "4.5",
+  "hidden": false,
+  "glyph": {
+    "textureX": 0,
+    "textureY": 0,
+    "tint": "88A0B0"
+  },
+  "tints": {
+    "glyph": "88A0B0",
+    "texture": "88A0B0"
+  },
+  "textures": [
+    "metal",
+    "shiny"
+  ],
+  "material": {
+    "items": [
+      "mekanism:ingot_osmium"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:stone"
+  }
+}

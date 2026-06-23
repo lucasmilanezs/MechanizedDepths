@@ -1,0 +1,247 @@
+{
+	"replace": false,
+	"slots": [
+		"single/head"
+	],
+	"materialSlotCount": 1,
+	"displayType": "major",
+	"glyph": {
+		"textureX": 208,
+		"textureY": 32
+	},
+	"translation": {
+		"primaryAttributes": {
+			"generic.attack_damage": 4
+		},
+		"secondaryAttributes": {
+			"generic.attack_speed": -1,
+			"generic.attack_damage": 1
+		},
+		"durability": 3,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"mechanized:amethyst\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/amethyst",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:bone\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/bone",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"mechanized:diamond\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/diamond",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:obsidian\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/obsidian",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

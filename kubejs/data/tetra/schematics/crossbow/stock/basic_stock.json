@@ -1,0 +1,35 @@
+{
+  "replace": false,
+  "slots": [
+    "crossbow/stock"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "major",
+  "glyph": {
+    "textureX": 128,
+    "textureY": 48
+  },
+  "translation": {
+    "secondaryAttributes": {
+      "tetra:draw_speed": -2
+    },
+    "durability": 3,
+    "integrity": 2,
+    "magicCapacity": 3
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "tconstruct:bow_limb"
+        ],
+        "nbt": "{Material:\"tconstruct:aluminum\"}"
+      },
+      "moduleKey": "crossbow/basic_stock",
+      "moduleVariant": "basic_stock/aluminum",
+      "requiredTools": {
+        "hammer_dig": 2
+      }
+    }
+  ]
+}

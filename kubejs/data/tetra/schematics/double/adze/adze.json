@@ -1,0 +1,50 @@
+{
+  "replace": false,
+  "slots": [
+    "double/head_left",
+    "double/head_right"
+  ],
+  "keySuffixes": [
+    "_left",
+    "_right"
+  ],
+  "materialSlotCount": 1,
+  "glyph": {
+    "textureY": 32
+  },
+  "displayType": "major",
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "tconstruct:adze_head"
+        ],
+        "nbt": "{Material:\"tconstruct:stone\"}"
+      },
+      "moduleKey": "double/adze",
+      "moduleVariant": "adze/rock",
+      "requiredTools": {
+        "hammer_dig": 2
+      }
+    },
+    
+    {
+      "material": {
+        "items": [
+          "tconstruct:adze_head"
+        ],
+        "nbt": "{Material:\"tconstruct:copper\"}"
+      },
+      "moduleKey": "double/adze",
+      "moduleVariant": "adze/copper",
+      "requiredTools": {
+        "hammer_dig": 2
+      }
+    },
+    {
+      "materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/" ],
+      "moduleKey": "double/adze",
+      "moduleVariant": "adze/"
+    }
+  ]
+}

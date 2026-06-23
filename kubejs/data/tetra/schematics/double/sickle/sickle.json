@@ -1,0 +1,46 @@
+{
+  "replace": false,
+  "slots": [
+    "double/head_left",
+    "double/head_right"
+  ],
+  "keySuffixes": [
+    "_left",
+    "_right"
+  ],
+  "materialSlotCount": 1,
+  "glyph": {
+    "textureX": 32,
+    "textureY": 32
+  },
+  "displayType": "major",
+  "translation": {
+    "primaryAttributes": {
+      "generic.attack_damage": 3
+    },
+    "tools": {
+      "hoe_dig": [
+        2,
+        2
+      ]
+    },
+    "durability": 2,
+    "integrity": -3,
+    "magicCapacity": 3
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "tconstruct:broad_blade"
+        ],
+        "nbt": "{Material:\"tconstruct:amethyst\"}"
+      },
+      "moduleKey": "double/sickle",
+      "moduleVariant": "sickle/amethyst",
+      "requiredTools": {
+        "hammer_dig": 2
+      }
+    }
+  ]
+}

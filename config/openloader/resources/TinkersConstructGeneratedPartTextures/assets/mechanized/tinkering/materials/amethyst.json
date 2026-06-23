@@ -1,0 +1,5 @@
+{
+  "texture": "mechanized:amethyst",
+  "fallbacks": ["gem"],
+  "color": "ba82ff"
+}

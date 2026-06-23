@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "slots": [
+    "double/binding"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "minor",
+  "glyph": {
+    "textureX": 88,
+    "textureY": 112
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "tconstruct:tool_binding"
+        ],
+        "nbt": "{Material:\"tconstruct:darkthread\"}"
+      },
+      "moduleKey": "single/binding",
+      "moduleVariant": "single_binding/darkthread"
+    }
+  ]
+}

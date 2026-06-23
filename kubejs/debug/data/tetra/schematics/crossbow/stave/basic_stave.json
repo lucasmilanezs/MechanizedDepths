@@ -1,0 +1,196 @@
+{
+	"replace": false,
+	"slots": [
+		"crossbow/stave"
+	],
+	"materialSlotCount": 1,
+	"displayType": "major",
+	"glyph": {
+		"textureX": 128,
+		"textureY": 32
+	},
+	"translation": {
+		"primaryAttributes": {
+			"tetra:draw_speed": -2,
+			"tetra:draw_strength": 4
+		},
+		"tertiaryAttributes": {
+			"tetra:draw_speed": 1,
+			"tetra:draw_strength": 3
+		},
+		"durability": 3,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

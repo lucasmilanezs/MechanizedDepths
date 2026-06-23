@@ -1,0 +1,201 @@
+{
+	"replace": false,
+	"slots": [
+		"bow/stave"
+	],
+	"materialSlotCount": 2,
+	"displayType": "major",
+	"preview": "applicable",
+	"glyph": {
+		"textureX": 240,
+		"textureY": 48
+	},
+	"requirement": {
+		"type": "tetra:feature_flag",
+		"feature": "laminatedStave"
+	},
+	"translation": {
+		"primaryAttributes": {
+			"tetra:draw_speed": -3,
+			"tetra:draw_strength": 4
+		},
+		"tertiaryAttributes": {
+			"tetra:draw_speed": 1,
+			"tetra:draw_strength": 2
+		},
+		"durability": 4,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "bow/laminated_stave",
+			"moduleVariant": "laminated_stave/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

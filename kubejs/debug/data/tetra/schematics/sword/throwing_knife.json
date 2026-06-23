@@ -1,0 +1,260 @@
+{
+	"replace": false,
+	"slots": [
+		"sword/blade"
+	],
+	"materialSlotCount": 1,
+	"rarity": "temporary",
+	"displayType": "major",
+	"glyph": {
+		"textureX": 160,
+		"textureY": 48
+	},
+	"requirement": {
+		"type": "tetra:locked",
+		"key": "tetra:sword/throwing_knife"
+	},
+	"translation": {
+		"primaryAttributes": {
+			"generic.attack_damage": 3
+		},
+		"secondaryEffects": {
+			"throwable": [
+				0.0,
+				1.0
+			]
+		},
+		"tools": {
+			"cut": [
+				1.0,
+				3.0
+			]
+		},
+		"durability": 2,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"mechanized:amethyst\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/amethyst",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:bone\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/bone",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"mechanized:diamond\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/diamond",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:obsidian\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/obsidian",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

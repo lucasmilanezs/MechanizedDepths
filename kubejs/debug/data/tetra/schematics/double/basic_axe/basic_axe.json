@@ -1,0 +1,256 @@
+{
+	"replace": false,
+	"slots": [
+		"double/head_left",
+		"double/head_right"
+	],
+	"keySuffixes": [
+		"_left",
+		"_right"
+	],
+	"materialSlotCount": 1,
+	"glyph": {
+		"textureX": 144
+	},
+	"displayType": "major",
+	"translation": {
+		"primaryAttributes": {
+			"generic.attack_damage": 2
+		},
+		"secondaryAttributes": {
+			"generic.attack_damage": 1
+		},
+		"tools": {
+			"axe_dig": [
+				3.0,
+				3.0
+			]
+		},
+		"durability": 2,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:gold\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/gold",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/copper",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:osmium\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/osmium",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:silver\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/silver",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:lead\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/lead",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:electrum\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/electrum",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:constantan\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/constantan",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:invar\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/invar",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"mechanized:amethyst\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/amethyst",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:bone\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/bone",
+			"requiredTools": {
+				"hammer_dig": 1
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:bronze\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/bronze",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"mechanized:diamond\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/diamond",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:obsidian\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/obsidian",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/netherite",
+			"requiredTools": {
+				"hammer_dig": 4
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:cobalt\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/cobalt",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:manyullyn\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/manyullyn",
+			"requiredTools": {
+				"hammer_dig": 5
+			}
+		}
+	]
+}

@@ -225,10 +225,11 @@
 			y: 3.0d
 		}
 		{
+			description: [""]
 			id: "7DF91C87E56AD25D"
 			shape: "netheritetier"
 			size: 2.0d
-			subtitle: "&4&lWARNING:&r&r TECH chapters are currently deeply incomplete or missleading in this build."
+			subtitle: "&4&lWARNING:&r&r This TECH chapter is currently deeply incomplete or missleading. "
 			tasks: [{
 				id: "0B4E876C0148BFB3"
 				item: "rftoolsbase:manual"

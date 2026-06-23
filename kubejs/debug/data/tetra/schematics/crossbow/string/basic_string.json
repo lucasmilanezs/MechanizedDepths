@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"slots": [
+		"crossbow/string"
+	],
+	"materialSlotCount": 1,
+	"displayType": "major",
+	"glyph": {
+		"textureX": 112,
+		"textureY": 32
+	},
+	"translation": {
+		"secondaryAttributes": {
+			"tetra:draw_speed": -1
+		},
+		"durability": 2,
+		"integrity": 3,
+		"magicCapacity": 3
+	},
+	"outcomes": []
+}

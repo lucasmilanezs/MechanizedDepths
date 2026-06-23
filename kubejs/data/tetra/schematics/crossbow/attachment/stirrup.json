@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "slots": [
+    "crossbow/attachment_0"
+  ],
+  "materialSlotCount": 1,
+  "glyph": {
+    "textureX": 136,
+    "textureY": 112
+  },
+  "displayType": "minor",
+  "translation": {
+    "primaryAttributes": {
+      "tetra:draw_speed": 1
+    },
+    "secondaryAttributes": {
+      "tetra:draw_speed": -1
+    },
+    "durability": 1
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "tconstruct:bow_grip"
+        ],
+        "nbt": "{Material:\"tconstruct:aluminum\"}"
+      },
+      "moduleKey": "crossbow/stirrup",
+      "moduleVariant": "stirrup/aluminum",
+      "requiredTools": {
+        "hammer_dig": 2
+      }
+    }
+  ]
+}

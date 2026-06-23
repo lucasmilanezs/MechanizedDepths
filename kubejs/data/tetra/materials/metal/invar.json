@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "key": "invar",
+  "category": "metal",
+  "primary": "5",
+  "secondary": "4.2",
+  "tertiary": "1",
+  "durability": "630",
+  "integrityCost": "2",
+  "integrityGain": "4",
+  "magicCapacity": "84",
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": "5.5",
+  "hidden": false,
+  "glyph": {
+    "textureX": 0,
+    "textureY": 0,
+    "tint": "e3faff"
+  },
+  "tints": {
+    "glyph": "e3faff",
+    "texture": "e3faff"
+  },
+  "textures": [
+    "metal",
+    "shiny"
+  ],
+  "material": {
+    "items": [
+      "thermal:invar_ingot"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:stone"
+  }
+}

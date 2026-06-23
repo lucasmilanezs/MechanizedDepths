@@ -89,3 +89,20 @@ ServerEvents.recipes(event => {
             A: 'minecraft:oak_planks'
         })
 });
+
+//PICKAXE
+ServerEvents.recipes(event => {
+    event.shaped(
+        Item.of('minecraft:wooden_pickaxe'),
+        [
+            ' AB',
+            ' CA',
+            'C  '
+        ],
+        {
+            A: 'naturesaura:gold_fiber',
+            B: Item.of('tconstruct:pick_head', '{Material:"tconstruct:wood"}').weakNBT(),
+            C: 'minecraft:stick'
+        }
+    )
+});

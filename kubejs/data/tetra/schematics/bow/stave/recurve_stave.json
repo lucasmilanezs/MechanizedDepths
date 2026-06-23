@@ -1,0 +1,40 @@
+{
+  "replace": false,
+  "slots": [
+    "bow/stave"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "major",
+  "glyph": {
+    "textureX": 160,
+    "textureY": 32
+  },
+  "translation": {
+    "primaryAttributes": {
+      "tetra:draw_speed": -1,
+      "tetra:draw_strength": 3
+    },
+    "tertiaryAttributes": {
+      "tetra:draw_speed": 1,
+      "tetra:draw_strength": 1
+    },
+    "durability": 2,
+    "integrity": -3,
+    "magicCapacity": 3
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "tconstruct:bow_limb"
+        ],
+        "nbt": "{Material:\"tconstruct:aluminum\"}"
+      },
+      "moduleKey": "bow/recurve_stave",
+      "moduleVariant": "recurve_stave/aluminum",
+      "requiredTools": {
+        "hammer_dig": 2
+      }
+    }
+  ]
+}
