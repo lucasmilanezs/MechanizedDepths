@@ -1,0 +1,8 @@
+{
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mechanized_tinkers_tools_enabled" },
+    { "type": "forge:mod_loaded", "modid": "twilightforest" }
+  ],
+  "name": "twilightforest:chests/labyrinth_room",
+  "pools": []
+}

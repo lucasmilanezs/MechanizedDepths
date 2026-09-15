@@ -2,7 +2,7 @@
 #Everything to do with gameplay
 [gameplay]
 	#Set this to false to disable new players spawning with the Tinkers' Book.
-	shouldSpawnWithTinkersBook = true
+	shouldSpawnWithTinkersBook = false
 	#If true, extends the applicable slots for the fire protection enchantment to work better with shields. Will not impact gameplay with the vanilla enchantment.
 	#If false, fire protection on a shield will not reduce fire tick time.
 	extendFireProtectionSlots = true
@@ -94,7 +94,7 @@
 	drop_dragon_Scales = true
 	#Weight of the ancient tool trade for the wandering trader. All traders randomly choose 1 rare trade, so this is roughly the chance the trade occurs compared to the vanilla options (of which there are 6).
 	#Range: 0 ~ 100
-	wanderer_ancient_tool_weight = 6
+	wanderer_ancient_tool_weight = 0
 
 #Configuration related to integration with other mods
 [compatability]
@@ -109,7 +109,7 @@
 	immersive_engineering_chemthrower_shot_value = 1.25
 	#If true, monsters will run melee modifiers when attacking with a modifiable weapon. Provided to work around potential issues with addons allowing more monsters to use tools.
 	#Note that if its just a specific mob or damage source that has an issue, there are tag blacklists.
-	allowMonsterMeleeModifiers = true
+	allowMonsterMeleeModifiers = false
 
 #Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
 [debug]

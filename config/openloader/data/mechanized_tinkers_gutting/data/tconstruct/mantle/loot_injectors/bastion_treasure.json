@@ -1,0 +1,7 @@
+{
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mechanized_tinkers_tools_enabled" }
+  ],
+  "name": "minecraft:chests/bastion_treasure",
+  "pools": []
+}
