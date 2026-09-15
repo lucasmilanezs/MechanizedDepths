@@ -108,7 +108,9 @@
 #DDC0C3 create:fluid_tank
 #E121E9 extendedcrafting:flux_alternator
 #192FDC extendedcrafting:flux_crafter
+#455A8B tetra:forged_workbench
 #E69983 createmetallurgy:foundry_mixer
+#A908C1 thermal:frost_melon
 #ABC2D6 vital_herbs:frost_mint_plant
 #05FA5A silentgear:gear_smithing_table
 #F832D7 create:gearshift
@@ -123,10 +125,12 @@
 #3F84B7 minecraft:grass_block
 #88BAFA minecraft:gravel
 #D6E2B3 vital_herbs:grim_vine_plant
+#3E5158 tetra:hammer_base
 #F048A0 create_new_age:heat_pipe
 #6D5F89 pneumaticcraft:heat_pipe
 #6EBC6E pneumaticcraft:heat_sink
 #B6A923 immersiveengineering:heavy_engineering
+#3426A4 kubejs:hematite_ore
 #1A0827 minecraft:hopper
 #52D27E minecraft:ice
 #680FC8 mekanism:induction_casing
@@ -136,6 +140,7 @@
 #F7CC06 minecraft:jungle_planks
 #0D3FC6 minecraft:lapis_block
 #EA439B minecraft:lapis_ore
+#6C55C8 create:large_cogwheel
 #CD9222 industrialforegoing:laser_drill
 #83CED3 minecraft:lava
 #410643 eidolon:lead_ore
