@@ -185,6 +185,19 @@
 				"items": [
 					"tconstruct:broad_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "single/basic_shovel",
+			"moduleVariant": "basic_shovel/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "single/basic_shovel",
@@ -204,6 +217,19 @@
 			"moduleVariant": "basic_shovel/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "single/basic_shovel",
+			"moduleVariant": "basic_shovel/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

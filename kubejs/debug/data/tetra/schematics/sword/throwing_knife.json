@@ -196,6 +196,19 @@
 				"items": [
 					"tconstruct:small_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "sword/throwing_knife",
@@ -215,6 +228,19 @@
 			"moduleVariant": "throwing_knife/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "sword/throwing_knife",
+			"moduleVariant": "throwing_knife/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

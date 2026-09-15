@@ -189,6 +189,19 @@
 				"items": [
 					"tconstruct:pick_head"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "double/basic_pickaxe",
+			"moduleVariant": "basic_pickaxe/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:pick_head"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "double/basic_pickaxe",
@@ -208,6 +221,19 @@
 			"moduleVariant": "basic_pickaxe/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:pick_head"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "double/basic_pickaxe",
+			"moduleVariant": "basic_pickaxe/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

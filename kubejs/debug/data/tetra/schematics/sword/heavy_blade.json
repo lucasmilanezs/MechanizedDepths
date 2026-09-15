@@ -185,6 +185,19 @@
 				"items": [
 					"tconstruct:broad_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "sword/heavy_blade",
+			"moduleVariant": "heavy_blade/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "sword/heavy_blade",
@@ -204,6 +217,19 @@
 			"moduleVariant": "heavy_blade/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "sword/heavy_blade",
+			"moduleVariant": "heavy_blade/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

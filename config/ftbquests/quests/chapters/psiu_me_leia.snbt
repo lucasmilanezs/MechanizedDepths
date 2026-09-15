@@ -62,7 +62,7 @@
 			image: "custom:textures/gui/mechanized_depths.png"
 			rotation: 0.0d
 			width: 7.5d
-			x: -1.0d
+			x: -3.0d
 			y: -9.5d
 		}
 		{
@@ -72,7 +72,7 @@
 			image: "custom:textures/gui/discord-logo-discord-icon-transparent-free-png.png"
 			rotation: 0.0d
 			width: 1.5d
-			x: 1.5d
+			x: -0.5d
 			y: -7.0d
 		}
 		{
@@ -80,7 +80,7 @@
 			image: "custom:textures/gui/playtest.png"
 			rotation: 0.0d
 			width: 6.0d
-			x: -1.0d
+			x: -3.0d
 			y: -11.0d
 		}
 		{
@@ -91,7 +91,7 @@
 			image: "custom:textures/gui/github_logo_icon_206752.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.5d
+			x: -1.5d
 			y: -7.0d
 		}
 		{
@@ -102,7 +102,7 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
+			x: -3.0d
 			y: -7.5d
 		}
 		{
@@ -110,7 +110,7 @@
 			image: "custom:item/quest_research"
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.5d
+			x: -1.5d
 			y: -7.0d
 		}
 		{
@@ -118,7 +118,7 @@
 			image: "custom:item/quest_research"
 			rotation: 0.0d
 			width: 1.0d
-			x: 1.5d
+			x: -0.5d
 			y: -7.0d
 		}
 		{
@@ -129,7 +129,7 @@
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
+			x: -3.0d
 			y: -6.5d
 		}
 		{
@@ -137,7 +137,7 @@
 			image: "expatternprovider:block/ex_pattern_provider"
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
+			x: -3.0d
 			y: -6.5d
 		}
 		{
@@ -146,7 +146,7 @@
 			image: "ae2:block/pattern_provider"
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
+			x: -3.0d
 			y: -7.5d
 		}
 	]
@@ -213,7 +213,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["565979255D303596"]
 			description: [
 				"  So, no, the table was never going to transform planks and sticks into tools out of pure goodwill. First, it needs direction. A plan. Preferably one drawn by someone only slightly more organized than you."
 				""
@@ -232,14 +231,15 @@
 				item: "minecraft:stick"
 				type: "item"
 			}]
+			secret: true
 			shape: "square"
 			tasks: [{
 				id: "5F16EA4B7F193C7D"
 				item: "silentgear:pickaxe_blueprint"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.psiu_me_leia.quest3.title}"
-			x: -5.5d
+			title: "LEGACY"
+			x: -4.5d
 			y: -2.5d
 		}
 		{
@@ -269,6 +269,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
+			secret: true
 			shape: "square"
 			subtitle: "Tools aren't born whole"
 			tasks: [
@@ -290,8 +291,8 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.psiu_me_leia.quest4.title}"
-			x: -5.5d
+			title: "LEGACY"
+			x: -4.5d
 			y: 0.5d
 		}
 		{
@@ -369,7 +370,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 5.5d
 			y: -1.0d
 		}
 		{
@@ -504,7 +505,7 @@
 				item: "naturesaura:offering_table"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: -1.0d
 		}
 		{
@@ -553,7 +554,7 @@
 				item: "naturesaura:calling_spirit"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: -2.5d
 		}
 		{
@@ -687,7 +688,7 @@
 				type: "item"
 			}]
 			title: "Askin’ for Somethin’ Useful?"
-			x: 3.5d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
@@ -699,7 +700,7 @@
 				""
 				"  It's important to say: progression here is linear, and the recipes are deeply connected to one another. If you prefer completely freeform packs, this one might not be ideal. But if you enjoy the idea of a journey with well-defined paths and carefully woven progression, I believe you'll feel right at home."
 				""
-				"  Every detail was crafted with care — from the smallest machines to custom mechanics built specifically for this pack. Everything exists to make the experience feel unique and integrated. If you happen to stumble upon the biography of a slightly unhinged engineer along the way, consider yourself very welcome."
+				"  Every detail was crafted with care, from the smallest machines to custom mechanics built specifically for this pack. Everything exists to make the experience feel unique and integrated. If you happen to stumble upon the biography of a slightly unhinged engineer along the way, consider yourself very welcome."
 				""
 				"  The two quests above explain the structure of the pack in more detail. If you're unsure where to begin, I recommend starting with them."
 				""
@@ -741,7 +742,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["708E4BE08506636D"]
+			dependencies: ["060FA0F8F1A6AB86"]
 			description: [
 				"  The unquestioned companion to the crafting table. I doubt this one needs much introduction, it is the furnace you already know."
 				""
@@ -825,7 +826,7 @@
 				item: "naturesaura:sky_ingot"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 0.5d
 		}
 		{
@@ -845,7 +846,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -865,7 +866,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7E88E307D7B20E6B"]
@@ -915,7 +916,7 @@
 				}
 			]
 			x: -1.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["042EC538643F435A"]
@@ -943,7 +944,7 @@
 			}]
 			title: "Rock Solid Lies"
 			x: -3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["155BB7639312253D"]
@@ -969,7 +970,7 @@
 				}
 			]
 			x: -2.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			description: [
@@ -996,7 +997,7 @@
 				type: "checkmark"
 			}]
 			title: "Overal info!"
-			x: -3.5d
+			x: -5.5d
 			y: -7.0d
 		}
 		{
@@ -1026,28 +1027,40 @@
 				type: "checkmark"
 			}]
 			title: "See experimental features!"
-			x: -2.5d
+			x: -4.5d
 			y: -7.0d
 		}
 		{
+			dependencies: ["7232275EDAC31F38"]
+			description: [
+				"  Tetra doesn't care about your Tinkers pattern collection — it has its own rules, its own bench, and its own opinions about what a \"tool\" should be. Here, nothing is built from scratch. Every tool you will ever own starts as the same crude, unremarkable ancestor: a rough wooden shell, waiting to be reshaped into something worthy."
+				""
+				"  Craft your first &6Wooden Hammer&r the same way you craft anything else: at the &6Crafting Table&r, using a &apickaxe head&r pattern part from Tinkers. That's the whole trick from now on — raw materials don't build your tools anymore, &6parts&r do. Ores and ingots go into the smeltery, the smeltery feeds the pattern system, and the pattern system hands you the components Tetra actually wants to see."
+				""
+				" Once you're holding your hammer, &6right-click a Crafting Table&r with it. The table folds itself into a &6Tetra Workbench&r on the spot — no recipe, just brute force and a good swing. This is where the real work begins: open the module menu and start replacing pieces. Heads, handles, bindings — none of it is permanent, all of it can be upgraded the moment something better comes off the Tinkers line."
+				""
+				"  You are free to mix and match modules for a multi-purpose tool, but pay attention: &6matching module pairs&r (two heads of the same type, for instance) often grant &asynergy bonuses&r far beyond what either part offers alone. This matters a lot for hammers — a double wooden head already swings like it's stone-tier, purely from synergy."
+				""
+				"&o&8— Don't tell Theseus about any of this. He'll show up with some tired old philosophy speech about ships and identity, and frankly, not even I can sit through that again.&r"
+			]
 			icon: {
 				Count: 1
-				id: "minecraft:stone_pickaxe"
+				id: "tetra:modular_double"
 				tag: {
 					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/stone"
+					"double/basic_hammer_right_material": "basic_hammer/stone"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "7a2f5f04-fbfe-421f-951a-c7ec00b188f9"
 				}
 			}
 			id: "060FA0F8F1A6AB86"
+			min_width: 250
+			shape: "square"
 			tasks: [
-				{
-					block: "tetra:basic_workbench"
-					block_type: 0
-					checkItem: false
-					id: "486D9E21102B4313"
-					isItemInteraction: false
-					type: "questsadditions:use"
-					value: 1L
-				}
 				{
 					id: "45746C5B55E2EE54"
 					item: {
@@ -1066,13 +1079,48 @@
 					}
 					type: "item"
 				}
+				{
+					id: "4ED347D160622957"
+					item: "tetra:basic_workbench"
+					type: "item"
+				}
+				{
+					id: "34ACE4A55FE23A09"
+					item: {
+						Count: 1
+						id: "tetra:modular_double"
+						tag: {
+							Damage: 0
+							"double/basic_hammer_left_material": "basic_hammer/stone"
+							"double/basic_hammer_right_material": "basic_hammer/stone"
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							id: "08063a5f-08cf-4ac5-a1f8-034fea663b88"
+						}
+					}
+					type: "item"
+				}
 			]
 			x: -5.5d
-			y: 6.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["565979255D303596"]
+			description: [
+				"  Every great tool starts as an idea scratched onto something disposable. Before Tinkers' Construct lets you touch a single ingot, it demands you learn to draw first. Yes, really. The forge waits for no one, but it does wait for you to figure out wood cutting."
+				""
+				"  Craft &aBlank Patterns&r from &6 planks and sticks&r at your Crafting Table, then bring one to the &6Part Builder&r to carve your first shape: a &apickaxe head&r stencil. This stencil is not a one-time use — keep it. Combine it with raw non-metal material and it will stamp out a matching part every time, as many as your material supply allows."
+				""
+				"  This is the whole point: Tinkers doesn't hand you tools anymore, it hands you &6parts&r. Every head, binding, and handle you cut here exists to feed the machine downstream, specifically, Tetra's tool assembly. Think of Tinkers as your foundry from now on, smeltery, patterns, part generation. Nothing more, nothing less."
+				""
+				"&o&8— And before you ask: no, this does not mean you get to make an actual Tinkers pickaxe. Tinkers is here to feed the machine, not to spoil you. Get used to it.&r"
+			]
 			icon: "tconstruct:part_builder"
 			id: "7232275EDAC31F38"
+			min_width: 250
+			shape: "square"
 			tasks: [
 				{
 					id: "6C3FA54208493353"
@@ -1108,20 +1156,12 @@
 				}
 			]
 			x: -5.5d
-			y: 4.0d
+			y: -2.5d
 		}
 		{
-			id: "6780ACB8C856A057"
-			tasks: [{
-				id: "13E7E05F88AEC148"
-				item: "minecraft:furnace"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 5.0d
-		}
-		{
+			dependencies: ["042EC538643F435A"]
 			id: "3761F44611198DF6"
+			shape: "gear"
 			tasks: [
 				{
 					id: "3FF041B36CFE817E"
@@ -1156,7 +1196,62 @@
 				}
 			]
 			x: -3.0d
-			y: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3761F44611198DF6"]
+			id: "6482FDCBA8DD079A"
+			tasks: [{
+				id: "2195586E578431E9"
+				item: {
+					Count: 1
+					id: "tconstruct:hammer_head"
+					tag: {
+						Material: "tconstruct:iron"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6482FDCBA8DD079A"]
+			id: "67058DFE4A8962AD"
+			tasks: [{
+				id: "4FDDF62F4FE2963C"
+				item: {
+					Count: 1
+					id: "tconstruct:hammer_head"
+					tag: {
+						Material: "mechanized:infused_iron"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"[\"\",\"O martelo não é uma ferramenta. É um gargalo com cabo.\","
+				"{\"text\":\"\\n\\n\"},"
+				"\"Cada tier de cabeça de martelo destrava a próxima camada de minérios, e a próxima camada de minérios destrava o tier seguinte. Você vai subir essa escada seis vezes, e ela vai ficar mais cara a cada degrau.\","
+				"{\"text\":\"\\n\\n\"},"
+				"\"A passagem de Infused Iron para Steel é a única que não aceita força bruta: exige o \","
+				"{\"text\":\"Forge Hammer\",\"color\":\"gold\"},"
+				"\" montado e alimentado. Sem ele, você tem duas opções — parar no tier 4, ou fingir que o tier 4 é suficiente.\","
+				"{\"text\":\"\\n\\n\"},"
+				"{\"text\":\"» Ver a progressão completa no JEI\",\"color\":\"aqua\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/page mechanized:hammer_progression\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Abre a página Hammer Head Progression\"]}}]"
+			]
+			id: "3AA3DE0C8B2A52AF"
+			tasks: [{
+				id: "022C8AADDC743170"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.5d
 		}
 	]
 	subtitle: ["Yeah!  You there!"]

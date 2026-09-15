@@ -158,6 +158,32 @@
 				"items": [
 					"tconstruct:bow_limb"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "bow/recurve_stave",
+			"moduleVariant": "recurve_stave/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "bow/recurve_stave",
+			"moduleVariant": "recurve_stave/steel",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
 				"nbt": "{Material:\"tconstruct:netherite\"}"
 			},
 			"moduleKey": "bow/recurve_stave",

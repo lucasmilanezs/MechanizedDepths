@@ -190,6 +190,19 @@
 				"items": [
 					"tconstruct:small_axe_head"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "double/claw",
+			"moduleVariant": "claw/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "double/claw",
@@ -209,6 +222,19 @@
 			"moduleVariant": "claw/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "double/claw",
+			"moduleVariant": "claw/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

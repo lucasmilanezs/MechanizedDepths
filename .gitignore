@@ -57,6 +57,10 @@ build/
 
 # Backup temporário ou pasta de export
 export/
+
+# Local development / AI workflow (derived and disposable)
+/workflow/
+/.venv/
 # Ignorar mods e bibliotecas locais
 mods/
 .profileImage/
@@ -90,3 +94,4 @@ Thumbs.db
 # Ignorar dependências empacotadas por engano
 node_modules/
 lib
+AGENTS.md

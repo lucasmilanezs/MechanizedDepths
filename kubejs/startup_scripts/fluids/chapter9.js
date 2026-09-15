@@ -48,3 +48,13 @@ StartupEvents.registry('fluid', event => {
     .color(0x3B0A3E)
     .bucketColor(0x3B0A3E);
 });
+
+// MOLTEN INFUSED IRON
+StartupEvents.registry('fluid', event => {
+  event.create('molten_infused_iron')
+    .displayName('Molten Infused Iron')
+    .stillTexture('custom:fluid/molten_base')
+    .flowingTexture('custom:fluid/molten_base')
+    .color(0x227309)
+    .bucketColor(0x227309);
+});

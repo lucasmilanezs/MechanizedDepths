@@ -165,6 +165,32 @@
 				"items": [
 					"tconstruct:tool_handle"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "single/basic_handle",
+			"moduleVariant": "basic_handle/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "single/basic_handle",
+			"moduleVariant": "basic_handle/steel",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:tool_handle"
+				],
 				"nbt": "{Material:\"tconstruct:netherite\"}"
 			},
 			"moduleKey": "single/basic_handle",

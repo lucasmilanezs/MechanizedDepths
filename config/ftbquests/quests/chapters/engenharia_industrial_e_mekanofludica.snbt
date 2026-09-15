@@ -585,8 +585,6 @@
 		{
 			dependencies: ["1E7A8B399C39BF92"]
 			description: [
-				"  Compressed Iron is not refined. It’s coerced."
-				""
 				"  At this stage, the process is brutally simple: surround iron ingots with TNT and hope for the best. Explosions do the job, but they also waste materials, demand manual setup, and generally make you feel like there should be a better way. And there is — just not yet."
 				""
 				"  This method exists to get you started, nothing more. Accept the losses, craft what you need, and keep moving. PneumaticCraft is very aware this is inefficient, and it will let you fix that later."

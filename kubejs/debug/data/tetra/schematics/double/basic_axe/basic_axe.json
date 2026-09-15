@@ -192,6 +192,19 @@
 				"items": [
 					"tconstruct:small_axe_head"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "double/basic_axe",
@@ -211,6 +224,19 @@
 			"moduleVariant": "basic_axe/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "double/basic_axe",
+			"moduleVariant": "basic_axe/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

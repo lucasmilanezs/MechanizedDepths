@@ -7,5 +7,8 @@
   "material.mechanized.brass.encyclopedia": "Grants moderate durability and a slight speed boost to tools.",
   "material.mechanized.amethyst": "Amethyst",
   "material.mechanized.amethyst.flavor": "A beautiful gemstone with mystical properties.",
-  "material.mechanized.amethyst.encyclopedia": ""
+  "material.mechanized.amethyst.encyclopedia": "",
+  "material.mechanized.infused_iron": "Infused Iron",
+  "material.mechanized.infused_iron.flavor": "A rare metal infused with magical energy.",
+  "material.mechanized.infused_iron.encyclopedia": "Grants increased durability and a chance to deal additional damage."
 }

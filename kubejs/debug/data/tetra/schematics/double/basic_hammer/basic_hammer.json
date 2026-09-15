@@ -1,5 +1,5 @@
 {
-	"replace": false,
+	"replace": true,
 	"slots": [
 		"double/head_left",
 		"double/head_right"
@@ -13,6 +13,15 @@
 		"textureX": 64
 	},
 	"displayType": "major",
+	"applicableMaterials": [
+		"#wood",
+		"#stone",
+		"!copper",
+		"!iron",
+		"!infused_iron",
+		"!steel",
+		"!netherite"
+	],
 	"translation": {
 		"primaryAttributes": {
 			"generic.attack_damage": 2
@@ -31,5 +40,99 @@
 		"integrity": -3,
 		"magicCapacity": 3
 	},
-	"outcomes": []
+	"outcomes": [
+		{
+			"material": {
+				"items": [
+					"tconstruct:hammer_head"
+				],
+				"nbt": "{Material:\"tconstruct:wood\"}"
+			},
+			"toolFactor": 0,
+			"moduleKey": "double/basic_hammer",
+			"moduleVariant": "basic_hammer/oak"
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:hammer_head"
+				],
+				"nbt": "{Material:\"tconstruct:rock\"}"
+			},
+			"toolFactor": 0,
+			"moduleKey": "double/basic_hammer",
+			"moduleVariant": "basic_hammer/stone"
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:hammer_head"
+				],
+				"nbt": "{Material:\"tconstruct:copper\"}"
+			},
+			"countFactor": 2,
+			"requiredTools": {
+				"hammer_dig": "minecraft:wood"
+			},
+			"moduleKey": "double/basic_hammer",
+			"moduleVariant": "basic_hammer/copper"
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:hammer_head"
+				],
+				"nbt": "{Material:\"tconstruct:iron\"}"
+			},
+			"countFactor": 2,
+			"requiredTools": {
+				"hammer_dig": "minecraft:wood"
+			},
+			"moduleKey": "double/basic_hammer",
+			"moduleVariant": "basic_hammer/iron"
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:hammer_head"
+				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"requiredTools": {
+				"hammer_dig": "minecraft:stone"
+			},
+			"moduleKey": "double/basic_hammer",
+			"moduleVariant": "basic_hammer/infused_iron"
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:hammer_head"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"requiredTools": {
+				"hammer_dig": "minecraft:netherite"
+			},
+			"moduleKey": "double/basic_hammer",
+			"moduleVariant": "basic_hammer/steel",
+			"improvements": {
+				"arrested": 0
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:hammer_head"
+				],
+				"nbt": "{Material:\"tconstruct:netherite\"}"
+			},
+			"count": 2,
+			"requiredTools": {
+				"hammer_dig": "tetra:maxed_forge_hammer"
+			},
+			"moduleKey": "double/basic_hammer",
+			"moduleVariant": "basic_hammer/netherite"
+		}
+	]
 }

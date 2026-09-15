@@ -190,6 +190,19 @@
 				"items": [
 					"tconstruct:small_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "sword/short_blade",
+			"moduleVariant": "short_blade/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "sword/short_blade",
@@ -209,6 +222,19 @@
 			"moduleVariant": "short_blade/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "sword/short_blade",
+			"moduleVariant": "short_blade/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "key": "infused_iron",
+    "category": "metal",
+    "primary": "5.3",
+    "secondary": "3.8",
+    "tertiary": "3.5",
+    "durability": "350",
+    "integrityCost": "2",
+    "integrityGain": "5",
+    "magicCapacity": "120",
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": "6",
+    "hidden": false,
+    "glyph": {
+    "textureX": 0,
+    "textureY": 0,
+    "tint": "4EED40"
+  },
+  "tints": {
+    "glyph": "4EED40",
+    "texture": "4EED40"
+  },
+  "textures": [
+    "metal",
+    "shiny"
+  ],
+  "material": {
+    "items": [
+      "naturesaura:infused_iron"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:gold"
+  }
+}

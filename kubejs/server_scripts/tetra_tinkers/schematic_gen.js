@@ -123,6 +123,225 @@ var SCHEMATIC_MODULE_KEY = {
     "crossbow/stirrup":      "crossbow/stirrup"
 }
 
+
+
+// -- CONFERIR: ids que dependem do teu registro de materiais -------------------
+var HAMMER_T2_MATERIAL = "tetra:metal/infused_iron"   // material Tetra
+var HAMMER_T2_NAMESPACE = "mechanized"               // namespace do material TiC
+var HAMMER_T2_NAME      = "infused_iron"
+
+var HAMMER_T3_MATERIAL = "tetra:metal/steel"
+var HAMMER_T3_NAMESPACE = "tconstruct"
+var HAMMER_T3_NAME      = "steel"
+
+// Qual material de tetra:wood/ a hammer_head de tconstruct:wood consome.
+// A categoria tem varios membros; o outcome precisa nomear um concreto.
+var HAMMER_WOOD_VARIANT = "basic_hammer/oak"
+
+// -- Variantes do modulo ------------------------------------------------------
+// materials  = materiais Tetra que a variante cobre
+// toolLevel  = tools.hammer_dig fixo (null = variante sem nivel, so a de wood)
+// integrity  = penalidade extra no topo da variante (null = ausente)
+// textures   = extract.availableTextures ("metal" | "stone" | "log");
+//              quando presente, o modelo e dirigido pelo material
+// fixedModel = modelo cravado no topo da variante (ignora textures)
+var HAMMER_VARIANTS = [
+    {
+        "materials": ["tetra:wood/"],
+        "toolLevel": null,
+        "integrity": null,
+        "textures":  ["log"],
+        "fixedModel": null
+    },
+    {
+        "materials": ["tetra:stone/stone"],
+        "toolLevel": "minecraft:wood",
+        "integrity": null,
+        "textures":  null,
+        "fixedModel": {
+            "location": "tetra:item/module/double/head/basic_hammer/stone",
+            "tint": "aaaaaa"
+        }
+    },
+    {
+        "materials": ["tetra:stone/diorite", "tetra:stone/andesite", "tetra:stone/granite"],
+        "toolLevel": "minecraft:wood",
+        "integrity": null,
+        "textures":  ["stone"],
+        "fixedModel": null
+    },
+    {
+        "materials": ["tetra:metal/copper"],
+        "toolLevel": "minecraft:gold",
+        "integrity": null,
+        "textures":  ["metal"],
+        "fixedModel": null
+    },
+    {
+        "materials": ["tetra:metal/iron"],
+        "toolLevel": "minecraft:gold",
+        "integrity": null,
+        "textures":  ["metal"],
+        "fixedModel": null
+    },
+    {
+        // era tetra:stone/blackstone -- mantem tools/integrity, vira metal
+        "materials": [HAMMER_T2_MATERIAL],
+        "toolLevel": "minecraft:stone",
+        "integrity": -1,
+        "textures":  ["metal"],
+        "fixedModel": null
+    },
+    {
+        // era tetra:stone/obsidian -- o nativo cravava o modelo de obsidian,
+        // aqui o modelo passa a ser dirigido pelo material (steel e metal)
+        "materials": [HAMMER_T3_MATERIAL],
+        "toolLevel": "minecraft:iron",
+        "integrity": null,
+        "textures":  ["metal"],
+        "fixedModel": null
+    },
+    {
+        "materials": ["tetra:metal/netherite"],
+        "toolLevel": "minecraft:diamond",
+        "integrity": -1,
+        "textures":  ["metal"],
+        "fixedModel": null
+    }
+]
+
+// Monta uma variante completa. O bloco extract e literalmente identico em
+// todas as variantes do JSON nativo -- por isso mora aqui e nao na tabela.
+function buildHammerVariant(v) {
+    var out = {
+        "materials": v.materials,
+        "key": "basic_hammer/",
+        "attributes": { "generic.attack_speed": -1.1 },
+        "aspects": {
+            "block_breaker": 2,
+            "breakable": 2,
+            "blunt_weapon": 1
+        }
+    }
+
+    if (v.toolLevel !== null)  out.tools     = { "hammer_dig": v.toolLevel }
+    if (v.fixedModel !== null) out.models    = [v.fixedModel]
+    if (v.integrity !== null)  out.integrity = v.integrity
+
+    var extract = {
+        "primaryAttributes":   { "generic.attack_damage": 0.5 },
+        "secondaryAttributes": {
+            "generic.attack_damage": 1,
+            "generic.attack_speed": -0.08
+        },
+        "tools": { "hammer_dig": [0, 0.8333] },
+        "durability": 0.55,
+        "integrity": -1,
+        "magicCapacity": 1,
+        "glyph": { "textureX": 64 }
+    }
+    if (v.textures !== null) {
+        extract.availableTextures = v.textures
+        extract.models = [
+            { "location": "tetra:item/module/double/head/basic_hammer/" }
+        ]
+    }
+    out.extract = extract
+
+    return out
+}
+
+function buildHammerModule() {
+    var variants = []
+    for (var i = 0; i < HAMMER_VARIANTS.length; i++) {
+        variants.push(buildHammerVariant(HAMMER_VARIANTS[i]))
+    }
+    return {
+        "replace": true,
+        "type": "tetra:multi_major_module",
+        "slots": ["double/head_left", "double/head_right"],
+        "slotSuffixes": ["_left", "_right"],
+        "improvements": [
+            "tetra:double/hammer/",
+            "tetra:double/shared_head/",
+            "tetra:double/shared/",
+            "tetra:shared/"
+        ],
+        "variants": variants
+    }
+}
+
+// -- Outcomes do schematic ----------------------------------------------------
+// Sempre toolpart: tconstruct:hammer_head casado por NBT.
+// requiredTools e SEMPRE explicito -- matching por item/NBT nao herda o
+// requiredTools declarado no JSON do material.
+function hammerHead(namespace, material) {
+    return {
+        "items": ["tconstruct:hammer_head"],
+        "nbt": "{Material:\"" + namespace + ":" + material + "\"}"
+    }
+}
+
+var HAMMER_OUTCOMES = [
+    {
+        "material": hammerHead("tconstruct", "wood"),
+        "toolFactor": 0,
+        "moduleKey": "double/basic_hammer",
+        "moduleVariant": HAMMER_WOOD_VARIANT
+    },
+    {
+        // tconstruct:rock cobre stone/diorite/andesite/granite de uma vez
+        "material": hammerHead("tconstruct", "rock"),
+        "toolFactor": 0,
+        "moduleKey": "double/basic_hammer",
+        "moduleVariant": "basic_hammer/stone"
+    },
+    {
+        "material": hammerHead("tconstruct", "copper"),
+        "countFactor": 2,
+        "requiredTools": { "hammer_dig": "minecraft:wood" },
+        "moduleKey": "double/basic_hammer",
+        "moduleVariant": "basic_hammer/copper"
+    },
+    {
+        "material": hammerHead("tconstruct", "iron"),
+        "countFactor": 2,
+        "requiredTools": { "hammer_dig": "minecraft:wood" },
+        "moduleKey": "double/basic_hammer",
+        "moduleVariant": "basic_hammer/iron"
+    },
+    {
+        // era tetra:stone/blackstone
+        "material": hammerHead(HAMMER_T2_NAMESPACE, HAMMER_T2_NAME),
+        "requiredTools": { "hammer_dig": "minecraft:stone" },
+        "moduleKey": "double/basic_hammer",
+        "moduleVariant": "basic_hammer/" + HAMMER_T2_NAME
+    },
+    {
+        // era a tag forge:obsidian -- improvements preservado do nativo
+        "material": hammerHead(HAMMER_T3_NAMESPACE, HAMMER_T3_NAME),
+        "requiredTools": { "hammer_dig": "minecraft:netherite" },
+        "moduleKey": "double/basic_hammer",
+        "moduleVariant": "basic_hammer/" + HAMMER_T3_NAME,
+        "improvements": { "arrested": 0 }
+    },
+    {
+        // era minecraft:netherite_ingot x2
+        "material": hammerHead("tconstruct", "netherite"),
+        "count": 2,
+        "requiredTools": { "hammer_dig": "tetra:maxed_forge_hammer" },
+        "moduleKey": "double/basic_hammer",
+        "moduleVariant": "basic_hammer/netherite"
+    }
+]
+
+// applicableMaterials: whitelist do schematic. "#cat" libera categoria,
+// "!nome" libera material individual.
+var HAMMER_APPLICABLE = [
+    "#wood", "#stone", "!copper", "!iron",
+    "!" + HAMMER_T2_NAME, "!" + HAMMER_T3_NAME, "!netherite"
+]
+
 // =============================================================================
 // Declaracao de materiais
 // =============================================================================
@@ -160,10 +379,11 @@ addMaterial("bone", "bone")
 addMaterial("bronze", "metal")
 
 // TIER IRON
-
+addMaterial("infused_iron", "metal", "mechanized")
 // TIER DIAMOND
 addMaterial("diamond", "gem", "mechanized")
 addMaterial("obsidian", "stone")
+addMaterial("steel", "metal")
 // TIER NETHERITE
 addMaterial("netherite", "metal")
 addMaterial("cobalt", "metal")
@@ -197,6 +417,9 @@ var _allSchematics = [
 for (var si = 0; si < _allSchematics.length; si++) {
     _outcomes[_allSchematics[si]] = []
 }
+
+// O martelo nao passa pelo loop de materiais -- ladder estatico
+_outcomes["double/basic_hammer"] = HAMMER_OUTCOMES
 
 for (var mi = 0; mi < _materials.length; mi++) {
     var mat          = _materials[mi]
@@ -251,20 +474,9 @@ for (var mi = 0; mi < _materials.length; mi++) {
         }
     }
 
-    // Hammer -- so quando hammerTier declarado
-    if (hammerTier !== null) {
-        var hReqTools = {}
-        hReqTools["hammer_dig"] = toolLevel
-        _outcomes["double/basic_hammer"].push({
-            "material": {
-                "items": ["tconstruct:hammer_head"],
-                "nbt": "{Material:\"tconstruct:" + matName + "\"}"
-            },
-            "moduleKey": "double/basic_hammer",
-            "moduleVariant": "basic_hammer/" + matName,
-            "requiredTools": hReqTools
-        })
-    }
+    // Hammer: NAO e gerado por material aqui. O ladder do martelo e estatico
+    // e vive no bloco HAMMER_* mais abaixo (o modulo do Tetra enumera material
+    // por material, entao nao existe variante generica por categoria).
 }
 
 // Para cada material registrado em _materials,
@@ -438,13 +650,21 @@ ServerEvents.highPriorityData(function(event) {
         "outcomes": _outcomes["double/adze"]
     })
 
+    // -- Hammer ---------------------------------------------------------------
+    // O modulo vai ANTES: sem a variante declarada, o Tetra descarta o outcome
+    // silenciosamente (reconhece o material, nao acha basic_hammer/<nome>).
+    inject("tetra:modules/double/basic_hammer", buildHammerModule())
+
+    // replace:true FIXO mesmo em modo debug: os outcomes nativos foram
+    // redeclarados por inteiro em HAMMER_OUTCOMES. Merge duplicaria tudo.
     inject("tetra:schematics/double/basic_hammer/basic_hammer", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["double/head_left", "double/head_right"],
         "keySuffixes": ["_left", "_right"],
         "materialSlotCount": 1,
         "glyph": { "textureX": 64 },
         "displayType": "major",
+        "applicableMaterials": HAMMER_APPLICABLE,
         "translation": {
             "primaryAttributes": { "generic.attack_damage": 2 },
             "secondaryAttributes": {

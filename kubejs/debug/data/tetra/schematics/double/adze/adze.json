@@ -175,6 +175,19 @@
 				"items": [
 					"tconstruct:adze_head"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "double/adze",
+			"moduleVariant": "adze/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:adze_head"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "double/adze",
@@ -194,6 +207,19 @@
 			"moduleVariant": "adze/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:adze_head"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "double/adze",
+			"moduleVariant": "adze/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

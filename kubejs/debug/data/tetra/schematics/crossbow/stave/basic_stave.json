@@ -158,6 +158,32 @@
 				"items": [
 					"tconstruct:bow_limb"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "crossbow/basic_stave",
+			"moduleVariant": "basic_stave/steel",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_limb"
+				],
 				"nbt": "{Material:\"tconstruct:netherite\"}"
 			},
 			"moduleKey": "crossbow/basic_stave",

@@ -1841,6 +1841,23 @@
 			x: -6.0d
 			y: 3.5d
 		}
+		{
+			dependencies: ["1A526B97B149CBD3"]
+			id: "71DCF62CE90F7730"
+			tasks: [{
+				id: "0ECF0E53D1BCC452"
+				item: {
+					Count: 1
+					id: "tconstruct:hammer_head"
+					tag: {
+						Material: "tconstruct:steel"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
 	]
 	title: "&8&l2.&r&r Screws and Convictions"
 }

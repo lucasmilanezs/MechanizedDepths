@@ -187,6 +187,19 @@
 				"items": [
 					"tconstruct:small_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "sword/machete",
+			"moduleVariant": "machete/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "sword/machete",
@@ -206,6 +219,19 @@
 			"moduleVariant": "machete/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "sword/machete",
+			"moduleVariant": "machete/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

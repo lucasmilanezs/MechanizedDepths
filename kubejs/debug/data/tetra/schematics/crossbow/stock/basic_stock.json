@@ -166,6 +166,32 @@
 				"items": [
 					"tconstruct:bow_grip"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "crossbow/basic_stock",
+			"moduleVariant": "basic_stock/steel",
+			"requiredTools": {
+				"hammer_dig": 3
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:bow_grip"
+				],
 				"nbt": "{Material:\"tconstruct:netherite\"}"
 			},
 			"moduleKey": "crossbow/basic_stock",

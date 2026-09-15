@@ -190,6 +190,19 @@
 				"items": [
 					"tconstruct:broad_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "double/sickle",
+			"moduleVariant": "sickle/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "double/sickle",
@@ -209,6 +222,19 @@
 			"moduleVariant": "sickle/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "double/sickle",
+			"moduleVariant": "sickle/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

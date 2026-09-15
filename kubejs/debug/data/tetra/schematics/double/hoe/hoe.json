@@ -190,6 +190,19 @@
 				"items": [
 					"tconstruct:broad_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "double/hoe",
+			"moduleVariant": "hoe/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "double/hoe",
@@ -209,6 +222,19 @@
 			"moduleVariant": "hoe/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "double/hoe",
+			"moduleVariant": "hoe/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

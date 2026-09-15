@@ -687,9 +687,9 @@
 				""
 				"  In this case, quite literally."
 				""
-				"  The Entropic Drive sees you."
+				"  He is looking at you. Probably judging."
 				""
-				"&8&o— When everything that spins finally stops, what remains is what acts without movement. Find that. That's what drives Ender IO.&r&r"
+				"&8&o— Completly harmless suspicious eye, trust me.&r&r"
 			]
 			id: "1AC4899640C73919"
 			shape: "goldtier"
@@ -1064,8 +1064,8 @@
 				item: "create_new_age:advanced_motor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: 1.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5AEBBC853AF4039F"]
@@ -1075,7 +1075,7 @@
 				item: "create_new_age:reinforced_motor"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: 4.5d
 		}
 		{
@@ -1086,8 +1086,8 @@
 				item: "create_new_age:basic_motor_extension"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.5d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5AEBBC853AF4039F"]
@@ -1097,7 +1097,7 @@
 				item: "create_new_age:advanced_motor_extension"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: 6.5d
 		}
 		{
@@ -1108,7 +1108,7 @@
 				item: "create_new_age:overcharged_diamond"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: 5.5d
 		}
 		{
@@ -1119,7 +1119,7 @@
 				item: "create_new_age:overcharged_iron"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 5.5d
 		}
 		{

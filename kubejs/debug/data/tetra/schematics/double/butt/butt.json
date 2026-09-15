@@ -173,6 +173,19 @@
 				"items": [
 					"tconstruct:small_axe_head"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "double/butt",
+			"moduleVariant": "butt/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "double/butt",
@@ -192,6 +205,19 @@
 			"moduleVariant": "butt/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:small_axe_head"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "double/butt",
+			"moduleVariant": "butt/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{

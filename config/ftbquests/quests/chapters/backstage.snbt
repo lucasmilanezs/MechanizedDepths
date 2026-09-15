@@ -63,7 +63,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
@@ -83,6 +83,42 @@
 			title: "Scheduler!"
 			x: -3.5d
 			y: 0.0d
+		}
+		{
+			id: "345BD743AECA49EB"
+			rewards: [{
+				command: "/mdbook hook general.chalcopyrite"
+				id: "251A64925E083D46"
+				type: "command"
+			}]
+			tasks: [{
+				block: "kubejs:chalcopyrite_ore"
+				block_type: 0
+				checkItem: false
+				id: "2D570A7A11876954"
+				type: "questsadditions:break"
+				value: 1L
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			id: "560DF2C990AA861E"
+			rewards: [{
+				command: "/mdbook hook general.hematite"
+				id: "080DEFA0D4C1AC8C"
+				type: "command"
+			}]
+			tasks: [{
+				block: "kubejs:hematite_ore"
+				block_type: 0
+				checkItem: false
+				id: "32651FFDFEF7CCED"
+				type: "questsadditions:break"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -1.5d
 		}
 	]
 	title: "backstage"

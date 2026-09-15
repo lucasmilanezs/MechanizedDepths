@@ -183,6 +183,19 @@
 				"items": [
 					"tconstruct:broad_blade"
 				],
+				"nbt": "{Material:\"mechanized:infused_iron\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/infused_iron",
+			"requiredTools": {
+				"hammer_dig": 2
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
 				"nbt": "{Material:\"mechanized:diamond\"}"
 			},
 			"moduleKey": "single/spearhead",
@@ -202,6 +215,19 @@
 			"moduleVariant": "spearhead/obsidian",
 			"requiredTools": {
 				"hammer_dig": 5
+			}
+		},
+		{
+			"material": {
+				"items": [
+					"tconstruct:broad_blade"
+				],
+				"nbt": "{Material:\"tconstruct:steel\"}"
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/steel",
+			"requiredTools": {
+				"hammer_dig": 3
 			}
 		},
 		{
