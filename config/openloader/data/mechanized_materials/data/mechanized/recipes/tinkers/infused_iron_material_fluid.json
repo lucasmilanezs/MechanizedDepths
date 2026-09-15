@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_infused_iron"
+  },
+  "output": "mechanized:infused_iron",
+  "temperature": 950
+}

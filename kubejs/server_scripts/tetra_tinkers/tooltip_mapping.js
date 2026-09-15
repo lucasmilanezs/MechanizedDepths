@@ -218,19 +218,20 @@ function _readMaterialJson(name, materialType) {
 }
 
 // =============================================================================
-// Construção do mapping — parasita de _materials e _outcomes
+// Construção do mapping — consome a API explícita do schematic_gen
 // =============================================================================
 
 ServerEvents.loaded(function(event) {
 
-    // Guarda de sanidade: verifica que o schematic_gen rodou antes
-    if (typeof global._ticMaterials === "undefined" || typeof global._ticOutcomes === "undefined") {
-        console.error("[Mechanized/Tooltip] global._ticMaterials ou _ticOutcomes nao encontrados")
+    // Guarda de sanidade: verifica que o schematic_gen publicou a API antes.
+    var tetraIntegration = global.MechanizedDepths && global.MechanizedDepths.TetraTinkers
+    if (!tetraIntegration) {
+        console.error("[Mechanized/Tooltip] MechanizedDepths.TetraTinkers nao encontrado")
         return
     }
 
-    var _materials = global._ticMaterials
-    var _outcomes  = global._ticOutcomes
+    var _materials = tetraIntegration.materials
+    var _outcomes  = tetraIntegration.outcomes
 
     var materialsMap = {}
     var modulesMap   = {}

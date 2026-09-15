@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "create:brass_ingot"
-  },
-  "value": 1,
-  "needed": 1,
-  "material": "mechanized:brass"
-}

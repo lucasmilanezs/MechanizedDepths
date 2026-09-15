@@ -16,6 +16,112 @@
 var REPLACE = false
 
 // =============================================================================
+// Export estatico de localizacao Tetra
+// =============================================================================
+// O resource pack do cliente e montado antes de ServerEvents.highPriorityData.
+// Portanto, a localizacao nao pode depender de ClientEvents.lang lendo os
+// outcomes deste gerador: o arquivo abaixo e o artefato versionado que sera
+// consumido no proximo carregamento de recursos.
+var MD_TT_STATIC_LANG_PATH = "kubejs/assets/tetra/lang/en_us.json"
+
+var MD_TT_VARIANT_NAMES = {
+    "basic_pickaxe": "Pick Head",
+    "basic_axe": "Axe Head",
+    "claw": "Claw Head",
+    "butt": "Butt Head",
+    "adze": "Adze Head",
+    "basic_hammer": "Hammer Head",
+    "sickle": "Sickle Head",
+    "hoe": "Hoe Head",
+    "basic_handle": "Handle",
+    "double_binding": "Binding",
+    "basic_blade": "Blade",
+    "short_blade": "Short Blade",
+    "machete": "Machete",
+    "throwing_knife": "Throwing Knife",
+    "heavy_blade": "Heavy Blade",
+    "spearhead": "Spearhead",
+    "basic_shovel": "Shovel Head",
+    "long_handle": "Long Handle",
+    "light_handle": "Light Handle",
+    "single_binding": "Binding",
+    "straight_stave": "Straight Stave",
+    "long_stave": "Long Stave",
+    "recurve_stave": "Recurve Stave",
+    "laminated_stave": "Laminated Stave",
+    "basic_string": "String",
+    "sights": "Sights",
+    "stabilizer": "Stabilizer",
+    "extended_rest": "Extended Rest",
+    "basic_stave": "Stave",
+    "basic_stock": "Stock",
+    "stirrup": "Stirrup"
+}
+
+function MD_TT_titleCase(value) {
+    var words = (value + "").split("_")
+    for (var i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1)
+    }
+    return words.join(" ")
+}
+
+function MD_TT_buildStaticLang(materials, outcomes) {
+    var lang = {}
+
+    for (var mi = 0; mi < materials.length; mi++) {
+        var materialName = materials[mi].name
+        var displayName = MD_TT_titleCase(materialName)
+        lang["tetra.material." + materialName] = displayName
+        lang["tetra.material." + materialName + ".prefix"] = displayName
+        lang["tetra.material.feature." + materialName] = displayName
+    }
+
+    var seenVariants = {}
+    var schematicKeys = Object.keys(outcomes).sort()
+    for (var si = 0; si < schematicKeys.length; si++) {
+        var outcomeList = outcomes[schematicKeys[si]]
+        for (var oi = 0; oi < outcomeList.length; oi++) {
+            var moduleVariant = outcomeList[oi].moduleVariant
+            if (!moduleVariant || seenVariants[moduleVariant]) continue
+            seenVariants[moduleVariant] = true
+
+            var parts = (moduleVariant + "").split("/")
+            var suffix = parts[0]
+            var materialName = parts.length > 1 ? parts[1] : ""
+            var moduleName = MD_TT_VARIANT_NAMES[suffix] || MD_TT_titleCase(suffix)
+            lang["tetra.variant." + moduleVariant] = MD_TT_titleCase(materialName) + " " + moduleName
+        }
+    }
+
+    return lang
+}
+
+function MD_TT_hasSameLang(existing, generated) {
+    var existingKeys = Object.keys(existing).sort()
+    var generatedKeys = Object.keys(generated).sort()
+    if (existingKeys.length !== generatedKeys.length) return false
+
+    for (var i = 0; i < generatedKeys.length; i++) {
+        var key = generatedKeys[i]
+        if (key !== existingKeys[i] || existing[key] !== generated[key]) return false
+    }
+    return true
+}
+
+function MD_TT_writeStaticLang(materials, outcomes) {
+    var generated = MD_TT_buildStaticLang(materials, outcomes)
+    var existing = JsonIO.read(MD_TT_STATIC_LANG_PATH)
+    if (existing && MD_TT_hasSameLang(existing, generated)) return false
+
+    // Este arquivo e integralmente gerado; nao adicione chaves manuais nele.
+    JsonIO.write(MD_TT_STATIC_LANG_PATH, generated)
+    console.info("[Mechanized/Tetra] Updated " + MD_TT_STATIC_LANG_PATH
+        + "; restart or reload resources to apply the new localization.")
+    return true
+}
+
+// =============================================================================
 // Mapeamentos
 // =============================================================================
 
@@ -185,7 +291,8 @@ var HAMMER_VARIANTS = [
         "fixedModel": null
     },
     {
-        // era tetra:stone/blackstone -- mantem tools/integrity, vira metal
+        // Era tetra:stone/blackstone. O custo fixo conserva a exigencia de
+        // integridade deste degrau da progressao.
         "materials": [HAMMER_T2_MATERIAL],
         "toolLevel": "minecraft:stone",
         "integrity": -1,
@@ -194,10 +301,11 @@ var HAMMER_VARIANTS = [
     },
     {
         // era tetra:stone/obsidian -- o nativo cravava o modelo de obsidian,
-        // aqui o modelo passa a ser dirigido pelo material (steel e metal)
+        // aqui o modelo passa a ser dirigido pelo material (steel e metal).
+        // Mantem o mesmo custo fixo do degrau Infused Iron.
         "materials": [HAMMER_T3_MATERIAL],
         "toolLevel": "minecraft:iron",
-        "integrity": null,
+        "integrity": -1,
         "textures":  ["metal"],
         "fixedModel": null
     },
@@ -556,13 +664,18 @@ ServerEvents.command("debugSchematics", function(event) {
         }
     }
 })
-global._ticMaterials = _materials
-global._ticOutcomes  = _outcomes
+global.MechanizedDepths = global.MechanizedDepths || {}
+global.MechanizedDepths.TetraTinkers = {
+    materials: _materials,
+    outcomes: _outcomes
+}
 // =============================================================================
 // Injecao dos schematics -- um addJson por schematic, estatico e explicito
 // =============================================================================
 
 ServerEvents.highPriorityData(function(event) {
+
+    MD_TT_writeStaticLang(_materials, _outcomes)
 
     var DEBUG_DUMP = true
 

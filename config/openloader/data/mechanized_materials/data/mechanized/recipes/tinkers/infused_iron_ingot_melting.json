@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "naturesaura:infused_iron"
+  },
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_infused_iron"
+  },
+  "temperature": 950,
+  "time": 60
+}

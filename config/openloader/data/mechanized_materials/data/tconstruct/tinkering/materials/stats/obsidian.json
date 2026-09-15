@@ -14,8 +14,13 @@
       "mining_speed": 0.0
     },
     "tconstruct:binding": {},
-    "tconstruct:plating_chestplate": 
-    {
+    "tconstruct:maille": {},
+    "tconstruct:plating_boots": {
+      "armor": 2.0,
+      "durability": 143,
+      "knockback_resistance": 0.15
+    },
+    "tconstruct:plating_chestplate": {
       "armor": 5.0,
       "durability": 176,
       "knockback_resistance": 0.15
