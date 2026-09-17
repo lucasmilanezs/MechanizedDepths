@@ -463,21 +463,10 @@ var MD_TT_MATERIAL_CONTRACTS = {
 // tooltip; ela contém apenas literais JavaScript próprios, nunca wrappers de
 // JsonIO ou dados percorridos do registry.
 //
-// O Cobalt abaixo é o caso temporário de aceitação da infraestrutura. Remova
-// estas duas entradas quando a prova visual e de comportamento estiver fechada;
-// entradas futuras só entram após a revisão de leitor, multiplicidade e UX.
-var MD_TT_CONTEXTUAL_AFFINITIES = [
-    {
-        "material": "cobalt",
-        "module": "double/basic_pickaxe",
-        "effects": { "workable": 60 }
-    },
-    {
-        "material": "cobalt",
-        "module": "sword/basic_blade",
-        "effects": { "bleeding": 1 }
-    }
-]
+// Começa vazio por design. A infraestrutura foi validada com um fixture de
+// Cobalt, removido após a aceitação; entradas futuras só entram após revisão
+// de leitor, multiplicidade e UX.
+var MD_TT_CONTEXTUAL_AFFINITIES = []
 
 // Apenas módulos que recebem uma afinidade ganham um template local. Cada
 // template é uma cópia integral, auditada contra Tetra 6.13.0, do módulo
