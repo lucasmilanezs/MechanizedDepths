@@ -95,3 +95,13 @@ Thumbs.db
 node_modules/
 lib
 AGENTS.md
+
+# Estado exclusivamente local; padrões ancorados na raiz do repositório.
+# Não use padrões amplos sob config/: o restante da pasta contém conteúdo do pack.
+/config/embeddium-options.json
+/config/jei/recipe-category-sort-order.ini
+/config/worldedit/worldedit.properties
+/config/openloader/data/mechanized_materials.zip
+/local/
+/kubejs/debug/
+/minecraftinstance.json

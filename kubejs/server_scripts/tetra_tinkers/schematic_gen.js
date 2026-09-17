@@ -13,7 +13,7 @@
 
 // true  = replace completo (producao)
 // false = merge (debug, nao destroi outcomes existentes)
-var REPLACE = false
+var MD_TT_REPLACE = false
 
 // =============================================================================
 // Export estatico de localizacao Tetra
@@ -111,13 +111,9 @@ function MD_TT_hasSameLang(existing, generated) {
 
 function MD_TT_writeStaticLang(materials, outcomes) {
     var generated = MD_TT_buildStaticLang(materials, outcomes)
-    var existing = JsonIO.read(MD_TT_STATIC_LANG_PATH)
-    if (existing && MD_TT_hasSameLang(existing, generated)) return false
-
-    // Este arquivo e integralmente gerado; nao adicione chaves manuais nele.
+    // Este arquivo é integralmente gerado; escreva JS puro e não releia o
+    // wrapper Java de JsonIO durante a montagem do datapack.
     JsonIO.write(MD_TT_STATIC_LANG_PATH, generated)
-    console.info("[Mechanized/Tetra] Updated " + MD_TT_STATIC_LANG_PATH
-        + "; restart or reload resources to apply the new localization.")
     return true
 }
 
@@ -125,108 +121,26 @@ function MD_TT_writeStaticLang(materials, outcomes) {
 // Mapeamentos
 // =============================================================================
 
-var TOOL_LEVEL_TO_INT = {
-    "minecraft:wood":           1,
-    "minecraft:gold":           2,
-    "minecraft:stone":          3,
-    "minecraft:iron":           4,
-    "minecraft:diamond":        5,
-    "minecraft:netherite":      6,
-    "tetra:maxed_forge_hammer": 7
+// P0: cada proxy tem um destino declarado.  Nada fora desta tabela pode
+// entrar nos schematics, o que evita converter parts de Tinkers em módulos
+// que continuam deliberadamente nativos (bindings, risers, strings e sockets).
+var MD_TT_ROUTE_TABLE = {
+    "pick_head":      { "item": "tconstruct:pick_head",      "schematics": ["double/basic_pickaxe"] },
+    "small_axe_head": { "item": "tconstruct:small_axe_head", "schematics": ["double/basic_axe", "double/claw", "double/butt"] },
+    "small_blade":    { "item": "tconstruct:small_blade",    "schematics": ["sword/basic_blade", "sword/short_blade", "sword/machete"] },
+    "adze_head":      { "item": "tconstruct:adze_head",      "schematics": ["double/adze"] },
+    "broad_blade":    { "item": "tconstruct:broad_blade",    "schematics": ["sword/heavy_blade", "double/sickle", "double/hoe", "single/spearhead", "single/basic_shovel"] },
+    "tool_handle":    { "item": "tconstruct:tool_handle",    "schematics": ["double/basic_handle", "single/basic_handle", "single/light_handle"] },
+    "tough_handle":   { "item": "tconstruct:tough_handle",   "schematics": ["single/long_handle"] },
+    "bow_limb":       { "item": "tconstruct:bow_limb",       "schematics": ["bow/straight_stave", "bow/long_stave", "bow/recurve_stave", "bow/laminated_stave", "crossbow/basic_stave"] },
+    "bow_grip":       { "item": "tconstruct:bow_grip",       "schematics": ["crossbow/basic_stock"] }
 }
 
-var TYPE_TO_ACTION = {
-    "wood":   "axe_dig",
-    "stone":  "hammer_dig",
-    "metal":  "hammer_dig",
-    "gem":    "hammer_dig",
-    "bone":   "hammer_dig",
-    "rod":    "hammer_dig",
-    "misc":   "hammer_dig",
-    "scale":  "cut",
-    "skin":   "cut",
-    "fiber":  "cut",
-    "fabric": "cut"
-}
-
-var TYPE_TO_PARTS = {
-    "wood":   ["tool_handle", "tool_binding", "bow_limb"],
-    "stone":  ["pick_head", "small_axe_head", "small_blade", "adze_head", "hammer_head", "broad_blade"],
-    "metal":  ["pick_head", "small_axe_head", "small_blade", "adze_head", "hammer_head", "broad_blade", "tool_handle", "bow_limb", "bow_grip"],
-    "gem":    ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade"],
-    "bone":   ["pick_head", "small_axe_head", "small_blade", "adze_head", "hammer_head", "broad_blade", "tool_handle", "bow_grip"],
-    "rod":    ["tool_handle"],
-    "misc":   ["tool_handle", "tool_binding"],
-    "scale":  ["tool_binding"],
-    "skin":   ["tool_binding"],
-    "fiber":  ["bowstring", "tool_binding"],
-    "fabric": ["bowstring", "tool_binding"]
-}
-
-// hammer_head lista vazia -- controlado via hammerTier exclusivamente
-var PART_TO_SCHEMATICS = {
-    "pick_head":      ["double/basic_pickaxe"],
-    "small_axe_head": ["double/basic_axe", "double/claw", "double/butt"],
-    "small_blade":    ["sword/basic_blade", "sword/short_blade", "sword/machete", "sword/throwing_knife"],
-    "adze_head":      ["double/adze"],
-    "hammer_head":    [],
-    "broad_blade":    ["sword/heavy_blade", "double/sickle", "double/hoe", "single/spearhead", "single/basic_shovel"],
-    "tool_handle":    ["double/basic_handle", "single/basic_handle", "single/long_handle", "single/light_handle"],
-    "tool_binding":   ["double/binding", "single/binding"],
-    "bow_limb":       ["bow/straight_stave", "bow/long_stave", "bow/recurve_stave", "bow/laminated_stave", "crossbow/basic_stave"],
-    "bowstring":      ["bow/basic_string", "crossbow/basic_string"],
-    "bow_grip":       ["bow/sights", "bow/stabilizer", "bow/extended_rest", "crossbow/stirrup", "crossbow/basic_stock"]
-}
-
-var PART_TO_ITEM = {
-    "pick_head":      "tconstruct:pick_head",
-    "small_axe_head": "tconstruct:small_axe_head",
-    "small_blade":    "tconstruct:small_blade",
-    "adze_head":      "tconstruct:adze_head",
-    "hammer_head":    "tconstruct:hammer_head",
-    "broad_blade":    "tconstruct:broad_blade",
-    "tool_handle":    "tconstruct:tool_handle",
-    "tool_binding":   "tconstruct:tool_binding",
-    "bow_limb":       "tconstruct:bow_limb",
-    "bowstring":      "tconstruct:bowstring",
-    "bow_grip":       "tconstruct:bow_grip"
-}
-
-// moduleKey por schematic-id
-var SCHEMATIC_MODULE_KEY = {
-    "double/basic_pickaxe":  "double/basic_pickaxe",
-    "double/basic_axe":      "double/basic_axe",
-    "double/claw":           "double/claw",
-    "double/butt":           "double/butt",
-    "double/adze":           "double/adze",
-    "double/basic_hammer":   "double/basic_hammer",
-    "double/sickle":         "double/sickle",
-    "double/hoe":            "double/hoe",
-    "double/basic_handle":   "double/basic_handle",
-    "double/binding":        "double/binding",
-    "sword/basic_blade":     "sword/basic_blade",
-    "sword/short_blade":     "sword/short_blade",
-    "sword/machete":         "sword/machete",
-    "sword/throwing_knife":  "sword/throwing_knife",
-    "sword/heavy_blade":     "sword/heavy_blade",
-    "single/spearhead":      "single/spearhead",
-    "single/basic_shovel":   "single/basic_shovel",
-    "single/basic_handle":   "single/basic_handle",
-    "single/long_handle":    "single/long_handle",
-    "single/light_handle":   "single/light_handle",
-    "single/binding":        "single/binding",
-    "bow/straight_stave":    "bow/straight_stave",
-    "bow/long_stave":        "bow/long_stave",
-    "bow/recurve_stave":     "bow/recurve_stave",
-    "bow/laminated_stave":   "bow/laminated_stave",
-    "bow/basic_string":      "bow/basic_string",
-    "bow/sights":            "bow/sights",
-    "bow/stabilizer":        "bow/stabilizer",
-    "bow/extended_rest":     "bow/extended_rest",
-    "crossbow/basic_stave":  "crossbow/basic_stave",
-    "crossbow/basic_stock":  "crossbow/basic_stock",
-    "crossbow/basic_string": "crossbow/basic_string",
-    "crossbow/stirrup":      "crossbow/stirrup"
+var MD_TT_TYPE_PARTS = {
+    "metal": ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade", "tool_handle", "tough_handle", "bow_limb", "bow_grip"],
+    "gem":   ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade"],
+    "stone": ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade"],
+    "bone":  ["small_blade", "broad_blade", "tool_handle", "tough_handle"]
 }
 
 
@@ -390,30 +304,26 @@ function hammerHead(namespace, material) {
     }
 }
 
-var HAMMER_OUTCOMES = [
+var MD_TT_HAMMER_OUTCOMES = [
     {
         "material": hammerHead("tconstruct", "wood"),
-        "toolFactor": 0,
         "moduleKey": "double/basic_hammer",
         "moduleVariant": HAMMER_WOOD_VARIANT
     },
     {
         // tconstruct:rock cobre stone/diorite/andesite/granite de uma vez
         "material": hammerHead("tconstruct", "rock"),
-        "toolFactor": 0,
         "moduleKey": "double/basic_hammer",
         "moduleVariant": "basic_hammer/stone"
     },
     {
         "material": hammerHead("tconstruct", "copper"),
-        "countFactor": 2,
         "requiredTools": { "hammer_dig": "minecraft:wood" },
         "moduleKey": "double/basic_hammer",
         "moduleVariant": "basic_hammer/copper"
     },
     {
         "material": hammerHead("tconstruct", "iron"),
-        "countFactor": 2,
         "requiredTools": { "hammer_dig": "minecraft:wood" },
         "moduleKey": "double/basic_hammer",
         "moduleVariant": "basic_hammer/iron"
@@ -435,8 +345,7 @@ var HAMMER_OUTCOMES = [
     },
     {
         // era minecraft:netherite_ingot x2
-        "material": hammerHead("tconstruct", "netherite"),
-        "count": 2,
+        "material": hammerHead("mechanized", "netherite"),
         "requiredTools": { "hammer_dig": "tetra:maxed_forge_hammer" },
         "moduleKey": "double/basic_hammer",
         "moduleVariant": "basic_hammer/netherite"
@@ -454,48 +363,44 @@ var HAMMER_APPLICABLE = [
 // Declaracao de materiais
 // =============================================================================
 
-var _materials = []
+var MD_TT_MATERIALS = []
 
-function addMaterial(name, materialType, namespace, toolLevel, hammerTier) {
-    if (hammerTier === undefined) hammerTier = null
-    if (toolLevel === undefined) toolLevel = null
+function MD_TT_addMaterial(name, materialType, namespace) {
     if (namespace === undefined) namespace = "tconstruct"
-    _materials.push({
+    MD_TT_MATERIALS.push({
         name: name,
         namespace: namespace,
-        toolLevel: toolLevel,
-        materialType: materialType,
-        hammerTier: hammerTier
+        materialType: materialType
     })
 }
 // -- Adicione materiais aqui --------------------------------------------------
 // TIER WOOD
-addMaterial("gold", "metal")
-addMaterial("copper", "metal")
+MD_TT_addMaterial("gold", "metal")
+MD_TT_addMaterial("copper", "metal")
 
 // TIER GOLD
-addMaterial("iron", "metal")
-addMaterial("osmium", "metal")
-addMaterial("silver", "metal")
-addMaterial("lead", "metal")
-addMaterial("electrum", "metal")
-addMaterial("constantan", "metal")
+MD_TT_addMaterial("iron", "metal")
+MD_TT_addMaterial("osmium", "metal")
+MD_TT_addMaterial("silver", "metal")
+MD_TT_addMaterial("lead", "metal")
+MD_TT_addMaterial("electrum", "metal")
+MD_TT_addMaterial("constantan", "metal")
 // TIER STONE
-addMaterial("invar", "metal")
-addMaterial("amethyst", "gem", "mechanized")
-addMaterial("bone", "bone")
-addMaterial("bronze", "metal")
+MD_TT_addMaterial("invar", "metal")
+MD_TT_addMaterial("amethyst", "gem", "mechanized")
+MD_TT_addMaterial("bone", "bone")
+MD_TT_addMaterial("bronze", "metal")
 
 // TIER IRON
-addMaterial("infused_iron", "metal", "mechanized")
+MD_TT_addMaterial("infused_iron", "metal", "mechanized")
 // TIER DIAMOND
-addMaterial("diamond", "gem", "mechanized")
-addMaterial("obsidian", "stone")
-addMaterial("steel", "metal")
+MD_TT_addMaterial("diamond", "gem", "mechanized")
+MD_TT_addMaterial("obsidian", "stone")
+MD_TT_addMaterial("steel", "metal")
 // TIER NETHERITE
-addMaterial("netherite", "metal")
-addMaterial("cobalt", "metal")
-addMaterial("manyullyn", "metal")
+MD_TT_addMaterial("netherite", "metal", "mechanized")
+MD_TT_addMaterial("cobalt", "metal")
+MD_TT_addMaterial("manyullyn", "metal")
 // TIER MAXHAMMER
 
 
@@ -505,108 +410,108 @@ addMaterial("manyullyn", "metal")
 // Acumulacao de outcomes (roda fora do evento)
 // =============================================================================
 
-var _outcomes = {}
+var MD_TT_OUTCOMES = {}
 
-// Inicializa entradas para todos os schematics conhecidos
-var _allSchematics = [
+// Somente módulos explicitamente dentro do recorte P0 recebem proxy Tinkers.
+var MD_TT_ALL_SCHEMATICS = [
     "double/basic_pickaxe", "double/basic_axe", "double/claw", "double/butt",
     "double/adze", "double/basic_hammer", "double/sickle", "double/hoe",
-    "double/basic_handle", "double/binding",
+    "double/basic_handle",
     "sword/basic_blade", "sword/short_blade", "sword/machete",
-    "sword/throwing_knife", "sword/heavy_blade",
+    "sword/heavy_blade",
     "single/spearhead", "single/basic_shovel", "single/basic_handle",
-    "single/long_handle", "single/light_handle", "single/binding",
-    "bow/straight_stave", "bow/long_stave", "bow/recurve_stave",
-    "bow/laminated_stave", "bow/basic_string",
-    "bow/sights", "bow/stabilizer", "bow/extended_rest",
-    "crossbow/basic_stave", "crossbow/basic_stock",
-    "crossbow/basic_string", "crossbow/stirrup"
+    "single/long_handle", "single/light_handle",
+    "bow/straight_stave", "bow/long_stave", "bow/recurve_stave", "bow/laminated_stave",
+    "crossbow/basic_stave", "crossbow/basic_stock"
 ]
-for (var si = 0; si < _allSchematics.length; si++) {
-    _outcomes[_allSchematics[si]] = []
+for (var MD_TT_si = 0; MD_TT_si < MD_TT_ALL_SCHEMATICS.length; MD_TT_si++) {
+    MD_TT_OUTCOMES[MD_TT_ALL_SCHEMATICS[MD_TT_si]] = []
 }
 
-// O martelo nao passa pelo loop de materiais -- ladder estatico
-_outcomes["double/basic_hammer"] = HAMMER_OUTCOMES
+// Contrato de outcome normalizado em JS puro. Não percorra objetos retornados
+// por JsonIO aqui: no Rhino 2001 eles expõem reflexão Java e podem alocar uma
+// superfície enorme antes mesmo de o datapack ser validado.
+var MD_TT_MATERIAL_CONTRACTS = {
+    "gold":         { "requiredTools": { "hammer_dig": "minecraft:wood" } },
+    "copper":       { "requiredTools": { "hammer_dig": "minecraft:wood" }, "improvements": { "workable": 1 } },
+    "iron":         { "requiredTools": { "hammer_dig": "minecraft:gold" } },
+    "osmium":       { "requiredTools": { "hammer_dig": "minecraft:stone" } },
+    "silver":       { "requiredTools": { "hammer_dig": "minecraft:stone" } },
+    "lead":         { "requiredTools": { "hammer_dig": "minecraft:stone" } },
+    "electrum":     { "requiredTools": { "hammer_dig": "minecraft:stone" } },
+    "constantan":   { "requiredTools": { "hammer_dig": "minecraft:iron" } },
+    "invar":        { "requiredTools": { "hammer_dig": "minecraft:stone" } },
+    "amethyst":     { "requiredTools": { "hammer_dig": "minecraft:stone" } },
+    "bone":         { "requiredTools": { "hammer_dig": "minecraft:wood" } },
+    "bronze":       { "requiredTools": { "hammer_dig": "minecraft:iron" } },
+    "infused_iron": { "requiredTools": { "hammer_dig": "minecraft:gold" } },
+    "diamond":      { "requiredTools": { "hammer_dig": "minecraft:stone" }, "improvements": { "arrested": 0 } },
+    "obsidian":     { "requiredTools": { "hammer_dig": "minecraft:diamond" }, "improvements": { "arrested": 0 } },
+    "steel":        { "requiredTools": { "hammer_dig": "minecraft:stone" } },
+    "netherite":    { "requiredTools": { "hammer_dig": "minecraft:iron" } },
+    "cobalt":       { "requiredTools": { "hammer_dig": "minecraft:diamond" } },
+    "manyullyn":    { "requiredTools": { "hammer_dig": "minecraft:diamond" } }
+}
 
-for (var mi = 0; mi < _materials.length; mi++) {
-    var mat          = _materials[mi]
-    var matName      = mat.name
-    var toolLevel = mat.toolLevel
-    if (toolLevel === null) {
-        var matJson = JsonIO.read("kubejs/data/tetra/materials/" + mat.materialType + "/" + mat.name + ".json")
-        if (!matJson) matJson = JsonIO.read("kubejs/data/materials_inherit/materials/" + mat.materialType + "/" + mat.name + ".json")
-        if (matJson && matJson.requiredTools) {
-            var rtKeys = Object.keys(matJson.requiredTools)
-            if (rtKeys.length > 0) {
-                var rtVal = matJson.requiredTools[rtKeys[0]]
-                toolLevel = TOOL_LEVEL_TO_INT[rtVal] || 1
-            }
+function MD_TT_proxyOutcome(material, route, schematic) {
+    var contract = MD_TT_MATERIAL_CONTRACTS[material.name]
+    if (!contract) throw new Error("[Mechanized/Tetra] Contrato ausente: " + material.name)
+    var suffix = schematic.split("/")[1]
+    var outcome = {
+        "material": {
+            "items": [route.item],
+            "nbt": "{Material:\"" + material.namespace + ":" + material.name + "\"}"
+        },
+        "moduleKey": schematic,
+        "moduleVariant": suffix + "/" + material.name,
+        "requiredTools": contract.requiredTools,
+        "experienceCost": contract.experienceCost || 0
     }
-    if (toolLevel === null) toolLevel = 1
+
+    // MaterialVariantData cobre atributos/durability/aspects. Estes campos
+    // pertencem ao outcome e precisam ser levados explicitamente pelo proxy.
+    if (contract.improvements) {
+        outcome.improvements = contract.improvements
+    }
+    return outcome
 }
-    var materialType = mat.materialType
-    var hammerTier   = mat.hammerTier
 
-    var action = TYPE_TO_ACTION[materialType]
-    var parts  = TYPE_TO_PARTS[materialType]
-    if (!parts) parts = []
-
-    for (var pi = 0; pi < parts.length; pi++) {
-        var part      = parts[pi]
-        var schematics = PART_TO_SCHEMATICS[part]
-        if (!schematics) schematics = []
-        var item = PART_TO_ITEM[part]
-        if (!item) continue
-
-        for (var sci = 0; sci < schematics.length; sci++) {
-            var schematic = schematics[sci]
-            if (!_outcomes[schematic]) _outcomes[schematic] = []
-
-            var moduleKey       = SCHEMATIC_MODULE_KEY[schematic]
-            var moduleKeySuffix = moduleKey.split("/")[1]
-            var moduleVariant   = moduleKeySuffix + "/" + matName
-
-            var requiredTools = {}
-            requiredTools[action] = toolLevel
-
-            _outcomes[schematic].push({
-                "material": {
-                    "items": [item],
-                    "nbt": "{Material:\"" + mat.namespace + ":" + matName + "\"}"
-                },
-                "moduleKey": moduleKey,
-                "moduleVariant": moduleVariant,
-                "requiredTools": requiredTools
-            })
+for (var MD_TT_mi = 0; MD_TT_mi < MD_TT_MATERIALS.length; MD_TT_mi++) {
+    var MD_TT_material = MD_TT_MATERIALS[MD_TT_mi]
+    var MD_TT_parts = MD_TT_TYPE_PARTS[MD_TT_material.materialType] || []
+    for (var MD_TT_pi = 0; MD_TT_pi < MD_TT_parts.length; MD_TT_pi++) {
+        var MD_TT_route = MD_TT_ROUTE_TABLE[MD_TT_parts[MD_TT_pi]]
+        for (var MD_TT_sci = 0; MD_TT_sci < MD_TT_route.schematics.length; MD_TT_sci++) {
+            var MD_TT_schematic = MD_TT_route.schematics[MD_TT_sci]
+            MD_TT_OUTCOMES[MD_TT_schematic].push(MD_TT_proxyOutcome(MD_TT_material, MD_TT_route, MD_TT_schematic))
         }
     }
-
-    // Hammer: NAO e gerado por material aqui. O ladder do martelo e estatico
-    // e vive no bloco HAMMER_* mais abaixo (o modulo do Tetra enumera material
-    // por material, entao nao existe variante generica por categoria).
 }
 
-// Para cada material registrado em _materials,
-// tenta ler kubejs/data/tetra/materials/<materialType>/<name>.json
-// e acumula num objeto de lookup global
-
-var _materialData = {}
-
-for (var mi = 0; mi < _materials.length; mi++) {
-    var mat  = _materials[mi]
-    var path = "kubejs/data/tetra/materials/" + mat.materialType + "/" + mat.name + ".json"
-    var json = JsonIO.read(path)
-    if (!json) {
-        path = "kubejs/data/materials_inherit/materials/" + mat.materialType + "/" + mat.name + ".json"
-        json = JsonIO.read(path)
+// O martelo continua uma progressão fechada. Também recebe o contrato
+// explícito que um outcome NBT não herda automaticamente.
+for (var MD_TT_hi = 0; MD_TT_hi < MD_TT_HAMMER_OUTCOMES.length; MD_TT_hi++) {
+    var MD_TT_hammer = MD_TT_HAMMER_OUTCOMES[MD_TT_hi]
+    var MD_TT_variantParts = MD_TT_hammer.moduleVariant.split("/")
+    var MD_TT_hammerContract = MD_TT_MATERIAL_CONTRACTS[MD_TT_variantParts[1]]
+    if (MD_TT_hammerContract) {
+        MD_TT_hammer.experienceCost = MD_TT_hammerContract.experienceCost || 0
+        if (MD_TT_hammerContract.improvements) {
+            MD_TT_hammer.improvements = MD_TT_hammerContract.improvements
+        }
     }
-    if (json) {
-        _materialData[mat.name] = json
-        console.log("[Mechanized/Tetra] Material carregado: " + mat.name + " -> primary=" + json.primary + " secondary=" + json.secondary + " durability=" + json.durability)
-    } else {
-        console.warn("[Mechanized/Tetra] Material JSON nao encontrado: " + path)
-    }
+}
+MD_TT_OUTCOMES["double/basic_hammer"] = MD_TT_HAMMER_OUTCOMES
+
+// A injeção legada ainda enumera alguns caminhos fora do P0. Mantê-los como
+// merge vazio é seguro nesta transição: o registro nativo permanece intacto.
+var MD_TT_LEGACY_SCHEMATICS = [
+    "double/binding", "single/binding", "sword/throwing_knife",
+    "bow/basic_string", "bow/sights", "bow/stabilizer", "bow/extended_rest",
+    "crossbow/basic_string", "crossbow/stirrup"
+]
+for (var MD_TT_li = 0; MD_TT_li < MD_TT_LEGACY_SCHEMATICS.length; MD_TT_li++) {
+    MD_TT_OUTCOMES[MD_TT_LEGACY_SCHEMATICS[MD_TT_li]] = []
 }
 
 ServerEvents.commandRegistry(function(event) {
@@ -616,17 +521,15 @@ ServerEvents.commandRegistry(function(event) {
         Commands.literal("dumpMaterialData")
             .executes(function(ctx) {
                 var source = ctx.source
-                var keys = Object.keys(_materialData)
-                source.sendSuccess(Text.of("=== materialData — " + keys.length + " materiais ==="), false)
+                var keys = Object.keys(MD_TT_MATERIAL_CONTRACTS)
+                source.sendSuccess(Text.of("=== contratos de material — " + keys.length + " materiais ==="), false)
                 for (var i = 0; i < keys.length; i++) {
                     var k = keys[i]
-                    var d = _materialData[k]
+                    var d = MD_TT_MATERIAL_CONTRACTS[k]
                     source.sendSuccess(Text.of(
-                        k + " | pri=" + d.primary +
-                        " sec=" + d.secondary +
-                        " ter=" + d.tertiary +
-                        " dur=" + d.durability +
-                        " mag=" + d.magicCapacity
+                        k + " | tools=" + JSON.stringify(d.requiredTools) +
+                        " | innates=" + JSON.stringify(d.improvements || {}) +
+                        " | xp=" + (d.experienceCost || 0)
                     ), false)
                 }
                 return 1
@@ -643,7 +546,7 @@ ServerEvents.command("debugSchematics", function(event) {
     var filter = (args && args.length > 0) ? args[0] : null
 
     if (filter) {
-        var list = _outcomes[filter]
+        var list = MD_TT_OUTCOMES[filter]
         if (!list) {
             event.source.sendSuccess("Schematic nao encontrado: " + filter, false)
             return
@@ -657,17 +560,17 @@ ServerEvents.command("debugSchematics", function(event) {
             )
         }
     } else {
-        var keys = Object.keys(_outcomes)
+        var keys = Object.keys(MD_TT_OUTCOMES)
         for (var ki = 0; ki < keys.length; ki++) {
             var k = keys[ki]
-            event.source.sendSuccess(k + ": " + _outcomes[k].length + " outcomes", false)
+            event.source.sendSuccess(k + ": " + MD_TT_OUTCOMES[k].length + " outcomes", false)
         }
     }
 })
 global.MechanizedDepths = global.MechanizedDepths || {}
 global.MechanizedDepths.TetraTinkers = {
-    materials: _materials,
-    outcomes: _outcomes
+    materials: MD_TT_MATERIALS,
+    outcomes: MD_TT_OUTCOMES
 }
 // =============================================================================
 // Injecao dos schematics -- um addJson por schematic, estatico e explicito
@@ -675,7 +578,12 @@ global.MechanizedDepths.TetraTinkers = {
 
 ServerEvents.highPriorityData(function(event) {
 
-    MD_TT_writeStaticLang(_materials, _outcomes)
+    // Compatibilidade local durante a migração da injeção explícita abaixo.
+    // Estas variáveis vivem no callback de data, não no escopo compartilhado.
+    var _outcomes = MD_TT_OUTCOMES
+    var REPLACE = MD_TT_REPLACE
+
+    MD_TT_writeStaticLang(MD_TT_MATERIALS, MD_TT_OUTCOMES)
 
     var DEBUG_DUMP = true
 
@@ -768,8 +676,8 @@ ServerEvents.highPriorityData(function(event) {
     // silenciosamente (reconhece o material, nao acha basic_hammer/<nome>).
     inject("tetra:modules/double/basic_hammer", buildHammerModule())
 
-    // replace:true FIXO mesmo em modo debug: os outcomes nativos foram
-    // redeclarados por inteiro em HAMMER_OUTCOMES. Merge duplicaria tudo.
+    // O martelo é o único schematic fechado nesta fase: seus outcomes nativos
+    // foram reconstituídos pela ladder e não devem ser mesclados novamente.
     inject("tetra:schematics/double/basic_hammer/basic_hammer", {
         "replace": true,
         "slots": ["double/head_left", "double/head_right"],
@@ -827,7 +735,7 @@ ServerEvents.highPriorityData(function(event) {
     })
 
     inject("tetra:schematics/double/basic_handle/basic_handle", {
-        "replace": true,
+        "replace": MD_TT_REPLACE,
         "slots": ["double/handle"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1166,6 +1074,7 @@ ServerEvents.highPriorityData(function(event) {
 })
 
 ServerEvents.commandRegistry(function(event) {
+    var _outcomes = MD_TT_OUTCOMES
     var StringArgumentType = Java.loadClass("com.mojang.brigadier.arguments.StringArgumentType")
     var Commands = event.commands
 
@@ -1185,7 +1094,7 @@ ServerEvents.commandRegistry(function(event) {
                     .suggests(function(ctx, builder) {
                         var keys = Object.keys(_outcomes)
                         for (var i = 0; i < keys.length; i++) {
-                            builder.suggest(_outcomes[keys[i]].length > 0 ? keys[i] : null)
+                            if (_outcomes[keys[i]].length > 0) builder.suggest(keys[i])
                         }
                         return builder.buildFuture()
                     })
@@ -1236,6 +1145,9 @@ function readTetraMaterialsFolder(folder) {
 }
 
 ServerEvents.commandRegistry(function(event) {
+    var _materials = MD_TT_MATERIALS
+    var _materialData = MD_TT_MATERIAL_CONTRACTS
+    var _outcomes = MD_TT_OUTCOMES
     var Commands = event.commands
 
     event.register(
@@ -1258,18 +1170,21 @@ ServerEvents.commandRegistry(function(event) {
 })
 
 ServerEvents.commandRegistry(function(event) {
+    var _materials = MD_TT_MATERIALS
+    var _materialData = MD_TT_MATERIAL_CONTRACTS
+    var _outcomes = MD_TT_OUTCOMES
     var Commands = event.commands
     event.register(
         Commands.literal("dumpMaterialState")
             .executes(function(ctx) {
                 var source = ctx.source
-                source.sendSuccess(Text.of("=== _materials declarados: " + _materials.length + " ==="), false)
+                source.sendSuccess(Text.of("=== materiais declarados: " + _materials.length + " ==="), false)
                 for (var i = 0; i < _materials.length; i++) {
                     var m = _materials[i]
                     var hasData = _materialData[m.name] ? "✓" : "✗"
                     source.sendSuccess(Text.of(
                         hasData + " " + m.namespace + ":" + m.name +
-                        " (" + m.materialType + ") tl=" + m.toolLevel
+                        " (" + m.materialType + ")"
                     ), false)
                 }
                 
