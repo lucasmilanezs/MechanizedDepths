@@ -4,12 +4,12 @@
   "primary": 2.5,
   "secondary": 6.5,
   "tertiary": 0.5,
-  "durability": 200,
+  "durability": 240,
   "integrityCost": 1,
   "integrityGain": 3,
   "magicCapacity": 72,
   "toolLevel": "minecraft:iron",
-  "toolEfficiency": 4.0,
+  "toolEfficiency": 7.0,
   "tints": {
     "glyph": "lead_glyph",
     "texture": "lead"

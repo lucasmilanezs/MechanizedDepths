@@ -21,7 +21,7 @@ var HP_HEADS = [
   ['tconstruct:hammer_head', '{Material:"tconstruct:iron"}'],
   ['tconstruct:hammer_head', '{Material:"mechanized:infused_iron"}'],
   ['tconstruct:hammer_head', '{Material:"tconstruct:steel"}'],
-  ['tconstruct:hammer_head', null]
+  ['tconstruct:hammer_head', '{Material:"mechanized:netherite"}']
 ]
 
 // Cada entrada corresponde à cabeça na mesma coluna de HP_HEADS. O NBT mantém

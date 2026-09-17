@@ -10,5 +10,8 @@
   "material.mechanized.amethyst.encyclopedia": "",
   "material.mechanized.infused_iron": "Infused Iron",
   "material.mechanized.infused_iron.flavor": "A rare metal infused with magical energy.",
-  "material.mechanized.infused_iron.encyclopedia": "Grants increased durability and a chance to deal additional damage."
+  "material.mechanized.infused_iron.encyclopedia": "Grants increased durability and a chance to deal additional damage.",
+  "material.mechanized.netherite": "Netherite",
+  "material.mechanized.netherite.flavor": "An ancient alloy tempered by the Nether.",
+  "material.mechanized.netherite.encyclopedia": "A resilient late-game metal for durable, high-performing tool parts."
 }

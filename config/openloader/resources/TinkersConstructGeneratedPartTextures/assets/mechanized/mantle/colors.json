@@ -1,4 +1,5 @@
 {
-  "material.example.diamond": "4DD9E8",
-  "material.mechanized.brass": "D4A017"
+  "material.example.diamond": "#4DD9E8",
+  "material.mechanized.brass": "#D4A017",
+  "material.mechanized.netherite": "#4A484D"
 }

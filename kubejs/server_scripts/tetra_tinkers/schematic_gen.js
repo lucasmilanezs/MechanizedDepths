@@ -453,6 +453,198 @@ var MD_TT_MATERIAL_CONTRACTS = {
     "manyullyn":    { "requiredTools": { "hammer_dig": "minecraft:diamond" } }
 }
 
+// =============================================================================
+// Afinidades contextuais de material → módulo
+// =============================================================================
+// Um material Tetra contribui seus dados para todo módulo que o aceita. Uma
+// capacidade que só deve existir em um módulo específico precisa, portanto,
+// de uma variante específica daquele módulo, inserida antes da variante
+// genérica. Esta tabela é a única fonte para o módulo emitido e para o
+// tooltip; ela contém apenas literais JavaScript próprios, nunca wrappers de
+// JsonIO ou dados percorridos do registry.
+//
+// O Cobalt abaixo é o caso temporário de aceitação da infraestrutura. Remova
+// estas duas entradas quando a prova visual e de comportamento estiver fechada;
+// entradas futuras só entram após a revisão de leitor, multiplicidade e UX.
+var MD_TT_CONTEXTUAL_AFFINITIES = [
+    {
+        "material": "cobalt",
+        "module": "double/basic_pickaxe",
+        "effects": { "workable": 60 }
+    },
+    {
+        "material": "cobalt",
+        "module": "sword/basic_blade",
+        "effects": { "bleeding": 1 }
+    }
+]
+
+// Apenas módulos que recebem uma afinidade ganham um template local. Cada
+// template é uma cópia integral, auditada contra Tetra 6.13.0, do módulo
+// nativo correspondente. Não leia nem mescle o JAR aqui: o Rhino/KubeJS deste
+// pack não é uma fronteira segura para resolver recursos dinamicamente.
+var MD_TT_CONTEXTUAL_MODULE_BASES = {
+    "double/basic_pickaxe": {
+        "replace": true,
+        "type": "tetra:multi_major_module",
+        "slots": ["double/head_left", "double/head_right"],
+        "slotSuffixes": ["_left", "_right"],
+        "improvements": [
+            "tetra:double/pickaxe/", "tetra:double/shared_head/",
+            "tetra:double/shared/", "tetra:shared/"
+        ],
+        "variants": [{
+            "materials": ["tetra:metal/", "tetra:stone/", "tetra:wood/", "tetra:gem/"],
+            "key": "basic_pickaxe/",
+            "attributes": { "generic.attack_damage": -2, "generic.attack_speed": -1.2 },
+            "aspects": { "block_breaker": 2, "breakable": 2 },
+            "tools": { "pickaxe_dig": -1 },
+            "durability": -10,
+            "extract": {
+                "primaryAttributes": { "generic.attack_damage": 1 },
+                "tools": { "pickaxe_dig": [1, 0.91] },
+                "durability": 0.5,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": { "textureX": 176 },
+                "availableTextures": ["crude", "metal", "shiny"],
+                "models": [{ "location": "tetra:item/module/double/head/basic_pickaxe/" }]
+            }
+        }]
+    },
+    "sword/basic_blade": {
+        "replace": true,
+        "slots": ["sword/blade"],
+        "type": "tetra:basic_major_module",
+        "improvements": [
+            "tetra:sword/basic_blade/", "tetra:sword/shared_blade/",
+            "tetra:sword/shared/", "tetra:shared/"
+        ],
+        "variants": [{
+            "materials": ["tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/"],
+            "key": "basic_blade/",
+            "attributes": { "generic.attack_speed": -1.9 },
+            "effects": { "sweeping": 1 },
+            "tools": { "cut": [1, 2] },
+            "aspects": { "edged_weapon": 2, "breakable": 2 },
+            "durability": -20,
+            "tags": ["forge:swords"],
+            "extract": {
+                "primaryAttributes": { "generic.attack_damage": 1 },
+                "durability": 0.9,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": { "textureX": 0 },
+                "availableTextures": ["metal", "shiny", "grainy", "crude"],
+                "models": [{ "location": "tetra:item/module/sword/blade/basic/" }]
+            }
+        }]
+    }
+}
+
+function MD_TT_copyLiteral(value) {
+    if (value === null || typeof value !== "object") return value
+    var result = Array.isArray(value) ? [] : {}
+    var keys = Object.keys(value)
+    for (var i = 0; i < keys.length; i++) {
+        result[keys[i]] = MD_TT_copyLiteral(value[keys[i]])
+    }
+    return result
+}
+
+function MD_TT_contextualMaterialPath(materialName) {
+    for (var i = 0; i < MD_TT_MATERIALS.length; i++) {
+        var material = MD_TT_MATERIALS[i]
+        if (material.name === materialName) {
+            return "tetra:" + material.materialType + "/" + material.name
+        }
+    }
+    return null
+}
+
+function MD_TT_variantAcceptsPath(variant, materialPath) {
+    var materials = variant.materials || []
+    for (var i = 0; i < materials.length; i++) {
+        var selector = materials[i]
+        if (selector === materialPath) return true
+        if (selector.charAt(selector.length - 1) === "/" && materialPath.indexOf(selector) === 0) return true
+    }
+    return false
+}
+
+function MD_TT_validateContextualAffinity(affinity) {
+    if (!affinity || typeof affinity.material !== "string" || typeof affinity.module !== "string") {
+        throw new Error("[Mechanized/Tetra] Afinidade contextual sem material/modulo")
+    }
+    var effects = affinity.effects
+    if (!effects || Object.keys(effects).length === 0) {
+        throw new Error("[Mechanized/Tetra] Afinidade contextual sem efeito: " + affinity.material + " → " + affinity.module)
+    }
+    var effectKeys = Object.keys(effects)
+    for (var i = 0; i < effectKeys.length; i++) {
+        var value = effects[effectKeys[i]]
+        var validPair = Array.isArray(value) && value.length === 2 && typeof value[0] === "number" && typeof value[1] === "number"
+        if (typeof value !== "number" && !validPair) {
+            throw new Error("[Mechanized/Tetra] Efeito contextual invalido: " + effectKeys[i])
+        }
+    }
+}
+
+function MD_TT_contextualVariant(baseVariant, materialPath, affinity) {
+    var variant = MD_TT_copyLiteral(baseVariant)
+    variant.materials = [materialPath]
+
+    if (affinity.effects) {
+        variant.effects = MD_TT_copyLiteral(variant.effects || {})
+        var effectKeys = Object.keys(affinity.effects)
+        for (var i = 0; i < effectKeys.length; i++) {
+            var effectKey = effectKeys[i]
+            variant.effects[effectKey] = MD_TT_copyLiteral(affinity.effects[effectKey])
+        }
+    }
+
+    return variant
+}
+
+function MD_TT_buildContextualModule(moduleKey) {
+    var base = MD_TT_CONTEXTUAL_MODULE_BASES[moduleKey]
+    if (!base) throw new Error("[Mechanized/Tetra] Template contextual ausente: " + moduleKey)
+
+    var output = MD_TT_copyLiteral(base)
+    var variants = []
+    var seenMaterials = {}
+    for (var ai = 0; ai < MD_TT_CONTEXTUAL_AFFINITIES.length; ai++) {
+        var affinity = MD_TT_CONTEXTUAL_AFFINITIES[ai]
+        if (affinity.module !== moduleKey) continue
+        MD_TT_validateContextualAffinity(affinity)
+
+        if (seenMaterials[affinity.material]) {
+            throw new Error("[Mechanized/Tetra] Afinidade contextual duplicada: " + affinity.material + " → " + moduleKey)
+        }
+        seenMaterials[affinity.material] = true
+
+        var materialPath = MD_TT_contextualMaterialPath(affinity.material)
+        if (!materialPath) throw new Error("[Mechanized/Tetra] Material contextual ausente: " + affinity.material)
+
+        var matched = false
+        for (var bi = 0; bi < base.variants.length; bi++) {
+            var baseVariant = base.variants[bi]
+            if (!MD_TT_variantAcceptsPath(baseVariant, materialPath)) continue
+            variants.push(MD_TT_contextualVariant(baseVariant, materialPath, affinity))
+            matched = true
+        }
+        if (!matched) {
+            throw new Error("[Mechanized/Tetra] Afinidade sem variante aceita: " + affinity.material + " → " + moduleKey)
+        }
+    }
+
+    for (var vi = 0; vi < base.variants.length; vi++) {
+        variants.push(MD_TT_copyLiteral(base.variants[vi]))
+    }
+    output.variants = variants
+    return output
+}
+
 function MD_TT_proxyOutcome(material, route, schematic) {
     var contract = MD_TT_MATERIAL_CONTRACTS[material.name]
     if (!contract) throw new Error("[Mechanized/Tetra] Contrato ausente: " + material.name)
@@ -570,7 +762,8 @@ ServerEvents.command("debugSchematics", function(event) {
 global.MechanizedDepths = global.MechanizedDepths || {}
 global.MechanizedDepths.TetraTinkers = {
     materials: MD_TT_MATERIALS,
-    outcomes: MD_TT_OUTCOMES
+    outcomes: MD_TT_OUTCOMES,
+    contextualAffinities: MD_TT_CONTEXTUAL_AFFINITIES
 }
 // =============================================================================
 // Injecao dos schematics -- um addJson por schematic, estatico e explicito
@@ -585,7 +778,9 @@ ServerEvents.highPriorityData(function(event) {
 
     MD_TT_writeStaticLang(MD_TT_MATERIALS, MD_TT_OUTCOMES)
 
-    var DEBUG_DUMP = true
+// JsonIO.write does not reliably create missing nested directories. Debug output
+// is optional and must never block high-priority datapack injection.
+var DEBUG_DUMP = false
 
     function debugDump(tetraPath, obj) {
         if (!DEBUG_DUMP) return
@@ -598,6 +793,23 @@ ServerEvents.highPriorityData(function(event) {
     }
 
     // -------------------------------------------------------------------------
+
+    // Módulos contextuais são emitidos antes dos schematics. Cada um é uma
+    // definição completa e auditável; o array de variantes específicas vem
+    // antes da variante genérica para o resolvedor nativo do Tetra.
+    var contextualModuleKeys = []
+    for (var affinityIndex = 0; affinityIndex < MD_TT_CONTEXTUAL_AFFINITIES.length; affinityIndex++) {
+        var affinityModuleKey = MD_TT_CONTEXTUAL_AFFINITIES[affinityIndex].module
+        var knownContextualModule = false
+        for (var knownIndex = 0; knownIndex < contextualModuleKeys.length; knownIndex++) {
+            if (contextualModuleKeys[knownIndex] === affinityModuleKey) knownContextualModule = true
+        }
+        if (!knownContextualModule) contextualModuleKeys.push(affinityModuleKey)
+    }
+    for (var contextualIndex = 0; contextualIndex < contextualModuleKeys.length; contextualIndex++) {
+        var contextualModuleKey = contextualModuleKeys[contextualIndex]
+        inject("tetra:modules/" + contextualModuleKey, MD_TT_buildContextualModule(contextualModuleKey))
+    }
 
     inject("tetra:schematics/double/basic_pickaxe/basic_pickaxe", {
         "replace": REPLACE,

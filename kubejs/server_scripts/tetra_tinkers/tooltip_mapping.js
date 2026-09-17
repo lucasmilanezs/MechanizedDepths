@@ -161,6 +161,97 @@ function _findVariant(moduleKey, matName, matType) {
     return variants[0]
 }
 
+// Contextual affinities are declared by schematic_gen.js and emitted as real
+// Tetra module variants. The tooltip keeps an equivalent, pure-JS formula so
+// Ctrl previews the same selected variant without reading generated JSON or
+// touching Java resource wrappers at runtime.
+function MD_TT_TOOLTIP_effectFormula(rawEffects) {
+    if (!rawEffects) return null
+    var result = {}
+    var keys = Object.keys(rawEffects)
+    for (var i = 0; i < keys.length; i++) {
+        var key = keys[i]
+        var raw = rawEffects[key]
+        if (typeof raw === "number") {
+            result[key] = { "level": { "base": raw } }
+        } else if (Array.isArray(raw)) {
+            result[key] = {
+                "level": { "base": raw[0] },
+                "efficiency": { "base": raw[1] }
+            }
+        } else {
+            throw new Error("[Mechanized/Tooltip] Efeito contextual invalido: " + key)
+        }
+    }
+    return result
+}
+
+function MD_TT_TOOLTIP_applyContextualAffinities(affinities, materials) {
+    if (!affinities || affinities.length === 0) return
+
+    var typesByName = {}
+    for (var mi = 0; mi < materials.length; mi++) {
+        typesByName[materials[mi].name] = materials[mi].materialType
+    }
+
+    for (var ai = 0; ai < affinities.length; ai++) {
+        var affinity = affinities[ai]
+        var module = _MODULE_FORMULAS[affinity.module]
+        var materialType = typesByName[affinity.material]
+        if (!module || !materialType) {
+            throw new Error("[Mechanized/Tooltip] Afinidade contextual sem modulo/material: " + affinity.module + " / " + affinity.material)
+        }
+
+        var materialPath = "tetra:" + materialType + "/" + affinity.material
+        var alreadyPresent = false
+        for (var vi = 0; vi < module.variants.length; vi++) {
+            var existingMaterials = module.variants[vi].materials || []
+            for (var ei = 0; ei < existingMaterials.length; ei++) {
+                if (existingMaterials[ei] === materialPath) alreadyPresent = true
+            }
+        }
+        if (alreadyPresent) continue
+
+        var template = null
+        for (var ti = 0; ti < module.variants.length; ti++) {
+            var candidates = module.variants[ti].materials || []
+            for (var ci = 0; ci < candidates.length; ci++) {
+                if (candidates[ci] === "tetra:" + materialType + "/") template = module.variants[ti]
+            }
+        }
+        if (!template) {
+            throw new Error("[Mechanized/Tooltip] Afinidade sem variante-base: " + affinity.material + " → " + affinity.module)
+        }
+
+        var effects = {}
+        var templateEffects = template.effects || {}
+        var effectKeys = Object.keys(templateEffects)
+        for (var fi = 0; fi < effectKeys.length; fi++) effects[effectKeys[fi]] = templateEffects[effectKeys[fi]]
+        var affinityEffects = MD_TT_TOOLTIP_effectFormula(affinity.effects)
+        if (affinityEffects) {
+            var affinityEffectKeys = Object.keys(affinityEffects)
+            for (var afi = 0; afi < affinityEffectKeys.length; afi++) {
+                effects[affinityEffectKeys[afi]] = affinityEffects[affinityEffectKeys[afi]]
+            }
+        }
+
+        module.variants.unshift({
+            "key": template.key,
+            "materials": [materialPath],
+            "attributes": template.attributes,
+            "tools": template.tools,
+            "effects": Object.keys(effects).length > 0 ? effects : null,
+            "moduleEffects": template.effects || null,
+            "contextualEffects": affinityEffects,
+            "durability": template.durability,
+            "integrity": template.integrity,
+            "magicCapacity": template.magicCapacity,
+            "module_traits": template.module_traits || [],
+            "variant_traits": template.variant_traits || []
+        })
+    }
+}
+
 function _computeStats(moduleKey, mat) {
     var variant = _findVariant(moduleKey, mat.name, mat.materialType)
     if (!variant) return null
@@ -180,8 +271,14 @@ function _computeStats(moduleKey, mat) {
     var tools = _calcTools(variant.tools, mat)
     if (tools) stats.tools = tools
 
-    var effects = _calcEffects(variant.effects, mat)
-    if (effects) stats.effects = effects
+    // Uma variante contextual contém a contribuição original do módulo e a
+    // afinidade material→módulo em campos distintos. O item final recebe a
+    // soma em Tetra; o tooltip os mantém separados para explicar a origem.
+    var moduleEffects = _calcEffects(variant.moduleEffects || variant.effects, mat)
+    if (moduleEffects) stats.moduleEffects = moduleEffects
+
+    var contextualEffects = _calcEffects(variant.contextualEffects, mat)
+    if (contextualEffects) stats.contextualEffects = contextualEffects
 
     stats.durability    = _calcDurability(variant.durability, mat)
     stats.integrity     = _calcIntegrity(variant.integrity, mat)
@@ -217,6 +314,33 @@ function _readMaterialJson(name, materialType) {
     return Object.keys(result).length > 0 ? result : null
 }
 
+function MD_TT_TOOLTIP_readInnateImprovements(rawImprovements) {
+    var result = {}
+    if (!rawImprovements) return result
+    var keys = Object.keys(rawImprovements)
+    for (var i = 0; i < keys.length; i++) {
+        var key = keys[i]
+        if (typeof rawImprovements[key] === "number") result[key] = rawImprovements[key]
+    }
+    return result
+}
+
+function MD_TT_TOOLTIP_readMaterialEffects(rawEffects) {
+    var result = {}
+    if (!rawEffects) return result
+    var keys = Object.keys(rawEffects)
+    for (var i = 0; i < keys.length; i++) {
+        var key = keys[i]
+        var raw = rawEffects[key]
+        if (typeof raw === "number") {
+            result[key] = { "level": raw }
+        } else if (Array.isArray(raw) && raw.length === 2) {
+            result[key] = { "level": raw[0], "efficiency": raw[1] }
+        }
+    }
+    return result
+}
+
 // =============================================================================
 // Construção do mapping — consome a API explícita do schematic_gen
 // =============================================================================
@@ -232,6 +356,7 @@ ServerEvents.loaded(function(event) {
 
     var _materials = tetraIntegration.materials
     var _outcomes  = tetraIntegration.outcomes
+    MD_TT_TOOLTIP_applyContextualAffinities(tetraIntegration.contextualAffinities, _materials)
 
     var materialsMap = {}
     var modulesMap   = {}
@@ -260,9 +385,10 @@ ServerEvents.loaded(function(event) {
             integrityCost:  json.integrityCost  || 0,
             integrityGain:  json.integrityGain  || 0,
             magicCapacity:  json.magicCapacity  || 0,
-            toolLevel:      json.toolLevel      || "",
-            toolEfficiency: json.toolEfficiency || 0,
-            traits: []  // pronto, vazio por enquanto
+            toolLevel:          json.toolLevel      || "",
+            toolEfficiency:     json.toolEfficiency || 0,
+            innateImprovements: MD_TT_TOOLTIP_readInnateImprovements(json.improvements),
+            materialEffects:    MD_TT_TOOLTIP_readMaterialEffects(json.effects)
         }
 
         materialsMap[name] = matData

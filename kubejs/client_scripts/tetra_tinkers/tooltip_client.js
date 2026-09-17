@@ -18,6 +18,11 @@ var _ATTR_NAMES = {
 }
 
 var _EFFECT_NAMES = {
+    "workable":       "Workable",
+    "bleeding":       "Bleeding",
+    "arrested":       "Arrested",
+    "stabilizing":    "Stabilizing",
+    "unstable":       "Unstable",
     "shieldbreaker":  "Shieldbreaker",
     "denailing":      "Denailing",
     "sweeping":       "Sweeping",
@@ -134,6 +139,37 @@ function _toolEmoji(k) {
     return d ? d.emoji : "🔹"
 }
 
+// Improvements and effects use the same compact rank format in every tooltip.
+// Preserve values outside the conventional I–X range verbatim for auditability.
+function MD_TT_CLIENT_formatRank(level) {
+    var numericLevel = Number(level)
+    var romanRanks = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+    if (numericLevel >= 1 && numericLevel <= 10 && numericLevel === Math.floor(numericLevel)) {
+        return romanRanks[numericLevel]
+    }
+    return "" + level
+}
+
+function MD_TT_CLIENT_appendEffectGroup(text, label, effects, labelColor) {
+    if (!effects) return
+    var effectKeys = Object.keys(effects)
+    if (effectKeys.length === 0) return
+
+    text.add(Text.ofString("  " + label).color(labelColor))
+    for (var i = 0; i < effectKeys.length; i++) {
+        var key = effectKeys[i]
+        var effect = effects[key]
+        var parts = [Text.ofString("    " + _effectName(key) + " ").color("#AAAAAA")]
+        if (effect.level !== undefined) {
+            parts.push(Text.ofString(MD_TT_CLIENT_formatRank(effect.level)).color("#AA00AA"))
+        }
+        if (effect.efficiency !== undefined) {
+            parts.push(Text.ofString(" (" + effect.efficiency + ")").color("#888888"))
+        }
+        text.add(parts)
+    }
+}
+
 // =============================================================================
 // Handlers de tooltip por item
 // =============================================================================
@@ -184,13 +220,6 @@ ItemEvents.tooltip(function(event) {
             var itemName = text.get(0)
             text.clear()
             text.add(itemName)
-            // -- Linha de hint no nome do item --------------------------------
-            // Mantém o nome original e adiciona o material
-            // (text[0] é o nome do item, não limpamos)
-            console.log("[Debug] rawMat=" + rawMat + " | typeof=" + typeof rawMat)
-            console.log("[Debug] nbtKey=" + nbtKey)
-            console.log("[Debug] lookup=" + nbtKey + " | found=" + (tt.variants[nbtKey] ? "yes" : "no"))
-
             if (event.shift) {
                 text.add(Text.of(""))
                 text.add([
@@ -208,17 +237,19 @@ ItemEvents.tooltip(function(event) {
                 text.add(Text.of(""))
                 text.add([Text.ofString("Tool Level: ").color("#FFFFFF"), Text.ofString(_toolLevelName(matData.toolLevel)).color(_toolLevelColor(matData.toolLevel))])
                 text.add([Text.ofString("Efficiency: ").color("#FFFFFF"), Text.ofString("" + matData.toolEfficiency).color("#AAAAAA")])
-                if (matData.traits && matData.traits.length > 0) {
+                var innateKeys = Object.keys(matData.innateImprovements || {})
+                var materialEffectKeys = Object.keys(matData.materialEffects || {})
+                if (innateKeys.length > 0 || materialEffectKeys.length > 0) {
                     text.add(Text.of(""))
-                    text.add([Text.ofString("Traits: ").color("#FFFFFF"), Text.ofString(matData.traits.join(", ")).color("#AAAAAA")])
-                }
-
-                // Traits do material (prontas, vazias por enquanto)
-                if (matData.traits && matData.traits.length > 0) {
-                    text.add([
-                        Text.ofString("Traits  ").color("#888888"),
-                        Text.ofString(matData.traits.join(", ")).color("#AAAAFF")
-                    ])
+                    text.add(Text.ofString("Innate Material Traits").color("#AAAAFF"))
+                    for (var ii = 0; ii < innateKeys.length; ii++) {
+                        var innateKey = innateKeys[ii]
+                        text.add([
+                            Text.ofString("  " + _effectName(innateKey) + " ").color("#AAAAAA"),
+                            Text.ofString(MD_TT_CLIENT_formatRank(matData.innateImprovements[innateKey])).color("#AA00AA")
+                        ])
+                    }
+                    MD_TT_CLIENT_appendEffectGroup(text, "Material Effects", matData.materialEffects, "#55FFFF")
                 }
 
             } else if (event.ctrl) {
@@ -268,22 +299,10 @@ ItemEvents.tooltip(function(event) {
                         }
                     }
 
-                    // Effects
-                    if (stats.effects) {
-                        var fxKeys = Object.keys(stats.effects)
-                        for (var i = 0; i < fxKeys.length; i++) {
-                            var k  = fxKeys[i]
-                            var fx = stats.effects[k]
-                            var parts = [Text.ofString("  " + _effectName(k) + "  ").color("#888888")]
-                            if (fx.level !== undefined) {
-                                parts.push(Text.ofString("lvl " + fx.level).color("#AA00AA"))
-                            }
-                            if (fx.efficiency !== undefined) {
-                                parts.push(Text.ofString("  (" + fx.efficiency + ")").color("#888888"))
-                            }
-                            text.add(parts)
-                        }
-                    }
+                    // Effects are separated by origin: native module payload
+                    // first, then the material-specific contextual affinity.
+                    MD_TT_CLIENT_appendEffectGroup(text, "Module Effects", stats.moduleEffects, "#888888")
+                    MD_TT_CLIENT_appendEffectGroup(text, "Material Affinity", stats.contextualEffects, "#55FFFF")
 
                     // Durability / Integrity / MagicCap
                     text.add([
@@ -295,19 +314,6 @@ ItemEvents.tooltip(function(event) {
                         Text.ofString("" + stats.magicCapacity).color("#AA00AA")
                     ])
 
-                    // Traits (prontas, vazias por enquanto)
-                    if (stats.moduleTraits && stats.moduleTraits.length > 0) {
-                        text.add([
-                            Text.ofString("  Module Traits  ").color("#888888"),
-                            Text.ofString(stats.moduleTraits.join(", ")).color("#AAAAFF")
-                        ])
-                    }
-                    if (stats.variantTraits && stats.variantTraits.length > 0) {
-                        text.add([
-                            Text.ofString("  Variant Traits  ").color("#888888"),
-                            Text.ofString(stats.variantTraits.join(", ")).color("#AAAAFF")
-                        ])
-                    }
                 }
 
             } else {
