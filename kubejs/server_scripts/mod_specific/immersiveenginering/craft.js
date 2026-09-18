@@ -169,6 +169,44 @@ ServerEvents.recipes(event => {
     I: 'immersiveengineering:sheetmetal_iron'
   });
 });
+
+// MV CAPACITOR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'immersiveengineering:crafting/capacitor_mv' });
+  event.shaped(
+    Item.of('immersiveengineering:capacitor_mv'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        E: 'thermal:iron_plate',
+        C: 'immersiveengineering:wire_copper',
+        B: 'thermal:nickel_plate',
+        D: 'immersiveengineering:capacitor_lv',
+        A: '#forge:treated_wood'
+    })
+});
+
+// HV CAPACITOR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'immersiveengineering:crafting/capacitor_hv' });
+  event.shaped(
+    Item.of('immersiveengineering:capacitor_hv'),
+    [
+        'ABA',
+        'CDC',
+        'AEA'
+    ],
+    {
+        B: 'alltheores:aluminum_plate',
+        C: 'immersiveengineering:wire_steel',
+        D: 'immersiveengineering:capacitor_mv',
+        A: '#forge:treated_wood',
+        E: 'immersiveengineering:ingot_hop_graphite'
+    })
+});
 //==================COMPATIBILITY RECIPES==================
 
 

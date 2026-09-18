@@ -237,5 +237,23 @@ ServerEvents.recipes(event => {
     });
 });
 
+// BASIC ENERGY CUBE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:energy_cube/basic' });
+  event.shaped(
+    Item.of('mekanism:basic_energy_cube'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        D: 'immersiveengineering:capacitor_hv',
+        A: 'kubejs:redstone_component',
+        B: 'mekanism:energy_tablet',
+        C: '#forge:plates/iron'
+    })
+});
+
 
 //====================COMPATIBILITY RECIPES==================

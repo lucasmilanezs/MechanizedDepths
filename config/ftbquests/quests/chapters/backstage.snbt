@@ -76,7 +76,7 @@
 				type: "command"
 			}]
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 900L
 				id: "479EF0350667DE25"
 				type: "questsadditions:time"
 			}]

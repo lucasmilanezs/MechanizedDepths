@@ -838,11 +838,14 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest24.title}"
-			x: -9.0d
-			y: 6.5d
+			x: -10.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["53926EA02B461E01"]
+			dependencies: [
+				"53926EA02B461E01"
+				"33417C677CE79CB0"
+			]
 			description: [
 				"{ftbquests.chapter.parafusos_e_convices.quest25.description1}"
 				""
@@ -861,8 +864,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.parafusos_e_convices.quest25.title}"
-			x: -10.5d
-			y: 5.5d
+			x: -9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5E02CDB52EBA2E43"]
