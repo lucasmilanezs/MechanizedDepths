@@ -11,8 +11,8 @@
 //   Quando ausente, nenhum outcome e gerado para double/basic_hammer.
 // =============================================================================
 
-// true  = replace completo (producao)
-// false = merge (debug, nao destroi outcomes existentes)
+// Padrao para familias ainda abertas. Fechamentos seletivos ficam declarados
+// no proprio schematic (hammer, handles e basic blade), nunca por este toggle.
 var MD_TT_REPLACE = false
 
 // =============================================================================
@@ -58,6 +58,22 @@ var MD_TT_VARIANT_NAMES = {
     "stirrup": "Stirrup"
 }
 
+// Chaves consumidas tanto pelas barras de estatistica do Tetra quanto pela
+// visualizacao generica de efeitos na Holosphere. Este arquivo de idioma e
+// gerado integralmente, portanto as entradas nao podem ser mantidas à mao.
+var MD_TT_EFFECT_LANG = {
+    "magnetic": {
+        "name": "Magnetic",
+        "tooltip": "Pulls nearby item drops to the player after a block is broken.",
+        "short": "Pulls nearby item drops to the player."
+    },
+    "holy": {
+        "name": "Holy",
+        "tooltip": "Increases damage dealt to undead targets by %s.",
+        "short": "Increases damage dealt to undead targets."
+    }
+}
+
 function MD_TT_titleCase(value) {
     var words = (value + "").split("_")
     for (var i = 0; i < words.length; i++) {
@@ -68,6 +84,17 @@ function MD_TT_titleCase(value) {
 
 function MD_TT_buildStaticLang(materials, outcomes) {
     var lang = {}
+
+    var effectKeys = Object.keys(MD_TT_EFFECT_LANG)
+    for (var ei = 0; ei < effectKeys.length; ei++) {
+        var effectKey = effectKeys[ei]
+        var effectLang = MD_TT_EFFECT_LANG[effectKey]
+        lang["tetra.stats." + effectKey] = effectLang.name
+        lang["tetra.stats." + effectKey + ".tooltip"] = effectLang.tooltip
+        lang["tetra.stats." + effectKey + ".tooltip_short"] = effectLang.short
+        lang["tetra.improvement.mechanized/" + effectKey + ".name"] = effectLang.name
+        lang["tetra.improvement.mechanized/" + effectKey + ".description"] = effectLang.short
+    }
 
     for (var mi = 0; mi < materials.length; mi++) {
         var materialName = materials[mi].name
@@ -456,114 +483,26 @@ var MD_TT_MATERIAL_CONTRACTS = {
 // =============================================================================
 // Afinidades contextuais de material → módulo
 // =============================================================================
-// Um material Tetra contribui seus dados para todo módulo que o aceita. Uma
-// capacidade que só deve existir em um módulo específico precisa, portanto,
-// de uma variante específica daquele módulo, inserida antes da variante
-// genérica. Esta tabela é a única fonte para o módulo emitido e para o
-// tooltip; ela contém apenas literais JavaScript próprios, nunca wrappers de
-// JsonIO ou dados percorridos do registry.
+// Uma capacidade limitada a material+módulo é entregue como melhoria inata no
+// outcome explícito. A definição crua da melhoria vive no grupo nativo aceito
+// pelo módulo; não há override, cópia ou variante paralela de módulo.
 //
-// Começa vazio por design. A infraestrutura foi validada com um fixture de
-// Cobalt, removido após a aceitação; entradas futuras só entram após revisão
-// de leitor, multiplicidade e UX.
-var MD_TT_CONTEXTUAL_AFFINITIES = []
-
-// Apenas módulos que recebem uma afinidade ganham um template local. Cada
-// template é uma cópia integral, auditada contra Tetra 6.13.0, do módulo
-// nativo correspondente. Não leia nem mescle o JAR aqui: o Rhino/KubeJS deste
-// pack não é uma fronteira segura para resolver recursos dinamicamente.
-var MD_TT_CONTEXTUAL_MODULE_BASES = {
-    "double/basic_pickaxe": {
-        "replace": true,
-        "type": "tetra:multi_major_module",
-        "slots": ["double/head_left", "double/head_right"],
-        "slotSuffixes": ["_left", "_right"],
-        "improvements": [
-            "tetra:double/pickaxe/", "tetra:double/shared_head/",
-            "tetra:double/shared/", "tetra:shared/"
-        ],
-        "variants": [{
-            "materials": ["tetra:metal/", "tetra:stone/", "tetra:wood/", "tetra:gem/"],
-            "key": "basic_pickaxe/",
-            "attributes": { "generic.attack_damage": -2, "generic.attack_speed": -1.2 },
-            "aspects": { "block_breaker": 2, "breakable": 2 },
-            "tools": { "pickaxe_dig": -1 },
-            "durability": -10,
-            "extract": {
-                "primaryAttributes": { "generic.attack_damage": 1 },
-                "tools": { "pickaxe_dig": [1, 0.91] },
-                "durability": 0.5,
-                "integrity": -1,
-                "magicCapacity": 1,
-                "glyph": { "textureX": 176 },
-                "availableTextures": ["crude", "metal", "shiny"],
-                "models": [{ "location": "tetra:item/module/double/head/basic_pickaxe/" }]
-            }
-        }]
-    },
-    "sword/basic_blade": {
-        "replace": true,
-        "slots": ["sword/blade"],
-        "type": "tetra:basic_major_module",
-        "improvements": [
-            "tetra:sword/basic_blade/", "tetra:sword/shared_blade/",
-            "tetra:sword/shared/", "tetra:shared/"
-        ],
-        "variants": [{
-            "materials": ["tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/"],
-            "key": "basic_blade/",
-            "attributes": { "generic.attack_speed": -1.9 },
-            "effects": { "sweeping": 1 },
-            "tools": { "cut": [1, 2] },
-            "aspects": { "edged_weapon": 2, "breakable": 2 },
-            "durability": -20,
-            "tags": ["forge:swords"],
-            "extract": {
-                "primaryAttributes": { "generic.attack_damage": 1 },
-                "durability": 0.9,
-                "integrity": -1,
-                "magicCapacity": 1,
-                "glyph": { "textureX": 0 },
-                "availableTextures": ["metal", "shiny", "grainy", "crude"],
-                "models": [{ "location": "tetra:item/module/sword/blade/basic/" }]
-            }
-        }]
-    }
-}
-
-function MD_TT_copyLiteral(value) {
-    if (value === null || typeof value !== "object") return value
-    var result = Array.isArray(value) ? [] : {}
-    var keys = Object.keys(value)
-    for (var i = 0; i < keys.length; i++) {
-        result[keys[i]] = MD_TT_copyLiteral(value[keys[i]])
-    }
-    return result
-}
-
-function MD_TT_contextualMaterialPath(materialName) {
-    for (var i = 0; i < MD_TT_MATERIALS.length; i++) {
-        var material = MD_TT_MATERIALS[i]
-        if (material.name === materialName) {
-            return "tetra:" + material.materialType + "/" + material.name
-        }
-    }
-    return null
-}
-
-function MD_TT_variantAcceptsPath(variant, materialPath) {
-    var materials = variant.materials || []
-    for (var i = 0; i < materials.length; i++) {
-        var selector = materials[i]
-        if (selector === materialPath) return true
-        if (selector.charAt(selector.length - 1) === "/" && materialPath.indexOf(selector) === 0) return true
-    }
-    return false
-}
+// F2: cada afinidade é limitada ao módulo que sustenta sua leitura. Cobre
+// continua somente com workable; não recebe delving/dwarven nesta leva.
+var MD_TT_CONTEXTUAL_AFFINITIES = [
+    { "material": "iron", "module": "double/basic_handle", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
+    { "material": "iron", "module": "single/basic_handle", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
+    { "material": "iron", "module": "single/light_handle", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
+    { "material": "iron", "module": "single/long_handle", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
+    { "material": "silver", "module": "sword/basic_blade", "improvement": "mechanized/holy", "level": 0, "effects": { "holy": 10 } }
+]
 
 function MD_TT_validateContextualAffinity(affinity) {
-    if (!affinity || typeof affinity.material !== "string" || typeof affinity.module !== "string") {
-        throw new Error("[Mechanized/Tetra] Afinidade contextual sem material/modulo")
+    if (!affinity || typeof affinity.material !== "string" || typeof affinity.module !== "string" || typeof affinity.improvement !== "string") {
+        throw new Error("[Mechanized/Tetra] Afinidade contextual sem material/modulo/melhoria")
+    }
+    if (typeof affinity.level !== "number" || affinity.level % 1 !== 0) {
+        throw new Error("[Mechanized/Tetra] Nivel de melhoria contextual invalido: " + affinity.improvement)
     }
     var effects = affinity.effects
     if (!effects || Object.keys(effects).length === 0) {
@@ -577,61 +516,6 @@ function MD_TT_validateContextualAffinity(affinity) {
             throw new Error("[Mechanized/Tetra] Efeito contextual invalido: " + effectKeys[i])
         }
     }
-}
-
-function MD_TT_contextualVariant(baseVariant, materialPath, affinity) {
-    var variant = MD_TT_copyLiteral(baseVariant)
-    variant.materials = [materialPath]
-
-    if (affinity.effects) {
-        variant.effects = MD_TT_copyLiteral(variant.effects || {})
-        var effectKeys = Object.keys(affinity.effects)
-        for (var i = 0; i < effectKeys.length; i++) {
-            var effectKey = effectKeys[i]
-            variant.effects[effectKey] = MD_TT_copyLiteral(affinity.effects[effectKey])
-        }
-    }
-
-    return variant
-}
-
-function MD_TT_buildContextualModule(moduleKey) {
-    var base = MD_TT_CONTEXTUAL_MODULE_BASES[moduleKey]
-    if (!base) throw new Error("[Mechanized/Tetra] Template contextual ausente: " + moduleKey)
-
-    var output = MD_TT_copyLiteral(base)
-    var variants = []
-    var seenMaterials = {}
-    for (var ai = 0; ai < MD_TT_CONTEXTUAL_AFFINITIES.length; ai++) {
-        var affinity = MD_TT_CONTEXTUAL_AFFINITIES[ai]
-        if (affinity.module !== moduleKey) continue
-        MD_TT_validateContextualAffinity(affinity)
-
-        if (seenMaterials[affinity.material]) {
-            throw new Error("[Mechanized/Tetra] Afinidade contextual duplicada: " + affinity.material + " → " + moduleKey)
-        }
-        seenMaterials[affinity.material] = true
-
-        var materialPath = MD_TT_contextualMaterialPath(affinity.material)
-        if (!materialPath) throw new Error("[Mechanized/Tetra] Material contextual ausente: " + affinity.material)
-
-        var matched = false
-        for (var bi = 0; bi < base.variants.length; bi++) {
-            var baseVariant = base.variants[bi]
-            if (!MD_TT_variantAcceptsPath(baseVariant, materialPath)) continue
-            variants.push(MD_TT_contextualVariant(baseVariant, materialPath, affinity))
-            matched = true
-        }
-        if (!matched) {
-            throw new Error("[Mechanized/Tetra] Afinidade sem variante aceita: " + affinity.material + " → " + moduleKey)
-        }
-    }
-
-    for (var vi = 0; vi < base.variants.length; vi++) {
-        variants.push(MD_TT_copyLiteral(base.variants[vi]))
-    }
-    output.variants = variants
-    return output
 }
 
 function MD_TT_proxyOutcome(material, route, schematic) {
@@ -651,10 +535,49 @@ function MD_TT_proxyOutcome(material, route, schematic) {
 
     // MaterialVariantData cobre atributos/durability/aspects. Estes campos
     // pertencem ao outcome e precisam ser levados explicitamente pelo proxy.
-    if (contract.improvements) {
-        outcome.improvements = contract.improvements
+    var improvements = {}
+    var contractImprovementKeys = Object.keys(contract.improvements || {})
+    for (var ii = 0; ii < contractImprovementKeys.length; ii++) {
+        var contractImprovementKey = contractImprovementKeys[ii]
+        improvements[contractImprovementKey] = contract.improvements[contractImprovementKey]
+    }
+    for (var ai = 0; ai < MD_TT_CONTEXTUAL_AFFINITIES.length; ai++) {
+        var affinity = MD_TT_CONTEXTUAL_AFFINITIES[ai]
+        if (affinity.material !== material.name || affinity.module !== schematic) continue
+        MD_TT_validateContextualAffinity(affinity)
+        improvements[affinity.improvement] = affinity.level
+    }
+    if (Object.keys(improvements).length > 0) {
+        outcome.improvements = improvements
     }
     return outcome
+}
+
+function MD_TT_validateContextualOutcomes(outcomes) {
+    var seen = {}
+    for (var ai = 0; ai < MD_TT_CONTEXTUAL_AFFINITIES.length; ai++) {
+        var affinity = MD_TT_CONTEXTUAL_AFFINITIES[ai]
+        MD_TT_validateContextualAffinity(affinity)
+
+        var pair = affinity.material + " -> " + affinity.module
+        if (seen[pair]) throw new Error("[Mechanized/Tetra] Afinidade contextual duplicada: " + pair)
+        seen[pair] = true
+
+        var candidates = outcomes[affinity.module]
+        if (!candidates) throw new Error("[Mechanized/Tetra] Modulo contextual fora das rotas: " + affinity.module)
+
+        var matches = 0
+        for (var oi = 0; oi < candidates.length; oi++) {
+            var outcome = candidates[oi]
+            var variantParts = outcome.moduleVariant.split("/")
+            if (outcome.moduleKey !== affinity.module || variantParts[variantParts.length - 1] !== affinity.material) continue
+            if (!outcome.improvements || outcome.improvements[affinity.improvement] !== affinity.level) continue
+            matches++
+        }
+        if (matches !== 1) {
+            throw new Error("[Mechanized/Tetra] Afinidade contextual deveria resolver exatamente um outcome, obteve " + matches + ": " + pair)
+        }
+    }
 }
 
 for (var MD_TT_mi = 0; MD_TT_mi < MD_TT_MATERIALS.length; MD_TT_mi++) {
@@ -668,6 +591,7 @@ for (var MD_TT_mi = 0; MD_TT_mi < MD_TT_MATERIALS.length; MD_TT_mi++) {
         }
     }
 }
+MD_TT_validateContextualOutcomes(MD_TT_OUTCOMES)
 
 // O martelo continua uma progressão fechada. Também recebe o contrato
 // explícito que um outcome NBT não herda automaticamente.
@@ -736,7 +660,8 @@ ServerEvents.command("debugSchematics", function(event) {
         for (var i = 0; i < list.length; i++) {
             var o = list[i]
             event.source.sendSuccess(
-                "  [" + i + "] " + o.moduleVariant + " | item: " + o.material.items[0] + " | nbt: " + o.material.nbt,
+                "  [" + i + "] " + o.moduleVariant + " | item: " + o.material.items[0] + " | nbt: " + o.material.nbt +
+                " | improvements: " + JSON.stringify(o.improvements || {}),
                 false
             )
         }
@@ -783,23 +708,9 @@ var DEBUG_DUMP = false
 
     // -------------------------------------------------------------------------
 
-    // Módulos contextuais são emitidos antes dos schematics. Cada um é uma
-    // definição completa e auditável; o array de variantes específicas vem
-    // antes da variante genérica para o resolvedor nativo do Tetra.
-    var contextualModuleKeys = []
-    for (var affinityIndex = 0; affinityIndex < MD_TT_CONTEXTUAL_AFFINITIES.length; affinityIndex++) {
-        var affinityModuleKey = MD_TT_CONTEXTUAL_AFFINITIES[affinityIndex].module
-        var knownContextualModule = false
-        for (var knownIndex = 0; knownIndex < contextualModuleKeys.length; knownIndex++) {
-            if (contextualModuleKeys[knownIndex] === affinityModuleKey) knownContextualModule = true
-        }
-        if (!knownContextualModule) contextualModuleKeys.push(affinityModuleKey)
-    }
-    for (var contextualIndex = 0; contextualIndex < contextualModuleKeys.length; contextualIndex++) {
-        var contextualModuleKey = contextualModuleKeys[contextualIndex]
-        inject("tetra:modules/" + contextualModuleKey, MD_TT_buildContextualModule(contextualModuleKey))
-    }
-
+    // Fechado por familia: sem isto o outcome nativo e o proxy expandem para
+    // a mesma variantKey. A Holosphere preserva o primeiro preview (nativo,
+    // sem affinity), embora o workbench consiga casar o proxy explicito.
     inject("tetra:schematics/double/basic_pickaxe/basic_pickaxe", {
         "replace": REPLACE,
         "slots": ["double/head_left", "double/head_right"],
@@ -936,7 +847,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/double/basic_handle/basic_handle", {
-        "replace": MD_TT_REPLACE,
+        "replace": true,
         "slots": ["double/handle"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -960,7 +871,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/sword/basic_blade", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["sword/blade"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1082,7 +993,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/single/handle/basic_handle", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["single/handle"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1097,7 +1008,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/single/handle/long_handle", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["single/handle"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1120,7 +1031,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/single/handle/light_handle", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["single/handle"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1137,7 +1048,7 @@ var DEBUG_DUMP = false
 
     inject("tetra:schematics/single/binding", {
         "replace": REPLACE,
-        "slots": ["double/binding"],
+        "slots": ["single/binding"],
         "materialSlotCount": 1,
         "displayType": "minor",
         "glyph": { "textureX": 88, "textureY": 112 },
@@ -1311,7 +1222,8 @@ ServerEvents.commandRegistry(function(event) {
                         for (var i = 0; i < list.length; i++) {
                             var o = list[i]
                             source.sendSuccess(
-                                Text.of("[" + i + "] " + o.moduleVariant + " | " + o.material.items[0] + " | " + o.material.nbt),
+                                Text.of("[" + i + "] " + o.moduleVariant + " | " + o.material.items[0] + " | " + o.material.nbt +
+                                    " | improvements: " + JSON.stringify(o.improvements || {})),
                                 false
                             )
                         }

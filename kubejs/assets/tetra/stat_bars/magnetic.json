@@ -1,0 +1,21 @@
+{
+  "type": "tetra:default",
+  "key": "tetra.stats.magnetic",
+  "contexts": ["tetra:workbench", "tetra:holosphere"],
+  "min": 0,
+  "max": 1,
+  "segmented": true,
+  "stat": { "type": "tetra:effect_level", "effect": "magnetic" },
+  "label": {
+    "type": "tetra:basic",
+    "format": "integer",
+    "diff_format": "integer"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "tetra.stats.magnetic.tooltip",
+    "stats": [],
+    "formatters": []
+  },
+  "generateSorter": true
+}

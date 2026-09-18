@@ -1,0 +1,20 @@
+{
+  "type": "tetra:default",
+  "key": "tetra.stats.holy",
+  "contexts": ["tetra:workbench", "tetra:holosphere"],
+  "min": 0,
+  "max": 100,
+  "stat": { "type": "tetra:effect_level", "effect": "holy" },
+  "label": {
+    "type": "tetra:basic",
+    "format": "percentage",
+    "diff_format": "percentage"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "tetra.stats.holy.tooltip",
+    "stats": [{ "type": "tetra:effect_level", "effect": "holy" }],
+    "formatters": [{ "type": "tetra:basic", "format": "percentage" }]
+  },
+  "generateSorter": true
+}

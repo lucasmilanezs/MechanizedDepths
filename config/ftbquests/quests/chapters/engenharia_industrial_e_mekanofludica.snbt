@@ -102,7 +102,7 @@
 				"171975C11B49B098"
 			]
 			description: [
-				"  Just a simple box. Cheap wood, no flair, no attempt to look important. The Pity Machine Frame is intentionally underwhelming — and very aware of it."
+				"  Just a simple box. The Pity Machine Frame is intentionally underwhelming, and veeeery aware of it."
 				""
 				"  Built with Organic Polymer Mesh and a Synaptic Interface, it exists only as a foundation. On its own, it does nothing worth praising. &8PneumaticCraft&r and &dIndustrial Foregoing&r, however, see it as a valid anchor point, quietly unlocking machines and processes that expect something this… unremarkable."
 				""
@@ -292,6 +292,8 @@
 				"  This multiblock uses pressure itself as a crafting tool, violently compressing items into new forms. It’s powerful, flexible, and very easy to misuse if you don’t understand how pressure behaves inside a closed space."
 				""
 				"  Build it carefully, seal it properly, and make sure your air supply and consumption are balanced. Once it’s stable, it becomes one of the most reliable processing tools in this entire system."
+				""
+				"  And... slow asf. You know horizontal scalling is a thing, right?"
 				""
 				"&7&o— Nothing says “precision engineering” like weaponized air.&r&r"
 			]
@@ -634,7 +636,7 @@
 			description: [
 				"  The Assembly system looks more complex than it really is."
 				""
-				"  Place the Assembly Controller, Assembly IO Units (Import and Export), and the Assembly Platform close to each other. The controller only needs to be connected to any one of the parts and supplied with pressure. The platform sits in the middle, while inputs and outputs can be arranged however you prefer."
+				"  Place the Assembly Controller, Assembly IO Units (Import and Export), and the Assembly Platform close to each other. The controller only needs to be connected to any one of the parts and supplied with pressure. The platform sits in the middle, while inputs and outputs can be arranged however you prefer around it."
 				""
 				"  Chests placed directly adjacent to the IO units are used to insert and extract items automatically. No pipes required, no tricks involved."
 				""
@@ -740,7 +742,7 @@
 				""
 				"  Automate your components as soon as possible."
 				""
-				"  Seriously."
+				"  &lSeriously.&r"
 				""
 				"&7&o— You’ve suffered enough. Let the machines take over.&r&r"
 			]
@@ -804,6 +806,8 @@
 				""
 				"  The UV Light Box introduces basic lithography using simple inputs and simple rules. It works, it’s slow, and it’s not meant to stick around for long."
 				""
+				"  Buy a PCB blueprint with your new toy."
+				""
 				"  Use it, learn the idea, and move on."
 				""
 				"&7&o— I really don’t like the concept of stepping-stone machines, but we’re stepping on this one.&r&r"
@@ -834,7 +838,9 @@
 			description: [
 				"  Another step in the chain that you’ll be able to skip soon enough."
 				""
-				"  The Etching Tank does exactly what it claims. It’s a boring container filled with etching acid where you drop in empty PCBs and wait. If everything goes right, you get an unassembled PCB. That’s the entire trick."
+				"  The Etching Tank does exactly what it claims. It’s a boring container filled with etching acid where you drop in empty PCBs and wait. If everything goes right, you get an unassembled PCB. "
+				""
+				"  If something goes wrong, recycle and try again. That’s the entire trick."
 				""
 				"  Don’t get attached. It exists to do one job, slowly, until something better replaces it."
 				""

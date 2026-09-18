@@ -19,6 +19,8 @@ var _ATTR_NAMES = {
 
 var _EFFECT_NAMES = {
     "workable":       "Workable",
+    "magnetic":       "Magnetic",
+    "holy":           "Holy",
     "bleeding":       "Bleeding",
     "arrested":       "Arrested",
     "stabilizing":    "Stabilizing",

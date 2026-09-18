@@ -1,0 +1,12 @@
+{
+  "type": "tetra:hit_damage",
+  "effect": "holy",
+  "condition": {
+    "type": "tetra:entity",
+    "entity": "target",
+    "condition": {
+      "type": "#mechanized:undead"
+    }
+  },
+  "result": "damage * (1 + level / 100)"
+}

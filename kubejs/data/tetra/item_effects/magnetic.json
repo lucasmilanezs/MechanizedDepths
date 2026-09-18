@@ -1,0 +1,24 @@
+{
+  "trigger": "tetra:break_block",
+  "effect": "magnetic",
+  "outcome": {
+    "type": "tetra:delay",
+    "delay": 1,
+    "outcome": {
+      "type": "tetra:find_entities",
+      "origin": "target",
+      "bounds": [-1, -1, -1, 1, 1, 1],
+      "condition": {
+        "type": "minecraft:item"
+      },
+      "outcome": {
+        "type": "tetra:move_entity",
+        "entity": "ref",
+        "position": {
+          "type": "tetra:entity_position",
+          "entity": "breaker"
+        }
+      }
+    }
+  }
+}

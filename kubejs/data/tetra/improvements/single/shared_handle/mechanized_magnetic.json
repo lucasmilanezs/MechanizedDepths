@@ -1,0 +1,9 @@
+[
+  {
+    "key": "mechanized/magnetic",
+    "level": 0,
+    "effects": {
+      "magnetic": 1
+    }
+  }
+]
