@@ -1,0 +1,10 @@
+{
+  "key": "venombone", "category": "bone", "primary": 5, "secondary": 1.8, "tertiary": 4.5,
+  "durability": 175, "integrityCost": 1, "integrityGain": 4, "magicCapacity": 108,
+  "toolLevel": "minecraft:iron", "toolEfficiency": 4.5,
+  "tints": { "glyph": "86B85C", "texture": "86B85C" },
+  "textures": ["bone", "crude"],
+  "material": { "items": ["tconstruct:venombone"] },
+  "requiredTools": { "hammer_dig": "minecraft:wood" },
+  "improvements": { "mechanized/venom": 1 }
+}

@@ -23,5 +23,6 @@
     },
     "requiredTools": {
         "hammer_dig": "minecraft:gold"
-    }
+    },
+    "features": ["mechanized_magnetic_handles"]
 }

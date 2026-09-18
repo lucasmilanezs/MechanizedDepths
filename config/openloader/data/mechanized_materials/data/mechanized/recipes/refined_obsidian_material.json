@@ -1,0 +1,5 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": { "item": "mekanism:ingot_refined_obsidian" },
+  "value": 1, "needed": 1, "material": "mechanized:refined_obsidian"
+}

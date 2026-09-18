@@ -1,0 +1,9 @@
+{
+  "key": "blazing_bone", "category": "bone", "primary": 6, "secondary": 2, "tertiary": 4,
+  "durability": 530, "integrityCost": 2, "integrityGain": 4, "magicCapacity": 100,
+  "toolLevel": "minecraft:iron", "toolEfficiency": 6,
+  "tints": { "glyph": "F29A38", "texture": "F29A38" },
+  "textures": ["bone", "crude"],
+  "material": { "items": ["tconstruct:blazing_bone"] },
+  "requiredTools": { "hammer_dig": "minecraft:wood" }
+}

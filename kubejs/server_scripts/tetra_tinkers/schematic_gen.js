@@ -34,7 +34,9 @@ var MD_TT_VARIANT_NAMES = {
     "sickle": "Sickle Head",
     "hoe": "Hoe Head",
     "basic_handle": "Handle",
+    "basic_hilt": "Hilt",
     "double_binding": "Binding",
+    "sword_binding": "Binding",
     "basic_blade": "Blade",
     "short_blade": "Short Blade",
     "machete": "Machete",
@@ -71,6 +73,36 @@ var MD_TT_EFFECT_LANG = {
         "name": "Holy",
         "tooltip": "Increases damage dealt to undead targets by %s.",
         "short": "Increases damage dealt to undead targets."
+    },
+    "reinforced": {
+        "name": "Reinforced",
+        "tooltip": "Increases final durability by %s.",
+        "short": "Increases final durability."
+    },
+    "venom": {
+        "name": "Venom",
+        "tooltip": "Poisons the target; each rank adds potency and 2 seconds after the first 5 seconds.",
+        "short": "Poisons targets with scaling duration and potency."
+    },
+    "unholy": {
+        "name": "Unholy",
+        "tooltip": "Poisons non-undead targets; each rank adds potency and 2 seconds after the first 5 seconds.",
+        "short": "Poisons non-undead targets with scaling duration and potency."
+    }
+}
+
+var MD_TT_FEATURE_LANG = {
+    "mechanized_magnetic_handles": {
+        "name": "Magnetic Handles",
+        "tooltip": "When used in a handle or sword hilt, pulls nearby item drops to the player after a block is broken."
+    },
+    "mechanized_holy_blades": {
+        "name": "Holy Blades",
+        "tooltip": "When used in a sword blade, deals 10% additional damage to undead targets."
+    },
+    "mechanized_reinforced_structures": {
+        "name": "Reinforced Structures",
+        "tooltip": "When used in hilts, handles, bow staves or crossbow stocks, increases final durability by 15% but adds 5% handling drag."
     }
 }
 
@@ -96,6 +128,14 @@ function MD_TT_buildStaticLang(materials, outcomes) {
         lang["tetra.improvement.mechanized/" + effectKey + ".description"] = effectLang.short
     }
 
+    var featureKeys = Object.keys(MD_TT_FEATURE_LANG)
+    for (var fi = 0; fi < featureKeys.length; fi++) {
+        var featureKey = featureKeys[fi]
+        var featureLang = MD_TT_FEATURE_LANG[featureKey]
+        lang["tetra.material.feature." + featureKey] = featureLang.name
+        lang["tetra.material.feature." + featureKey + ".tooltip"] = featureLang.tooltip
+    }
+
     for (var mi = 0; mi < materials.length; mi++) {
         var materialName = materials[mi].name
         var displayName = MD_TT_titleCase(materialName)
@@ -116,6 +156,7 @@ function MD_TT_buildStaticLang(materials, outcomes) {
             var parts = (moduleVariant + "").split("/")
             var suffix = parts[0]
             var materialName = parts.length > 1 ? parts[1] : ""
+            if (!materialName) continue
             var moduleName = MD_TT_VARIANT_NAMES[suffix] || MD_TT_titleCase(suffix)
             lang["tetra.variant." + moduleVariant] = MD_TT_titleCase(materialName) + " " + moduleName
         }
@@ -157,17 +198,30 @@ var MD_TT_ROUTE_TABLE = {
     "small_blade":    { "item": "tconstruct:small_blade",    "schematics": ["sword/basic_blade", "sword/short_blade", "sword/machete"] },
     "adze_head":      { "item": "tconstruct:adze_head",      "schematics": ["double/adze"] },
     "broad_blade":    { "item": "tconstruct:broad_blade",    "schematics": ["sword/heavy_blade", "double/sickle", "double/hoe", "single/spearhead", "single/basic_shovel"] },
-    "tool_handle":    { "item": "tconstruct:tool_handle",    "schematics": ["double/basic_handle", "single/basic_handle", "single/light_handle"] },
+    "bone_broad_blade": { "item": "tconstruct:broad_blade",  "schematics": ["single/spearhead"] },
+    "tool_handle":    { "item": "tconstruct:tool_handle",    "schematics": ["double/basic_handle", "single/basic_handle", "single/light_handle", "sword/basic_hilt"] },
     "tough_handle":   { "item": "tconstruct:tough_handle",   "schematics": ["single/long_handle"] },
+    "tool_binding":   {
+        "item": "tconstruct:tool_binding",
+        "schematics": ["double/binding", "single/binding", "sword/binding"],
+        "variantSuffixes": {
+            "double/binding": "double_binding",
+            "single/binding": "single_binding",
+            "sword/binding": "sword_binding"
+        }
+    },
     "bow_limb":       { "item": "tconstruct:bow_limb",       "schematics": ["bow/straight_stave", "bow/long_stave", "bow/recurve_stave", "bow/laminated_stave", "crossbow/basic_stave"] },
-    "bow_grip":       { "item": "tconstruct:bow_grip",       "schematics": ["crossbow/basic_stock"] }
+    "bow_grip":       { "item": "tconstruct:bow_grip",       "schematics": ["crossbow/basic_stock"] },
+    "bowstring":      { "item": "tconstruct:bowstring",      "schematics": ["bow/basic_string", "crossbow/basic_string"] }
 }
 
 var MD_TT_TYPE_PARTS = {
     "metal": ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade", "tool_handle", "tough_handle", "bow_limb", "bow_grip"],
     "gem":   ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade"],
     "stone": ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade"],
-    "bone":  ["small_blade", "broad_blade", "tool_handle", "tough_handle"]
+    "bone":  ["small_blade", "bone_broad_blade", "tool_handle", "tough_handle"],
+    "fibre": ["tool_binding", "bowstring"],
+    "skin":  ["tool_binding", "bowstring"]
 }
 
 
@@ -428,6 +482,24 @@ MD_TT_addMaterial("steel", "metal")
 MD_TT_addMaterial("netherite", "metal", "mechanized")
 MD_TT_addMaterial("cobalt", "metal")
 MD_TT_addMaterial("manyullyn", "metal")
+// F3 — materiais nativos do Tinkers recebem somente paridade Tetra.
+MD_TT_addMaterial("brass", "metal", "mechanized")
+MD_TT_addMaterial("refined_glowstone", "metal", "mechanized")
+MD_TT_addMaterial("refined_obsidian", "metal", "mechanized")
+MD_TT_addMaterial("rose_gold", "metal")
+MD_TT_addMaterial("amethyst_bronze", "metal")
+MD_TT_addMaterial("slimesteel", "metal")
+
+MD_TT_addMaterial("necrotic_bone", "bone")
+MD_TT_addMaterial("venombone", "bone")
+MD_TT_addMaterial("blazing_bone", "bone")
+
+// Componentes orgânicos nativos: bindings e bowstrings, sem inventar cabeças.
+MD_TT_addMaterial("string", "fibre")
+MD_TT_addMaterial("vine", "fibre")
+MD_TT_addMaterial("twisting_vine", "fibre")
+MD_TT_addMaterial("weeping_vine", "fibre")
+MD_TT_addMaterial("leather", "skin")
 // TIER MAXHAMMER
 
 
@@ -443,13 +515,14 @@ var MD_TT_OUTCOMES = {}
 var MD_TT_ALL_SCHEMATICS = [
     "double/basic_pickaxe", "double/basic_axe", "double/claw", "double/butt",
     "double/adze", "double/basic_hammer", "double/sickle", "double/hoe",
-    "double/basic_handle",
-    "sword/basic_blade", "sword/short_blade", "sword/machete",
+    "double/basic_handle", "double/binding",
+    "sword/basic_blade", "sword/short_blade", "sword/machete", "sword/basic_hilt", "sword/binding",
     "sword/heavy_blade",
     "single/spearhead", "single/basic_shovel", "single/basic_handle",
-    "single/long_handle", "single/light_handle",
+    "single/long_handle", "single/light_handle", "single/binding",
     "bow/straight_stave", "bow/long_stave", "bow/recurve_stave", "bow/laminated_stave",
-    "crossbow/basic_stave", "crossbow/basic_stock"
+    "bow/basic_string", "crossbow/basic_stave", "crossbow/basic_stock",
+    "crossbow/basic_string"
 ]
 for (var MD_TT_si = 0; MD_TT_si < MD_TT_ALL_SCHEMATICS.length; MD_TT_si++) {
     MD_TT_OUTCOMES[MD_TT_ALL_SCHEMATICS[MD_TT_si]] = []
@@ -477,7 +550,21 @@ var MD_TT_MATERIAL_CONTRACTS = {
     "steel":        { "requiredTools": { "hammer_dig": "minecraft:stone" } },
     "netherite":    { "requiredTools": { "hammer_dig": "minecraft:iron" } },
     "cobalt":       { "requiredTools": { "hammer_dig": "minecraft:diamond" } },
-    "manyullyn":    { "requiredTools": { "hammer_dig": "minecraft:diamond" } }
+    "manyullyn":    { "requiredTools": { "hammer_dig": "minecraft:diamond" } },
+    "brass":        { "requiredTools": { "hammer_dig": "minecraft:iron" }, "improvements": { "workable": 1 } },
+    "refined_glowstone": { "requiredTools": { "hammer_dig": "minecraft:diamond" } },
+    "refined_obsidian":  { "requiredTools": { "hammer_dig": "minecraft:diamond" } },
+    "rose_gold":         { "requiredTools": { "hammer_dig": "minecraft:gold" } },
+    "amethyst_bronze":   { "requiredTools": { "hammer_dig": "minecraft:iron" } },
+    "slimesteel":        { "requiredTools": { "hammer_dig": "minecraft:iron" } },
+    "necrotic_bone": { "requiredTools": { "hammer_dig": "minecraft:wood" }, "improvements": { "mechanized/unholy": 1 } },
+    "venombone":     { "requiredTools": { "hammer_dig": "minecraft:wood" }, "improvements": { "mechanized/venom": 1 } },
+    "blazing_bone":  { "requiredTools": { "hammer_dig": "minecraft:wood" } },
+    "string":        { "requiredTools": { "cut": "minecraft:wood" } },
+    "vine":          { "requiredTools": { "cut": "minecraft:wood" } },
+    "twisting_vine": { "requiredTools": { "cut": "minecraft:wood" } },
+    "weeping_vine":  { "requiredTools": { "cut": "minecraft:wood" } },
+    "leather":       { "requiredTools": { "cut": "minecraft:gold" } }
 }
 
 // =============================================================================
@@ -494,8 +581,37 @@ var MD_TT_CONTEXTUAL_AFFINITIES = [
     { "material": "iron", "module": "single/basic_handle", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
     { "material": "iron", "module": "single/light_handle", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
     { "material": "iron", "module": "single/long_handle", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
-    { "material": "silver", "module": "sword/basic_blade", "improvement": "mechanized/holy", "level": 0, "effects": { "holy": 10 } }
+    { "material": "iron", "module": "sword/basic_hilt", "improvement": "mechanized/magnetic", "level": 0, "effects": { "magnetic": 1 } },
+    { "material": "silver", "module": "sword/basic_blade", "improvement": "mechanized/holy", "level": 0, "effects": { "holy": 10 } },
+    { "material": "silver", "module": "sword/short_blade", "improvement": "mechanized/holy", "level": 0, "effects": { "holy": 10 } },
+    { "material": "silver", "module": "sword/machete", "improvement": "mechanized/holy", "level": 0, "effects": { "holy": 10 } },
+    { "material": "silver", "module": "sword/heavy_blade", "improvement": "mechanized/holy", "level": 0, "effects": { "holy": 10 } }
 ]
+
+// Reinforced é contextual: apenas componentes que carregam a estrutura do
+// equipamento recebem a melhoria. Cada instância agrega +15% de durabilidade
+// final e 5% de drag, lido por ataque/draw/mineração conforme aplicável.
+var MD_TT_REINFORCED_MODULES = [
+    "double/basic_handle", "single/basic_handle", "single/light_handle", "single/long_handle",
+    "sword/basic_hilt",
+    "bow/straight_stave", "bow/long_stave", "bow/recurve_stave",
+    "crossbow/basic_stave", "crossbow/basic_stock"
+]
+for (var MD_TT_ri = 0; MD_TT_ri < MD_TT_REINFORCED_MODULES.length; MD_TT_ri++) {
+    MD_TT_CONTEXTUAL_AFFINITIES.push({
+        "material": "refined_obsidian",
+        "module": MD_TT_REINFORCED_MODULES[MD_TT_ri],
+        "improvement": "mechanized/reinforced",
+        "level": 0,
+        "effects": { "reinforced": 15 },
+        "modifiers": {
+            "finalDurability": 15,
+            "attackSpeed": -5,
+            "drawTime": 5,
+            "miningSpeed": -5
+        }
+    })
+}
 
 function MD_TT_validateContextualAffinity(affinity) {
     if (!affinity || typeof affinity.material !== "string" || typeof affinity.module !== "string" || typeof affinity.improvement !== "string") {
@@ -521,7 +637,9 @@ function MD_TT_validateContextualAffinity(affinity) {
 function MD_TT_proxyOutcome(material, route, schematic) {
     var contract = MD_TT_MATERIAL_CONTRACTS[material.name]
     if (!contract) throw new Error("[Mechanized/Tetra] Contrato ausente: " + material.name)
-    var suffix = schematic.split("/")[1]
+    var suffix = route.variantSuffixes && route.variantSuffixes[schematic]
+        ? route.variantSuffixes[schematic]
+        : schematic.split("/")[1]
     var outcome = {
         "material": {
             "items": [route.item],
@@ -591,6 +709,36 @@ for (var MD_TT_mi = 0; MD_TT_mi < MD_TT_MATERIALS.length; MD_TT_mi++) {
         }
     }
 }
+
+// As famílias estruturais de arco/crossbow são fechadas para que a preview da
+// afinidade não seja descartada por variantKey duplicada. Preserve aqui, de
+// forma explícita, os starters nativos; apenas a rota metal crua é substituída
+// pelas parts Tinkers. Laminated permanece aberta até o contrato do slot 1.
+function MD_TT_preserveNativeOutcome(schematic, outcome) {
+    MD_TT_OUTCOMES[schematic].unshift(outcome)
+}
+MD_TT_preserveNativeOutcome("bow/straight_stave", { "materials": ["tetra:wood/"], "moduleKey": "bow/straight_stave", "moduleVariant": "straight_stave/" })
+MD_TT_preserveNativeOutcome("bow/straight_stave", { "material": { "items": ["minecraft:stick"], "count": 3 }, "moduleKey": "bow/straight_stave", "moduleVariant": "straight_stave/stick" })
+MD_TT_preserveNativeOutcome("bow/long_stave", { "materials": ["tetra:wood/"], "countFactor": 2, "toolOffset": 1, "moduleKey": "bow/long_stave", "moduleVariant": "long_stave/" })
+MD_TT_preserveNativeOutcome("bow/long_stave", { "material": { "items": ["minecraft:stick"], "count": 4 }, "moduleKey": "bow/long_stave", "moduleVariant": "long_stave/stick" })
+MD_TT_preserveNativeOutcome("bow/recurve_stave", { "materials": ["tetra:wood/"], "toolOffset": 1, "toolFactor": 1.1, "moduleKey": "bow/recurve_stave", "moduleVariant": "recurve_stave/" })
+MD_TT_preserveNativeOutcome("bow/recurve_stave", { "material": { "items": ["minecraft:stick"], "count": 3 }, "requiredTools": { "axe_dig": "minecraft:stone" }, "moduleKey": "bow/recurve_stave", "moduleVariant": "recurve_stave/stick" })
+MD_TT_preserveNativeOutcome("crossbow/basic_stave", { "materials": ["tetra:wood/"], "moduleKey": "crossbow/basic_stave", "moduleVariant": "basic_stave/" })
+MD_TT_preserveNativeOutcome("crossbow/basic_stave", { "material": { "items": ["minecraft:stick"], "count": 2 }, "moduleKey": "crossbow/basic_stave", "moduleVariant": "basic_stave/stick" })
+MD_TT_preserveNativeOutcome("crossbow/basic_stock", { "materials": ["tetra:wood/"], "moduleKey": "crossbow/basic_stock", "moduleVariant": "basic_stock/" })
+MD_TT_preserveNativeOutcome("crossbow/basic_stock", { "material": { "items": ["minecraft:stick"], "count": 2 }, "moduleKey": "crossbow/basic_stock", "moduleVariant": "basic_stock/stick" })
+
+// Lâminas precisam ser fechadas para a Holosphere selecionar o outcome com
+// Holy. Mantemos as famílias nativas que não usam metal; metais admitidos vêm
+// exclusivamente das parts Tinkers desta integração.
+MD_TT_preserveNativeOutcome("sword/basic_blade", { "materials": ["tetra:wood/", "tetra:stone/", "tetra:gem/", "tetra:bone/"], "moduleKey": "sword/basic_blade", "moduleVariant": "basic_blade/" })
+MD_TT_preserveNativeOutcome("sword/short_blade", { "materials": ["tetra:wood/", "tetra:stone/", "tetra:gem/", "tetra:bone/"], "moduleKey": "sword/short_blade", "moduleVariant": "short_blade/" })
+MD_TT_preserveNativeOutcome("sword/machete", { "materials": ["tetra:wood/", "tetra:stone/", "tetra:gem/", "tetra:bone/"], "moduleKey": "sword/machete", "moduleVariant": "machete/" })
+MD_TT_preserveNativeOutcome("sword/heavy_blade", { "materials": ["tetra:wood/", "tetra:stone/"], "moduleKey": "sword/heavy_blade", "moduleVariant": "heavy_blade/" })
+
+// Hilts usam tool_handle para metal e bone. Wood/rod permanecem como rotas
+// nativas de começo de jogo, sem reabrir o bypass por matéria-prima metálica.
+MD_TT_preserveNativeOutcome("sword/basic_hilt", { "materials": ["tetra:wood/", "tetra:rod/"], "moduleKey": "sword/basic_hilt", "moduleVariant": "basic_hilt/" })
 MD_TT_validateContextualOutcomes(MD_TT_OUTCOMES)
 
 // O martelo continua uma progressão fechada. Também recebe o contrato
@@ -611,9 +759,8 @@ MD_TT_OUTCOMES["double/basic_hammer"] = MD_TT_HAMMER_OUTCOMES
 // A injeção legada ainda enumera alguns caminhos fora do P0. Mantê-los como
 // merge vazio é seguro nesta transição: o registro nativo permanece intacto.
 var MD_TT_LEGACY_SCHEMATICS = [
-    "double/binding", "single/binding", "sword/throwing_knife",
-    "bow/basic_string", "bow/sights", "bow/stabilizer", "bow/extended_rest",
-    "crossbow/basic_string", "crossbow/stirrup"
+    "sword/throwing_knife", "bow/sights", "bow/stabilizer", "bow/extended_rest",
+    "crossbow/stirrup"
 ]
 for (var MD_TT_li = 0; MD_TT_li < MD_TT_LEGACY_SCHEMATICS.length; MD_TT_li++) {
     MD_TT_OUTCOMES[MD_TT_LEGACY_SCHEMATICS[MD_TT_li]] = []
@@ -885,7 +1032,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/sword/short_blade", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["sword/blade"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -903,7 +1050,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/sword/machete", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["sword/blade"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -938,7 +1085,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/sword/heavy_blade", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["sword/blade"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -955,6 +1102,30 @@ var DEBUG_DUMP = false
             "magicCapacity": 3
         },
         "outcomes": _outcomes["sword/heavy_blade"]
+    })
+
+    inject("tetra:schematics/sword/basic_hilt/basic_hilt", {
+        "replace": true,
+        "slots": ["sword/hilt"],
+        "materialSlotCount": 1,
+        "displayType": "major",
+        "glyph": { "textureX": 16 },
+        "translation": {
+            "secondaryAttributes": { "generic.attack_speed": -1 },
+            "durability": 2,
+            "integrity": 3,
+            "magicCapacity": 3
+        },
+        "outcomes": _outcomes["sword/basic_hilt"]
+    })
+
+    inject("tetra:schematics/sword/binding", {
+        "replace": REPLACE,
+        "slots": ["sword/guard"],
+        "materialSlotCount": 1,
+        "displayType": "minor",
+        "glyph": { "textureX": 88, "textureY": 112 },
+        "outcomes": _outcomes["sword/binding"]
     })
 
     inject("tetra:schematics/single/head/spearhead/spearhead", {
@@ -1056,7 +1227,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/bow/stave/straight_stave", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["bow/stave"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1072,7 +1243,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/bow/stave/long_stave", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["bow/stave"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1089,7 +1260,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/bow/stave/recurve_stave", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["bow/stave"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1138,7 +1309,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/crossbow/stave/basic_stave", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["crossbow/stave"],
         "materialSlotCount": 1,
         "displayType": "major",
@@ -1154,7 +1325,7 @@ var DEBUG_DUMP = false
     })
 
     inject("tetra:schematics/crossbow/stock/basic_stock", {
-        "replace": REPLACE,
+        "replace": true,
         "slots": ["crossbow/stock"],
         "materialSlotCount": 1,
         "displayType": "major",

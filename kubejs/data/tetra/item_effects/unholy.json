@@ -1,0 +1,30 @@
+{
+  "trigger": "tetra:apply_hit_effects",
+  "effect": "unholy",
+  "data": {
+    "numbers": {
+      "effectLevel": {
+        "type": "tetra:effect_level",
+        "effect": "unholy"
+      }
+    }
+  },
+  "condition": {
+    "type": "tetra:not",
+    "condition": {
+      "type": "tetra:entity",
+      "entity": "target",
+      "condition": {
+        "type": "#mechanized:undead"
+      }
+    }
+  },
+  "outcome": {
+    "type": "tetra:apply_effect",
+    "effect": "minecraft:poison",
+    "entity": "target",
+    "source": "attacker",
+    "duration": "60 + effectLevel * 40",
+    "amplifier": "effectLevel - 1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "trigger": "tetra:apply_hit_effects",
+  "effect": "venom",
+  "data": {
+    "numbers": {
+      "effectLevel": {
+        "type": "tetra:effect_level",
+        "effect": "venom"
+      }
+    }
+  },
+  "outcome": {
+    "type": "tetra:apply_effect",
+    "effect": "minecraft:poison",
+    "entity": "target",
+    "source": "attacker",
+    "duration": "60 + effectLevel * 40",
+    "amplifier": "effectLevel - 1"
+  }
+}

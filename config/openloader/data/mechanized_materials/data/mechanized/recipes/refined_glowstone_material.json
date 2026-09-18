@@ -1,0 +1,5 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": { "item": "mekanism:ingot_refined_glowstone" },
+  "value": 1, "needed": 1, "material": "mechanized:refined_glowstone"
+}

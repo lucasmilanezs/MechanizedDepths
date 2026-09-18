@@ -1,0 +1,4 @@
+{
+  "type": "tconstruct:material_melting", "input": "mechanized:refined_glowstone",
+  "result": { "amount": 90, "tag": "forge:molten_refined_glowstone" }, "temperature": 825
+}

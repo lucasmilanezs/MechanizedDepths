@@ -32,5 +32,6 @@
   },
   "requiredTools": {
     "hammer_dig": "minecraft:stone"
-  }
+  },
+  "features": ["mechanized_holy_blades"]
 }

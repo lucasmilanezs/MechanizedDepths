@@ -1,0 +1,21 @@
+{
+  "type": "tetra:default",
+  "key": "tetra.stats.unholy",
+  "contexts": ["tetra:workbench", "tetra:holosphere"],
+  "min": 0,
+  "max": 5,
+  "segmented": true,
+  "stat": { "type": "tetra:effect_level", "effect": "unholy" },
+  "label": {
+    "type": "tetra:basic",
+    "format": "integer",
+    "diff_format": "integer"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "tetra.stats.unholy.tooltip",
+    "stats": [{ "type": "tetra:effect_level", "effect": "unholy" }],
+    "formatters": [{ "type": "tetra:basic", "format": "integer" }]
+  },
+  "generateSorter": true
+}

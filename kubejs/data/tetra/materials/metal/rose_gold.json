@@ -1,0 +1,9 @@
+{
+  "key": "rose_gold", "category": "metal", "primary": 3.5, "secondary": 2, "tertiary": 4,
+  "durability": 175, "integrityCost": 1, "integrityGain": 3, "magicCapacity": 140,
+  "toolLevel": "minecraft:gold", "toolEfficiency": 9, "hidden": false,
+  "tints": { "glyph": "F7CDBB", "texture": "F7CDBB" },
+  "textures": ["metal", "shiny"],
+  "material": { "items": ["tconstruct:rose_gold_ingot"] },
+  "requiredTools": { "hammer_dig": "minecraft:gold" }
+}

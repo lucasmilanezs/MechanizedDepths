@@ -1,0 +1,10 @@
+{
+  "key": "refined_obsidian", "category": "metal", "primary": 7, "secondary": 6, "tertiary": 1.5,
+  "durability": 1300, "integrityCost": 4, "integrityGain": 5, "magicCapacity": 108,
+  "toolLevel": "minecraft:netherite", "toolEfficiency": 7, "hidden": false,
+  "tints": { "glyph": "7B4CA5", "texture": "7B4CA5" },
+  "textures": ["metal", "shiny"],
+  "material": { "items": ["mekanism:ingot_refined_obsidian"] },
+  "requiredTools": { "hammer_dig": "minecraft:diamond" },
+  "features": ["mechanized_reinforced_structures"]
+}

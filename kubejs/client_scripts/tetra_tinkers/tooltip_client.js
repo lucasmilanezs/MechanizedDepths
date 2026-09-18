@@ -21,6 +21,12 @@ var _EFFECT_NAMES = {
     "workable":       "Workable",
     "magnetic":       "Magnetic",
     "holy":           "Holy",
+    "reinforced":     "Reinforced",
+    "venom":          "Venom",
+    "unholy":         "Unholy",
+    "mechanized/reinforced": "Reinforced",
+    "mechanized/venom":      "Venom",
+    "mechanized/unholy":     "Unholy",
     "bleeding":       "Bleeding",
     "arrested":       "Arrested",
     "stabilizing":    "Stabilizing",
@@ -87,6 +93,7 @@ var _MV_NAMES = {
     "hoe":           "Hoe Head",
     "basic_handle":  "Handle",
     "double_binding":"Binding",
+    "sword_binding": "Binding",
     "basic_blade":   "Blade",
     "short_blade":   "Short Blade",
     "machete":       "Machete",
@@ -141,8 +148,18 @@ function _toolEmoji(k) {
     return d ? d.emoji : "🔹"
 }
 
-// Improvements and effects use the same compact rank format in every tooltip.
-// Preserve values outside the conventional I–X range verbatim for auditability.
+// A contribuição numérica e a apresentação não são sempre a mesma unidade.
+// Efeitos percentuais mostram o valor agregado; identidades discretas mostram
+// rank mesmo quando seu payload técnico (como Reinforced=15) usa porcentagem.
+var MD_TT_CLIENT_EFFECT_DISPLAY = {
+    "magnetic": { "type": "rank", "rank": 1 },
+    "mechanized/magnetic": { "type": "rank", "rank": 1 },
+    "reinforced": { "type": "rank", "rank": 1 },
+    "mechanized/reinforced": { "type": "rank", "rank": 1 },
+    "holy": { "type": "percentage" },
+    "mechanized/holy": { "type": "percentage" }
+}
+
 function MD_TT_CLIENT_formatRank(level) {
     var numericLevel = Number(level)
     var romanRanks = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
@@ -150,6 +167,13 @@ function MD_TT_CLIENT_formatRank(level) {
         return romanRanks[numericLevel]
     }
     return "" + level
+}
+
+function MD_TT_CLIENT_formatEffectLevel(key, level) {
+    var display = MD_TT_CLIENT_EFFECT_DISPLAY[key]
+    if (display && display.type === "percentage") return level + "%"
+    if (display && display.type === "rank") return MD_TT_CLIENT_formatRank(display.rank || level)
+    return MD_TT_CLIENT_formatRank(level)
 }
 
 function MD_TT_CLIENT_appendEffectGroup(text, label, effects, labelColor) {
@@ -163,12 +187,29 @@ function MD_TT_CLIENT_appendEffectGroup(text, label, effects, labelColor) {
         var effect = effects[key]
         var parts = [Text.ofString("    " + _effectName(key) + " ").color("#AAAAAA")]
         if (effect.level !== undefined) {
-            parts.push(Text.ofString(MD_TT_CLIENT_formatRank(effect.level)).color("#AA00AA"))
+            parts.push(Text.ofString(MD_TT_CLIENT_formatEffectLevel(key, effect.level)).color("#AA00AA"))
         }
         if (effect.efficiency !== undefined) {
             parts.push(Text.ofString(" (" + effect.efficiency + ")").color("#888888"))
         }
         text.add(parts)
+    }
+}
+
+function MD_TT_CLIENT_appendContextualModifiers(text, modifiers) {
+    if (!modifiers) return
+    text.add(Text.ofString("  Affinity Modifiers").color("#FFAA00"))
+    if (modifiers.finalDurability !== undefined) {
+        text.add(Text.ofString("    " + _sign(modifiers.finalDurability) + "% Final Durability").color("#55FF55"))
+    }
+    if (modifiers.attackSpeed !== undefined) {
+        text.add(Text.ofString("    " + _sign(modifiers.attackSpeed) + "% Attack Speed").color(modifiers.attackSpeed >= 0 ? "#55FF55" : "#FF5555"))
+    }
+    if (modifiers.drawTime !== undefined) {
+        text.add(Text.ofString("    " + _sign(modifiers.drawTime) + "% Draw Time").color(modifiers.drawTime <= 0 ? "#55FF55" : "#FF5555"))
+    }
+    if (modifiers.miningSpeed !== undefined) {
+        text.add(Text.ofString("    " + _sign(modifiers.miningSpeed) + "% Mining Speed").color(modifiers.miningSpeed >= 0 ? "#55FF55" : "#FF5555"))
     }
 }
 
@@ -184,6 +225,7 @@ var _TIC_PARTS = [
     "tconstruct:hammer_head",
     "tconstruct:broad_blade",
     "tconstruct:tool_handle",
+    "tconstruct:tough_handle",
     "tconstruct:tool_binding",
     "tconstruct:bow_limb",
     "tconstruct:bowstring",
@@ -248,7 +290,7 @@ ItemEvents.tooltip(function(event) {
                         var innateKey = innateKeys[ii]
                         text.add([
                             Text.ofString("  " + _effectName(innateKey) + " ").color("#AAAAAA"),
-                            Text.ofString(MD_TT_CLIENT_formatRank(matData.innateImprovements[innateKey])).color("#AA00AA")
+                            Text.ofString(MD_TT_CLIENT_formatEffectLevel(innateKey, matData.innateImprovements[innateKey])).color("#AA00AA")
                         ])
                     }
                     MD_TT_CLIENT_appendEffectGroup(text, "Material Effects", matData.materialEffects, "#55FFFF")
@@ -305,6 +347,7 @@ ItemEvents.tooltip(function(event) {
                     // first, then the material-specific contextual affinity.
                     MD_TT_CLIENT_appendEffectGroup(text, "Module Effects", stats.moduleEffects, "#888888")
                     MD_TT_CLIENT_appendEffectGroup(text, "Material Affinity", stats.contextualEffects, "#55FFFF")
+                    MD_TT_CLIENT_appendContextualModifiers(text, stats.contextualModifiers)
 
                     // Durability / Integrity / MagicCap
                     text.add([

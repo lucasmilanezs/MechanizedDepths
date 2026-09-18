@@ -28,6 +28,8 @@ var _MODULE_FORMULAS = {
     "double/hoe":           {"variants":[{"key":"hoe/","materials":["tetra:metal/","tetra:stone/","tetra:wood/","tetra:gem/"],"attributes":{"generic.attack_speed":{"base":-1.6},"generic.attack_damage":{"base":-3,"primary":1}},"tools":{"till":{"level_mul":1},"hoe_dig":{"level_mul":1,"efficiency_mul":1}},"effects":null,"durability":{"base":-10,"material_mul":0.5},"integrity":{"integrityCost_mul":-1},"magicCapacity":{"material_mul":1},"module_traits":[],"variant_traits":[]}]},
     "double/basic_handle":  {"variants":[{"key":"basic_handle/","materials":["tetra:wood/","tetra:metal/","tetra:bone/","tetra:rod/"],"attributes":{"generic.attack_speed":{"base":-0.35,"secondary":-0.1}},"tools":null,"effects":null,"durability":{"base":7,"material_mul":0.3},"integrity":{"base":1,"integrityGain_mul":1},"magicCapacity":{"material_mul":1},"module_traits":[],"variant_traits":[]}]},
     "double/binding":       {"variants":[{"key":"double_binding/","materials":["tetra:fibre/","tetra:skin/"],"attributes":{"generic.attack_speed":{"secondary":-0.1}},"tools":null,"effects":null,"durability":{"material_mul":0.1},"integrity":{"integrityGain_mul":0.7},"magicCapacity":null,"module_traits":[],"variant_traits":[]}]},
+    "sword/binding":        {"variants":[{"key":"sword_binding/","materials":["tetra:fibre/","tetra:skin/"],"attributes":{"generic.attack_speed":{"secondary":-0.1}},"tools":null,"effects":null,"durability":{"material_mul":0.1},"integrity":{"integrityGain_mul":0.7},"magicCapacity":null,"module_traits":[],"variant_traits":[]}]},
+    "sword/basic_hilt":     {"variants":[{"key":"basic_hilt/","materials":["tetra:wood/","tetra:metal/","tetra:bone/","tetra:rod/"],"attributes":{"generic.attack_speed":{"base":-0.35,"secondary":-0.1}},"tools":null,"effects":null,"durability":{"base":8,"material_mul":0.3},"integrity":{"base":1,"integrityGain_mul":1},"magicCapacity":{"material_mul":1},"module_traits":[],"variant_traits":[]}]},
     "sword/basic_blade":    {"variants":[{"key":"basic_blade/","materials":["tetra:wood/","tetra:stone/","tetra:metal/","tetra:gem/","tetra:bone/"],"attributes":{"generic.attack_speed":{"base":-1.9},"generic.attack_damage":{"primary":1}},"tools":{"cut":{"level_base":1,"efficiency_base":2}},"effects":{"sweeping":{"level":{"base":1}}},"durability":{"base":-20,"material_mul":0.9},"integrity":{"integrityCost_mul":-1},"magicCapacity":{"material_mul":1},"module_traits":[],"variant_traits":[]}]},
     "sword/short_blade":    {"variants":[{"key":"short_blade/","materials":["tetra:wood/","tetra:stone/","tetra:metal/","tetra:gem/","tetra:bone/"],"attributes":{"generic.attack_speed":{"base":-1,"secondary":-0.1},"generic.attack_damage":{"base":-0.5,"primary":1}},"tools":{"cut":{"level_mul":0.7,"efficiency_mul":1}},"effects":{"jab":{"level":{"base":130,"secondary":-8}}},"durability":{"base":-20,"material_mul":0.8},"integrity":{"integrityCost_mul":-1},"magicCapacity":{"material_mul":1},"module_traits":[],"variant_traits":[]}]},
     "sword/machete":        {"variants":[{"key":"machete/","materials":["tetra:wood/","tetra:stone/","tetra:metal/","tetra:gem/","tetra:bone/"],"attributes":{"generic.attack_speed":{"base":-1.8,"secondary":-0.1},"generic.attack_damage":{"primary":1}},"tools":{"cut":{"level_base":1,"efficiency_base":0.2,"efficiency_mul":0.4}},"effects":{"sweeping":{"level":{"base":1},"efficiency":{"base":0.5}},"strikingCut":{"level":{"base":1}},"sweepingStrike":{"level":{"base":1}}},"durability":{"base":-20,"material_mul":0.9},"integrity":{"integrityCost_mul":-1},"magicCapacity":{"material_mul":1},"module_traits":[],"variant_traits":[]}]},
@@ -243,6 +245,7 @@ function MD_TT_TOOLTIP_applyContextualAffinities(affinities, materials) {
             "effects": Object.keys(effects).length > 0 ? effects : null,
             "moduleEffects": template.effects || null,
             "contextualEffects": affinityEffects,
+            "contextualModifiers": affinity.modifiers || null,
             "durability": template.durability,
             "integrity": template.integrity,
             "magicCapacity": template.magicCapacity,
@@ -279,6 +282,7 @@ function _computeStats(moduleKey, mat) {
 
     var contextualEffects = _calcEffects(variant.contextualEffects, mat)
     if (contextualEffects) stats.contextualEffects = contextualEffects
+    if (variant.contextualModifiers) stats.contextualModifiers = variant.contextualModifiers
 
     stats.durability    = _calcDurability(variant.durability, mat)
     stats.integrity     = _calcIntegrity(variant.integrity, mat)

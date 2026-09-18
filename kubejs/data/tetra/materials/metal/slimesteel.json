@@ -1,0 +1,9 @@
+{
+  "key": "slimesteel", "category": "metal", "primary": 5.5, "secondary": 3, "tertiary": 4,
+  "durability": 1040, "integrityCost": 2, "integrityGain": 6, "magicCapacity": 96,
+  "toolLevel": "minecraft:diamond", "toolEfficiency": 6, "hidden": false,
+  "tints": { "glyph": "46ECE7", "texture": "46ECE7" },
+  "textures": ["metal", "shiny"],
+  "material": { "items": ["tconstruct:slimesteel_ingot"] },
+  "requiredTools": { "hammer_dig": "minecraft:iron" }
+}
