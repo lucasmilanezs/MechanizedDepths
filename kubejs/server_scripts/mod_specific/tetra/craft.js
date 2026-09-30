@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'naturesaura:gold_fiber',
-            C: 'enderio:nutritious_stick',
+            C: 'minecraft:stick',
             B: Item.of('tconstruct:hammer_head', '{Material:"tconstruct:wood"}').weakNBT()
         }
     );

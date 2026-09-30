@@ -11,12 +11,13 @@
 		{
 			dependencies: ["1AC4899640C73919"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest1.description1}"
+				"   The Void Chassis is the cheap structural frame behind Ender IO's early machines. Craft it now; you will spend the next stretch of progression feeding it into things with increasingly bad names."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest1.description2}"
+				"   It is a component, not a breakthrough. Make a small reserve before the recipes start asking for one at a time, which is how recipes convince you a reserve was your idea."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest1.description3}"
+				"&7&o— A box for holding machinery. The machinery will supply the drama.&r&r"
 			]
+			title: "Void Chassis"
 			id: "33C02C36A3F51FC9"
 			size: 1.5d
 			tasks: [{
@@ -30,13 +31,11 @@
 		{
 			dependencies: ["33C02C36A3F51FC9"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest2.description1}"
+				"   The Primitive Alloy Smelter combines up to three ingredients into the early Ender IO alloys. Feed it fuel, wait for it to heat up, and use it before you have the power or patience for the proper version."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest2.description2}"
+				"   It is slow, smoky, and completely adequate. The important part is that ordinary furnaces cannot make these alloys, no matter how sternly you look at them."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest2.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest2.description4}"
+				"&7&o— Three metals in a hot barrel. Safety was clearly consulted by mail.&r&r"
 			]
 			id: "60A75D039007C6E3"
 			tasks: [{
@@ -44,7 +43,7 @@
 				item: "enderio:primitive_alloy_smelter"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest2.title}"
+			title: "Is This Going to Explode?"
 			x: -4.5d
 			y: -1.5d
 		}
@@ -54,15 +53,11 @@
 				"33C02C36A3F51FC9"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest3.description1}"
+				"   The Alloy Smelter is the powered replacement for the primitive smelter. It accepts alloy recipes with up to three inputs and makes them without consuming fuel or decorating your base with smoke."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest3.description2}"
+				"   Use it for Ender IO's specialized alloys; keep the Arc Furnace for bulk work. A machine with fewer slots can still be the correct tool. Try not to make this philosophical."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest3.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest3.description4}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest3.description5}"
+				"&7&o— Smaller queue, fewer fumes, same amount of metallurgy.&r&r"
 			]
 			id: "34A056161AA7F764"
 			tasks: [{
@@ -70,20 +65,18 @@
 				item: "enderio:alloy_smelter"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest3.title}"
+			title: "Sometimes Less Is More!"
 			x: -3.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["60A75D039007C6E3"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest4.description1}"
+				"   Dark Steel is an Ender IO alloy used throughout this branch, from machines to armor upgrades. The Primitive Alloy Smelter gives you the first batches; later machines merely make the repetition less ceremonial."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest4.description2}"
+				"   Make extra while the smelter is running. This is the sort of ingot that appears in a recipe precisely after you used the last one on something sensible."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest4.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest4.description4}"
+				"&7&o— It looks like steel after it learned to say no.&r&r"
 			]
 			id: "380D75C7DC2900B9"
 			subtitle: "The Favorite Ingot of the Author's Favorite Author"
@@ -99,15 +92,11 @@
 		{
 			dependencies: ["380D75C7DC2900B9"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest5.description1}"
+				"   The SAG Mill grinds ores, blocks, and special materials into their useful outputs. Its real advantage is recipe coverage and bonus processing, not the fact that it makes a very committed noise."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest5.description2}"
+				"   Use it on the materials unlocked in this branch, especially when a recipe calls for a dust or residue instead of an ingot. Check JEI before assuming a furnace has the final word."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest5.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest5.description4}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest5.description5}"
+				"&7&o— If a block has secrets, the mill bills by the rotation.&r&r"
 			]
 			id: "26866CDA18061C3F"
 			tasks: [{
@@ -115,20 +104,18 @@
 				item: "enderio:sag_mill"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest5.title}"
+			title: "Grinding Is Revealing"
 			x: -3.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["5F4685B36164B0EC"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest6.description1}"
+				"   Soularium is an Ender IO alloy used for machines and mob-processing equipment. Smelt the required ingredients in an Alloy Smelter; the recipe is the important part, not the attempt to make an ingot sound haunted."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest6.description2}"
+				"   Keep some on hand for the Mob Grinding Utilities branch. It is an intermediate, which means it will be absent until the exact moment you need four."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest6.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest6.description4}"
+				"&7&o— Alloying: because ingredients are more cooperative after being melted.&r&r"
 			]
 			id: "3077BE4A34915897"
 			tasks: [{
@@ -136,20 +123,18 @@
 				item: "enderio:soularium_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest6.title}"
+			title: "Binding What Has Departed"
 			x: -1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["26866CDA18061C3F"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest7.description1}"
+				"   Grind the required material in the SAG Mill to obtain Ashen Remnant. It is a custom intermediate for Soularium, so the mill is the route, not optional decoration."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest7.description2}"
+				"   Store it with your other processing dusts. It looks interchangeable until the recipe refuses every other gray powder you own."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest7.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest7.description4}"
+				"&7&o— Gray powder, bespoke paperwork.&r&r"
 			]
 			id: "5F4685B36164B0EC"
 			tasks: [{
@@ -157,20 +142,18 @@
 				item: "kubejs:ashen_remnant"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest7.title}"
+			title: "Ashen Remnant"
 			x: -2.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["26866CDA18061C3F"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest8.description1}"
+				"   Resonant Dust is the End-themed ingredient needed for End Steel. Obtain it through the processing route shown in JEI, then take it to the Alloy Smelter with the rest of the recipe."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest8.description2}"
+				"   This is a gating material, so do not spend it on experiments unless the experiment is called reading the recipe twice."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest8.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest8.description4}"
+				"&7&o— Rare dust: the universe's preferred way to schedule a detour.&r&r"
 			]
 			id: "16DE78B14AD5C30F"
 			tasks: [{
@@ -178,21 +161,20 @@
 				item: "kubejs:resonant_dust"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest8.title}"
+			title: "Resonant Dust"
 			x: -2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["16DE78B14AD5C30F"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest9.description1}"
+				"   End Steel is the high-tier Ender IO alloy made with Resonant Dust in the Alloy Smelter. It unlocks the tougher chassis and machinery waiting ahead, which is more useful than calling it metaphysically stubborn."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest9.description2}"
+				"   Make enough for the next chassis before moving on. Its recipes tend to arrive in pairs, like paperwork and regret."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest9.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest9.description4}"
+				"&7&o— Steel from the End: durable, expensive, and impossible to misplace quietly.&r&r"
 			]
+			title: "End Steel"
 			id: "087253246A12A364"
 			tasks: [{
 				id: "1D6C94605004EB9A"
@@ -208,13 +190,11 @@
 				"3077BE4A34915897"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest10.description1}"
+				"   The Ensouled Chassis is the advanced Ender IO frame made from End Steel and Soularium. It is the structural ingredient for the Slice 'n' Splice and other machines that need more than a Void Chassis."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest10.description2}"
+				"   It has no job by itself. Build it because the next machine refuses to stand on ordinary steel, the snob."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest10.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest10.description4}"
+				"&7&o— A chassis with credentials. Still cannot tighten a bolt.&r&r"
 			]
 			id: "02C64D7A8A15D666"
 			size: 1.2d
@@ -223,12 +203,20 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest10.title}"
+			title: "Ensouled Chassis"
 			x: -1.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["01CABE0E1F3B9EDC"]
+			description: [
+				"   The Soul Binder uses XP and power to bind materials with a captured mob soul. It makes several Ender IO components and upgrades that cannot be obtained by ordinary crafting."
+				""
+				"   Keep an experience source nearby and consult JEI for the required soul and levels. The machine is picky because apparently glowing tanks of experience were too straightforward."
+				""
+				"&7&o— It turns levels into parts. Your enchantment table would like a word.&r&r"
+			]
+			title: "Soul Binder"
 			id: "6F08DCFF5C66E621"
 			tasks: [{
 				id: "5F03AE4507A998C7"
@@ -240,6 +228,14 @@
 		}
 		{
 			dependencies: ["3DD27555EF64CE5A"]
+			description: [
+				"   The Powered Spawner consumes power and uses a captured soul to spawn a chosen mob. It is the controlled source of drops, entities, and future machinery inputs."
+				""
+				"   Set it up where the spawned mobs can be handled safely, then give it a proper kill or collection system. A spawner without an exit plan is merely an argument with your base."
+				""
+				"&7&o— Automation begins when the monster has a work schedule.&r&r"
+			]
+			title: "Powered Spawner"
 			id: "6E0941CD567C47CE"
 			tasks: [{
 				id: "4A6F01E47D202698"
@@ -258,6 +254,14 @@
 				"091EF5C74B511DB6"
 				"39D52010864F7BE9"
 			]
+			description: [
+				"   The Mob Fan pushes nearby mobs in the direction it faces. Pair it with the Powered Spawner to move creatures into a grinder, collection area, or any other place they did not choose to visit."
+				""
+				"   Install the range upgrades that match your room. The fan moves mobs, not bad floor plans."
+				""
+				"&7&o— Ventilation for monsters. Building codes remain silent.&r&r"
+			]
+			title: "Fan Service"
 			id: "6E2F5990270F6C13"
 			tasks: [{
 				id: "32275ABED8DA14BD"
@@ -270,29 +274,13 @@
 		{
 			dependencies: ["3077BE4A34915897"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description1}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description2}"
+				"   Mobgrindium is the custom alloy used by Mob Grinding Utilities equipment. Craft it from the listed mob-related ingredients and Soularium, then use it for the fan and saw branch."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description3}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description4}"
+				"   It is deliberately specific: a general-purpose ingot would have made the recipes too comprehensible."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description5}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description6}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description7}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description8}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description9}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description10}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description11}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description12}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description13}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description14}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest14.description15}"
+				"&7&o— Finally, an alloy with the nutritional profile of a dungeon.&r&r"
 			]
+			title: "Mobgrindium"
 			id: "39D52010864F7BE9"
 			size: 1.2d
 			tasks: [{
@@ -306,14 +294,13 @@
 		{
 			dependencies: ["01CABE0E1F3B9EDC"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest16.description1}"
+				"   The Zombie Electrode is an Ender IO component for the Slice 'n' Splice chain. Craft it as shown in JEI and keep it for the machine recipes ahead."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest16.description2}"
+				"   It is an intermediate. Do not expect it to do anything in your hand; that would be asking a component to show initiative."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest16.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest16.description4}"
+				"&7&o— A specialized part, because copper was apparently too emotionally available.&r&r"
 			]
+			title: "Zombie Electrode"
 			id: "6C914CA1C10A4C3C"
 			tasks: [{
 				id: "2C01CF7F7530B3AF"
@@ -328,6 +315,14 @@
 				"6E0941CD567C47CE"
 				"39D52010864F7BE9"
 			]
+			description: [
+				"   The Mob Saw damages mobs in front of it and turns a spawned stream into drops. Feed it the Powered Spawner output, arrange collection underneath, and keep yourself outside its working end."
+				""
+				"   Its upgrades improve the result rather than the elegance. That is the correct priority for a spinning wall of blades."
+				""
+				"&7&o— The humane alternative was apparently a chest with teeth.&r&r"
+			]
+			title: "Mob Masher"
 			id: "091EF5C74B511DB6"
 			tasks: [{
 				id: "6C952B765831AC81"
@@ -343,13 +338,11 @@
 				"6F08DCFF5C66E621"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest18.description1}"
+				"   The Slice 'n' Splice assembles creature-based Ender IO recipes, including the Frank'N'Zombie needed later in this chapter. Give it power, the exact mob parts from JEI, and a willingness to leave the details unexamined."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest18.description2}"
+				"   This quest marks the first result, not a decorative trophy. Make the creature because its drops and ingredients unlock the next components."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest18.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest18.description4}"
+				"&7&o— It is alive enough to satisfy the recipe. The recipe sets a low bar.&r&r"
 			]
 			id: "3DD27555EF64CE5A"
 			tasks: [{
@@ -357,7 +350,7 @@
 				item: "enderio:frank_n_zombie"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest18.title}"
+			title: "Frank'N'Zombie"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -367,27 +360,13 @@
 				"01CABE0E1F3B9EDC"
 			]
 			description: [
-				"   {ftbquests.chapter.enderfuso_de_almas.quest19.description1}"
+				"   The Dormant Memory Cell is a custom component made through the Slice 'n' Splice chain. It is required for the AE2 storage cells in this chapter, so make it before planning a large digital warehouse."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description2}"
+				"   It does not store anything yet. Think of it as a blank label with an expensive manufacturing history."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description3}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description4}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description5}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description6}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description7}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description8}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description9}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description10}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description11}"
-				""
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest19.description12}"
+				"&7&o— Memory sold separately. Naturally.&r&r"
 			]
+			title: "Dormant Memory Cell"
 			id: "10B03F04C4CE834E"
 			size: 1.2d
 			tasks: [{
@@ -400,20 +379,11 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description1}"
+				"   This is your first AE2 storage cell: 1,024 bytes of item storage for an ME drive or portable cell workbench. It is small, but it turns a chest full of gravel into a problem with an address."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description2}"
+				"   Make several if you can. A cell full of one bulky item type wastes capacity, because digital storage has inherited physical storage's talent for being inconvenient."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description4}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description5}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description6}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description7}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest20.description8}"
+				"&7&o— One thousand and twenty-four bytes. Finally, a number of cobblestone can respect.&r&r"
 			]
 			id: "021EA65400A038A6"
 			tasks: [{
@@ -425,16 +395,18 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest20.title}"
+			title: "1k Storage Cell"
 			x: 1.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["5B72BC8FFE0F8040"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest21.description1}"
+				"   The 4k Storage Cell holds four times the bytes of a 1k cell in an ME drive. Use it when the basic cells are filling with mixed materials and you are tired of playing inventory Tetris with electronics."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest21.description2}"
+				"   Cell type limits still apply, so capacity is not a substitute for sensible storage partitioning."
+				""
+				"&7&o— Four times the space, exactly four times the confidence.&r&r"
 			]
 			id: "6D7490C1F3D84DA3"
 			tasks: [{
@@ -446,16 +418,18 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest21.title}"
+			title: "4k Storage Cell"
 			x: 1.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["021EA65400A038A6"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest22.description1}"
+				"   The 16k Storage Cell is the next AE2 capacity tier for general ME storage. It is a practical upgrade for the first real stockpile, not a declaration that you have solved storage forever."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest22.description2}"
+				"   Use drives with several cells rather than filling one enormous cell with every item type. Organization survives contact with reality better that way."
+				""
+				"&7&o— Sixteen thousand bytes, and still no room for bad habits.&r&r"
 			]
 			id: "5B72BC8FFE0F8040"
 			tasks: [{
@@ -467,16 +441,18 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest22.title}"
+			title: "16k Storage Cell"
 			x: 1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6D7490C1F3D84DA3"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest23.description1}"
+				"   The 64k Storage Cell gives an ME drive a large pool of storage for dense materials and long-running automation. Craft it when 16k cells are becoming routine rather than waiting for the system to lock up on a pile of cobblestone."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest23.description2}"
+				"   Reserve high-capacity cells for bulk items or a small number of types. A 64k cell full of one cobble stack is technically storage and spiritually a prank."
+				""
+				"&7&o— Big enough for a warehouse, too refined for loose screws.&r&r"
 			]
 			id: "1135A9E1B67CB5AE"
 			tasks: [{
@@ -488,23 +464,20 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest23.title}"
+			title: "64k Storage Cell"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["1135A9E1B67CB5AE"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest24.description1}"
+				"   The 256k Storage Cell is the largest storage tier in this chain. Install it in an ME drive for serious bulk storage, especially materials produced continuously by automated systems."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest24.description2}"
+				"   It is valuable enough to plan before crafting. Decide what it will hold, then let it do the boring work it was built for."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest24.description3}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest24.description4}"
-				"{ftbquests.chapter.enderfuso_de_almas.quest24.description5}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest24.description6}"
+				"&7&o— A quarter-million bytes, all waiting for you to automate dirt.&r&r"
 			]
+			title: "256k Storage Cell"
 			id: "7ED86C8D398DC882"
 			tasks: [{
 				id: "205301C54E5DA991"
@@ -520,6 +493,14 @@
 		}
 		{
 			dependencies: ["6E2F5990270F6C13"]
+			description: [
+				"   The Speed Upgrade makes the Mob Fan push mobs faster. Use it when your spawner produces mobs quicker than the fan can feed the grinder."
+				""
+				"   More speed means more chances for mobs to reach places you forgot to block off."
+				""
+				"&7&o— Airflow is just mob logistics with fewer clipboards.&r&r"
+			]
+			title: "More Fan, More Problems"
 			id: "519BABFAD0D85F93"
 			tasks: [{
 				id: "2F3A2A73493D8ED9"
@@ -531,6 +512,14 @@
 		}
 		{
 			dependencies: ["6E2F5990270F6C13"]
+			description: [
+				"   The Width Upgrade expands the Mob Fan's horizontal working area. It is useful for wider spawn rooms and for correcting the room you built before checking the fan's range."
+				""
+				"   Add only what the layout needs; a bigger field is not automatically a smarter field."
+				""
+				"&7&o— Now the wind can disappoint more mobs at once.&r&r"
+			]
+			title: "Broadside"
 			id: "1E874DCD6F8C79FB"
 			tasks: [{
 				id: "6768CAFB819CA969"
@@ -542,6 +531,14 @@
 		}
 		{
 			dependencies: ["6E2F5990270F6C13"]
+			description: [
+				"   The Height Upgrade expands the Mob Fan's vertical reach. Use it in tall chambers or multi-level routing where a normal fan leaves mobs hovering just outside its jurisdiction."
+				""
+				"   Combine it with the other fan upgrades only after checking the direction. Physics remains stubbornly directional."
+				""
+				"&7&o— Vertical integration, with creepers.&r&r"
+			]
+			title: "Updraft"
 			id: "07ED8FF8B860C228"
 			tasks: [{
 				id: "1826739FD58BEEFF"
@@ -553,6 +550,14 @@
 		}
 		{
 			dependencies: ["091EF5C74B511DB6"]
+			description: [
+				"   The Looting Upgrade gives the Mob Saw a better chance at extra mob drops. Install it when rare drops, rather than raw kill speed, are the bottleneck."
+				""
+				"   It improves the harvest; it does not improve your luck with the recipe you wanted yesterday."
+				""
+				"&7&o— More loot from the same terrible workplace.&r&r"
+			]
+			title: "Looting Blade"
 			id: "0F6245BA5B6F6F02"
 			tasks: [{
 				id: "3E8B8FA305651BEC"
@@ -564,6 +569,14 @@
 		}
 		{
 			dependencies: ["091EF5C74B511DB6"]
+			description: [
+				"   The Sharpness Upgrade increases the Mob Saw's damage. Use it when spawned mobs are surviving too long and backing up your processing room."
+				""
+				"   Damage upgrades solve throughput. They do not solve the fact that you put a blade in the wall."
+				""
+				"&7&o— Faster processing, fewer witnesses.&r&r"
+			]
+			title: "Sharper Than Necessary"
 			id: "318800132938F1A4"
 			tasks: [{
 				id: "0D61BB53D5B176E8"
@@ -575,6 +588,14 @@
 		}
 		{
 			dependencies: ["091EF5C74B511DB6"]
+			description: [
+				"   The Beheading Upgrade lets the Mob Saw produce mob heads where applicable. Use it when a recipe or collection needs skulls rather than ordinary drops."
+				""
+				"   It is specialized, so install it for a reason. A wall blade does not need hobbies."
+				""
+				"&7&o— At last, a promotion path for the neck.&r&r"
+			]
+			title: "Heads Will Roll"
 			id: "136E03A830FA397B"
 			tasks: [{
 				id: "2D56E163C4810CC6"
@@ -590,13 +611,11 @@
 				"1DC95B7767355679"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest31.description1}"
+				"   The Neural Agonizer uses an installed module to process a thought cell into Liquid Agony and related emotional fluids. Supply the required interface, power, and module; the module determines which output you are farming."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest31.description2}"
+				"   This is a fluid-production machine. Build tanks and piping before starting it, because the only thing worse than a full machine is a full machine holding 8,000 mB of your oversight."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest31.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest31.description4}"
+				"&7&o— Pain is just data waiting for interpretation. Here, it’s interpreted by the liter.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -630,7 +649,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest31.title}"
+			title: "Suffering Processor"
 			x: 1.5d
 			y: -3.5d
 		}
@@ -640,13 +659,11 @@
 				"1DC95B7767355679"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest32.description1}"
+				"   The Neurotropic Garden uses a compatible module to produce Liquid Joy and other positive emotional fluids from a thought cell. Give it power, the correct module, and fluid storage before it runs."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest32.description2}"
+				"   It is the parallel route to the Agonizer. Pick the output your next recipes need; building both systems just to avoid choosing is very on-brand, but inefficient."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest32.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest32.description4}"
+				"&7&o— Happiness grows best under artificial light and a maintenance schedule.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -680,7 +697,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest32.title}"
+			title: "Architecture of Euphoria"
 			x: 1.5d
 			y: -1.5d
 		}
@@ -690,9 +707,11 @@
 				"1D79CA728AD74633"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest33.description1}"
+				"   Liquid Agony is the fluid output of the Neural Agonizer route. Collect it in a tank or bucket and use it in the recipes unlocked beyond this point."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest33.description2}"
+				"   It is a reagent, so move it with fluid pipes rather than treating the bucket as long-term infrastructure. Buckets are emergency plumbing with a handle."
+				""
+				"&7&o— The recipe calls it a fluid. The tank wisely withholds comment.&r&r"
 			]
 			id: "37A3741F8C1E732E"
 			tasks: [{
@@ -700,7 +719,7 @@
 				item: "kubejs:liquid_agony_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest33.title}"
+			title: "Liquid Agony"
 			x: 2.5d
 			y: -3.5d
 		}
@@ -710,9 +729,11 @@
 				"1D79CA728AD74633"
 			]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest34.description1}"
+				"   Liquid Joy comes from the Neurotropic Garden route and serves as a fluid ingredient for the synaptic progression. Store it in a tank, pipe it where needed, and do not confuse a bucket with a distribution network."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest34.description2}"
+				"   The choice between joy and agony is a recipe decision here. Keep the ethics lecture for when the pipes stop leaking."
+				""
+				"&7&o— A renewable resource, assuming nobody reads the label too closely.&r&r"
 			]
 			id: "6BBDCCA20EA6C515"
 			tasks: [{
@@ -720,7 +741,7 @@
 				item: "kubejs:liquid_joy_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest34.title}"
+			title: "Liquid Joy"
 			x: 2.5d
 			y: -1.5d
 		}
@@ -731,23 +752,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description1}"
+				"   The Synaptic Interface combines the blank interface with the emotional-fluid route required by its recipe. Both Liquid Agony and Liquid Joy lead forward; choose the machinery you already built or the fluid you can supply reliably."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description2}"
+				"   The result is the active interface for the next step. This is a fork in production, not a personality test. Please stop staring at the tank."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description4}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description5}"
-				""
-				"   {ftbquests.chapter.enderfuso_de_almas.quest35.description6}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description7}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description8}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest35.description9}"
+				"&7&o— Two inputs, one output, no questionnaire.&r&r"
 			]
 			id: "171975C11B49B098"
 			size: 1.5d
@@ -756,20 +765,18 @@
 				item: "kubejs:synaptic_interface"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest35.title}"
+			title: "The Choice That Shapes Thought"
 			x: 3.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3DD27555EF64CE5A"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest36.description1}"
+				"   The Blank Synaptic Interface is the unfinished base for the active interface. Craft it from the listed components, then feed it through either emotional-fluid route in the next quest."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest36.description2}"
+				"   It is intentionally inert. A blank interface cannot automate thoughts, which makes it the least alarming machine part in this chapter."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest36.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest36.description4}"
+				"&7&o— Blank by design. Enjoy the quiet while it lasts.&r&r"
 			]
 			id: "217FB33A7552DD46"
 			tasks: [{
@@ -777,20 +784,18 @@
 				item: "kubejs:blank_synaptic_interface"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest36.title}"
+			title: "Think Inside the Box"
 			x: 1.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["02C64D7A8A15D666"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest37.description1}"
+				"   The Slice 'n' Splice combines mob drops and components into Ender IO's special recipes. It needs power and the exact inputs shown in JEI; use it for the Zombie Electrode, Frank'N'Zombie, and memory-cell chain."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest37.description2}"
+				"   Set it up near your mob-drop storage. Walking across the base for one zombie part is not progression; it is a filing error."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest37.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest37.description4}"
+				"&7&o— A crafting table with standards and a power bill.&r&r"
 			]
 			id: "01CABE0E1F3B9EDC"
 			tasks: [{
@@ -798,28 +803,18 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest37.title}"
+			title: "The Machine That Self-Corrects"
 			x: -0.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3DD27555EF64CE5A"]
 			description: [
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description1}"
+				"   The Overthinker Cell is the custom component that connects the storage and emotional-fluid branches. Craft it as shown in JEI, then use it where the later fluid recipes request it."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description2}"
+				"   It is a gate component, so make the required count and move on. Giving it a biography would not help the recipe."
 				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description3}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description4}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description5}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description6}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description7}"
-				""
-				"{ftbquests.chapter.enderfuso_de_almas.quest38.description8}"
+				"&7&o— It detects existence only after the ingredients agree to it.&r&r"
 			]
 			id: "1D79CA728AD74633"
 			tasks: [{
@@ -833,7 +828,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.enderfuso_de_almas.quest38.title}"
+			title: "Existence Sensor"
 			x: 2.0d
 			y: -2.5d
 		}

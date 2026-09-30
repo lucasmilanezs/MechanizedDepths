@@ -217,17 +217,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["72D368728D4BE109"]
-			id: "6DEAE4B081FBB857"
-			tasks: [{
-				id: "0A7BD3BA16A9A708"
-				item: "apotheosis:gem_cutting_table"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["4479F1A50CAB70C1"]
 			id: "7F8174218FF4A210"
 			tasks: [{
@@ -567,11 +556,6 @@
 			]
 			icon: "kubejs:crafting_processor"
 			id: "3D7407849CB4D124"
-			rewards: [{
-				id: "0FB88DAD97AAE814"
-				item: "kubejs:crafting_processor"
-				type: "item"
-			}]
 			shape: "square"
 			tasks: [{
 				count: 20L

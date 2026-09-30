@@ -105,17 +105,17 @@
 		{
 			dependencies: ["664F03BCD6779986"]
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description1}"
+				"   Catalysts are auxiliary components inserted into the process to alter its behavior: they accelerate, divert, amplify. They’re not mandatory — until they are."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description2}"
+				"   In most cases, they’re the only way to extract rare by-products like ilmenite, rutile, obsidianite, or things even less pronounceable. Treat them with care — actually, with planning."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description3}"
+				"   They will decide whether your industrial chain is efficient… or just loud."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description4}"
+				"   Ground quartz acts as a crystalline abrasive inside the pulverizer chamber. Its sharp edges and high hardness index mechanically interfere with ore fragmentation, helping destabilize micro-structures."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description5}"
+				"   Though not participating chemically, its silicate nature improves cutting action, speeding up milling. However, like any light abrasive, it wears easily, being more useful for short, low-demand sessions."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest9.description6}"
+				"&7&o— Cuts well, lasts little. Like many speeches.&r&r"
 			]
 			id: "377D66DD47488FE4"
 			tasks: [{
@@ -123,18 +123,18 @@
 				item: "mekanism:dust_quartz"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.termodinmica_aplicada.quest9.title}"
+			title: "Abrasive Efficiency"
 			x: -3.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["377D66DD47488FE4"]
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest10.description1}"
+				"   When introduced into the process, coke dust acts as an adsorptive thermal aid. Its high residual carbon content interacts with unstable elements during fragmentation, promoting mild reduction reactions or sublimation of metallic traces."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest10.description2}"
+				"   This effect favors the release of by-products with greater efficiency, such as oxides or metal salts bound to the original ore. Consumption is intermediate: it doesn’t fully decompose, but it does react with part of the volatile compounds."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest10.description3}"
+				"&7&o— An ember that never dies — it just becomes useful again.&r&r"
 			]
 			id: "25FED667BD6B99AD"
 			shape: "hexagon"
@@ -143,7 +143,7 @@
 				item: "immersiveengineering:dust_coke"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.termodinmica_aplicada.quest10.title}"
+			title: "Reactive Combustion"
 			x: -5.0d
 			y: -2.0d
 		}
@@ -222,11 +222,11 @@
 		{
 			dependencies: ["504BB1A0C0A5D778"]
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest17.description1}"
+				"   This viscous substance, derived from complex biological processes, acts as an active solvation medium inside the chamber. Its gelatinous composition encapsulates particles during milling, preventing suspension losses and optimizing secondary reactions."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest17.description2}"
+				"   In addition, certain unstable organic compounds within it serve as precursors for catalytic reactions, especially with minerals sensitive to pH or organo-metallic bonding. Its durability and yield make it the gold-standard catalyst. Excellent and balanced — it could just last a little longer..."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest17.description3}"
+				"&7&o— It dissolves things you didn’t know were there. Including your certainty.&r&r"
 			]
 			id: "0E15CFE7649C8E5E"
 			shape: "hexagon"
@@ -235,7 +235,7 @@
 				item: "kubejs:gelatinous_organic_solvent"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.termodinmica_aplicada.quest17.title}"
+			title: "Bio-Structural Catalyst"
 			x: -5.0d
 			y: 1.0d
 		}
@@ -245,11 +245,11 @@
 				"3321B64AAB3C71A1"
 			]
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest18.description1}"
+				"   Cinnabar, primarily mercury sulfide (HgS), has a crystalline structure that, when stressed, releases micro-static charges and undergoes lamellar fracture."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest18.description2}"
+				"   During pulverization, these effects cause electrostatic dispersion of particulates, reducing agglomeration and increasing surface exposure for processing. Its balanced performance makes it a broadly applicable technical catalyst."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest18.description3}"
+				"&7&o— Beauty lies in balance… and in a slight degree of functional toxicity.&r&r"
 			]
 			id: "1F6EBFB9DB2A2B14"
 			shape: "hexagon"
@@ -258,18 +258,18 @@
 				item: "thermal:cinnabar"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.termodinmica_aplicada.quest18.title}"
+			title: "Red Crystal Reagent"
 			x: -5.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["4B17B25AEC9A0007"]
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest19.description1}"
+				"   Counter-intuitive as it is, the Ice Charge works as a moderating thermal agent. During milling, its controlled cold release absorbs part of the friction-generated energy, reducing system wear and enabling short cycles with fewer interruptions."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest19.description2}"
+				"   Its action is purely physical and limited, but the agility it provides is valuable in fast-processing flows. Fragile and volatile, it rarely survives more than a single round."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest19.description3}"
+				"&7&o— It doesn’t last long, but it cools tempers and speeds the work. A temporary relief — like a good improbable argument.&r&r"
 			]
 			id: "1DB47027209C4091"
 			shape: "hexagon"
@@ -278,17 +278,17 @@
 				item: "thermal:ice_charge"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.termodinmica_aplicada.quest19.title}"
+			title: "Directed Thermal Shock"
 			x: -5.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["42B368C1DD78B214"]
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest20.description1}"
-				"{ftbquests.chapter.termodinmica_aplicada.quest20.description2}"
+				"   Formed by blast-furnace residues rich in metal oxides, Rich Slag acts as a promoter of surface reactivity. Its components — chiefly iron, silicon, and aluminum oxides — interact with particles under fracture, increasing their chemical instability."
+				"   This effect induces the release of by-products bound by weak forces or requiring minimal catalytic activation. Though it doesn’t affect speed, its efficiency in secondary extractions is exceptional."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest20.description3}"
+				"&7&o— What’s left from smelting… now extracts what never left the stone. Second chances for catalysts and sinners.&r&r"
 			]
 			id: "41F84F8BA400D58F"
 			shape: "hexagon"
@@ -297,20 +297,20 @@
 				item: "thermal:rich_slag"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.termodinmica_aplicada.quest20.title}"
+			title: "Reprocessed Purity Residue"
 			x: -5.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["5697C0E23B256642"]
 			description: [
-				"{ftbquests.chapter.termodinmica_aplicada.quest21.description1}"
+				"   Given too much stimulus, even a plant yields. In the Phytogenic Insolator — under constant light, pure water, and excess Phyto-Gro — it tries to protect itself. It closes its stomata. Reinforces its fibers. Stiffens its cell walls until it becomes… something else. Something dead."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest21.description2}"
+				"   Instead of blooming, it forms a carapace of dense cellulose and modified lignin — a defense reaction that, ironically, suffocates it. Without noticing, the plant literally embalms itself to death — an “auto-immune disease.” The result is Organic Polymer Mesh: a high-performance plant polymer, flexible, heat-resistant, and completely inert. Perfect for machines. Horrible for photosynthesis."
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest21.description3}"
+				"   Curious how we chase dense, rare metals only to find the chapter’s most useful material comes from plants and water. Don’t underestimate &2&lgreen engineering!&r&r"
 				""
-				"{ftbquests.chapter.termodinmica_aplicada.quest21.description4}"
+				"&7&o— Fascinating. Give a plant paradise and it embalms itself. Thinks it’s adapting… while it quietly dies.&r&r"
 			]
 			id: "1E7A8B399C39BF92"
 			shape: "hexagon"

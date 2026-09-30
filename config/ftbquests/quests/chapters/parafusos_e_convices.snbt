@@ -21,13 +21,13 @@
 		{
 			dependencies: ["6A51D3D6D7650D5D"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest1.description1}"
+				"   Wood cultivated with care, nurtured by rituals, transmuted with intent... and now dipped in boiling oil to become a workbench. Don’t think of it as betrayal. It’s transition. Cycles within cycles. Phases that overlap."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest1.description2}"
+				"   Nature taught you to observe. To listen. To shape. Now it’s time to weld. Grind. Channel."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest1.description4}"
+				"   Mix &a&o`Living Timber`&r&r with &c&o`Creosote Oil`.&r &rNot because it’s pretty, but because it works."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest1.description5}"
+				"&7&o— You burned a magic tree to make a table. Congratulations. You are officially an engineer.&r&r"
 			]
 			id: "7D69FEEEED084E15"
 			rewards: [{
@@ -37,7 +37,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.parafusos_e_convices.quest1.subtitle}"
+			subtitle: "&oCurious, isn’t it?&r "
 			tasks: [
 				{
 					count: 8L
@@ -50,19 +50,30 @@
 					item: "immersiveengineering:workbench"
 					type: "item"
 				}
+				{
+					id: "3132AA4FC0E948F0"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest1.title}"
+			title: "&lTo Burn the Right World"
 			x: -9.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["58388432A718A31F"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest2.description1}"
+				"   The aura dissipates and, in its place, stone remains — not just any stone, but one that witnessed rituals and absorbed intentions. Now it will be pressed with clay and coal to form a brick. A furnace born from something that once heard the forest breathe. All that to produce soot, of course. The kind of idea that would make a nature spirit suffer a metaphysical breakdown."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest2.description2}"
+				"   Yes, it’s brutally slow. I recommend keeping it full at all times. Horizontal scalling goes a long way too."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest2.description3}"
+				"&o&7— You took something alive and shoved it in a furnace to make smoke. Genius. I’m sincerely impressed.&r&r"
 			]
 			icon: "immersiveengineering:coke_oven"
 			id: "6A51D3D6D7650D5D"
@@ -73,19 +84,19 @@
 				item: { Count: 27, id: "immersiveengineering:cokebrick" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest2.title}"
+			title: "First Ashes"
 			x: -6.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["41C7D076DE390330"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest3.description1}"
+				"   Every ritual needs a catalyst, every structure a starting point. This isn’t a sacred artifact, nor an aura channeller — it’s just a hammer. Big, heavy, functional... and, in a sense, final. You’ve used improvised tools, enchanted stones, even pulsing roots."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest3.description2}"
+				"   But now it’s time for something more direct: wood, iron, and a fistful of stubbornness. "
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest3.description3}"
-				"{ftbquests.chapter.parafusos_e_convices.quest3.description4}"
+				"&7&o— Finally, a tool that requires no offerings or lunar alignment. Progress&r."
+				"&r"
 			]
 			id: "58388432A718A31F"
 			rewards: [{
@@ -106,18 +117,16 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest3.title}"
+			title: "&l&o***bonk***"
 			x: -6.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["58388432A718A31F"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest4.description1}"
+				"   You start building the structure with the confidence of someone who no longer feels guilty about shoving living stones into furnaces. Brick by brick, the smell of soot arrives early. This isn’t a common build — it’s a modern altar, dedicated to the cult of extreme heat. The Blast Furnace emits no sacred light, only constant smoke; it doesn’t transform essence, just coal and iron. It’s slow, loud, and absolutely necessary."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest4.description2}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest4.description3}"
+				"&o&7— It’s not pretty, clean, or gentle. But nothing melts iron like it. Continue.&r&r"
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "11F168F0483CA912"
@@ -137,9 +146,9 @@
 				"6A51D3D6D7650D5D"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest5.description1}"
+				"   Iron wasn’t enough. It melts, bends, rusts — like anything born too easy. But now you have a furnace that doesn’t forgive, a fuel that doesn’t tolerate weakness, and one intention: turn the ordinary into the permanent. The process is slow, loud, and delightfully inefficient. And still, it’s progress. Steel doesn’t bend on a whim — and neither should you."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest5.description2}"
+				"&7&o— You rubbed coal into iron until it got serious. Shiny. Keep it up and even a gear might respect you.&r&r"
 			]
 			id: "1A526B97B149CBD3"
 			tasks: [{
@@ -147,19 +156,19 @@
 				item: "thermal:steel_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest5.title}"
+			title: "The Metal That Doesn’t Break"
 			x: -6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1A526B97B149CBD3"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest6.description1}"
+				"   A spark. That’s all you need to start something irreversible. The right steel, the right stone, and the wrong decision. Practical, portable, and absolutely inadequate for solving any real problem."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest6.description2}"
+				"&o&7— But sometimes… setting things on fire helps.&r&r"
 			]
 			id: "7768F0364DA14B55"
-			subtitle: "{ftbquests.chapter.parafusos_e_convices.quest6.subtitle}"
+			subtitle: "&oPlayground on fire!&r"
 			tasks: [{
 				id: "1F7D30C502900634"
 				item: {
@@ -171,7 +180,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest6.title}"
+			title: "To Burn the Wrong World"
 			x: -5.0d
 			y: 0.0d
 		}
@@ -209,10 +218,10 @@
 		{
 			dependencies: ["7D69FEEEED084E15"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest9.description1}"
+				"   Blueprints aren’t just paper and ink. They’re the materialized arrogance of “I know what I’m doing.” Every line says: “I thought of this before you.” The Engineer wrote for those who would know how to read — and now, by cosmic joke or industrial foolishness, that responsibility is yours."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest9.description2}"
-				"{ftbquests.chapter.parafusos_e_convices.quest9.description3}"
+				"&7&o— You’re copying homework from the past — with style.&r"
+				"&r"
 			]
 			id: "64CA6B5E600B0E4F"
 			tasks: [{
@@ -226,7 +235,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest9.title}"
+			title: "Old Iron Scribbles"
 			x: -8.5d
 			y: 1.5d
 		}
@@ -236,9 +245,9 @@
 				"5E02CDB52EBA2E43"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest10.description1}"
+				"   You took something free, fluid, chaotic… and forced it to push gears. Almost poetic, if it weren’t so ugly. But in the end, it spins. And for now, that’s all that matters. Later someone will call it “clean energy.” For now, call it an attempt."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest10.description2}"
+				"&7&o— The energy that runs never returns. But guilt can be rerouted.&r&r"
 			]
 			icon: "immersiveengineering:watermill"
 			id: "2DB2853A44CAE161"
@@ -254,7 +263,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest10.title}"
+			title: "Inverted Current"
 			x: -9.5d
 			y: 1.5d
 		}
@@ -273,7 +282,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest11.title}"
+			title: "Forging Forms"
 			x: -10.5d
 			y: 1.5d
 		}
@@ -283,15 +292,15 @@
 				"5E02CDB52EBA2E43"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest12.description1}"
+				"   The Metal Press is the romantic denial of the hand hammer. Precise, predictable, impersonal. It doesn’t err — and therefore, doesn’t learn. You built something that hits harder than you, and you didn’t even have to teach it. You just fed it. That’s the line between tool and industry: when repetition becomes language."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest12.description2}"
+				"   To assemble it, you’ll need a piston, steel blocks, and the center of your sanity. The layout is simple yet aligned — consult the engineer’s manual if you want to be sure you’re not building modern sculpture."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest12.description3}"
+				"   It works like every good capitalist system: It doesn’t think, evaluate, or feel. It just transforms. You feed an ingot on one side, and a compressed idea comes out the other. And like every efficient machine, it will remind you that you, too, can be replaced."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest12.description4}"
+				"&7&o— The machine knows what to do. You just provide the steel and don’t get in the way.&r&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest12.description5}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, component disappearance, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "52A00CBEBE03F6D8"
@@ -349,32 +358,32 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest12.title}"
+			title: "The Machine That Mashes"
 			x: -10.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["2DB2853A44CAE161"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description1}"
+				"   If building the Water Wheel was like taming a river, wiring it is like convincing electricity not to flee. You now face engineering’s old dilemma: everything is ready, and nothing works."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description2}"
+				"   First thing to know: each Kinetic Dynamo accepts only up to three Water Wheels connected. Anything more and you’re just stacking wood for visual despair. If everything’s spinning — congrats — now it’s time to ruin it with cables."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description3}"
+				"   Use LV Wire Connectors on inputs and outputs, and link them with LV Wire Coils. For longer distances or minimal aesthetic order, add Relays. They do nothing but carry wires — and, just like in real life, sometimes only make the mess worse."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description4}"
+				"   Wired it wrong? Of course you did. Equip a Wire Cutter, sneak, and click the connector. Done. Pretend you never messed up. You will again. That’s the process."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description5}"
+				"   As for the Capacitor, forget pretty interfaces. Use the Engineer’s Hammer directly on the block faces:"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description6}"
+				"   &9Blue&r: input"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description7}"
+				"   &6Orange&r: output"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description8}"
+				"   &7Colorless&r: neutral, like your faith in the system"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description9}"
+				"   Put the cable from the Water Wheel on the blue side. Output to your first machine on orange. Nothing happens? Recheck everything. And if it still fails… congratulations, now you’re really doing engineering."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest14.description10}"
+				"&7&o— Every electrical system begins with hope, a poorly configured capacitor, and at least one near-death experience from a badly placed cable.&r&r"
 			]
 			icon: {
 				Count: 1
@@ -406,18 +415,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest14.title}"
+			title: "Wires, Limits, and the Start of the Mess"
 			x: -9.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["49BC49E90867B271"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest15.description1}"
+				"   You can already strike iron while it’s hot. But why stop there if you can crush everything at once, automatically, without thinking?"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest15.description2}"
+				"   These molds mark your first choices as a non-artisan. Rod, Plate, Gear, Wire. Four basic ways to convert matter into form — and lose creative control in the process."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest15.description3}"
+				"&7&o— You’re not making parts anymore. You’re asking the machine to make them. The beginning of the end.&r&r"
 			]
 			id: "2E8308871C5B9B21"
 			tasks: [
@@ -442,22 +451,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest15.title}"
+			title: "Molding the Inevitable"
 			x: -11.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest16.description1}"
+				"    The Engineer’s Workbench was where your hands still had some value. You placed the materials, held the hammer, pretended to understand what you were assembling. Now even that is over."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest16.description2}"
+				"   The automated version of this bench is a cold, indifferent multiblock. It accepts components on the blue face, produces the result, and spits it out with disdain onto a side conveyor belt. You no longer assemble — you feed."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest16.description3}"
+				"   It’s a miniature factory. A final denial of the romantic workshop. And if you hear it working alone in the middle of the night, know it isn’t a haunting. It’s just the sound of replacement."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest16.description4}"
+				"&7&o— Production doesn’t stop. You do.&r&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest16.description5}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, component disappearance, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:auto_workbench"
 			id: "4186EA4004685166"
@@ -523,7 +532,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest16.title}"
+			title: "The Bench Rises"
 			x: -7.0d
 			y: 1.5d
 		}
@@ -533,13 +542,11 @@
 				"693D256DD80F1B8F"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest17.description1}"
+				"   Blazing Steel is born in the Alloy Kiln, like any alloy. A metal that shines like fire but doesn’t consume. Burning, yet solid. It doesn’t melt — it threatens."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest17.description2}"
+				"   Maybe you just mixed steel with what you found in the Nether. Maybe you’re starting to learn another language of matter."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest17.description3}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest17.description4}"
+				"&7&o— The furnace is the same. The result, nowhere close.&r&r"
 			]
 			id: "2C5BDE78E209CF0C"
 			tasks: [{
@@ -547,24 +554,26 @@
 				item: "kubejs:blazing_steel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest17.title}"
+			title: "&4Fire That Doesn’t Come from Fire"
 			x: -2.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest18.description1}"
+				"   Immersive’s Assembler is, in essence, a true assembly-line worker: discreet, efficient, no frills."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest18.description2}"
+				"   You set up to three molds with the desired recipes, provide power, feed materials and — done — it manufactures items for you like a good soulless laborer. No dancing mechanical arms. No melodies of gears. Just work."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest18.description3}"
+				"  Yes, Create is probably available. And yes, you’ll probably ignore this glorious block in favor of systems with wheels, rails, windmills, and aesthetic charm."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest18.description4}"
+				"  But hey, &otaste isn’t up for debate.&r If you want an assembler that just does the job and doesn’t show up on Machine-Instagram, the Assembler is for you."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest18.description5}"
+				"  And if one day you want to assemble three different component types with a single power input, maybe… just maybe… it’ll be there, waiting for you. Silent. Ready. Resentful."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest18.description6}"
+				"&7&o— It doesn’t spin, but it gets the job done&r"
+				""
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, component disappearance, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:assembler"
 			id: "76264AD1E946DE2A"
@@ -632,20 +641,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest18.title}"
+			title: "Solitary Assembly"
 			x: -5.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["693D256DD80F1B8F"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest19.description1}"
+				"    There comes a time when pounding powder in a cauldron just won’t cut it. You can keep hand-mixing or waiting for the good ol smeltery, sure, but that only takes you as far as the smell of coal allows."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest19.description2}"
+				"   The Alloy Kiln is the natural next step: two ingredients go in, one alloy comes out. No questions. No rush. No shine. It’s a furnace of compromise — quiet, a bit slow, and depending on the mix, slightly depressing."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest19.description3}"
+				"   But it’s honest. And if you’re patient, it even feels efficient. Almost."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest19.description4}"
+				"&7&o— Engineering doesn’t have to be pretty. It just has to not explode.&r&r"
 			]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "1AEBFDE6990DCCB5"
@@ -655,7 +664,7 @@
 				item: "immersiveengineering:alloybrick"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest19.title}"
+			title: "Powder Ain’t Cutting It"
 			x: -3.5d
 			y: 1.5d
 		}
@@ -665,15 +674,15 @@
 				"693D256DD80F1B8F"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest20.description1}"
+				"    The Blast Furnace worked. With calm, with coal, with your patience. But not for long."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest20.description2}"
+				"   Now you face the improved version — technical euphemism for “let the steel flow and the soul melt.” The Improved Blast Furnace is faster, accepts automation, and responds to redstone, as long as you pretend you understand what you’re doing."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest20.description3}"
+				"   It requires new materials, a new structure, and a new level of commitment: attach a Preheater to speed things up and use a Hopper to auto-extract. Congrats, you’ve just founded your first production line — involuntary, but functional."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest20.description4}"
+				"&7&o— Making steel used to be hard. Now it’s just expensive, loud, and irreversible.&r&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest20.description5}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "467C1405A6CCFB40"
@@ -695,22 +704,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest20.title}"
+			title: "Fast and Automatic = Pretty"
 			x: -1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest21.description1}"
+				"    You finally made it. Now your ores yield &ldouble&r. That’s right: more dust, more progress, more noise pollution."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest21.description2}"
+				"   The Crusher is everything they promised — efficient, powerful, expansive, and completely antisocial. It hogs absurd space, makes more noise than a street fair, and dares you to automate I/O like a trial of logical endurance."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest21.description3}"
+				"   But in the end, it delivers. Not delicately. Not elegantly. But with a bang and a kick to the laws of thermal yield."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest21.description4}"
+				"&7&o— You’re not breaking ore. You’re breaking your transport system’s pride.&r&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest21.description5}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:crusher"
 			id: "4EA7083C34FC1A44"
@@ -770,20 +779,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest21.title}"
+			title: "Grinding Dreams Since Forever"
 			x: -4.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["22EC9AE04FCCCEE0"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest22.description1}"
+				"   LV was fine... until you wanted to power two machines in different buildings."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest22.description2}"
+				"   The MV Wire Coil is your first attempt at scaling your electrical system. Longer reach. More power. And a whole new range of possible mistakes. Shocks are now symbolic — and shorts, more dramatic."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest22.description3}"
+				"   Cables gain volume. Aesthetics begin to implode. But hey, now you can feed a press 30 blocks away. Progress does that."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest22.description4}"
+				"&7&o— You thought voltage was the problem, but it was just you&r"
 			]
 			id: "43029D647EA34851"
 			tasks: [{
@@ -791,22 +800,22 @@
 				item: "immersiveengineering:wirecoil_electrum"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest22.title}"
+			title: "Thicker Cable, Bigger Problems"
 			x: -9.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["460A5B83307446ED"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest23.description1}"
+				"   You built the water wheel, wired everything, powered the press... and it flickered. Why?"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest23.description2}"
+				"   Because you forgot the buffer."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest23.description3}"
+				"   The MV Capacitor is your grid’s waiting room. It holds, organizes, and dispenses current like it’s easy. But heads-up: it only works if you teach it to. Engineer’s Hammer on the faces. Blue: input. Orange: output. Gray: the status of whoever miswired it again."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest23.description4}"
+				"   And no — it shows nothing but a bar. And even so, it’s more informative than certain tutorials out there."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest23.description5}"
+				"&7&o— Every power network begins with a scream... and ends with a poorly oriented MV Capacitor&r"
 			]
 			id: "53926EA02B461E01"
 			tasks: [{
@@ -814,22 +823,22 @@
 				item: "immersiveengineering:capacitor_mv"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest23.title}"
+			title: "Where Power Goes to Think"
 			x: -10.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["43029D647EA34851"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest24.description1}"
+				"   This is where poles become sculpture."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest24.description2}"
+				"   HV Wire Coils aren’t just wires. They’re statements. That you built something so powerful it needs three insulators per meter. These are the cables that cut skies, carve landscapes, and ignite arguments about safety."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest24.description3}"
+				"   They’re hard to hide. And maybe you shouldn’t try."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest24.description4}"
+				"   But careful: they carry enough energy to fry your whole system — or, with luck, just your patience."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest24.description5}"
+				"&7&o— High voltage, low chance of wiring it right&r"
 			]
 			id: "460A5B83307446ED"
 			tasks: [{
@@ -837,7 +846,7 @@
 				item: "immersiveengineering:wirecoil_steel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest24.title}"
+			title: "The Cable That Scares Children"
 			x: -10.5d
 			y: 5.5d
 		}
@@ -847,15 +856,15 @@
 				"33417C677CE79CB0"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest25.description1}"
+				"   The math is simple."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest25.description2}"
+				"   If you’re not consuming 100%% of what you generate all the time, you don’t need more generation. You need more time. The HV Capacitor is that: time in block form."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest25.description3}"
+				"   It doesn’t improve your system. It just holds everything you waste. But sometimes, that’s exactly what’s missing."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest25.description4}"
+				"   With it, you can stash an absurd reserve, feed three machines an hour, and pretend you live in abundance. It’s pretty. It’s functional. It’s a lie — but a good one."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest25.description5}"
+				"&7&o— Producing more is hard. Stockpiling misused energy? Even you can do that&r"
 			]
 			id: "655DFFEBB378B043"
 			tasks: [{
@@ -863,20 +872,22 @@
 				item: "immersiveengineering:capacitor_hv"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest25.title}"
+			title: "Buffer or Excuse for Inefficiency?"
 			x: -9.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest26.description1}"
+				"   You thought planting was farm stuff. That seeds were for chickens. That berries were for juice. The Squeezer disagrees."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest26.description2}"
+				"   This machine turns solids into useful liquids with an efficiency that would make a druid blush. It’s loud, ugly, and doesn’t bother hiding how much it enjoys crushing seeds until oil leaks out."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest26.description3}"
+				"   If you want to enter the world of fuels and industrial fluids, this is where it starts. By squeezing."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest26.description4}"
+				"&7&o— Don’t underestimate a machine that makes oil in anger. One day you’ll use this to move a train.&r&r"
+				""
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, component disappearance, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:squeezer"
 			id: "55674CA71B329E3B"
@@ -947,20 +958,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest26.title}"
+			title: "It Squeezes, Therefore It Is"
 			x: -6.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["4EA7083C34FC1A44"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest27.description1}"
+				"   You thought coal ended in the furnace?"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest27.description2}"
+				"   Welcome to post-combustion."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest27.description3}"
+				"   Coke Dust is what’s left when you process coal until it forgets what it was. It’s black, fine, and essential for everything to come. Industrial grime in its purest form — and now your whole workshop will smell like it."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest27.description4}"
+				"&7&o— Breathing is no longer a priority&r"
 			]
 			id: "393576D2959060DC"
 			tasks: [{
@@ -969,7 +980,7 @@
 				item: "immersiveengineering:dust_coke"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest27.title}"
+			title: "Coal Dust, Iron Lungs"
 			x: -5.5d
 			y: 5.5d
 		}
@@ -979,13 +990,13 @@
 				"55674CA71B329E3B"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest28.description1}"
+				"   "
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest28.description2}"
+				"   Powder worthy of feeding machines that consume energy like breathing. HOP Graphite Dust is where coal becomes technology — or at least fakes it convincingly."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest28.description3}"
+				"   You’ll grind a lot to make a single ingot. And still, it’ll feel like too little."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest28.description4}"
+				"&7&o— When coal learns to behave&r"
 			]
 			id: "6D53CF017256846F"
 			tasks: [{
@@ -994,22 +1005,22 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest28.title}"
+			title: "Coal with a Diploma"
 			x: -6.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["5E02CDB52EBA2E43"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest29.description1}"
+				"   You might’ve thought the Fermenter would make wine. That it’d smell nice. That it’d be elegant. It wasn’t."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest29.description2}"
+				"   What it does is turn anything with a hint of sugar into a fermented goo technically called ethanol. If you’re lucky, it will become fuel. If you’re not, it will look like beet soup forgotten in the sun."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest29.description3}"
+				"   What matters is that it works. No frills, no filter, no judgment. And if you’re still grossed out… welcome to industry."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest29.description4}"
+				"&7&o— Alchemy begins when you discover ethanol stinks. And you still want more.&r&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest29.description5}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:fermenter"
 			id: "25EF7B5E007B9C11"
@@ -1075,7 +1086,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest29.title}"
+			title: "If It’s Sweet, It Ferments"
 			x: -7.5d
 			y: 5.5d
 		}
@@ -1085,19 +1096,19 @@
 				"33417C677CE79CB0"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest30.description1}"
+				"   You built your Refinery, made your Biodiesel, piped fluids with more effort than emotion… and now, finally, you raised what they call a &lDiesel Generator&r."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest30.description2}"
+				"   It’s an opera. A monument to brute motion. An explosive cycle paced by invisible pistons and a hunger for fuel. A mechanical chant echoing the peak — and the end — of an era."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest30.description3}"
+				"   The Diesel Generator is your first real power plant. It doesn’t take coal, nor a push. It demands a supply chain. Planning. Optimization. It’s an industrial organism that only sings when it’s fed. And when it sings… oh, when it sings, it screams energy."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest30.description4}"
+				"   Don’t be fooled. As glorious as it is, as much as its roar fills the factory like an ancestral hymn… all of this is transient. Soon will come the cold silence of energized cables. The abstraction of pressurized turbines. The pragmatic gaze of &a&lMekanism&r&r."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest30.description5}"
+				"   You built something beautiful. And like all things beautiful… it’s about to be replaced."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest30.description6}"
+				"&7&o— I know you’ll build 100 water wheels as your energy solution; just don’t say it in front of her. Machines have feeling too. &r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest30.description7}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:diesel_generator"
@@ -1166,20 +1177,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest30.title}"
+			title: "Biodiesel, Brutality, and Boom"
 			x: -8.0d
 			y: 11.49107142857143d
 		}
 		{
 			dependencies: ["6D53CF017256846F"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest31.description1}"
+				"   Light, dense, with crystalline structure enough to fool a distracted physicist. It stacks, yes — but don’t be fooled. These ingots aren’t for stockpiles: they’re for industrial rituals."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest31.description2}"
+				"   They’ll be devoured by machines that accept nothing less."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest31.description3}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest31.description4}"
+				"&7&o— Seems simple. That’s because it hasn’t become a three-meter rod yet&r"
 			]
 			id: "33417C677CE79CB0"
 			tasks: [{
@@ -1188,28 +1197,26 @@
 				item: "immersiveengineering:ingot_hop_graphite"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest31.title}"
+			title: "The Ingot That Doesn’t Like People"
 			x: -5.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["2F9EA9B259B79847"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description1}"
+				"   You got this far smelting steel and heating blocks like a blacksmith with a diploma. That’s over."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description2}"
+				"   Behold immersive's leviathan. An industrial monument that demands cables, electrodes, refractories and… obedience. From now on, no more simple recipes. Every alloy is a pact. Every composition is a sacrifice of time, energy, and logic."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description3}"
+				"   Welcome to synthetic metallurgy."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description4}"
+				"   This is where reality starts to bend. Copper won’t cut it. Iron alone won’t do. You need three, four, five ingredients. You need temperature control, input flow, stability — and you’ll realize you have none of that."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description5}"
+				"   And here, in the middle of this deliciously technical collapse, &a&lMekanism&r&r watches from afar. It waits. And you will call it. You’ll beg for order. You’ll crave pressurized cables, infusion systems, machines that think for you. But first, you need to burn a little more."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description6}"
+				"&7&o— Every great industry begins with a fire no one put out&r&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description7}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest32.description8}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:arc_furnace"
 			id: "617989B418D326B0"
@@ -1294,7 +1301,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest32.title}"
+			title: "The Factory on Fire"
 			x: -3.8214285714285623d
 			y: 11.508928571428562d
 		}
@@ -1304,17 +1311,17 @@
 				"55674CA71B329E3B"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest33.description1}"
+				"   You think you’re just assembling pipes, tanks, and gears. Wrong. Every block placed here is another nail in the coffin of your neutrality. "
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest33.description2}"
+				"   Until now, your fluids were harmless. A bit of oil, a sip of ethanol. True power born, not the pesky aesthetic power of spinning gears. The real kind. "
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest33.description3}"
+				"   Two paths open, and neither leads back. One shapes the world in your image: &6&lDuroplast&r&r, solid, synthetic matter — the negation of wood and nature — perfect if you prefer permanence over growth. The other path is rougher, more visceral: &2&lBiodiesel&r&r. An energy that burns without remorse, screaming for a generator and production lines devouring the horizon."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest33.description4}"
+				"   You already know this, even if you won’t admit it. The Refinery is a mirror. It shows what you’re willing to sacrifice in the name of advancement."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest33.description5}"
+				"&7&o— Every choice is a combustion. Some just take longer to explode&r&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest33.description6}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:refinery"
 			id: "6F89ADFAB2A59C2B"
@@ -1381,26 +1388,26 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest33.title}"
+			title: "Refinery: The Missing Drop"
 			x: -7.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["6F89ADFAB2A59C2B"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest34.description1}"
+				"   You fermented sugarcane like an alchemist peasant. Thought it was poetic. Warm. Almost sacred. But the truth is &oethanol&r is only the first sip. The start of a process that strips the natural of any pretense of purity."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest34.description2}"
+				"   Add heat. Reduce. Turn ethanol into &oacetaldehyde&r. A volatile, impatient compound that already carries the desire to become more — or less — organic."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest34.description3}"
+				"   Then, mix. Phenolic resin. A fancy name for a synthetic slime loaded with intent. This is where it thickens — literally."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest34.description4}"
+				"   And then, with all that in hand, you fuse essence with purpose. Pour your creation into the &lBottling Machine&r, and watch a &oDuroplast Sheet&r be born: cold, rigid, perfect. An imitation of matter. An industrial skin."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest34.description5}"
+				"   This process isn’t just a production chain. It’s a philosophy. It’s nature’s final scream, smothered under layers of engineering."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest34.description6}"
+				"&7&o— What began with sugar ends as armor. Welcome to the synthetic&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest34.description7}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:bottling_machine"
@@ -1467,24 +1474,24 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest34.title}"
+			title: "Petrifying the Organic"
 			x: -6.0d
 			y: 11.49107142857143d
 		}
 		{
 			dependencies: ["2C5BDE78E209CF0C"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest35.description1}"
+				"   There’s a moment in every technical journey when you look at a recipe and think: “this makes zero sense.”"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest35.description2}"
+				"   Welcome to the &0Electrode Blueprint.&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest35.description3}"
+				"   A sheet of paper, some technical ink… and a bar of Blazing Steel. Because of course, nothing prints instructions better than a metal that’s still practically on fire."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest35.description4}"
+				"   Don’t ask. It’s an ancient recipe. You just repeat it. Without looking directly. And hope the printer doesn’t catch fire in the process."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest35.description5}"
+				"   With this, you can finally craft Graphite Electrodes, feed the Arc Furnace… and continue not understanding a single thing."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest35.description6}"
+				"&7&o— Some say paper absorbs the heat of knowledge. Maybe it was just stupidity&r"
 			]
 			id: "421C0ACCE46F9463"
 			tasks: [{
@@ -1498,7 +1505,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest35.title}"
+			title: "Burnt Paper"
 			x: -2.5d
 			y: 3.0d
 		}
@@ -1508,13 +1515,11 @@
 				"421C0ACCE46F9463"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest36.description1}"
+				"   Four ingots. One press. An inevitable result."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest36.description2}"
+				"   The Graphite Electrode is the Arc Furnace’s pillar. Consumable. Essential. Enormous. It spins with enough electricity to evaporate your common sense, and when it’s gone… you feel it."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest36.description3}"
-				""
-				"{ftbquests.chapter.parafusos_e_convices.quest36.description4}"
+				"&7&o— A carbon rod that decides whether industry lives or not&r"
 			]
 			id: "2F9EA9B259B79847"
 			tasks: [{
@@ -1529,28 +1534,28 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest36.title}"
+			title: "Carbon Trident"
 			x: -2.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["6C3E18C9058CBAB4"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description1}"
+				"   Not every technological advance needs to be subtle. Some just need to be big. Loud. Threatening. Like the &lExcavator&r."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description2}"
+				"   You spent too long building circuits, optimizing gears, pretending elegance. Forget it. Now you’ll raise a structure of over 50 blocks that spins relentlessly against the earth’s crust. An ode to brute force. A windmill for ore veins."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description3}"
+				"   But it isn’t dumb. Quite the opposite. Before you turn it on, you’ll need to learn how to find the right veins. That’s what the &c&oCore Sample Drill&r&r is for — a discreet machine that scans chunks for underground deposits."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description4}"
+				"   Just place it, feed it power, and wait. If the chunk contains a detectable ore, it leaves a sample. If it leaves nothing… you dug poetry where there was no ore. It happens."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description5}"
+				"   Then, raise the Excavator in the correct chunk. Supply abundant power. Hook up transport. And behold the colossus spinning. Boring. Devastating."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description6}"
+				"   Yes. You made this. And yes… you’ll eventually need two per chunk."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description7}"
+				"&7&o— When sophistication fails, raise a 15-ton rotating digging arm&r"
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest37.description8}"
+				"&4&o⚠ Avoid building this machine exactly on chunk borders. Structural instability can cause bugs, disappearing components, or worse — soulless repetition loops.&r&r"
 			]
 			icon: "immersiveengineering:excavator"
 			id: "04BA3BE1F94722AE"
@@ -1629,22 +1634,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest37.title}"
+			title: "Iron Monster, Oil Heart"
 			x: -9.5d
 			y: 11.49107142857143d
 		}
 		{
 			dependencies: ["254D3ED5237C2967"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest38.description1}"
+				"   Redstone wire won’t do. Copper wires won’t either. What comes now demands more."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest38.description2}"
+				"   Built on Duroplast plates, sealed against interference, ready for frequencies that would make a traditional resistor evaporate. Chips that look ready to pilot ships, open portals, or withstand the collapse of the system that made them."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest38.description3}"
+				"   You don’t exactly understand how they work. You’ll use them anyway."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest38.description4}"
+				"   That’s what everyone does."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest38.description5}"
+				"&7&o— When metal can’t take it anymore, the synthetic takes over&r"
 			]
 			id: "5B4C68B983FBA537"
 			tasks: [
@@ -1659,24 +1664,24 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest38.title}"
+			title: "Circuits to Weather the Storm"
 			x: -6.5d
 			y: 12.49107142857143d
 		}
 		{
 			dependencies: ["617989B418D326B0"]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest39.description1}"
+				"   There’s no magic here. No poetry. Only power."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest39.description2}"
+				"   &b&lInductive Alloy&r&r is what happens when you push metals to their limits — and beyond. When you force steel to accept pulses of compacted energy, when you mix an advanced conductor with traces of crystalline memory and pigments that burn like the sun."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest39.description3}"
+				"   The result is dense. Vibrant. Almost volatile."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest39.description4}"
+				"   You made so it stays cohesive because the molecular structure hasn’t yet realized the absurdity it’s housing."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest39.description5}"
+				"   Brace yourself. This is the last step before machines stop obeying simple commands — and start screaming for more."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest39.description6}"
+				"&7&o— Where metallurgy ends, flow begins&r"
 			]
 			id: "13939C95C3168861"
 			tasks: [{
@@ -1684,7 +1689,7 @@
 				item: "kubejs:inductive_alloy"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest39.title}"
+			title: "Alloy That Resists the Future"
 			x: -5.5d
 			y: 12.49107142857143d
 		}
@@ -1694,21 +1699,21 @@
 				"13939C95C3168861"
 			]
 			description: [
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description1}"
+				"   You’ve already shaped raw steel with coal and patience. Watched alloys become harder to understand than to forge. Melted metals that refused to obey, only to see them bow under pressure to your design."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description2}"
+				"   You’ve moved through every stage — from heat to structure, from treated wood to power conduction, from gear to encapsulated circuit."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description3}"
+				"   And now you’re here."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description4}"
+				"   The &9&lPrecision Matrix Core&r&r isn’t just another step. It’s a ritual sealed into a cube. A definitive fusion between human effort and the impersonal logic that follows. It’s the final piece that sums up everything learned so far — and, at the same time, what will soon be discarded."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description5}"
+				"   Made with Duroplast — that synthetic sheet that always seems to try to slip from your hands. Fed by alloys that only exist because you ignored common sense. Stitched with shards of quartz and red impulses that almost resemble blood… if blood ran at 60 Hz."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description6}"
+				"   This core doesn’t shine. It hums. It waits. It’s worthy of the machines to come."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description7}"
+				"   And the curious part: after all that, you’ll use it only as an ingredient."
 				""
-				"{ftbquests.chapter.parafusos_e_convices.quest40.description8}"
+				"&7&o— Funny to think you built all this just to put it inside a box&r"
 			]
 			id: "376E59D9ADCD986B"
 			size: 2.0d
@@ -1717,11 +1722,12 @@
 				item: "kubejs:precision_matrix_core"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.parafusos_e_convices.quest40.title}"
+			title: "&d&l&o The Heart of What Comes After"
 			x: -6.0d
 			y: 14.49107142857143d
 		}
 		{
+			dependencies: ["4F3B21684D8C147A"]
 			id: "4EE27046FC8F628E"
 			tasks: [{
 				id: "111D817D7B8D8BB5"
@@ -1760,6 +1766,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["4F3B21684D8C147A"]
 			id: "119A0B087885F107"
 			tasks: [{
 				id: "6A119C112A747BD2"
@@ -1860,6 +1867,17 @@
 			}]
 			x: -7.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["004F5E63A1C4B294"]
+			id: "4F3B21684D8C147A"
+			tasks: [{
+				id: "696B028807A490FD"
+				item: "kubejs:underworld_rose_needle"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
 		}
 	]
 	title: "&8&l2.&r&r Screws and Convictions"

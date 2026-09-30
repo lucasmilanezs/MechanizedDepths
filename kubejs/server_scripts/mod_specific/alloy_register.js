@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
     energy: 60000,
     time: 200
   })
-})
+});
 
 // BLAZING STEEL (kubejs:blazing_steel)
 ServerEvents.recipes(event => {
@@ -286,7 +286,7 @@ ServerEvents.recipes(event => {
     energy: 60000,
     time: 200
   })
-})
+});
 
 // REFINED QUARTZ (kubejs:refined_quartz)
 ServerEvents.recipes(event => {
@@ -302,5 +302,20 @@ ServerEvents.recipes(event => {
     energy: 70000,
     time: 200
   })
-})
+});
 
+ServerEvents.recipes(event => {
+  event.remove({ id: 'enderio:alloy_smelting/redstone_alloy_ingot' });
+  global.MDRecipes.Alloys.registerAlloy2x(event, {
+    inA: 'extendedcrafting:redstone_ingot',
+    inB: 'minecraft:redstone',
+    inC: 'ae2:silicon',
+    inACount: 1,
+    inBCount: 1,
+    inCCount: 2,
+    out: 'enderio:redstone_alloy_ingot',
+    outCount: 2,
+    energy: 100000,
+    time: 200
+  })
+});

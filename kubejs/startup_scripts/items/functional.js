@@ -2,7 +2,14 @@
 StartupEvents.registry('item', event => {
   event.create('rose_needle')
     .displayName('Rose Needle')
-    .texture('custom:item/rose_needle');
+    .texture('custom:item/rose_needle')
+    .unstackable();
+
+  event.create('underworld_rose_needle')
+    .displayName('Underworld Rose Needle')
+    .texture('custom:item/rose_needle')
+    .glow(true)
+    .unstackable();
 });
 
 // ROUTINE TABLET (kubejs:routine_tablet)

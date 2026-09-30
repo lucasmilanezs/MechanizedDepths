@@ -255,14 +255,12 @@ var HAMMER_VARIANTS = [
         "fixedModel": null
     },
     {
-        "materials": ["tetra:stone/stone"],
+        // Flint is the pack's basal stone-stage hammer material.
+        "materials": ["tetra:stone/flint"],
         "toolLevel": "minecraft:wood",
         "integrity": null,
-        "textures":  null,
-        "fixedModel": {
-            "location": "tetra:item/module/double/head/basic_hammer/stone",
-            "tint": "aaaaaa"
-        }
+        "textures":  ["stone"],
+        "fixedModel": null
     },
     {
         "materials": ["tetra:stone/diorite", "tetra:stone/andesite", "tetra:stone/granite"],
@@ -392,10 +390,10 @@ var MD_TT_HAMMER_OUTCOMES = [
         "moduleVariant": HAMMER_WOOD_VARIANT
     },
     {
-        // tconstruct:rock cobre stone/diorite/andesite/granite de uma vez
-        "material": hammerHead("tconstruct", "rock"),
+        // Flint replaces the broad tconstruct:rock starter route.
+        "material": hammerHead("tconstruct", "flint"),
         "moduleKey": "double/basic_hammer",
-        "moduleVariant": "basic_hammer/stone"
+        "moduleVariant": "basic_hammer/flint"
     },
     {
         "material": hammerHead("tconstruct", "copper"),
@@ -436,7 +434,7 @@ var MD_TT_HAMMER_OUTCOMES = [
 // applicableMaterials: whitelist do schematic. "#cat" libera categoria,
 // "!nome" libera material individual.
 var HAMMER_APPLICABLE = [
-    "#wood", "#stone", "!copper", "!iron",
+    "#wood", "!flint", "!copper", "!iron",
     "!" + HAMMER_T2_NAME, "!" + HAMMER_T3_NAME, "!netherite"
 ]
 
@@ -466,9 +464,13 @@ MD_TT_addMaterial("silver", "metal")
 MD_TT_addMaterial("lead", "metal")
 MD_TT_addMaterial("electrum", "metal")
 MD_TT_addMaterial("constantan", "metal")
+MD_TT_addMaterial("flint", "stone")
 // TIER STONE
 MD_TT_addMaterial("invar", "metal")
-MD_TT_addMaterial("amethyst", "gem", "mechanized")
+// Amethyst overrides the native Tinkers material directly. A separate
+// mechanized:amethyst material would compete for the same shard input and
+// leave the Part Builder resolving the native arrow-head-only definition.
+MD_TT_addMaterial("amethyst", "gem")
 MD_TT_addMaterial("bone", "bone")
 MD_TT_addMaterial("bronze", "metal")
 
@@ -540,6 +542,10 @@ var MD_TT_MATERIAL_CONTRACTS = {
     "lead":         { "requiredTools": { "hammer_dig": "minecraft:stone" } },
     "electrum":     { "requiredTools": { "hammer_dig": "minecraft:stone" } },
     "constantan":   { "requiredTools": { "hammer_dig": "minecraft:iron" } },
+    // Flint is the general proxy representative for the stone tier. Its
+    // gate and workable innate mirror tetra:stone/flint for every admitted
+    // head route, independently from the closed hammer progression below.
+    "flint":        { "requiredTools": { "hammer_dig": "minecraft:gold" }, "improvements": { "workable": 1 } },
     "invar":        { "requiredTools": { "hammer_dig": "minecraft:stone" } },
     "amethyst":     { "requiredTools": { "hammer_dig": "minecraft:stone" } },
     "bone":         { "requiredTools": { "hammer_dig": "minecraft:wood" } },

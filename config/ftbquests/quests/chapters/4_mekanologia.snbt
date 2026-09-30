@@ -12,25 +12,25 @@
 		{
 			dependencies: ["376E59D9ADCD986B"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest1.description1}"
-				"{ftbquests.chapter.4_mekanologia.quest1.description2}"
+				"   Steel. Glass. Hermetic tubes. Redstone. None of that matters."
+				"What you’re holding isn’t a box — it’s the negation of chaos."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest1.description3}"
-				"{ftbquests.chapter.4_mekanologia.quest1.description4}"
-				"{ftbquests.chapter.4_mekanologia.quest1.description5}"
+				"   The Steel Casing is the divider of eras. No smoke, no creaking levers."
+				"Only cold light, impassive interfaces, and the uncomfortable feeling that"
+				"someone overthought how this should work."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest1.description6}"
-				"{ftbquests.chapter.4_mekanologia.quest1.description7}"
+				"   The Precision Matrix embedded in its heart is a direct insult to the rusticity of Immersive Engineering — every weld line on it seems to ask:"
+				"“Was this really what you thought technology was?”"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest1.description8}"
-				"{ftbquests.chapter.4_mekanologia.quest1.description9}"
-				"{ftbquests.chapter.4_mekanologia.quest1.description10}"
+				"   From here, it’s no longer about operating machines. You’re going to orchestrate protocols."
+				"Gases will come. Chambers will be pressurized. Temperature will be a variable,"
+				"not a consequence. "
 				""
-				"{ftbquests.chapter.4_mekanologia.quest1.description11}"
+				"   If you were waiting for the future… well, it started when you pressed this block into the ground."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest1.description12}"
+				"   But even if that sounds amazing, Mekanism is a sprawling technology that should be dissected in parts. How about we start from the basics?"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest1.description13}"
+				"&7&o— Congrats, you made a box. But a box that stares back.&r&r"
 			]
 			id: "5349659FDCBDFA9F"
 			shape: "netheritetier"
@@ -46,9 +46,9 @@
 		{
 			dependencies: ["5349659FDCBDFA9F"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest2.description1}"
+				"   The Metallurgic Infuser marks the end of metallurgy as you knew it. It doesn’t heat or fuse — it persuades. Redstone, coal, diamond… each substance offers more than its weight. They offer meaning. Metal ceases to be a resource and becomes a vehicle for ideas."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest2.description3}"
+				"&7&o— An infuser is a sort of industrial philosopher. It just accepts coal as an argument.&r&r"
 			]
 			id: "1D6A06602BA0DBBF"
 			tasks: [{
@@ -56,16 +56,16 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest2.title}"
+			title: "Injecting Dependencies"
 			x: -4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1D6A06602BA0DBBF"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest3.description1}"
+				"   You created your first circuit. Simple, obedient, almost innocent. A small board that knows how to turn on and off, but doesn’t understand why. And maybe that’s for the best. Functional ignorance is what keeps any system flowing without awkward questions."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest3.description2}"
+				"&7&o— In computing terms, it’s an intern. Cheap, tireless, and replaceable.&r&r"
 			]
 			id: "31CA32EACAEC3103"
 			tasks: [{
@@ -73,7 +73,7 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest3.title}"
+			title: "Command Core"
 			x: -3.0d
 			y: -1.0d
 		}
@@ -83,9 +83,9 @@
 				"31CA32EACAEC3103"
 			]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest4.description1}"
+				"   A bit of Infused Alloy and the board already starts thinking it has a personality. It recognizes patterns, anticipates commands, and even optimizes flows — within the limits you programmed, of course. Deep down, it just wants to please. And work."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest4.description2}"
+				"&7&o— It still obeys. But sometimes it silently asks “why?”&r&r"
 			]
 			id: "64A74170F9CFB70A"
 			tasks: [{
@@ -93,16 +93,16 @@
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest4.title}"
+			title: "Intermediate Logic"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1D6A06602BA0DBBF"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest5.description1}"
+				"   Every empire starts with a solid foundation, but yours will be built with something more flexible: metallic obedience. Infused Alloy is your first successful experiment in material submission. A piece of iron, convinced by redstone it was born for something greater. It’s no longer an alloy — it’s a condensed protocol."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest5.description2}"
+				"&7&o— Alloys that obey are far more useful than soldiers who think.&r&r"
 			]
 			id: "63B543C796CB2FDA"
 			tasks: [{
@@ -110,16 +110,16 @@
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest5.title}"
+			title: "Alloys of Obedience"
 			x: -3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["63B543C796CB2FDA"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest6.description1}"
+				"   If Infused was promise, Reinforced Alloy is execution. Through diamond, you taught metal to withstand pressures beyond good sense. Now it remembers its structure even when dismantled, and obeys commands that haven’t yet been given. This isn’t reinforcement — it’s discipline."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest6.description2}"
+				"&7&o— The more precious the input, the pricier the mistake. Good luck.&r&r"
 			]
 			id: "3045D408E1816740"
 			tasks: [{
@@ -127,16 +127,16 @@
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest6.title}"
+			title: "Alloys of Efficiency"
 			x: -4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3045D408E1816740"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest7.description1}"
+				"   Here the metal stops being support and becomes a plan. Forged with an overlaid will — a vestige of a diamond that didn’t want to die — it responds only to absolute commands. If you needed a definitive piece, you’ve just built your dogma."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest7.description2}"
+				"&7&o— Calling it an “alloy” is offensive. It prefers “technical entity.”&r&r"
 			]
 			id: "7A2AE2FCE261223A"
 			tasks: [{
@@ -144,7 +144,7 @@
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest7.title}"
+			title: "Alloys of Ambition"
 			x: -3.5d
 			y: 2.0d
 		}
@@ -154,9 +154,9 @@
 				"3045D408E1816740"
 			]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest8.description1}"
+				"   By now the boards think they’re command centers. They have an electric ego, make absurd material demands, and refuse to operate outside proper infrastructure. But they deliver results. An Elite Circuit doesn’t just want to exist — it wants to command."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest8.description2}"
+				"&7&o— Expensive, complains a lot, but delivers. Basically a technical manager.&r&r"
 			]
 			id: "2DC3EA0884C7E043"
 			tasks: [{
@@ -164,7 +164,7 @@
 				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest8.title}"
+			title: "Strategic Core"
 			x: -3.0d
 			y: 1.0d
 		}
@@ -174,9 +174,9 @@
 				"2DC3EA0884C7E043"
 			]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest9.description1}"
+				"   Nothing is enough anymore. Not iron, not redstone, not your excuses. The Ultimate Circuit wants bleeding-edge alloys, immoral combinations of efficiency, and resources you swore to save for special moments. It accepts everything. Except being ignored."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest9.description2}"
+				"&7&o— Congrats, you made a circuit more demanding than your PC.&r&r"
 			]
 			id: "027EC1E7EE94FEF4"
 			tasks: [{
@@ -184,20 +184,20 @@
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest9.title}"
+			title: "Supreme Architecture"
 			x: -2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["31CA32EACAEC3103"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest10.description1}"
+				"   For a long time, doubling ores was an exercise in space, noise, and patience. Platforms trembling, hammers pounding, gears screaming in industrial agony. It was beautiful, in an archaic way. And then, this appeared."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest10.description2}"
+				"   The Enrichment Chamber is everything the old Immersive Crusher isn’t: compact, quiet, scalable. While that mechanical mammoth demanded entire yards and constant maintenance, this chamber does the same job — better — in the footprint of a door."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest10.description3}"
+				"   It’s an elegant break with the past, but a hard one to ignore. Because, let’s be honest, the old Crusher had personality. And of course, don’t forget it also makes your ores go further in metallurgy. Win–win."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest10.description4}"
+				"&7&o— It’s still out there, standing… huge… useless… but beautiful, isn’t it?&r&r"
 			]
 			id: "019813C5735449BB"
 			tasks: [{
@@ -205,7 +205,7 @@
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest10.title}"
+			title: "Elegant Duplication"
 			x: -2.0d
 			y: -1.0d
 		}
@@ -215,14 +215,14 @@
 				"64A74170F9CFB70A"
 			]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest11.description1}"
-				"{ftbquests.chapter.4_mekanologia.quest11.description2}"
+				"   You’ve already smelted, heated, broken, and reconstituted alloys as far as your machines would let you. But the Osmium Compressor does something different: it applies pressure with purpose."
+				"Here, osmium isn’t just fuel — it’s a catalyst. It’s a signature."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest11.description3}"
+				"   Each ingot produced carries the weight of a resource that refuses to be reduced to a mere percentage. It’s a machine with a high cost and even higher promises. And it delivers."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest11.description4}"
+				"   And yes, if you ask me, I’ll always say every machine is different from all the others. It’s a special way of making them feel loved."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest11.description5}"
+				"&7&o— The secret is in the compression. And in the audacity to charge so much for a single ingot.&r&r"
 			]
 			id: "60714ABDF9D43683"
 			tasks: [{
@@ -439,9 +439,9 @@
 		{
 			dependencies: ["60714ABDF9D43683"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest28.description2}"
+				"   Refined Glowstone is your gateway to alloys that seem magical but charge like military tech. It floats. It emits light. It works. It’s hard not to respect that, even if your first reaction was “that’s gold with an ego.”"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest28.description3}"
+				"&7&o— Refined glowstone: for those who thought the sun needed a portable, unstable version.&r&r"
 			]
 			id: "7ECA41DE215F4F9A"
 			tasks: [{
@@ -458,15 +458,15 @@
 				"7ECA41DE215F4F9A"
 			]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest29.description1}"
-				"{ftbquests.chapter.4_mekanologia.quest29.description2}"
+				"   You thought of calling it Osgloglas. We admit: that would be poetic."
+				"A nod to the past, to that mythical PlusTic alloy beloved by obsessive miners and pickaxes that dug faster than sanity."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest29.description3}"
-				"{ftbquests.chapter.4_mekanologia.quest29.description4}"
+				"   But this is another material. It shines differently. It vibrates."
+				"Osgloglium is our version — toxic, radioactive, extremely efficient, and absurdly hard to justify in small projects. It exists for those who’ve gotten over the fear of overdoing it."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest29.description5}"
+				"   And between us, with that name… of course it’ll end up on an anvil. Repeatedly."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest29.description6}"
+				"&7&o— We could’ve called it Esgloglas, but… no. This one has a personality of its own. And radiation.&r&r"
 			]
 			id: "45A24742CEE97DB3"
 			tasks: [{
@@ -474,7 +474,7 @@
 				item: "kubejs:osgloglium"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest29.title}"
+			title: "Osgloglium: the name that almost was"
 			x: -1.0d
 			y: 1.0d
 		}
@@ -502,12 +502,12 @@
 		{
 			dependencies: ["31CA32EACAEC3103"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest32.description1}"
-				"{ftbquests.chapter.4_mekanologia.quest32.description2}"
+				"   There are no visible pistons, no exposed gears. No three-story structure shaking under its own weight."
+				"Mekanism’s Crusher does everything its predecessor did — just without looking like a heavy engineering experiment funded by a crumbling empire."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest32.description3}"
+				"   It’s clean, efficient, connectable. Instead of honoring the tradition of mechanical brutality, it simply delivers results. This is the future. Even if, deep down, you still hear the hammers of the old Crusher pounding in your memory."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest32.description4}"
+				"&7&o— Growing up is realizing you don’t need 400 blocks of steel to crush a rock. Doesn’t mean you won’t miss them.&r&r"
 			]
 			id: "30275E34EB213DB7"
 			tasks: [{
@@ -515,7 +515,7 @@
 				item: "mekanism:crusher"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest32.title}"
+			title: "The Machine That Beat Brute Force"
 			x: -1.0d
 			y: -1.0d
 		}
@@ -536,13 +536,13 @@
 		{
 			dependencies: ["42DCD489D10C6084"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest34.description1}"
+				"   You took three materials with wills of their own — raw quartz, refined obsidian, and the promising Inductive Alloy — and forced them to collaborate. The result was something translucent, strong, and conductive. A real breakthrough… insofar as breakthroughs stand being called that."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest34.description2}"
+				"   Refined Quartz appears as the dream of perfect integration: lightness, strength, and energy in balance. But soon you notice it doesn’t shine as much as promised. The Inductive Alloy, sold as the apex of conduction, here shows itself as one more midpoint with good marketing."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest34.description3}"
+				"   Still, the material has value. It serves. It responds. And above all, it survives systems that would break any other compound. That’s already more than most can say."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest34.description4}"
+				"&7&o— The problem with calling something an “apex” is that someone always shows up with one more step.&r&r"
 			]
 			id: "7E7E50A6C31FDC60"
 			tasks: [{
@@ -550,20 +550,20 @@
 				item: "kubejs:refined_quartz"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest34.title}"
+			title: "Forced Clarity"
 			x: 3.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["60714ABDF9D43683"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest35.description1}"
+				"   You’ve broken obsidian with a pickaxe. Now you’re about to use it as the basis for armaments."
 				""
 				"   {ftbquests.chapter.4_mekanologia.quest35.description3}"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest35.description4}"
+				"   This material doesn’t want to yield. And for that very reason, it’s worth every second of effort."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest35.description5}"
+				"&7&o— The ultimate armor begins where the geologist’s patience ends.&r&r"
 			]
 			id: "42DCD489D10C6084"
 			tasks: [{
@@ -571,7 +571,7 @@
 				item: "mekanism:ingot_refined_obsidian"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest35.title}"
+			title: "Solid Obsession"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -695,20 +695,20 @@
 				"7C1F6A35AF3BA808"
 			]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest46.description1}"
+				"This is the convergence point. Cables align. Interfaces find direction. Data flows find their rhythm. The ME Controller isn’t just a central piece — it’s the first component in your network that understands that you don’t understand anything."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest46.description2}"
-				"{ftbquests.chapter.4_mekanologia.quest46.description3}"
+				"In practice, it allows multiple channels to coexist. It expands your connection capacity. It divides logic and infrastructure. It turns a bundle of functional cables into a scalable system, with 32 channels per face, parallel connections, and modular branches."
+				"If before you were just connecting things, now you’re managing paths."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest46.description4}"
+				"Keep in mind it loves friends. If 6 faces and 182 channels seem too little, you can always add more. But don’t forget, it’s the social type that still wants order at its party. It will only accept more blocks if the shape is valid, always arranging itself in cuboid forms and directly connected — horseshoes, rectangles, edges, squares, corners, cubes, or a wild tesseract, take your pick. And don’t worry, if it doesn’t like the shape you chose, it will make that &4&lvery clear&r&r"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest46.description5}"
+				"When you place it, everything feels more serious. More legitimate. More technical. What used to be a hacky mess of loose terminals now becomes a real system. It doesn’t do much on its own, of course. But it commands respect. And power consumption."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest46.description6}"
+				"It’s the illusion of control — the name doesn’t deny it — in a sea of connections you’ll still mess up while trying to be organized."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest46.description7}"
+				"But don’t worry. That’s what most systems do: simulate order long enough for no one to question it anymore."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest46.description8}"
+				"&7&o— Creating an ME Controller is like declaring you know what you’re doing. It’s a lie, but it helps the cables behave.&r&r"
 			]
 			id: "642557D5CB896C1E"
 			tasks: [{
@@ -716,7 +716,7 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest46.title}"
+			title: "The Labyrinth’s Core"
 			x: 4.5d
 			y: 0.0d
 		}
@@ -792,26 +792,26 @@
 		{
 			dependencies: ["4C89A0A823554E00"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest52.description1}"
+				"   Now that you have your ME Controller, the system finally behaves like a living creature — with organs, synapses, and a mood that swings based on channels."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description2}"
+				"   Each face of a Controller can emit up to 32 independent logical channels, connecting to machines, terminals, interfaces, and everything else that depends on automation and control. But note:   this isn’t power. It’s communication. Each smart connection consumes a channel, and simple cables have a nervous breakdown before even finishing the installation."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description3}"
+				"   This is where the network gains depth: subnets and P2P."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description4}"
+				"   The P2P Tunnel lets you compress all that logic into an encapsulated flow. You can use a single face of the Controller to feed several P2P tunnels, each retransmitting up to 32 channels to other areas. This allows creating clusters of independent subnets, fed from a single point, which can even transmit the faces of other Controllers connected further ahead. The result? A fractal, modular, intelligent system — and incredibly easy to break if you disconnect the wrong cable."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description5}"
+				"   Besides the inherent complexity, some precautions are mandatory. The rule remains the same: a network can only support a single controller group that must be directly connected, with no cables or structures between them. Therefore, any subcontroller &4&lMUST NOT&r&r connect any of its faces to any cable that directly interacts with the main controller. All interaction from the main controller with any subcontroller must be done solely via P2P. I know, it sounds complicated, but once you build a functional system of this scale for the first time, you’ll never want a simple system again. Trust me."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description6}"
+				"   Still, structure without intelligence is just waste with colored cables. So it’s time to think about passivation."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description7}"
+				"  Sei que, definitivamente, esse bloco de anotações não vai ajudar muito a entender o conceito, mas apertando \"G\" em um P2P ( Ou qualquer item do AE2 ), você terá acesso a um manual completo e interativo que explica muito bem esse conceito, recomendo fortemente dar uma olhada!"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description8}"
-				"{ftbquests.chapter.4_mekanologia.quest52.description9}"
+				"   To passivate is to create constant stocks of intermediate items — like alloys, chips, pure crystals, or fluix dust — produced in the background, 24/7, without waiting for a request. A simple Drawer with a Storage Bus already does that. A dedicated production line to feed that drawer makes the network autonomous."
+				"The difference between a living factory and a chaotic spreadsheet is this: well-planned buffers."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description10}"
+				"   You’re not just optimizing. You’re designing a system that expects the world to happen — and answers before it asks."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest52.description11}"
+				"&7&o— If you didn’t understand half of this, that’s fine. The system didn’t either when it was first powered on. Welcome to AE2.&r&r"
 			]
 			id: "518B46107EA4E2C8"
 			min_width: 400
@@ -870,33 +870,33 @@
 		{
 			dependencies: ["44D7476D60126160"]
 			description: [
-				"{ftbquests.chapter.4_mekanologia.quest57.description1}"
+				"   The promised space"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description2}"
+				"   You spent hours connecting cables, assembling machines with pretentious names, and organizing interfaces with a precision bordering on obsessive–compulsive. And all that for what? Because you saw an image. An image of gleaming drives, lined up like monuments to the information age."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description3}"
+				"   Except no."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description4}"
+				"   Yes, this is the final quest of the chapter. Yes, it shows exactly what you thought you were building. But no, you still don’t have access to Storage Cells. The thing that makes all this worthwhile isn’t hiding here."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description5}"
+				"   This chapter was about the foundation. The footing. The promise. A well-lit storefront with no stock in the back."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description6}"
+				"   You built a control center to… look at things. Like a telescope pointed at a black hole you created yourself. But hey, the cables look nice."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description7}"
+				"   Now take a deep breath, admire the structure, and get ready for the real reason it exists: storing anything — which, would you look at that — will be generously unlocked by a completely different mod. Ender IO, perhaps? Who knows…"
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description8}"
+				"  Feeling a little cheated? Great. That’s the first step to understanding how the system really works."
 				""
-				"{ftbquests.chapter.4_mekanologia.quest57.description9}"
+				"\"&7&o— A terminal without storage is like a philosopher without angst: pretty, but absolutely useless.&r&r\""
 			]
 			id: "3D546802A869AC66"
 			min_width: 300
-			subtitle: "{ftbquests.chapter.4_mekanologia.quest57.subtitle}"
+			subtitle: "Where is it????"
 			tasks: [{
 				id: "2C5ABFE01493DE24"
 				item: "ae2:creative_item_cell"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4_mekanologia.quest57.title}"
+			title: "The Promised Space"
 			x: 7.0d
 			y: -1.0d
 		}

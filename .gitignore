@@ -54,6 +54,7 @@ out/
 .vscode/
 .gradle/
 build/
+/builds/
 
 # Backup temporário ou pasta de export
 export/
@@ -64,7 +65,7 @@ export/
 # Ignorar mods e bibliotecas locais
 mods/
 .profileImage/
-screenshots/
+/screenshots/
 
 # Arquivos e pastas gerados por clientes e launchers
 .curseclient

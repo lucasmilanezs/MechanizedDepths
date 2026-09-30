@@ -18,35 +18,34 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description1}"
+				"   The chapter that opens now isn’t a detour. Not a magical shortcut. It’s the other face of the same industry you’ve already built. Create doesn’t replace anything. It expands everything."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description2}"
+				"   While you press electrodes and pump plant fluid through gritted teeth, Create watches... and offers an alternative: gears, rotation, continuous flow."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description3}"
+				"   Here, you won’t find miraculous recipes or instant access to grand machines. But you’ll see arms repeating gestures. Wheels carrying ores. Sequences turning painful crafting into mechanical dance."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description4}"
+				"   And if you think you can ignore this because you already have power and alloys… remember: this modpack won’t respect you if you keep crafting everything by hand."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description5}"
+				"   Future progress will demand factories. Lines. Flows. And a minimal sense of infrastructure. Applied Energistics is far away. Very far. And the day you finally get to click “autocraft” will be epic — but that day is not today."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description6}"
+				"   So here’s your suggestion disguised as freedom:"
+				"Start small. A funnel here, a press there. Test layouts. Think logistics. Immerse yourself in this rustic aesthetic and these massive machines before you can go digital. Don’t run from bottlenecks — make the experience of solving them your reward."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description7}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description8}"
+				"   Because the burden of carrying a revolution on your shoulders... can very well be placed on a conveyor belt."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description9}"
-				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.description10}"
+				"&7&o— True automation doesn’t begin with a click. It begins when you stop repeating the same task like a lunatic.&r&r"
 			]
 			icon: "create:cogwheel"
 			id: "6FFDC0CD59E051D1"
+			min_width: 300
 			shape: "netheritetier"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.subtitle}"
+			subtitle: "A mandatory suggestion"
 			tasks: [{
 				id: "29A3F42A9CF66B5F"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest1.title}"
+			title: "Gears on the Verge of Collapse"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -56,13 +55,13 @@
 				"41C7D076DE390330"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.description1}"
+				"   You mastered rituals. Shaped living timber and runic stone, gave form to the invisible. Now it’s time to trade the inexplicable for the inevitable: gears."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.description2}"
+				"   This is the first true alloy. Not in the metallic sense, but the symbolic one: it binds ideas that shouldn’t speak to each other. Arcane rituals and mechanical torque. Whispers of aura and the click of gears."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.description3}"
+				"   Creating &8&landesite alloy&r&r is like fusing two worlds — and if you think that’s exaggeration, wait until you see the trains."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.description4}"
+				"&7&o— Nothing turns without it. Not ideas, not machines.&r&r"
 			]
 			id: "2A261C789F73E3A9"
 			shape: "gear"
@@ -73,7 +72,7 @@
 				item: { Count: 4, id: "create:andesite_alloy" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest2.title}"
+			title: "Stone to Spin Worlds"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -91,11 +90,11 @@
 		{
 			dependencies: ["2A261C789F73E3A9"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest4.description1}"
+				"   Shafts connect everything — including your mistakes."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest4.description2}"
+				"   They’re discreet, direct, inevitable. Every build starts by spinning one... and ends by spinning them all."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest4.description3}"
+				"&7&o— Look at a Shaft. Now look at the chaos it’s spreading. You didn’t respect it.&r&r"
 			]
 			id: "3265B3C72791C9EA"
 			tasks: [{
@@ -103,20 +102,20 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest4.title}"
+			title: "It’s Spinning..."
 			x: 0.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest5.description1}"
+				"   Small gears don’t just transmit motion. They translate force into logic — and sometimes, into despair."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest5.description2}"
+				"   Used between same-sized parts, the spin propagates normally. Mix sizes and… well, congratulations. You now have a living rotational calculator."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest5.description3}"
+				"   Increase speed, lose torque. Increase torque, lose speed. And if everything goes right, nothing explodes. If it goes wrong, everything jams."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest5.description4}"
+				"&7&o— This gear doesn’t turn on its own. But it’ll turn with you... until it breaks something you didn’t see.&r&r"
 			]
 			id: "3DE2667B06DFB607"
 			tasks: [{
@@ -124,20 +123,20 @@
 				item: "create:cogwheel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest5.title}"
+			title: "Teeth, Doubts, and Discoveries"
 			x: 1.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest6.description1}"
+				"   The large gear is the beginning of the technical lie: “More is better.”"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest6.description2}"
+				"   It spins slower. But with the right small gear beside it, it can multiply speed — or multiply your mistake."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest6.description3}"
+				"   Stack two different gears and you get a system. Stack three and you get doubt. Stack four and you get a Reddit post begging for help."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest6.description4}"
+				"&7&o— Rotation isn’t energy. It’s patience with applied math.&r&r"
 			]
 			id: "30E4ADB9A99F0519"
 			tasks: [{
@@ -145,18 +144,18 @@
 				item: "create:large_cogwheel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest6.title}"
+			title: "Spinning Is Easy; Spinning Right..."
 			x: -1.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["3DE2667B06DFB607"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest7.description1}"
+				"   Finally: movement without sacrifice — all you need is a river, a wall, and your technical soul."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest7.description2}"
+				"   The Water Wheel generates stress — the “rotational energy” that keeps everything running. The more it turns, the more stress. Don’t get excited: it spins slowly, with high torque — the opposite of speed."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest7.description3}"
+				"   Ideal for early setups, and perfect to learn that not everything spins the same. Or to discover your whole system is consuming more than it generates."
 			]
 			id: "50EE1E57C08D77C8"
 			tasks: [{
@@ -164,20 +163,20 @@
 				item: "create:water_wheel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest7.title}"
+			title: "The First Spin Is Always the Slowest"
 			x: 1.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["30E4ADB9A99F0519"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest8.description1}"
+				"   The regular Water Wheel was the whisper of the flow. The large version is the roar of someone tired of waiting."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest8.description2}"
+				"   The Large Water Wheel offers more stress — more brute power for heavy machines. But like anything that offers more, it also demands more: more space, more alignment, more care."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest8.description3}"
+				"   The design changes, but the truth remains: if you want your factory to breathe, you need to give it bigger lungs."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest8.description4}"
+				"&7&o— When torque whispers, you listen. When it screams, the gear yields.&r&r"
 			]
 			id: "157A36109CDC7C2B"
 			tasks: [{
@@ -185,19 +184,19 @@
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest8.title}"
+			title: "The River Is No Longer Enough"
 			x: -1.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest9.description1}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest9.description2}"
+				"   Horizontal becomes vertical."
+				"   Vertical becomes horizontal."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest9.description3}"
+				"   The gearbox exists to convert motion without converting your sanity. But like everything in Create, it only helps until you cross-wire two by accident and invert rotation across your whole factory."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest9.description4}"
+				"&7&o— Rotation changes planes. Logic changes with it. Your patience doesn’t always keep up.&r&r"
 			]
 			id: "54E40EA8FC901031"
 			tasks: [{
@@ -205,17 +204,17 @@
 				item: "create:gearbox"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest9.title}"
+			title: "The Shaft That Turns Corners"
 			x: -2.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest10.description1}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest10.description2}"
+				"   The gearshift reverses rotational direction when it receives a redstone signal."
+				"That can be useful. Or disastrous. Or both, depending on whether your system has a brake — or a child standing on a belt."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest10.description3}"
+				"&7&o— Sometimes, to move forward, you need to spin backward. That’s Create. That’s therapy.&r&r"
 			]
 			id: "1C7464A392E4AA20"
 			tasks: [{
@@ -223,18 +222,18 @@
 				item: "create:gearshift"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest10.title}"
+			title: "The Contradiction Button"
 			x: -1.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["1C7464A392E4AA20"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest11.description1}"
+				"   Imagine having the power to cut power from an entire system with a pulse of redstone."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest11.description2}"
+				"   Stop, isolate, interrupt — the clutch is Create’s circuit breaker. But be careful: forget to turn it back on and you’ll spend hours thinking you broke everything. Spoiler: you did — your attention span."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest11.description3}"
+				"&7&o— The clutch isn’t for turning. It’s for pausing. A reminder that sometimes, stopping is strategic.&r&r"
 			]
 			id: "48060F3F5D2E60F9"
 			tasks: [{
@@ -242,18 +241,18 @@
 				item: "create:clutch"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest11.title}"
+			title: "The Silence Between the Teeth"
 			x: -2.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest12.description1}"
+				"   Sometimes you just want two machines to spin the same way—same direction, same speed."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest12.description2}"
+				"   The chain drive does exactly that — elegantly. But misalign it and you’ll discover the concept of “rotational functional desynchronization” in practice."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest12.description3}"
+				"&7&o— It’s like a data cable between gears. Or a chain. Literally. Just encased, because style matters.&r&r"
 			]
 			id: "0ECC57331741E458"
 			tasks: [{
@@ -261,21 +260,21 @@
 				item: "create:encased_chain_drive"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest12.title}"
+			title: "Synchronous or Chaotic?"
 			x: -2.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest13.description1}"
+				"   If Immersive’s Metal Press is an industrial hydraulic arm, Create’s Mechanical Press is more like… an ogre’s hammer with improvised precision."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest13.description2}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest13.description3}"
+				"   It doesn’t need molds. It doesn’t need wires. It has neither polish nor elegance."
+				"It just comes down, with controlled fury, and turns metal into plates, items into blocks, hope into automation."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest13.description4}"
+				"   Less efficient? Maybe. Louder? Definitely. More satisfying? Absolutely."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest13.description5}"
+				"&7&o— Progress is rarely subtle. And Create never pretends it is.&r&r"
 			]
 			id: "0173BAF7AFCB573B"
 			tasks: [{
@@ -283,18 +282,18 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest13.title}"
+			title: "The Weight of Progress"
 			x: 1.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest14.description1}"
+				"   The Millstone won’t give you gold. But it will make your flower yield more dye, turn your stone into gravel, and your gravel into flint — with luck."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest14.description2}"
+				"   It represents your first contact with primitive mechanical processing. No alloys or complex machines here. It’s stone against stone, spinning until it becomes dust — or something useful."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest14.description3}"
+				"&7&o— Sometimes progress starts by grinding a flower for dye. Other times, it starts exactly the same.&r&r"
 			]
 			id: "03FD87CD166B54A2"
 			tasks: [{
@@ -302,19 +301,19 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest14.title}"
+			title: " Grinding Ideas"
 			x: 2.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3265B3C72791C9EA"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest15.description1}"
+				"   A block that blows things and is, somehow, extremely useful."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest15.description2}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest15.description3}"
+				"   Blow to cook (with lava), wash (with water), or ferment (with soulsand)."
+				"You only grasp the value of an industrial fan when it cleans a stack of ore and hands back hope."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest15.description4}"
+				"&7&o— Air moves the world. And items too. As long as they’re in the right spot and not bugged on the ground.&r&r"
 			]
 			id: "2B611465A25BABEC"
 			tasks: [{
@@ -322,18 +321,18 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest15.title}"
+			title: "The Wind Brings Shape"
 			x: 2.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["3DE2667B06DFB607"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest16.description1}"
+				"   A mixer, a basin, and semi-controlled chaos."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest16.description2}"
+				"   Combining fluids and solids, this duo lets you create alloys, doughs, and \"substances that might be legal.\" This is where brass comes from."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest16.description3}"
+				"&7&o— Cooking in Create demands more than a recipe. It demands rotation. And a slight lapse of sanity.&r&r"
 			]
 			id: "61A973C8B8739001"
 			tasks: [
@@ -348,18 +347,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest16.title}"
+			title: "Kitchen of Madness"
 			x: 2.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2301AE3626A0CD3B"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest17.description1}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest17.description2}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest17.description3}"
+				"   They spin without ever stopping. They don’t ask “where” or “why” — they just carry, like an endless tongue of gears that forgot the taste of resting."
+				"Belts are the first step toward making things flow without you overthinking it. Hook your belts between shafts and watch items follow the same path forever."
+				"   Ideal for simple production lines or tidying your domestic chaos, a belt never judges what you’re transporting."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest17.description4}"
+				"— &o&7I thought about putting my self-esteem on this belt, but it turns out it isn’t a valid item.&r&r"
 			]
 			id: "713D876FFB963462"
 			tasks: [{
@@ -367,21 +366,21 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest17.title}"
+			title: "Let’s Go for a Ride"
 			x: 0.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["2301AE3626A0CD3B"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest18.description1}"
+				"   Not all movement is eternal. Sometimes progress needs to wait in the right place."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest18.description2}"
+				"   The Depot is the strategic pause — where items rest before being smashed, polished, or touched by mechanical hands."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest18.description3}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest18.description4}"
+				"   It becomes the central point of interaction with Deployers, Presses, and Mixers. Think of it as the ritual table where the item awaits transformation."
+				"Simple, cheap, and absurdly useful. If you haven’t dropped one of these in the middle of your mess yet, you will."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest18.description5}"
+				"— &o&7I stand still, yet the world turns. Maybe I’m a Depot too.&r&r"
 			]
 			id: "0B02A3BD59761C4A"
 			tasks: [{
@@ -395,15 +394,13 @@
 		{
 			dependencies: ["2301AE3626A0CD3B"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest19.description1}"
+				"   Nothing goes in, nothing goes out — unless you tell it how."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest19.description2}"
+				"   Funnels are the gatekeepers of inventories, the filters of the material world. They decide who enters and who leaves, like bouncers at an interdimensional nightclub."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest19.description3}"
+				"   Start with andesite ones, and when you’re worthy, the brass funnel will even allow advanced filtering. But easy there, young inventor... one thing at a time."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest19.description4}"
-				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest19.description5}"
+				"— &o&7It’s a funnel. But with style. Like... a funnel in a suit.&r&r"
 			]
 			id: "732C63E9D2C1CB1B"
 			tasks: [{
@@ -417,19 +414,19 @@
 		{
 			dependencies: ["41C7D076DE390330"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description1}"
+				"   It gleams. Not like a diamond. Not like something natural."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description2}"
+				"   Rose Quartz is... almost magical. But it isn’t."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description3}"
+				"   You make it not with machines, but with a manual, almost intimate gesture: throw raw quartz on the ground, mix it with red dye, and then… rub."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description4}"
+				"   Use sandpaper as if you were polishing your patience. Hold it, aim at the item dropped on the ground, and right-click as if you weren’t questioning why on earth this works."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description5}"
+				"   This — humbling and handcrafted — is the first step toward the electron tube."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description6}"
+				"   And, consequently, toward the Deployer, which will one day do this for you."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.description7}"
+				"— &o&7At first you sand quartz with paper. In the end, you build robotic arms that sand for you. Congratulations, evolution.&r&r"
 			]
 			id: "0EC1760A6B2B0CB6"
 			tasks: [
@@ -444,7 +441,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest20.title}"
+			title: "It Shines but Isn’t Rare"
 			x: 7.0d
 			y: -1.0892857142857153d
 		}
@@ -454,18 +451,18 @@
 				"48D3A3797AE759A7"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description1}"
+				"   Automation begins with a click. Yours. And ends with his."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description2}"
+				"   The Deployer is the pinnacle of creative laziness — it clicks, presses, applies casings, plants, feeds, breaks blocks, and slaps its own creator."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description3}"
+				"   You can use it to automate andesite casing, electron tubes — and even more Deployers."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description4}"
+				"   Is it ironic? Yes. Brilliant? Also yes."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description5}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description6}"
+				"   Combine a brass hand, an electron tube, and the shell of a broken dream... and you’ll have built your first robotic hand."
+				"When it presses the button for you, it’ll sting a little less."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.description7}"
+				"— &o&7When I realized I could automate crafting it with itself, I understood technical pride.&r&r"
 			]
 			id: "465013195CB95147"
 			tasks: [{
@@ -473,7 +470,7 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest21.title}"
+			title: "How About a Helping Hand?"
 			x: 6.5d
 			y: -2.0892857142857153d
 		}
@@ -516,23 +513,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest22.title}"
+			title: "&lHeating Is the New Spinning"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.description1}"
+				"   Brass isn’t just any alloy. It’s sensitive. Sentimental. It won’t accept just any heat. It doesn’t mingle in just any furnace. It demands the temperature of a living Blaze — not a substitute, not a coal furnace. A Blaze you captured, angered, caged… and now burns for you."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.description2}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.description3}"
+				"   To form a Brass Ingot, you must place a Copper Ingot and a Zinc Ingot in a Mechanical Mixer with an active Blaze Burner directly beneath."
+				"Stir with care. It likes attention."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.description4}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.description5}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.description6}"
+				"   This process is more than metallurgy — it’s emotional alchemy."
+				"And when you finally form your first golden ingot, something changes."
+				"You’ve crossed Create’s border. There’s no way back."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.description7}"
+				"— &o&7Brass isn’t just copper + zinc. It’s drama fused with captive fire. You’ll understand when it starts demanding casings.&r&r"
 			]
 			id: "11D7B1868C95CDE6"
 			tasks: [{
@@ -540,18 +537,18 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest23.title}"
+			title: "The Heart of the Mind?"
 			x: 5.0d
 			y: -1.0892857142857153d
 		}
 		{
 			dependencies: ["0EC1760A6B2B0CB6"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest24.description1}"
+				"   The Electron Tube is the first component that actually feels... electric. It doesn’t spin, it doesn’t carry. It thinks. And without it, Create would never leave its analog childhood. You’ll use it to build robotic arms, sensors, mechanical crafters, content detectors and... well, controlled chaos."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest24.description2}"
+				"   To craft it, you’ll need your old friend Rose Quartz and a few alloys you already know. Your eyes will shine. So will the tube."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest24.description3}"
+				"— &o&7You know technology has advanced when even the screws have self-esteem.&r&r"
 			]
 			id: "48D3A3797AE759A7"
 			tasks: [{
@@ -559,20 +556,20 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest24.title}"
+			title: "A Tube with Ideas"
 			x: 6.0d
 			y: -1.0892857142857153d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest25.description1}"
+				"   What used to be a funnel now thinks."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest25.description2}"
+				"   With the Smart Funnel and the Smart Chute, transport grows a brain. You can filter, condition, prioritize."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest25.description3}"
+				"   Control what goes in and out with tags, redstone, and signals of hope. Start building logistics that not only work — they work with purpose."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest25.description4}"
+				"— &o&7This chute refuses dirt. I demand the same of my brain.&r&r"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -582,18 +579,18 @@
 				item: "create:brass_funnel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest25.title}"
+			title: "The Consciousness of Funneling"
 			x: 7.5d
 			y: -0.0892857142857153d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest26.description1}"
+				"   Before, everything spun at the same speed — too fast, too slow, or snapping gears out of pure spite."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest26.description2}"
+				"   Now you conduct rotation like a maestro of applied physics. The Rotation Speed Controller sets your system’s exact RPM. The Adjustable Gearshift lets you change gears with redstone. With these two, your factory finally learns to walk... and to brake."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest26.description3}"
+				"— &o&7The difference between a turbine and a blender? Three blocks of brass and a bit of common sense.&r&r"
 			]
 			id: "4DC86BFC3EA99D1F"
 			tasks: [{
@@ -601,20 +598,20 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest26.title}"
+			title: "Controlled Speed Is a Luxury"
 			x: 5.5d
 			y: -0.0892857142857153d
 		}
 		{
 			dependencies: ["11D7B1868C95CDE6"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest27.description1}"
+				"   You used to power machines with wires? Pathetic. Now you trigger entire systems without touch, without physical connection, without mercy."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest27.description2}"
+				"   Redstone Link is like telepathy — two blocks synchronized by any item, sending signals at a distance. Want to trigger a factory hidden behind the mountain? A secret trapdoor on the other side of the map? Now you can."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest27.description3}"
+				"And all you need is... two blocks that recognize each other by scent."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest27.description4}"
+				"— &o&7I use Redstone Link to call the elevator. A lever is so nineteenth-century.&r&r"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -624,7 +621,7 @@
 				item: "create:redstone_link"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest27.title}"
+			title: "The Secret Is in the Air"
 			x: 6.5d
 			y: -0.0892857142857153d
 		}
@@ -634,12 +631,12 @@
 				"48D3A3797AE759A7"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest28.description1}"
+				"   The world is made of shapes. What changes is how you see them... and how you assemble them. The Mechanical Crafter is the workbench that stopped waiting for your clicks — now it understands the form of what it’s trying to create. You connect blocks, set directions, and watch the parts fit together as if they had memory."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest28.description2}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest28.description3}"
+				"   This system lets you assemble components that require placement — precision gears, circuits, advanced structures, and all the things a simple funnel would never understand."
+				"But more than function, it carries intent: every recipe made here is a reminder that shape matters. And that even in a cubic world, geometry is still art."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest28.description4}"
+				"— &o&7I built an automatic crafter and it assembled a five-pointed star. I’m not sure if that’s efficiency... or a sign.&r&r"
 			]
 			id: "7C1F6A35AF3BA808"
 			tasks: [{
@@ -647,20 +644,20 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest28.title}"
+			title: " Shape Has Power"
 			x: 5.5d
 			y: -2.0892857142857153d
 		}
 		{
 			dependencies: ["465013195CB95147"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest29.description1}"
+				"   There are times when a mod changes your base. Rarer still are the times when a single mechanic changes the entire mod. Sequenced Assembly is exactly that. It isn’t just an alternative. It’s the foundation of a new way of thinking. By using belts, arms, and a logical assembly line, you teach machines to repeat ideas, not just actions."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest29.description2}"
+				"   This system doesn’t belong only to Create. It transcends the mod. From here on, items from other mods — or even from origins that defy logic — will demand modular assembly. You’ll see deployers crafting magical components, crafters linking chemical parts, gears that only take shape after a dance of steps. Because in this world, automating is no longer repeating clicks. It’s choreographing purpose."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest29.description3}"
+				"   Every time you build a sequence, you’re telling the world: \"there’s a right way to do this.\" More importantly, you’re creating a structure that can — and will — grow with you. When the sequence becomes the standard, the modpack changes. Complexity rises. But so does beauty."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest29.description4}"
+				"— &o&7The first time I used this was to make a tube. Now I’m building a god. One step at a time.&r&r"
 			]
 			id: "4007E353BE3EF6F1"
 			tasks: [{
@@ -677,8 +674,6 @@
 				"7344A30E5BD438C1"
 			]
 			description: [
-				"  Everything turns. From the first shaft to the most complex systems, rotation was your language. You spoke to the world through gears, belts, arms, and rhythm. But there comes a moment when the spin slows — not from failure, but because what needed to be assembled finally was."
-				""
 				"  The &5&lEntropic Drive&r&r condenses everything you learned with Create. A precise sequence. A brass core. Mechanisms repeating with intent. Latent energy guided through tube, eye, and void. It does not spin. It pulses. And when it pulses… the world listens."
 				""
 				"  And yet… something remains. A brass eye fixed at the center of the engine. It does not move. It does not observe — &l&5it stares.&r&r"
@@ -699,7 +694,7 @@
 				item: "kubejs:entropic_drive"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest30.title}"
+			title: "The Silence of the Last Spin"
 			x: 9.0d
 			y: -7.0d
 		}
@@ -709,16 +704,16 @@
 				"4007E353BE3EF6F1"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description1}"
+				"   You walked the path of gears. Shaped alloys, controlled rotation, tuned pressures. But now it’s time to stop. Engineering demands structure. And what spins must, sooner or later, stand firm."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description2}"
+				"   The &l&6Forged Assembly&r&r materializes that transition: a core created not to change, but to endure. It’s what enables the thermal foundation of a new kind of advance. &m— Pun not intended&r"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description3}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description4}"
+				"   With it, you stop spinning gears."
+				"You begin controlling the heat that feeds them."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description5}"
+				"   This is the beginning of Thermal Expansion — a chapter that doesn’t shine, but boils."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.description6}"
+				"— &o&7Some worlds run on purpose. Others on steam. This one... is forged in repetition.&r&r"
 			]
 			id: "21D37F976576C885"
 			shape: "goldtier"
@@ -728,20 +723,20 @@
 				item: "kubejs:forged_assembly"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest31.title}"
+			title: "The Core That Handles Heat"
 			x: 5.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["6FFDC0CD59E051D1"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.description1}"
+				"   When the ancients spoke of sowing and reaping, they didn’t imagine the soil itself might choose to move. With a Mechanical Bearing, some Glue, and the right dose of disrespect for natural law, you can make the earth spin."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.description2}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.description3}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.description4}"
+				"   Chassis glued to dirt, rotation applied at the base, and the field comes alive."
+				"Now you don’t walk through the crops."
+				"They pass by you."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.description5}"
+				"— &o&7If the earth moves and the plant grows, who’s truly rooted?&r&r"
 			]
 			id: "2904654A6CDCBAF8"
 			shape: "gear"
@@ -751,19 +746,19 @@
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest32.title}"
+			title: "Walking Earth"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2904654A6CDCBAF8"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest33.description1}"
+				"   No plowing with sweat on your brow. Today, it’s a machine with a hoe deciding what grows and when. Place your Deployers, equip them with hoes and seeds, and watch: agriculture has entered the age of steel."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest33.description2}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest33.description3}"
+				"   The rhythm is mechanical. The logic is cold. The field, precise."
+				"No intuition — only repetition."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest33.description4}"
+				"— &o&7Farming has never been so... industrial.&r&r"
 			]
 			icon: "minecraft:wheat_seeds"
 			id: "43A0F10845723DF8"
@@ -785,12 +780,12 @@
 		{
 			dependencies: ["2904654A6CDCBAF8"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.description1}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.description2}"
+				"   Harvesting used to be a gesture of gratitude. Now it’s a metal arm with a blade. Configure Deployers with shears, scythes, or even Harvesters to complete the cycle."
+				"From birth to harvest — the human has been removed from the equation."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.description3}"
+				"   All so the wheat lands in a chest and you don’t even have to look."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.description4}"
+				"— &o&7The harvest is automatic. Hunger, not so much.&r&r"
 			]
 			id: "3C805F01FCA2C984"
 			tasks: [{
@@ -798,28 +793,28 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest34.title}"
+			title: "The Gulp Cycle"
 			x: -5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["2904654A6CDCBAF8"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.description1}"
+				"   Nothing in this field is just food."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.description2}"
+				"   Leaves and seeds are energetic raw material."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.description3}"
+				"   And you, precision farmer, are now growing what the future will convert into fuel."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.description4}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.description5}"
+				"   Later, in Mekanism, this is called Bio Fuel."
+				"For now, just know: this farm will burn well."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.description6}"
+				"— &o&7Everything starts with a leaf. Even acid.&r&r"
 			]
 			id: "64818C8CE74F770C"
 			tasks: [{
 				id: "0CB4519F41FE18A7"
-				title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest36.task_915446368711874727.title}"
+				title: "The Seed of Acid"
 				type: "checkmark"
 			}]
 			x: -5.0d
@@ -831,16 +826,16 @@
 				"11D7B1868C95CDE6"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.description1}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.description2}"
+				"   Among all the gears, turntables, and noisy shafts, there’s an arm that acts with finesse. The Mechanical Arm doesn’t spin the world — it organizes it."
+				"   It watches, computes, and decides where each item goes."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.description3}"
+				"   With smart filters and defined paths, it keeps wheat from becoming chaos, coal from becoming a bottleneck, and your base from looking like a farm built by a drunk octopus."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.description4}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.description5}"
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.description6}"
+				"   Set inputs and outputs, define the rules, and the arm does the rest."
+				"   With precision. Without hurry."
+				"   With almost courteous arrogance."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.description7}"
+				"— &o&7Not all strength is in rotation. Sometimes it’s in knowing where each thing should go.&r&r"
 			]
 			id: "4242DD5606BE354E"
 			tasks: [{
@@ -848,26 +843,26 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest37.title}"
+			title: "Wash a Papaya"
 			x: 8.0d
 			y: -1.0892857142857153d
 		}
 		{
 			dependencies: ["3C8B4742E0008284"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.description1}"
+				"   You’ve already tamed the flame. Now it’s time to make it produce something useful. In Create, heat can become rotation — provided you have the right setup."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.description2}"
+				"   To build a functional steam generator, you’ll need an active Blaze Burner (with a blaze imprisoned, as the manual of technical cruelty demands), a Create Tank placed right above it, and a water input injected into that tank. Feed water through a Fluid Pipe from a stable source like a tank or pump. No manual bucket dumping — automation appreciates it."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.description3}"
+				"   Most important point: as soon as you attach a Steam Engine or a Steam Whistle to that heated tank, it’s automatically recognized as a boiler. No multiblock structure, no mystical ritual: the simple act of connecting is enough to activate the system."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.description4}"
+				"   The amount of rotation generated depends on temperature. A regular Blaze Burner gives decent pressure, but if you feed it advanced fuels (like blaze cake), it enters a superheated state and efficiency climbs considerably."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.description5}"
+				"   Technical warning: Create boilers are pretty, powerful... and a TPS nightmare when used carelessly. They constantly recalculate stress, heat, and rotation, which can choke servers — especially if they’re left running all the time."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.description6}"
+				"   Use this setup like a ritual of strength: potent, brief, intentional. Not like a perpetual gear farm."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.description7}"
+				"— &o&7The silence between bubbling and collapse is shorter than it seems. And lag is closer than you think.&r&r"
 			]
 			id: "586E5CF965DD1845"
 			tasks: [
@@ -883,24 +878,24 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest38.title}"
+			title: "When Water Boils"
 			x: 4.5d
 			y: -2.0892857142857153d
 		}
 		{
 			dependencies: ["586E5CF965DD1845"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description1}"
+				"   Unlike the boiler, the Spout doesn’t explode."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description2}"
+				"   It whispers. It drips."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description3}"
+				"   The precision with which it applies fluids is worthy of alchemy or extreme cuisine."
 				""
 				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description4} {ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description5}"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description6}"
+				"   The fluid doesn’t matter — what matters is the right place, in the right dose."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest39.description7}"
+				"— &o&7Gears force. The Spout negotiates.&r&r"
 			]
 			id: "497E333A1E8722A5"
 			tasks: [{
@@ -919,18 +914,18 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest40.title}"
+			title: "Where It Flows"
 			x: 6.0d
 			y: -3.0892857142857153d
 		}
 		{
 			dependencies: ["7C1F6A35AF3BA808"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest41.description1}"
+				"   Two colossal wheels, spinning in opposite directions, crushing anything that dares pass between them. If Immersive’s Industrial Engineering is about brute force, Create brings mechanical poetry: speed, torque, precise rotation. The Crushing Wheel is elegance in chaos — grinding stone, food, souls (if you let something organic fall in)."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest41.description2}"
+				"   It’s also essential for turning raw materials into more useful forms. And when paired with funnels, filters, or smart belts, it becomes a vital piece of your automated chain."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest41.description3}"
+				"— &o&7If you hear a strange crack, that might’ve been your foot.&r"
 			]
 			id: "4F62549360D185F1"
 			tasks: [{
@@ -938,7 +933,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest41.title}"
+			title: "Philosophical Grinding"
 			x: 7.0d
 			y: -3.0892857142857153d
 		}
@@ -948,11 +943,11 @@
 				"497E333A1E8722A5"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest42.description1}"
+				"   Ordinary heat isn’t enough to shape certain materials. Some processes demand more — a blazing fury, a living combustion. The Blaze Burner may put up with some coal, but if you want to see something truly boil, you must feed it what it fears: a Blaze Cake."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest42.description2}"
+				"   Made with sugar, lava, fuels, and a touch of recklessness, this is the food that turns a common furnace into a forge of the gods. And it’s what triggers the superheated state capable of melting the impossible."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest42.description3}"
+				"— &o&7Give cake to a creature made of fire. What could go wrong?&r"
 			]
 			id: "41B7C35997BE51CB"
 			tasks: [{
@@ -960,20 +955,20 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest42.title}"
+			title: "Hellcake"
 			x: 4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["41B7C35997BE51CB"]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest43.description1}"
+				"   Alchemy begins with powder: an unstable compound of lapis, diamond, and elemental heat. Empowered Blaze Powder carries a primitive spark — half magic, half explosive. Join it with iron and fire, and &b&lEmpowered Blazing Steel&r&r emerges: a vibrant, hot, pulsing alloy."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest43.description2}"
+				"   But beware. This energy isn’t eternal. It lives within a short window. Once you mix or overheat it, it abandons the Blaze’s memory... and slumps into a metal without identity: &0&l&oMelted Blaze Metal.&r&r&r"
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest43.description3}"
+				"   This production line, chaotic as it is, will be absolutely crucial later. Several of the most advanced materials start exactly from this incandescent cycle. Better get used to it — you’ll be spending a lot of time together. For now, the result of your inattention just so happens to be exactly what you need. But it won’t be long before a transitional alloy is required — and your attention as well."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest43.description4}"
+				"— &o&7If you haven’t named your Mixer yet, maybe it’s time. Long relationships require intimacy.&r"
 			]
 			icon: "kubejs:empowered_blazing_steel"
 			id: "3A8272171D92E40F"
@@ -994,7 +989,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest43.title}"
+			title: "Imprisoned Flames"
 			x: 4.5d
 			y: -4.089285714285715d
 		}
@@ -1004,13 +999,13 @@
 				"662FA29C4130FE53"
 			]
 			description: [
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest44.description1}"
+				"   Take the molten metal. Take the solid structure. Join them under a precise sequence: heat, flow, compression, and finally, the shock of water. The result? Blazebound Steel — a heavy ingot, firm, still pulsing at the core."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest44.description2}"
+				"   This alloy represents absolute control of instability. The apex of a journey that began with Blaze powder and ended with an incandescent core wrapped in steel."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest44.description3}"
+				"   It is the metal that remembers. The steel that bears the scar of fire yet refused to be consumed by it."
 				""
-				"{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest44.description4}"
+				"— &o&7And when the heat ceased, it was no longer flame. It was will.&r"
 			]
 			id: "673611D238FF2FD1"
 			tasks: [{
@@ -1018,7 +1013,7 @@
 				item: "kubejs:blazebound_steel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.onde_o_ferro_aprende_a_danar.quest44.title}"
+			title: "Steel of Blood and Fire"
 			x: 5.5d
 			y: -4.089285714285715d
 		}

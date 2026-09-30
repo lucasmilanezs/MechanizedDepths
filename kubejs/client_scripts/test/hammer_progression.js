@@ -17,7 +17,7 @@ var HP_RED_ARROW = 3
 
 var HP_HEADS = [
   ['tconstruct:hammer_head', '{Material:"tconstruct:wood"}'],
-  ['tconstruct:hammer_head', '{Material:"tconstruct:rock"}'],
+  ['tconstruct:hammer_head', '{Material:"tconstruct:flint"}'],
   ['tconstruct:hammer_head', '{Material:"tconstruct:iron"}'],
   ['tconstruct:hammer_head', '{Material:"mechanized:infused_iron"}'],
   ['tconstruct:hammer_head', '{Material:"tconstruct:steel"}'],
@@ -29,7 +29,7 @@ var HP_HEADS = [
 // como um martelo Tetra formado, sem UUID ou estado de durabilidade.
 var HP_HAMMER_VARIANTS = [
   'basic_hammer/oak',
-  'basic_hammer/stone',
+  'basic_hammer/flint',
   'basic_hammer/iron',
   'basic_hammer/infused_iron',
   'basic_hammer/steel',
