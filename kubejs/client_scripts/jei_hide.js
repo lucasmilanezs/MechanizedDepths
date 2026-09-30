@@ -1,6 +1,18 @@
 JEIEvents.hideItems(event => {
     event.hide([
 
+        // Duplicate crop variants (Thermal is canonical)
+        "actuallyadditions:rice",
+        "actuallyadditions:rice_seeds",
+        "farmersdelight:rice",
+        "farmersdelight:rice_panicle",
+        "farmersdelight:rice_bag",
+        "farmersdelight:rice_bale",
+        "farmersdelight:onion",
+        "farmersdelight:onion_crate",
+        "farmersdelight:wild_rice",
+        "farmersdelight:wild_onions",
+
         // ===============================
         // VANILLA-STYLE / OVERWRITTEN ORES
         // ===============================

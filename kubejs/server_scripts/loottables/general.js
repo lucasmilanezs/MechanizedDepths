@@ -25,62 +25,27 @@ LootJS.modifiers((event) => {
     event.addBlockLootModifier("kubejs:packed_gravel").removeLoot("kubejs:packed_gravel");
 });
 
-// ============================================
-//  LOOT TABLES PARA OS MINÉRIOS CUSTOM (LootJS)
-//  Silk Touch → bloco
-//  Sem Silk → raw mineral
-// ============================================
-
+// Remove itens de loot estrutural em todas as tabelas de baus.
 LootJS.modifiers(event => {
-
-    const ores = {
-        "kubejs:chalcopyrite_ore":           "kubejs:chalcopyrite_raw",
-        "kubejs:chalcopyrite_ore_deepslate": "kubejs:chalcopyrite_raw",
-
-        "kubejs:cassiterite_ore":           "kubejs:cassiterite_raw",
-        "kubejs:cassiterite_ore_deepslate": "kubejs:cassiterite_raw",
-
-        "kubejs:bauxite_ore":           "kubejs:bauxite_raw",
-        "kubejs:bauxite_ore_deepslate": "kubejs:bauxite_raw",
-
-        "kubejs:galena_ore":           "kubejs:galena_raw",
-        "kubejs:galena_ore_deepslate": "kubejs:galena_raw",
-
-        "kubejs:pentlandite_ore":           "kubejs:pentlandite_raw",
-        "kubejs:pentlandite_ore_deepslate": "kubejs:pentlandite_raw",
-
-        "kubejs:argentite_ore":           "kubejs:argentite_raw",
-        "kubejs:argentite_ore_deepslate": "kubejs:argentite_raw",
-
-        "kubejs:gold_quartz_ore":           "minecraft:raw_gold",
-        "kubejs:gold_quartz_ore_deepslate": "minecraft:raw_gold",
-
-        "kubejs:hematite_ore":           "kubejs:hematite_raw",
-        "kubejs:hematite_ore_deepslate": "kubejs:hematite_raw"
-    };
-
-    for (let ore in ores) {
-
-        event.addBlockLootModifier(ore)
-
-            // Remover tudo o que o bloco dropa por padrão
-            .removeLoot(Ingredient.all)
-
-            // SILK TOUCH → dropa o bloco
-            .addAlternativesLoot(
-                LootEntry.of(ore)
-                    .when(c =>
-                        c.matchMainHand(
-                            ItemFilter.hasEnchantment("minecraft:silk_touch")
-                        )
-                    ),
-
-                // SEM silk → dropa o raw
-                LootEntry.of(ores[ore])
-            );
-    }
+    event.addLootTypeModifier('chest')
+        .removeLoot('minecraft:flint_and_steel')
+        .replaceLoot('actuallyadditions:rice', 'thermal:rice', true)
+        .replaceLoot('actuallyadditions:rice_seeds', 'thermal:rice_seeds', true)
+        .replaceLoot('farmersdelight:rice', 'thermal:rice', true)
+        .replaceLoot('farmersdelight:rice_panicle', 'thermal:rice', true)
+        .replaceLoot('farmersdelight:onion', 'thermal:onion', true);
 });
 
-
-
-
+// Existing noncanonical crops in older worlds yield the canonical harvest.
+LootJS.modifiers(event => {
+    for (const block of ['actuallyadditions:rice', 'farmersdelight:rice', 'farmersdelight:rice_panicles']) {
+        event.addBlockLootModifier(block)
+            .replaceLoot('actuallyadditions:rice', 'thermal:rice', true)
+            .replaceLoot('actuallyadditions:rice_seeds', 'thermal:rice_seeds', true)
+            .replaceLoot('farmersdelight:rice', 'thermal:rice', true)
+            .replaceLoot('farmersdelight:rice_panicle', 'thermal:rice', true);
+    }
+    for (const block of ['farmersdelight:onions']) {
+        event.addBlockLootModifier(block).replaceLoot('farmersdelight:onion', 'thermal:onion', true);
+    }
+});

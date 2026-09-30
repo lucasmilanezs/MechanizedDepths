@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "minecraft:crafting_table"
+  ],
+  "remove": true,
+  "retrogen": false,
+  "player_blocks": false
+}
