@@ -15,7 +15,7 @@ import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[2]
-BRANCH = re.compile(r"^refs/remotes/origin/release/pt-(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$")
+BRANCH = re.compile(r"^refs/(?:remotes/origin/|heads/)release/pt-(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$")
 TAG = re.compile(r"^pt-(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$")
 
 
@@ -26,19 +26,23 @@ def git(*args: str) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--local-branches", action="store_true",
+                        help="Resolve local release branches for an unpublished preview")
     args = parser.parse_args()
 
     branches: dict[tuple[int, int], tuple[str, str]] = {}
+    branch_root = ("refs/heads/release/" if args.local_branches
+                   else "refs/remotes/origin/release/")
     for line in git("for-each-ref", "--format=%(refname) %(objectname)",
-                    "refs/remotes/origin/release/").splitlines():
+                    branch_root).splitlines():
         ref, revision = line.split(" ", 1)
         match = BRANCH.fullmatch(ref)
         if match:
             branches[tuple(map(int, match.groups()))] = (
-                ref.removeprefix("refs/remotes/origin/"), revision)
+                ref.removeprefix("refs/heads/").removeprefix("refs/remotes/origin/"), revision)
 
     tagged: dict[tuple[int, int], list[tuple[tuple[int, int, int], str, str]]] = {}
-    for name in git("for-each-ref", "--format=%(refname:short)", "refs/tags/pt-").splitlines():
+    for name in git("for-each-ref", "--format=%(refname:short)", "refs/tags/pt-*").splitlines():
         match = TAG.fullmatch(name)
         if not match:
             continue
