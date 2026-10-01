@@ -103,9 +103,6 @@ AGENTS.md
 /config/jei/recipe-category-sort-order.ini
 /config/worldedit/worldedit.properties
 /config/openloader/data/mechanized_materials.zip
-# Official ZIPs are copied here locally and injected by the build from /resourcepacks/.
-/config/openloader/resources/AETexturesBackport1.20-1.1.zip
-/config/openloader/resources/Suren FTB Quests 1.0.1 1.20-1.20.1.zip
 /local/
 /minecraftinstance.json
 

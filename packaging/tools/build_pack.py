@@ -77,10 +77,6 @@ def main() -> int:
     parser.add_argument("--export-curseforge", action="store_true")
     parser.add_argument("--require-clean", action="store_true")
     parser.add_argument("--audit-instance-mods", action="store_true")
-    parser.add_argument("--resourcepacks-dir", type=Path,
-                        help="Directory containing hash-locked local resourcepack ZIPs")
-    parser.add_argument("--require-complete", action="store_true",
-                        help="Fail if local resourcepack ZIPs are unavailable")
     parser.add_argument("--packwiz", type=Path, help="Path to packwiz executable")
     args = parser.parse_args()
 
@@ -150,40 +146,35 @@ def main() -> int:
             parser.error(f"incomplete packwiz metadata: {source}")
 
     resource_rules = json.loads(
-        (PACKAGING / "local-resourcepacks.json").read_text(encoding="utf-8")
+        (PACKAGING / "openloader-resourcepacks.json").read_text(encoding="utf-8")
     )
-    local_resources = resource_rules["resourcepacks"]
     openloader_required = resource_rules["openloader_required"]
-    local_resource_files: list[tuple[Path, str]] = []
-    openloader_files: list[tuple[Path, str]] = []
-    resourcepacks_dir = args.resourcepacks_dir
-    if resourcepacks_dir is None and (ROOT / "resourcepacks").is_dir():
-        resourcepacks_dir = ROOT / "resourcepacks"
-    if resourcepacks_dir:
-        for entry in [*local_resources, *openloader_required]:
-            source = resourcepacks_dir / entry["filename"]
-            if not source.is_file():
-                parser.error(f"local resourcepack missing: {source}")
-            actual = hashlib.sha256(source.read_bytes()).hexdigest()
-            if actual != entry["sha256"]:
-                parser.error(f"local resourcepack hash mismatch: {source}")
-            if entry in openloader_required:
-                metadata = tomllib.loads(
-                    (metadata_root / "resourcepacks" / entry["metadata"]).read_text(encoding="utf-8")
-                )
-                if metadata["filename"] != entry["filename"] or metadata["download"]["hash-format"] != "sha1":
-                    parser.error(f"OpenLoader pack metadata mismatch: {source}")
-                if hashlib.sha1(source.read_bytes()).hexdigest() != metadata["download"]["hash"]:
-                    parser.error(f"OpenLoader pack differs from CurseForge metadata: {source}")
-                with zipfile.ZipFile(source) as archive:
-                    pack = json.loads(archive.read("pack.mcmeta"))
-                if pack["pack"]["pack_format"] != 15:
-                    parser.error(f"OpenLoader pack is not for Minecraft 1.20.1: {source}")
-                openloader_files.append((source, entry["filename"]))
-            else:
-                local_resource_files.append((source, entry["filename"]))
-    elif args.require_complete:
-        parser.error("local resourcepacks required; pass --resourcepacks-dir")
+    expected_metadata = {entry["metadata"] for entry in openloader_required}
+    if {source.name for source in resources} != expected_metadata:
+        parser.error("packwiz resourcepacks must match the required OpenLoader packs")
+    required_paths: set[str] = set()
+    for entry in openloader_required:
+        relative = f"config/openloader/resources/{entry['filename']}"
+        source = ROOT / relative
+        if not source.is_file() or relative not in tracked:
+            parser.error(f"required OpenLoader resourcepack must be tracked: {relative}")
+        if relative not in game_files:
+            parser.error(f"required OpenLoader resourcepack is excluded from the build: {relative}")
+        payload = source.read_bytes()
+        if hashlib.sha256(payload).hexdigest() != entry["sha256"]:
+            parser.error(f"OpenLoader resourcepack hash mismatch: {relative}")
+        metadata = tomllib.loads(
+            (metadata_root / "resourcepacks" / entry["metadata"]).read_text(encoding="utf-8")
+        )
+        if metadata["filename"] != entry["filename"] or metadata["download"]["hash-format"] != "sha1":
+            parser.error(f"OpenLoader pack metadata mismatch: {relative}")
+        if hashlib.sha1(payload).hexdigest() != metadata["download"]["hash"]:
+            parser.error(f"OpenLoader pack differs from CurseForge metadata: {relative}")
+        with zipfile.ZipFile(source) as archive:
+            pack = json.loads(archive.read("pack.mcmeta"))
+        if pack["pack"]["pack_format"] != 15:
+            parser.error(f"OpenLoader pack is not for Minecraft 1.20.1: {relative}")
+        required_paths.add(relative)
     if args.audit_instance_mods:
         instance_mods = ROOT / "mods"
         if not instance_mods.is_dir():
@@ -260,14 +251,6 @@ def main() -> int:
         copy_file(source, destination / "mods" / source.name)
     for source in resources:
         copy_file(source, destination / "resourcepacks" / source.name)
-    for source, filename in local_resource_files:
-        copy_file(source, destination / "resourcepacks" / filename)
-    openloader_paths = {f"config/openloader/resources/{filename}" for _, filename in openloader_files}
-    if openloader_paths & (set(game_files) | override_paths):
-        parser.error("mandatory OpenLoader resourcepack collides with another build file")
-    for source, filename in openloader_files:
-        copy_file(source, destination / "config/openloader/resources" / filename)
-
     index = destination / "index.toml"
     index.write_text('hash-format = "sha256"\n', encoding="utf-8")
     template = (metadata_root / "pack.toml.template").read_text(encoding="utf-8")
@@ -288,11 +271,9 @@ def main() -> int:
         raise RuntimeError("pack.toml does not match generated index.toml")
     entries = tomllib.loads(index.read_text(encoding="utf-8"))["files"]
     indexed = {item["file"] for item in entries}
-    expected = set(game_files) | gas_paths | openloader_paths | override_paths | {
+    expected = set(game_files) | gas_paths | override_paths | {
         f"mods/{p.name}" for p in active_mods
-    } | {f"resourcepacks/{p.name}" for p in resources} | {
-        f"resourcepacks/{filename}" for _, filename in local_resource_files
-    }
+    } | {f"resourcepacks/{p.name}" for p in resources}
     if indexed != expected:
         raise RuntimeError(
             f"index mismatch: missing={sorted(expected - indexed)[:15]}, "
@@ -312,11 +293,9 @@ def main() -> int:
         "excluded_mods": len(disabled),
         "distribution_excluded_mods": sorted(distribution_excluded),
         "resourcepacks_by_metadata": len(resources),
-        "local_resourcepacks": len(local_resource_files),
-        "openloader_required_resourcepacks": len(openloader_files),
+        "openloader_required_resourcepacks": len(required_paths),
         "openloader_migrated_datapack_files": len(gas_paths),
-        "complete": (len(local_resource_files) == len(local_resources)
-                     and len(openloader_files) == len(openloader_required)),
+        "complete": len(required_paths) == len(openloader_required),
         "index_sha256": expected_hash,
     }
     (destination.parent / f"{destination.name}.report.json").write_text(

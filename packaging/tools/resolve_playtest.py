@@ -1,8 +1,8 @@
-"""Derive the playtest catalog from remote release branch heads.
+"""Resolve named playtest tags and mutable release-family branch heads.
 
-Branch names `release/pt-X.Y.Z` are the catalog identities. The highest
-numeric version is the current auto-update channel. Hotfix commits update the
-revision of an existing entry without adding a version.
+Tags `pt-X.Y.Z` identify named releases. Branches `release/pt-X.Y` carry
+hotfixes for a family. A family's latest tag uses its branch head as the
+deployed revision; earlier tags remain historical snapshots.
 """
 
 from __future__ import annotations
@@ -15,37 +15,60 @@ import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[2]
-BRANCH = re.compile(r"^refs/remotes/origin/release/pt-(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$")
+BRANCH = re.compile(r"^refs/remotes/origin/release/pt-(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$")
+TAG = re.compile(r"^pt-(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$")
+
+
+def git(*args: str) -> str:
+    return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
-    result = subprocess.check_output(
-        ["git", "for-each-ref", "--format=%(refname) %(objectname)",
-         "refs/remotes/origin/release/"], cwd=ROOT, text=True
-    )
-    releases = []
-    for line in result.splitlines():
+
+    branches: dict[tuple[int, int], tuple[str, str]] = {}
+    for line in git("for-each-ref", "--format=%(refname) %(objectname)",
+                    "refs/remotes/origin/release/").splitlines():
         ref, revision = line.split(" ", 1)
         match = BRANCH.fullmatch(ref)
+        if match:
+            branches[tuple(map(int, match.groups()))] = (
+                ref.removeprefix("refs/remotes/origin/"), revision)
+
+    tagged: dict[tuple[int, int], list[tuple[tuple[int, int, int], str, str]]] = {}
+    for name in git("for-each-ref", "--format=%(refname:short)", "refs/tags/pt-").splitlines():
+        match = TAG.fullmatch(name)
         if not match:
             continue
-        if not re.fullmatch(r"[0-9a-f]{40}", revision):
-            parser.error(f"invalid revision for {ref}")
-        parts = tuple(int(item) for item in match.groups())
-        releases.append((parts, {"version": "pt-" + ".".join(match.groups()),
-                                 "revision": revision,
-                                 "branch": ref.removeprefix("refs/remotes/origin/")}))
+        parts = tuple(map(int, match.groups()))
+        tagged.setdefault(parts[:2], []).append((parts, name, git("rev-list", "-n", "1", name)))
+
+    releases = []
+    for family, (branch, head) in branches.items():
+        family_tags = sorted(tagged.pop(family, []), reverse=True)
+        if not family_tags:
+            parser.error(f"release family has no named tag: {branch}")
+        for index, (parts, name, tag_revision) in enumerate(family_tags):
+            if subprocess.run(["git", "merge-base", "--is-ancestor", tag_revision, head],
+                              cwd=ROOT, check=False).returncode != 0:
+                parser.error(f"tag {name} is not reachable from {branch}")
+            releases.append((parts, {"version": name,
+                                     "revision": head if index == 0 else tag_revision,
+                                     "tagRevision": tag_revision,
+                                     "branch": branch}))
+    if tagged:
+        parser.error(f"named tags have no release family branch: {sorted(tagged)}")
     if not releases:
-        parser.error("no remote release/pt-X.Y.Z branches found")
+        parser.error("no release/pt-X.Y branches with pt-X.Y.Z tags found")
     releases.sort(key=lambda item: item[0], reverse=True)
     catalog = {"schema": 1, "active": releases[0][1]["version"],
                "releases": [item[1] for item in releases]}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(catalog, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"active": catalog["active"], "revision": releases[0][1]["revision"],
+    print(json.dumps({"active": catalog["active"],
+                      "revision": releases[0][1]["revision"],
                       "count": len(releases)}))
 
 

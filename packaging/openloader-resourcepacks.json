@@ -1,14 +1,4 @@
 {
-  "resourcepacks": [
-    {
-      "filename": "AE2 TexturesBackport v0.7a.zip",
-      "sha256": "9bf564157bc5b380fe195b7bf1ffac2abd8636a5fab1ffa576d0e9071f12a04f"
-    },
-    {
-      "filename": "Suren FTB Quests 1.0.1 1.15-1.16.1.zip",
-      "sha256": "33212e06a461a814758553fad406d87fa1a84cd70676d32075d4ba6704885afe"
-    }
-  ],
   "openloader_required": [
     {
       "filename": "AETexturesBackport1.20-1.1.zip",

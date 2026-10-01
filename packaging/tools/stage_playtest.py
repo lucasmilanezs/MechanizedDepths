@@ -33,6 +33,8 @@ def main() -> None:
             parser.error(f"invalid playtest version: {item['version']}")
         if not re.fullmatch(r"[0-9a-f]{40}", item["revision"]):
             parser.error(f"invalid revision for {item['version']}")
+        if not re.fullmatch(r"[0-9a-f]{40}", item["tagRevision"]):
+            parser.error(f"invalid tag revision for {item['version']}")
     report = json.loads(args.report.read_text(encoding="utf-8"))
     current = items[0]
     if report["revision"] != current["revision"] or not report["complete"]:
@@ -57,6 +59,7 @@ def main() -> None:
               "packwizVersion": report["version"],
               "indexSHA256": report["index_sha256"],
               "releases": [{"version": item["version"], "revision": item["revision"],
+                            "tagRevision": item["tagRevision"],
                             "current": item["version"] == releases["active"]}
                            for item in items]}
     (args.output / "catalog.json").write_text(
