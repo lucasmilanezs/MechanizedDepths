@@ -1,0 +1,16 @@
+name = "Create Heat JS"
+filename = "create_heat_js-1.20.1-0.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4d199351d6c21453428a49904566889007eb2d7c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5782180
+project-id = 1034948
+
+[option]
+optional = true

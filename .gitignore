@@ -18,7 +18,7 @@ logs/
 crash-reports/
 journeymap/
 config/voicechat/
-options.txt
+/options.txt
 servers.dat
 usercache.json
 session.lock
@@ -31,7 +31,7 @@ natives/
 runtime/
 versions/
 libraries/
-resourcepacks/
+/resourcepacks/
 shaderpacks/
 
 # Arquivos de perfil gerados pelo CurseForge/Prism/ATLauncher
@@ -63,7 +63,7 @@ export/
 /workflow/
 /.venv/
 # Ignorar mods e bibliotecas locais
-mods/
+/mods/
 .profileImage/
 /screenshots/
 
@@ -97,12 +97,24 @@ node_modules/
 lib
 AGENTS.md
 
-# Estado exclusivamente local; padrões ancorados na raiz do repositório.
-# Não use padrões amplos sob config/: o restante da pasta contém conteúdo do pack.
+# Local-only state; these patterns are anchored at the repository root.
+# Avoid broad config/ patterns because the rest of that tree is pack content.
 /config/embeddium-options.json
 /config/jei/recipe-category-sort-order.ini
 /config/worldedit/worldedit.properties
 /config/openloader/data/mechanized_materials.zip
+# Official ZIPs are copied here locally and injected by the build from /resourcepacks/.
+/config/openloader/resources/AETexturesBackport1.20-1.1.zip
+/config/openloader/resources/Suren FTB Quests 1.0.1 1.20-1.20.1.zip
 /local/
-/kubejs/debug/
 /minecraftinstance.json
+
+# Local instance state and generated pack builds.
+/config/jei/world/
+/config/fancymenu/options.txt
+/config/drippyloadingscreen/options.txt
+/user-prefs.json
+/fancymenu_data/last_world.fmdata
+/builds/packwiz/
+__pycache__/
+*.pyc

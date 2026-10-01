@@ -1,0 +1,13 @@
+name = "Tetra Sight"
+filename = "tetra_sight-0.0.1.beta.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "35e89c7e833c9893cabc9bc79bda78f537414861"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6620884
+project-id = 1281219

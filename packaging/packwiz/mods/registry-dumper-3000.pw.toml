@@ -1,0 +1,16 @@
+name = "Registry Dumper 3000"
+filename = "registry_dumper_3000-forge-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f2175181b4629ab5cb42195283ec632c0213d49a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7212334
+project-id = 1383086
+
+[option]
+optional = true

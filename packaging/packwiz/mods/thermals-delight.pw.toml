@@ -1,0 +1,13 @@
+name = "Thermal's Delight"
+filename = "Thermal's Delight 1.20.1 R.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "88a9369009688f8a886fa1899b5b1a7f53513584"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5111215
+project-id = 975247

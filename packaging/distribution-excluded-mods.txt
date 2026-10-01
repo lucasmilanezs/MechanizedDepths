@@ -1,0 +1,3 @@
+# Present and active in the development instance; omitted from distribution.
+# Its sole effective datapack is copied into OpenLoader by build_pack.py.
+globalpacks.pw.toml

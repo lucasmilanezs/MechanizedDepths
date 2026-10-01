@@ -1,0 +1,13 @@
+name = "Better Quests UI"
+filename = "FTB-Vanilla-Like-1.0.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d326c6d675ada322040fc7ced5e4b5a57537befe"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5049507
+project-id = 952626

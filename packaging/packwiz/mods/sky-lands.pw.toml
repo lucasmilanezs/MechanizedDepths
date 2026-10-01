@@ -1,0 +1,16 @@
+name = "Sky Lands"
+filename = "SkyLands-0.6.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f8b0d9148e658c4dc6508d8e15fef97886a28740"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7369271
+project-id = 967045
+
+[option]
+optional = true

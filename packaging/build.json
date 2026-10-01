@@ -1,0 +1,26 @@
+{
+  "curseforge_profile_image": "profileImage/discord_logo_final.png",
+  "include": [
+    "config/",
+    "defaultconfigs/",
+    "kubejs/",
+    "FTBLang/FTB-Quests-Localization-Resourcepack.zip",
+    "panoramas/",
+    "schematics/",
+    "scripts/"
+  ],
+  "exclude": [
+    "config/almostunified/debug.json",
+    "config/jei/jei-debug.ini",
+    "config/jei/world/",
+    "config/embeddium-options.json",
+    "config/jei/recipe-category-sort-order.ini",
+    "config/worldedit/worldedit.properties",
+    "config/fancymenu/options.txt",
+    "config/drippyloadingscreen/options.txt",
+    "config/global_packs.toml",
+    "FTBLang/backup/",
+    "FTBLang/config/",
+    "FTBLang/kubejs/"
+  ]
+}

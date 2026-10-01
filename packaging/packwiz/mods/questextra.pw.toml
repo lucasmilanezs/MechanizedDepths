@@ -1,0 +1,13 @@
+name = "QuestExtra"
+filename = "questextra-forge-0.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "805f4e0461d440d898db3efeb53e1d62550949ec"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7610663
+project-id = 1460023

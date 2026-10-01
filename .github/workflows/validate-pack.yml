@@ -1,0 +1,31 @@
+name: Validate pack source
+
+on:
+  pull_request:
+  push:
+    branches:
+      - develop
+      - main
+      - 'release/**'
+
+permissions:
+  contents: read
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-go@v7
+        with:
+          go-version: '1.27.1'
+          cache: false
+      - name: Install pinned packwiz
+        run: go install github.com/packwiz/packwiz@v0.0.0-20260906154125-ef87d964f8cb
+      - name: Validate tracked pack source
+        env:
+          BUILD_VERSION: ci-${{ github.sha }}
+        run: python packaging/tools/build_pack.py --version "$BUILD_VERSION" --require-clean --packwiz "$(go env GOPATH)/bin/packwiz"

@@ -1,0 +1,14 @@
+# Present as .jar.disabled in the development instance at migration time.
+# These metadata files are retained for audit but excluded from builds.
+create-heat-js.pw.toml
+deep-resonance.pw.toml
+emi.pw.toml
+jei-enhancements.pw.toml
+just-enough-mekanism-multiblocks.pw.toml
+mte-more-tetra-effects.pw.toml
+multiblocked2.pw.toml
+registry-dumper-3000.pw.toml
+sky-lands.pw.toml
+tetra-booster-pack.pw.toml
+tetracelium.pw.toml
+tetranomicon.pw.toml

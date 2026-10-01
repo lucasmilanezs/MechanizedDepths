@@ -1,0 +1,13 @@
+name = "Vanity: Core"
+filename = "vanity-forge-2.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "22c25ebe91fd544f5d87558c132918bdacd2cfc8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5174810
+project-id = 548155

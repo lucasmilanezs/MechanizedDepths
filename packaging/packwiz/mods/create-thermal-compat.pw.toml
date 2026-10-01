@@ -1,0 +1,13 @@
+name = "Create Thermal Compat"
+filename = "create_thermal-1.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fb421d0ef39c8244afcb6cba1b3d8f51635aa150"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5561483
+project-id = 1070007

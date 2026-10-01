@@ -1,0 +1,80 @@
+name: Publish playtest channel
+
+on:
+  push:
+    branches:
+      - 'release/pt-*'
+concurrency:
+  group: mechanized-depths-playtest-pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository and release branches
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Resolve named versions and current release
+        id: release
+        shell: bash
+        run: |
+          git fetch origin '+refs/heads/release/pt-*:refs/remotes/origin/release/pt-*'
+          python packaging/tools/resolve_playtest.py --output builds/release-heads.json
+          echo "version=$(python -c 'import json; print(json.load(open("builds/release-heads.json"))["active"])')" >> "$GITHUB_OUTPUT"
+          echo "revision=$(python -c 'import json; print(json.load(open("builds/release-heads.json"))["releases"][0]["revision"])')" >> "$GITHUB_OUTPUT"
+      - name: Check out current named release
+        shell: bash
+        env:
+          RELEASE_SHA: ${{ steps.release.outputs.revision }}
+        run: git checkout --detach "$RELEASE_SHA"
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-go@v7
+        with:
+          go-version: '1.27.1'
+          cache: false
+      - name: Install pinned packwiz
+        run: go install github.com/packwiz/packwiz@v0.0.0-20260906154125-ef87d964f8cb
+      - name: Fetch hash-locked resourcepacks
+        env:
+          INPUTS_URL: https://github.com/lucasmilanezs/MechanizedDepths/releases/download/pack-inputs-v1
+        run: python packaging/tools/fetch_resourcepacks.py --base-url "$INPUTS_URL" --output "$RUNNER_TEMP/resourcepacks"
+      - name: Build current playtest pack
+        shell: bash
+        env:
+          RELEASE_VERSION: ${{ steps.release.outputs.version }}
+          RELEASE_SHA: ${{ steps.release.outputs.revision }}
+        run: |
+          label="${RELEASE_VERSION}+g${RELEASE_SHA:0:12}"
+          python packaging/tools/build_pack.py --version "$label" --require-clean --require-complete --resourcepacks-dir "$RUNNER_TEMP/resourcepacks" --packwiz "$(go env GOPATH)/bin/packwiz"
+          python packaging/tools/stage_playtest.py \
+            --pack-dir "builds/packwiz/${label}-${RELEASE_SHA:0:12}" \
+            --report "builds/packwiz/${label}-${RELEASE_SHA:0:12}.report.json" \
+            --releases builds/release-heads.json \
+            --output builds/pages-site
+      - uses: actions/configure-pages@v5
+      - name: Upload Pages site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: builds/pages-site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages site
+        id: deployment
+        uses: actions/deploy-pages@v4

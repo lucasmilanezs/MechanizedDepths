@@ -1,0 +1,13 @@
+name = "Mechanized Depths"
+author = "Zambim"
+version = "@VERSION@"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "@INDEX_HASH@"
+
+[versions]
+forge = "47.4.0"
+minecraft = "1.20.1"

@@ -1,0 +1,13 @@
+name = "AppliedEnergistics2-TexturesBackport"
+filename = "AETexturesBackport1.20-1.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c9941a251ce0db6065d4413acf8f4d0efdf4b132"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6797920
+project-id = 1156216

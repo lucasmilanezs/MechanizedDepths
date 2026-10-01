@@ -1,0 +1,13 @@
+name = "Tetra Holo GUI Compat"
+filename = "tetra_gui_compat-1.20.1-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8164aadf99e6ca853501700e3d318cee5d2d9fda"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7038397
+project-id = 1306774

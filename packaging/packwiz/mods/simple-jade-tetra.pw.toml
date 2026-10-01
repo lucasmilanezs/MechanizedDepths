@@ -1,0 +1,13 @@
+name = "Simple Jade Tetra"
+filename = "Simple Jade Tetra-6.9.0-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0a5466999779209849272bf2594f5508c6ec8878"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7131798
+project-id = 1369375

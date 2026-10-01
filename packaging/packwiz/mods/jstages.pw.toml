@@ -1,0 +1,13 @@
+name = "JStages"
+filename = "JStages-1.20.1-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "40041d317feffe759ccaa7ff4ef762e0385ab8fb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6797963
+project-id = 1300549

@@ -1,0 +1,13 @@
+name = "Haven: Quest Theme"
+filename = "HavenQuestingTheme-1.21.1-1.0.0.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "81e924cf87e54dbb01fe035501a6872934f6f0f0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6105207
+project-id = 964522

@@ -1,0 +1,13 @@
+name = "Immersive Industry (1.16/1.20)"
+filename = "ImmersiveIndustry-1.20.1-0.2.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b66280cebb97cada77bd2f94bead864bf492e6a9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7530803
+project-id = 542053

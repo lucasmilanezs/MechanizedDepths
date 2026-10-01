@@ -1,0 +1,16 @@
+name = "[MTE]More Tetra Effects"
+filename = "more_tetra_effect-2.2.8-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "92d2fdefcef8bcd3e00201337b846a44ad0009b9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7709952
+project-id = 1376995
+
+[option]
+optional = true

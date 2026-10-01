@@ -1,0 +1,13 @@
+name = "KubeJS Nature's Aura"
+filename = "kubejs_naturesaura-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d18b5d84a19b2f0be65303452ff1478e1389dae2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7392652
+project-id = 1013074

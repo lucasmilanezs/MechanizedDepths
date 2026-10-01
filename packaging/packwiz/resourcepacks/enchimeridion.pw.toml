@@ -1,0 +1,13 @@
+name = "Enchimeridion: FTB Quest Book"
+filename = "Enchimeridion.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1fd644917056e75af9c009f8e0048500ae399b9d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5272417
+project-id = 1005397

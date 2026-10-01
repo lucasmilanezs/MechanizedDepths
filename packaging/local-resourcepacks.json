@@ -1,0 +1,24 @@
+{
+  "resourcepacks": [
+    {
+      "filename": "AE2 TexturesBackport v0.7a.zip",
+      "sha256": "9bf564157bc5b380fe195b7bf1ffac2abd8636a5fab1ffa576d0e9071f12a04f"
+    },
+    {
+      "filename": "Suren FTB Quests 1.0.1 1.15-1.16.1.zip",
+      "sha256": "33212e06a461a814758553fad406d87fa1a84cd70676d32075d4ba6704885afe"
+    }
+  ],
+  "openloader_required": [
+    {
+      "filename": "AETexturesBackport1.20-1.1.zip",
+      "sha256": "6bf31dc7e5328986a9614ca9089cc6d869bd15d43a47bf8af426615d3d5b6c74",
+      "metadata": "ae2-texturesbackport.pw.toml"
+    },
+    {
+      "filename": "Suren FTB Quests 1.0.1 1.20-1.20.1.zip",
+      "sha256": "82b042f5324f7c0b6ce17b3dcab0d433fb8fa9c7f25ea4eb31349b74599c4a0b",
+      "metadata": "surens-ftb-quests.pw.toml"
+    }
+  ]
+}
