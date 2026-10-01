@@ -447,7 +447,7 @@
 				"5EC81561779BCF73"
 			]
 			description: [
-				"  The Natural Altar is your first method of channeling ambient aura into tangible transformation. Place items upon it to convert them using the energy suspended in the world around you. But be warned — each ritual &4drains&r the surrounding aura. Without ways to replenish it, the land may react in unpleasant and aggressive ways."
+				"  The Natural Altar is your first method of channeling ambient aura into tangible transformation. Place items upon it to convert them using the energy suspended in the world around you. But be warned: each ritual &4drains&r the surrounding aura. Without ways to replenish it, the land may react in unpleasant and aggressive ways."
 				""
 				"  To simplify construction, open the Book of Natural Aura, find the altar entry, and click the small eye near the structure. This will project a guide into the world so you can build the multiblock accurately."
 				""
@@ -1195,7 +1195,29 @@
 		}
 		{
 			dependencies: ["042EC538643F435A"]
+			description: [
+				"  The &6Smeltery&r is where the lies you just sorted out of the ore stop mattering. It melts &aseveral items at once&r, keeps every resulting fluid in one shared pool, and pours them into casts. Yeah, beatifull and classic. Still, assembly is your job, and so is the brickwork. &6Grout&r (clay, sand, gravel) cooked in that furnace you just built becomes &6Seared Brick&r, and four of those make a block. With all her parts done, now let's talk about how to build your first sweet sweet smeltery, shall we?"
+				""
+				"  &lThe shell.&r Think of it as a pit with manners. A seared floor under the interior, a ring of seared walls around it, as many layers high as you like. The inside stays &cempty&r, the top stays open, the shape stays a rectangle. Corners and the floor under the walls are optional, which is why everyone overbuilds them anyway. Interior ranges from &a1×1×1&r to &a14×14×64&r. Seared glass is fine in walls, &cnever in the floor&r."
+				""
+				"  &lThe parts.&r Every one of them goes in a wall and counts as wall."
+				""
+				"    &6Controller&r: The heart. Always faces outward, the only part that actually talks to you. Holds the items, shows fuel and fluids. &aThe bottom fluid is the one that pours&r; click another in the GUI to send it down. "
+				""
+				"    &6Fuel Tank&r: Liquid fuel only. &6Lava&r reaches &a1000°C&r, plenty for early metals. &6Blazing Blood&r reaches &a1500°C&r for whatever lava refuses to touch."
+				""
+				"    &6Drain&r: The fluid port. Buckets and pipes go here."
+				""
+				"    &6Faucet&r: Always on the drain's outer face, &6Casting Table&r directly under it. Right-click the faucet or give it a redstone pulse to see the magic of casting finally happening."
+				""
+				"  &lMath n' stuff.&r Each interior block is &aone item slot&r and &a12 ingots&r worth. Fuel cost scales with walls and floor rather than volume, so a compact box beats a pancake or a chimney. Ores melt into &a12 nuggets&r each (yeah, your ores now yield 30% more!). Metals that can alloy &cwill&r, on their own, as soon as both are molten, you liking it or not. Anything alive standing inside melts too. Yep, &4you&r included."
+				""
+				"  &lCasts.&r The table needs to know what you want, else you have just a glorified lava pit. Put any stone part you wish on the empty casting table and pour &a1 ingot of gold&r over it: reusable cast, part sacrificed. Or run &6sand&r through the Part Builder on the same pattern for &a4 single-use sand casts&r. "
+				""
+				"&7&o— Ahhh, my good old friend. Love ya gall.&r&r"
+			]
 			id: "3761F44611198DF6"
+			min_width: 300
 			shape: "gear"
 			tasks: [
 				{
@@ -1230,12 +1252,27 @@
 					type: "item"
 				}
 			]
+			title: "The Smeltery Has Standards"
 			x: -3.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["3761F44611198DF6"]
+			description: [
+				"  Every edit at the &dTetra Workbench&r costs &6tool level&r. Swapping a head, a handle or a binding is a schematic, each schematic names the level it wants, and a hammer in your inventory has to pay it. Too weak, and the option sits there in red, judging you."
+				""
+				"  Hammers are tools too. Better heads need a better hammer to install, and that hammer needs better heads, which need... yes. The loop only opens upward. This also applies for every other tool. Cloth, leather, plants and different material types will demmand their own tool level, but as metals are the juicyest materials overall, your hammer level is the most important tool you can own to make other tools."
+				""
+				"  How a hammer earns its level, you ask? The head material sets the base. Two &amatching heads&r add &a+1&r, which is why your twin flint hammer outranks a lopsided one. After enough use Tetra offers a &6hone&r, and one of the choices is another &a+1&r."
+				""
+				"  &lThis rung.&r An &6Iron hammer head&r only asks for a &aWood&r-level hammer, so the flint one installs it. A matched iron pair reaches &aStone&r, which is exactly what the next rung demands. Each head costs &a8 ingots&r from the smeltery, so sixteen for the pair, and keep the old hammer in your pocket while you rebuild the new one."
+				""
+				"{\"text\":\"  ▶ Hammer Progression (JEI)\",\"color\":\"aqua\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/page mechanized:hammer_progression\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Open the full hammer ladder in JEI\"}}"
+				""
+				"&7&o— You need a hammer to make a hammer. Blacksmiths have complained about this for three thousand years. Now it's my turn.&r&r"
+			]
 			id: "6482FDCBA8DD079A"
+			min_width: 250
 			tasks: [{
 				id: "2195586E578431E9"
 				item: {
@@ -1247,11 +1284,28 @@
 				}
 				type: "item"
 			}]
+			title: "Hammers All the Way Up"
 			x: -1.5d
 			y: -0.5d
 		}
 		{
-			dependencies: ["6482FDCBA8DD079A"]
+			dependencies: [
+				"6482FDCBA8DD079A"
+				"3720B8882392764A"
+			]
+			description: [
+				"  &bInfused Iron&r is the first head that wants a real hammer: &aStone&r level to install, so finish the iron pair first. Two infused heads put you at &aIron&r level."
+				""
+				"  Enjoy it. That is as high as anything you can hold for now. "
+				""
+				"  &fSteel&r heads need &cNetherite&r level to install, and no hand hammer gets there. That is the &6Forge Hammer&r's job, bolted to a Forged Workbench. Steel also comes &carrested&r, so a steel hammer never hones. &8Netherite&r heads go further and demand a &dfully upgraded&r Forge Hammer."
+				""
+				"  The ladder is closed: &aonly these materials make hammer heads&r. Bronze, Invar and friends still become picks, axes and blades, checked against the same hammer scale, but they never climb it."
+				""
+				"{\"text\":\"  ▶ Hammer Progression (JEI)\",\"color\":\"aqua\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/page mechanized:hammer_progression\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Open the full hammer ladder in JEI\"}}"
+				""
+				"&7&o— From here on, the hammer is furniture.&r&r"
+			]
 			id: "67058DFE4A8962AD"
 			tasks: [{
 				id: "4FDDF62F4FE2963C"
@@ -1264,7 +1318,26 @@
 				}
 				type: "item"
 			}]
+			title: "The Last Hammer You Can Hold"
 			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["67058DFE4A8962AD"]
+			id: "5646EA02BFB54842"
+			tasks: [
+				{
+					id: "62F8E9521407DA9F"
+					item: "tetra:forged_workbench"
+					type: "item"
+				}
+				{
+					id: "4C5226411F73F181"
+					item: "tetra:hammer_base"
+					type: "item"
+				}
+			]
+			x: 1.0d
 			y: -0.5d
 		}
 	]
