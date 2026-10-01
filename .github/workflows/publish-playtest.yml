@@ -16,6 +16,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      revision: ${{ steps.release.outputs.revision }}
     steps:
       - name: Check out repository, release families, and named tags
         uses: actions/checkout@v6
@@ -76,3 +78,46 @@ jobs:
       - name: Deploy Pages site
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify public playtest channel
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          RELEASE_SHA: ${{ needs.build.outputs.revision }}
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import PurePosixPath
+          import time
+          import tomllib
+          from urllib.parse import urljoin
+          from urllib.request import urlopen
+
+          base = os.environ["PAGE_URL"].rstrip("/") + "/"
+          expected_revision = os.environ["RELEASE_SHA"]
+
+          def fetch(path):
+              with urlopen(urljoin(base, path), timeout=20) as response:
+                  return response.read()
+
+          for attempt in range(12):
+              try:
+                  catalog = json.loads(fetch("catalog.json"))
+                  if catalog["releases"][0]["revision"] != expected_revision:
+                      raise RuntimeError("catalog still points to an older revision")
+                  index = fetch("playtest/index.toml")
+                  if hashlib.sha256(index).hexdigest() != catalog["indexSHA256"]:
+                      raise RuntimeError("public index hash differs from catalog")
+                  paths = [item["file"] for item in tomllib.loads(index.decode())["files"]]
+                  if any(part.startswith(".") for path in paths
+                         for part in PurePosixPath(path).parts):
+                      raise RuntimeError("packwiz index contains hidden URLs")
+                  fetch("playtest/kubejs/probe/user/directory.keep")
+                  print(f"Verified {catalog['active']} at {expected_revision}")
+                  break
+              except Exception as error:
+                  if attempt == 11:
+                      raise
+                  print(f"Waiting for Pages propagation: {error}", flush=True)
+                  time.sleep(10)
+          PY
