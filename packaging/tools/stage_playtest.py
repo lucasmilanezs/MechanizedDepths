@@ -53,7 +53,6 @@ def main() -> None:
 
     args.output.mkdir(parents=True)
     shutil.copytree(args.pack_dir, args.output / "playtest")
-    (args.output / ".nojekyll").write_text("", encoding="utf-8")
     public = {"schema": 1, "active": releases["active"],
               "pack": "playtest/pack.toml",
               "packwizVersion": report["version"],

@@ -102,6 +102,7 @@ AGENTS.md
 /config/embeddium-options.json
 /config/jei/recipe-category-sort-order.ini
 /config/worldedit/worldedit.properties
+/config/worldedit/.archive-unpack/
 /config/openloader/data/mechanized_materials.zip
 /local/
 /minecraftinstance.json

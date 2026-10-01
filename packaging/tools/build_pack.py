@@ -39,6 +39,14 @@ def selected(path: str, includes: list[str], excludes: list[str]) -> bool:
     )
 
 
+def distribution_path(path: str) -> str:
+    # Pages does not serve dotfiles; keep the source marker and its directory,
+    # but give the distributed marker a public filename.
+    if path.startswith(("kubejs/debug/", "kubejs/probe/")) and path.endswith("/.keep"):
+        return path.removesuffix(".keep") + "directory.keep"
+    return path
+
+
 def copy_file(source: Path, dest: Path) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, dest)
@@ -120,6 +128,9 @@ def main() -> int:
     missing = [p for p in game_files if not (ROOT / p).is_file()]
     if missing:
         parser.error(f"selected tracked files are missing: {missing[:10]}")
+    distribution_files = {distribution_path(path) for path in game_files}
+    if len(distribution_files) != len(game_files):
+        parser.error("distribution marker collides with another game file")
 
     disabled = {
         line.strip()
@@ -207,7 +218,7 @@ def main() -> int:
         parser.error(f"output already exists: {destination}")
     destination.mkdir()
     for path in game_files:
-        copy_file(ROOT / path, destination / path)
+        copy_file(ROOT / path, destination / distribution_path(path))
     # The development instance still uses GlobalPacks. The distribution uses
     # OpenLoader only, so copy its one nonempty datapack into OpenLoader.
     gas_source = ROOT / "datapacks/kubejs_gases"
@@ -243,8 +254,8 @@ def main() -> int:
         pattern = rf"(?m)^B:{key}\s*=\s*'{value}';\s*$"
         if len(re.findall(pattern, fancy_text)) != 1:
             parser.error(f"distribution FancyMenu option must be {key}={value}")
-    if override_paths & set(game_files):
-        parser.error(f"packaging override collides with tracked game source: {sorted(override_paths & set(game_files))}")
+    if override_paths & distribution_files:
+        parser.error(f"packaging override collides with tracked game source: {sorted(override_paths & distribution_files)}")
     for source in build_overrides:
         copy_file(source, destination / source.relative_to(PACKAGING / "overrides"))
     for source in active_mods:
@@ -271,7 +282,7 @@ def main() -> int:
         raise RuntimeError("pack.toml does not match generated index.toml")
     entries = tomllib.loads(index.read_text(encoding="utf-8"))["files"]
     indexed = {item["file"] for item in entries}
-    expected = set(game_files) | gas_paths | override_paths | {
+    expected = distribution_files | gas_paths | override_paths | {
         f"mods/{p.name}" for p in active_mods
     } | {f"resourcepacks/{p.name}" for p in resources}
     if indexed != expected:

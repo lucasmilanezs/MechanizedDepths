@@ -61,7 +61,6 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: builds/pages-site
-          include-hidden-files: true
 
   deploy:
     needs: build

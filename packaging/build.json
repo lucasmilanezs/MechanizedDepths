@@ -16,11 +16,13 @@
     "config/embeddium-options.json",
     "config/jei/recipe-category-sort-order.ini",
     "config/worldedit/worldedit.properties",
+    "config/worldedit/.archive-unpack/",
     "config/fancymenu/options.txt",
     "config/drippyloadingscreen/options.txt",
     "config/global_packs.toml",
     "FTBLang/backup/",
     "FTBLang/config/",
-    "FTBLang/kubejs/"
+    "FTBLang/kubejs/",
+    "kubejs/server_scripts/mod_specific/.mod_template/"
   ]
 }
