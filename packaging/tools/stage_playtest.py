@@ -69,14 +69,42 @@ def main() -> None:
         f'{" (current)" if item["current"] else ""}</li>'
         for item in public["releases"]
     )
+    manual_downloads = [
+        ("Create Thermal Compat", "https://www.curseforge.com/minecraft/mc-mods/create-thermal-compat/files/5561483"),
+        ("FTB Quest Localizer", "https://www.curseforge.com/minecraft/mc-mods/ftb-quest-localizer/files/7529230"),
+        ("Hexerei", "https://www.curseforge.com/minecraft/mc-mods/hexerei/files/6314111"),
+        ("Tetra Sight", "https://www.curseforge.com/minecraft/mc-mods/tetra-sight/files/6620884"),
+        ("Vital Delight", "https://www.curseforge.com/minecraft/mc-mods/vital-delight/files/6759241"),
+        ("Vital Herbs", "https://www.curseforge.com/minecraft/mc-mods/vital-herbs/files/6774483"),
+        ("Suren's FTB Quests", "https://www.curseforge.com/minecraft/texture-packs/surens-ftb-quests/files/6385068"),
+    ]
+    manual_links = "".join(
+        f'<li><a href="{escape(url)}">{escape(name)}</a></li>'
+        for name, url in manual_downloads
+    )
+    command = ('"$INST_JAVA" -jar packwiz-installer-bootstrap.jar '
+               'https://lucasmilanezs.github.io/MechanizedDepths/playtest/pack.toml')
     page = ("<!doctype html><html lang=\"en-US\"><meta charset=\"utf-8\">"
             "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
             "<title>Mechanized Depths — Playtest</title><main>"
             "<h1>Mechanized Depths — Playtest</h1>"
-            "<p>The current channel updates before each game launch through "
-            "packwiz-installer in the Prism profile.</p>"
-            "<p>Named versions:</p><ol>" + rows + "</ol>"
-            "<p><a href=\"catalog.json\">JSON catalog</a></p></main></html>\n")
+            "<p>The current packwiz channel updates before each game launch.</p>"
+            "<h2>Named versions</h2><ol>" + rows + "</ol>"
+            "<h2>Prism setup</h2><ol>"
+            "<li>Install <a href=\"https://prismlauncher.org/download/\">Prism Launcher</a> "
+            "and create a bare Minecraft 1.20.1 instance with Forge 47.4.0.</li>"
+            "<li>Put the official <a href=\"https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar\">"
+            "packwiz-installer-bootstrap.jar</a> in that instance's Minecraft folder.</li>"
+            "<li>In Edit Instance → Settings → Custom Commands, enable custom commands "
+            "and set this pre-launch command: <code>" + escape(command) + "</code></li>"
+            "<li>Launch and complete any manual CurseForge downloads requested by "
+            "the installer. Save each file at the exact path it specifies.</li></ol>"
+            "<p>The current first install requires seven manual downloads because "
+            "CurseForge blocks direct API access for these files:</p><ul>" + manual_links + "</ul>"
+            "<p><a href=\"playtest/pack.toml\">Current pack.toml</a> · "
+            "<a href=\"catalog.json\">JSON catalog</a> · "
+            "<a href=\"https://packwiz.infra.link/tutorials/installing/packwiz-installer/\">"
+            "Installer guide</a></p></main></html>\n")
     (args.output / "index.html").write_text(page, encoding="utf-8")
     print(json.dumps({"site": str(args.output), "active": releases["active"],
                       "revision": current["revision"], "releases": len(items)}))
