@@ -4,11 +4,13 @@ from __future__ import annotations
 
 import argparse
 from html import escape
+import hashlib
 import json
 from pathlib import Path
 import re
 import shutil
 import tomllib
+import zipfile
 
 
 def main() -> None:
@@ -17,6 +19,7 @@ def main() -> None:
     parser.add_argument("--report", required=True, type=Path)
     parser.add_argument("--releases", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--prism-profile", required=True, type=Path)
     parser.add_argument("--allow-dirty-preview", action="store_true")
     args = parser.parse_args()
     if args.output.exists():
@@ -50,13 +53,37 @@ def main() -> None:
         parser.error("pack.toml version differs from build report")
     if not (args.pack_dir / "index.toml").is_file():
         parser.error("packwiz index is missing")
+    prism = json.loads(args.prism_profile.read_text(encoding="utf-8"))
+    if (not re.fullmatch(r"v[0-9]+", prism["version"])
+            or prism["path"] != (
+                f"packaging/prism-profiles/{prism['version']}/"
+                f"MechanizedDepths-Prism-{prism['version']}.zip")
+            or not re.fullmatch(r"[0-9a-f]{64}", prism["sha256"])):
+        parser.error("invalid pinned Prism profile metadata")
+    profile_source = Path(__file__).resolve().parents[2] / prism["path"]
+    if not profile_source.is_file():
+        parser.error("pinned Prism profile ZIP is missing")
+    if hashlib.sha256(profile_source.read_bytes()).hexdigest() != prism["sha256"]:
+        parser.error("pinned Prism profile ZIP differs from its SHA-256 lock")
+    with zipfile.ZipFile(profile_source) as profile:
+        if profile.testzip() is not None:
+            parser.error("pinned Prism profile ZIP failed CRC validation")
+        manifest = json.loads(profile.read("profile-manifest.json"))
+        if manifest["profileVersion"] != prism["version"]:
+            parser.error("pinned Prism profile version differs from its metadata")
+    profile_url = f"profiles/{profile_source.name}"
 
     args.output.mkdir(parents=True)
     shutil.copytree(args.pack_dir, args.output / "playtest")
+    (args.output / "profiles").mkdir()
+    shutil.copyfile(profile_source, args.output / profile_url)
     public = {"schema": 1, "active": releases["active"],
               "pack": "playtest/pack.toml",
               "packwizVersion": report["version"],
               "indexSHA256": report["index_sha256"],
+              "prismProfile": profile_url,
+              "prismProfileVersion": prism["version"],
+              "prismProfileSHA256": prism["sha256"],
               "releases": [{"version": item["version"], "revision": item["revision"],
                             "tagRevision": item["tagRevision"],
                             "current": item["version"] == releases["active"]}
@@ -82,23 +109,21 @@ def main() -> None:
         f'<li><a href="{escape(url)}">{escape(name)}</a></li>'
         for name, url in manual_downloads
     )
-    command = ('"$INST_JAVA" -jar packwiz-installer-bootstrap.jar '
-               'https://lucasmilanezs.github.io/MechanizedDepths/playtest/pack.toml')
     page = ("<!doctype html><html lang=\"en-US\"><meta charset=\"utf-8\">"
             "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
             "<title>Mechanized Depths — Playtest</title><main>"
             "<h1>Mechanized Depths — Playtest</h1>"
-            "<p>The current packwiz channel updates before each game launch.</p>"
+            "<p>The preconfigured Prism profile follows the current playtest release channel.</p>"
             "<h2>Named versions</h2><ol>" + rows + "</ol>"
             "<h2>Prism setup</h2><ol>"
-            "<li>Install <a href=\"https://prismlauncher.org/download/\">Prism Launcher</a> "
-            "and create a bare Minecraft 1.20.1 instance with Forge 47.4.0.</li>"
-            "<li>Put the official <a href=\"https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar\">"
-            "packwiz-installer-bootstrap.jar</a> in that instance's Minecraft folder.</li>"
-            "<li>In Edit Instance → Settings → Custom Commands, enable custom commands "
-            "and set this pre-launch command: <code>" + escape(command) + "</code></li>"
-            "<li>Launch and complete any manual CurseForge downloads requested by "
-            "the installer. Save each file at the exact path it specifies.</li></ol>"
+            "<li>Install <a href=\"https://prismlauncher.org/download/\">Prism Launcher</a>.</li>"
+            "<li>Download the <a href=\"" + escape(profile_url) + "\">preconfigured Prism profile</a> "
+            "then use Add Instance → Import from ZIP.</li>"
+            "<li>Launch the game and complete the manual downloads requested for the files listed below. "
+            "Use the exact filenames and paths shown by the installer.</li></ol>"
+            "<p>After this initial setup, the profile checks for pack updates on every launch "
+            "and installs the latest playtest release automatically. No manual update steps are required "
+            "unless a future file also blocks automatic downloads.</p>"
             "<p>The current first install requires seven manual downloads because "
             "CurseForge blocks direct API access for these files:</p><ul>" + manual_links + "</ul>"
             "<p><a href=\"playtest/pack.toml\">Current pack.toml</a> · "

@@ -53,10 +53,18 @@ jobs:
         run: |
           label="${RELEASE_VERSION}+g${RELEASE_SHA:0:12}"
           python packaging/tools/build_pack.py --version "$label" --require-clean --packwiz "$(go env GOPATH)/bin/packwiz"
+      - name: Stage Pages site
+        shell: bash
+        env:
+          RELEASE_VERSION: ${{ steps.release.outputs.version }}
+          RELEASE_SHA: ${{ steps.release.outputs.revision }}
+        run: |
+          label="${RELEASE_VERSION}+g${RELEASE_SHA:0:12}"
           python packaging/tools/stage_playtest.py \
             --pack-dir "builds/packwiz/${label}-${RELEASE_SHA:0:12}" \
             --report "builds/packwiz/${label}-${RELEASE_SHA:0:12}.report.json" \
             --releases builds/release-heads.json \
+            --prism-profile packaging/prism-profile.json \
             --output builds/pages-site
       - uses: actions/configure-pages@v5
       - name: Upload Pages site
@@ -85,11 +93,13 @@ jobs:
         run: |
           python - <<'PY'
           import hashlib
+          import io
           import json
           import os
           from pathlib import PurePosixPath
           import time
           import tomllib
+          import zipfile
           from urllib.parse import urljoin
           from urllib.request import urlopen
 
@@ -108,6 +118,27 @@ jobs:
                   index = fetch("playtest/index.toml")
                   if hashlib.sha256(index).hexdigest() != catalog["indexSHA256"]:
                       raise RuntimeError("public index hash differs from catalog")
+                  profile_data = fetch(catalog["prismProfile"])
+                  if hashlib.sha256(profile_data).hexdigest() != catalog["prismProfileSHA256"]:
+                      raise RuntimeError("Prism profile hash differs from catalog")
+                  with zipfile.ZipFile(io.BytesIO(profile_data)) as profile:
+                      if profile.testzip() is not None:
+                          raise RuntimeError("downloaded Prism profile ZIP is corrupt")
+                      required = {"instance.cfg", "mmc-pack.json", "minecraft/packwiz-installer-bootstrap.jar"}
+                      if not required.issubset(profile.namelist()):
+                          raise RuntimeError("Prism profile is missing required import files")
+                      instance_cfg = profile.read("instance.cfg").decode()
+                      if ("packwiz-installer-bootstrap.jar" not in instance_cfg
+                              or "$INST_MC_DIR" not in instance_cfg or "-s client" not in instance_cfg):
+                          raise RuntimeError("Prism profile does not configure its Packwiz pre-launch command")
+                      if ("OverrideMemory=true" not in instance_cfg
+                              or "MinMemAlloc=1024" not in instance_cfg
+                              or "MaxMemAlloc=8192" not in instance_cfg):
+                          raise RuntimeError("Prism profile does not configure the playtest memory allocation")
+                      profile_manifest = json.loads(profile.read("profile-manifest.json"))
+                      if (profile_manifest["profileVersion"] != catalog["prismProfileVersion"]
+                              or profile_manifest["recommendedJavaMemoryMiB"] != 8192):
+                          raise RuntimeError("Prism profile metadata differs from the pinned profile")
                   paths = [item["file"] for item in tomllib.loads(index.decode())["files"]]
                   if any(part.startswith(".") for path in paths
                          for part in PurePosixPath(path).parts):
