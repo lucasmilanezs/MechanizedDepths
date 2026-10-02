@@ -52,7 +52,7 @@ jobs:
           RELEASE_SHA: ${{ steps.release.outputs.revision }}
         run: |
           label="${RELEASE_VERSION}+g${RELEASE_SHA:0:12}"
-          python packaging/tools/build_pack.py --version "$label" --require-clean --packwiz "$(go env GOPATH)/bin/packwiz"
+          python packaging/tools/build_pack.py --version "$label" --require-clean --export-curseforge --packwiz "$(go env GOPATH)/bin/packwiz"
       - name: Stage Pages site
         shell: bash
         env:
@@ -65,6 +65,7 @@ jobs:
             --report "builds/packwiz/${label}-${RELEASE_SHA:0:12}.report.json" \
             --releases builds/release-heads.json \
             --prism-profile packaging/prism-profile.json \
+            --curseforge-export "builds/packwiz/MechanizedDepths-${label}-CurseForge.zip" \
             --output builds/pages-site
       - uses: actions/configure-pages@v5
       - name: Upload Pages site
@@ -118,6 +119,17 @@ jobs:
                   index = fetch("playtest/index.toml")
                   if hashlib.sha256(index).hexdigest() != catalog["indexSHA256"]:
                       raise RuntimeError("public index hash differs from catalog")
+                  export_data = fetch(catalog["curseforgeExport"])
+                  if hashlib.sha256(export_data).hexdigest() != catalog["curseforgeExportSHA256"]:
+                      raise RuntimeError("CurseForge export hash differs from catalog")
+                  with zipfile.ZipFile(io.BytesIO(export_data)) as archive:
+                      if archive.testzip() is not None:
+                          raise RuntimeError("downloaded CurseForge ZIP is corrupt")
+                      manifest = json.loads(archive.read("manifest.json"))
+                      if (manifest["version"] != catalog["packwizVersion"]
+                              or manifest["version"] != catalog["curseforgeExportVersion"]
+                              or manifest["manifestType"] != "minecraftModpack"):
+                          raise RuntimeError("public CurseForge manifest differs from current pack")
                   profile_data = fetch(catalog["prismProfile"])
                   if hashlib.sha256(profile_data).hexdigest() != catalog["prismProfileSHA256"]:
                       raise RuntimeError("Prism profile hash differs from catalog")

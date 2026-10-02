@@ -20,6 +20,7 @@ def main() -> None:
     parser.add_argument("--releases", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--prism-profile", required=True, type=Path)
+    parser.add_argument("--curseforge-export", required=True, type=Path)
     parser.add_argument("--allow-dirty-preview", action="store_true")
     args = parser.parse_args()
     if args.output.exists():
@@ -73,10 +74,54 @@ def main() -> None:
             parser.error("pinned Prism profile version differs from its metadata")
     profile_url = f"profiles/{profile_source.name}"
 
+    # Both installation routes must describe the same built release.
+    with zipfile.ZipFile(args.curseforge_export) as archive:
+        if archive.testzip() is not None:
+            parser.error("CurseForge export failed CRC validation")
+        manifest = json.loads(archive.read("manifest.json"))
+        if (manifest["manifestType"] != "minecraftModpack"
+                or manifest["manifestVersion"] != 1
+                or manifest["version"] != report["version"]
+                or manifest["minecraft"]["version"] != pack["versions"]["minecraft"]
+                or manifest["minecraft"]["modLoaders"] != [
+                    {"id": "forge-" + pack["versions"]["forge"], "primary": True}]):
+            parser.error("CurseForge manifest differs from the current pack")
+        image = archive.read(manifest["image"])
+        if hashlib.sha256(image).hexdigest() != report["curseforge_profile_image_sha256"]:
+            parser.error("CurseForge profile image differs from build report")
+        override_root = manifest["overrides"] + "/"
+        indexed = tomllib.loads((args.pack_dir / "index.toml").read_text(encoding="utf-8"))["files"]
+        overrides = {item["file"] for item in indexed if not item.get("metafile", False)}
+        archived = {name.removeprefix(override_root) for name in archive.namelist()
+                    if name.startswith(override_root) and not name.endswith("/")}
+        if archived != overrides:
+            parser.error("CurseForge override paths differ from packwiz source")
+        for path in overrides:
+            if archive.read(override_root + path) != (args.pack_dir / path).read_bytes():
+                parser.error(f"CurseForge override differs from packwiz source: {path}")
+        expected_files = set()
+        for entry in indexed:
+            if not entry.get("metafile", False):
+                continue
+            metadata = tomllib.loads((args.pack_dir / entry["file"]).read_text(encoding="utf-8"))
+            if metadata.get("side", "both") == "server":
+                continue
+            cf = metadata["update"]["curseforge"]
+            expected_files.add((cf["project-id"], cf["file-id"]))
+        files = manifest["files"]
+        if (len(files) != len(expected_files)
+                or {(item["projectID"], item["fileID"]) for item in files} != expected_files
+                or not all(item["required"] for item in files)):
+            parser.error("CurseForge download references differ from client metadata")
+    export_url = f"downloads/MechanizedDepths-{report['version']}-CurseForge.zip"
+    export_hash = hashlib.sha256(args.curseforge_export.read_bytes()).hexdigest()
+
     args.output.mkdir(parents=True)
     shutil.copytree(args.pack_dir, args.output / "playtest")
     (args.output / "profiles").mkdir()
     shutil.copyfile(profile_source, args.output / profile_url)
+    (args.output / "downloads").mkdir()
+    shutil.copyfile(args.curseforge_export, args.output / export_url)
     public = {"schema": 1, "active": releases["active"],
               "pack": "playtest/pack.toml",
               "packwizVersion": report["version"],
@@ -84,6 +129,9 @@ def main() -> None:
               "prismProfile": profile_url,
               "prismProfileVersion": prism["version"],
               "prismProfileSHA256": prism["sha256"],
+              "curseforgeExport": export_url,
+              "curseforgeExportVersion": report["version"],
+              "curseforgeExportSHA256": export_hash,
               "releases": [{"version": item["version"], "revision": item["revision"],
                             "tagRevision": item["tagRevision"],
                             "current": item["version"] == releases["active"]}
@@ -115,7 +163,7 @@ def main() -> None:
             "<h1>Mechanized Depths — Playtest</h1>"
             "<p>The preconfigured Prism profile follows the current playtest release channel.</p>"
             "<h2>Named versions</h2><ol>" + rows + "</ol>"
-            "<h2>Prism setup</h2><ol>"
+            "<h2 id=\"prism\">Prism setup (automatic updates)</h2><ol>"
             "<li>Install <a href=\"https://prismlauncher.org/download/\">Prism Launcher</a>.</li>"
             "<li>Download the <a href=\"" + escape(profile_url) + "\">preconfigured Prism profile</a> "
             "then use Add Instance → Import from ZIP.</li>"
@@ -126,6 +174,16 @@ def main() -> None:
             "unless a future file also blocks automatic downloads.</p>"
             "<p>The current first install requires seven manual downloads because "
             "CurseForge blocks direct API access for these files:</p><ul>" + manual_links + "</ul>"
+            "<h2 id=\"curseforge\">CurseForge manifest (manual updates)</h2>"
+            "<p><a href=\"" + escape(export_url) + "\">Download the current CurseForge ZIP</a> "
+            "for <strong>" + escape(current["version"]) + "</strong> "
+            "(revision <code>" + escape(current["revision"][:12]) + "</code>).</p>"
+            "<p>Import this ZIP in any launcher that supports CurseForge manifests, including "
+            "CurseForge App, Prism Launcher, ATLauncher, and GDLauncher. "
+            "Follow any manual download requests from your launcher.</p>"
+            "<p>This export has no packwiz update hook. To update, download the new ZIP and "
+            "import it into a fresh instance. Back up your saves before transferring them, "
+            "and read the release notes for world compatibility.</p>"
             "<p><a href=\"playtest/pack.toml\">Current pack.toml</a> · "
             "<a href=\"catalog.json\">JSON catalog</a> · "
             "<a href=\"https://packwiz.infra.link/tutorials/installing/packwiz-installer/\">"
