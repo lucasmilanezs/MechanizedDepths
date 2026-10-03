@@ -9,7 +9,7 @@ indexed override files with locally available mod JARs:
 ```
 
 The second command verifies the Packwiz index and every active JAR against its
-metadata SHA-1. It copies every ordinary indexed override, matching the
+metadata SHA-1, then checks mandatory Forge dependencies for the server side. It copies every ordinary indexed override, matching the
 temporary pt-2.0.0 payload's override scope. It includes only mods marked
 `both` or `server`. It omits all Packwiz descriptors and standalone root
 resourcepacks. The source directory may be a Prism smoke install or another

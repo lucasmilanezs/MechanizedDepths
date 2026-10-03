@@ -86,6 +86,7 @@ def main() -> None:
     included: dict[str, Path] = {}
     checksums: dict[str, str] = {}
     excluded: list[str] = []
+    all_mod_jars: dict[str, tuple[Path, str]] = {}
     override_count = mod_count = resource_count = 0
     for entry in index["files"]:
         indexed_name = entry["file"]
@@ -120,6 +121,7 @@ def main() -> None:
         jar = jar_dir / filename
         if not jar.is_file() or digest(jar, "sha1") != metadata["download"]["hash"]:
             parser.error(f"JAR missing or SHA-1 mismatch: {filename}")
+        all_mod_jars[filename] = (jar, side)
         if side == "client":
             excluded.append(filename)
             continue
@@ -135,6 +137,27 @@ def main() -> None:
         or resource_count != report["resourcepacks_by_metadata"]
     ):
         parser.error("metafile counts differ from the build report")
+    mod_ids: dict[str, str] = {}
+    dependencies: list[tuple[str, str]] = []
+    for filename, (jar, side) in all_mod_jars.items():
+        with zipfile.ZipFile(jar) as archive:
+            if "META-INF/mods.toml" not in archive.namelist():
+                continue
+            forge = tomllib.loads(archive.read("META-INF/mods.toml").decode("utf-8-sig"))
+        for mod in forge.get("mods", []):
+            mod_ids[mod["modId"]] = side
+        if side != "client":
+            for required in forge.get("dependencies", {}).values():
+                for dependency in required:
+                    if dependency.get("mandatory") and dependency.get("side", "BOTH") in {
+                        "BOTH", "SERVER"
+                    }:
+                        dependencies.append((filename, dependency["modId"]))
+    for filename, required_id in dependencies:
+        if mod_ids.get(required_id) == "client":
+            parser.error(
+                f"server mod {filename} requires client-only mod ID {required_id}"
+            )
     previous_jars: set[str] = set()
     if args.previous_manifest:
         previous = json.loads(args.previous_manifest.read_text(encoding="utf-8"))
