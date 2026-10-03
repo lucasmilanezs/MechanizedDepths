@@ -11,9 +11,13 @@ mods needed on the dedicated server and also included in client installs,
 including server utilities for integrated worlds and local editing. This
 build has no `server`-only mods. The two root resourcepacks are client-only.
 
+The tested temporary server payload omitted AppleSkin. Keep it client-only
+until this exact Forge/JAR combination is validated on the dedicated server.
+Its client HUD still works, but saturation and exhaustion values may be less
+accurate without the server component.
+
 Some UI-related mods intentionally remain `both`:
 
-- AppleSkin syncs accurate saturation and exhaustion from the server.
 - Jade's server installation enables additional information providers.
 - JEIOres explicitly needs both sides to exchange worldgen data.
 - JEI is a mandatory `BOTH` dependency of Recipe Machine Stages in this pack.
