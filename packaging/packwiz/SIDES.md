@@ -6,10 +6,10 @@ to generate `index.toml`. The index lists metafiles; the installer reads
 each metafile's `side` when invoked with `-s client` or `-s server`.
 Do not edit a generated index directly.
 
-Use `client` for UI, rendering, and client-only libraries, `server` for
-dedicated-server utilities, and `both` when gameplay, network data, or a
-mandatory dependency needs the mod on each physical side. The two root
-resourcepacks are client-only.
+Use `client` for UI, rendering, and client-only libraries. Use `both` for
+mods needed on the dedicated server and also included in client installs,
+including server utilities for integrated worlds and local editing. This
+build has no `server`-only mods. The two root resourcepacks are client-only.
 
 Some UI-related mods intentionally remain `both`:
 
