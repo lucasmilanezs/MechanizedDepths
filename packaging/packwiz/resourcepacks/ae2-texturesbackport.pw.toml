@@ -1,6 +1,6 @@
 name = "AppliedEnergistics2-TexturesBackport"
 filename = "AETexturesBackport1.20-1.1.zip"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

@@ -155,6 +155,8 @@ def main() -> int:
         data = tomllib.loads(source.read_text(encoding="utf-8"))
         if "filename" not in data or "download" not in data:
             parser.error(f"incomplete packwiz metadata: {source}")
+        if data.get("side") not in {"both", "client", "server"}:
+            parser.error(f"invalid packwiz side: {source}")
 
     resource_rules = json.loads(
         (PACKAGING / "openloader-resourcepacks.json").read_text(encoding="utf-8")
