@@ -66,7 +66,7 @@
 			y: -9.5d
 		}
 		{
-			click: "https://discord.gg/Smm3AAyF"
+			click: "https://discord.gg/9zPQQ9Ezse"
 			height: 1.5d
 			hover: ["Check the discord server for support and discussions!"]
 			image: "custom:textures/gui/discord-logo-discord-icon-transparent-free-png.png"
@@ -378,7 +378,7 @@
 			description: [
 				"  Here, things are rarely as simple as “play a mod and move on.” Progress unfolds in &asets of three chapters&r, each focused on mastering the essentials of one or more mods. Within each trio there is some freedom — you can explore them in parallel if you wish. Still, the next group will usually assume those essentials are already in your hands. There are exceptions… though even those tend to follow a logic you only recognize when it's too late."
 				""
-				"  Alongside these trios are the &l&4TECH chapters&r&r, which expand on what you unlock in the main progression veins. Some introduce quality-of-life upgrades or direct improvements to machines and components you already use. Others reveal interesting mechanics or alternative production paths. And a few… well, you will quickly realize they are simply &7&otoo useful to live without.&r&r"
+				"  Alongside these trios are the &l&8TECH chapters&r&r, which expand on what you unlock in the main progression veins. Some introduce quality-of-life upgrades or direct improvements to machines and components you already use. Others reveal interesting mechanics or alternative production paths. And a few… well, you will quickly realize they are simply &7&otoo useful to live without.&r&r"
 				""
 				"  This modpack was not made to be rushed, but to be chewed slowly. It rewards solving one thing at a time, without anxiety about reaching the end. The goal is not simply to “finish,” but to lose yourself in the process: quests that guide while entertaining, and mods woven together into a single ecosystem. Nothing here stands alone — everything forms part of a larger machine that responds to each step you take."
 				""
@@ -1044,7 +1044,7 @@
 				""
 				"  You are free to mix and match modules for a multi-purpose tool, but pay attention: &6matching module pairs&r (two heads of the same type, for instance) often grant &asynergy bonuses&r far beyond what either part offers alone. This matters a lot for hammers, a double wooden head already swings like it's stone-tier, purely from synergy."
 				""
-				"&o&7— Don't tell Theseus about any of this. He'll show up with some tired old philosophy speech about ships and identity, and frankly, not even I can sit through that again.&r"
+				"&o&7— Don't tell Theseus about any of this crap. He'll show up with some tired old philosophy speech about ships and identity, and frankly, not even I can sit through that again.&r"
 			]
 			icon: {
 				Count: 1
@@ -1265,7 +1265,7 @@
 				""
 				"  How a hammer earns its level, you ask? The head material sets the base. Two &amatching heads&r add &a+1&r, which is why your twin flint hammer outranks a lopsided one. After enough use Tetra offers a &6hone&r, and one of the choices is another &a+1&r."
 				""
-				"  &lThis rung.&r An &6Iron hammer head&r only asks for a &aWood&r-level hammer, so the flint one installs it. A matched iron pair reaches &aStone&r, which is exactly what the next rung demands. Each head costs &a8 ingots&r from the smeltery, so sixteen for the pair, and keep the old hammer in your pocket while you rebuild the new one."
+				"  An &6Iron hammer head&r only asks for a &aWood&r-level hammer, so the flint one installs it. A matched iron pair reaches &aStone&r, which is exactly what the next rung demands. Each head costs &a8 ingots&r from the smeltery, so sixteen for the pair, and keep the old hammer in your pocket while you rebuild the new one."
 				""
 				"{\"text\":\"  ▶ Hammer Progression (JEI)\",\"color\":\"aqua\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/page mechanized:hammer_progression\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Open the full hammer ladder in JEI\"}}"
 				""
@@ -1324,19 +1324,40 @@
 		}
 		{
 			dependencies: ["67058DFE4A8962AD"]
-			id: "5646EA02BFB54842"
-			tasks: [
-				{
-					id: "62F8E9521407DA9F"
-					item: "tetra:forged_workbench"
-					type: "item"
-				}
-				{
-					id: "4C5226411F73F181"
-					item: "tetra:hammer_base"
-					type: "item"
-				}
+			description: [
+				"  The forged ruins don't advertise themselves. Somewhere between &aY 0&r and bedrock, tucked under mountains, taigas and cold biomes, whoever worked this seam left their bench standing, and usually, hanging right over it, the &6Forge Hammer&r they forged with. The bench itself behaves exactly like yours. Finding the ruins is the actual job."
+				""
+				"  Digging blind is a hobby, not a plan. The &dHolosphere&r I gave you earlier can do the finding for you, once its scanner is repaired at any workbench. Feed it &a1 Eye of Ender&r for the &6Sweeper&r module: carry the sphere and it scans everywhere you look, about &a24 blocks&r out, humming low when ruins are close — hold it still for details. &a4 Amethyst Shards&r buys the &6Percussion Scanner&r instead: shift-right-click to place the sphere, switch it to scan mode, then strike it with a hammer. Each hit sweeps &a4 chunks&r in a cone away from you, and any chunk hiding ruins lights up with an orange beam; a better hammer widens that cone by &a+12°&r per tier. Two &6Bolts&r pulled from the ruins themselves make the sphere &aAdjustable&r, trade sweep speed for range, or vertical reach for horizontal."
+				""
+				"  The routine settles itself quickly: percussion to find the chunk, sweeper to close the last few dozen blocks, pickaxe for the rest."
+				""
+				"  Oh, just realized. You don't have nether acess to get ender eyes. Too bad kiddo! "
+				""
+				"{@pagebreak}"
+				""
+				"  Two blocks make it whole: the hammer itself, and the forged bench directly under it. It won't swing without &atwo charged Thermal Cells&r and &atwo upgrades&r seated, lit sides mean it's ready. To install those parts, &aright-click&r the faces of the hammer while holding suitable itens"
+				""
+				"  Base output sits at &aDiamond&r. Bolt in one &6Combustion Chamber&r and you're forging &0Netherite-grade&r steel heads; two chambers and you're &dMaxed&r out for netherite ones — both also enjoy setting nearby things on fire, which nobody asked for. The rest of the upgrade slots are quieter: a &6Vent Plate&r trims charge per strike, a &6Lubricant Dispenser&r halves the jam rate, and a &6Planar Stabilizer&r nudges crafted major modules toward slightly better results. Pry any of them off with a claw once you change your mind."
+				""
+				"  Upkeep is where the hammer earns its keep back. Every strike bleeds &a5 charge&r out of each &a128&r-charge cell, plus &a4&r more per chamber installed. Run both chambers and you'll drain a cell in under ten jobs. Top them off at a &6Transfer Unit&r or &6Core Extractor&r, both sitting somewhere in the ruins. Every strike also risks a &a30%&r jam, lower with the dispenser; clear it by hitting the Hammer Head with any hand hammer of &atier 4&r or better, your twin infused iron hammer works just fine."
+				""
+				"  Wanna take it home, huh? Bench and hammer only come loose for a &8Netherite hammer&r enchanted with &9Silk Touch&r. Yes, the same netherite hammer this Forge Hammer exists to make, so your first one gets forged on site, in someone else's ruin. &cPickaxes&r, Silk Touch or not, turn ancient and irreplaceable technology into Metal Scrap. Bring the right tool or leave it standing."
+				""
+				"&8[Dev note: this mechanic is planned to be reworked later, possibly as part of the research system.]&r"
+				""
+				"&7&o— Whoever built these left the bench, the hammer and the fuel. Not a single manual. Typical.&r&r"
 			]
+			id: "5646EA02BFB54842"
+			min_width: 250
+			tasks: [{
+				icon: "tetra:forged_workbench"
+				id: "1064A79BF9BE8E2C"
+				observe_type: 0
+				timer: 0L
+				to_observe: "tetra:forged_workbench"
+				type: "observation"
+			}]
+			title: "Someone Else's Workshop"
 			x: 1.0d
 			y: -0.5d
 		}

@@ -116,3 +116,6 @@ AGENTS.md
 /builds/packwiz/
 __pycache__/
 *.pyc
+
+# Local multiplayer server-list backup.
+/servers.dat_old

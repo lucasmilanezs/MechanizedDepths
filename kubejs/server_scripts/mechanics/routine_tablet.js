@@ -284,10 +284,6 @@
 const ROUTINE_TABLET = 'rt:routine_tablet';
 const CM_BLOCK_ID    = 'custommachinery:custom_machine_block';
 
-const MAP = global.ROUTINE_MAP;
-const MACHINE_TO_PROTOCOL = MAP.machineToProtocol;
-const PROTOCOLS = MAP.protocols;
-
 const C_GRAY  = '§7'
 const C_BLUE  = '§9'
 const C_GREEN = '§a'
@@ -312,13 +308,18 @@ function ping(player, pitch) {
 
 // resolve CMD permanece interno
 function resolveCmd(proto, subId) {
-  const P = PROTOCOLS[proto]
+  const P = global.ROUTINE_MAP && global.ROUTINE_MAP.protocols[proto]
   if (!P || !subId) return undefined
   const m = P.cmd || {}
   return Object.prototype.hasOwnProperty.call(m, subId) ? m[subId] : undefined
 }
 
 ItemEvents.rightClicked(ROUTINE_TABLET, e => {
+  const map = global.ROUTINE_MAP
+  if (!map) return
+  const machineToProtocol = map.machineToProtocol
+  const protocols = map.protocols
+
   // A) click em bloco CM
   if (e.target && e.target.block && e.target.block.id === CM_BLOCK_ID) {
     const be  = e.target.block.entity || (e.target.blockPos ? e.level.getBlockEntity(e.target.blockPos) : null)
@@ -327,10 +328,10 @@ ItemEvents.rightClicked(ROUTINE_TABLET, e => {
     const nbt = be.serializeNBT ? be.serializeNBT() : (be.getNbt ? be.getNbt() : be.nbt)
     const machineId = nbt && nbt.machineID ? String(nbt.machineID) : null
 
-    const proto = machineId ? MACHINE_TO_PROTOCOL[machineId] : null
+    const proto = machineId ? machineToProtocol[machineId] : null
     if (!proto) { e.player.tell(`${C_WHITE}Unmapped machine: ${machineId || '<unknown>'}`); e.cancel(); return }
 
-    const list = (PROTOCOLS[proto] && PROTOCOLS[proto].subroutines) ? PROTOCOLS[proto].subroutines : []
+    const list = (protocols[proto] && protocols[proto].subroutines) ? protocols[proto].subroutines : []
     const firstSub = list.length ? list[0] : null
 
     const n = e.item.nbt || {}
@@ -351,12 +352,12 @@ ItemEvents.rightClicked(ROUTINE_TABLET, e => {
   // B) ciclo de subrotina
   const n = e.item.nbt || {}
   const proto = n.protocol
-  if (!proto || !PROTOCOLS[proto] || !PROTOCOLS[proto].subroutines.length) {
+  if (!proto || !protocols[proto] || !protocols[proto].subroutines.length) {
     e.player.tell(`${C_WHITE}Select a protocol on a ${C_BLUE}Mechanized Machine ${C_WHITE}first.`)
     return
   }
 
-  const list = PROTOCOLS[proto].subroutines
+  const list = protocols[proto].subroutines
   const cur  = n.subroutine || null
   const idx  = cur ? list.indexOf(cur) : -1
   const next = list[(idx + 1) % list.length]

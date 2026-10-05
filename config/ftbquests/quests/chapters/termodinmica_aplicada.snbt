@@ -304,13 +304,13 @@
 		{
 			dependencies: ["5697C0E23B256642"]
 			description: [
-				"   Given too much stimulus, even a plant yields. In the Phytogenic Insolator — under constant light, pure water, and excess Phyto-Gro — it tries to protect itself. It closes its stomata. Reinforces its fibers. Stiffens its cell walls until it becomes… something else. Something dead."
+				"   Given too much stimulus, even a plant yields. In the Phytogenic Insolator, under constant light, pure water, and excess Phyto-Gro, it tries to protect itself. It closes its stomata. Reinforces its fibers. Stiffens its cell walls until it becomes… something else. Something dead."
 				""
-				"   Instead of blooming, it forms a carapace of dense cellulose and modified lignin — a defense reaction that, ironically, suffocates it. Without noticing, the plant literally embalms itself to death — an “auto-immune disease.” The result is Organic Polymer Mesh: a high-performance plant polymer, flexible, heat-resistant, and completely inert. Perfect for machines. Horrible for photosynthesis."
+				"   Instead of blooming, it forms a carapace of dense cellulose and modified lignin — a defense reaction that, ironically, suffocates it. Without noticing, the plant literally embalms itself to death, an “auto-immune disease.” The result is Organic Polymer Mesh: a high-performance plant polymer, flexible, heat-resistant, and completely inert. Perfect for machines. Horrible for photosynthesis."
 				""
 				"   Curious how we chase dense, rare metals only to find the chapter’s most useful material comes from plants and water. Don’t underestimate &2&lgreen engineering!&r&r"
 				""
-				"&7&o— Fascinating. Give a plant paradise and it embalms itself. Thinks it’s adapting… while it quietly dies.&r&r"
+				"&7&o— Fascinating. Give a plant paradise and it embalms itself.&r&r"
 			]
 			id: "1E7A8B399C39BF92"
 			shape: "hexagon"
