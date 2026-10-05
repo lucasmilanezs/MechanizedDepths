@@ -1,6 +1,6 @@
 name = "Just Enough Mekanism Multiblocks"
 filename = "JustEnoughMekanismMultiblocks-1.20.1-4.16.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

@@ -1,6 +1,6 @@
 name = "Tetra Sight"
 filename = "tetra_sight-0.0.1.beta.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
