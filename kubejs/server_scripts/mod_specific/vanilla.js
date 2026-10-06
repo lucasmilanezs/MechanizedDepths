@@ -106,3 +106,35 @@ ServerEvents.recipes(event => {
         }
     )
 });
+
+ServerEvents.recipes(event => {
+    event.shaped(
+        Item.of('minecraft:wooden_shovel'),
+        [
+            ' AB',
+            ' CA',
+            'C  '
+        ],
+        {
+            A: 'naturesaura:gold_fiber',
+            B: Item.of('tconstruct:adze_head', '{Material:"tconstruct:wood"}').weakNBT(),
+            C: 'minecraft:stick'
+        }
+    )
+});
+
+ServerEvents.recipes(event => {
+    event.shaped(
+        Item.of('minecraft:wooden_sword'),
+        [
+            '   ',
+            'ABA',
+            ' C '
+        ],
+        {
+            A: 'naturesaura:gold_fiber',
+            B: Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood"}').weakNBT(),
+            C: 'minecraft:stick'
+        }
+    )
+});
