@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
 
 // BLAST BRICK
   event.remove({ output: 'immersiveengineering:blastbrick' });
-  event.shaped('immersiveengineering:blastbrick', [
+  event.shaped('3x immersiveengineering:blastbrick', [
     'IBI',
     'BVB',
     'IBI'
