@@ -23,21 +23,21 @@
 			y: -10.5d
 		}
 		{
-			height: 0.5d
+			height: 1.0d
 			image: "custom:item/crafting_tech_card"
 			order: 100
 			rotation: 0.0d
-			width: 0.5d
-			x: -2.482142857142854d
-			y: -11.232142857142858d
+			width: 1.0d
+			x: -2.5d
+			y: -11.5d
 		}
 		{
-			height: 0.5d
+			height: 1.0d
 			image: "custom:item/chemistry_tech_card"
 			rotation: 0.0d
-			width: 0.5d
-			x: 9.517857142857174d
-			y: -11.196428571428573d
+			width: 1.0d
+			x: 9.5d
+			y: -11.5d
 		}
 		{
 			height: 1.1d
@@ -78,7 +78,7 @@
 			image: "realms:textures/gui/realms/slot_frame.png"
 			rotation: 0.0d
 			width: 1.1d
-			x: 11.0d
+			x: 8.0d
 			y: -8.5d
 		}
 		{
@@ -87,7 +87,7 @@
 			image: "mekanism:liquid/liquid"
 			rotation: 0.0d
 			width: 1.0d
-			x: 11.0d
+			x: 8.0d
 			y: -8.5d
 		}
 		{
@@ -142,23 +142,20 @@
 			y: -2.0d
 		}
 		{
-			color: 13224393
-			dependency: "64BEB9EFB2A55EB6"
-			height: 1.0d
-			image: "mekanism:liquid/liquid"
+			height: 1.2d
+			image: "custom:item/quest_research"
 			rotation: 0.0d
-			width: 1.0d
-			x: 6.5d
-			y: -2.0d
+			width: 1.2d
+			x: 8.0d
+			y: -5.0d
 		}
 		{
-			dependency: "64BEB9EFB2A55EB6"
-			height: 1.1d
-			image: "realms:textures/gui/realms/slot_frame.png"
+			height: 1.0d
+			image: "custom:item/chemistry_tech_card"
 			rotation: 0.0d
-			width: 1.1d
-			x: 6.5d
-			y: -2.0d
+			width: 1.0d
+			x: 8.0d
+			y: -6.0d
 		}
 	]
 	order_index: 1
@@ -443,7 +440,7 @@
 				item: "mekanism:hydrogen_chloride_bucket"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 8.0d
 			y: -8.5d
 		}
 		{
@@ -685,7 +682,7 @@
 				item: "mekanism:chemical_dissolution_chamber"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 11.0d
 			y: -8.5d
 		}
 		{
@@ -841,11 +838,21 @@
 			dependencies: ["7EAE2E06DC195CCC"]
 			icon: "mekanism:upgrade_gas"
 			id: "0E210EFBF4AC2F20"
+			rewards: [{
+				auto: "invisible"
+				command: "/astages add {p} md_chemistry_1"
+				elevate_perms: true
+				id: "3F9632CDB3172937"
+				ignore_reward_blocking: true
+				silent: true
+				type: "command"
+			}]
 			shape: "square"
 			tasks: [{
+				consume_items: true
 				count: 32L
 				id: "5CC95A7DF1320DC5"
-				item: { Count: 32, id: "kubejs:chemistry_tech_card" }
+				item: "kubejs:chemistry_tech_card"
 				type: "item"
 			}]
 			x: 9.5d
@@ -931,7 +938,6 @@
 		{
 			dependencies: [
 				"5E656B45AAD75AAB"
-				"0486A6C19BEC593F"
 				"5547875EB7D4E67A"
 			]
 			hide_dependency_lines: false
@@ -965,17 +971,31 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["7785B07145AD88A0"]
+			dependencies: [
+				"7785B07145AD88A0"
+				"39C400B5BAF29B98"
+			]
 			icon: "kubejs:dust_ilmenite"
 			id: "64BEB9EFB2A55EB6"
-			shape: "gear"
+			rewards: [{
+				auto: "invisible"
+				command: "/astages add {p} md_chemistry_2"
+				elevate_perms: true
+				id: "612157CFEDD36851"
+				ignore_reward_blocking: true
+				silent: true
+				type: "command"
+			}]
+			shape: "square"
 			tasks: [{
-				id: "4479157B28A0949D"
-				item: "minecraft:stripped_oak_log"
+				consume_items: true
+				count: 12L
+				id: "714CE1BBDC9BD69B"
+				item: "kubejs:chemistry_tech_card"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
+			x: 8.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1003,19 +1023,6 @@
 			]
 			x: 2.0d
 			y: -5.0d
-		}
-		{
-			dependencies: ["64BEB9EFB2A55EB6"]
-			hide_until_deps_complete: true
-			id: "0486A6C19BEC593F"
-			shape: "none"
-			tasks: [{
-				id: "1B2F5868695DA416"
-				item: "kubejs:acidic_flux_bucket"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -2.0d
 		}
 		{
 			dependencies: ["1501CF550D5686CB"]

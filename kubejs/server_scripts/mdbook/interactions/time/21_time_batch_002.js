@@ -1,8 +1,3 @@
-// =============================================================================
-// MDBook — interactions/time/21_time_batch_002.js
-// Novo lote — mais piadas + eventos absurdos com logic
-// =============================================================================
-
 global.MDBook = global.MDBook || {}
 var MDBook = global.MDBook
 

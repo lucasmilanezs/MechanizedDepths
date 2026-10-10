@@ -109,8 +109,8 @@ ServerEvents.recipes(event => {
       { item: 'kubejs:bauxite_raw' }
     ],
     result: [
-      { item: 'alltheores:raw_aluminum', count: 1 },
-      { item: 'alltheores:raw_aluminum', chance: 0.35 },
+      { item: 'immersiveengineering:raw_aluminum', count: 1 },
+      { item: 'immersiveengineering:raw_aluminum', chance: 0.35 },
       { item: 'minecraft:raw_iron', chance: 0.35 }
     ]
   }).id('kubejs:thermal_compat/bauxite_raw');

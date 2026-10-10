@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
       }
     ],
     energy: 2000
-  });
+  }).id('kubejs:thermal/pulverizer/placeholder_sub');
 });
 
 ServerEvents.recipes(event => {
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     ],
     energy: 4000,
     experience: 0.2
-  });
+  }).id('kubejs:thermal/pulverizer/obsidianite');
 });
 
 ServerEvents.recipes(event => {
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
       { item: 'kubejs:dust_ilmenite', chance: 0.0 }
     ],
     energy: 6000
-  });
+  }).id('kubejs:thermal/pulverizer/dust_rutile');
 
   event.custom({
     type: 'thermal:pulverizer',
@@ -52,5 +52,5 @@ ServerEvents.recipes(event => {
       { item: 'kubejs:dust_rutile', chance: 0.0 }
     ],
     energy: 4000
-  });
+  }).id('kubejs:thermal/pulverizer/dust_ilmenite');
 });

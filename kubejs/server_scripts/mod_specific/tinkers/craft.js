@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             A: '#minecraft:planks',
             B: 'minecraft:stick'
         }
-    )
+    ).id('kubejs:tinkers/crafting/pattern')
     });
 
 ServerEvents.recipes(event => {
@@ -30,4 +30,4 @@ ServerEvents.recipes(event => {
         B: '#forge:plates/copper',
         D: '#forge:rods/copper'
     }
-)});
+).id('kubejs:tinkers/crafting/smeltery_controller')});

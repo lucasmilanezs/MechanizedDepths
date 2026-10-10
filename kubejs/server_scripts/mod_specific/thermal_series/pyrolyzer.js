@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
       { item: 'thermal:tar', chance: 0.5 }
     ],
     energy: 6000
-  });
+  }).id('kubejs:thermal/pyrolyzer/rich_slag');
 });
 
 // AFRIT ESSENCE
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
       { item: 'occultism:afrit_essence', count: 2 }
     ],
     energy: 50000
-  });
+  }).id('kubejs:thermal/pyrolyzer/afrit_essence');
 });
 
 //====================CHANGED RECIPES==================

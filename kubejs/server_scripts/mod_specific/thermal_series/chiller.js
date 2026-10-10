@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     ],
     result: { item: 'kubejs:blaze_glass_compound' },
     energy: 6000
-  });
+  }).id('kubejs:thermal/chiller/blaze_glass_compound');
 });
 
 // ICE CHARGE
@@ -30,20 +30,9 @@ ServerEvents.recipes(event => {
     ],
     result: { item: 'thermal:ice_charge' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/chiller/ice_charge');
 });
 
-// TITANIUM SPONGE
-ServerEvents.recipes(event => {
-  event.custom({
-    type: 'thermal:chiller',
-    ingredients: [
-      { item: 'kubejs:titanium_sponge_raw' }
-    ],
-    result: { item: 'kubejs:titanium_sponge_pure' },
-    energy: 5000
-  });
-});
 
 
 
@@ -64,5 +53,5 @@ ServerEvents.recipes(event => {
     ],
     result: { item: 'pneumaticcraft:plastic', amount: 2 },
     energy: 3000
-  });
+  }).id('kubejs:thermal/chiller/plastic');
 });

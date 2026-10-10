@@ -5,9 +5,11 @@
     "thermal",
     "create",
     "mekanism",
-    "alltheores",
-    "immersiveengineering"
-
+    "thermal_extra",
+    "immersiveengineering",
+    "immersiveposts",
+    "occultengineering",
+    "alltheores"
   ],
   "stoneStrata": [
     "stone",
@@ -81,7 +83,7 @@
     "uranium",
     "zinc"
   ],
-  "priorityOverrides": {"forge:gears/iron": "enderio"},
+  "priorityOverrides": {"forge:gears/iron": "enderio", "forge:ingots/aluminum": "alltheores"},
   "customTags": {},
   "tagOwnerships": {},
   "itemTagInheritanceMode": "ALLOW",

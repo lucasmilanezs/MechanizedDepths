@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:vitrified_obsidian' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/bottler/vitrified_obsidian');
 });
 
 // GELATINOUS ORGANIC SOLVENT
@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:gelatinous_organic_solvent' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/bottler/gelatinous_organic_solvent');
 });
 
 // SYNAPTIC INTERFACE ( joy )
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:synaptic_interface' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/bottler/synaptic_interface_from_liquid_joy');
 });
 
 // SYNAPTIC INTERFACE ( agony )
@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:synaptic_interface' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/bottler/synaptic_interface_from_liquid_agony');
 });
 
 //====================CHANGED RECIPES==================
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'extendedcrafting:redstone_ingot' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/bottler/redstone_ingot');
 });
 
 //CINNABAR
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     ],
     result: { item: 'thermal:cinnabar' },
     energy: 6000
-  });
+  }).id('kubejs:thermal/bottler/cinnabar');
 });
 
 //====================COMPATIBILITY RECIPES==================

@@ -159,6 +159,6 @@ ServerEvents.recipes(event => {
 
     const anyLog = Ingredient.of(validLogs)
     event.shapeless(Item.of(plank, 2), [anyLog])
-         .id(`kubejs:planks/${plank.replace(':', '_')}`)
+         .id(`kubejs:plank_normalizer/${plank.replace(':', '_')}`)
   })
 })

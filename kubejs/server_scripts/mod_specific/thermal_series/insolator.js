@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     ],
     result: { item: 'kubejs:organic_polymer_mesh' },
     energy: 3200
-  });
+  }).id('kubejs:thermal/insolator/organic_polymer_mesh');
 });
 //====================CHANGED RECIPES==================
 

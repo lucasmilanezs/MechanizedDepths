@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
   ], {
     A: 'minecraft:andesite',
     R: 'kubejs:runic_stone'  
-  })
+  }).id('kubejs:create/crafting/andesite_alloy')
 })
 
 //===================COMPATIBILITY RECIPES==================

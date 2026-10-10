@@ -39,7 +39,7 @@
     },
     {
       "type": "custommachinery:item",
-      "item": "kubejs:ilmenite_dust",
+      "item": "kubejs:dust_ilmenite",
       "amount": 2,
       "chance": 0.2,
       "mode": "output"

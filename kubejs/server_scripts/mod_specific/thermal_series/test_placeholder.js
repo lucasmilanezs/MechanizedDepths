@@ -12,5 +12,5 @@ ServerEvents.recipes(event => {
     ],
     result: { item: 'minecraft:packed_ice' },
     energy: 2000
-  });
+  }).id('kubejs:thermal/chiller/packed_ice');
 });

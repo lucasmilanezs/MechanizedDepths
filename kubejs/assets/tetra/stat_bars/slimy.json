@@ -1,0 +1,21 @@
+{
+  "type": "tetra:default",
+  "key": "tetra.stats.slimy",
+  "contexts": ["tetra:workbench", "tetra:holosphere"],
+  "min": 0,
+  "max": 4,
+  "segmented": true,
+  "stat": { "type": "tetra:effect_level", "effect": "slimy" },
+  "label": {
+    "type": "tetra:basic",
+    "format": "integer",
+    "diff_format": "integer"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "tetra.stats.slimy.tooltip",
+    "stats": [{ "type": "tetra:effect_level", "effect": "slimy" }],
+    "formatters": [{ "type": "tetra:basic", "format": "integer" }]
+  },
+  "generateSorter": true
+}

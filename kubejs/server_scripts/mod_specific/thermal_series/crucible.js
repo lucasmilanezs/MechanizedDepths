@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
       { fluid: 'kubejs:obsidian_solution', amount: 500 }
     ],
     energy: 6000
-  });
+  }).id('kubejs:thermal/crucible/obsidian_solution');
 });
 //====================CHANGED RECIPES==================
 
@@ -25,12 +25,12 @@ ServerEvents.recipes((event) => {
   event.remove({ id: 'thermal:machines/crucible/crucible_glowstone_block' });
   event.custom({
     type: 'thermal:crucible',
-    ingredient: { item: 'mekanism:ingot_refined_glowstone' },
+    ingredient: { tag: 'forge:ingots/refined_glowstone' },
     result: [
       { fluid: 'thermal:glowstone', amount: 250 }
     ],
     energy: 6000
-  });
+  }).id('kubejs:thermal/crucible/glowstone');
 });
 
 //====================COMPATIBILITY RECIPES==================

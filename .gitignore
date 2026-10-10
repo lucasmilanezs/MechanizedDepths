@@ -106,6 +106,7 @@ AGENTS.md
 /config/openloader/data/mechanized_materials.zip
 /local/
 /minecraftinstance.json
+output/
 
 # Local instance state and generated pack builds.
 /config/jei/world/

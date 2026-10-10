@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         result: {
           item: 'kubejs:printed_crafting_circuit'
         }
-    });
+    }).id('kubejs:ae2/inscriber/printed_crafting_circuit');
 });
 
 //PRINTED SIMULATION CIRCUIT
@@ -42,12 +42,12 @@ ServerEvents.recipes(event => {
         mode: 'press',
         ingredients: {
           top: { item: 'ae2:calculation_processor_press' },
-          middle: { item: 'mekanism:ingot_refined_obsidian' }
+          middle: { tag: 'forge:ingots/refined_obsidian' }
         },
         result: {
         item: 'kubejs:printed_simulation_processor'
         }
-    });
+    }).id('kubejs:ae2/inscriber/printed_simulation_processor');
 }); 
 
 //SIMULATION PROCESSOR
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
     result: {
       item: 'kubejs:simulation_processor'
     }
-  });
+  }).id('kubejs:ae2/inscriber/simulation_processor');
 });
 
 //CRAFTING PROCESSOR
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     result: {
       item: 'kubejs:crafting_processor'
     }
-  });
+  }).id('kubejs:ae2/inscriber/crafting_processor');
 });
 
 
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
     result: {
       item: 'ae2:engineering_processor'
     }
-  });
+  }).id('kubejs:ae2/inscriber/engineering_processor');
 });
 
 //LOGIC PROCESSOR
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     result: {
       item: 'ae2:logic_processor'
     }
-  });
+  }).id('kubejs:ae2/inscriber/logic_processor');
 });
 
 // CALCULATION PROCESSOR
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
     result: {
       item: 'ae2:calculation_processor'
     }
-  });
+  }).id('kubejs:ae2/inscriber/calculation_processor');
 });
 
 //====================COMPATIBILITY RECIPES==================

@@ -23,9 +23,9 @@ ServerEvents.recipes(event => {
     ],
     {
         C: 'minecraft:crafting_table',
-        B: 'extendedcrafting:redstone_ingot',
-        A: 'thermal:gold_plate'
-    });
+        B: '#forge:ingots/redstone_ingot',
+        A: '#forge:plates/gold'
+    }).id('kubejs:extended_crafting/crafting/flux_crafter');
 });
 
 //AUTO FLUX CRAFTER
@@ -40,11 +40,11 @@ ServerEvents.recipes(event => {
     ],
     {
         C: 'mekanism:advanced_control_circuit',
-        E: 'enderio:redstone_alloy_ingot',
-        A: 'thermal:rose_gold_gear',
+        E: '#forge:ingots/redstone_alloy',
+        A: '#forge:gears/rose_gold',
         D: 'extendedcrafting:flux_crafter',
         B: 'thermal:machine_crafter'
-    });
+    }).id('kubejs:extended_crafting/crafting/auto_flux_crafter');
 });
 
 //FLUX ALTERNATOR
@@ -58,11 +58,11 @@ ServerEvents.recipes(event => {
         'DDD'
     ],
     {
-        D: 'extendedcrafting:redstone_ingot',
+        D: '#forge:ingots/redstone_ingot',
         A: 'immersiveengineering:wire_electrum',
         C: 'kubejs:redstone_component',
-        B: 'thermal:electrum_plate'
-    });
+        B: '#forge:plates/electrum'
+    }).id('kubejs:extended_crafting/crafting/flux_alternator');
 });
 
 //====================COMPATIBILITY RECIPES==================

@@ -27,3 +27,14 @@ StartupEvents.registry('fluid', event => {
     .flowingTexture('custom:fluid/acidic_flux_flow');
 
 });
+
+// MAGNESIUM CHLORIDE
+// Liquid twin of the kubejs:magnesium_chloride gas, swapped in the Rotary Condensentrator.
+StartupEvents.registry('fluid', event => {
+  event.create('magnesium_chloride')
+    .displayName('Magnesium Chloride')
+    .stillTexture('custom:item/aqueous_organic_solvent')
+    .flowingTexture('custom:item/aqueous_organic_solvent')
+    .color(0xD2E2C4)
+    .bucketColor(0xD2E2C4)
+});

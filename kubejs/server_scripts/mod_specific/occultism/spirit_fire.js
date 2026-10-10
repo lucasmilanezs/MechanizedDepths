@@ -8,7 +8,7 @@
 //====================CUSTOM RECIPES==================
 
 ServerEvents.recipes(event => {
-  event.recipes.occultism.spirit_fire('kubejs:vantablack_processor', 'kubejs:dense_processor')
+  event.recipes.occultism.spirit_fire('kubejs:vantablack_processor', 'kubejs:dense_processor').id('kubejs:occultism/spirit_fire/vantablack_processor')
 });
 
 //====================CHANGED RECIPES==================

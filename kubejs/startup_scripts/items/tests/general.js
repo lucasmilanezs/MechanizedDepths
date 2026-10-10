@@ -15,33 +15,6 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/incomplete_obsidian_core')
 })
 
-// ========================= Tools =========================
-// Stone Hammer (custom:stone_hammer)
-// Metal Hammer (custom:metal_hammer)
-// Diamond Hammer (custom:diamond_hammer)
-StartupEvents.registry('item', event => {
-  event.create('stone_hammer')
-    .displayName('Stone Hammer')
-    .maxDamage(64)
-    .tag('forge:tools/hammers')
-    .unstackable()
-    .texture('custom:item/stone_hammer');
-
-  event.create('metal_hammer')
-    .displayName('Metal Hammer')
-    .maxDamage(256)
-    .tag('forge:tools/hammers')
-    .unstackable()
-    .texture('custom:item/metal_hammer');
-
-  event.create('diamond_hammer')
-    .displayName('Diamond Hammer')
-    .maxDamage(1024)
-    .tag('forge:tools/hammers')
-    .unstackable()
-    .texture('custom:item/diamond_hammer');
-});
-
 // ========================= Special / Other =========================
 
 // PLACEHOLDER SUB (custom:placeholder_sub)

@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     ]
   )
   .transitionalItem(transitional)
-  .loops(1);
+  .loops(1).id('kubejs:create/sequenced_assembly/diamond');
 });
 
 

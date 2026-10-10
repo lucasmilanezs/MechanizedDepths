@@ -22,5 +22,5 @@ ServerEvents.recipes(event => {
             C: 'minecraft:stick',
             B: Item.of('tconstruct:hammer_head', '{Material:"tconstruct:wood"}').weakNBT()
         }
-    );
+    ).id('kubejs:tetra/crafting/modular_double');
 });

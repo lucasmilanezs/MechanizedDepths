@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {~
     'ARA',
     'AAA'
   ], {
-    A: 'createmetallurgy:tungsten_ingot',
+    A: '#forge:ingots/tungsten',
     B: 'kubejs:meattherial',
     R: 'createmetallurgy:refractory_mortar',
   }).id('kubejs:foundry_basin');
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     'ABA',
     'A A'
   ], {
-    A: 'createmetallurgy:tungsten_ingot',
+    A: '#forge:ingots/tungsten',
     B: 'kubejs:meattherial'
   }).id('kubejs:foundry_lid');
 })

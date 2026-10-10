@@ -1,0 +1,86 @@
+{
+  "trigger": "tetra:apply_hit_effects",
+  "effect": "slimy",
+  "data": {
+    "numbers": {
+      "effectLevel": {
+        "type": "tetra:effect_level",
+        "effect": "slimy"
+      },
+      "hits": {
+        "type": "tetra:entity_data",
+        "entity": "attacker",
+        "key": "mechanized_slimy_hits",
+        "defaultValue": 0
+      },
+      "pendingWear": {
+        "type": "tetra:entity_data",
+        "entity": "attacker",
+        "key": "mechanized_tetra_wear",
+        "defaultValue": 0
+      }
+    }
+  },
+  "outcome": {
+    "type": "tetra:conditioned",
+    "condition": {
+      "type": "tetra:expression",
+      "expression": "hits >= 2"
+    },
+    "outcome": {
+      "type": "tetra:multiple",
+      "outcomes": [
+        {
+          "type": "tetra:entity_data",
+          "entity": "attacker",
+          "key": "mechanized_slimy_hits",
+          "value": 0
+        },
+        {
+          "type": "tetra:apply_effect",
+          "effect": "tetra:stun",
+          "entity": "target",
+          "source": "attacker",
+          "duration": "10 + effectLevel * 10",
+          "amplifier": 0,
+          "visible": false
+        },
+        {
+          "type": "tetra:entity_data",
+          "entity": "attacker",
+          "key": "mechanized_tetra_wear",
+          "value": "pendingWear + 3"
+        },
+        {
+          "type": "tetra:sound",
+          "sound": "minecraft:entity.slime.squish",
+          "position": {
+            "type": "tetra:entity_position",
+            "entity": "target"
+          },
+          "volume": 0.8,
+          "pitch": 0.8
+        },
+        {
+          "type": "tetra:particle",
+          "particle": {
+            "type": "minecraft:item_slime"
+          },
+          "count": 12,
+          "position": {
+            "type": "tetra:entity_position",
+            "entity": "target"
+          },
+          "spread": [0.3, 0.6, 0.3],
+          "speed": 0
+        }
+      ]
+    },
+    "otherwise": {
+      "type": "tetra:entity_data",
+      "entity": "attacker",
+      "key": "mechanized_slimy_hits",
+      "value": "hits + 1"
+    }
+  }
+}

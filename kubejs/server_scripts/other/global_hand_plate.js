@@ -1,4 +1,10 @@
+// Hand plates: 2 ingots + any item in #forge:tools/hammers -> 1 plate.
+// The tag is the only gate; add or remove hammers there, never here.
+// A broken Tetra hammer still matches, but modifyResult empties the output.
 ServerEvents.recipes(event => {
+  const Hammers = global.MDRecipes.Hammers;
+  const hammer = Hammers.tag;
+
   const plates = [
     { input: '#forge:ingots/iron', output: 'thermal:iron_plate' },
     { input: '#forge:ingots/copper', output: 'thermal:copper_plate' },
@@ -18,16 +24,15 @@ ServerEvents.recipes(event => {
     { input: '#forge:ingots/titanium', output: 'kubejs:plate_titanium' }
   ];
 
-  const hammers = [
-    'kubejs:stone_hammer',
-    'kubejs:metal_hammer',
-    'kubejs:diamond_hammer'
-  ];
-
-  for (const plate of plates) {
-    for (const hammer of hammers) {
-      event.shapeless(plate.output, [plate.input, plate.input, hammer])
-        .damageIngredient(hammer);
-    }
+  for (let plate of plates) {
+    event.shapeless(plate.output, [plate.input, plate.input, hammer])
+      .damageIngredient(hammer)
+      .modifyResult((grid, result) => Hammers.isBroken(grid.find(hammer)) ? Item.empty : result)
+      .id(`kubejs:hand_plate/${plate.output.split(':')[1]}`);
   }
+
+  // Mod hand-hammer plate recipes. Patterns match every metal each mod ships
+  // (IE 11, All The Ores 23 at the pinned versions); type keeps other recipes out.
+  event.remove({ type: 'minecraft:crafting_shapeless', id: /^immersiveengineering:crafting\/plate_[a-z_]+_hammering$/ });
+  event.remove({ type: 'minecraft:crafting_shaped', id: /^alltheores:[a-z_]+_plate$/ });
 });

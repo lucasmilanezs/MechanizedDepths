@@ -37,6 +37,7 @@ function MD_joinTags(tags) {
   return clean.length ? clean.join('.') : ''
 }
 
+// IDs name the system that generated them: kubejs:alloy_register/<output>/<machine>.
 function MD_recipeId(specBaseId, machineKey, outId, tags) {
   if (specBaseId && String(specBaseId).includes(':')) {
     return `${specBaseId}/${machineKey}`
@@ -47,8 +48,8 @@ function MD_recipeId(specBaseId, machineKey, outId, tags) {
   const outSlug = MD_slug(outId)
 
   return tagPart
-    ? `${ns}:alloy/${tagPart}/${outSlug}/${machineKey}`
-    : `${ns}:alloy/${outSlug}/${machineKey}`
+    ? `${ns}:alloy_register/${tagPart}/${outSlug}/${machineKey}`
+    : `${ns}:alloy_register/${outSlug}/${machineKey}`
 }
 
 function MD_normOutId(x) {
@@ -264,7 +265,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   global.MDRecipes.Alloys.registerAlloy2x(event, {
     inA: 'kubejs:inductive_alloy',
-    inB: 'mekanism:ingot_refined_glowstone',
+    inB: '#forge:ingots/refined_glowstone',
     out: 'kubejs:osgloglium',
     inACount: 1,
     inBCount: 1,
@@ -292,7 +293,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   global.MDRecipes.Alloys.registerAlloy2x(event, {
     inA: 'kubejs:inductive_alloy',
-    inB: 'mekanism:ingot_refined_obsidian',
+    inB: '#forge:ingots/refined_obsidian',
     inC: 'minecraft:quartz',
     inACount: 1,
     inBCount: 1,
@@ -307,7 +308,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   event.remove({ id: 'enderio:alloy_smelting/redstone_alloy_ingot' });
   global.MDRecipes.Alloys.registerAlloy2x(event, {
-    inA: 'extendedcrafting:redstone_ingot',
+    inA: '#forge:ingots/redstone_ingot',
     inB: 'minecraft:redstone',
     inC: 'ae2:silicon',
     inACount: 1,

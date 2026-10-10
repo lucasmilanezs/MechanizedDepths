@@ -14,12 +14,12 @@ ServerEvents.recipes(event => {
     'ASA',
     'GBF'
   ], {
-    S: 'enderio:soularium_ingot',
+    S: '#forge:ingots/soularium',
     F: 'minecraft:rotten_flesh',
     G: 'minecraft:gunpowder',
     B: 'minecraft:bone',
     A: 'minecraft:string'
-  });
+  }).id('kubejs:mob_grinding_utils/crafting/mobgrindium_ingot');
 });
 
 //====================CHANGED RECIPES==================
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         D: 'kubejs:redstone_component',
         B: 'kubejs:mobgrindium_ingot',
         C: 'mob_grinding_utils:spikes'
-    });
+    }).id('kubejs:mob_grinding_utils/crafting/saw');
 });
 
 //MOB FAN
@@ -56,8 +56,8 @@ ServerEvents.recipes(event => {
     {
         C: 'kubejs:redstone_component',
         B: 'kubejs:mobgrindium_ingot',
-        A: 'thermal:steel_plate'
-    });
+        A: '#forge:plates/steel'
+    }).id('kubejs:mob_grinding_utils/crafting/fan');
 });
 
 //MOB FAN DISTANCE UPGRADE
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
         A: '#forge:feathers',
         C: 'kubejs:rudimentary_redstone_component',
         B: 'kubejs:mobgrindium_ingot'
-    });
+    }).id('kubejs:mob_grinding_utils/crafting/fan_upgrade_speed');
 });
 
 //MOB FAN HEIGHT UPGRADE
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     {
         A: 'kubejs:mobgrindium_ingot',
         B: '#forge:feathers'
-    });
+    }).id('kubejs:mob_grinding_utils/crafting/fan_upgrade_height');
 });
 
 //MOB FAN WIDTH UPGRADE
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
     {
         A: 'kubejs:mobgrindium_ingot',
         B: '#forge:feathers'
-    });
+    }).id('kubejs:mob_grinding_utils/crafting/fan_upgrade_width');
 });
 
 //MOB MASHER SHARPNESS UPGRADE
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:iron_sword',
         C: 'kubejs:redstone_component',
         A: 'kubejs:mobgrindium_ingot'
-    });
+    }).id('kubejs:mob_grinding_utils/crafting/saw_upgrade_sharpness');
 });
 
 // MOB MASHER LOOTING UPGRADE
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
         C: 'kubejs:redstone_component',
         A: 'kubejs:mobgrindium_ingot',
         B: 'minecraft:lapis_lazuli'
-    });
+    }).id('kubejs:mob_grinding_utils/crafting/saw_upgrade_looting');
 });
 
 // MOB MASHER BEHEADING UPGRADE
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:golden_helmet',
         D: 'kubejs:redstone_component',
         A: 'kubejs:mobgrindium_ingot'
-    });
+    }).id('kubejs:mob_grinding_utils/crafting/saw_upgrade_beheading');
 });
 
 //====================COMPATIBILITY RECIPES==================

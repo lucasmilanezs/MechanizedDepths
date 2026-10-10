@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   event.recipes.create.mixing('minecraft:blaze_rod', [
     'minecraft:coal',
-    'minecraft:iron_nugget'
+    '#forge:nuggets/iron'
   ]).heatLevel("MELTEDBLAZE")
 });
 

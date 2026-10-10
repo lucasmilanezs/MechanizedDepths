@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
       { item: 'create_new_age:overcharged_diamond' },
       { item: 'minecraft:quartz_block' },
       { item: 'ae2:quartz_block' },
-      { item: 'kubejs:refined_quartz' }
+      { tag: 'forge:ingots/refined_quartz' }
     ],
     result: { item: 'kubejs:empowered_certite_crystal' },
     time: 50

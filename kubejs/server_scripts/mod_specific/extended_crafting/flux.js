@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     ], {
         R: 'thermal:rf_coil',
         E: '#forge:ingots/electrum'
-    }, 2000);
+    }, 2000).id('kubejs:extended_crafting/extendedcrafting_shaped_flux_crafter/redstone_flux_super_coil');
 });
 
 //REDSTONE FLUX RESONATOR
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     ], {
         R: 'kubejs:redstone_flux_super_coil',
         E: 'kubejs:inductive_alloy'
-    }, 8000);
+    }, 8000).id('kubejs:extended_crafting/extendedcrafting_shaped_flux_crafter/rf_resonator');
 });
 
 //====================CHANGED RECIPES==================

@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
       { "item": "vital_herbs:bleeding_heart" },
       { "item": "minecraft:torch" },
       { "item": "minecraft:apple" },
-      { "item": "minecraft:iron_ingot" },
+      { "tag": "forge:ingots/iron" },
     ],
     "sapling": { "item": "minecraft:oak_sapling" },
     "output": { 

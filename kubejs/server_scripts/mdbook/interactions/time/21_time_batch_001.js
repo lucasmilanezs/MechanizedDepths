@@ -1,8 +1,6 @@
 global.MDBook = global.MDBook || {}
 var MDBook = global.MDBook
 
-// --- PNEUMATICCRAFT ----------------------------------------------------------
-
 MDBook.defer(function () { MDBook.Engine.register({
   id: 'time.pneumatic.001', kind: 'time', weight: 10, once: false,
   say: '&7&o— I hate PneumaticCraft. No further questions.&r'
@@ -23,8 +21,6 @@ MDBook.defer(function () { MDBook.Engine.register({
   say: '&7&o— You will learn to love PneumaticCraft. This is a lie. I am sorry.&r'
 })})
 
-// --- GREGTECH / GTNH ---------------------------------------------------------
-
 MDBook.defer(function () { MDBook.Engine.register({
   id: 'time.greg.001', kind: 'time', weight: 9, once: false,
   say: '&7&o— Somewhere out there, someone is playing GregTech New Horizons voluntarily. I think about them sometimes.&r'
@@ -35,21 +31,15 @@ MDBook.defer(function () { MDBook.Engine.register({
   say: '&7&o— GTNH players would call this pack a tutorial. They\'re not wrong. I won\'t tell them that.&r'
 })})
 
-// --- AE2 ---------------------------------------------------------------------
-
 MDBook.defer(function () { MDBook.Engine.register({
   id: 'time.ae2.003', kind: 'time', weight: 7, once: false,
   say: '&7&o— The ME network is a religion. The P2P tunnel is its most confusing sacrament.&r'
 })})
 
-// --- FACTORIO ----------------------------------------------------------------
-
 MDBook.defer(function () { MDBook.Engine.register({
   id: 'time.factorio.001', kind: 'time', weight: 9, once: false,
   say: '&7&o— The factory must grow. This isn\'t advice. It\'s prophecy.&r'
 })})
-
-// --- GENERALISTAS ------------------------------------------------------------
 
 MDBook.defer(function () { MDBook.Engine.register({
   id: 'time.general.001', kind: 'time', weight: 10, once: false,
@@ -110,8 +100,6 @@ MDBook.defer(function () { MDBook.Engine.register({
   id: 'time.lore.004', kind: 'time', weight: 2, once: true,
   say: '&7&o— Somewhere, a machine is still running that nobody remembers building. I think about that sometimes.&r'
 })})
-
-// --- DIVAGATION ---------------------------------------------------------
 
 MDBook.defer(function () { MDBook.Engine.register({
   id: 'time.harlan.001', kind: 'time', weight: 2, once: false,

@@ -10,11 +10,11 @@ ServerEvents.recipes(event => {
     ingredients: [
       { item: 'kubejs:titanium_sponge_pure' },
       { item: 'thermal:apatite_dust' },
-      { item: 'thermal:constantan_dust' }
+      { tag: 'forge:dusts/constantan' }
     ],
     result: [{ item: 'kubejs:ingot_titanium_alloy' }],
     energy: 10000
-  });
+  }).id('kubejs:thermal/smelter/ingot_titanium_alloy');
 });
 
 // HARDENED
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     ],
     result: [{ item: 'thermal:obsidian_glass' }],
     energy: 10000
-  });
+  }).id('kubejs:thermal/smelter/obsidian_glass');
 });
 //=========================CHANGED RECIPES=========================
 

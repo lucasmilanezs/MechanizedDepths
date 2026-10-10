@@ -25,11 +25,13 @@
 		}
 		{
 			id: "04E0811D8092FC28"
+			invisible: true
+			subtitle: "Legacy: apotheosis:reforging_table"
 			tasks: [{
 				id: "799F4F4518C1B472"
-				item: "apotheosis:reforging_table"
-				type: "item"
+				type: "checkmark"
 			}]
+			title: "LEGACY"
 			x: 2.0d
 			y: 1.0d
 		}

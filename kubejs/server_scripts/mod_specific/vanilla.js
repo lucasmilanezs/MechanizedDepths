@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:flint_and_steel', [
     '#forge:ingots/steel',
     'minecraft:flint'
-    ]);
+    ]).id('kubejs:vanilla/crafting/flint_and_steel');
 });
 
 ServerEvents.recipes(event => {
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     P: '#forge:plates/iron',
     S: 'minecraft:smooth_stone',
     F: 'minecraft:furnace'
-    });
+    }).id('kubejs:vanilla/crafting/blast_furnace');
 });
 
 // PACKED GRAVEL
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         '   '
     ], {
         G: 'minecraft:gravel'
-    });
+    }).id('kubejs:vanilla/crafting/packed_gravel');
 });
 
 // FURNANCE
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         {
             A: '#minecraft:planks',
             B: 'minecraft:stick'
-        });
+        }).id('kubejs:vanilla/crafting/crafting_table');
 });
 
 // PISTON
@@ -83,11 +83,11 @@ ServerEvents.recipes(event => {
             'BDB'
         ],
         {
-            C: 'alltheores:iron_rod',
+            C: '#forge:rods/iron',
             D: 'kubejs:rudimentary_redstone_component',
             B: 'minecraft:cobblestone',
             A: 'minecraft:oak_planks'
-        })
+        }).id('kubejs:vanilla/crafting/piston')
 });
 
 //PICKAXE
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             B: Item.of('tconstruct:pick_head', '{Material:"tconstruct:wood"}').weakNBT(),
             C: 'minecraft:stick'
         }
-    )
+    ).id('kubejs:vanilla/crafting/wooden_pickaxe')
 });
 
 ServerEvents.recipes(event => {
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
             B: Item.of('tconstruct:adze_head', '{Material:"tconstruct:wood"}').weakNBT(),
             C: 'minecraft:stick'
         }
-    )
+    ).id('kubejs:vanilla/crafting/wooden_shovel')
 });
 
 ServerEvents.recipes(event => {
@@ -136,5 +136,5 @@ ServerEvents.recipes(event => {
             B: Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood"}').weakNBT(),
             C: 'minecraft:stick'
         }
-    )
+    ).id('kubejs:vanilla/crafting/wooden_sword')
 });

@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     input: [
       { item: 'kubejs:meat_bar' },
       { item: 'industrialforegoing:pink_slime_ingot' },
-      { item: 'pneumaticcraft:ingot_iron_compressed' },
+      { tag: 'forge:ingots/compressed_iron' },
     ],
     inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',
     output: {
@@ -37,11 +37,11 @@ ServerEvents.recipes(event => {
       { item: 'industrialforegoing:plastic' },
       { item: 'industrialforegoing:machine_frame_pity' },
       { item: 'industrialforegoing:plastic' },
-      { item: 'mekanism:ingot_refined_obsidian' },
-      { item: 'mekanism:ingot_refined_obsidian' },
-      { item: 'enderio:end_steel_ingot' },
+      { tag: 'forge:ingots/refined_obsidian' },
+      { tag: 'forge:ingots/refined_obsidian' },
+      { tag: 'forge:ingots/end_steel' },
       { item: 'thermal:lumium_gear' },
-      { item: 'enderio:end_steel_ingot' }
+      { tag: 'forge:ingots/end_steel' }
     ],
     inputFluid: '{Amount:1000,FluidName:"industrialforegoing:latex"}',
     output: {
@@ -82,8 +82,8 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [
-      { item: 'pneumaticcraft:ingot_iron_compressed' },
-      { item: 'pneumaticcraft:ingot_iron_compressed' },
+      { tag: 'forge:ingots/compressed_iron' },
+      { tag: 'forge:ingots/compressed_iron' },
       { item: 'kubejs:ingot_gold_compressed' },
       { item: 'kubejs:ingot_gold_compressed' }
     ],

@@ -211,7 +211,7 @@
 				item: "mekanism:cardboard_box"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: 4.5d
 		}
 		{
@@ -237,6 +237,26 @@
 			}]
 			x: 0.5d
 			y: 2.5d
+		}
+		{
+			id: "4C5A8CC6D3074B2C"
+			tasks: [{
+				id: "6F2637855FEA5799"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			id: "29892BE72B8C571B"
+			tasks: [{
+				id: "7E61327EF6FAD57C"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
 		}
 	]
 	title: "&lTECH.&r Drafting Extensions"

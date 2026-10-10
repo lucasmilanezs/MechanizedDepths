@@ -44,5 +44,5 @@ ServerEvents.recipes(event => {
       count: 1,
       item: "thermal:quartz_dust"
     }
-  });
+  }).id('kubejs:mekanism/crushing/quartz_dust');
 });

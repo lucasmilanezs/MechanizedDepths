@@ -34,27 +34,27 @@ ServerEvents.recipes(event => {
     'ae2:item_cell_housing',
     'ae2:cell_component_1k',
     'kubejs:dormant_memory_cell',
-    ]);
+    ]).id('kubejs:ae2/crafting/item_storage_cell_1k');
     event.shapeless('ae2:item_storage_cell_4k', [
     'ae2:item_cell_housing',
     'ae2:cell_component_4k',
     'kubejs:dormant_memory_cell',
-    ]);
+    ]).id('kubejs:ae2/crafting/item_storage_cell_4k');
     event.shapeless('ae2:item_storage_cell_16k', [  
     'ae2:item_cell_housing',
     'ae2:cell_component_16k',
     'kubejs:dormant_memory_cell',
-    ]);
+    ]).id('kubejs:ae2/crafting/item_storage_cell_16k');
     event.shapeless('ae2:item_storage_cell_64k', [
     'ae2:item_cell_housing',
     'ae2:cell_component_64k',
     'kubejs:dormant_memory_cell',
-    ]);
+    ]).id('kubejs:ae2/crafting/item_storage_cell_64k');
     event.shapeless('ae2:item_storage_cell_256k', [
     'ae2:item_cell_housing',
     'ae2:cell_component_256k',
     'kubejs:dormant_memory_cell',
-    ]);
+    ]).id('kubejs:ae2/crafting/item_storage_cell_256k');
 })
 
 //METEORITE COMPASS
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     'I R',
     'RPR'
   ], {
-    R: 'kubejs:refined_quartz',
+    R: '#forge:ingots/refined_quartz',
     P: 'create:mechanical_press',
     I: '#forge:plates/invar'
   }).id('kubejs:ae2/inscriber');
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
     'FCF',
     'RPR'
   ], {
-    R: 'kubejs:refined_quartz',
+    R: '#forge:ingots/refined_quartz',
     P: 'ae2:engineering_processor',
     F: 'ae2:fluix_glass_cable',
     C: 'mekanism:elite_control_circuit'
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
     'QIQ',
     'RQR'
   ], {
-    R: 'kubejs:refined_quartz',
+    R: '#forge:ingots/refined_quartz',
     Q: 'ae2:quartz_glass',
     I: 'kubejs:osgloglium'
   }).id('kubejs:ae2/energy_acceptor');
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
     'R  ',
     'ROR'
   ], {
-    R: 'kubejs:refined_quartz',
+    R: '#forge:ingots/refined_quartz',
     O: 'kubejs:osgloglium'
   }).id('kubejs:ae2/charger');
 });
@@ -139,11 +139,11 @@ ServerEvents.recipes(event => {
     ],
     {
         C: 'kubejs:crafting_processor',
-        A: 'kubejs:refined_quartz',
+        A: '#forge:ingots/refined_quartz',
         B: 'ae2:quartz_glass',
         N: 'ae2:annihilation_core',
         F: 'ae2:formation_core'
-    });
+    }).id('kubejs:ae2/crafting/molecular_assembler');
 });
 
 // CRAFTING UNIT
@@ -160,8 +160,8 @@ ServerEvents.recipes(event => {
         B: 'ae2:logic_processor',
         C: 'ae2:calculation_processor',
         D: 'kubejs:crafting_processor',
-        A: 'kubejs:refined_quartz'
-    });
+        A: '#forge:ingots/refined_quartz'
+    }).id('kubejs:ae2/crafting/crafting_unit');
 });
 
 //PATTERN PROVIDER
@@ -178,8 +178,8 @@ ServerEvents.recipes(event => {
         B: 'kubejs:crafting_processor',
         C: 'ae2:annihilation_core',
         D: 'ae2:formation_core',
-        A: 'kubejs:refined_quartz'
-    });
+        A: '#forge:ingots/refined_quartz'
+    }).id('kubejs:ae2/crafting/pattern_provider');
 });
 
 // CRAFTING CARD

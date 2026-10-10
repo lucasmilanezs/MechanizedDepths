@@ -11,7 +11,7 @@
     },
     {
       "type": "custommachinery:item",
-      "item": "alltheores:raw_silver",
+      "item": "thermal:raw_silver",
       "amount": 5,
       "chance": 0.7,
       "mode": "output"
@@ -25,7 +25,7 @@
     },
     {
       "type": "custommachinery:item",
-      "item": "alltheores:raw_lead",
+      "item": "thermal:raw_lead",
       "amount": 3,
       "chance": 0.5,
       "mode": "output"

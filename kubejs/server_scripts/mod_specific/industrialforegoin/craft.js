@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     S: 'kubejs:synaptic_interface',
     O: 'kubejs:organic_polymer_mesh',
     W: '#minecraft:planks'
-  });
+  }).id('kubejs:industrialforegoing/crafting/machine_frame_pity');
 });
 
 //FLUID EXTRACTOR
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     D: 'create:mechanical_drill',
     S: '#forge:plates/steel',
     U: 'kubejs:redstone_component'
-  });
+  }).id('kubejs:industrialforegoing/crafting/fluid_extractor');
 });
 
 //LATEX PROCESSING UNIT
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     T: 'mekanism:elite_fluid_tank',
     U: 'kubejs:redstone_component',
     F: 'thermal:machine_furnace'
-  })
+  }).id('kubejs:industrialforegoing/crafting/latex_processing_unit')
 });
 
 // DISSOLUTION CHAMBER
@@ -70,9 +70,9 @@ ServerEvents.recipes(event => {
     T: 'mekanism:ultimate_fluid_tank',
     C: 'ae2:sky_stone_chest',
     G: 'thermal:lumium_gear',
-    E: 'enderio:energetic_alloy_ingot',
+    E: '#forge:ingots/energetic_alloy',
     M: 'create:mechanical_arm'
-  })
+  }).id('kubejs:industrialforegoing/crafting/dissolution_chamber')
 });
 
 // MOB SLAUGHTER FACTORY
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     G: 'thermal:lumium_gear',
     E: 'kubejs:mobgrindium_ingot',
     M: 'mob_grinding_utils:saw'
-  })
+  }).id('kubejs:industrialforegoing/crafting/mob_slaughter_factory')
 });
 
 // FLUID LASER BASE
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
     C: 'mekanism:electric_pump',
     G: 'thermal:enderium_gear',
     E: 'kubejs:redstone_component'
-  })
+  }).id('kubejs:industrialforegoing/crafting/fluid_laser_base')
 });
 
 //====================COMPATIBILITY RECIPES==================

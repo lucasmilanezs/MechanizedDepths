@@ -50,14 +50,14 @@ ServerEvents.recipes(event => {
                 "item": "minecraft:bucket"
             }
         ]
-    })
+    }).id('kubejs:pneumaticcraft/pressure_chamber/meat_bar')
 });
 
 ServerEvents.recipes(event => {
     event.custom({
         "type": "pneumaticcraft:pressure_chamber",
         "inputs": [
-            { "item": "minecraft:gold_ingot" },
+            { "tag": "forge:ingots/gold" },
         ],
         "pressure": 3.0,
         "results": [
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:ingot_gold_compressed"
             },
         ]
-    })
+    }).id('kubejs:pneumaticcraft/pressure_chamber/ingot_gold_compressed')
 });
 
 ServerEvents.recipes(event => {
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:double_plastic"
             },
         ]
-    })
+    }).id('kubejs:pneumaticcraft/pressure_chamber/double_plastic')
 });
 
 //REDSTONE CIRCUIT SUBSTRATE
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:redstone_circuit_substrate"
             },
         ]
-    })
+    }).id('kubejs:pneumaticcraft/pressure_chamber/redstone_circuit_substrate')
 });
 
 

@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         'RGR',
         ' R '
     ], {
-        R: 'pneumaticcraft:ingot_iron_compressed',
+        R: '#forge:ingots/compressed_iron',
         G: '#forge:gears/iron'
     }).id('pneumaticcraft:compressed_iron_gear');
 });
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         'GSG'
     ], {
         R: 'minecraft:red_dye',
-        C: 'pneumaticcraft:ingot_iron_compressed',
+        C: '#forge:ingots/compressed_iron',
         G: '#forge:gears/compressed_iron',
         P: 'industrialforegoing:machine_frame_pity',
         S: 'pneumaticcraft:stone_base',

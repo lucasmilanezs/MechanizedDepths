@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
       }
     ],
     energy: 6000
-  });
+  }).id('kubejs:thermal/refinery/aqueous_organic_solvent');
 });
 //====================CHANGED RECIPES==================
 

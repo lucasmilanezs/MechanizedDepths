@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.sequenced_assembly(
     [Item.of('kubejs:precision_matrix_core')],
-    Item.of('minecraft:iron_ingot'),
+    '#forge:ingots/iron',
     [
       event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'minecraft:redstone']),
       event.recipes.create.cutting(Item.of(transitional), Item.of(transitional)).processingTime(100),
@@ -29,15 +29,15 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   event.recipes.create.sequenced_assembly([
     Item.of('create:precision_mechanism').withChance(0.8),
-    Item.of('create:golden_sheet').withChance(0.05)
-  ], Item.of('minecraft:iron_nugget'), [
-    event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:golden_sheet']),
+    Item.of('thermal:gold_plate').withChance(0.05)
+  ], '#forge:nuggets/iron', [
+    event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', '#forge:plates/gold']),
     event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel']),
     event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:large_cogwheel']),
     event.recipes.createPressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism')
   ])
   .transitionalItem('create:incomplete_precision_mechanism')
-  .loops(1)
+  .loops(1).id('kubejs:create/sequenced_assembly/precision_mechanism')
 })
 
 // ENTROPIC DRIVE
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     event.recipes.createPressing('kubejs:incomplete_entropic_drive', 'kubejs:incomplete_entropic_drive')
   ])
   .transitionalItem('kubejs:incomplete_entropic_drive')
-  .loops(1) 
+  .loops(1).id('kubejs:create/sequenced_assembly/entropic_drive') 
 })
 
 // FORGED ASSEMBLY
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     event.recipes.createPressing('kubejs:incomplete_forged_assembly', 'kubejs:incomplete_forged_assembly')
   ])
   .transitionalItem('kubejs:incomplete_forged_assembly')
-  .loops(1)
+  .loops(1).id('kubejs:create/sequenced_assembly/forged_assembly')
 })
 
 //BLANK TECH CARD
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     ]
   )
   .transitionalItem(transitional)
-  .loops(1);
+  .loops(1).id('kubejs:create/sequenced_assembly/blank_tech_card');
 });
 
 // SILICON WAFER
@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
     ]
   )
   .transitionalItem(transitional)
-  .loops(1)
+  .loops(1).id('kubejs:create/sequenced_assembly/blazebound_steel')
 })
 
 ServerEvents.recipes(event => {
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
     [
       Item.of('kubejs:precision_matrix_core', 1)
     ],
-    Item.of('minecraft:iron_ingot'),
+    '#forge:ingots/iron',
     [
       event.recipes.create.deploying(Item.of(transitional), [Item.of(transitional), 'minecraft:redstone']),
       event.recipes.create.cutting(Item.of(transitional), Item.of(transitional)).processingTime(100),
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
     ]
   )
   .transitionalItem(transitional) 
-  .loops(1)
+  .loops(1).id('kubejs:create/sequenced_assembly/precision_matrix_core')
 });
 
 // RUDIMENTARY REDSTONE COMPONENT
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
     ]
   )
   .transitionalItem(transitional) 
-  .loops(2)
+  .loops(2).id('kubejs:create/sequenced_assembly/rudimentary_redstone_component')
 });
 
 

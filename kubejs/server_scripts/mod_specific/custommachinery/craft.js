@@ -18,12 +18,12 @@ ServerEvents.recipes(event => {
     ],
     {
       E: 'enderio:ensouled_chassis',
-      S: 'enderio:soularium_ingot',
+      S: '#forge:ingots/soularium',
       V: 'enderio:vibrant_gear',
       F: 'kubejs:flesh_compound',
       P: 'kubejs:simulation_processor'
     }
-  );
+  ).id('kubejs:custommachinery/crafting/neural_agonizer');
 });
 
 // NEUROTROPIC GARDEN
@@ -39,12 +39,12 @@ ServerEvents.recipes(event => {
     ],
     {
       E: 'enderio:ensouled_chassis',
-      S: 'enderio:soularium_ingot',
+      S: '#forge:ingots/soularium',
       V: 'enderio:vibrant_gear',
       C: 'enderio:vibrant_crystal',
       P: 'kubejs:simulation_processor'
     }
-  );
+  ).id('kubejs:custommachinery/crafting/neurotropic_garden');
 });
 
 // CODEX CRUCIBLE
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         B: 'thermal:machine_crucible',
         D: 'enderio:ensouled_chassis',
         E: 'mekanism:hdpe_sheet'
-    });
+    }).id('kubejs:custommachinery/crafting/codex_crucible');
 });
 
 

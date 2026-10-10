@@ -88,6 +88,11 @@ var MD_TT_EFFECT_LANG = {
         "name": "Unholy",
         "tooltip": "Poisons non-undead targets; each rank adds potency and 2 seconds after the first 5 seconds.",
         "short": "Poisons non-undead targets with scaling duration and potency."
+    },
+    "slimy": {
+        "name": "Slimy",
+        "tooltip": "Every third hit stuns the target for 1 second, +0.5 seconds per extra rank, at the cost of 3 extra durability.",
+        "short": "Every third hit stuns the target at the cost of extra durability."
     }
 }
 
@@ -562,7 +567,7 @@ var MD_TT_MATERIAL_CONTRACTS = {
     "refined_obsidian":  { "requiredTools": { "hammer_dig": "minecraft:diamond" } },
     "rose_gold":         { "requiredTools": { "hammer_dig": "minecraft:gold" } },
     "amethyst_bronze":   { "requiredTools": { "hammer_dig": "minecraft:iron" } },
-    "slimesteel":        { "requiredTools": { "hammer_dig": "minecraft:iron" } },
+    "slimesteel":        { "requiredTools": { "hammer_dig": "minecraft:iron" }, "improvements": { "mechanized/slimy": 1 } },
     "necrotic_bone": { "requiredTools": { "hammer_dig": "minecraft:wood" }, "improvements": { "mechanized/unholy": 1 } },
     "venombone":     { "requiredTools": { "hammer_dig": "minecraft:wood" }, "improvements": { "mechanized/venom": 1 } },
     "blazing_bone":  { "requiredTools": { "hammer_dig": "minecraft:wood" } },

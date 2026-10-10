@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
   ], {
     G: 'minecraft:poppy',
     S: 'minecraft:stick',
-    I: 'minecraft:iron_ingot'
+    I: '#forge:ingots/iron'
   }).id('kubejs:natures_aura/rose_needle');
 });
 
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     'GM ',
     '   '
   ], {
-    G: 'minecraft:gold_nugget',
+    G: '#forge:nuggets/gold',
     M:'#minecraft:flowers'
   }).id('kubejs:natures_aura/brilliant_fiber');
 });
@@ -79,7 +79,7 @@ event.shaped(
     ],
     {
         A: '#minecraft:logs'
-    })
+    }).id('kubejs:naturesaura/crafting/wood_stand')
 });
 
 //IMPERCEPTIBLE BUILDER
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
           C: 'minecraft:dispenser',
           D: 'kubejs:token_utility',
           A: 'minecraft:cobblestone'
-      })
+      }).id('kubejs:naturesaura/crafting/placer')
 });
 
 //ENERGETIC AURA FORGE
@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
         B: 'naturesaura:token_rage',
         D: 'naturesaura:conversion_catalyst',
         C: 'kubejs:token_utility'
-    })
+    }).id('kubejs:naturesaura/crafting/rf_converter')
 });
 
 //

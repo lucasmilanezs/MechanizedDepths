@@ -226,6 +226,7 @@
 			]
 			hide_dependency_lines: false
 			id: "64F2B2761FBEB6BD"
+			invisible: true
 			rewards: [{
 				id: "137FC647ACAD0D5D"
 				item: "minecraft:stick"
@@ -233,10 +234,10 @@
 			}]
 			secret: true
 			shape: "square"
+			subtitle: "Legacy: silentgear:pickaxe_blueprint"
 			tasks: [{
 				id: "5F16EA4B7F193C7D"
-				item: "silentgear:pickaxe_blueprint"
-				type: "item"
+				type: "checkmark"
 			}]
 			title: "LEGACY"
 			x: -4.5d
@@ -263,6 +264,7 @@
 				}
 			}
 			id: "708E4BE08506636D"
+			invisible: true
 			rewards: [{
 				count: 16
 				id: "5C180C602AA54CDA"
@@ -271,7 +273,7 @@
 			}]
 			secret: true
 			shape: "square"
-			subtitle: "Tools aren't born whole"
+			subtitle: "Legacy: silentgear:pickaxe_head (Tools aren't born whole)"
 			tasks: [
 				{
 					id: "63B649C6271E04F3"
@@ -280,15 +282,7 @@
 				}
 				{
 					id: "4C5A5F82783BE4C2"
-					item: {
-						Count: 1
-						id: "silentgear:pickaxe_head"
-						tag: {
-							Damage: 0
-						}
-					}
-					title: "Any SGear head"
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			title: "LEGACY"
@@ -494,7 +488,7 @@
 			description: [
 				"  To bridge the mortal and the divine, even simple gestures matter. Build a flowered clearing as the book suggests — colors and patterns left to your interpretation. With the Offering Table at its center, you may present objects to higher forces and receive something more elaborate in return. Whether it’s generosity or a cosmic joke remains uncertain."
 				""
-				"  Place the offering with &aright-click&r, then drop a &bSpirit of Calling&r onto the pillar to begin. After a short moment, the items will be consumed in a bolt of lightning, and your reward will fall from above. You can offer &2up to 16&r of the same item at once using a &2single Spirit of Calling&r — frugal worship at its finest. The ritual can be &8&lautomated🔧&r&r with modest redstone and creativity."
+				"  Place the offering with &aright-click&r, then drop a &bSpirit of Calling&r onto the pillar to begin. After a short moment, the items will be consumed in a bolt of lightning, and your reward will fall from above. You can offer &2up to 16&r of the same item at once using a &2single Spirit of Calling&r — frugal worship at its finest. The ritual can be &8&lautomated&r&r with modest redstone and creativity."
 				""
 				"&7&o— Our humble junk becomes their humble junk, returned with ceremony.&r&r"
 			]
@@ -788,7 +782,7 @@
 		{
 			dependencies: ["042EC538643F435A"]
 			description: [
-				"  The air itself is not empty — each realm carries an imprint of its nature, suspended as ambient aura. With the Bottle and Crock, you can capture that essence directly from the environment. Simply &ahold&r it and &aright-click&r while standing in the dimension whose aura you seek."
+				"  The air itself is not empty: each realm carries an imprint of its nature, suspended as ambient aura. With the Bottle and Crock, you can capture that essence directly from the environment. Simply &ahold&r it and &aright-click&r while standing in the dimension whose aura you seek."
 				""
 				"  Each realm yields a different essence, and these will fuel rituals far beyond simple alchemy."
 				""
@@ -1138,6 +1132,7 @@
 					type: "item"
 				}
 			]
+			title: "Your tool, your choice"
 			x: -5.5d
 			y: 0.5d
 		}

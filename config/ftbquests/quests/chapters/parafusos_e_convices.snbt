@@ -21,8 +21,7 @@
 		{
 			dependencies: ["6A51D3D6D7650D5D"]
 			description: [
-				"   Wood cultivated with care, nurtured by rituals, transmuted with intent... and now dipped in boiling oil to become a workbench. Don’t think of it as betrayal. It’s transition. Cycles within cycles. Phases that overlap."
-				""
+				"   Wood cultivated with care, nurtured by rituals, transmuted with intent... and now dipped in boiling oil to become a workbench. "
 				"   Nature taught you to observe. To listen. To shape. Now it’s time to weld. Grind. Channel."
 				""
 				"   Mix &a&o`Living Timber`&r&r with &c&o`Creosote Oil`.&r &rNot because it’s pretty, but because it works."
@@ -1808,7 +1807,7 @@
 				""
 				"  These blocks and components form the structural language of Immersive Engineering. Every multiblock you’ll assemble later speaks through them. Miss one, and the machine simply refuses to exist."
 				""
-				"  Build them once, understand them well — and then automate them as soon as you can. Trust me, you do not want to handcraft these forever."
+				"  Build them once, understand them well, and then automate them as soon as you can. Trust me, you do not want to handcraft these forever."
 				""
 				"&7&o— This is the part where automation stops being a luxury and starts being basic self-respect.&r&r"
 			]

@@ -14,10 +14,10 @@ ServerEvents.recipes(event => {
     'GFG',
     'SGS'
   ], {
-    S: 'thermal:steel_ingot',
+    S: '#forge:ingots/steel',
     G: 'minecraft:glass',
     F: 'kubejs:forged_assembly' 
-    });
+    }).id('kubejs:thermal/crafting/machine_frame');
 });
 
 // FLUID ENCAPSULATOR
@@ -31,9 +31,9 @@ ServerEvents.recipes(event => {
     B: 'minecraft:bucket',
     O: 'kubejs:obsidianite',
     M: 'thermal:machine_frame',
-    I: 'thermal:invar_gear',
+    I: '#forge:gears/invar',
     R: 'thermal:rf_coil'
-    });
+    }).id('kubejs:thermal/crafting/machine_bottler');
 });
 
 // INVAR GEAR
@@ -44,10 +44,10 @@ ServerEvents.recipes(event => {
     'IEI',
     'NIN'
   ], {
-    I: 'thermal:invar_ingot',
+    I: '#forge:ingots/invar',
     E: 'enderio:energized_gear',
-    N: 'thermal:invar_nugget'
-    });
+    N: '#forge:nuggets/invar'
+    }).id('kubejs:thermal/crafting/invar_gear');
 });
 
 // MAGMA CRUCIBLE
@@ -59,12 +59,12 @@ ServerEvents.recipes(event => {
     'IRI'
   ], {
     G: 'minecraft:glass',
-    I: 'thermal:invar_gear',
+    I: '#forge:gears/invar',
     R: 'thermal:rf_coil',
     O: 'kubejs:obsidianite',
     B: 'immersiveengineering:blastbrick_reinforced',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/machine_crucible');
 });
 
 // ELECTRUM GEAR
@@ -75,10 +75,10 @@ ServerEvents.recipes(event => {
     'IEI',
     'NIN'
   ], {
-    I: 'thermal:electrum_ingot',
-    N: 'thermal:electrum_nugget',
-    E: 'thermal:invar_gear'
-    });
+    I: '#forge:ingots/electrum',
+    N: '#forge:nuggets/electrum',
+    E: '#forge:gears/invar'
+    }).id('kubejs:thermal/crafting/electrum_gear');
 });
 
 // MULTISERVO PRESS
@@ -90,12 +90,12 @@ ServerEvents.recipes(event => {
     'ERE'
   ], {
     P: 'create:mechanical_press',
-    E: 'thermal:electrum_gear',
+    E: '#forge:gears/electrum',
     R: 'thermal:rf_coil',
     O: 'kubejs:vitrified_obsidian',
     B: 'minecraft:iron_block',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/machine_press');
 });
 
 // FRACIONATING STILL
@@ -107,12 +107,12 @@ ServerEvents.recipes(event => {
     'ERE'
   ], {
     T: 'mekanism:basic_fluid_tank',
-    E: 'thermal:electrum_gear',
+    E: '#forge:gears/electrum',
     R: 'thermal:rf_coil',
     O: 'kubejs:vitrified_obsidian',
     H: 'immersiveengineering:heavy_engineering',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/machine_refinery');
 });
 
 // BLAST CHILLER
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
     I: 'minecraft:blue_ice',
     F: 'thermal:machine_frame',
     R: 'kubejs:redstone_flux_super_coil'
-    });
+    }).id('kubejs:thermal/crafting/machine_chiller');
 });
 
 // SIGNALUM GEAR
@@ -142,8 +142,8 @@ ServerEvents.recipes(event => {
   ], {
     I: 'thermal:signalum_ingot',
     N: 'thermal:signalum_nugget',
-    E: 'thermal:electrum_gear'
-    });
+    E: '#forge:gears/electrum'
+    }).id('kubejs:thermal/crafting/signalum_gear');
 });
 
 // LUMIUM GEAR
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
     I: 'thermal:lumium_ingot',
     N: 'thermal:lumium_nugget',
     S: 'thermal:signalum_gear'
-    });
+    }).id('kubejs:thermal/crafting/lumium_gear');
 });
 // PHYTOGENIC INSULATOR
 ServerEvents.recipes(event => {
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
     O: 'kubejs:vitrified_obsidian',
     B: 'kubejs:blaze_glass_compound',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/machine_insolator');
 });
 
 //PYROLIZER
@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
     O: 'kubejs:vitrified_obsidian',
     B: 'kubejs:empowered_blazing_steel',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/machine_pyrolyzer');
 });
 
 //TWINITE ROD
@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
     P: 'thermal_extra:polyolefin_plate',
     E: 'thermal:enderium_gear',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/nitratic_igniter');
 });
 
 //ENDERIUM GEAR
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
     I: 'thermal:enderium_ingot',
     N: 'thermal:enderium_nugget',
     E: 'thermal:lumium_gear'
-    });
+    }).id('kubejs:thermal/crafting/enderium_gear');
 });
 
 //ENDOTHERMIC DEHYDRATOR
@@ -237,12 +237,12 @@ ServerEvents.recipes(event => {
     'HFH',
     'ERE'
   ], {
-    S: 'thermal_extra:soul_infused_ingot',
+    S: '#forge:ingots/soul_infused',
     E: 'thermal:enderium_gear',
     R: 'kubejs:rf_resonator',
     H: 'thermal_extra:soul_infused_glass',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/endothermic_dehydrator');
 });
 
 //FLUID MIXER
@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
     A: 'thermal_extra:polyolefin_plate',
     B: 'thermal_extra:twinite_glass',
     F: 'thermal:machine_frame'
-    });
+    }).id('kubejs:thermal/crafting/fluid_mixer');
 });
 
 //SEQUENTIAL FABRICATOR
@@ -274,11 +274,11 @@ ServerEvents.recipes(event => {
     ],
     {
         A: 'minecraft:crafting_table',
-        D: 'thermal:lead_gear',
+        D: '#forge:gears/lead',
         B: 'kubejs:laminated_alloy_plate',
         C: 'thermal:machine_frame',
         E: 'thermal:rf_coil'
-    })
+    }).id('kubejs:thermal/crafting/machine_crafter')
 });
 
 // COMPONENT ASSEMBLY
@@ -297,7 +297,7 @@ ServerEvents.recipes(event => {
           C: 'create:mechanical_arm',
           A: 'mekanism:elite_control_circuit',
           B: 'thermal:machine_crafter'
-      })
+      }).id('kubejs:thermal/crafting/component_assembly')
 });
 //====================COMPATIBILITY RECIPES==================
 

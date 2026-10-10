@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     "minecraft:soul_sand"
   )
   .energy(1600)
-  .bonus(EnderIOBonusType.CHANCE_ONLY)
+  .bonus(EnderIOBonusType.CHANCE_ONLY).id('kubejs:enderio/sag_milling/soul_grit')
 
   // End Stone → Crushed Endstone + chance de Resonant Dust
   event.recipes.enderio.sag_milling(
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     "minecraft:end_stone"
   )
   .energy(2000)
-  .bonus(EnderIOBonusType.CHANCE_ONLY)
+  .bonus(EnderIOBonusType.CHANCE_ONLY).id('kubejs:enderio/sag_milling/crushed_endstone')
 })
 
 

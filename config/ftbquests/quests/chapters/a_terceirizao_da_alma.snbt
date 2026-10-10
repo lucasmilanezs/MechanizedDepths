@@ -407,7 +407,7 @@
 			id: "313715BE2A4E93A7"
 			tasks: [{
 				id: "2232627F95D10D1B"
-				item: "mekanism:dust_gold"
+				item: "thermal:gold_dust"
 				type: "item"
 			}]
 			x: 1.0d

@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     C: 'kubejs:precision_matrix_core',
     R: 'kubejs:intricate_redstone_component'
 
-  });
+  }).id('kubejs:actuallyadditions/crafting/iron_casing');
 });
 
 //ATOMIC RECONSTRUCTOR
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     O: 'create_new_age:overcharged_golden_wire',
     S: 'immersiveengineering:sheetmetal_steel',
     C: 'actuallyadditions:iron_casing'
-  })
+  }).id('kubejs:actuallyadditions/crafting/atomic_reconstructor')
 });
 
 //COFFEE MACHINE
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         A: 'kubejs:token_utility',
         C: 'immersiveengineering:wirecoil_copper',
         B: '#forge:plates/aluminum'
-    })
+    }).id('kubejs:actuallyadditions/crafting/coffee_machine')
 });
 //====================COMPATIBILITY RECIPES==================
 

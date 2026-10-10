@@ -37,11 +37,11 @@ ServerEvents.recipes(event => {
       "enderio:z_logic_controller",
       "enderio:ender_resonator",
       "enderio:skeletal_contractor",
-      "enderio:end_steel_ingot",
+      "#forge:ingots/end_steel",
       "enderio:basic_capacitor",
-      "enderio:end_steel_ingot"
+      "#forge:ingots/end_steel"
     ]
-  ).energy(8000);
+  ).energy(8000).id('kubejs:enderio/slicing/dormant_memory_cell');
 });
 
 //BLANK SYNAPTIC INTERFACE — Slice 'n Splice
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
       "enderio:basic_capacitor",
       "kubejs:flesh_compound"
     ]
-  ).energy(8000);
+  ).energy(8000).id('kubejs:enderio/slicing/blank_synaptic_interface');
 });
 
 //OVERTHINKER CELL
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
       "kubejs:redstone_component",
       "enderio:basic_capacitor"
     ]
-  ).energy(10000);
+  ).energy(10000).id('kubejs:enderio/slicing/overthinker_cell');
 });
 
 

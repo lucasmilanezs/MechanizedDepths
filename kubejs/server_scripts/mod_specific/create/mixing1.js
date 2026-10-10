@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(Item.of('kubejs:empowered_blaze_powder', 4), [
     'minecraft:lapis_lazuli',
     'thermal:diamond_dust'
-  ])
+  ]).id('kubejs:create/mixing/empowered_blaze_powder')
 })
 
 // EMPOWERED BLAZING STEEL
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
       'kubejs:blazing_steel',
       'kubejs:empowered_blaze_powder'
     ]
-  ).superheated()
+  ).superheated().id('kubejs:create/mixing/empowered_blazing_steel')
 })
 
 // MELTED BLAZE METAL
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(
     Fluid.of('kubejs:melted_blaze_metal', 500),
     ['kubejs:empowered_blazing_steel']
-  ).superheated()
+  ).superheated().id('kubejs:create/mixing/melted_blaze_metal')
 })
 
 // VOID FRAGMENT
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(Item.of('kubejs:void_fragment', 1), [
     'minecraft:ender_pearl',
     '4x enderio:grains_of_infinity'
-  ]).superheated()
+  ]).superheated().id('kubejs:create/mixing/void_fragment')
 })
 
 // SLAG SLURRY

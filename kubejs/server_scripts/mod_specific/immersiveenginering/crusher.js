@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     result: { item: 'thermal:lapis_dust', count: 1 },
     energy: 2400,
     secondaries: []
-  });
+  }).id('kubejs:immersiveengineering/crusher/lapis_dust');
 });
 
 //==================COMPATIBILITY RECIPES==================
@@ -39,5 +39,5 @@ ServerEvents.recipes(event => {
     result: { item: 'thermal:quartz_dust', count: 1 },
     energy: 2400,
     secondaries: []
-  });
+  }).id('kubejs:immersiveengineering/crusher/quartz_dust');
 });

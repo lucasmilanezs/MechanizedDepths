@@ -30,9 +30,9 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   event.custom({
     type: 'immersiveengineering:arc_furnace',
-    input: { item: 'enderio:energetic_alloy_ingot' },
+    input: { tag: 'forge:ingots/energetic_alloy' },
     additives: [
-      { item: 'thermal:constantan_ingot' },
+      { tag: 'forge:ingots/constantan' },
       { item: 'thermal:lapis_dust' },
       { tag: 'forge:dusts/quartz' }
     ],
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
     ],
     time: 400,
     energy: 10000
-  });
+  }).id('kubejs:immersiveengineering/arc_furnace/inductive_alloy');
 });
 
 // TITANIUM INGOT
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     ],
     time: 400,
     energy: 100000
-  });
+  }).id('kubejs:immersiveengineering/arc_furnace/ingot_titanium');
 });
 
 // =============== CHANGED RECIPES ===============
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   event.custom({
     type: 'immersiveengineering:arc_furnace',
-    input: { item: 'minecraft:gold_ingot' },
+    input: { tag: 'forge:ingots/gold' },
     additives: [
       { item: 'minecraft:redstone' },
       { item: 'minecraft:glowstone_dust' }
@@ -76,6 +76,6 @@ ServerEvents.recipes(event => {
     ],
     time: 400,
     energy: 20000
-  });
+  }).id('kubejs:immersiveengineering/arc_furnace/energetic_alloy_ingot');
 });
 

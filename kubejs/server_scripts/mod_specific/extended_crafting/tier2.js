@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
   E: 'ae2:engineering_processor',
   U: 'mekanism:ultimate_control_circuit',
   C: 'ae2:energy_acceptor',
-}).tier(2);
+}).tier(2).id('kubejs:extended_crafting/extendedcrafting_shaped_table/controller');
 });
 
 // MATER DATA
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
   P: 'thermal_extra:polyolefin_plate',
   D: 'ae2:matter_ball',
   C: 'kubejs:dense_processor',
-}).tier(2);
+}).tier(2).id('kubejs:extended_crafting/extendedcrafting_shaped_table/matter_data');
 });
 
 //GOLDEN SACRIFICAL BOWL

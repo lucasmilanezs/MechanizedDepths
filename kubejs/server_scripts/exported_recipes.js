@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
                     ' A '
             ],
             {
-                    A: 'minecraft:gold_ingot'
+                    A: '#forge:ingots/gold'
             }
     )
     event.shaped(
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
             {
                     C: 'kubejs:entropic_drive',
                     A: 'minecraft:iron_bars',
-                    B: 'thermal:steel_plate'
+                    B: '#forge:plates/steel'
             }
     )
     event.shaped(
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
                     C: 'enderio:void_chassis',
                     B: 'kubejs:laminated_alloy_plate',
                     A: 'ae2:silicon',
-                    D: 'enderio:iron_gear'
+                    D: '#forge:gears/iron'
             }
     )
     event.shaped(
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
                     C: 'kubejs:rudimentary_redstone_component',
                     B: 'immersiveengineering:component_iron',
                     D: 'immersiveengineering:coil_lv',
-                    A: 'thermal:steel_plate'
+                    A: '#forge:plates/steel'
             }
     )
     event.shaped(
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
                     C: 'kubejs:frame_titanium',
                     B: 'thermal:machine_crucible',
                     D: 'enderio:ensouled_chassis',
-                    E: 'enderio:dark_steel_ingot'
+                    E: '#forge:ingots/dark_steel'
             }
     )
 });

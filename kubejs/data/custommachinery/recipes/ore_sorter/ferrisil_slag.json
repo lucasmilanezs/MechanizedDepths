@@ -27,21 +27,21 @@
     },
     {
       "type": "custommachinery:item",
-      "item": "alltheores:raw_aluminum",
+      "item": "immersiveengineering:raw_aluminum",
       "amount": 4,
       "chance": 0.6,
       "mode": "output"
     },
     {
       "type": "custommachinery:item",
-      "item": "alltheores:raw_tin",
+      "item": "thermal:raw_tin",
       "amount": 4,
       "chance": 0.5,
       "mode": "output"
     },
     {
       "type": "custommachinery:item",
-      "item": "alltheores:raw_nickel",
+      "item": "thermal:raw_nickel",
       "amount": 3,
       "chance": 0.4,
       "mode": "output"

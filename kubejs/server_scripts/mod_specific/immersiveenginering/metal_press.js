@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
       item: 'kubejs:empowered_blaze_rod',
       count: 1
     }
-  });
+  }).id('kubejs:immersiveengineering/metal_press/empowered_blaze_rod');
 });
 
 

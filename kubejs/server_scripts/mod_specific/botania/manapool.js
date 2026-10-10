@@ -6,7 +6,7 @@ ServerEvents.custom(event => {
   event.custom({
     type: 'botania:mana_infusion',
     input: {
-      item: 'minecraft:iron_ingot'
+      tag: 'forge:ingots/iron'
     },
     mana: 3000, 
     output: {
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     output: {
       item: 'kubejs:manadoped_monosilicon'
     }
-  });
+  }).id('kubejs:botania/mana_infusion/manadoped_monosilicon');
 });
 
 //====================CHANGED RECIPES==================
@@ -37,6 +37,7 @@ ServerEvents.recipes(event => {
 //MANASTEEL
 ServerEvents.recipes(event => {
   event.remove({ id: 'botania:mana_infusion/manasteel' });
+  event.remove({ id: 'botania:mana_infusion/manasteel_block' });
   event.custom({
     type: 'botania:mana_infusion',
     input: {
@@ -46,7 +47,7 @@ ServerEvents.recipes(event => {
     output: {
       item: 'botania:manasteel_ingot'
     }
-  });
+  }).id('kubejs:botania/mana_infusion/manasteel_ingot');
 });
 
 //====================COMPATIBILITY RECIPES==================

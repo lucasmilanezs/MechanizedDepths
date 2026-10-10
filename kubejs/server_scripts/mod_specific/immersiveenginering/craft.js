@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
   ], {
     L: 'kubejs:living_timber',
     B: 'immersiveengineering:creosote_bucket'
-  });
+  }).id('kubejs:immersiveengineering/crafting/treated_wood_horizontal');
 });
 
 // ELECTRODE
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
       P: 'minecraft:paper',
       G: 'minecraft:blue_dye'
     }
-);
+).id('kubejs:immersiveengineering/crafting/blueprint');
 });
 
 // KINETIC DYNAMO
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         B: 'immersiveengineering:component_iron',
         D: 'immersiveengineering:coil_lv',
         A: '#forge:plates/steel'
-    })
+    }).id('kubejs:immersiveengineering/crafting/dynamo')
 });
 
 // PRECISION MATRIX CORE
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
     C: 'immersiveengineering:circuit_board',
     Q: 'thermal:quartz_dust',
     R: 'immersiveengineering:component_electronic_adv'
-  })
+  }).id('kubejs:immersiveengineering/crafting/precision_matrix_core')
 });
 
 //==================CHANGED RECIPES==================
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
     {
         A: 'minecraft:nether_brick',
         B: 'minecraft:brick'
-    });
+    }).id('kubejs:immersiveengineering/crafting/alloybrick');
 });
 
 // COKE BRICK
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
     I: '#forge:plates/iron',
     B: 'minecraft:bricks',
     V: 'kubejs:vivid_infused_stone'
-  });
+  }).id('kubejs:immersiveengineering/crafting/cokebrick');
 
 // BLAST BRICK
   event.remove({ output: 'immersiveengineering:blastbrick' });
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
     I: '#forge:plates/invar',
     B: 'minecraft:bricks',
     V: 'kubejs:vivid_infused_stone'
-  });
+  }).id('kubejs:immersiveengineering/crafting/blastbrick');
 }); 
 
 // WATERMILL
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
 ], {
   S: 'immersiveengineering:waterwheel_segment',
   C: 'immersiveengineering:component_iron'
-})
+}).id('kubejs:immersiveengineering/crafting/watermill')
 });
 
 // REINFORCED BLAST BRICK
@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
           B: 'kubejs:blazing_steel',
           A: '#forge:plates/steel',
           C: 'immersiveengineering:blastbrick'
-    });
+    }).id('kubejs:immersiveengineering/crafting/blastbrick_reinforced');
 });
 
 // MECHANICAL COMPONENT
@@ -165,9 +165,9 @@ ServerEvents.recipes(event => {
     'IRI'
   ], {
     R: 'kubejs:rudimentary_redstone_component',
-    C: 'minecraft:copper_ingot',
+    C: '#forge:ingots/copper',
     I: 'immersiveengineering:sheetmetal_iron'
-  });
+  }).id('kubejs:immersiveengineering/crafting/rs_engineering');
 });
 
 // MV CAPACITOR
@@ -181,12 +181,12 @@ ServerEvents.recipes(event => {
         'AEA'
     ],
     {
-        E: 'thermal:iron_plate',
+        E: '#forge:plates/iron',
         C: 'immersiveengineering:wire_copper',
-        B: 'thermal:nickel_plate',
+        B: '#forge:plates/nickel',
         D: 'immersiveengineering:capacitor_lv',
         A: '#forge:treated_wood'
-    })
+    }).id('kubejs:immersiveengineering/crafting/capacitor_mv')
 });
 
 // HV CAPACITOR
@@ -200,12 +200,12 @@ ServerEvents.recipes(event => {
         'AEA'
     ],
     {
-        B: 'alltheores:aluminum_plate',
+        B: '#forge:plates/aluminum',
         C: 'immersiveengineering:wire_steel',
         D: 'immersiveengineering:capacitor_mv',
         A: '#forge:treated_wood',
-        E: 'immersiveengineering:ingot_hop_graphite'
-    })
+        E: '#forge:ingots/hop_graphite'
+    }).id('kubejs:immersiveengineering/crafting/capacitor_hv')
 });
 //==================COMPATIBILITY RECIPES==================
 

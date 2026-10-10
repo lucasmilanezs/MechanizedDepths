@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:compulsort_cell' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/thermal_extra_component_assembly/compulsort_cell');
 });
 
 // CRAFTING DATA
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:crafting_data' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/thermal_extra_component_assembly/crafting_data');
 });
 
 // BOTANIC CAPACITOR 
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:botanic_capacitor' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/thermal_extra_component_assembly/botanic_capacitor');
 });
 
 // ELETROLYTIC CORE
@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'mekanism:electrolytic_core' },
     energy: 4000
-  })
+  }).id('kubejs:thermal/thermal_extra_component_assembly/electrolytic_core')
 });
 
 //THERMAL SENSOR
@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
     ],
     result: { item: 'kubejs:thermal_sensor' },
     energy: 4000
-  });
+  }).id('kubejs:thermal/thermal_extra_component_assembly/thermal_sensor');
 });
 
 

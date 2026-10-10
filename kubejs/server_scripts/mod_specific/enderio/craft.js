@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:red_stained_glass_pane',
         A: '#forge:plates/lead',
         C: 'enderio:double_layer_capacitor'
-    })
+    }).id('kubejs:enderio/crafting/agony_module')
 });
 
 //JOY MODULE
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
           D: 'naturesaura:token_joy',
           B: 'minecraft:yellow_stained_glass_pane',
           C: 'enderio:double_layer_capacitor'
-      })
+      }).id('kubejs:enderio/crafting/joy_module')
 });
 
 // LOVE MODULE
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
           B: 'minecraft:pink_stained_glass_pane',
           D: 'actuallyadditions:empowered_restonia_crystal',
           C: 'enderio:octadic_capacitor'
-      })
+      }).id('kubejs:enderio/crafting/love_module')
 });
 
 // FEAR MODULE
@@ -67,7 +67,7 @@ event.shaped(
         C: 'enderio:octadic_capacitor',
         B: 'minecraft:blue_stained_glass_pane',
         D: 'actuallyadditions:empowered_palis_crystal'
-    })
+    }).id('kubejs:enderio/crafting/fear_module')
 });
 
 //====================CHANGED RECIPES==================
@@ -85,8 +85,8 @@ ServerEvents.recipes(event => {
     {
         C: 'kubejs:entropic_drive',
         A: 'minecraft:iron_bars',
-        B: 'thermal:steel_plate'
-    })
+        B: '#forge:plates/steel'
+    }).id('kubejs:enderio/crafting/void_chassis')
 });
 // ENSOULED CHASSIS
 ServerEvents.recipes(event => {
@@ -97,9 +97,9 @@ ServerEvents.recipes(event => {
     'SES'
   ], {
     S: 'enderio:soul_chain',
-    E: 'enderio:end_steel_ingot',
+    E: '#forge:ingots/end_steel',
     V: 'enderio:void_chassis', 
-    }) 
+    }).id('kubejs:enderio/crafting/ensouled_chassis') 
 });
 
 // POWERED SPAWNER
@@ -114,11 +114,11 @@ ServerEvents.recipes(event => {
     ],
     {
         B: 'enderio:broken_spawner',
-        A: 'enderio:soularium_ingot',
+        A: '#forge:ingots/soularium',
         C: 'enderio:ensouled_chassis',
         D: 'enderio:vibrant_crystal',
         E: 'enderio:z_logic_controller'
-    });
+    }).id('kubejs:enderio/crafting/powered_spawner');
 });
 
 // PRIMITIVE ALLOY SMELTER
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
     F: 'minecraft:furnace',
     C: 'enderio:void_chassis',
     S: 'minecraft:deepslate',
-  });
+  }).id('kubejs:enderio/crafting/primitive_alloy_smelter');
 });
 
 // ALLOY SMELTER
@@ -146,10 +146,10 @@ ServerEvents.recipes(event => {
     F: 'minecraft:furnace',
     I: 'enderio:grains_of_infinity',
     C: 'minecraft:cauldron',
-    G: 'enderio:iron_gear',
+    G: '#forge:gears/iron',
     A: 'enderio:primitive_alloy_smelter',
-    D: 'enderio:dark_steel_ingot'
-  });
+    D: '#forge:ingots/dark_steel'
+  }).id('kubejs:enderio/crafting/alloy_smelter');
 });
 
 //CRAFTER
@@ -167,8 +167,8 @@ ServerEvents.recipes(event => {
         C: 'enderio:void_chassis',
         B: 'kubejs:laminated_alloy_plate',
         A: 'ae2:silicon',
-        D: 'enderio:iron_gear'
-    });
+        D: '#forge:gears/iron'
+    }).id('kubejs:enderio/crafting/crafter');
 });
 
 //TRAVEL ANCHOR
@@ -184,8 +184,8 @@ ServerEvents.recipes(event => {
     {
         C: 'enderio:pulsating_crystal',
         B: 'enderio:conduit_binder',
-        A: 'enderio:dark_steel_ingot'
-    });
+        A: '#forge:ingots/dark_steel'
+    }).id('kubejs:enderio/crafting/travel_anchor');
 });
 
 ServerEvents.recipes(event => {

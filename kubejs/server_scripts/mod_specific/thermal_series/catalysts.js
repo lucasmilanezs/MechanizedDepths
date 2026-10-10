@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     energy_mod: 10.0,
     min_chance: 0.0,
     use_chance: 1.0
-  });
+  }).id('kubejs:thermal/pulverizer_catalyst/flint');
 });
 
 ServerEvents.recipes(event => {
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     energy_mod: 0.85,             // levemente mais rápido
     min_chance: 0.05,             // chance mínima simbólica
     use_chance: 0.85              // consome com frequência
-  });
+  }).id('kubejs:thermal/pulverizer_catalyst/dust_quartz');
 
   // IE: Dust Coke — foco em subproduto, bom boost de velocidade
   event.custom({
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
     energy_mod: 0.3,              // bastante rápido, compensa custo de processamento
     min_chance: 0.35,             // alta confiabilidade de drop
     use_chance: 0.6               // moderadamente consumido
-  });
+  }).id('kubejs:thermal/pulverizer_catalyst/dust_coke');
 
   // Cinnabar — equilibrado, boa durabilidade
   event.custom({
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     energy_mod: 0.8,              // levemente mais rápido
     min_chance: 0.25,
     use_chance: 0.3               // durável
-  });
+  }).id('kubejs:thermal/pulverizer_catalyst/cinnabar');
 
   // Gelatinous Organic Solvent — muito eficiente, raro
   event.custom({
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     energy_mod: 0.15,             // turbo, justifica raridade
     min_chance: 0.5,              // drop muito confiável
     use_chance: 0.25              // extremamente durável
-  });
+  }).id('kubejs:thermal/pulverizer_catalyst/gelatinous_organic_solvent');
 
   // Ice Charge — barato, rápido, descartável
   event.custom({
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     energy_mod: 0.3,              // bem rápido
     min_chance: 0.15,
     use_chance: 0.95              // quase sempre consumido
-  });
+  }).id('kubejs:thermal/pulverizer_catalyst/ice_charge');
 
   // Rich Slag — foco em subprodutos, velocidade normal
   event.custom({
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
     energy_mod: 1.0,              // não afeta a velocidade
     min_chance: 0.60,             // excelente para loot raros
     use_chance: 0.20              // muito durável
-  });
+  }).id('kubejs:thermal/pulverizer_catalyst/rich_slag');
 
 });
 

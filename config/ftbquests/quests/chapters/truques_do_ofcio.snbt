@@ -523,7 +523,7 @@
 			id: "1EC2816129663219"
 			tasks: [{
 				id: "2E775EAD99D87D29"
-				item: "alltheores:aluminum_plate"
+				item: "immersiveengineering:plate_aluminum"
 				type: "item"
 			}]
 			x: 7.0d

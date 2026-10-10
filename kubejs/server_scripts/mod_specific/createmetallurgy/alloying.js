@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     ingredients: [
       { item: 'kubejs:empowered_blazing_steel'},
       { item: 'kubejs:empowered_blazing_steel'},
-      { item: 'thermal:tin_ingot' },
+      { tag: 'forge:ingots/tin' },
       { item: 'industrialforegoing:pink_slime_ingot' },
     ],
     processingTime: 100,
@@ -39,10 +39,10 @@ ServerEvents.recipes(event => {
     type: 'createmetallurgy:alloying',
     heatRequirement: 'entropic_mycelite',
     ingredients: [
-      { item: 'thermal_extra:twinite_ingot' },
+      { tag: 'forge:ingots/twinite' },
       { item: 'minecraft:shulker_shell' },
       { item: 'minecraft:shulker_shell' },
-      { item: 'thermal:nickel_ingot' },
+      { tag: 'forge:ingots/nickel' },
     ],
     processingTime: 100,
     results: [
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
       { fluid: 'thermal_extra:twinite', amount: 90 },
       { item: 'minecraft:shulker_shell' },
       { item: 'minecraft:shulker_shell' },
-      { item: 'thermal:nickel_ingot' },
+      { tag: 'forge:ingots/nickel' },
     ],
     processingTime: 100,
     results: [
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     type: 'createmetallurgy:alloying',
     heatRequirement: 'aetherforged_cinderblock',
     ingredients: [
-      { item: 'thermal_extra:shellite_ingot' },
+      { tag: 'forge:ingots/shellite' },
       { item: 'minecraft:netherite_scrap'},
       { item: 'minecraft:netherite_scrap'},
       { item: 'thermal_extra:ancient_dust' }
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
     heatRequirement: 'aetherforged_cinderblock',
     ingredients: [
       { fluid: 'createmetallurgy:molten_void_steel', amount: 90 },
-      { item: 'thermal_extra:dragonsteel_ingot' },
+      { tag: 'forge:ingots/dragonsteel' },
       { item: 'minecraft:echo_shard'},
       { item: 'minecraft:echo_shard'},
       { item: 'kubejs:resonant_dust' }

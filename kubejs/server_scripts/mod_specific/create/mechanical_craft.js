@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     {
       C: 'kubejs:nugget_chrome'
     }
-  );
+  ).id('kubejs:create/mechanical_crafting/chrome_mask');
 });
 
 // ME CONTROLLER
@@ -33,5 +33,5 @@ ServerEvents.recipes(event => {
       U: 'mekanism:ultimate_control_circuit',
       C: 'ae2:energy_acceptor',
     }
-  );
+  ).id('kubejs:create/mechanical_crafting/controller');
 });
