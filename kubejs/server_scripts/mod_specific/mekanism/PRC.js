@@ -121,6 +121,23 @@ ServerEvents.recipes(event => {
   }).id('kubejs:mekanism/reaction/titanium_sponge_raw');
 });
 
+// FERROUS SOLUTION -> IRON DUST
+// Sink for the ilmenite leaching by-product. Output is the Almost Unified iron
+// dust target: AU does not rewrite recipes built in KubeJS.
+ServerEvents.recipes(event => {
+  event.custom({
+    type: "mekanism:crystallizing",
+    chemicalType: "gas",
+    input: {
+      amount: 500,
+      gas: "kubejs:ferrous_solution"
+    },
+    output: {
+      item: "thermal:iron_dust"
+    }
+  }).id('kubejs:mekanism/crystallizing/iron_dust_from_ferrous_solution');
+});
+
 // MAGNESIUM CHLORIDE GAS <-> FLUID
 // Lets the Thermopneumatic Processing Plant recycle it (pneumaticraft/thermo_plant.js).
 ServerEvents.recipes(event => {

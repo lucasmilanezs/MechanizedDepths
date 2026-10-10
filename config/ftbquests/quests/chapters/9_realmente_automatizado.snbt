@@ -387,9 +387,10 @@
 			id: "23C6C62611743C55"
 			shape: "none"
 			tasks: [{
-				id: "21A2DF32947C2493"
-				item: "mekanism:brine_bucket"
-				type: "item"
+				amount: 1000L
+				fluid: "mekanism:brine"
+				id: "5C25F8BC23AD42D8"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: 5.0d
 			y: -2.0d
@@ -436,9 +437,10 @@
 			id: "39C400B5BAF29B98"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				chemical: "mekanism:hydrogen_chloride"
 				id: "09A6F4E8F26E26D7"
-				item: "mekanism:hydrogen_chloride_bucket"
-				type: "item"
+				type: "mechanized_additions:chemical"
 			}]
 			x: 8.0d
 			y: -8.5d
@@ -742,9 +744,10 @@
 			id: "7353F1B964C7764F"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:liquid_obsession"
 				id: "64A80C8D32F39623"
-				item: "kubejs:liquid_obsession_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -8.0d
 			y: -4.5d
@@ -815,8 +818,10 @@
 			progression_mode: "linear"
 			shape: "none"
 			tasks: [{
-				id: "60B556B840C1BD63"
-				type: "checkmark"
+				amount: 1000L
+				chemical: "kubejs:titanium_tetrachloride"
+				id: "754D518FB2EB1C6D"
+				type: "mechanized_additions:chemical"
 			}]
 			x: 3.5d
 			y: -3.5d
@@ -867,17 +872,12 @@
 			icon: "mekanism:basic_chemical_tank"
 			id: "7F36BD27BDFB616C"
 			shape: "none"
-			tasks: [
-				{
-					id: "25676578798470C2"
-					type: "checkmark"
-				}
-				{
-					id: "776BB782D913D3C1"
-					item: "mekanism:chlorine_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				amount: 1000L
+				chemical: "mekanism:chlorine"
+				id: "1762342A02A3A5F7"
+				type: "mechanized_additions:chemical"
+			}]
 			x: 3.5d
 			y: -2.0d
 		}
@@ -918,18 +918,16 @@
 			shape: "none"
 			tasks: [
 				{
-					id: "0EAE542429978622"
-					item: "mekanism:hydrogen_bucket"
-					type: "item"
+					amount: 1000L
+					chemical: "mekanism:hydrogen"
+					id: "0793AE040D798B42"
+					type: "mechanized_additions:chemical"
 				}
 				{
-					id: "18617675F3E95884"
-					item: "mekanism:oxygen_bucket"
-					type: "item"
-				}
-				{
-					id: "7146410CF3717459"
-					type: "checkmark"
+					amount: 1000L
+					chemical: "mekanism:oxygen"
+					id: "2FEFE7342532FEFC"
+					type: "mechanized_additions:chemical"
 				}
 			]
 			x: 2.0d
@@ -987,13 +985,21 @@
 				type: "command"
 			}]
 			shape: "square"
-			tasks: [{
-				consume_items: true
-				count: 12L
-				id: "714CE1BBDC9BD69B"
-				item: "kubejs:chemistry_tech_card"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "714CE1BBDC9BD69B"
+					item: "kubejs:chemistry_tech_card"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					chemical: "mekanism:chlorine"
+					id: "19D39F065A3C466A"
+					type: "mechanized_additions:chemical"
+				}
+			]
 			x: 8.0d
 			y: -5.0d
 		}

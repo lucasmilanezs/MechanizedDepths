@@ -4,8 +4,9 @@
     "layer0": "custom:item/plate_refined_quartz_0"
   },
   "overrides": [
-    { "predicate": { "custom_model_data": 1 }, "model": "custom:item/plate_refined_quartz_1" },
-    { "predicate": { "custom_model_data": 2 }, "model": "custom:item/plate_refined_quartz_2" },
-    { "predicate": { "custom_model_data": 3 }, "model": "custom:item/plate_refined_quartz_3" }
+    { "predicate": { "count": 0.0 }, "model": "kubejs:item/plate_refined_quartz_0" },
+    { "predicate": { "count": 0.25 }, "model": "kubejs:item/plate_refined_quartz_1" },
+    { "predicate": { "count": 0.5 }, "model": "kubejs:item/plate_refined_quartz_2" },
+    { "predicate": { "count": 1.0 }, "model": "kubejs:item/plate_refined_quartz_3" }
   ]
 }

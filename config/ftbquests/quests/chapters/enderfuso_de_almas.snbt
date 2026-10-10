@@ -711,9 +711,10 @@
 			]
 			id: "37A3741F8C1E732E"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:liquid_agony"
 				id: "4414C2C1B26B3203"
-				item: "kubejs:liquid_agony_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			title: "Liquid Agony"
 			x: 2.5d
@@ -733,9 +734,10 @@
 			]
 			id: "6BBDCCA20EA6C515"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:liquid_joy"
 				id: "4DCB856266A3C055"
-				item: "kubejs:liquid_joy_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			title: "Liquid Joy"
 			x: 2.5d

@@ -1,0 +1,11 @@
+# Jars of the development instance that are not distributed as installed (fnmatch patterns).
+# - No CurseForge record (built locally): ignored by sync_mods.py and the build audit.
+# - CurseForge record with a modified jar (local fork): metadata keeps the official CurseForge file.
+
+# Java companion (Instances/Java_gluecode/MechanizedAdditions). It ships as a file override from
+# packaging/overrides/mods/ (written by its installToPack task), not through packwiz metadata.
+mechanized_additions-*.jar
+
+# Recipe Machine Stage 2.4.0 + JEI category fix (DeusSixik/Recipe-Machine-Stage PR #29).
+# Players keep the official 2.4.0 until a release includes the fix.
+recipemachinestage-1.20.1-2.4.0.jar

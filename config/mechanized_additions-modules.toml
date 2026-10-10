@@ -1,0 +1,5 @@
+
+[modules]
+	#Requires: ftbquests
+	ftbquests_contents = true
+

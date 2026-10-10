@@ -7,6 +7,7 @@ a new directory under builds/packwiz and reports the exact source revision.
 from __future__ import annotations
 
 import argparse
+from fnmatch import fnmatch
 import hashlib
 import json
 import os
@@ -200,10 +201,23 @@ def main() -> int:
             tomllib.loads(p.read_text(encoding="utf-8"))["filename"] for p in all_mods
             if p.name in disabled
         }
-        actual_active = {p.name for p in instance_mods.glob("*.jar")}
+        # Locally built jars listed in instance-local-mods.txt are not distributed.
+        local_patterns = {
+            line.strip()
+            for line in (PACKAGING / "instance-local-mods.txt").read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        }
+
+        def shipped(name: str, expected: set[str]) -> bool:
+            return name in expected or not any(fnmatch(name, pattern) for pattern in local_patterns)
+
+        actual_active = {
+            p.name for p in instance_mods.glob("*.jar") if shipped(p.name, expected_active)
+        }
         actual_disabled = {
             p.name.removesuffix(".disabled")
             for p in instance_mods.glob("*.jar.disabled")
+            if shipped(p.name.removesuffix(".disabled"), expected_disabled)
         }
         if actual_active != expected_active or actual_disabled != expected_disabled:
             parser.error(

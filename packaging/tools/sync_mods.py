@@ -19,6 +19,7 @@ against the SHA-1 CurseForge recorded at install time.
 from __future__ import annotations
 
 import argparse
+from fnmatch import fnmatch
 from dataclasses import dataclass
 import hashlib
 import json
@@ -33,6 +34,7 @@ PACKAGING = ROOT / "packaging"
 METADATA = PACKAGING / "packwiz" / "mods"
 DISABLED_LIST = PACKAGING / "disabled-mods.txt"
 EXCLUDED_LIST = PACKAGING / "distribution-excluded-mods.txt"
+LOCAL_LIST = PACKAGING / "instance-local-mods.txt"
 MODS = ROOT / "mods"
 INSTANCE = ROOT / "minecraftinstance.json"
 SIDES = {"both", "client", "server"}
@@ -102,10 +104,13 @@ def load_installed() -> dict[int, InstalledMod]:
 
     installed: dict[int, InstalledMod] = {}
     errors = []
+    local = list_entries(LOCAL_LIST)
     jars = sorted([*MODS.glob("*.jar"), *MODS.glob("*.jar.disabled")])
     for jar in jars:
         addon = by_disk_name.get(jar.name)
         if addon is None:
+            if is_instance_local(jar.name, local):
+                continue
             errors.append(f"{jar.name}: no CurseForge record in minecraftinstance.json "
                           "(installed by hand?)")
             continue
@@ -114,9 +119,12 @@ def load_installed() -> dict[int, InstalledMod]:
         local_sha1 = sha1_of(jar)
         recorded = [h["value"] for h in file.get("hashes", []) if h.get("type") == SHA1_HASH_TYPE]
         if recorded and local_sha1 not in recorded:
-            errors.append(f"{jar.name}: local SHA-1 differs from the CurseForge file; "
-                          "the jar was modified or replaced")
-            continue
+            if not is_instance_local(jar.name, local):
+                errors.append(f"{jar.name}: local SHA-1 differs from the CurseForge file; "
+                              "the jar was modified or replaced")
+                continue
+            # Local fork listed in instance-local-mods.txt: keep distributing the official file.
+            local_sha1 = recorded[0]
         if project_id in installed:
             errors.append(f"{jar.name}: project {project_id} is installed twice "
                           f"(also {installed[project_id].filename})")
@@ -156,6 +164,11 @@ def load_metafiles() -> dict[int, Metafile]:
             side=data.get("side"),
         )
     return metafiles
+
+
+def is_instance_local(jar_name: str, patterns: set[str]) -> bool:
+    name = jar_name.removesuffix(".disabled")
+    return any(fnmatch(name, pattern) for pattern in patterns)
 
 
 def list_entries(path: Path) -> set[str]:

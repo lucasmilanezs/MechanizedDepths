@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Cucumber rewrites this file with LF without truncating it; a CRLF checkout leaves trailing garbage.
+config/cucumber-tags.json text eol=lf

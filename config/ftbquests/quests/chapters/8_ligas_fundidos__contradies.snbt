@@ -521,9 +521,10 @@
 			]
 			id: "512E85AF48E41FED"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:void_lubricant"
 				id: "2E750A5FFCEFDAAF"
-				item: "kubejs:void_lubricant_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: 3.0d
 			y: 9.0d
@@ -562,9 +563,10 @@
 			id: "7FFB257BC7524268"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:void_heavy_oil"
 				id: "1528F1CE09C18990"
-				item: "kubejs:void_heavy_oil_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: 3.0d
 			y: 7.0d
@@ -574,9 +576,10 @@
 			id: "182277A47121C017"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:spectral_oil"
 				id: "15E215EF1077EF3D"
-				item: "kubejs:spectral_oil_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -1.0d
 			y: 7.0d
@@ -586,9 +589,10 @@
 			id: "5BD915083679A527"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:aetheric_vapor"
 				id: "08D1F6E66658BE6D"
-				item: "kubejs:aetheric_vapor_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: 1.0d
 			y: 9.0d
@@ -666,9 +670,10 @@
 			dependencies: ["7B19AAF10D2D9DFA"]
 			id: "75E7DA63B9BD7FD6"
 			tasks: [{
+				amount: 1000L
+				fluid: "thermal_extra:polyolefin"
 				id: "2A43F90076CA8F0B"
-				item: "thermal_extra:polyolefin_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: 7.0d
 			y: 9.0d

@@ -38,9 +38,10 @@
 		{
 			id: "58E2A9AB736E8FBE"
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:slag_slurry"
 				id: "52AAC29934619581"
-				item: "kubejs:slag_slurry_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -2.0d
 			y: -2.5d
@@ -49,9 +50,10 @@
 			id: "70EE75725BACFBBB"
 			size: 1.2d
 			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:mineral_sludge"
 				id: "7DB7C86918FDBC44"
-				item: "kubejs:mineral_sludge_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -1.5d
 			y: -1.0d
@@ -59,9 +61,10 @@
 		{
 			id: "625FE2A2F5F0D6FC"
 			tasks: [{
+				amount: 1000L
+				fluid: "mekanism:sulfuric_acid"
 				id: "1C1CD1F30252222F"
-				item: "mekanism:sulfuric_acid_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -1.0d
 			y: -2.5d

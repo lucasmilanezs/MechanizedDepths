@@ -209,9 +209,10 @@
 			id: "39B08A02E1FEEA3A"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "industrialforegoing:pink_slime"
 				id: "60D6EF7959ED0B45"
-				item: "industrialforegoing:pink_slime_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -1.5d
 			y: 7.5d
@@ -236,9 +237,10 @@
 			id: "53FD5DFFD8338B2C"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "industrialforegoing:meat"
 				id: "062846E90C1C2F92"
-				item: "industrialforegoing:meat_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: 1.5d
 			y: 7.5d
@@ -464,9 +466,10 @@
 			id: "0560C98A35585F66"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "pneumaticcraft:plastic"
 				id: "63D4271002B42CE1"
-				item: "pneumaticcraft:plastic_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -7.5d
 			y: 3.0d
@@ -551,9 +554,10 @@
 			id: "52F6EB4B25CEFFDE"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "industrialforegoing:ether_gas"
 				id: "7B81D32EC02FF00E"
-				item: "industrialforegoing:ether_gas_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: 0.0d
 			y: 10.5d
@@ -761,9 +765,10 @@
 			id: "1EA2B973E7F2EFED"
 			shape: "none"
 			tasks: [{
+				amount: 1000L
+				fluid: "pneumaticcraft:etching_acid"
 				id: "720A280AEFABE94F"
-				item: "pneumaticcraft:etching_acid_bucket"
-				type: "item"
+				type: "mechanized_additions:fluid_progress"
 			}]
 			x: -12.0d
 			y: 6.0d

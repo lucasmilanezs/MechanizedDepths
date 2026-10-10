@@ -29,9 +29,13 @@ StartupEvents.registry('item', event => {
 });
 
 //REFINED QUARTZ PLATE
+// A CoFH CountedItem, like Thermal's plates: its constructor registers the "count" model
+// predicate (stack size / max stack) that swaps the _0.._3 models. Name comes from
+// assets/kubejs/lang/en_us.json because createCustom has no builder.
 StartupEvents.registry('item', event => {
-  event.create('plate_refined_quartz')
-    .displayName('Refined Quartz Plate')
+  const $CountedItem = Java.loadClass('cofh.core.common.item.CountedItem')
+  const $ItemProperties = Java.loadClass('net.minecraft.world.item.Item$Properties')
+  event.createCustom('plate_refined_quartz', () => new $CountedItem(new $ItemProperties()))
 });
 
 // TITANIUM-OSMIUM LAMINATED PLATE

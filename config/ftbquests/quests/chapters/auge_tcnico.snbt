@@ -149,9 +149,10 @@
 		{
 			id: "68A6BB49E9C2FD52"
 			tasks: [{
+				amount: 1000L
+				chemical: "mekanism:uranium_hexafluoride"
 				id: "712AD34F084220DC"
-				item: "mekanism:uranium_hexafluoride_bucket"
-				type: "item"
+				type: "mechanized_additions:chemical"
 			}]
 			x: -2.5d
 			y: -2.0d

@@ -984,9 +984,10 @@
 					type: "item"
 				}
 				{
+					amount: 1000L
+					fluid: "kubejs:melted_blaze_metal"
 					id: "7E7260097A6F78D4"
-					item: "kubejs:melted_blaze_metal_bucket"
-					type: "item"
+					type: "mechanized_additions:fluid_progress"
 				}
 			]
 			title: "Imprisoned Flames"
