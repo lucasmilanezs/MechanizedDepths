@@ -123,3 +123,6 @@ __pycache__/
 
 # JEI client preferences are each player's choice.
 /config/jei/jei-client.ini
+
+# Local MCP server configuration.
+/.mcp.json
