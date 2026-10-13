@@ -1,0 +1,40 @@
+{
+  "processWeight": 1.0,
+  "fluidUnitWeight": 0.001,
+  "includeHidden": true,
+  "excludedCategories": [
+    "jei:information",
+    "minecraft:fuel",
+    "minecraft:compostable",
+    "minecraft:anvil"
+  ],
+  "basal": [
+    "#forge:raw_materials",
+    "#forge:ores",
+    "#minecraft:logs",
+    "#forge:stone",
+    "#forge:cobblestone",
+    "#forge:sand",
+    "#forge:gravel",
+    "#forge:netherrack",
+    "#forge:end_stones",
+    "minecraft:obsidian",
+    "minecraft:dirt",
+    "minecraft:clay_ball",
+    "minecraft:flint",
+    "minecraft:coal",
+    "minecraft:diamond",
+    "minecraft:emerald",
+    "minecraft:lapis_lazuli",
+    "minecraft:redstone",
+    "minecraft:quartz",
+    "minecraft:glowstone_dust",
+    "minecraft:amethyst_shard",
+    "minecraft:water",
+    "minecraft:lava"
+  ],
+  "reusable": [
+    "#forge:tools/hammers"
+  ],
+  "pins": {}
+}

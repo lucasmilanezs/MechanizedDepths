@@ -3,3 +3,5 @@
 	#Requires: ftbquests
 	ftbquests_contents = true
 
+	#Requires: jei
+	recipe_tree = true
