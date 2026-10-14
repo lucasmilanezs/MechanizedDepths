@@ -6,17 +6,9 @@ reference artifacts; their names do not follow the new version policy.
 
 ## pt-2.2.0
 
-- Drafting Extensions (TECH) is now a playable chapter: input milestones
-  (Mekanism alloys and control circuits, refined glowstone and osgloglium, the
-  Teleportation Core, Ender IO crystals, capacitors and End Steel, Soularium,
-  Machine and Calibrated Internals, protective fabrics, lumium, cinnabar)
+- Drafting Extensions (TECH) is now an actual chapter: input milestones
   unlock the tools and quality-of-life items built from them.
-- Those items now cost their milestones, mostly on plates instead of ingots:
-  Mekanism gear, generators and teleporters, Building Gadgets, Ender IO
-  vacuums, staffs, enchanter and Ender fluid conduits, Ender Storage, Thermal
-  devices, flux tools, hazmat and diving gear, augments and potion devices,
-  Absorption Hopper and Auto Flux Crafter. The Teleportation Core takes an
-  Ender Crystal instead of a diamond.
+- Those items now cost their milestones, mostly on plates instead of ingots and other bits and bobs.
 - Chapter 6: Machine Internals and Calibrated Internals (Flux Crafter) replace
   the RF super coil and resonator in Thermal machines. Integrated Dynamics
   joins the chapter: Menril processing (squeezers, drying basins, Menril Resin
@@ -29,7 +21,7 @@ reference artifacts; their names do not follow the new version policy.
 - New mods: Ender Storage, Akashic Tome, Thin Pillars. Starlight removed (the
   pt-2.1 hotfix).
 - Removed leftover test recipes (Alloy Maw iron, Wafer Processing Facility
-  diamond). Known issue: the Alloy Maw has no recipes yet.
+  diamond).
 
 ## pt-2.1.0
 
