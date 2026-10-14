@@ -34,9 +34,9 @@ ServerEvents.recipes(event => {
   event.recipes.enderio.slicing(
     Item.of("kubejs:dormant_memory_cell"),
     [
-      "enderio:z_logic_controller",
+      "ae2:logic_processor",
       "enderio:ender_resonator",
-      "enderio:skeletal_contractor",
+      "ae2:logic_processor",
       "#forge:ingots/end_steel",
       "enderio:basic_capacitor",
       "#forge:ingots/end_steel"

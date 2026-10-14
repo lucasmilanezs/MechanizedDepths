@@ -36,9 +36,10 @@ ServerEvents.recipes(event => {
     [
         'ABA',
         'CDC',
-        'EEE'
+        'EIE'
     ],
     {
+        I: 'kubejs:calibrated_internals',
         C: 'mekanism:advanced_control_circuit',
         E: '#forge:ingots/redstone_alloy',
         A: '#forge:gears/rose_gold',

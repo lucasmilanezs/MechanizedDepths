@@ -256,4 +256,272 @@ ServerEvents.recipes(event => {
 });
 
 
+// FLUIDIC PLENISHER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:fluidic_plenisher' });
+  event.shaped('mekanism:fluidic_plenisher', [
+    'IAI',
+    'CPC',
+    'IAI'
+  ], {
+    I: '#forge:plates/tin',
+    A: '#mekanism:alloys/infused',
+    C: '#forge:circuits/advanced',
+    P: 'mekanism:electric_pump'
+  }).id('kubejs:mekanism/crafting/fluidic_plenisher');
+});
+
+// CHARGEPAD
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:chargepad' });
+  event.shaped('mekanism:chargepad', [
+    '###',
+    'ACA',
+    'SES'
+  ], {
+    '#': 'minecraft:polished_blackstone_pressure_plate',
+    A: '#mekanism:alloys/infused',
+    C: '#forge:circuits/advanced',
+    S: '#forge:plates/steel',
+    E: 'mekanism:energy_tablet'
+  }).id('kubejs:mekanism/crafting/chargepad');
+});
+
+// LOGISTICAL SORTER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:logistical_sorter' });
+  event.shaped('mekanism:logistical_sorter', [
+    'I#I',
+    'ACA',
+    'III'
+  ], {
+    I: '#forge:plates/steel',
+    '#': 'minecraft:piston',
+    A: '#mekanism:alloys/infused',
+    C: '#forge:circuits/advanced'
+  }).id('kubejs:mekanism/crafting/logistical_sorter');
+});
+
+// JETPACK
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:jetpack' });
+  event.shaped('mekanism:jetpack', [
+    'RCR',
+    'STS',
+    ' S '
+  ], {
+    R: '#mekanism:alloys/reinforced',
+    C: '#forge:circuits/elite',
+    S: '#forge:plates/steel',
+    T: 'mekanism:basic_chemical_tank'
+  }).id('kubejs:mekanism/crafting/jetpack');
+});
+
+// FREE RUNNERS
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:free_runners' });
+  event.shaped('mekanism:free_runners', [
+    'C C',
+    'A A',
+    'E E'
+  ], {
+    C: '#forge:circuits/elite',
+    A: '#mekanism:alloys/reinforced',
+    E: 'mekanism:energy_tablet'
+  }).id('kubejs:mekanism/crafting/free_runners');
+});
+
+// SCUBA MASK
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:scuba_mask' });
+  event.shaped('mekanism:scuba_mask', [
+    ' R ',
+    'GCG',
+    'S S'
+  ], {
+    R: '#mekanism:alloys/reinforced',
+    G: '#forge:glass/silica',
+    C: '#forge:circuits/advanced',
+    S: '#forge:plates/steel'
+  }).id('kubejs:mekanism/crafting/scuba_mask');
+});
+
+// SCUBA TANK
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:scuba_tank' });
+  event.shaped('mekanism:scuba_tank', [
+    ' C ',
+    'ATA',
+    'SSS'
+  ], {
+    C: '#forge:circuits/advanced',
+    A: '#mekanism:alloys/reinforced',
+    T: 'mekanism:basic_chemical_tank',
+    S: '#forge:plates/steel'
+  }).id('kubejs:mekanism/crafting/scuba_tank');
+});
+
+// ARMORED JETPACK
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:jetpack_armored' });
+  event.shaped('mekanism:jetpack_armored', [
+    'AUA',
+    'ISI',
+    ' P '
+  ], {
+    A: '#mekanism:alloys/atomic',
+    U: '#forge:circuits/ultimate',
+    I: '#forge:ingots/refined_obsidian',
+    S: '#forge:storage_blocks/steel',
+    P: 'mekanism:jetpack'
+  }).id('kubejs:mekanism/crafting/jetpack_armored');
+});
+
+// ARMORED FREE RUNNERS
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:free_runners_armored' });
+  event.shaped('mekanism:free_runners_armored', [
+    ' U ',
+    'APA',
+    'ISI'
+  ], {
+    U: '#forge:circuits/ultimate',
+    A: '#mekanism:alloys/atomic',
+    P: 'mekanism:free_runners',
+    I: '#forge:ingots/refined_obsidian',
+    S: '#forge:storage_blocks/steel'
+  }).id('kubejs:mekanism/crafting/free_runners_armored');
+});
+
+// FLAMETHROWER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:flamethrower' });
+  event.shaped('mekanism:flamethrower', [
+    'III',
+    'ITS',
+    'ACA'
+  ], {
+    I: '#forge:plates/tin',
+    T: 'mekanism:basic_chemical_tank',
+    S: 'minecraft:flint_and_steel',
+    A: '#mekanism:alloys/atomic',
+    C: '#forge:circuits/ultimate'
+  }).id('kubejs:mekanism/crafting/flamethrower');
+});
+
+// ELECTRIC BOW
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:electric_bow' });
+  event.shaped('mekanism:electric_bow', [
+    '#A ',
+    '# E',
+    '#A '
+  ], {
+    '#': '#forge:string',
+    A: '#mekanism:alloys/atomic',
+    E: 'mekanism:energy_tablet'
+  }).id('kubejs:mekanism/crafting/electric_bow');
+});
+
+// SOLAR GENERATOR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanismgenerators:generator/solar' });
+  event.shaped('mekanismgenerators:solar_generator', [
+    '###',
+    'AXA',
+    'GEG'
+  ], {
+    '#': 'mekanismgenerators:solar_panel',
+    A: '#mekanism:alloys/infused',
+    X: 'kubejs:osgloglium',
+    G: '#forge:ingots/refined_glowstone',
+    E: 'mekanism:energy_tablet'
+  }).id('kubejs:mekanismgenerators/crafting/solar_generator');
+});
+
+// ADVANCED SOLAR GENERATOR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanismgenerators:generator/advanced_solar' });
+  event.shaped('mekanismgenerators:advanced_solar_generator', [
+    'PAP',
+    'PAP',
+    'OOO'
+  ], {
+    P: 'mekanismgenerators:solar_generator',
+    A: '#mekanism:alloys/atomic',
+    O: 'kubejs:osgloglium'
+  }).id('kubejs:mekanismgenerators/crafting/advanced_solar_generator');
+});
+
+// WIND GENERATOR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanismgenerators:generator/wind' });
+  event.shaped('mekanismgenerators:wind_generator', [
+    ' O ',
+    'GAG',
+    'ECE'
+  ], {
+    O: 'kubejs:osgloglium',
+    G: '#forge:ingots/refined_glowstone',
+    A: '#mekanism:alloys/atomic',
+    E: 'mekanism:energy_tablet',
+    C: '#forge:circuits/advanced'
+  }).id('kubejs:mekanismgenerators/crafting/wind_generator');
+});
+
+// TELEPORTATION CORE
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:teleportation_core' });
+  event.shaped('mekanism:teleportation_core', [
+    'LAL',
+    'GEG',
+    'LAL'
+  ], {
+    L: '#forge:gems/lapis',
+    A: '#mekanism:alloys/atomic',
+    G: '#forge:plates/gold',
+    E: '#forge:gems/ender_crystal'
+  }).id('kubejs:mekanism/crafting/teleportation_core');
+});
+
+// TELEPORTER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:teleporter' });
+  event.shaped('mekanism:teleporter', [
+    'OXO',
+    'XTX',
+    'OXO'
+  ], {
+    O: 'kubejs:osgloglium',
+    X: 'mekanism:steel_casing',
+    T: 'mekanism:teleportation_core'
+  }).id('kubejs:mekanism/crafting/teleporter');
+});
+
+// PORTABLE TELEPORTER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:portable_teleporter' });
+  event.shaped('mekanism:portable_teleporter', [
+    ' E ',
+    'OTO',
+    ' E '
+  ], {
+    E: 'mekanism:energy_tablet',
+    O: 'kubejs:osgloglium',
+    T: 'mekanism:teleportation_core'
+  }).id('kubejs:mekanism/crafting/portable_teleporter');
+});
+
+// CARDBOARD BOX
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mekanism:cardboard_box' });
+  event.shaped('mekanism:cardboard_box', [
+    'SSS',
+    'SAS',
+    'SSS'
+  ], {
+    S: '#forge:sawdust',
+    A: '#mekanism:alloys/infused'
+  }).id('kubejs:mekanism/crafting/cardboard_box');
+});
 //====================COMPATIBILITY RECIPES==================

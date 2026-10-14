@@ -161,6 +161,20 @@ ServerEvents.recipes(event => {
     }).id('kubejs:mob_grinding_utils/crafting/saw_upgrade_beheading');
 });
 
+// ABSORPTION HOPPER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'mob_grinding_utils:recipe_absorbtion_hopper' });
+  event.shaped('mob_grinding_utils:absorption_hopper', [
+    ' E ',
+    ' S ',
+    'OHO'
+  ], {
+    E: 'minecraft:ender_eye',
+    S: '#forge:ingots/soularium',
+    O: '#forge:obsidian',
+    H: 'minecraft:hopper'
+  }).id('kubejs:mob_grinding_utils/crafting/absorption_hopper');
+});
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

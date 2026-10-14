@@ -1670,17 +1670,11 @@
 		{
 			dependencies: ["617989B418D326B0"]
 			description: [
-				"   There’s no magic here. No poetry. Only power."
+				"   Remember when I said every alloy here would be a pact? This is the first one."
 				""
-				"   &b&lInductive Alloy&r&r is what happens when you push metals to their limits — and beyond. When you force steel to accept pulses of compacted energy, when you mix an advanced conductor with traces of crystalline memory and pigments that burn like the sun."
+				"   The &6Arc Furnace&r takes &6Energetic Alloy&r as the base and three additives on top: &6Constantan&r, &6Lapis Dust&r and &6Quartz Dust&r. An alloy built from other alloys, so expect some setup before the first batch comes out. Each run pays back &atwo Inductive Alloy&r, and the Precision Matrix Core is waiting for them next."
 				""
-				"   The result is dense. Vibrant. Almost volatile."
-				""
-				"   You made so it stays cohesive because the molecular structure hasn’t yet realized the absurdity it’s housing."
-				""
-				"   Brace yourself. This is the last step before machines stop obeying simple commands — and start screaming for more."
-				""
-				"&7&o— Where metallurgy ends, flow begins&r"
+				"&7&o— Two alloys in, two better ones out. As pacts go, the terms are fair.&r&r"
 			]
 			id: "13939C95C3168861"
 			tasks: [{
@@ -1688,7 +1682,7 @@
 				item: "kubejs:inductive_alloy"
 				type: "item"
 			}]
-			title: "Alloy That Resists the Future"
+			title: "The First Pact"
 			x: -5.5d
 			y: 12.49107142857143d
 		}

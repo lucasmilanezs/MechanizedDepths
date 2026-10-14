@@ -177,11 +177,12 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('enderio:travel_anchor'),
     [
-        'ABA',
+        'ADA',
         'BCB',
         'ABA'
     ],
     {
+        D: 'enderio:double_layer_capacitor',
         C: 'enderio:pulsating_crystal',
         B: 'enderio:conduit_binder',
         A: '#forge:ingots/dark_steel'
@@ -190,5 +191,92 @@ ServerEvents.recipes(event => {
 
 ServerEvents.recipes(event => {
   event.remove({ id: 'enderio:stick' });
+});
+// VACUUM CHEST
+ServerEvents.recipes(event => {
+  event.remove({ id: 'enderio:vacuum_chest' });
+  event.shaped('enderio:vacuum_chest', [
+    'IDI',
+    'ICI',
+    'IPI'
+  ], {
+    I: '#forge:ingots/dark_steel',
+    D: 'enderio:double_layer_capacitor',
+    C: '#forge:chests',
+    P: '#forge:gems/pulsating_crystal'
+  }).id('kubejs:enderio/crafting/vacuum_chest');
+});
+
+// XP VACUUM
+ServerEvents.recipes(event => {
+  event.remove({ id: 'enderio:xp_vacuum' });
+  event.shaped('enderio:xp_vacuum', [
+    'IDI',
+    'IRI',
+    'IPI'
+  ], {
+    I: '#forge:ingots/dark_steel',
+    D: 'enderio:double_layer_capacitor',
+    R: 'enderio:experience_rod',
+    P: '#forge:gems/pulsating_crystal'
+  }).id('kubejs:enderio/crafting/xp_vacuum');
+});
+
+// STAFF OF LEVITY
+ServerEvents.recipes(event => {
+  event.remove({ id: 'enderio:staff_of_levity' });
+  event.shaped('enderio:staff_of_levity', [
+    ' EC',
+    ' RE',
+    'R  '
+  ], {
+    E: '#forge:ingots/end_steel',
+    C: '#forge:gems/prescient_crystal',
+    R: 'enderio:infinity_rod'
+  }).id('kubejs:enderio/crafting/staff_of_levity');
+});
+
+// ENDER FLUID CONDUIT
+ServerEvents.recipes(event => {
+  event.remove({ id: 'enderio:ender_fluid_conduit' });
+  event.shaped(Item.of('enderio:ender_fluid_conduit', 8), [
+    'BBB',
+    'IEI',
+    'BBB'
+  ], {
+    B: 'enderio:conduit_binder',
+    I: '#forge:ingots/vibrant_alloy',
+    E: '#forge:ingots/end_steel'
+  }).id('kubejs:enderio/crafting/ender_fluid_conduit');
+});
+
+// ENCHANTER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'enderio:enchanter' });
+  event.shaped('enderio:enchanter', [
+    'DBD',
+    'SZS',
+    ' I '
+  ], {
+    D: '#forge:gems/diamond',
+    B: 'minecraft:book',
+    S: '#forge:ingots/soularium',
+    Z: 'enderio:frank_n_zombie',
+    I: '#forge:ingots/dark_steel'
+  }).id('kubejs:enderio/crafting/enchanter');
+});
+
+// DARK STEEL SWORD
+ServerEvents.recipes(event => {
+  event.remove({ id: 'enderio:dark_steel_sword' });
+  event.shaped('enderio:dark_steel_sword', [
+    ' D ',
+    'SDS',
+    ' R '
+  ], {
+    D: '#forge:ingots/dark_steel',
+    S: '#forge:ingots/soularium',
+    R: '#forge:rods/wooden'
+  }).id('kubejs:enderio/crafting/dark_steel_sword');
 });
 //====================COMPATIBILITY RECIPES==================

@@ -902,19 +902,11 @@
 			dependencies: ["2DAA198A9FE1C430"]
 			id: "1DC95B7767355679"
 			size: 1.5d
-			tasks: [
-				{
-					id: "7CBB13046A7583EF"
-					item: "kubejs:simulation_processor"
-					type: "item"
-				}
-				{
-					amount: 1000L
-					chemical: "mekanism:antimatter"
-					id: "6946A07C81889639"
-					type: "mechanized_additions:chemical"
-				}
-			]
+			tasks: [{
+				id: "7CBB13046A7583EF"
+				item: "kubejs:simulation_processor"
+				type: "item"
+			}]
 			x: 4.5d
 			y: 4.0d
 		}

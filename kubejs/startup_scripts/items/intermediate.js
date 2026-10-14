@@ -68,6 +68,20 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/high_density_capacitor');
 });
 
+// MACHINE INTERNALS (kubejs:machine_internals)
+StartupEvents.registry('item', event => {
+  event.create('machine_internals')
+    .displayName('Machine Internals')
+    .texture('custom:item/machine_internals');
+});
+
+// CALIBRATED INTERNALS (kubejs:calibrated_internals)
+StartupEvents.registry('item', event => {
+  event.create('calibrated_internals')
+    .displayName('Calibrated Internals')
+    .texture('custom:item/calibrated_internals');
+});
+
 // RUDIMENTARY REDSTONE COMPONENT (kubejs:rudimentary_redstone_component)
 StartupEvents.registry('item', event => {
   event.create('rudimentary_redstone_component')

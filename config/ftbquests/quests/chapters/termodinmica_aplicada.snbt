@@ -31,7 +31,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1471DC4294CC3E31"]
+			dependencies: [
+				"1471DC4294CC3E31"
+				"26C70B727F8AB67A"
+			]
 			id: "5697C0E23B256642"
 			tasks: [{
 				id: "01D4F38992F01604"
@@ -42,7 +45,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["064CB1A828061888"]
+			dependencies: [
+				"064CB1A828061888"
+				"3D98A993379DAAEE"
+			]
 			id: "504BB1A0C0A5D778"
 			tasks: [{
 				id: "289824DDC9A6D89D"
@@ -55,7 +61,7 @@
 		{
 			dependencies: [
 				"13AC27CEA3409047"
-				"0516087C6CD75C8B"
+				"3D98A993379DAAEE"
 			]
 			id: "004288D8EF9D1107"
 			tasks: [{
@@ -91,7 +97,7 @@
 		{
 			dependencies: [
 				"13AC27CEA3409047"
-				"0516087C6CD75C8B"
+				"3D98A993379DAAEE"
 			]
 			id: "4B17B25AEC9A0007"
 			tasks: [{
@@ -118,6 +124,7 @@
 				"&7&o— Cuts well, lasts little. Like many speeches.&r&r"
 			]
 			id: "377D66DD47488FE4"
+			shape: "hexagon"
 			tasks: [{
 				id: "5601627FBBA59813"
 				item: "mekanism:dust_quartz"
@@ -130,14 +137,16 @@
 		{
 			dependencies: ["377D66DD47488FE4"]
 			description: [
-				"   When introduced into the process, coke dust acts as an adsorptive thermal aid. Its high residual carbon content interacts with unstable elements during fragmentation, promoting mild reduction reactions or sublimation of metallic traces."
+				"   Everyone treats the &6Pulverizer&r like a rock blender. It's a slot machine, and catalysts are how you load the dice."
 				""
-				"   This effect favors the release of by-products with greater efficiency, such as oxides or metal salts bound to the original ore. Consumption is intermediate: it doesn’t fully decompose, but it does react with part of the volatile compounds."
+				"   &6Coke Dust&r loads them for speed and leftovers: &a1.5×&r secondary output, never below a &a35%&r chance, &a30%&r of the normal energy per run. It also burns through itself, gone &a60%&r of the time."
 				""
-				"&7&o— An ember that never dies — it just becomes useful again.&r&r"
+				"   So it's not for hoarding rare dusts (that's &6Rich Slag&r, patient and boring). It's for when a line of raw ore is backing up and you want it cleared, with a little extra on the way out."
+				""
+				"&7&o— Fast, greedy and short-lived. Sounds like most of my ideas.&r&r"
 			]
 			id: "25FED667BD6B99AD"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "6FD3BD75DC351BD3"
 				item: "immersiveengineering:dust_coke"
@@ -148,7 +157,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["064CB1A828061888"]
+			dependencies: [
+				"064CB1A828061888"
+				"3D98A993379DAAEE"
+			]
 			id: "4853679644FEE30A"
 			tasks: [{
 				id: "22230FF8C423A9A4"
@@ -161,7 +173,7 @@
 		{
 			dependencies: [
 				"1471DC4294CC3E31"
-				"3F4D6D0BF446A01F"
+				"26C70B727F8AB67A"
 			]
 			id: "42B368C1DD78B214"
 			tasks: [{
@@ -178,6 +190,7 @@
 				"377D66DD47488FE4"
 			]
 			id: "6AA53F03B0A46CA3"
+			shape: "hexagon"
 			tasks: [{
 				id: "40BB801A6266FDDC"
 				item: "kubejs:obsidianite"
@@ -189,6 +202,7 @@
 		{
 			dependencies: ["4807891B99079DE0"]
 			id: "064CB1A828061888"
+			shape: "hexagon"
 			tasks: [{
 				id: "2786BE2E1B85B577"
 				item: "kubejs:vitrified_obsidian"
@@ -200,6 +214,7 @@
 		{
 			dependencies: ["4853679644FEE30A"]
 			id: "13AC27CEA3409047"
+			shape: "hexagon"
 			tasks: [{
 				id: "2F12530956236BA2"
 				item: "kubejs:laminated_alloy_plate"
@@ -211,6 +226,7 @@
 		{
 			dependencies: ["4B17B25AEC9A0007"]
 			id: "1471DC4294CC3E31"
+			shape: "hexagon"
 			tasks: [{
 				id: "1ADFAB6B1990D901"
 				item: "kubejs:blaze_glass_compound"
@@ -229,7 +245,7 @@
 				"&7&o— It dissolves things you didn’t know were there. Including your certainty.&r&r"
 			]
 			id: "0E15CFE7649C8E5E"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "77215FC08FA0171E"
 				item: "kubejs:gelatinous_organic_solvent"
@@ -252,7 +268,7 @@
 				"&7&o— Beauty lies in balance… and in a slight degree of functional toxicity.&r&r"
 			]
 			id: "1F6EBFB9DB2A2B14"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "6D2A60FB21D90FE1"
 				item: "thermal:cinnabar"
@@ -272,7 +288,7 @@
 				"&7&o— It doesn’t last long, but it cools tempers and speeds the work. A temporary relief — like a good improbable argument.&r&r"
 			]
 			id: "1DB47027209C4091"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "418CDA44CA87730C"
 				item: "thermal:ice_charge"
@@ -291,7 +307,7 @@
 				"&7&o— What’s left from smelting… now extracts what never left the stone. Second chances for catalysts and sinners.&r&r"
 			]
 			id: "41F84F8BA400D58F"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "4C1F251E95EB52D8"
 				item: "thermal:rich_slag"
@@ -324,18 +340,21 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["21D37F976576C885"]
+			dependencies: [
+				"21D37F976576C885"
+				"2ACF52ECDDC6A8DA"
+			]
 			description: [""]
 			hide_until_deps_complete: false
 			id: "7C388A6CE74ED7C8"
-			shape: "hexagon"
-			size: 1.5d
+			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "7E354A1BCE8F876F"
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -354,34 +373,13 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["439F76C8E719CE16"]
-			id: "0516087C6CD75C8B"
-			tasks: [{
-				id: "2F8F36AC06490974"
-				item: "kubejs:redstone_flux_super_coil"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["0516087C6CD75C8B"]
-			id: "3F4D6D0BF446A01F"
-			tasks: [{
-				id: "671B5CD24393C59D"
-				item: "kubejs:rf_resonator"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 4.0d
+			x: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4807891B99079DE0"]
 			id: "01214CC32B9E87BC"
+			shape: "hexagon"
 			tasks: [{
 				id: "77C2C3A54616C691"
 				item: "extendedcrafting:redstone_ingot"
@@ -401,6 +399,458 @@
 			x: -0.5d
 			y: -2.0d
 		}
+		{
+			dependencies: ["439F76C8E719CE16"]
+			id: "3D98A993379DAAEE"
+			shape: "hexagon"
+			tasks: [{
+				id: "6B3165DDD2C16FB3"
+				item: "kubejs:machine_internals"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3D98A993379DAAEE"]
+			id: "26C70B727F8AB67A"
+			shape: "hexagon"
+			tasks: [{
+				id: "7BEEA8E127DED8D1"
+				item: "kubejs:calibrated_internals"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["07E4CAAE1C785BA3"]
+			id: "16992C8A52B9D7C6"
+			tasks: [{
+				amount: 1000L
+				fluid: "integrateddynamics:menril_resin"
+				id: "2EE869F7F0138ED5"
+				type: "mechanized_additions:fluid_progress"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["16992C8A52B9D7C6"]
+			id: "1D7D0A35D4E652EA"
+			tasks: [{
+				id: "3C601967EF6D1C60"
+				item: "integrateddynamics:drying_basin"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1D7D0A35D4E652EA"]
+			icon: "integrateddynamics:on_the_dynamics_of_integration"
+			id: "7816560C622518F4"
+			shape: "hexagon"
+			size: 1.0d
+			title: "Guide"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1D7D0A35D4E652EA"]
+			id: "2ACF52ECDDC6A8DA"
+			shape: "hexagon"
+			tasks: [{
+				id: "5A72299A324B76F4"
+				item: "integrateddynamics:crystalized_menril_chunk"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			icon: "integrateddynamics:menril_sapling"
+			id: "1973CEF9C6887213"
+			min_required_tasks: 1
+			tasks: [{
+				biome: "integrateddynamics:meneglin"
+				icon: "integrateddynamics:menril_sapling"
+				id: "06FDC3D3EDF632B2"
+				type: "biome"
+			}]
+			title: "Visit Meneglin Biome"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1973CEF9C6887213"]
+			id: "07E4CAAE1C785BA3"
+			tasks: [{
+				id: "771E3C9C15BE1EF3"
+				item: "integrateddynamics:squeezer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1D7D0A35D4E652EA"]
+			id: "42B0AD43FC43AB98"
+			invisible: true
+			tasks: [{
+				id: "104A4DCB0DA66264"
+				item: "integrateddynamics:energy_battery"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"42B0AD43FC43AB98"
+				"3D98A993379DAAEE"
+			]
+			id: "2B0B82DB65045CD9"
+			invisible: true
+			tasks: [{
+				id: "3861C16656AF19FF"
+				item: "integrateddynamics:mechanical_squeezer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"42B0AD43FC43AB98"
+				"3D98A993379DAAEE"
+			]
+			id: "6D94A89768E36D6D"
+			invisible: true
+			tasks: [{
+				id: "6AA406C2855FE693"
+				item: "integrateddynamics:mechanical_drying_basin"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7816560C622518F4"]
+			id: "08BAD04C876B5A78"
+			invisible: true
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				count: 10L
+				id: "2679E6A89FEE5447"
+				item: "integrateddynamics:cable"
+				type: "item"
+			}]
+			title: "Logic Network"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08BAD04C876B5A78"]
+			id: "55818E700805262A"
+			invisible: true
+			tasks: [{
+				id: "6E2EC6BA64FD1D8A"
+				item: "integrateddynamics:wrench"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08BAD04C876B5A78"]
+			id: "2EE613BD6E4E2E8F"
+			invisible: true
+			tasks: [{
+				id: "1583A4BABF80F462"
+				item: "integrateddynamics:facade"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08BAD04C876B5A78"]
+			id: "65A7154B3E093EA5"
+			invisible: true
+			tasks: [{
+				id: "71C8A4AFF3D29E76"
+				item: "integrateddynamics:part_network_reader"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08BAD04C876B5A78"]
+			id: "005BDB0636AC392F"
+			invisible: true
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "1C704E7DB7C642B0"
+				item: "integrateddynamics:variable"
+				type: "item"
+			}]
+			title: "Variables"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["005BDB0636AC392F"]
+			id: "75EDB521FD3A808F"
+			invisible: true
+			tasks: [{
+				id: "0A0CC0F2659EDD01"
+				item: "integrateddynamics:labeller"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["005BDB0636AC392F"]
+			id: "267A3C406D9009DE"
+			invisible: true
+			tasks: [{
+				id: "592BA7DA138D4057"
+				item: "integrateddynamics:materializer"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["005BDB0636AC392F"]
+			id: "1D29807000C00418"
+			invisible: true
+			tasks: [{
+				id: "5158432170DEFA41"
+				item: "integrateddynamics:proxy"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["005BDB0636AC392F"]
+			id: "6FBCF4232E68C854"
+			invisible: true
+			tasks: [{
+				id: "228FA673A3699E5C"
+				item: "integrateddynamics:delay"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["005BDB0636AC392F"]
+			id: "57CB7CDF9E407CFE"
+			invisible: true
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "14D2E83D6A98151F"
+				item: "integrateddynamics:variable_transformer_input"
+				type: "item"
+			}]
+			title: "Reading"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "16A34236161B30FE"
+			invisible: true
+			tasks: [{
+				id: "3902331502DBCD39"
+				item: "integrateddynamics:part_redstone_reader"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "31727F14DB0FCD28"
+			invisible: true
+			tasks: [{
+				id: "23ABCD049D81031A"
+				item: "integrateddynamics:part_block_reader"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "06C687E40FA1C2F7"
+			invisible: true
+			tasks: [{
+				id: "6A00174FA69C3556"
+				item: "integrateddynamics:part_inventory_reader"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "37FDF52C4CCE285E"
+			invisible: true
+			tasks: [{
+				id: "25A966DC943C998E"
+				item: "integrateddynamics:part_fluid_reader"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "0DA1A5C40B8E4964"
+			invisible: true
+			tasks: [{
+				id: "31C215F81A6C9581"
+				item: "integrateddynamics:part_machine_reader"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "0311C4B229956B83"
+			invisible: true
+			tasks: [{
+				id: "33799697B5F93E14"
+				item: "integrateddynamics:part_entity_reader"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "7B56000556C7CE9E"
+			invisible: true
+			tasks: [{
+				id: "7F6107697B41C0E4"
+				item: "integrateddynamics:part_world_reader"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57CB7CDF9E407CFE"]
+			id: "209EB11E7D1FEB77"
+			invisible: true
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "53D0B4E8140AB664"
+				item: "integrateddynamics:variable_transformer_output"
+				type: "item"
+			}]
+			title: "Writing & Display"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["209EB11E7D1FEB77"]
+			id: "59E2DC811721B97E"
+			invisible: true
+			tasks: [{
+				id: "64632258DE96D28E"
+				item: "integrateddynamics:part_redstone_writer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["209EB11E7D1FEB77"]
+			id: "29F112EC965B40D4"
+			invisible: true
+			tasks: [{
+				id: "22E8C20DEF049A73"
+				item: "integrateddynamics:part_display_panel"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["209EB11E7D1FEB77"]
+			id: "4E1A2D031D65DD7B"
+			invisible: true
+			tasks: [{
+				id: "7DEFCC1FC3948F5A"
+				item: "integrateddynamics:part_static_light_panel"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["209EB11E7D1FEB77"]
+			id: "4DB1F0A9BA400346"
+			invisible: true
+			tasks: [{
+				id: "7D3D1BE8C8FCAD75"
+				item: "integrateddynamics:part_dynamic_light_panel"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["209EB11E7D1FEB77"]
+			id: "458A2EA4F4769CDD"
+			invisible: true
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "706576C8DFB70C57"
+				item: "integrateddynamics:logic_programmer"
+				type: "item"
+			}]
+			title: "Operators"
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["458A2EA4F4769CDD"]
+			id: "381A8359F50584BC"
+			invisible: true
+			tasks: [{
+				id: "048C456967B96F64"
+				item: "integrateddynamics:portable_logic_programmer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["458A2EA4F4769CDD"]
+			id: "4E31D13A0BF289FA"
+			invisible: true
+			tasks: [{
+				id: "4F6088EBDC847437"
+				item: "integrateddynamics:variablestore"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
 	]
-	title: "&6&l6.&r&r Thermodynamics™ "
+	title: "&6&l6.&r&r Integrated Thermodynamics™ "
 }

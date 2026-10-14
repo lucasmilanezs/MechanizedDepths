@@ -7,32 +7,39 @@
 
 //====================CUSTOM RECIPES==================
 
-// REDSTONE FLUX SUPER COIL
+
+// MACHINE INTERNALS
 ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_flux_crafter(
-        Item.of('kubejs:redstone_flux_super_coil', 3),     
+        Item.of('kubejs:machine_internals'),
     [
-        'RER',
-        'ERE',
-        'RER'
-    ], {
-        R: 'thermal:rf_coil',
-        E: '#forge:ingots/electrum'
-    }, 2000).id('kubejs:extended_crafting/extendedcrafting_shaped_flux_crafter/redstone_flux_super_coil');
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        A: '#forge:plates/iron',
+        B: '#forge:gears/lead',
+        D: 'kubejs:redstone_component',
+        C: 'thermal:rf_coil'
+    }, 8000).id('kubejs:extended_crafting/extendedcrafting_shaped_flux_crafter/machine_internals');
 });
 
-//REDSTONE FLUX RESONATOR
+// CALIBRATED INTERNALS
 ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_flux_crafter(
-        Item.of('kubejs:rf_resonator', 3),     
+        Item.of('kubejs:calibrated_internals'),
     [
-        'RER',
-        'ERE',
-        'RER'
-    ], {
-        R: 'kubejs:redstone_flux_super_coil',
-        E: 'kubejs:inductive_alloy'
-    }, 8000).id('kubejs:extended_crafting/extendedcrafting_shaped_flux_crafter/rf_resonator');
+        ' B ',
+        'CDC',
+        ' A '
+    ],
+    {
+        A: '#forge:gears/lead',
+        B: '#forge:rods/aluminum',
+        D: 'kubejs:machine_internals',
+        C: 'immersiveengineering:wirecoil_electrum_ins',
+    }, 8000).id('kubejs:extended_crafting/extendedcrafting_shaped_flux_crafter/calibrated_internals');
 });
 
 //====================CHANGED RECIPES==================

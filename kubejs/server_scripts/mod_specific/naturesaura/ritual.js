@@ -92,6 +92,50 @@ ServerEvents.recipes(event => {
   }).id("kubejs:natures_aura/tree_ritual/token_of_sorrow");
 });
 
+// TOKEN OF ANGER
+ServerEvents.recipes(event => {
+  event.remove({ id: 'naturesaura:tree_ritual/token_anger' });
+  event.custom({
+    "type": "naturesaura:tree_ritual",
+    "ingredients": [
+      { type: 'forge:nbt', item: 'naturesaura:aura_bottle', nbt: { stored_type: 'naturesaura:nether' } },
+      { "item": "naturesaura:gold_leaf" },
+      { "item": "minecraft:magma_block" },
+      { "item": "minecraft:blaze_powder" },
+      { "item": "minecraft:gunpowder" },
+      { "item": "vital_herbs:tox_kiss" }
+    ],
+    "sapling": { "item": "minecraft:oak_sapling" },
+    "output": {
+      "item": "naturesaura:token_anger",
+      "count": 2
+    },
+    "time": 200
+  }).id("kubejs:natures_aura/tree_ritual/token_of_anger");
+});
+
+// TOKEN OF FEAR
+ServerEvents.recipes(event => {
+  event.remove({ id: 'naturesaura:tree_ritual/token_fear' });
+  event.custom({
+    "type": "naturesaura:tree_ritual",
+    "ingredients": [
+      { type: 'forge:nbt', item: 'naturesaura:aura_bottle', nbt: { stored_type: 'naturesaura:nether' } },
+      { "item": "naturesaura:gold_leaf" },
+      { "item": "minecraft:rotten_flesh" },
+      { "item": "vital_herbs:snap_pepper" },
+      { "item": "minecraft:bone" },
+      { "item": "minecraft:soul_sand" }
+    ],
+    "sapling": { "item": "minecraft:oak_sapling" },
+    "output": {
+      "item": "naturesaura:token_fear",
+      "count": 2
+    },
+    "time": 200
+  }).id("kubejs:natures_aura/tree_ritual/token_of_fear");
+});
+
 // CRUMBLING CATALYST
 ServerEvents.recipes(event => {
   event.remove({ id: 'naturesaura:tree_ritual/crushing_catalyst' });
