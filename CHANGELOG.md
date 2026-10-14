@@ -4,6 +4,33 @@ Controlled release history starts after the catalog migration.
 `MechanizedDepths(pt1.0.0).zip` and `mechanizedDepths-2.0.0p.zip` are legacy
 reference artifacts; their names do not follow the new version policy.
 
+## pt-2.2.0
+
+- Drafting Extensions (TECH) is now a playable chapter: input milestones
+  (Mekanism alloys and control circuits, refined glowstone and osgloglium, the
+  Teleportation Core, Ender IO crystals, capacitors and End Steel, Soularium,
+  Machine and Calibrated Internals, protective fabrics, lumium, cinnabar)
+  unlock the tools and quality-of-life items built from them.
+- Those items now cost their milestones, mostly on plates instead of ingots:
+  Mekanism gear, generators and teleporters, Building Gadgets, Ender IO
+  vacuums, staffs, enchanter and Ender fluid conduits, Ender Storage, Thermal
+  devices, flux tools, hazmat and diving gear, augments and potion devices,
+  Absorption Hopper and Auto Flux Crafter. The Teleportation Core takes an
+  Ender Crystal instead of a diamond.
+- Chapter 6: Machine Internals and Calibrated Internals (Flux Crafter) replace
+  the RF super coil and resonator in Thermal machines. Integrated Dynamics
+  joins the chapter: Menril processing (squeezers, drying basins, Menril Resin
+  in the IE Squeezer) and its logic network.
+- Thermal gears use their standard recipes again; the Machine Frame takes
+  steel plates and crystallized Menril.
+- Nature's Aura Tokens of Anger and Fear come from nether aura bottles, gold
+  leaf and Vital Herbs ingredients, two per ritual.
+- Ender IO Dormant Memory Cell slicing uses AE2 logic processors.
+- New mods: Ender Storage, Akashic Tome, Thin Pillars. Starlight removed (the
+  pt-2.1 hotfix).
+- Removed leftover test recipes (Alloy Maw iron, Wafer Processing Facility
+  diamond). Known issue: the Alloy Maw has no recipes yet.
+
 ## pt-2.1.0
 
 - Chapter 8 research: Chemistry Tech Cards unlock the Chemical Infuser,
