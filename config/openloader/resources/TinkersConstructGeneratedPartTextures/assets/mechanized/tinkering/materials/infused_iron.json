@@ -1,5 +1,4 @@
 {
-  "texture": "mechanized:brass",
   "fallbacks": ["metal"],
   "color": "4EED40"
 }

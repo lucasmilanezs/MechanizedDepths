@@ -204,6 +204,9 @@ var MD_TT_ROUTE_TABLE = {
     "adze_head":      { "item": "tconstruct:adze_head",      "schematics": ["double/adze"] },
     "broad_blade":    { "item": "tconstruct:broad_blade",    "schematics": ["sword/heavy_blade", "double/sickle", "double/hoe", "single/spearhead", "single/basic_shovel"] },
     "bone_broad_blade": { "item": "tconstruct:broad_blade",  "schematics": ["single/spearhead"] },
+    // Tetra's heavy blade module has no tetra:gem/ variant, so gem broad
+    // blades skip it; every other broad-blade target accepts gems.
+    "gem_broad_blade":  { "item": "tconstruct:broad_blade",  "schematics": ["double/sickle", "double/hoe", "single/spearhead", "single/basic_shovel"] },
     "tool_handle":    { "item": "tconstruct:tool_handle",    "schematics": ["double/basic_handle", "single/basic_handle", "single/light_handle", "sword/basic_hilt"] },
     "tough_handle":   { "item": "tconstruct:tough_handle",   "schematics": ["single/long_handle"] },
     "tool_binding":   {
@@ -222,7 +225,7 @@ var MD_TT_ROUTE_TABLE = {
 
 var MD_TT_TYPE_PARTS = {
     "metal": ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade", "tool_handle", "tough_handle", "bow_limb", "bow_grip"],
-    "gem":   ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade"],
+    "gem":   ["pick_head", "small_axe_head", "small_blade", "adze_head", "gem_broad_blade"],
     "stone": ["pick_head", "small_axe_head", "small_blade", "adze_head", "broad_blade"],
     "bone":  ["small_blade", "bone_broad_blade", "tool_handle", "tough_handle"],
     "fibre": ["tool_binding", "bowstring"],
@@ -750,6 +753,13 @@ MD_TT_preserveNativeOutcome("sword/heavy_blade", { "materials": ["tetra:wood/", 
 // Hilts usam tool_handle para metal e bone. Wood/rod permanecem como rotas
 // nativas de começo de jogo, sem reabrir o bypass por matéria-prima metálica.
 MD_TT_preserveNativeOutcome("sword/basic_hilt", { "materials": ["tetra:wood/", "tetra:rod/"], "moduleKey": "sword/basic_hilt", "moduleVariant": "basic_hilt/" })
+// Handles follow the same rule as the hilt: Tinkers tool_handle/tough_handle
+// parts cover metal and bone, while planks, sticks and the other tetra:rod/
+// materials stay available as native early-game handles.
+MD_TT_preserveNativeOutcome("double/basic_handle", { "materials": ["tetra:wood/", "tetra:rod/"], "moduleKey": "double/basic_handle", "moduleVariant": "basic_handle/" })
+MD_TT_preserveNativeOutcome("single/basic_handle", { "materials": ["tetra:wood/", "tetra:rod/"], "moduleKey": "single/basic_handle", "moduleVariant": "basic_handle/" })
+MD_TT_preserveNativeOutcome("single/light_handle", { "materials": ["tetra:wood/", "tetra:rod/"], "moduleKey": "single/light_handle", "moduleVariant": "light_handle/" })
+MD_TT_preserveNativeOutcome("single/long_handle", { "materials": ["tetra:wood/", "tetra:rod/"], "moduleKey": "single/long_handle", "moduleVariant": "long_handle/" })
 MD_TT_validateContextualOutcomes(MD_TT_OUTCOMES)
 
 // O martelo continua uma progressão fechada. Também recebe o contrato
@@ -835,7 +845,10 @@ global.MechanizedDepths = global.MechanizedDepths || {}
 global.MechanizedDepths.TetraTinkers = {
     materials: MD_TT_MATERIALS,
     outcomes: MD_TT_OUTCOMES,
-    contextualAffinities: MD_TT_CONTEXTUAL_AFFINITIES
+    contextualAffinities: MD_TT_CONTEXTUAL_AFFINITIES,
+    // The pack's hammer module exactly as injected below, so the tooltip can
+    // show this ladder's hammer levels instead of Tetra's stock ones.
+    hammerModule: buildHammerModule()
 }
 // =============================================================================
 // Injecao dos schematics -- um addJson por schematic, estatico e explicito

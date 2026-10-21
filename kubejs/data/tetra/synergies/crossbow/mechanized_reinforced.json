@@ -1,0 +1,11 @@
+[
+  {
+    "improvements": ["mechanized/reinforced", "mechanized/reinforced"],
+    "durabilityMultiplier": 0.982987,
+    "attributes": {
+      "**generic.attack_speed": -0.0027701,
+      "**tetra:draw_speed": -0.0022676
+    },
+    "hidden": true
+  }
+]

@@ -13,6 +13,16 @@
     "minecraft:zombie",
     "minecraft:zombie_horse",
     "minecraft:zombie_villager",
-    "minecraft:zombified_piglin"
+    "minecraft:zombified_piglin",
+    { "id": "botania:pink_wither", "required": false },
+    { "id": "eidolon:giant_skeleton", "required": false },
+    { "id": "eidolon:necromancer", "required": false },
+    { "id": "eidolon:wraith", "required": false },
+    { "id": "eidolon:zombie_brute", "required": false },
+    { "id": "gravestone:player_ghost", "required": false },
+    { "id": "occultism:possessed_phantom", "required": false },
+    { "id": "occultism:possessed_skeleton", "required": false },
+    { "id": "occultism:wild_hunt_skeleton", "required": false },
+    { "id": "occultism:wild_hunt_wither_skeleton", "required": false }
   ]
 }

@@ -277,7 +277,9 @@ function _computeStats(moduleKey, mat) {
     // Uma variante contextual contém a contribuição original do módulo e a
     // afinidade material→módulo em campos distintos. O item final recebe a
     // soma em Tetra; o tooltip os mantém separados para explicar a origem.
-    var moduleEffects = _calcEffects(variant.moduleEffects || variant.effects, mat)
+    // Contextual variants always carry moduleEffects, null when the module
+    // has none (handles, hilts, staves); only plain variants fall back.
+    var moduleEffects = _calcEffects(variant.moduleEffects !== undefined ? variant.moduleEffects : variant.effects, mat)
     if (moduleEffects) stats.moduleEffects = moduleEffects
 
     var contextualEffects = _calcEffects(variant.contextualEffects, mat)
@@ -329,6 +331,80 @@ function MD_TT_TOOLTIP_readInnateImprovements(rawImprovements) {
     return result
 }
 
+// schematic_gen.js replaces Tetra's hammer module with the pack's own ladder,
+// so the stock "double/basic_hammer" formula above gives the wrong levels.
+// These two helpers turn the published module JSON into the same formula shape
+// (values follow Tetra's MaterialVariantData.combine). They cover what the
+// hammer module uses: attributes, tools, durability, integrity, magic capacity
+// and plain variant effects.
+function MD_TT_TOOLTIP_variantFormula(variant) {
+    var extract = variant.extract || {}
+
+    var attributes = {}
+    var attributeSources = [
+        [variant.attributes, "base"],
+        [extract.primaryAttributes, "primary"],
+        [extract.secondaryAttributes, "secondary"],
+        [extract.tertiaryAttributes, "tertiary"]
+    ]
+    for (var si = 0; si < attributeSources.length; si++) {
+        var source = attributeSources[si][0]
+        if (!source) continue
+        var attributeKeys = Object.keys(source)
+        for (var ai = 0; ai < attributeKeys.length; ai++) {
+            if (!attributes[attributeKeys[ai]]) attributes[attributeKeys[ai]] = {}
+            attributes[attributeKeys[ai]][attributeSources[si][1]] = source[attributeKeys[ai]]
+        }
+    }
+
+    // Tetra adds the variant's fixed level to extract level x material level.
+    var tools = {}
+    var fixedTools = variant.tools || {}
+    var fixedKeys = Object.keys(fixedTools)
+    for (var fi = 0; fi < fixedKeys.length; fi++) {
+        tools[fixedKeys[fi]] = { "level_base": _TOOL_TIER[fixedTools[fixedKeys[fi]]] || 0 }
+    }
+    var extractTools = extract.tools || {}
+    var extractKeys = Object.keys(extractTools)
+    for (var ti = 0; ti < extractKeys.length; ti++) {
+        var toolKey = extractKeys[ti]
+        if (!tools[toolKey]) tools[toolKey] = {}
+        if (extractTools[toolKey][0]) tools[toolKey].level_mul = extractTools[toolKey][0]
+        if (extractTools[toolKey][1]) tools[toolKey].efficiency_mul = extractTools[toolKey][1]
+    }
+
+    var effects = null
+    if (variant.effects) {
+        effects = MD_TT_TOOLTIP_effectFormula(variant.effects)
+    }
+
+    var integrity = { "base": variant.integrity || 0 }
+    if (extract.integrity > 0) integrity.integrityGain_mul = extract.integrity
+    if (extract.integrity < 0) integrity.integrityCost_mul = extract.integrity
+
+    return {
+        "key": variant.key,
+        "materials": variant.materials || [],
+        "attributes": Object.keys(attributes).length > 0 ? attributes : null,
+        "tools": Object.keys(tools).length > 0 ? tools : null,
+        "effects": effects,
+        "durability": { "base": variant.durability || 0, "material_mul": extract.durability || 0 },
+        "integrity": integrity,
+        "magicCapacity": { "base": variant.magicCapacity || 0, "material_mul": extract.magicCapacity || 0 },
+        "module_traits": [],
+        "variant_traits": []
+    }
+}
+
+function MD_TT_TOOLTIP_moduleFormula(moduleJson) {
+    var variants = []
+    var moduleVariants = moduleJson.variants || []
+    for (var i = 0; i < moduleVariants.length; i++) {
+        variants.push(MD_TT_TOOLTIP_variantFormula(moduleVariants[i]))
+    }
+    return { "variants": variants }
+}
+
 function MD_TT_TOOLTIP_readMaterialEffects(rawEffects) {
     var result = {}
     if (!rawEffects) return result
@@ -348,8 +424,10 @@ function MD_TT_TOOLTIP_readMaterialEffects(rawEffects) {
 // =============================================================================
 // Construção do mapping — consome a API explícita do schematic_gen
 // =============================================================================
+// Built when the server starts (ServerEvents.loaded) and again after /reload;
+// see the end of this section.
 
-ServerEvents.loaded(function(event) {
+function MD_TT_TOOLTIP_build() {
 
     // Guarda de sanidade: verifica que o schematic_gen publicou a API antes.
     var tetraIntegration = global.MechanizedDepths && global.MechanizedDepths.TetraTinkers
@@ -360,6 +438,9 @@ ServerEvents.loaded(function(event) {
 
     var _materials = tetraIntegration.materials
     var _outcomes  = tetraIntegration.outcomes
+    if (tetraIntegration.hammerModule) {
+        _MODULE_FORMULAS["double/basic_hammer"] = MD_TT_TOOLTIP_moduleFormula(tetraIntegration.hammerModule)
+    }
     MD_TT_TOOLTIP_applyContextualAffinities(tetraIntegration.contextualAffinities, _materials)
 
     var materialsMap = {}
@@ -407,8 +488,13 @@ ServerEvents.loaded(function(event) {
             for (var oi = 0; oi < outcomeList.length; oi++) {
                 var outcome = outcomeList[oi]
 
-                // Só processa outcomes deste material
-                if (outcome.moduleVariant.indexOf("/" + name) === -1) continue
+                // Só processa outcomes deste material. Compare the whole
+                // material name: a partial match let "amethyst" claim the
+                // "amethyst_bronze" outcomes. Native outcomes (planks,
+                // sticks) carry no Tinkers part NBT and are skipped.
+                if (!outcome.material || !outcome.material.nbt) continue
+                var variantParts = outcome.moduleVariant.split("/")
+                if (variantParts[variantParts.length - 1] !== name) continue
 
                 var moduleKey     = outcome.moduleKey
                 var moduleVariant = outcome.moduleVariant
@@ -454,7 +540,38 @@ ServerEvents.loaded(function(event) {
         + Object.keys(materialsMap).length + " materiais | "
         + Object.keys(modulesMap).length   + " modulos | "
         + Object.keys(variantsMap).length  + " variantes")
+}
+
+function MD_TT_TOOLTIP_safeBuild() {
+    try {
+        MD_TT_TOOLTIP_build()
+    } catch (e) {
+        console.error("[Mechanized/Tooltip] Could not build the tooltip mapping: " + e)
+    }
+}
+
+ServerEvents.loaded(function(event) {
+    MD_TT_TOOLTIP_safeBuild()
 })
+
+// /reload runs the server scripts again while the server is up, so
+// ServerEvents.loaded does not fire and the old mapping used to stay until a
+// restart. Rebuild one tick after the reload instead, once schematic_gen.js has
+// published its reloaded API (tooltip_sync.js then sends it to online players).
+// Utils.server is null on the first load, before the server exists.
+var MD_TT_TOOLTIP_reloadServer = Utils.server
+if (MD_TT_TOOLTIP_reloadServer) {
+    try {
+        // execute() makes sure the tick is scheduled from the server thread.
+        MD_TT_TOOLTIP_reloadServer.execute(function() {
+            MD_TT_TOOLTIP_reloadServer.scheduleInTicks(1, function() {
+                MD_TT_TOOLTIP_safeBuild()
+            })
+        })
+    } catch (e) {
+        console.error("[Mechanized/Tooltip] Could not schedule the tooltip rebuild after reload: " + e)
+    }
+}
 
 ServerEvents.commandRegistry(function(event) {
     var Commands = event.commands
