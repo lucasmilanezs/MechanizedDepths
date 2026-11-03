@@ -4,6 +4,32 @@ Controlled release history starts after the catalog migration.
 `MechanizedDepths(pt1.0.0).zip` and `mechanizedDepths-2.0.0p.zip` are legacy
 reference artifacts; their names do not follow the new version policy.
 
+## pt-2.3.0
+
+- Chapter 9 (Alloys, Fusions and Contradictions) is playable: still a work in
+  progress, but its main progression line works end to end.
+- Thermal Extra alloys form only in the Create Metallurgy Foundry, each on its
+  own heat source (superheated Blaze Burner, Blazing Composite, Entropic
+  Mycelite, Aetherforged Cinderblock, Echo-Fused Obsidianite). Their slag,
+  with compressed iron and refined obsidian, is cast over an Abyssal ingot
+  into Obdurium.
+- Vessel Frame (tungsten, titanium, void crystal) is the base of Enderium in
+  the alloy machines and the Tinkers smeltery.
+- New Ender Internals; Twinite Wire, Refined Plastic and the Basic and
+  Advanced Electric Engine get recipes. They gate the Fluid Mixer,
+  Endothermic Dehydrator, Nitratic Igniter and Advanced Refinery.
+- Parallel Protocols (TECH) lists its planned items, not gated yet. Utilities
+  of Power adds the AE2 wireless terminals; Drafting Extensions adds the
+  Mekanism tier installers. Empty placeholder magic chapters removed.
+- Unification: obsidian dust is Thermal Extra's (one obsidian, four dust);
+  tungsten melts only in the Industrial Crucible and becomes items only by
+  casting; netherite dust comes only from the Nitratic Igniter.
+- Andesite Alloy in the IE Engineer's Workbench; treated wood from Living
+  Timber and creosote in a Spout; the AE2 Crafting Processor takes a
+  Compulsort Cell.
+- Updated Create Metallurgy 1.0.1, Create Heat JS 0.0.6 (now enabled),
+  Occultism 1.158.0, Occult Engineering 0.11.4.
+
 ## pt-2.2.0
 
 - Drafting Extensions (TECH) is now an actual chapter: input milestones
