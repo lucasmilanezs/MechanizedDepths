@@ -67,6 +67,48 @@ ServerEvents.recipes(event => {
       min_temp: 773
     }
   }).id("kubejs:thermo_plant/magnesium_chloride_recycling")
+
+// DOUBLE PLASTIC + AETHERIC VAPOR -> REFINED PLASTIC
+  event.custom({
+    type: "pneumaticcraft:thermo_plant",
+    exothermic: false,
+    fluid_input: {
+      type: "pneumaticcraft:fluid",
+      amount: 250,
+      fluid: "kubejs:aetheric_vapor"
+    },
+    item_input: {
+      item: "kubejs:double_plastic"
+    },
+    item_output: {
+      item: "kubejs:refined_plastic"
+    },
+    pressure: 2.0,
+    temperature: {
+      min_temp: 473
+    }
+  }).id("kubejs:thermo_plant/refined_plastic")
+
+// MAGMA BLOCK + AETHERIC VAPOR -> AETHERFORGED CINDERBLOCK
+  event.custom({
+    type: "pneumaticcraft:thermo_plant",
+    exothermic: false,
+    fluid_input: {
+      type: "pneumaticcraft:fluid",
+      amount: 1000,
+      fluid: "kubejs:aetheric_vapor"
+    },
+    item_input: {
+      item: "minecraft:magma_block"
+    },
+    item_output: {
+      item: "kubejs:aetherforged_cinderblock"
+    },
+    pressure: 3.0,
+    temperature: {
+      min_temp: 773
+    }
+  }).id("kubejs:thermo_plant/aetherforged_cinderblock")
 })
 
 

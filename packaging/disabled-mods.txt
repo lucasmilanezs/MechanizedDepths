@@ -1,6 +1,5 @@
 # Present as .jar.disabled in the development instance at migration time.
 # These metadata files are retained for audit but excluded from builds.
-create-heat-js.pw.toml
 deep-resonance.pw.toml
 emi.pw.toml
 jei-enhancements.pw.toml

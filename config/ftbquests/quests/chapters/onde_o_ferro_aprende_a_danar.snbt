@@ -480,23 +480,11 @@
 				"6FFDC0CD59E051D1"
 			]
 			description: [
-				"  We've reached the point where gears aren't enough. You need heat. &l&cLiving&r &l&eflame&r&r.&r"
+				"  Bring an &6Empty Blaze Burner&r to the Nether. Four iron plates around a piece of netherrack make the cage. Hold it in your hand and &aright-click a Blaze&r to catch it."
 				""
-				"  But before you melt metal or logic, you need to take a practical (and suicidal) step:"
+				"  Place the loaded burner beneath a Mechanical Mixer and feed it coal. You can use that heat to mix brass, or put the burner under a tank to fire a steam boiler."
 				""
-				"  Go to the Nether and &aright-click&r a &eblaze&r with your freshly crafted Empty Blaze Burner."
-				""
-				"  Yes, it's manual. Yes, it still spits fire. Yes, you will burn."
-				""
-				"  But only with its fire lit does true smelting begin."
-				""
-				"  To build this burner, you'll need Blazing Steel — an alloy that says \"I'm past the andesite phase.\" You can forge it in the Arc Furnace, of course... But if you're not there yet, the good old Immersive Alloy Kiln works too. Just heat it enough to make steel feel ashamed."
-				""
-				"  This is your threshold:"
-				"  From rotation to fire."
-				"  From innocent Create to heavy alchemy."
-				""
-				"&7&o— Right-click the blaze. Yes. What could go wrong? Besides the obvious.&r&r"
+				"&7&o— I would make the cage before going to look for its occupant.&r&r"
 			]
 			id: "3C8B4742E0008284"
 			shape: "gear"
@@ -513,7 +501,7 @@
 					type: "item"
 				}
 			]
-			title: "&lHeating Is the New Spinning"
+			title: "Blaze Burner"
 			x: 3.0d
 			y: 0.0d
 		}

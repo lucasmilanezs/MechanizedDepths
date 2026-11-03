@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
     mode: 'press',
     ingredients: {
       top: { item: 'kubejs:printed_crafting_circuit' },
-      middle: { item: 'kubejs:intricate_redstone_component' },
+      middle: { item: 'kubejs:compulsort_cell' },
       bottom: { item: 'ae2:printed_silicon' }
     },
     result: {

@@ -102,3 +102,23 @@ StartupEvents.registry('fluid', event => {
     .color(0x757575)        
     .bucketColor(0x757575);
 });
+
+// MOLTEN OBDURATE SLAG (kubejs:molten_obdurate_slag)
+StartupEvents.registry('fluid', event => {
+  event.create('molten_obdurate_slag')
+    .displayName('Molten Obdurate Slag')
+    .stillTexture('custom:fluid/molten_base')
+    .flowingTexture('custom:fluid/molten_base')
+    .color(0x3B2F3F)
+    .bucketColor(0x3B2F3F);
+});
+
+// MOLTEN VESSEL FRAME (kubejs:molten_vessel_frame)
+StartupEvents.registry('fluid', event => {
+  event.create('molten_vessel_frame')
+    .displayName('Molten Vessel Frame')
+    .stillTexture('custom:fluid/molten_base')
+    .flowingTexture('custom:fluid/molten_base')
+    .color(0x8A9BA8)
+    .bucketColor(0x8A9BA8);
+});

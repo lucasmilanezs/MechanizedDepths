@@ -23,6 +23,19 @@ ServerEvents.recipes(event => {
   }).id('kubejs:immersiveengineering/metal_press/empowered_blaze_rod');
 });
 
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'immersiveengineering:metal_press',
+    energy: 2400,
+    input: { tag: 'forge:ingots/twinite' },
+    mold: 'immersiveengineering:mold_wire',
+    result: {
+      base_ingredient: { item: 'kubejs:twinite_wire' },
+      count: 2
+    }
+  }).id('kubejs:immersiveengineering/metal_press/twinite_wire');
+});
+
 
 
 

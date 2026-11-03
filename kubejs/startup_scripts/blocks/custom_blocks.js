@@ -26,7 +26,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true)
     .hardness(5.0)
     .resistance(6.0)
-    .lightLevel(10)
+    .lightLevel(10 / 15)
     .textureAll('custom:block/blazing_composite');
 
   event.create('entropic_mycelite')
@@ -35,7 +35,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true)
     .hardness(6.0)
     .resistance(8.0)
-    .lightLevel(12)
+    .lightLevel(12 / 15)
     .texture(Direction.UP, 'custom:block/entropic_mycelite')
     .texture(Direction.DOWN, 'custom:block/entropic')
     .texture(Direction.NORTH, 'custom:block/entropic_mycelite_side')
@@ -49,7 +49,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true)
     .hardness(8.0)
     .resistance(10.0)
-    .lightLevel(13)
+    .lightLevel(13 / 15)
     .textureAll('custom:block/aetherforged_cinderblock');
 
   event.create('echo_fused_obsidianite')
@@ -58,7 +58,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true)
     .hardness(10.0)
     .resistance(12.0)
-    .lightLevel(14)
+    .lightLevel(14 / 15)
     .texture(Direction.UP, 'custom:block/echo_fused_obsidianite_top')
     .texture(Direction.DOWN, 'custom:block/echo_fused_obsidianite_top')
     .texture(Direction.EAST, 'custom:block/echo_fused_obsidianite')

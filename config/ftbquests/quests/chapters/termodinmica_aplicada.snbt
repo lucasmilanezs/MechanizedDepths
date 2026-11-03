@@ -111,17 +111,13 @@
 		{
 			dependencies: ["664F03BCD6779986"]
 			description: [
-				"   Catalysts are auxiliary components inserted into the process to alter its behavior: they accelerate, divert, amplify. They’re not mandatory — until they are."
+				"   The &6Pulverizer&r has a slot next to the input that most people leave empty. Whatever goes there is a &6catalyst&r: it gets used up a bit at a time and, while it lasts, it changes the recipe. More main output, more by-products, less energy per run, depending on what you feed it."
 				""
-				"   In most cases, they’re the only way to extract rare by-products like ilmenite, rutile, obsidianite, or things even less pronounceable. Treat them with care — actually, with planning."
+				"   It also makes outputs that otherwise don't exist. A few recipes here list a result at &a0%&r: &6Obsidianite&r from obsidian dust, rutile and ilmenite from the clusters. Every catalyst sets a floor, a minimum chance for every output, and that floor is the only reason those ever drop. Multipliers don't help there; zero times anything is still zero. &cWithout a catalyst, obsidian dust goes in and nothing comes out.&r"
 				""
-				"   They will decide whether your industrial chain is efficient… or just loud."
+				"   &6Quartz Dust&r is the cheap one: &a1.1×&r main output, &a85%&r energy, a &a5%&r floor, and it's spent &a85%&r of the time. That's about seventeen dusts per Obsidianite. Enough to get started, and the reason the rest of this column exists."
 				""
-				"   Ground quartz acts as a crystalline abrasive inside the pulverizer chamber. Its sharp edges and high hardness index mechanically interfere with ore fragmentation, helping destabilize micro-structures."
-				""
-				"   Though not participating chemically, its silicate nature improves cutting action, speeding up milling. However, like any light abrasive, it wears easily, being more useful for short, low-demand sessions."
-				""
-				"&7&o— Cuts well, lasts little. Like many speeches.&r&r"
+				"&7&o— Seventeen to one. Remember that number when the next catalyst looks expensive.&r&r"
 			]
 			id: "377D66DD47488FE4"
 			shape: "hexagon"
@@ -238,11 +234,15 @@
 		{
 			dependencies: ["504BB1A0C0A5D778"]
 			description: [
-				"   This viscous substance, derived from complex biological processes, acts as an active solvation medium inside the chamber. Its gelatinous composition encapsulates particles during milling, preventing suspension losses and optimizing secondary reactions."
+				"   The best catalyst in this chapter is a slime ball dipped in vegetable oil. Don't ask."
 				""
-				"   In addition, certain unstable organic compounds within it serve as precursors for catalytic reactions, especially with minerals sensitive to pH or organo-metallic bonding. Its durability and yield make it the gold-standard catalyst. Excellent and balanced — it could just last a little longer..."
+				"   The &6Refinery&r turns &a500 mB&r of plant oil into &a250 mB&r of &6Aqueous Organic Solvent&r, and the &6Bottler&r coats a slime ball in &a50 mB&r of it. Out comes the &6Gelatinous Organic Solvent&r."
 				""
-				"&7&o— It dissolves things you didn’t know were there. Including your certainty.&r&r"
+				"   In the Pulverizer it's the strongest all-rounder by far: &a1.6×&r main output, &a2.25×&r by-products, &a15%&r energy so runs fly by, a &a50%&r floor, and it's only spent a quarter of the time. That's two Obsidianite per blob, on average. Rich Slag beats it on the floor and nothing else."
+				""
+				"   The catch is the slime. Plant oil is easy to keep flowing; slime balls have to come from somewhere, and this thing will eat a lot of them."
+				""
+				"&7&o— Smells like salad dressing. Performs like cheating.&r&r"
 			]
 			id: "0E15CFE7649C8E5E"
 			shape: "gear"
@@ -261,11 +261,11 @@
 				"3321B64AAB3C71A1"
 			]
 			description: [
-				"   Cinnabar, primarily mercury sulfide (HgS), has a crystalline structure that, when stressed, releases micro-static charges and undergoes lamellar fracture."
+				"   &6Cinnabar&r is quartz that the &6Bottler&r soaked in &a500 mB&r of molten redstone, which the &6Crucible&r melts out of plain redstone dust. Two machines you just built, one red crystal. Not that you need them: it also shows up as ore underground, and the Pulverizer already spits it out of redstone ore a quarter of the time."
 				""
-				"   During pulverization, these effects cause electrostatic dispersion of particulates, reducing agglomeration and increasing surface exposure for processing. Its balanced performance makes it a broadly applicable technical catalyst."
+				"   It doesn't excel at anything. &a1.25×&r on both main output and by-products, &a80%&r energy, a &a25%&r floor, and it survives &a70%&r of runs. That last number is the one that matters: this is the catalyst you leave in the slot and stop thinking about. For Obsidianite it costs a little over one crystal per gem, which makes Quartz Dust look like a bad joke."
 				""
-				"&7&o— Beauty lies in balance… and in a slight degree of functional toxicity.&r&r"
+				"&7&o— Real cinnabar is mercury ore. Ours is redstone with ambitions, so technically you can lick it. Please don't.&r&r"
 			]
 			id: "1F6EBFB9DB2A2B14"
 			shape: "gear"
@@ -281,11 +281,11 @@
 		{
 			dependencies: ["4B17B25AEC9A0007"]
 			description: [
-				"   Counter-intuitive as it is, the Ice Charge works as a moderating thermal agent. During milling, its controlled cold release absorbs part of the friction-generated energy, reducing system wear and enabling short cycles with fewer interruptions."
+				"   An &6Ice Charge&r is &a500 mB&r of water and one gunpowder, frozen together in the &6Chiller&r. In the Pulverizer it buys speed and little else: &a30%&r energy per run, a &a15%&r floor, by-products untouched, and main output actually drops to &c0.9×&r. It survives one run in twenty."
 				""
-				"   Its action is purely physical and limited, but the agility it provides is valuable in fast-processing flows. Fragile and volatile, it rarely survives more than a single round."
+				"   Coke Dust gives the same speed, doesn't shave your dust and lasts longer. So this goes in the slot when the coke runs out, or when a pile of something cheap needs grinding right now and losing a tenth of it doesn't hurt."
 				""
-				"&7&o— It doesn’t last long, but it cools tempers and speeds the work. A temporary relief — like a good improbable argument.&r&r"
+				"&7&o— You froze an explosive so a rock grinder spins faster. I'd have said no, but it works.&r&r"
 			]
 			id: "1DB47027209C4091"
 			shape: "gear"
@@ -301,10 +301,13 @@
 		{
 			dependencies: ["42B368C1DD78B214"]
 			description: [
-				"   Formed by blast-furnace residues rich in metal oxides, Rich Slag acts as a promoter of surface reactivity. Its components — chiefly iron, silicon, and aluminum oxides — interact with particles under fracture, increasing their chemical instability."
-				"   This effect induces the release of by-products bound by weak forces or requiring minimal catalytic activation. Though it doesn’t affect speed, its efficiency in secondary extractions is exceptional."
+				"   &6Rich Slag&r doesn't make anything faster. Energy stays at 100% and main output barely moves (1.05×). What it has is the floor: &a60%&r, the highest of any catalyst, plus &a1.75×&r by-products, and it's spent only &a20%&r of the time."
 				""
-				"&7&o— What’s left from smelting… now extracts what never left the stone. Second chances for catalysts and sinners.&r&r"
+				"   That makes it the one for the 0% recipes. Three Obsidianite per slag, on average, and rutile and ilmenite drop more often than not. Coke Dust clears a backlog; this one squeezes the rare stuff out of every cluster."
+				""
+				"   It comes from the &6Pyrolyzer&r: regular slag in, Rich Slag out 25% of the time, tar on the side. Regular slag is the leftover of plenty of smelting recipes, so if a pile of it has been sitting in a chest, now it has a purpose."
+				""
+				"&7&o— The smelter's garbage, cooked twice, becomes the most valuable thing in the slot. I'd make a speech, but you're busy grinding.&r&r"
 			]
 			id: "41F84F8BA400D58F"
 			shape: "gear"
@@ -483,7 +486,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["1973CEF9C6887213"]
+			dependencies: [
+				"1973CEF9C6887213"
+				"1A526B97B149CBD3"
+			]
 			id: "07E4CAAE1C785BA3"
 			tasks: [{
 				id: "771E3C9C15BE1EF3"
@@ -591,7 +597,6 @@
 			dependencies: ["08BAD04C876B5A78"]
 			id: "005BDB0636AC392F"
 			invisible: true
-			shape: "hexagon"
 			size: 1.0d
 			tasks: [{
 				id: "1C704E7DB7C642B0"

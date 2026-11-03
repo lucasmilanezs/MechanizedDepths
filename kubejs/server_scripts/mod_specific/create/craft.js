@@ -2,6 +2,13 @@
 
 //===================CUSTOM RECIPES==================
 
+// TWINITE WIRE
+ServerEvents.recipes(event => {
+  event.recipes.create.cutting(Item.of('kubejs:twinite_wire', 2), '#forge:plates/twinite')
+    .processingTime(50)
+    .id('kubejs:create/cutting/twinite_wire');
+});
+
 //====================CHANGED RECIPES==================
 
 // ANDESITE ALLOY

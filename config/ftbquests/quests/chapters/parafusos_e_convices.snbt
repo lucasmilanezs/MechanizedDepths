@@ -1863,10 +1863,18 @@
 		}
 		{
 			dependencies: ["004F5E63A1C4B294"]
+			description: [
+				"  In the Nether, find a flat &a5×5 floor&r of full blocks with five blocks of clear air above it. Drop your Rose Needle in the middle and leave it on the ground until the red pattern finishes drawing and the column of sparks fades."
+				""
+				"  Bring the needle back to your garden and use it on planted carrots to grow Snap Pepper or Tox Kiss."
+				""
+				"&7&o— I measured the floor for you. The ceiling counts too.&r&r"
+			]
 			id: "4F3B21684D8C147A"
 			tasks: [{
 				id: "696B028807A490FD"
 				item: "kubejs:underworld_rose_needle"
+				title: "Underworld Rose Needle"
 				type: "item"
 			}]
 			x: -2.0d

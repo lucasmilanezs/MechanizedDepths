@@ -87,6 +87,19 @@ ServerEvents.recipes(event => {
   }).id('kubejs:thermal/bottler/cinnabar');
 });
 
+//ENTROPIC MYCELITE
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal:bottler',
+    ingredients: [
+      { item: 'minecraft:mycelium' },
+      { fluid: 'kubejs:spectral_oil', amount: 2000 }
+    ],
+    result: { item: 'kubejs:entropic_mycelite' },
+    energy: 8000
+  }).id('kubejs:thermal/bottler/entropic_mycelite');
+});
+
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

@@ -320,3 +320,36 @@ ServerEvents.recipes(event => {
     time: 200
   })
 });
+
+// VESSEL FRAME INGOT (kubejs:ingot_vesselframe)
+ServerEvents.recipes(event => {
+  global.MDRecipes.Alloys.registerAlloy2x(event, {
+    inA: '#forge:ingots/tungsten',
+    inB: '#forge:ingots/titanium',
+    inC: 'actuallyadditions:void_crystal',
+    inACount: 2,
+    inBCount: 1,
+    inCCount: 1,
+    out: 'kubejs:ingot_vesselframe',
+    outCount: 2,
+    energy: 80000,
+    time: 200
+  })
+});
+
+// ENDERIUM INGOT (thermal:enderium_ingot)
+ServerEvents.recipes(event => {
+  event.remove({ id: 'thermal:machines/smelter/smelter_alloy_enderium' });
+  global.MDRecipes.Alloys.registerAlloy2x(event, {
+    inA: 'kubejs:ingot_vesselframe',
+    inB: '#forge:dusts/diamond',
+    inC: '#forge:ender_pearls',
+    inACount: 1,
+    inBCount: 1,
+    inCCount: 2,
+    out: 'thermal:enderium_ingot',
+    outCount: 2,
+    energy: 80000,
+    time: 200
+  })
+});

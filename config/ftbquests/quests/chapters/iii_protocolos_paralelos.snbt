@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iii_protocolos_paralelos"
@@ -207,7 +208,7 @@
 			y: 5.5d
 		}
 		{
-			description: [""]
+			description: ["Only the itens planned to be here so far. Still need to properly gate and organize all those quests. "]
 			id: "3CD9620BABA51BB3"
 			shape: "netheritetier"
 			size: 2.0d
@@ -220,6 +221,1400 @@
 			x: -1.0d
 			y: 4.5d
 		}
+		{
+			id: "45B1A68F7D90865F"
+			tasks: [{
+				id: "5AB4E9F6D98AC251"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 10.0d
+		}
+		{
+			id: "0023F871CAF4847C"
+			tasks: [{
+				id: "0B8293F4FBD065BD"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 10.0d
+		}
+		{
+			id: "71AD04CF4BE4BE01"
+			tasks: [{
+				id: "1939B0172C97BFA5"
+				item: "ae2:pattern_access_terminal"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 10.0d
+		}
+		{
+			id: "73915425BB49CC72"
+			tasks: [{
+				id: "1FC184A81EE556C9"
+				item: "ae2:crafting_monitor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 10.0d
+		}
+		{
+			id: "3B0B01D086BFC778"
+			tasks: [{
+				id: "44E607C587B8D17B"
+				item: "ae2:64k_crafting_storage"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			id: "2A9028A20D9604AE"
+			tasks: [{
+				id: "36676A8072C9ED65"
+				item: "ae2:256k_crafting_storage"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			id: "52FE96BE512C6635"
+			tasks: [{
+				id: "102A888270B451F3"
+				item: "ae2:dense_energy_cell"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 11.0d
+		}
+		{
+			id: "747FB4FDCF339BBE"
+			tasks: [{
+				id: "5DD5798DC46B2DC9"
+				item: "ae2:vibration_chamber"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 11.0d
+		}
+		{
+			id: "70DE6E8198E4F64C"
+			tasks: [{
+				id: "540902119BD42DFC"
+				item: "ae2:crystal_resonance_generator"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 11.0d
+		}
+		{
+			id: "2DDBB88BBD23883E"
+			tasks: [{
+				id: "64EEF00C105AF476"
+				item: "ae2:color_applicator"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			id: "663229E77D38E8D5"
+			tasks: [{
+				id: "17B269F0BBEE4B2F"
+				item: "expatternprovider:ex_pattern_provider"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			id: "676697DC674364C0"
+			tasks: [{
+				id: "675178AC890B2FD5"
+				item: "expatternprovider:ex_interface"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			id: "23B0CB518B1D9371"
+			tasks: [{
+				id: "3959165E56C36FD3"
+				item: "expatternprovider:oversize_interface"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			id: "322AB863BF3C85DB"
+			tasks: [{
+				id: "347F84DA3E6B1815"
+				item: "expatternprovider:ex_import_bus_part"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			id: "5E90F502D78AC8E7"
+			tasks: [{
+				id: "448D756429A3E39C"
+				item: "expatternprovider:ex_export_bus_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 10.0d
+		}
+		{
+			id: "6886A06D05DB8AE7"
+			tasks: [{
+				id: "0384CCB6651AA7B0"
+				item: "expatternprovider:ex_io_port"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.0d
+		}
+		{
+			id: "3B0905F29D9EFD71"
+			tasks: [{
+				id: "3254283B4AD4055A"
+				item: "expatternprovider:ex_crafting_terminal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			id: "77AE5E4509947ADE"
+			tasks: [{
+				id: "0C55CB0CFDD4361E"
+				item: "expatternprovider:ex_pattern_access_part"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			id: "6F3989712F1E0797"
+			tasks: [{
+				id: "4D4B988FA995FD6F"
+				item: "expatternprovider:wireless_ex_pat"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 11.0d
+		}
+		{
+			id: "7E2BCD1CDD8D469B"
+			tasks: [{
+				id: "7B8C8B463317663A"
+				item: "expatternprovider:pattern_modifier"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			id: "78E7A3ECC6A163E4"
+			tasks: [{
+				id: "6FED7FB166EED6B4"
+				item: "expatternprovider:threshold_level_emitter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			id: "1ABC1D4F321B8DA8"
+			tasks: [{
+				id: "6509531B9F68C8A4"
+				item: "expatternprovider:active_formation_plane"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			id: "10143C21A04AF312"
+			tasks: [{
+				id: "1ACF1ECE797DDC20"
+				item: "expatternprovider:infinity_cell"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 11.0d
+		}
+		{
+			id: "520D785BA6E0CD3D"
+			tasks: [{
+				id: "3B03EA7C0F9DD248"
+				item: "expatternprovider:crystal_fixer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.0d
+		}
+		{
+			id: "4D58D29062FFDD6A"
+			tasks: [{
+				id: "1C57726A92B5AC66"
+				item: "expatternprovider:circuit_cutter"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 10.0d
+		}
+		{
+			id: "1554F84A2D7695F4"
+			tasks: [{
+				id: "230C9732A73961EB"
+				item: "expatternprovider:wireless_connect"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			id: "679785BF4353B868"
+			tasks: [{
+				id: "6DB5BF9F5DEA618A"
+				item: "expatternprovider:wireless_tool"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			id: "38FBA48D4E140570"
+			tasks: [{
+				id: "54EC75EA91895D47"
+				item: "expatternprovider:pattern_provider_upgrade"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.0d
+		}
+		{
+			id: "3F01124F8B68E2F1"
+			tasks: [{
+				id: "0DD55B9E336C13EA"
+				item: "expatternprovider:interface_upgrade"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			id: "3F1ADB3E594E2000"
+			tasks: [{
+				id: "5501607CF71978B6"
+				item: "expatternprovider:io_bus_upgrade"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 12.0d
+		}
+		{
+			id: "63BF159D406E1E33"
+			tasks: [{
+				id: "3773CFF184117872"
+				item: "expatternprovider:drive_upgrade"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			id: "211F9202EB0E401E"
+			tasks: [{
+				id: "7DCC41039A7F0EEE"
+				item: "expatternprovider:pattern_terminal_upgrade"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			id: "3AFE26DBB621AC1E"
+			tasks: [{
+				id: "6319A54A05CAFCCB"
+				item: "advanced_ae:small_adv_pattern_provider"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			id: "7F9160EA0942F9C0"
+			tasks: [{
+				id: "339CE94D381755B3"
+				item: "advanced_ae:adv_pattern_provider"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.5d
+		}
+		{
+			id: "23B8B84D337C8266"
+			tasks: [{
+				id: "42E2CF4D7E523C62"
+				item: "advanced_ae:adv_pattern_encoder"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.5d
+		}
+		{
+			id: "740F2D8383185399"
+			tasks: [{
+				id: "5D8B7C6D19F7EBD2"
+				item: "advanced_ae:adv_pattern_provider_upgrade"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			id: "43CB86F33ACD4E1B"
+			tasks: [{
+				id: "7EFE4799F6F9A967"
+				item: "advanced_ae:adv_pattern_provider_capacity_upgrade"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 13.5d
+		}
+		{
+			id: "7C04338B2C9814A6"
+			tasks: [{
+				id: "29233D81EF8899ED"
+				item: "advanced_ae:advanced_io_bus_part"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 14.5d
+		}
+		{
+			id: "1BC9DB6163BA6C0E"
+			tasks: [{
+				id: "5BF53E877EFE39F0"
+				item: "advanced_ae:throughput_monitor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 14.5d
+		}
+		{
+			id: "0E99C95C9D76AC57"
+			tasks: [{
+				id: "12EFD7BC091192C0"
+				item: "advanced_ae:throughput_monitor_configurator"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 14.5d
+		}
+		{
+			id: "6C0DC22C4639A5EB"
+			tasks: [{
+				id: "373E3265874EB2AB"
+				item: "pneumaticcraft:advanced_air_compressor"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 13.0d
+		}
+		{
+			id: "2A272449399B1EE2"
+			tasks: [{
+				id: "5B8A4ED449657A6B"
+				item: "pneumaticcraft:thermal_compressor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 13.0d
+		}
+		{
+			id: "4DB9767FF7657F17"
+			tasks: [{
+				id: "536311B7D6351129"
+				item: "pneumaticcraft:liquid_compressor"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 13.0d
+		}
+		{
+			id: "77B6E651CC70F63E"
+			tasks: [{
+				id: "3B1627DB1FE29D45"
+				item: "pneumaticcraft:advanced_liquid_compressor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 13.0d
+		}
+		{
+			id: "19BC2C35CC94FEE8"
+			tasks: [{
+				id: "690DDBA0BA0F1A5B"
+				item: "pneumaticcraft:solar_compressor"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 13.0d
+		}
+		{
+			id: "3010972C41050DE4"
+			tasks: [{
+				id: "448840580535EDCA"
+				item: "pneumaticcraft:electrostatic_compressor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 13.0d
+		}
+		{
+			id: "5EEFB18EB45E9B05"
+			tasks: [{
+				id: "643BCAB65BAAA022"
+				item: "pneumaticcraft:flux_compressor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 13.0d
+		}
+		{
+			id: "67647BDA93CC5DFC"
+			tasks: [{
+				id: "6540BAE49AAD608B"
+				item: "pneumaticcraft:advanced_pressure_tube"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 14.0d
+		}
+		{
+			id: "19D299D10A768C38"
+			tasks: [{
+				id: "5D8A33331BABF934"
+				item: "pneumaticcraft:tube_junction"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 14.0d
+		}
+		{
+			id: "3340C3227D996E72"
+			tasks: [{
+				id: "00ABE195622A340E"
+				item: "pneumaticcraft:pressure_gauge_module"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 14.0d
+		}
+		{
+			id: "35BAA90DD880AC63"
+			tasks: [{
+				id: "267CFB9275F938F2"
+				item: "pneumaticcraft:drone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 14.0d
+		}
+		{
+			id: "39400D9D53205C0F"
+			tasks: [{
+				id: "7A67542A63189590"
+				item: "pneumaticcraft:gps_tool"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 14.0d
+		}
+		{
+			id: "041E925E8242CB68"
+			tasks: [{
+				id: "678AD2E39CC2463C"
+				item: "pneumaticcraft:gps_area_tool"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 14.0d
+		}
+		{
+			id: "358CE0EE64721E49"
+			tasks: [{
+				id: "09F559A53AE7E260"
+				item: "pneumaticcraft:remote"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 14.0d
+		}
+		{
+			id: "1F5776E8FFEC1DCB"
+			tasks: [{
+				id: "198C84E9E50AD3CC"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:pneumatic_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 15.0d
+		}
+		{
+			id: "1C9A0D7B409DDDDA"
+			tasks: [{
+				id: "57415B23F2E527BB"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:pneumatic_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 15.0d
+		}
+		{
+			id: "76C31FFD33AD9E8A"
+			tasks: [{
+				id: "23CE9932070BAB10"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:pneumatic_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 15.0d
+		}
+		{
+			id: "5F736447C74BBB73"
+			tasks: [{
+				id: "67B05AA896128226"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:pneumatic_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 15.0d
+		}
+		{
+			id: "7EC5F138502E4E59"
+			tasks: [{
+				id: "6E6A770D9D23739A"
+				item: "pneumaticcraft:speed_upgrade"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 15.0d
+		}
+		{
+			id: "68032FC3DAA9818A"
+			tasks: [{
+				id: "4D2629199B5D600C"
+				item: "pneumaticcraft:volume_upgrade"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 15.0d
+		}
+		{
+			id: "20445084F0909BFF"
+			tasks: [{
+				id: "34CA7ED16FE8FE1E"
+				item: "pneumaticcraft:security_upgrade"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 15.0d
+		}
+		{
+			id: "0DD9EA33BA0F51E7"
+			tasks: [{
+				id: "23E491D271C034D1"
+				item: "industrialforegoing:machine_settings_copier"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 16.5d
+		}
+		{
+			id: "582ACEAE9CDCB665"
+			tasks: [{
+				id: "4879DAD7251E606C"
+				item: "industrialforegoing:speed_addon_1"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 16.5d
+		}
+		{
+			id: "29E2443E9A399DFC"
+			tasks: [{
+				id: "115B25AC5DA091DC"
+				item: "industrialforegoing:efficiency_addon_1"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 16.5d
+		}
+		{
+			id: "5ECDA800D02B23CC"
+			tasks: [{
+				id: "7D3C81EC199E9A66"
+				item: "industrialforegoing:processing_addon_1"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 16.5d
+		}
+		{
+			id: "6F7731F48D8767B6"
+			tasks: [{
+				id: "26A026B5C11A081D"
+				item: "industrialforegoing:range_addon0"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 16.5d
+		}
+		{
+			id: "2E6A8EAB07C72ADD"
+			tasks: [{
+				id: "5CE5D7DA372A7289"
+				item: "industrialforegoing:infinity_drill"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 17.5d
+		}
+		{
+			id: "1D21D5EB6335687D"
+			tasks: [{
+				id: "7E7FB32168ABA879"
+				item: "industrialforegoing:infinity_saw"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 17.5d
+		}
+		{
+			id: "6DFEB4F999E85B7C"
+			tasks: [{
+				id: "4DCDA12F132D3913"
+				item: "industrialforegoing:infinity_hammer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 17.5d
+		}
+		{
+			id: "6DFE57A93A1F7AE4"
+			tasks: [{
+				id: "708E19CB71F26976"
+				item: "industrialforegoing:infinity_trident"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 17.5d
+		}
+		{
+			id: "75CFAB99FB7CB1D8"
+			tasks: [{
+				id: "3A95A7086DABE1F8"
+				item: "industrialforegoing:infinity_backpack"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 17.5d
+		}
+		{
+			id: "20DACC33E4ED454F"
+			tasks: [{
+				id: "3D0BAB113C318F2A"
+				item: "industrialforegoing:infinity_launcher"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 17.5d
+		}
+		{
+			id: "0273350A71B8F25C"
+			tasks: [{
+				id: "34918C0AEA906DA7"
+				item: "industrialforegoing:infinity_nuke"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 17.5d
+		}
+		{
+			id: "6A6FD43EFC906247"
+			tasks: [{
+				id: "6A65221739864189"
+				item: "industrialforegoingsouls:soul_surge"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			id: "52B5686396B17EC4"
+			tasks: [{
+				id: "175D2F6A4C8EA4B0"
+				item: "mekanism:induction_port"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 19.5d
+		}
+		{
+			id: "6EDF48BAFA425C6F"
+			tasks: [{
+				id: "196B76DF09EFFBC5"
+				item: "mekanism:basic_induction_cell"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 19.5d
+		}
+		{
+			id: "70BF1F6C9CE13F03"
+			tasks: [{
+				id: "5554B358E338B6E7"
+				item: "mekanism:basic_induction_provider"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 19.5d
+		}
+		{
+			id: "21DE5A0AD8631C54"
+			tasks: [{
+				id: "52C918FF1A880EA8"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 19.5d
+		}
+		{
+			id: "68CBE490E5607401"
+			tasks: [{
+				id: "2D2F8D103C9ACE5F"
+				item: "mekanism:seismic_vibrator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 19.5d
+		}
+		{
+			id: "47B55884C4673381"
+			tasks: [{
+				id: "60DBE152103833BA"
+				item: "mekanism:seismic_reader"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 19.5d
+		}
+		{
+			id: "11803D267F351ED5"
+			tasks: [{
+				id: "60F8393ABC18E4A4"
+				item: "mekanism:upgrade_anchor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 20.5d
+		}
+		{
+			id: "57BAF865FC30C8BF"
+			tasks: [{
+				id: "7EF47E87D04BBB66"
+				item: "mekanism:upgrade_filter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 20.5d
+		}
+		{
+			id: "18F9E2BA26F376C4"
+			tasks: [{
+				id: "527812C951A41B23"
+				item: "mekanism:upgrade_gas"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 20.5d
+		}
+		{
+			id: "318C475622D0D3AC"
+			tasks: [{
+				id: "2BE9A33013EBDE62"
+				item: "mekanism:upgrade_muffling"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 20.5d
+		}
+		{
+			id: "4E52DFE09F3A3B56"
+			tasks: [{
+				id: "7717E627AE637EEB"
+				item: "thermal_extra:device_harvester"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 21.5d
+		}
+		{
+			id: "7A2CAE36DF874696"
+			tasks: [{
+				id: "4CFC536B74E9D7E4"
+				item: "thermal_extra:device_lava_gen"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 21.5d
+		}
+		{
+			id: "63F1D0B323DD4DF1"
+			tasks: [{
+				id: "75F4AE533150B13E"
+				item: "thermal_extra:dynamo_frost"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 21.5d
+		}
+		{
+			id: "639F90382C6B098F"
+			tasks: [{
+				id: "4CA7F36939F1BE80"
+				item: "thermal_extra:upgrade_augment"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 21.5d
+		}
+		{
+			id: "2C9C0F717DFBA10E"
+			tasks: [{
+				id: "3DBB83E05951BFD7"
+				item: "thermal_extra:abyssal_upgrade_augment"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 21.5d
+		}
+		{
+			id: "259064117812CE2D"
+			tasks: [{
+				id: "4E7BA61455D47011"
+				item: "thermal_extra:av_item_filter_augment"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 21.5d
+		}
+		{
+			id: "4184B2BECE9105C4"
+			tasks: [{
+				id: "5FAE99ADEBF4BF2D"
+				item: "thermal_extra:soul_infused_machine_speed_augment"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 22.5d
+		}
+		{
+			id: "53543FE20D76A2C5"
+			tasks: [{
+				id: "34C7A360F49DF475"
+				item: "thermal_extra:soul_infused_machine_efficiency_augment"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 22.5d
+		}
+		{
+			id: "17CA7E99A5A3A9BA"
+			tasks: [{
+				id: "68C7CDE79290DA3D"
+				item: "thermal_extra:soul_infused_machine_output_augment"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 22.5d
+		}
+		{
+			id: "1C08D67C55291DBE"
+			tasks: [{
+				id: "43755CAE20BCA5B4"
+				item: "thermal_extra:soul_infused_machine_catalyst_augment"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 22.5d
+		}
+		{
+			id: "652D1EFE64C6A5C7"
+			tasks: [{
+				id: "5C1B9D2303D90E3F"
+				item: "thermal_extra:soul_infused_dynamo_output_augment"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 22.5d
+		}
+		{
+			id: "31AC61BA52B5162E"
+			tasks: [{
+				id: "548B48C458CF979B"
+				item: "thermal_extra:soul_infused_dynamo_fuel_augment"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 22.5d
+		}
+		{
+			id: "1575F26DE9A175BD"
+			tasks: [{
+				id: "4130FDCF12CF83FF"
+				item: "thermal_extra:soul_infused_rf_coil_augment"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 22.5d
+		}
+		{
+			id: "47F5B9FEFAD84D4F"
+			tasks: [{
+				id: "234DACA1DB324DD5"
+				item: "thermal_extra:soul_infused_rf_coil_storage_augment"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 22.5d
+		}
+		{
+			id: "511C4C7C9C0FC425"
+			tasks: [{
+				id: "7553E75A0792FF62"
+				item: "thermal_extra:soul_infused_rf_coil_xfer_augment"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 22.5d
+		}
+		{
+			id: "35BA28DA4E499C13"
+			tasks: [{
+				id: "0BE97A419AC3DB75"
+				item: "thermal_extra:soul_infused_area_radius_augment"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 22.5d
+		}
+		{
+			id: "64122213AF0D23BD"
+			tasks: [{
+				id: "17B1ABF6D3DA2738"
+				item: "thermal_extra:twinite_machine_speed_augment"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 23.5d
+		}
+		{
+			id: "4E30062219B93A71"
+			tasks: [{
+				id: "3312D1F2597D2917"
+				item: "thermal_extra:twinite_machine_efficiency_augment"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 23.5d
+		}
+		{
+			id: "4977BF1803C12B09"
+			tasks: [{
+				id: "72B34BCCA5D1C4E5"
+				item: "thermal_extra:twinite_machine_output_augment"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 23.5d
+		}
+		{
+			id: "5A66E75A02150F5C"
+			tasks: [{
+				id: "1C97CB4076A5EAA8"
+				item: "thermal_extra:twinite_machine_catalyst_augment"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 23.5d
+		}
+		{
+			id: "52A6038C716DD2C6"
+			tasks: [{
+				id: "4FDEE47730C75578"
+				item: "thermal_extra:twinite_dynamo_output_augment"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 23.5d
+		}
+		{
+			id: "1B3A3384FE0E6078"
+			tasks: [{
+				id: "277A43605720E0DB"
+				item: "thermal_extra:twinite_dynamo_fuel_augment"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 23.5d
+		}
+		{
+			id: "4E6268F4EBD60E2D"
+			tasks: [{
+				id: "5CB8A0E68614A50E"
+				item: "thermal_extra:twinite_rf_coil_augment"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 23.5d
+		}
+		{
+			id: "02063069C68E0856"
+			tasks: [{
+				id: "6259776C54E72F42"
+				item: "thermal_extra:twinite_rf_coil_storage_augment"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 23.5d
+		}
+		{
+			id: "021C509FE689B457"
+			tasks: [{
+				id: "6BF4063492CF4DE8"
+				item: "thermal_extra:twinite_rf_coil_xfer_augment"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 23.5d
+		}
+		{
+			id: "06DD71042E53DD71"
+			tasks: [{
+				id: "53F9C4D161CB60F8"
+				item: "thermal_extra:twinite_area_radius_augment"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 23.5d
+		}
+		{
+			id: "74A340390C69FABF"
+			tasks: [{
+				id: "2F3E5484F1D1112D"
+				item: "thermal_extra:dragonsteel_machine_speed_augment"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 24.5d
+		}
+		{
+			id: "0D4E4CEECACBF1B1"
+			tasks: [{
+				id: "285758E32EC693CB"
+				item: "thermal_extra:dragonsteel_machine_efficiency_augment"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 24.5d
+		}
+		{
+			id: "1868AD2CBB88468F"
+			tasks: [{
+				id: "600CF0269ADE032A"
+				item: "thermal_extra:dragonsteel_machine_output_augment"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 24.5d
+		}
+		{
+			id: "3CB8719DBF3EE249"
+			tasks: [{
+				id: "6B4215DE100EF266"
+				item: "thermal_extra:dragonsteel_machine_catalyst_augment"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 24.5d
+		}
+		{
+			id: "6F0075E63B83272C"
+			tasks: [{
+				id: "4B027F4BB0E33A23"
+				item: "thermal_extra:dragonsteel_dynamo_output_augment"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 24.5d
+		}
+		{
+			id: "29DB3FD4FA1343E1"
+			tasks: [{
+				id: "2EACEF96BDAA9C46"
+				item: "thermal_extra:dragonsteel_dynamo_fuel_augment"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 24.5d
+		}
+		{
+			id: "36763280E85DFDFE"
+			tasks: [{
+				id: "34A06A06074E7987"
+				item: "thermal_extra:dragonsteel_rf_coil_augment"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 24.5d
+		}
+		{
+			id: "6B617DD21DA707C0"
+			tasks: [{
+				id: "54734AFA567E3F78"
+				item: "thermal_extra:dragonsteel_rf_coil_storage_augment"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 24.5d
+		}
+		{
+			id: "3E5BF7DD22C7166C"
+			tasks: [{
+				id: "4C20AC97D38E7319"
+				item: "thermal_extra:dragonsteel_rf_coil_xfer_augment"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 24.5d
+		}
+		{
+			id: "6B68D9FE0558C72B"
+			tasks: [{
+				id: "2F11E113AE5F704A"
+				item: "thermal_extra:dragonsteel_area_radius_augment"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 24.5d
+		}
+		{
+			id: "4ACB60B1AD365445"
+			tasks: [{
+				id: "0852BAF08141004E"
+				item: "thermal_extra:abyssal_machine_speed_augment"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 25.5d
+		}
+		{
+			id: "5EFD5DB09D21DA73"
+			tasks: [{
+				id: "17EF8155EDB0C927"
+				item: "thermal_extra:abyssal_machine_efficiency_augment"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 25.5d
+		}
+		{
+			id: "6CBAE35712FA4087"
+			tasks: [{
+				id: "5963B79C12212551"
+				item: "thermal_extra:abyssal_machine_output_augment"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 25.5d
+		}
+		{
+			id: "20B4813E0A35E34E"
+			tasks: [{
+				id: "6DEDFA024AB2F824"
+				item: "thermal_extra:abyssal_machine_catalyst_augment"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 25.5d
+		}
+		{
+			id: "27B08865C9E6C25A"
+			tasks: [{
+				id: "237C8C2D77818FE9"
+				item: "thermal_extra:abyssal_dynamo_output_augment"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 25.5d
+		}
+		{
+			id: "17892B47980CC5F9"
+			tasks: [{
+				id: "3FB9A4CB66A2BBBD"
+				item: "thermal_extra:abyssal_dynamo_fuel_augment"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 25.5d
+		}
+		{
+			id: "6C271CC484E9272C"
+			tasks: [{
+				id: "29C13EBC2A021EAA"
+				item: "thermal_extra:abyssal_rf_coil_augment"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 25.5d
+		}
+		{
+			id: "146E78D55BB78964"
+			tasks: [{
+				id: "5FD7294ADD7335E2"
+				item: "thermal_extra:abyssal_rf_coil_storage_augment"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 25.5d
+		}
+		{
+			id: "497FE22DA9F1C39F"
+			tasks: [{
+				id: "73DC7131FEF13F58"
+				item: "thermal_extra:abyssal_rf_coil_xfer_augment"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 25.5d
+		}
+		{
+			id: "5D402BB5EC1B0016"
+			tasks: [{
+				id: "4C12DB2BBDFF59D1"
+				item: "thermal_extra:abyssal_area_radius_augment"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 25.5d
+		}
+		{
+			id: "275A3A15E92E6940"
+			tasks: [{
+				id: "69588AC77C79A2AD"
+				item: "createmetallurgy:faucet"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 20.0d
+		}
+		{
+			id: "30481CDDE0E174EF"
+			tasks: [{
+				id: "4C703E7B49E3EE0D"
+				item: "createmetallurgy:foundry_mixer"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 20.0d
+		}
+		{
+			id: "19B0AA1429310E2C"
+			tasks: [{
+				id: "5D2D979ABBFF7512"
+				item: "createmetallurgy:mechanical_belt_grinder"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 20.0d
+		}
+		{
+			id: "667B057141464FCF"
+			tasks: [{
+				id: "418078B46CC5AAF0"
+				item: "createmetallurgy:ghast_transfer_ladle"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 20.0d
+		}
+		{
+			id: "5FC8D979EA90807C"
+			tasks: [{
+				id: "56DBCD136275FD00"
+				item: "createmetallurgy:ladle_filter"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 20.0d
+		}
+		{
+			id: "7BCD8735342B3FF9"
+			tasks: [{
+				id: "372B151C96D9716E"
+				item: "createmetallurgy:labeling_station"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 20.0d
+		}
+		{
+			id: "2B7FE924DBBFAA47"
+			tasks: [{
+				id: "70C07A0718424C08"
+				item: "createmetallurgy:gauge_attachment"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 20.0d
+		}
 	]
-	title: "&lTECH.&r Parallel Protocols"
+	title: "&l&fTECH.&r&r Parallel Protocols"
 }

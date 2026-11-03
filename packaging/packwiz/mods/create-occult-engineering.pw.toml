@@ -1,13 +1,13 @@
 name = "Create: Occult Engineering"
-filename = "occultengineering-1.20.1-0.11.3.jar"
+filename = "occultengineering-1.20.1-0.11.4.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "2df62d0a5431f31665301e74a1d78c897d9062c1"
+hash = "84b69f46eca1d698bc17a2ea5e55e873c3e13534"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7246645
+file-id = 8569733
 project-id = 1206040

@@ -124,6 +124,9 @@ __pycache__/
 # JEI client preferences are each player's choice.
 /config/jei/jei-client.ini
 
+# Cucumber's tag cache: regenerated each launch and torn by parallel recipe parsing.
+/config/cucumber-tags.json
+
 # Local MCP server configuration.
 /.mcp.json
 

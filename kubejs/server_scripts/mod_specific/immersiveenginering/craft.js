@@ -17,6 +17,8 @@ ServerEvents.recipes(event => {
 
 // LIVING TIMBER
 ServerEvents.recipes(event => {
+  event.remove({ id: 'tconstruct:compat/treated_wood' });
+  event.remove({ id: 'create:filling/compat/immersiveengineering/treated_wood_in_spout' });
   event.remove({ output: 'immersiveengineering:treated_wood_horizontal' });
   event.shaped('4x immersiveengineering:treated_wood_horizontal', [
     'LLL',
@@ -26,6 +28,11 @@ ServerEvents.recipes(event => {
     L: 'kubejs:living_timber',
     B: 'immersiveengineering:creosote_bucket'
   }).id('kubejs:immersiveengineering/crafting/treated_wood_horizontal');
+
+  event.recipes.create.filling('immersiveengineering:treated_wood_horizontal', [
+    'kubejs:living_timber',
+    Fluid.of('immersiveengineering:creosote', 125)
+  ]).id('kubejs:create/filling/treated_wood_horizontal');
 });
 
 // ELECTRODE
@@ -76,6 +83,14 @@ ServerEvents.recipes(event => {
   }).id('kubejs:immersiveengineering/crafting/precision_matrix_core')
 });
 
+// TWINITE WIRE
+ServerEvents.recipes(event => {
+  event.shapeless('kubejs:twinite_wire', [
+    '#forge:plates/twinite',
+    'immersiveengineering:wirecutter'
+  ]).id('kubejs:immersiveengineering/crafting/twinite_wire');
+});
+
 //==================CHANGED RECIPES==================
 
 // KILN BRICK
@@ -122,7 +137,7 @@ ServerEvents.recipes(event => {
 
 // WATERMILL
 ServerEvents.recipes(event => {
-  event.remove({ output: 'immersiveengineering:waterlmill' });
+  event.remove({ id: 'immersiveengineering:crafting/watermill' });
   event.shaped('immersiveengineering:watermill', [
   ' S ',
   'SCS',

@@ -29,8 +29,63 @@ ServerEvents.recipes(event => {
   }).id('kubejs:createmetallurgy/casting/obdurium_ingot');
 });
 
+// VESSEL FRAME INGOT
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'createmetallurgy:casting_in_table',
+    ingredients: [
+      { item: 'createmetallurgy:graphite_ingot_mold' },
+      { amount: 90, fluid: 'kubejs:molten_vessel_frame', nbt: {} }
+    ],
+    processingTime: 60,
+    result: {
+      item: 'kubejs:ingot_vesselframe'
+    }
+  }).id('kubejs:createmetallurgy/casting/ingot_vesselframe');
+});
+
 
 //====================CHANGED RECIPES==================
+
+// OBDURIUM INGOT (cast over an abyssal ingot, which is consumed)
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'createmetallurgy:casting_in_table',
+    ingredients: [
+      { tag: 'forge:ingots/abyssal' },
+      { amount: 90, fluid: 'kubejs:molten_obdurate_slag', nbt: {} }
+    ],
+    mold_consumed: true,
+    processingTime: 120,
+    result: {
+      item: 'createmetallurgy:obdurium_ingot'
+    }
+  }).id('kubejs:createmetallurgy/casting/obdurium_ingot_from_abyssal');
+});
+
+// SOUL INFUSED INGOT
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'createmetallurgy:casting_in_table',
+    conditions: [
+      {
+        type: 'forge:not',
+        value: {
+          type: 'forge:tag_empty',
+          tag: 'forge:ingots/soul_infused'
+        }
+      }
+    ],
+    ingredients: [
+      { item: 'createmetallurgy:graphite_ingot_mold' },
+      { amount: 90, fluid: 'thermal_extra:soul_infused', nbt: {} }
+    ],
+    processingTime: 60,
+    result: {
+      item: 'thermal_extra:soul_infused_ingot'
+    }
+  }).id('kubejs:createmetallurgy/casting/soul_infused_ingot');
+});
 
 // TWINITE INGOT
 ServerEvents.recipes(event => {

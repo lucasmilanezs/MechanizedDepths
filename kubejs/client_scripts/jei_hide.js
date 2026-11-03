@@ -164,5 +164,11 @@ JEIEvents.hideItems(event => {
         "alltheores:nether_zinc_ore",
         "alltheores:end_zinc_ore",
 
+        // ----- OBSIDIAN DUST (dominante = Thermal Extra) -----
+        "mekanism:dust_obsidian",
+        "enderio:powdered_obsidian",
+        "create:powdered_obsidian",
+        "occultism:obsidian_dust",
+
     ])
 });

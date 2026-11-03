@@ -10,149 +10,100 @@
 //RECIPE NAME
 
 //====================CHANGED RECIPES==================
-/*
-//TWINITE INGOT
+// THERMAL EXTRA ALLOYS
+// Foundry alloying is the only way to form them; each one sits on its own heat source.
 ServerEvents.recipes(event => {
-  event.remove({ id: 'thermal_extra:machine/smelter/twinite_ingot' });
-  event.remove({ id: 'thermal_extra:twinite_dust' });
-  event.custom({
-    type: 'createmetallurgy:alloying',
-    heatRequirement: 'blazing_composite',
-    ingredients: [
-      { item: 'kubejs:empowered_blazing_steel'},
-      { item: 'kubejs:empowered_blazing_steel'},
-      { tag: 'forge:ingots/tin' },
-      { item: 'industrialforegoing:pink_slime_ingot' },
-    ],
-    processingTime: 100,
-    results: [
-      { fluid: 'thermal_extra:twinite', amount: 90 }
-    ]
-  }).id('kubejs:createmetallurgy/alloying/twinite_ingot');
-});
+  [
+    'thermal_extra:machine/smelter/soul_infused_ingot',
+    'thermal_extra:machine/smelter/twinite_ingot',
+    'thermal_extra:machine/smelter/shellite_ingot',
+    'thermal_extra:machine/smelter/dragonsteel_ingot',
+    'thermal_extra:machine/smelter/abyssal_ingot',
+    'thermal_extra:soul_infused_dust',
+    'thermal_extra:twinite_dust',
+    'thermal_extra:shellite_dust',
+    'thermal_extra:dragonsteel_dust',
+    'thermal_extra:abyssal_dust',
+    'createmetallurgy:alloying/obdurium'
+  ].forEach(id => event.remove({ id: id }));
 
-//SHELLITE INGOT ( solid )
-ServerEvents.recipes(event => {
-  event.remove({ id: 'thermal_extra:machine/smelter/shellite_ingot' });
-  event.remove({ id: 'thermal_extra:shellite_dust' });
-  event.custom({
-    type: 'createmetallurgy:alloying',
-    heatRequirement: 'entropic_mycelite',
-    ingredients: [
-      { tag: 'forge:ingots/twinite' },
-      { item: 'minecraft:shulker_shell' },
-      { item: 'minecraft:shulker_shell' },
-      { tag: 'forge:ingots/nickel' },
-    ],
-    processingTime: 100,
-    results: [
-      { fluid: 'thermal_extra:shellite', amount: 90 }
-    ]
-  }).id('kubejs:createmetallurgy/alloying/shellite_ingot');
-});
+  const ALLOYS = {
+    soul_infused: {
+      heat: 'superheated',
+      ingredients: [
+        { tag: 'forge:ingots/iron' },
+        { tag: 'forge:ingots/copper' },
+        { tag: 'forge:dusts/soul_sand' },
+        { tag: 'forge:dusts/soul_sand' }
+      ]
+    },
+    twinite: {
+      heat: 'blazing_composite',
+      ingredients: [
+        { tag: 'forge:ingots/tin' },
+        { tag: 'forge:ingots/tin' },
+        { tag: 'forge:dusts/obsidian' },
+        { item: 'minecraft:blaze_powder' },
+        { fluid: 'kubejs:melted_blaze_metal', amount: 250 }
+      ]
+    },
+    shellite: {
+      heat: 'entropic_mycelite',
+      ingredients: [
+        { tag: 'forge:ingots/lead' },
+        { tag: 'forge:ingots/nickel' },
+        { item: 'minecraft:shulker_shell' },
+        { item: 'minecraft:shulker_shell' },
+        { fluid: 'kubejs:spectral_oil', amount: 250 }
+      ]
+    },
+    dragonsteel: {
+      heat: 'aetherforged_cinderblock',
+      ingredients: [
+        { tag: 'forge:ingots/enderium' },
+        { item: 'thermal_extra:ancient_dust' },
+        { fluid: 'kubejs:aetheric_vapor', amount: 250 }
+      ]
+    },
+    abyssal: {
+      heat: 'echo_fused_obsidianite',
+      ingredients: [
+        { tag: 'forge:dusts/netherite' },
+        { item: 'minecraft:echo_shard' },
+        { item: 'thermal_extra:ancient_dust' },
+        { item: 'thermal_extra:ancient_dust' },
+        { fluid: 'kubejs:void_heavy_oil', amount: 250 }
+      ]
+    }
+  };
 
-//SHELLITE INGOT ( liquid )
-ServerEvents.recipes(event => {
-  event.remove({ id: 'thermal_extra:machine/smelter/shellite_ingot' });
-  event.remove({ id: 'thermal_extra:shellite_dust' });
-  event.custom({
-    type: 'createmetallurgy:alloying',
-    heatRequirement: 'entropic_mycelite',
-    ingredients: [
-      { fluid: 'thermal_extra:twinite', amount: 90 },
-      { item: 'minecraft:shulker_shell' },
-      { item: 'minecraft:shulker_shell' },
-      { tag: 'forge:ingots/nickel' },
-    ],
-    processingTime: 100,
-    results: [
-      { fluid: 'thermal_extra:shellite', amount: 90 }
-    ]
-  }).id('kubejs:createmetallurgy/alloying/shellite_liquid');
-});
+  Object.keys(ALLOYS).forEach(name => {
+    event.custom({
+      type: 'createmetallurgy:alloying',
+      heatRequirement: ALLOYS[name].heat,
+      ingredients: ALLOYS[name].ingredients,
+      processingTime: 100,
+      results: [
+        { fluid: 'thermal_extra:' + name, amount: 180 },
+        { fluid: 'createmetallurgy:molten_slag', amount: 50 }
+      ]
+    }).id('kubejs:createmetallurgy/alloying/' + name);
+  });
 
-// DRAGONSTEEL INGOT (solid)
-ServerEvents.recipes(event => {
-  event.remove({ id: 'thermal_extra:machine/smelter/dragonsteel_ingot' });
-  event.remove({ id: 'thermal_extra:dragonsteel_dust' });
+  // Obdurium feeds on the slag every earlier alloy leaves behind; it is cast over an abyssal ingot.
   event.custom({
     type: 'createmetallurgy:alloying',
-    heatRequirement: 'aetherforged_cinderblock',
+    heatRequirement: 'superheated',
     ingredients: [
-      { tag: 'forge:ingots/shellite' },
-      { item: 'minecraft:netherite_scrap'},
-      { item: 'minecraft:netherite_scrap'},
-      { item: 'thermal_extra:ancient_dust' }
+      { fluid: 'createmetallurgy:molten_slag', amount: 500 },
+      { tag: 'forge:ingots/compressed_iron' },
+      { tag: 'forge:ingots/compressed_iron' },
+      { tag: 'forge:ingots/refined_obsidian' }
     ],
-    processingTime: 100,
-    results: [
-      { fluid: 'thermal_extra:dragonsteel', amount: 90 }
-    ]
-  }).id('kubejs:createmetallurgy/alloying/dragonsteel_ingot');
+    processingTime: 200,
+    results: [{ fluid: 'kubejs:molten_obdurate_slag', amount: 180 }]
+  }).id('kubejs:createmetallurgy/alloying/molten_obdurate_slag');
 });
-
-// DRAGONSTEEL INGOT (liquid)
-ServerEvents.recipes(event => {
-  event.remove({ id: 'thermal_extra:machine/smelter/dragonsteel_ingot' });
-  event.remove({ id: 'thermal_extra:dragonsteel_dust' });
-  event.custom({
-    type: 'createmetallurgy:alloying',
-    heatRequirement: 'aetherforged_cinderblock',
-    ingredients: [
-      { fluid: 'thermal_extra:shellite', amount: 90 },
-      { item: 'minecraft:netherite_scrap'},
-      { item: 'minecraft:netherite_scrap'},
-      { item: 'thermal_extra:ancient_dust'}
-    ],
-    processingTime: 100,
-    results: [
-      { fluid: 'thermal_extra:dragonsteel', amount: 90 }
-    ]
-  }).id('kubejs:createmetallurgy/alloying/dragonsteel_ingot_liquid');
-});
-
-// ABYSSAL INGOT (solid)
-ServerEvents.recipes(event => {
-  event.remove({ id: 'thermal_extra:machine/smelter/abyssalite_ingot' });
-  event.remove({ id: 'thermal_extra:abyssalite_dust' });
-  event.custom({
-    type: 'createmetallurgy:alloying',
-    heatRequirement: 'aetherforged_cinderblock',
-    ingredients: [
-      { fluid: 'createmetallurgy:molten_void_steel', amount: 90 },
-      { tag: 'forge:ingots/dragonsteel' },
-      { item: 'minecraft:echo_shard'},
-      { item: 'minecraft:echo_shard'},
-      { item: 'kubejs:resonant_dust' }
-    ],
-    processingTime: 100,
-    results: [
-      { fluid: 'thermal_extra:abyssal', amount: 90 }
-    ]
-  }).id('kubejs:createmetallurgy/alloying/abyssalite_ingot');
-});
-
-// ABYSSAL INGOT (liquid)
-ServerEvents.recipes(event => {
-  event.remove({ id: 'thermal_extra:machine/smelter/abyssal_ingot' });
-  event.remove({ id: 'thermal_extra:abyssal_dust' });
-  event.custom({
-    type: 'createmetallurgy:alloying',
-    heatRequirement: 'aetherforged_cinderblock',
-    ingredients: [
-      { fluid: 'createmetallurgy:molten_void_steel', amount: 90 },
-      { fluid: 'thermal_extra:dragonsteel', amount: 90 },
-      { item: 'minecraft:echo_shard'},
-      { item: 'minecraft:echo_shard'},
-      { item: 'kubejs:resonant_dust' }
-    ],
-    processingTime: 100,
-    results: [
-      { fluid: 'thermal_extra:abyssal', amount: 90 }
-    ]
-  }).id('kubejs:createmetallurgy/alloying/abyssalite_ingot_liquid');
-});
-*/
 //====================COMPATIBILITY RECIPES==================
 
 //RECIPE NAME

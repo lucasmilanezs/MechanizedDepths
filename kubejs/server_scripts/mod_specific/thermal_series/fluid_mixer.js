@@ -80,6 +80,21 @@ ServerEvents.recipes(event => {
   }).id('kubejs:thermal_extra/aetheric_vapor_synthesis');
 });
 
+//VOID HEAVY OIL + LUBRICANT -> VOID LUBRICANT
+ServerEvents.recipes(event => {
+  event.custom({
+    type: 'thermal_extra:fluid_mixer',
+    energy: 50000,
+    ingredients: [
+      { fluid: 'kubejs:void_heavy_oil', amount: 500 },
+      { fluid_tag: 'forge:lubricant', amount: 500 },
+    ],
+    result: [
+      { fluid: 'kubejs:void_lubricant', amount: 1000 }
+    ]
+  }).id('kubejs:thermal_extra/void_lubricant');
+});
+
 
 //====================CHANGED RECIPES==================
 

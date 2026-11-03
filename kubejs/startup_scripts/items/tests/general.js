@@ -36,7 +36,7 @@ StartupEvents.registry('item', event => {
 StartupEvents.registry('block', event => {
   event.create('melted_blaze_metal_block')
     .displayName('Melted Blaze Metal')
-    .lightLevel(14)
+    .lightLevel(14 / 15)
 });
 
 // INCOMPLETE SILICON WAFER (kubejs:incomplete_silicon_wafer)

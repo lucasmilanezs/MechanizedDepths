@@ -688,6 +688,26 @@
 			x: 1.5d
 			y: 1.5d
 		}
+		{
+			id: "2A0FD36D235FDBDD"
+			tasks: [{
+				id: "3A6EF0608C25D403"
+				item: "actuallyadditions:travelers_sack"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			id: "15B96439627A6F3C"
+			tasks: [{
+				id: "3D8709A08A53BC4A"
+				item: "actuallyadditions:void_sack"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
 	]
-	title: "&lTECH.&r Tricks of the Trade"
+	title: "&l&fTECH.&r&r Tricks of the Trade"
 }

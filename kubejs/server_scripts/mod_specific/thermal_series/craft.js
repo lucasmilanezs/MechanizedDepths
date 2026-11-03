@@ -144,19 +144,22 @@ ServerEvents.recipes(event => {
 });
 
 
+
 //NITRATIC IGNITER
 ServerEvents.recipes(event => {
   event.remove({ output: 'thermal_extra:nitratic_igniter' });
   event.shaped('thermal_extra:nitratic_igniter', [
-    ' G ',
-    'PFP',
-    'ERE'
+    'PGP',
+    'RFR',
+    'EAE'
   ], {
     G: 'immersiveengineering:graphite_electrode',
-    R: 'kubejs:calibrated_internals',
+    R: 'kubejs:advanced_electric_engine',
     P: 'thermal_extra:polyolefin_plate',
     E: 'thermal:enderium_gear',
-    F: 'thermal:machine_frame'
+    F: 'thermal:machine_frame',
+    A: 'kubejs:ender_internals'
+  
     }).id('kubejs:thermal/crafting/nitratic_igniter');
 });
 
@@ -170,7 +173,7 @@ ServerEvents.recipes(event => {
   ], {
     S: '#forge:ingots/soul_infused',
     E: 'thermal:enderium_gear',
-    R: 'kubejs:calibrated_internals',
+    R: 'kubejs:ender_internals',
     H: 'thermal_extra:soul_infused_glass',
     F: 'thermal:machine_frame'
     }).id('kubejs:thermal/crafting/endothermic_dehydrator');
@@ -186,11 +189,44 @@ ServerEvents.recipes(event => {
   ], {
     P: 'immersiveengineering:fluid_pump',
     E: 'thermal:enderium_gear',
-    R: 'kubejs:calibrated_internals',
-    A: 'thermal_extra:polyolefin_plate',
+    R: 'kubejs:ender_internals',
+    A: 'kubejs:twinite_wire',
     B: 'thermal_extra:twinite_glass',
     F: 'thermal:machine_frame'
     }).id('kubejs:thermal/crafting/fluid_mixer');
+});
+
+//BASIC ELECTRIC ENGINE
+ServerEvents.recipes(event => {
+  event.shaped(
+    Item.of('kubejs:basic_electric_engine'),
+    [
+        'AAA',
+        'ABC',
+        'AAA'
+    ],
+    {
+        A: 'kubejs:laminated_alloy_plate',
+        B: 'kubejs:soul_infused_coil',
+        C: 'kubejs:intricate_redstone_component'
+    }).id('kubejs:thermal/crafting/basic_electric_engine');
+});
+
+//ADVANCED REFINERY
+ServerEvents.recipes(event => {
+  event.remove({ output: 'thermal_extra:advanced_refinery' });
+  event.shaped('thermal_extra:advanced_refinery', [
+    'PIP',
+    'HFH',
+    'ERE'
+  ], {
+    P: 'thermal_extra:paraffin_wax',
+    I: 'kubejs:ingot_vesselframe',
+    H: '#thermal:glass/hardened',
+    E: 'thermal:enderium_gear',
+    R: 'kubejs:calibrated_internals',
+    F: 'thermal:machine_frame'
+    }).id('kubejs:thermal/crafting/advanced_refinery');
 });
 
 //SEQUENTIAL FABRICATOR
@@ -593,6 +629,24 @@ ServerEvents.recipes(event => {
     C: 'minecraft:glass_bottle',
     P: 'thermal:redstone_servo'
   }).id('kubejs:thermal/crafting/device_potion_diffuser');
+});
+
+//  SOUL INFUSED COIL
+ServerEvents.recipes(event => {
+  event.remove({ id: 'thermal_extra:soul_infused_coil' });
+  event.shaped(
+    Item.of('kubejs:soul_infused_coil'),
+    [
+        ' AA',
+        'BBC',
+        ' AA'
+    ],
+    {
+        B: '#forge:rods/iron',
+        A: 'thermal_extra:soul_infused_ingot',
+        C: 'thermal:rf_coil'
+    }
+).id('kubejs:thermal/crafting/soul_infused_coil');
 });
 //====================COMPATIBILITY RECIPES==================
 

@@ -21,6 +21,10 @@ const recipeBlacklist = [
     "thermal:machines/press/press_iron_ingot_to_gear",
     "thermal:parts/iron_gear",
     "thermal:machines/press/press_iron_ingot_to_gear",
+    // Enderium comes only from the vessel frame alloy (alloy_register.js) and the Tinkers smeltery.
+    "thermal:enderium_dust_2",
+    "alltheores:enderium_dust_from_alloy_blending",
+    "thermal:fire_charge/enderium_ingot_2",
     ""
 
 ];

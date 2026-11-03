@@ -79,6 +79,35 @@ ServerEvents.recipes((event) => {
   }).id('kubejs:thermal/thermal_extra_component_assembly/thermal_sensor');
 });
 
+// CHEMISTRY DATA
+ServerEvents.recipes((event) => {
+  event.custom({
+    type: 'thermal_extra:component_assembly',
+    ingredients: [
+      { item: 'mekanism:ultimate_control_circuit' },
+      { fluid: 'mekanism:ethene', amount: 50 },
+      { tag: 'forge:gears/osmium', count: 2 }
+    ],
+    result: { item: 'kubejs:chemistry_data' },
+    energy: 4000
+  }).id('kubejs:thermal/thermal_extra_component_assembly/chemistry_data');
+});
+
+// ADVANCED ELECTRIC ENGINE
+ServerEvents.recipes((event) => {
+  event.custom({
+    type: 'thermal_extra:component_assembly',
+    ingredients: [
+      { item: 'kubejs:basic_electric_engine' },
+      { item: 'kubejs:twinite_wire', count: 4 },
+      { item: 'kubejs:refined_plastic', count: 2 },
+      { fluid: 'kubejs:void_lubricant', amount: 250 }
+    ],
+    result: { item: 'kubejs:advanced_electric_engine' },
+    energy: 6000
+  }).id('kubejs:thermal/thermal_extra_component_assembly/advanced_electric_engine');
+});
+
 
 //====================CHANGED RECIPES==================
 

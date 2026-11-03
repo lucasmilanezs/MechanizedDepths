@@ -557,7 +557,7 @@
 			id: "3D7407849CB4D124"
 			shape: "square"
 			tasks: [{
-				count: 20L
+				count: 16L
 				id: "5BAE58C6089EBA94"
 				item: "kubejs:crafting_tech_card"
 				type: "item"
@@ -855,7 +855,7 @@
 			shape: "square"
 			tasks: [{
 				consume_items: true
-				count: 32L
+				count: 16L
 				id: "5CC95A7DF1320DC5"
 				item: "kubejs:chemistry_tech_card"
 				type: "item"
@@ -985,21 +985,13 @@
 				type: "command"
 			}]
 			shape: "square"
-			tasks: [
-				{
-					consume_items: true
-					count: 12L
-					id: "714CE1BBDC9BD69B"
-					item: "kubejs:chemistry_tech_card"
-					type: "item"
-				}
-				{
-					amount: 1000L
-					chemical: "mekanism:chlorine"
-					id: "19D39F065A3C466A"
-					type: "mechanized_additions:chemical"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 12L
+				id: "714CE1BBDC9BD69B"
+				item: "kubejs:chemistry_tech_card"
+				type: "item"
+			}]
 			x: 8.0d
 			y: -5.0d
 		}

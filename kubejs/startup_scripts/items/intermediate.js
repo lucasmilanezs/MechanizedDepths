@@ -82,6 +82,20 @@ StartupEvents.registry('item', event => {
     .texture('custom:item/calibrated_internals');
 });
 
+// ENDER INTERNALS BASE (kubejs:ender_internals_base)
+StartupEvents.registry('item', event => {
+  event.create('ender_internals_base')
+    .displayName('Ender Internals Base')
+    .texture('custom:item/ender_internals_base');
+});
+
+// ENDER INTERNALS (kubejs:ender_internals)
+StartupEvents.registry('item', event => {
+  event.create('ender_internals')
+    .displayName('Ender Internals')
+    .texture('custom:item/ender_internals');
+});
+
 // RUDIMENTARY REDSTONE COMPONENT (kubejs:rudimentary_redstone_component)
 StartupEvents.registry('item', event => {
   event.create('rudimentary_redstone_component')

@@ -121,11 +121,11 @@
 			y: 5.5d
 		}
 		{
-			description: [""]
+			description: ["Not that much. Just a little."]
 			id: "7DF91C87E56AD25D"
 			shape: "netheritetier"
 			size: 2.0d
-			subtitle: "&4&lWARNING:&r&r This TECH chapter is currently deeply incomplete or missleading. "
+			subtitle: "&4&lWARNING:&r&r This TECH chapter is currently a little incomplete or missleading!"
 			tasks: [{
 				id: "0B4E876C0148BFB3"
 				item: "rftoolsbase:manual"
@@ -1386,6 +1386,46 @@
 			x: -5.0d
 			y: 7.0d
 		}
+		{
+			id: "459FBCC8A626283F"
+			tasks: [{
+				id: "6B3B565C58879271"
+				item: "mekanism:gauge_dropper"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 10.0d
+		}
+		{
+			id: "727ACD592139A926"
+			tasks: [{
+				id: "01FBC249DD04F702"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 10.0d
+		}
+		{
+			id: "6C9D0D437F5D24A2"
+			tasks: [{
+				id: "5A226F86632E4F12"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 10.0d
+		}
+		{
+			id: "41653A2DA48655AC"
+			tasks: [{
+				id: "64C23947A8987150"
+				item: "mekanism:elite_tier_installer"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 10.0d
+		}
 	]
-	title: "&lTECH.&r Drafting Extensions"
+	title: "&l&fTECH.&r&r Drafting Extensions"
 }

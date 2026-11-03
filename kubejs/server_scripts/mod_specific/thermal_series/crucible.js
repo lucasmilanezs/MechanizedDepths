@@ -10,7 +10,7 @@
 ServerEvents.recipes((event) => {
   event.custom({
     type: 'thermal:crucible',
-    ingredient: { item: 'mekanism:dust_obsidian' },
+    ingredient: { tag: 'forge:dusts/obsidian' },
     result: [
       { fluid: 'kubejs:obsidian_solution', amount: 500 }
     ],

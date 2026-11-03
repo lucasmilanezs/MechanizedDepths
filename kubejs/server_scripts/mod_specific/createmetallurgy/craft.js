@@ -7,12 +7,6 @@
 
 //====================CUSTOM RECIPES==================
 
-// REMOVE ARC TUNGSTEN 
-ServerEvents.recipes(event => {
-  event.remove({ id: 'immersiveengineering:arcfurnace/dust_tungsten' });
-  event.remove({ id: 'immersiveengineering:arcfurnace/raw_ore_tungsten' });
-})
-
 //FOUNDRY BASIN
 ServerEvents.recipes(event => {~
   event.remove({ id: 'createmetallurgy:crafting/content/foundry_basin' });

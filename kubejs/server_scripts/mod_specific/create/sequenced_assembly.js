@@ -131,6 +131,50 @@ ServerEvents.recipes(event => {
   .id('kubejs:processing/manadoped_wafer');
 });
 
+// ENDER INTERNALS
+ServerEvents.recipes(event => {
+  const transitional = 'kubejs:ender_internals_base'
+
+  event.recipes.create.sequenced_assembly(
+    [Item.of('kubejs:ender_internals')],
+    transitional,
+    [
+      event.recipes.create.filling(Item.of(transitional), [
+        Item.of(transitional),
+        Fluid.of('thermal:ender', 250)
+      ]),
+      event.custom({
+        type: 'create_new_age:energising',
+        energy_needed: 50000,
+        ingredients: [{ item: transitional }],
+        results: [{ item: transitional }]
+      })
+    ]
+  )
+  .transitionalItem(transitional)
+  .loops(1).id('kubejs:create/sequenced_assembly/ender_internals');
+});
+
+// ECHO-FUSED OBSIDIANITE
+ServerEvents.recipes(event => {
+  const transitional = 'minecraft:crying_obsidian'
+
+  event.recipes.create.sequenced_assembly(
+    [Item.of('kubejs:echo_fused_obsidianite')],
+    transitional,
+    [
+      event.recipes.create.deploying(transitional, [transitional, 'kubejs:obsidianite']),
+      event.recipes.create.deploying(transitional, [transitional, 'minecraft:echo_shard']),
+      event.recipes.create.filling(Item.of(transitional), [
+        Item.of(transitional),
+        Fluid.of('kubejs:void_heavy_oil', 500)
+      ])
+    ]
+  )
+  .transitionalItem(transitional)
+  .loops(2).id('kubejs:create/sequenced_assembly/echo_fused_obsidianite');
+});
+
 //====================CHANGED RECIPES==================
 
 //INDUSTRIAL CRUCIBLE

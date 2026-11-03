@@ -22,6 +22,19 @@ ServerEvents.recipes(event => {
 
 //====================CUSTOM RECIPES===================
 
+// ANDESITE ALLOY
+ServerEvents.recipes(event => {
+    event.custom({
+        type: "immersiveengineering:blueprint",
+        category: "components",
+        inputs: [
+            { item: "kubejs:runic_stone" },
+            { item: "minecraft:andesite" }
+        ],
+        result: { item: "create:andesite_alloy", count: 4 }
+    }).id("kubejs:immersiveengineering/workbench/andesite_alloy");
+});
+
 // RUDIMENTARY REDSTONE COMPONENT
 ServerEvents.recipes(event => {
     event.custom({
