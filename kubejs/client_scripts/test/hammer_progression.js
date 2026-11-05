@@ -4,7 +4,7 @@ var $JEIEventJS_HP = Java.loadClass('pie.ilikepiefoo.compat.jei.events.JEIEventJ
 var $VanillaTypes_HP = Java.loadClass('mezz.jei.api.constants.VanillaTypes')
 
 var HP_CAT_ID = 'mechanized:hammer_progression'
-var HP_W = 236
+var HP_W = 276
 var HP_H = 96
 var HP_X0 = 10
 var HP_PITCH = 40
@@ -12,12 +12,13 @@ var HP_LABEL_Y = 6
 var HP_BASE_Y = 26
 var HP_SLOT_Y = 48
 var HP_HAMMER_SLOT_Y = 72
-var HP_STEEL_INDEX = 4
-var HP_RED_ARROW = 3
+var HP_STEEL_INDEX = 5
+var HP_RED_ARROW = 4
 
 var HP_HEADS = [
   ['tconstruct:hammer_head', '{Material:"tconstruct:wood"}'],
   ['tconstruct:hammer_head', '{Material:"tconstruct:flint"}'],
+  ['tconstruct:hammer_head', '{Material:"tconstruct:copper"}'],
   ['tconstruct:hammer_head', '{Material:"tconstruct:iron"}'],
   ['tconstruct:hammer_head', '{Material:"mechanized:infused_iron"}'],
   ['tconstruct:hammer_head', '{Material:"tconstruct:steel"}'],
@@ -30,6 +31,7 @@ var HP_HEADS = [
 var HP_HAMMER_VARIANTS = [
   'basic_hammer/oak',
   'basic_hammer/flint',
+  'basic_hammer/copper',
   'basic_hammer/iron',
   'basic_hammer/infused_iron',
   'basic_hammer/steel',

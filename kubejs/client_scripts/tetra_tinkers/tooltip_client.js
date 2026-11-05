@@ -59,12 +59,25 @@ var _TOOL_LEVEL_DATA = {
     "minecraft:diamond":        { name: "Diamond",    color: "#55FFFF" },
     "minecraft:netherite":      { name: "Netherite",  color: "#555555" },
     "tetra:maxed_forge_hammer": { name: "Maxed",      color: "#FF55FF" },
-    0: { name: "Wood",      color: "#FFAA00" },
-    1: { name: "Wood",      color: "#FFAA00" },
-    2: { name: "Stone",     color: "#AAAAAA" },
-    3: { name: "Iron",      color: "#AAAAAA" },
-    4: { name: "Diamond",   color: "#55FFFF" },
-    5: { name: "Netherite", color: "#555555" }
+    0: { name: "None",      color: "#888888" }
+}
+
+// Tetra numbers tool levels by tier, starting at 1 (wood = 1, gold = 2 ...
+// maxed forge hammer = 7). tooltip_mapping.js computes levels on that scale,
+// so the numeric keys reuse the named entries and names and colours match.
+var MD_TT_CLIENT_TIER_ORDER = [
+    "minecraft:wood", "minecraft:gold", "minecraft:stone", "minecraft:iron",
+    "minecraft:diamond", "minecraft:netherite", "tetra:maxed_forge_hammer"
+]
+for (var MD_TT_CLIENT_ti = 0; MD_TT_CLIENT_ti < MD_TT_CLIENT_TIER_ORDER.length; MD_TT_CLIENT_ti++) {
+    _TOOL_LEVEL_DATA[MD_TT_CLIENT_ti + 1] = _TOOL_LEVEL_DATA[MD_TT_CLIENT_TIER_ORDER[MD_TT_CLIENT_ti]]
+}
+
+// Tetra's double/tier_bonus synergy: two heads of the same variant add one
+// level to this tool. The Ctrl view shows a single head, so it says so.
+var MD_TT_CLIENT_TWIN_HEAD_BONUS = {
+    "basic_pickaxe": "pickaxe_dig",
+    "basic_hammer":  "hammer_dig"
 }
 
 var _TOOL_DATA = {
@@ -132,13 +145,21 @@ function _toolLevelColor(k) {
     var entry = _TOOL_LEVEL_DATA[k]
     return entry ? entry.color : "#AAAAAA"
 }
+// Same formatting as MD_TT_titleCase in schematic_gen.js, which writes the
+// Tetra lang file: "refined_obsidian" -> "Refined Obsidian".
+function MD_TT_CLIENT_titleCase(value) {
+    var words = (value + "").split("_")
+    for (var i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1)
+    }
+    return words.join(" ")
+}
 function _mvLabel(mv) {
     var parts = (mv + "").split("/")
     var suffix  = parts[0]
     var matName = parts.length > 1 ? parts[1] : ""
-    var modName = _MV_NAMES[suffix] || suffix
-    var mat     = matName.charAt(0).toUpperCase() + matName.slice(1)
-    return mat + " " + modName
+    var modName = _MV_NAMES[suffix] || MD_TT_CLIENT_titleCase(suffix)
+    return MD_TT_CLIENT_titleCase(matName) + " " + modName
 }
 function _toolName(k) {
     var d = _TOOL_DATA[k]
@@ -216,6 +237,78 @@ function MD_TT_CLIENT_appendContextualModifiers(text, modifiers) {
 }
 
 // =============================================================================
+// Linhas do próprio Tinkers
+// =============================================================================
+// Tinkers' ToolPartItem writes its own lines right after the item name: the
+// material ID (F3+H), Tinkers traits, Tinkers stats on Shift and its own
+// Shift/Ctrl hints. They describe Tinkers tools, which this pack replaces with
+// Tetra, so the Tetra lines take their place. Every other line (other mods'
+// lines, the F3+H item ID and NBT lines) is kept.
+//
+// To find Tinkers' lines exactly, run the part's own tooltip code again into a
+// scratch list and remove the matching lines in order. If that ever fails, the
+// Tinkers lines are simply left in place.
+var $MD_TT_CLIENT_ArrayList = Java.loadClass("java.util.ArrayList")
+var $MD_TT_CLIENT_TooltipFlag = Java.loadClass("net.minecraft.world.item.TooltipFlag")
+var MD_TT_CLIENT_partLinesFailed = false
+
+function MD_TT_CLIENT_tinkersPartLines(item, advanced) {
+    if (MD_TT_CLIENT_partLinesFailed) return null
+    try {
+        var lines = new $MD_TT_CLIENT_ArrayList()
+        var flag = advanced ? $MD_TT_CLIENT_TooltipFlag.ADVANCED : $MD_TT_CLIENT_TooltipFlag.NORMAL
+        item.getItem().appendHoverText(item, null, lines, flag)
+        var result = []
+        for (var i = 0; i < lines.size(); i++) {
+            result.push(MD_TT_CLIENT_lineText(lines.get(i)))
+        }
+        return result
+    } catch (e) {
+        MD_TT_CLIENT_partLinesFailed = true
+        console.warn("[Mechanized/Tooltip] Could not read the Tinkers part tooltip, so its lines stay: " + e)
+        return null
+    }
+}
+
+function MD_TT_CLIENT_lineText(line) {
+    if (line === null || line === undefined) return ""
+    return typeof line.getString === "function" ? String(line.getString()) : String(line)
+}
+
+function MD_TT_CLIENT_appendLines(text, lines) {
+    for (var i = 0; i < lines.length; i++) {
+        text.add(lines[i])
+    }
+}
+
+// The lines after the item name, minus the ones Tinkers added.
+function MD_TT_CLIENT_otherLines(item, advanced, text) {
+    var lines = []
+    for (var i = 1; i < text.size(); i++) {
+        lines.push(text.get(i))
+    }
+    var partLines = MD_TT_CLIENT_tinkersPartLines(item, advanced)
+    if (!partLines) return lines
+
+    var from = 0
+    for (var pi = 0; pi < partLines.length; pi++) {
+        for (var li = from; li < lines.length; li++) {
+            if (lines[li] !== null && MD_TT_CLIENT_lineText(lines[li]) === partLines[pi]) {
+                lines[li] = null
+                from = li + 1
+                break
+            }
+        }
+    }
+
+    var kept = []
+    for (var k = 0; k < lines.length; k++) {
+        if (lines[k] !== null) kept.push(lines[k])
+    }
+    return kept
+}
+
+// =============================================================================
 // Handlers de tooltip por item
 // =============================================================================
 
@@ -264,14 +357,17 @@ ItemEvents.tooltip(function(event) {
             var nbtKey = item.getId() + "|{Material:\"" + rawMatStr + "\"}"
             var moduleVariants = tt.variants[nbtKey]
             var itemName = text.get(0)
+            // Only Tinkers' own part lines are replaced; the rest go back at
+            // the end (see MD_TT_CLIENT_otherLines).
+            var otherLines = MD_TT_CLIENT_otherLines(item, advanced, text)
             text.clear()
             text.add(itemName)
             if (event.shift) {
                 text.add(Text.of(""))
                 text.add([
-                    Text.ofString(matName.charAt(0).toUpperCase() + matName.slice(1)).underlined().color("#55FF55"), 
+                    Text.ofString(MD_TT_CLIENT_titleCase(matName)).underlined().color("#55FF55"), 
                     Text.ofString(" | "), 
-                    Text.ofString(matType.charAt(0).toUpperCase() + matType.slice(1)).underlined().color("#AAAAAA")])
+                    Text.ofString(MD_TT_CLIENT_titleCase(matType)).underlined().color("#AAAAAA")])
                 text.add([Text.ofString("Hardness: ").color("#FFFFFF"), Text.ofString("" + matData.primary).color("#FF5555")])
                 text.add([Text.ofString("Density: ").color("#FFFFFF"), Text.ofString("" + matData.secondary).color("#FFAA00")])
                 text.add([Text.ofString("Flexibility: ").color("#FFFFFF"), Text.ofString("" + matData.tertiary).color("#FFFF55")])
@@ -303,6 +399,7 @@ ItemEvents.tooltip(function(event) {
                 if (!moduleVariants || moduleVariants.length === 0) {
                     text.add(Text.of(""))
                     text.add(Text.ofString("No modules found for this part").color("#FF5555"))
+                    MD_TT_CLIENT_appendLines(text, otherLines)
                     return
                 }
                 for (var vi = 0; vi < moduleVariants.length; vi++) {
@@ -342,6 +439,10 @@ ItemEvents.tooltip(function(event) {
                                 Text.ofString(" | "), 
                                 Text.ofString("Efficiency: ").color("#ffffff"),
                                 Text.ofString(" " + t.efficiency).color(_toolLevelColor(t.level))])
+                        }
+                        var twinTool = MD_TT_CLIENT_TWIN_HEAD_BONUS[(mv + "").split("/")[0]]
+                        if (twinTool && stats.tools[twinTool]) {
+                            text.add(Text.ofString("    +1 " + _toolName(twinTool) + " level with two matching heads").color("#888888"))
                         }
                     }
 
@@ -385,6 +486,7 @@ ItemEvents.tooltip(function(event) {
                     Text.ofString("Module Info").color("#FFD700")])
                 text.add(Text.of(" "))
             }
+            MD_TT_CLIENT_appendLines(text, otherLines)
         })
     }
 })

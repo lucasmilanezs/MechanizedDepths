@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material",
   "ingredient": {
-    "item": "natures_aura:infused_iron"
+    "item": "naturesaura:infused_iron"
   },
   "value": 1,
   "needed": 1,
